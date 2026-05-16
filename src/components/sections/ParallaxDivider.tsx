@@ -105,7 +105,7 @@ export default function ParallaxDivider() {
             animate={isInView ? { opacity: 1 } : {}}
             transition={{ duration: 0.7, delay: 0.5 }}
           >
-            — Shravan Royal Inn
+            — Unwind Karjat
           </motion.p>
         </motion.div>
       </div>

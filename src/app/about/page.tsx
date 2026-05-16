@@ -5,6 +5,7 @@ import Footer from '@/components/layout/Footer';
 import CinematicHero from '@/components/ui/CinematicHero';
 import SectionLabel from '@/components/ui/SectionLabel';
 import GoldDivider from '@/components/ui/GoldDivider';
+import AwardsMarquee from '@/components/sections/AwardsMarquee';
 import { motion } from 'framer-motion';
 import Image from 'next/image';
 
@@ -13,14 +14,14 @@ export default function AboutPage() {
     <main className="bg-cream min-h-screen">
       <Navbar />
       <CinematicHero 
-        label="Shravan Royal Legacy"
-        title="Architecture of Silence"
-        tagline="Founded on the belief that true luxury is not heard, but felt. Discover the vision behind our Jaipur sanctuary."
+        label="Our Story"
+        title="Rooted in Nature"
+        tagline="Founded on the belief that true luxury is reconnecting with the wild. Discover the vision behind Unwind Karjat."
         image="https://images.unsplash.com/photo-1470770841072-f978cf4d019e?w=2400&q=95"
       />
 
-      {/* Vision Section */}
-      <section className="py-32">
+      {/* Origin Story / Philosophy */}
+      <section className="py-24">
         <div className="max-w-[1600px] mx-auto px-6 md:px-10">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-24 items-center">
             <motion.div
@@ -29,20 +30,20 @@ export default function AboutPage() {
               viewport={{ once: true }}
               transition={{ duration: 1 }}
             >
-              <SectionLabel className="mb-6">Our Philosophy</SectionLabel>
+              <SectionLabel className="mb-6">Ethos & Origins</SectionLabel>
               <h2 className="font-display text-4xl md:text-6xl italic text-forest mb-8 leading-tight">
                 Where the Wild <br /> Meets the Refined
               </h2>
               <GoldDivider className="mb-10" />
               <p className="font-serif text-xl text-taupe italic mb-8 leading-relaxed">
-                &ldquo;We did not want to build a hotel. We wanted to build a frame for the forest and a stage for the sea.&rdquo;
+                &ldquo;We didn't just want to build a resort. We wanted to build a sanctuary that frames the Sahyadris and respects the earth.&rdquo;
               </p>
               <div className="space-y-6 font-sans text-base text-taupe/80 leading-loose">
                 <p>
-                  Shravan Royal Inn was conceived in 1924 as a private retreat in the heart of the Pink City. Today, it stands as a testament to timeless architecture and the preservation of solitude in Jaipur.
+                  Unwind Karjat was conceived five years ago by a family of nature enthusiasts who wanted to create a pristine escape just a short drive from Mumbai. What started as a small passion project quickly blossomed into Karjat's premier boutique retreat.
                 </p>
                 <p>
-                  Our design language is one of restraint. We use local stone, reclaimed timber, and the natural movement of light to create spaces that breathe with the landscape rather than competing against it.
+                  Our design language is one of restraint and sustainability. We use local stone, reclaimed timber, and the natural movement of light to create spaces that breathe with the landscape rather than competing against it.
                 </p>
               </div>
             </motion.div>
@@ -56,7 +57,7 @@ export default function AboutPage() {
             >
               <Image
                 src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=1200&q=95"
-                alt="Architectural detail of the estate"
+                alt="Architectural detail seamlessly blending with nature"
                 fill
                 className="object-cover"
               />
@@ -65,19 +66,50 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* The Founders / Leadership */}
-      <section className="bg-forest py-32 text-ivory overflow-hidden">
+      {/* Nature & Sustainability Section */}
+      <section className="py-24 bg-ivory">
+        <div className="max-w-[1600px] mx-auto px-6 md:px-10 text-center">
+          <div className="max-w-3xl mx-auto">
+            <SectionLabel className="justify-center mb-8">Eco Commitments</SectionLabel>
+            <h2 className="font-display text-4xl md:text-6xl italic text-forest mb-12">Treading Lightly</h2>
+            <p className="font-serif text-xl italic text-taupe mb-16 leading-relaxed">
+              We are dedicated to preserving the pristine ecosystem of Karjat. From rainwater harvesting to eliminating single-use plastics, our operations are designed to protect the environment that makes our resort so special.
+            </p>
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+              <div className="p-8 border border-gold/10">
+                <span className="block font-serif text-4xl text-gold mb-2">100%</span>
+                <span className="font-sans text-[10px] uppercase tracking-widest text-taupe/60">Solar Water Heating</span>
+              </div>
+              <div className="p-8 border border-gold/10">
+                <span className="block font-serif text-4xl text-gold mb-2">400+</span>
+                <span className="font-sans text-[10px] uppercase tracking-widest text-taupe/60">Trees Planted</span>
+              </div>
+              <div className="p-8 border border-gold/10">
+                <span className="block font-serif text-4xl text-gold mb-2">Zero</span>
+                <span className="font-sans text-[10px] uppercase tracking-widest text-taupe/60">Single-Use Plastics</span>
+              </div>
+              <div className="p-8 border border-gold/10">
+                <span className="block font-serif text-4xl text-gold mb-2">Local</span>
+                <span className="font-sans text-[10px] uppercase tracking-widest text-taupe/60">Farm-to-Table</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* The Team / Leadership */}
+      <section className="bg-forest py-24 text-ivory overflow-hidden">
         <div className="max-w-[1600px] mx-auto px-6 md:px-10">
           <div className="text-center mb-20">
-            <SectionLabel light className="justify-center mb-6">Custodians</SectionLabel>
-            <h2 className="font-display text-4xl md:text-6xl italic">The Visionaries</h2>
+            <SectionLabel light className="justify-center mb-6">Hospitality Team</SectionLabel>
+            <h2 className="font-display text-4xl md:text-6xl italic">Faces of Unwind Karjat</h2>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
             {[
-              { name: 'Shravan Singh', role: 'Founder (1924)', image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=800&q=95' },
-              { name: 'Anjali Sharma', role: 'Lead Architect', image: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=800&q=95' },
-              { name: 'Vikram Rathore', role: 'Head of Experience', image: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=800&q=95' },
+              { name: 'Rahul Desai', role: 'General Manager', image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=800&q=95' },
+              { name: 'Priya Sharma', role: 'Head Chef', image: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=800&q=95' },
+              { name: 'Vikram Singh', role: 'Guest Experience Lead', image: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=800&q=95' },
             ].map((person, i) => (
               <motion.div 
                 key={i}
@@ -103,35 +135,26 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* Craftsmanship Section */}
-      <section className="py-32 bg-ivory">
-        <div className="max-w-[1600px] mx-auto px-6 md:px-10 text-center">
-          <div className="max-w-3xl mx-auto">
-            <SectionLabel className="justify-center mb-8">Craftsmanship</SectionLabel>
-            <h2 className="font-display text-4xl md:text-7xl italic text-forest mb-12">Built to Last <br /> Generations</h2>
-            <p className="font-serif text-xl italic text-taupe mb-16 leading-relaxed">
-              Every chair, every handle, and every stone has been curated to age gracefully. We believe in the integrity of materials and the power of human touch.
-            </p>
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
-              <div className="p-8 border border-gold/10">
-                <span className="block font-serif text-4xl text-gold mb-2">100+</span>
-                <span className="font-sans text-[10px] uppercase tracking-widest text-taupe/60">Years of History</span>
-              </div>
-              <div className="p-8 border border-gold/10">
-                <span className="block font-serif text-4xl text-gold mb-2">400</span>
-                <span className="font-sans text-[10px] uppercase tracking-widest text-taupe/60">Native Species</span>
-              </div>
-              <div className="p-8 border border-gold/10">
-                <span className="block font-serif text-4xl text-gold mb-2">24h</span>
-                <span className="font-sans text-[10px] uppercase tracking-widest text-taupe/60">Butler Service</span>
-              </div>
-              <div className="p-8 border border-gold/10">
-                <span className="block font-serif text-4xl text-gold mb-2">0</span>
-                <span className="font-sans text-[10px] uppercase tracking-widest text-taupe/60">Digital Noise</span>
-              </div>
-            </div>
-          </div>
+      {/* Awards & Press */}
+      <section className="py-24">
+        <div className="text-center mb-16">
+          <SectionLabel className="justify-center mb-6">Recognitions</SectionLabel>
+          <h2 className="font-display text-4xl italic text-forest">Award-Winning Hospitality</h2>
         </div>
+        <AwardsMarquee />
+      </section>
+
+      {/* CTA Section */}
+      <section className="py-32 bg-cream text-center border-t border-gold/10">
+         <div className="max-w-3xl mx-auto px-6">
+            <h2 className="font-display text-4xl md:text-6xl italic text-forest mb-8">Ready for Tranquility?</h2>
+            <p className="font-serif text-xl italic text-taupe mb-12">
+              Join us for a weekend of unmatched serenity, exceptional food, and raw nature.
+            </p>
+            <a href="/reservations" className="inline-block bg-gold text-[#1a1004] font-sans text-[11px] uppercase tracking-[0.2em] px-12 py-5 hover:bg-gold-light transition-all">
+               Come Experience It
+            </a>
+         </div>
       </section>
 
       <Footer />

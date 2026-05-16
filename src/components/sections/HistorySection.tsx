@@ -68,7 +68,7 @@ export default function HistorySection() {
                 &ldquo;We did not intend to build a hotel. We intended to preserve a feeling.&rdquo;
               </p>
               <p className="font-sans text-base text-taupe/80 leading-loose">
-                Established in 1924 as a private retreat in the heart of the Pink City, Shravan Royal Inn has evolved over a century into Jaipur&apos;s most distinguished boutique sanctuary. While the world has changed, our philosophy has remained unyielding: true luxury is not heard; it is felt in the silence of the morning and the unhurried grace of the evening.
+                Established in 1924 as a private retreat in the heart of the Karjat, Unwind Karjat has evolved over a century into Karjat&apos;s most distinguished boutique sanctuary. While the world has changed, our philosophy has remained unyielding: true luxury is not heard; it is felt in the silence of the morning and the unhurried grace of the evening.
               </p>
               <p className="font-sans text-base text-taupe/80 leading-loose">
                 Every stone in our courtyard, every bottle in our cellar, and every ritual in our spa carries the weight of a hundred years of quiet excellence.

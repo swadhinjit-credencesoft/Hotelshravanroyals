@@ -11,7 +11,7 @@ const quickLinks = [
   { label: 'Experiences', href: '/experiences' },
   { label: 'Events', href: '/events' },
   { label: 'Gallery', href: '/gallery' },
-  { label: 'Offers', href: '/offers' },
+  { label: 'Blog', href: '/blog' },
   { label: 'Contact', href: '/contact' },
 ]
 
@@ -24,10 +24,10 @@ export default function Footer() {
           <div>
             <Link href="/" className="inline-block mb-4">
               <div className="font-serif text-xl tracking-[0.18em] uppercase text-ivory">
-                Shravan Royal
+                Unwind
               </div>
               <div className="font-sans text-[9px] tracking-[0.28em] uppercase text-gold mt-0.5">
-                Inn
+                Karjat
               </div>
             </Link>
             <p className="font-serif text-base italic text-ivory/50 mb-6 leading-relaxed max-w-[220px]">
@@ -131,11 +131,11 @@ export default function Footer() {
                 </div>
               </div>
               <a
-                href="https://maps.google.com"
+                href="https://www.google.com/maps?q=Unwind,+Karjat,+Karjat+-+Chowk+Rd,+behind+Baba+Dairy,+Wavarle,+Maharashtra+410206&ftid=0x3be7fb0039371721:0x6c226bd87e40fd2f&entry=gps&lucs=,94224825,94227247,94227248,94231188,47071704,47069508,94218641,94282134,94203019,47084304&g_ep=CAISEjI1LjI0LjEuNzY5MjczNTU2MBgAINeCAypaLDk0MjI0ODI1LDk0MjI3MjQ3LDk0MjI3MjQ4LDk0MjMxMTg4LDQ3MDcxNzA0LDQ3MDY5NTA4LDk0MjE4NjQxLDk0MjgyMTM0LDk0MjAzMDE5LDQ3MDg0MzA0QgJJTg%3D%3D&skid=f4b3cd0b-935d-4d04-9db5-6d5d2e525f90&g_st=com.google.maps.preview.copy"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 mt-2 font-sans text-[11px] uppercase tracking-[0.14em] text-gold border border-gold/30 px-4 py-2 rounded-sm hover:border-gold hover:bg-gold/10 transition-all duration-300"
-                aria-label="Get directions to Shravan Royal Inn"
+                aria-label="Get directions to Unwind Karjat"
               >
                 Get Directions
               </a>

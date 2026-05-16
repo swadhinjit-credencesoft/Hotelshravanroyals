@@ -29,21 +29,21 @@ const jost = Jost({
 })
 
 export const metadata: Metadata = {
-  title: 'Shravan Royal Inn — Excellence in Jaipur Hospitality',
+  title: 'Unwind Karjat | Resort & Nature Retreat near Mumbai',
   description:
-    'A premium luxury hotel in Jaipur offering bespoke service, world-class dining, and timeless comfort.',
+    'A boutique nature retreat in Karjat, Maharashtra offering luxurious yet cozy stays for leisure travellers, event groups, and corporate teams.',
   keywords: [
-    'luxury hotel Jaipur',
-    'Shravan Royal Inn',
-    'Jaipur hospitality',
-    'premium stay Jaipur',
-    'luxury boutique hotel',
-    'exclusive Jaipur getaway',
+    'resort near Mumbai',
+    'weekend getaway Karjat',
+    'Karjat hotel',
+    'Unwind Karjat',
+    'nature resort',
+    'Karjat resort',
   ],
   openGraph: {
-    title: 'Shravan Royal Inn — Excellence in Jaipur Hospitality',
+    title: 'Unwind Karjat | Resort & Nature Retreat near Mumbai',
     description:
-      'A premium luxury hotel in Jaipur offering bespoke service and timeless comfort.',
+      'A boutique nature retreat in Karjat, Maharashtra offering luxurious yet cozy stays for leisure travellers, event groups, and corporate teams.',
     type: 'website',
     locale: 'en_US',
   },

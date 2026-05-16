@@ -7,10 +7,17 @@ import { galleryImages } from '@/data/gallery';
 import SectionLabel from '@/components/ui/SectionLabel';
 import LightboxModal from '@/components/ui/LightboxModal';
 
-const categories = ['all', 'rooms', 'dining', 'spa', 'nature'] as const;
+const categories = [
+  { id: 'all', label: 'All' },
+  { id: 'rooms', label: 'Rooms' },
+  { id: 'outdoors', label: 'Pool & Outdoors' },
+  { id: 'food', label: 'Food' },
+  { id: 'events', label: 'Events' },
+  { id: 'nature', label: 'Nature & Surroundings' }
+] as const;
 
 export default function GallerySection() {
-  const [activeCategory, setActiveCategory] = useState<typeof categories[number]>('all');
+  const [activeCategory, setActiveCategory] = useState<typeof categories[number]['id']>('all');
   const [lightboxIndex, setLightboxIndex] = useState<number | null>(null);
 
   const filteredImages = useMemo(() => {
@@ -38,14 +45,14 @@ export default function GallerySection() {
           <div className="flex flex-wrap gap-6 md:gap-8 border-b border-forest/10 pb-4">
             {categories.map((cat) => (
               <button
-                key={cat}
-                onClick={() => setActiveCategory(cat)}
+                key={cat.id}
+                onClick={() => setActiveCategory(cat.id)}
                 className={`font-sans text-[11px] uppercase tracking-[0.2em] relative transition-colors duration-300 ${
-                  activeCategory === cat ? 'text-gold' : 'text-taupe hover:text-forest'
+                  activeCategory === cat.id ? 'text-gold' : 'text-taupe hover:text-forest'
                 }`}
               >
-                {cat}
-                {activeCategory === cat && (
+                {cat.label}
+                {activeCategory === cat.id && (
                   <motion.div
                     layoutId="gallery-tab"
                     className="absolute -bottom-4 left-0 right-0 h-0.5 bg-gold"

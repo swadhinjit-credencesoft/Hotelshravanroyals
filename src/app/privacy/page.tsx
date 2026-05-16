@@ -14,7 +14,7 @@ export default function PrivacyPage() {
           <section>
             <h2 className="font-serif text-2xl text-forest mb-4">Introduction</h2>
             <p>
-              At Shravan Royal Inn, your privacy is as paramount as your comfort. This policy outlines how we protect and manage the personal data you entrust to us during your stay and your interactions with our digital platforms.
+              At Unwind Karjat, your privacy is as paramount as your comfort. This policy outlines how we protect and manage the personal data you entrust to us during your stay and your interactions with our digital platforms.
             </p>
           </section>
 
@@ -28,7 +28,7 @@ export default function PrivacyPage() {
           <section>
             <h2 className="font-serif text-2xl text-forest mb-4">Confidentiality</h2>
             <p>
-              Shravan Royal Inn never sells or shares your personal data with third-party marketers. Access to your information is strictly limited to authorized personnel who require it to serve you.
+              Unwind Karjat never sells or shares your personal data with third-party marketers. Access to your information is strictly limited to authorized personnel who require it to serve you.
             </p>
           </section>
 

@@ -28,7 +28,7 @@ export default function TermsPage() {
           <section>
             <h2 className="font-serif text-2xl text-forest mb-4">Estate Conduct</h2>
             <p>
-              Shravan Royal Inn is a sanctuary of comfort and privacy. We ask all guests to respect the tranquility of the grounds and the privacy of other residents.
+              Unwind Karjat is a sanctuary of comfort and privacy. We ask all guests to respect the tranquility of the grounds and the privacy of other residents.
             </p>
           </section>
 

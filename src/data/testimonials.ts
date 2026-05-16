@@ -14,7 +14,7 @@ export const testimonials: Testimonial[] = [
     name: 'Ananya Singh',
     country: 'France',
     rating: 5,
-    text: "We have stayed at Aman, Six Senses, and Four Seasons. Shravan Royal Inn surpasses them all in intimacy and service. Our butler remembered my husband's preferred drink from a year prior.",
+    text: "We have stayed at Aman, Six Senses, and Four Seasons. Unwind Karjat surpasses them all in intimacy and service. Our butler remembered my husband's preferred drink from a year prior.",
     stayType: 'Anniversary Villa',
     avatar: 'https://images.unsplash.com/photo-1494790108755-2616b612b786?w=80&q=80',
   },

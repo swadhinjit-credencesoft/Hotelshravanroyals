@@ -14,7 +14,7 @@ const navLinks = [
   { label: 'Experiences', href: '/experiences' },
   { label: 'Events', href: '/events' },
   { label: 'Gallery', href: '/gallery' },
-  { label: 'Offers', href: '/offers' },
+  { label: 'Blog', href: '/blog' },
   { label: 'Contact', href: '/contact' },
 ]
 
@@ -51,10 +51,10 @@ export default function Navbar() {
           {/* Logo */}
           <Link href="/" className="flex flex-col leading-none group focus-visible:ring-2 focus-visible:ring-gold rounded-sm">
             <span className={`font-serif text-lg tracking-[0.18em] uppercase transition-colors duration-300 ${scrolled ? 'text-forest' : 'text-ivory'}`}>
-              Shravan Royal
+              Unwind
             </span>
             <span className={`font-sans text-[9px] tracking-[0.28em] uppercase mt-0.5 transition-colors duration-300 ${scrolled ? 'text-gold' : 'text-gold-light'}`}>
-              Inn
+              Karjat
             </span>
           </Link>
 
@@ -116,7 +116,7 @@ export default function Navbar() {
           >
             <div className="flex items-center justify-between px-6 h-20">
               <span className="font-serif text-lg tracking-[0.18em] uppercase text-ivory">
-                Shravan Royal Inn
+                Unwind Karjat
               </span>
               <button
                 onClick={() => setMobileOpen(false)}

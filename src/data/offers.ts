@@ -43,7 +43,7 @@ export const offers: Offer[] = [
   {
     id: 'o3',
     name: 'Culinary Journey',
-    tagline: 'Experience the royal treatment',
+    tagline: 'Experience the premium treatment',
     nights: 4,
     price: 6800,
     originalPrice: 7900,

@@ -20,7 +20,7 @@ const amenities = [
   {
     icon: Wine,
     title: 'Private Cellar',
-    description: 'Access to our library of over 12,000 rare vintages, including private royal reserves.'
+    description: 'Access to our library of over 12,000 rare vintages, including private premium reserves.'
   },
   {
     icon: Wind,
@@ -49,7 +49,7 @@ export default function LuxuryAmenities() {
     <section className="bg-cream-dark py-32 overflow-hidden">
       <div className="max-w-[1600px] mx-auto px-6 md:px-10">
         <div className="text-center mb-20">
-          <SectionLabel className="justify-center mb-6">The Royal Standards</SectionLabel>
+          <SectionLabel className="justify-center mb-6">Our Standards</SectionLabel>
           <h2 className="font-display text-4xl md:text-[52px] italic text-forest">
             Bespoke Without Compromise
           </h2>

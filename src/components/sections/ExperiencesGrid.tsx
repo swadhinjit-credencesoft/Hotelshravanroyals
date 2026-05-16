@@ -5,7 +5,7 @@ import Image from 'next/image';
 import { motion, useInView } from 'framer-motion';
 import { experiences } from '@/data/experiences';
 import SectionLabel from '@/components/ui/SectionLabel';
-import { Clock, ArrowRight } from 'lucide-react';
+import { Clock, ArrowRight, Sun, CloudRain, Snowflake } from 'lucide-react';
 
 export default function ExperiencesGrid() {
   const containerRef = useRef<HTMLDivElement>(null);
@@ -20,7 +20,7 @@ export default function ExperiencesGrid() {
             Curated Immersions
           </h2>
           <p className="font-serif text-xl font-light text-ivory/60 max-w-xl leading-relaxed">
-            Beyond the suite, the inn offers a collection of rituals and adventures designed to connect you with the land and yourself.
+            Beyond the suite, Unwind Karjat offers a collection of adventures and rituals designed to connect you with nature.
           </p>
         </div>
 
@@ -53,6 +53,14 @@ function ExperienceCard({
 }) {
   const isTall = index === 0;
 
+  const getSeasonIcon = (season: string) => {
+    switch (season) {
+      case 'Monsoon': return <CloudRain size={12} />;
+      case 'Winter': return <Snowflake size={12} />;
+      default: return <Sun size={12} />;
+    }
+  };
+
   return (
     <motion.div
       className={`group relative overflow-hidden rounded-none ${
@@ -71,6 +79,15 @@ function ExperienceCard({
           sizes={isTall ? '50vw' : '33vw'}
         />
         <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent" />
+
+        <div className="absolute top-4 left-4">
+            <div className="bg-forest/80 backdrop-blur-sm px-3 py-1 border border-ivory/10 flex items-center gap-2">
+                <span className="text-gold">{getSeasonIcon(experience.season)}</span>
+                <span className="font-sans text-[9px] uppercase tracking-widest text-ivory/80">
+                    {experience.season}
+                </span>
+            </div>
+        </div>
 
         <div className="absolute top-4 right-4">
             <div className="bg-ivory/10 backdrop-blur-sm px-3 py-1 border border-ivory/20 rounded-none">
@@ -92,9 +109,9 @@ function ExperienceCard({
             <p className="font-sans text-sm text-ivory/70 mb-6 leading-relaxed">
               {experience.description}
             </p>
-            <button className="flex items-center gap-2 font-sans text-[10px] uppercase tracking-widest text-gold hover:text-ivory transition-colors">
-              Explore Experience <ArrowRight size={12} />
-            </button>
+            <a href="/reservations" className="flex items-center gap-2 font-sans text-[10px] uppercase tracking-widest text-gold hover:text-ivory transition-colors">
+              Add to Stay <ArrowRight size={12} />
+            </a>
           </div>
         </div>
       </div>
