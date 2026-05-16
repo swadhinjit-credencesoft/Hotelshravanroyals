@@ -309,7 +309,7 @@ export default function HeroSection() {
           animate={{ opacity: 1 }}
           transition={{ delay: 2.0 }}
         >
-          <div className="flex flex-wrap gap-8 md:gap-0">
+          {/* <div className="flex flex-wrap gap-8 md:gap-0">
             {heroStats.map((stat, i) => (
               <div key={stat.label} className="flex items-center">
                 <StatItem stat={stat} index={i} active={statsActive} />
@@ -318,7 +318,7 @@ export default function HeroSection() {
                 )}
               </div>
             ))}
-          </div>
+          </div> */}
         </motion.div>
       </motion.div>
 
@@ -368,7 +368,7 @@ export default function HeroSection() {
 
       {/* Slide dots (bottom-right) */}
       <div
-        className="absolute bottom-24 right-6 md:right-10 flex flex-col gap-2 items-end"
+        className="absolute bottom-32 right-6 md:right-10 flex flex-col gap-2 items-end"
         style={{ zIndex: 20 }}
       >
         {heroSlides.map((s, i) => (
@@ -408,12 +408,12 @@ export default function HeroSection() {
       </div>
 
       {/* Scroll indicator */}
-      <div
-        className="absolute bottom-8 left-1/2 -translate-x-1/2"
+      {/* <div
+        className="absolute bottom-48 left-1/2 -translate-x-1/2"
         style={{ zIndex: 20 }}
       >
         <ScrollIndicator />
-      </div>
+      </div> */}
     </section>
   )
 }

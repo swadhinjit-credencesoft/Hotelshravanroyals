@@ -74,14 +74,16 @@ export default function Navbar() {
           </nav>
 
           {/* Desktop CTA */}
-          <div className="hidden md:flex items-center gap-4">
+          <div className="flex items-center gap-4">
+            {/*
             <a
               href={`tel:${siteConfig.phone}`}
-              className={`font-sans text-[11px] tracking-[0.12em] transition-colors duration-300 ${scrolled ? 'text-taupe' : 'text-ivory/60'} hover:text-gold`}
+              className={`font-sans text-[11px] tracking-[0.12em] transition-colors duration-300 ${scrolled ? 'text-taupe' : 'text-ivory/60'} hover:text-gold hidden sm:block`}
               aria-label={`Call us at ${siteConfig.phone}`}
             >
               {siteConfig.phone}
             </a>
+            */}
             <MagneticButton
               as="a"
               href="/reservations"

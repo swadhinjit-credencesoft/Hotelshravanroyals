@@ -21,10 +21,10 @@ export default function Home() {
   return (
     <main className="relative bg-cream min-h-screen" id="main-content">
       <Navbar />
-      
+
       {/* Hero Section */}
       <HeroSection />
-      
+
       {/* Brand Statement */}
       <BrandStatement />
 
@@ -33,16 +33,16 @@ export default function Home() {
 
       {/* The Art of the Stay */}
       <ArtOfStaySection />
-      
+
       {/* Rooms & Suites Carousel */}
       <RoomsCarousel />
-      
+
       {/* Parallax Quote Divider */}
       <ParallaxDivider />
-      
+
       {/* Dining Section */}
       <DiningSection />
-      
+
       {/* Experiences Bento Grid */}
       <ExperiencesGrid />
 
@@ -50,26 +50,26 @@ export default function Home() {
       <LuxuryAmenities />
 
       {/* Wellness & Spa */}
-      <WellnessSection />
-      
+      {/* <WellnessSection /> */}
+
       {/* Awards Marquee */}
       <AwardsMarquee />
-      
+
       {/* Testimonials Section */}
       <TestimonialsSection />
-      
+
       {/* Gallery Section with Lightbox */}
       <GallerySection />
-      
+
       {/* Seasonal Offers */}
       <OffersSection />
 
       {/* Sustainability & Forest */}
       <ForestSection />
-      
+
       {/* Newsletter & Contact */}
       <NewsletterSection />
-      
+
       <Footer />
     </main>
   );

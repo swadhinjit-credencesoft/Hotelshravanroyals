@@ -22,13 +22,13 @@ export default function RoomsGrid() {
   return (
     <section className="py-12 md:py-24 bg-cream">
       <div className="max-w-[1600px] mx-auto px-6 md:px-10">
-        
+
         {/* Filter Bar */}
         <div className="flex flex-col md:flex-row justify-between items-center mb-12 gap-6 bg-white p-6 border border-gold/20 shadow-sm rounded-sm">
           <div className="flex flex-wrap items-center gap-6">
             <div className="flex items-center gap-3">
               <span className="font-sans text-[11px] uppercase tracking-widest text-taupe/60">Price:</span>
-              <select 
+              <select
                 className="bg-transparent font-sans text-sm text-forest focus:outline-none border-b border-gold/30 pb-1"
                 value={filterPrice}
                 onChange={(e) => setFilterPrice(e.target.value)}
@@ -40,7 +40,7 @@ export default function RoomsGrid() {
             </div>
             <div className="flex items-center gap-3">
               <span className="font-sans text-[11px] uppercase tracking-widest text-taupe/60">Capacity:</span>
-              <select 
+              <select
                 className="bg-transparent font-sans text-sm text-forest focus:outline-none border-b border-gold/30 pb-1"
                 value={filterCapacity}
                 onChange={(e) => setFilterCapacity(e.target.value)}
@@ -52,7 +52,7 @@ export default function RoomsGrid() {
             </div>
           </div>
 
-          <button 
+          <button
             onClick={() => setComparisonMode(!comparisonMode)}
             className={`font-sans text-[11px] uppercase tracking-[0.2em] px-6 py-3 border transition-all ${comparisonMode ? 'bg-gold text-[#1a1004] border-gold' : 'border-gold/30 text-gold hover:bg-gold/10'}`}
           >
@@ -61,7 +61,7 @@ export default function RoomsGrid() {
         </div>
 
         {/* Grid */}
-        <motion.div 
+        <motion.div
           layout
           className={`grid gap-12 ${comparisonMode ? 'grid-cols-2 lg:grid-cols-4 gap-4' : 'grid-cols-1 md:grid-cols-2 lg:grid-cols-3'}`}
         >
@@ -87,7 +87,7 @@ export default function RoomsGrid() {
                     <span className="font-sans text-[10px] uppercase tracking-[0.14em] text-gold">{room.category}</span>
                   </div>
                 </div>
-                
+
                 <div className="flex-1 flex flex-col">
                   <h3 className={`font-display italic text-forest mb-2 ${comparisonMode ? 'text-2xl' : 'text-3xl'}`}>{room.name}</h3>
                   {!comparisonMode && (
@@ -95,7 +95,7 @@ export default function RoomsGrid() {
                       {room.tagline}
                     </p>
                   )}
-                  
+
                   <div className={`flex items-center gap-6 mb-6 text-taupe/80 ${comparisonMode ? 'flex-col items-start gap-3' : ''}`}>
                     <span className="flex items-center gap-2 font-sans text-[10px] uppercase tracking-widest">
                       <Maximize size={14} className="text-gold" /> {room.size} m²
@@ -131,12 +131,12 @@ export default function RoomsGrid() {
                     )}
                   </div>
                   {comparisonMode && (
-                     <a
-                       href={`/rooms/${room.id}`}
-                       className="mt-6 block text-center w-full bg-gold/10 text-forest font-sans text-[10px] uppercase tracking-[0.2em] py-3 hover:bg-gold transition-colors"
-                     >
-                       Select Room
-                     </a>
+                    <a
+                      href={`/rooms/${room.id}`}
+                      className="mt-6 block text-center w-full bg-gold/10 text-forest font-sans text-[10px] uppercase tracking-[0.2em] py-3 hover:bg-gold transition-colors"
+                    >
+                      Select Room
+                    </a>
                   )}
                 </div>
               </motion.div>
