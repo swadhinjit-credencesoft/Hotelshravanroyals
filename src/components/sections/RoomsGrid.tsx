@@ -3,12 +3,14 @@
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import Image from 'next/image';
+import Link from 'next/link';
 import { ArrowRight, Users, Maximize, Check } from 'lucide-react';
 import { rooms } from '@/data/rooms';
 
 export default function RoomsGrid() {
   const [filterPrice, setFilterPrice] = useState<string>('all');
   const [filterCapacity, setFilterCapacity] = useState<string>('all');
+  const [filterView, setFilterView] = useState<string>('all');
   const [comparisonMode, setComparisonMode] = useState<boolean>(false);
 
   const filteredRooms = rooms.filter(room => {
@@ -16,6 +18,7 @@ export default function RoomsGrid() {
     if (filterPrice === 'high' && room.price < 5000) return false;
     if (filterCapacity === 'couple' && room.guests > 2) return false;
     if (filterCapacity === 'family' && room.guests <= 2) return false;
+    if (filterView !== 'all' && room.view.toLowerCase().indexOf(filterView) === -1) return false;
     return true;
   });
 
@@ -50,6 +53,19 @@ export default function RoomsGrid() {
                 <option value="family">Families (3+ Guests)</option>
               </select>
             </div>
+            <div className="flex items-center gap-3">
+              <span className="font-sans text-[11px] uppercase tracking-widest text-taupe/60">View:</span>
+              <select
+                className="bg-transparent font-sans text-sm text-forest focus:outline-none border-b border-gold/30 pb-1"
+                value={filterView}
+                onChange={(e) => setFilterView(e.target.value)}
+              >
+                <option value="all">All Views</option>
+                <option value="garden">Garden View</option>
+                <option value="lawn">Lawn View</option>
+                <option value="forest">Forest View</option>
+              </select>
+            </div>
           </div>
 
           <button
@@ -65,11 +81,11 @@ export default function RoomsGrid() {
           layout
           className={`grid gap-12 ${comparisonMode ? 'grid-cols-2 lg:grid-cols-4 gap-4' : 'grid-cols-1 md:grid-cols-2 lg:grid-cols-3'}`}
         >
-          <AnimatePresence>
+          <AnimatePresence mode="popLayout">
             {filteredRooms.map((room, i) => (
               <motion.div
                 layout
-                key={room.id}
+                key={room.slug}
                 initial={{ opacity: 0, scale: 0.95 }}
                 animate={{ opacity: 1, scale: 1 }}
                 exit={{ opacity: 0, scale: 0.95 }}
@@ -122,21 +138,21 @@ export default function RoomsGrid() {
                       <span className="font-serif text-xl text-forest">₹{room.price.toLocaleString()}<span className="text-sm opacity-50 ml-1">/nt</span></span>
                     </div>
                     {!comparisonMode && (
-                      <a
-                        href={`/rooms/${room.id}`}
+                      <Link
+                        href={`/rooms/${room.slug}`}
                         className="flex items-center gap-2 font-sans text-[10px] uppercase tracking-[0.2em] text-forest hover:text-gold transition-colors duration-300"
                       >
                         View Details <ArrowRight size={14} />
-                      </a>
+                      </Link>
                     )}
                   </div>
                   {comparisonMode && (
-                    <a
-                      href={`/rooms/${room.id}`}
+                    <Link
+                      href={`/rooms/${room.slug}`}
                       className="mt-6 block text-center w-full bg-gold/10 text-forest font-sans text-[10px] uppercase tracking-[0.2em] py-3 hover:bg-gold transition-colors"
                     >
                       Select Room
-                    </a>
+                    </Link>
                   )}
                 </div>
               </motion.div>

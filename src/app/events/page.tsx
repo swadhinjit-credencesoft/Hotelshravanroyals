@@ -32,8 +32,37 @@ export default function EventsPage() {
         image="https://images.unsplash.com/photo-1511795409834-ef04bbd61622?w=2400&q=95"
       />
 
+      {/* SEO Schema */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "What is the wedding capacity at Unwind Karjat?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Our outdoor wedding lawns can comfortably host up to 250 guests with bespoke catering and decor."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Do you provide corporate offsite facilities?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Yes, we have a dedicated Corporate Hub with high-speed Wi-Fi, projectors, and team-building activities for up to 60 guests."
+                }
+              }
+            ]
+          })
+        }}
+      />
+
       {/* Hero Tabs */}
-      <div className="bg-white border-b border-gold/20 sticky top-20 z-40">
+      <div className="bg-white border-b border-gold/20 sticky top-20 z-40 shadow-sm">
         <div className="max-w-[1200px] mx-auto px-6 flex justify-center overflow-x-auto no-scrollbar">
           {TABS.map(tab => (
             <button
@@ -56,6 +85,14 @@ export default function EventsPage() {
              <SectionLabel className="justify-center mb-6">Our Venues</SectionLabel>
              <h2 className="font-display text-4xl md:text-6xl italic text-forest">Spaces for {activeTab}</h2>
              <GoldDivider className="justify-center mt-8" />
+             <div className="mt-8">
+               <a 
+                href={`/events/${activeTab.toLowerCase().replace(' ', '-')}`} 
+                className="inline-flex items-center gap-2 font-sans text-[10px] uppercase tracking-[0.3em] text-gold hover:text-forest transition-colors"
+               >
+                 View Dedicated {activeTab} Page <ArrowRight size={14} />
+               </a>
+             </div>
           </div>
 
           <div className="space-y-24">
@@ -84,6 +121,10 @@ export default function EventsPage() {
                          </li>
                        ))}
                     </ul>
+                    <div className="flex gap-4">
+                      <a href="#enquiry" className="bg-forest text-ivory font-sans text-[11px] uppercase tracking-[0.2em] px-8 py-4 hover:bg-forest/90 transition-all rounded-sm">Enquire Now</a>
+                      <a href={`/events/${activeTab.toLowerCase().replace(' ', '-')}`} className="border border-gold/30 text-gold font-sans text-[11px] uppercase tracking-[0.2em] px-8 py-4 hover:bg-gold/5 transition-all rounded-sm">Learn More</a>
+                    </div>
                  </div>
                </motion.div>
              ))}
@@ -98,18 +139,18 @@ export default function EventsPage() {
           <h2 className="font-display text-4xl md:text-6xl italic mb-12">Bespoke Catering</h2>
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-12 text-left">
-            <div className="border border-ivory/10 p-8 hover:bg-ivory/5 transition-colors">
-              <Utensils className="text-gold mb-6" size={32} />
+            <div className="border border-ivory/10 p-8 hover:bg-ivory/5 transition-colors group">
+              <Utensils className="text-gold mb-6 group-hover:scale-110 transition-transform" size={32} />
               <h3 className="font-display text-2xl italic mb-4">Multi-Cuisine Feasts</h3>
               <p className="font-serif text-ivory/70 leading-relaxed text-sm">From authentic Maharashtrian thalis to lavish Continental spreads, our culinary team designs menus tailored precisely to your guests' palates.</p>
             </div>
-            <div className="border border-ivory/10 p-8 hover:bg-ivory/5 transition-colors">
-              <GlassWater className="text-gold mb-6" size={32} />
+            <div className="border border-ivory/10 p-8 hover:bg-ivory/5 transition-colors group">
+              <GlassWater className="text-gold mb-6 group-hover:scale-110 transition-transform" size={32} />
               <h3 className="font-display text-2xl italic mb-4">Barbecue & Bonfire</h3>
               <p className="font-serif text-ivory/70 leading-relaxed text-sm">Our signature live grills under the Karjat sky. Perfect for pre-wedding events, corporate mixers, or intimate birthday celebrations.</p>
             </div>
-            <div className="border border-ivory/10 p-8 hover:bg-ivory/5 transition-colors">
-              <Utensils className="text-gold mb-6" size={32} />
+            <div className="border border-ivory/10 p-8 hover:bg-ivory/5 transition-colors group">
+              <Utensils className="text-gold mb-6 group-hover:scale-110 transition-transform" size={32} />
               <h3 className="font-display text-2xl italic mb-4">Specialty Menus</h3>
               <p className="font-serif text-ivory/70 leading-relaxed text-sm">Dedicated Jain menus, vegan setups, and our highly-requested local Fish & Mutton delicacies prepared on special request.</p>
             </div>
@@ -121,8 +162,9 @@ export default function EventsPage() {
       <section className="py-24 bg-cream border-t border-gold/10" id="enquiry">
         <div className="max-w-3xl mx-auto px-6">
           <div className="text-center mb-12">
-            <h2 className="font-display text-4xl italic text-forest mb-4">Request a Proposal</h2>
-            <p className="font-serif text-taupe">Let our event concierges craft the perfect package for you.</p>
+            <SectionLabel className="justify-center mb-6">Let's Connect</SectionLabel>
+            <h2 className="font-display text-5xl italic text-forest mb-4">Request a Proposal</h2>
+            <p className="font-serif text-taupe text-lg italic">Let our event concierges craft the perfect package for you.</p>
           </div>
 
           <div className="bg-white p-8 md:p-12 shadow-warm-lg border border-gold/20 rounded-sm relative overflow-hidden">

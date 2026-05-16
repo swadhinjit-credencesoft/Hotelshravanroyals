@@ -1,11 +1,14 @@
 export interface Room {
   id: string
+  slug: string
   name: string
   tagline: string
+  description: string
   size: number
   guests: number
   price: number
   category: string
+  view: string
   image: string
   imageAlt: string
   amenities: string[]
@@ -15,67 +18,50 @@ export interface Room {
 export const rooms: Room[] = [
   {
     id: 'r1',
-    name: 'Deluxe Cottage',
-    tagline: 'Cozy retreat with garden views',
-    size: 45,
+    slug: 'red-brick-cottage',
+    name: 'Red Brick Cottage',
+    tagline: 'Rustic charm meets modern comfort',
+    description: 'Experience the soul of Karjat in our signature Red Brick Cottages. These sanctuaries offer a unique blend of earthy aesthetics and premium amenities, featuring exposed brick walls, high ceilings, and a private sit-out to enjoy the cool monsoon breeze.',
+    size: 55,
     guests: 2,
-    price: 4500,
-    category: 'deluxe',
-    image: 'https://images.unsplash.com/photo-1631049307264-da0ec9d70304?w=1920&q=95',
-    imageAlt: 'Cozy deluxe cottage',
-    amenities: ['AC', 'Geyser', 'Parking', 'Room Service', 'TV'],
+    price: 6500,
+    category: 'Cottage',
+    view: 'Garden View',
+    image: 'https://images.unsplash.com/photo-1587061949409-02df41d5e562?w=1920&q=95',
+    imageAlt: 'Rustic Red Brick Cottage at Unwind Karjat resort',
+    amenities: ['AC', 'Geyser', 'Parking', 'Room Service', 'TV', 'Private Sit-out', 'King Bed'],
     featured: true,
   },
   {
     id: 'r2',
-    name: 'Premium Nature Villa',
-    tagline: 'Spacious luxury surrounded by hills',
-    size: 65,
-    guests: 4,
-    price: 8500,
-    category: 'villa',
-    image: 'https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=1920&q=95',
-    imageAlt: 'Premium nature villa with scenic views',
-    amenities: ['AC', 'Geyser', 'Parking', 'Room Service', 'TV', 'Private Balcony'],
+    slug: 'lawn-facing-room',
+    name: 'Lawn Facing Room',
+    tagline: 'Wake up to lush green vistas',
+    description: 'Our Lawn Facing Rooms are designed for those who love open spaces. Step directly from your room onto our manicured emerald lawns. Perfect for morning yoga or evening tea, these rooms offer a sense of boundless freedom and serenity.',
+    size: 45,
+    guests: 3,
+    price: 5500,
+    category: 'Premium',
+    view: 'Lawn View',
+    image: 'https://images.unsplash.com/photo-1611892440504-42a792e24d32?w=1920&q=95',
+    imageAlt: 'Lawn Facing Room with large glass windows at Unwind Karjat',
+    amenities: ['AC', 'Geyser', 'Parking', 'Room Service', 'TV', 'Balcony', 'King Bed', 'Wifi'],
     featured: true,
   },
   {
     id: 'r3',
-    name: 'Family Suite',
-    tagline: 'Perfect for group getaways',
-    size: 85,
-    guests: 6,
-    price: 12000,
-    category: 'suite',
-    image: 'https://images.unsplash.com/photo-1618773928121-c32242e63f39?w=1920&q=95',
-    imageAlt: 'Spacious family suite',
-    amenities: ['AC', 'Geyser', 'Parking', 'Room Service', 'TV', 'Mini Fridge'],
+    slug: 'forest-facing-room',
+    name: 'Forest Facing Room',
+    tagline: 'Immerse yourself in deep nature',
+    description: 'Nestled at the edge of the resort, these rooms offer an intimate connection with the Karjat forest. Listen to the symphony of birds and the rustle of leaves from your private balcony. A true sanctuary for nature lovers seeking peace and privacy.',
+    size: 50,
+    guests: 2,
+    price: 7500,
+    category: 'Luxury',
+    view: 'Forest View',
+    image: 'https://images.unsplash.com/photo-1449156001437-3a1621acda2e?w=1920&q=95',
+    imageAlt: 'Forest Facing Room with private balcony overlooking the Karjat woods',
+    amenities: ['AC', 'Geyser', 'Parking', 'Room Service', 'TV', 'Private Balcony', 'King Bed', 'Mini Fridge'],
     featured: true,
-  },
-  {
-    id: 'r4',
-    name: 'Luxury Tent',
-    tagline: 'Glamping under the stars',
-    size: 35,
-    guests: 2,
-    price: 6500,
-    category: 'tent',
-    image: 'https://images.unsplash.com/photo-1590490360182-c33d57733427?w=1920&q=95',
-    imageAlt: 'Luxury glamping tent',
-    amenities: ['AC', 'Geyser', 'Parking', 'Room Service', 'Outdoor Seating'],
-    featured: false,
-  },
-  {
-    id: 'r5',
-    name: 'Standard AC Room',
-    tagline: 'Comfortable stay on a budget',
-    size: 30,
-    guests: 2,
-    price: 3500,
-    category: 'standard',
-    image: 'https://images.unsplash.com/photo-1595526114035-0d45ed16cfbf?w=1920&q=95',
-    imageAlt: 'Standard AC room',
-    amenities: ['AC', 'Geyser', 'Parking', 'Room Service', 'TV'],
-    featured: false,
-  },
+  }
 ]

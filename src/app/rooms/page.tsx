@@ -11,7 +11,7 @@ export default function RoomsPage() {
       <CinematicHero 
         label="Our Accommodations"
         title="Sanctuaries of Stillness"
-        tagline="Boutique cottages, luxury tents, and private villas nestled in nature, offering a perfect blend of comfort and serenity."
+        tagline="From rustic Red Brick Cottages to serene Lawn and Forest facing rooms, discover your perfect nature retreat in Karjat."
         image="https://images.unsplash.com/photo-1631049307264-da0ec9d70304?w=2400&q=95"
       />
       <RoomsGrid />

@@ -6,7 +6,8 @@ export interface Experience {
   duration: string
   image: string
   imageAlt: string
-  season: string
+  season: 'Monsoon' | 'Winter' | 'Year-round'
+  priceInfo?: string
 }
 
 export const experiences: Experience[] = [
@@ -14,50 +15,71 @@ export const experiences: Experience[] = [
     id: 'e1',
     title: 'Infinity Swimming Pool',
     category: 'Leisure',
-    description: 'Relax in our pristine swimming pool surrounded by nature and hills.',
+    description: 'Relax in our pristine infinity pool overlooking the undulating hills of Karjat. A perfect spot for sunset dips.',
     duration: 'All day',
     image: 'https://images.unsplash.com/photo-1572331165267-854da2b10ccc?w=1920&q=95',
-    imageAlt: 'Resort swimming pool',
+    imageAlt: 'Infinity swimming pool overlooking Karjat hills',
     season: 'Year-round',
   },
   {
     id: 'e2',
     title: 'Live BBQ Night',
     category: 'Dining',
-    description: 'Enjoy freshly grilled delicacies under the starlit Karjat sky.',
-    duration: 'Evening',
+    description: 'A curated culinary experience featuring local spices and fresh produce, grilled to perfection under the stars.',
+    duration: '7 PM - 10 PM',
     image: 'https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=1920&q=95',
-    imageAlt: 'Live barbecue dinner',
+    imageAlt: 'Gourmet live barbecue dinner setup',
     season: 'Winter',
+    priceInfo: 'Starting ₹1,200/pp'
   },
   {
     id: 'e3',
-    title: 'Bonfire & Music',
+    title: 'Bonfire & Acoustic Music',
     category: 'Evening',
-    description: 'Gather around a crackling bonfire with loved ones, acoustic music, and warmth.',
-    duration: '2 hours',
+    description: 'Gather around our dedicated campfire zones for an evening of warmth, stories, and soft acoustic melodies.',
+    duration: '8 PM Onwards',
     image: 'https://images.unsplash.com/photo-1517594422361-5e18d0333396?w=1920&q=95',
-    imageAlt: 'Cozy bonfire setup in nature',
+    imageAlt: 'Cozy bonfire gathering area at Unwind Karjat',
     season: 'Winter',
   },
   {
     id: 'e4',
-    title: 'Bhivpuri Waterfall Trek',
+    title: 'Monsoon Forest Trek',
     category: 'Adventure',
-    description: 'Guided morning trek to the nearby cascading waterfalls and lush green trails.',
+    description: 'Guided treks through private trails that come alive during the rains. Discover hidden streams and lush flora.',
     duration: '3 hours',
     image: 'https://images.unsplash.com/photo-1448375240586-882707db888b?w=1920&q=95',
-    imageAlt: 'Forest trekking trail',
+    imageAlt: 'Lush green forest trekking trails in Karjat',
     season: 'Monsoon',
   },
   {
     id: 'e5',
     title: 'Morning Birdwatching',
     category: 'Nature',
-    description: 'Spot exotic local bird species in the quiet early hours of the resort grounds.',
-    duration: 'Early morning',
+    description: 'Join our naturalist to spot exotic local species. Karjat is a haven for migratory birds during the season.',
+    duration: '6 AM - 8 AM',
     image: 'https://images.unsplash.com/photo-1552728089-571ebdcdbe15?w=1920&q=95',
-    imageAlt: 'Birdwatching in forest',
+    imageAlt: 'Birdwatching and nature photography in Karjat',
+    season: 'Year-round',
+  },
+  {
+    id: 'e6',
+    title: 'Bhivpuri Falls',
+    category: 'Attraction',
+    description: 'A stunning waterfall located just a short drive away. Majestic during the monsoons and a popular spot for trekkers.',
+    duration: 'Half Day',
+    image: 'https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?w=1920&q=95',
+    imageAlt: 'Majestic Bhivpuri Falls during monsoon',
+    season: 'Monsoon',
+  },
+  {
+    id: 'e7',
+    title: 'Kondana Caves',
+    category: 'Attraction',
+    description: 'Ancient Buddhist caves dating back to the 1st century BC. A must-visit for history enthusiasts and nature lovers.',
+    duration: 'Full Day',
+    image: 'https://images.unsplash.com/photo-1566833912753-4318357f1896?w=1920&q=95',
+    imageAlt: 'Ancient Kondana Caves architecture',
     season: 'Year-round',
   },
 ]

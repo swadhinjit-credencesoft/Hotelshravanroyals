@@ -138,6 +138,16 @@ export default function DiningSection() {
         {venues.map((venue, i) => (
           <VenueRow key={venue.id} venue={venue} index={i} />
         ))}
+
+        <div className="mt-24 text-center">
+           <a 
+            href="/dining" 
+            className="inline-flex items-center gap-3 bg-forest text-ivory font-sans text-[11px] uppercase tracking-[0.2em] px-12 py-5 hover:bg-forest/90 transition-all rounded-sm group"
+           >
+              Explore Full Dining Experience
+              <ArrowRight size={14} className="transition-transform group-hover:translate-x-1" />
+           </a>
+        </div>
       </div>
     </section>
   )

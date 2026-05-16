@@ -2,6 +2,7 @@
 
 import { useRef, useState } from 'react'
 import Image from 'next/image'
+import Link from 'next/link'
 import { motion, useInView } from 'framer-motion'
 import { ArrowRight, ChevronLeft, ChevronRight, Users, Maximize } from 'lucide-react'
 import { rooms } from '@/data/rooms'
@@ -78,15 +79,15 @@ function RoomCard({ room, index }: { room: (typeof rooms)[0]; index: number }) {
 
           <div className="flex items-center justify-between">
             <span className="font-serif text-xl text-gold font-light">
-              From ${room.price.toLocaleString()}/night
+              From ₹{room.price.toLocaleString()}/night
             </span>
-            <a
-              href={`/rooms/${room.id}`}
+            <Link
+              href={`/rooms/${room.slug}`}
               className="flex items-center gap-1 font-sans text-[11px] uppercase tracking-[0.12em] text-ivory border border-ivory/30 px-4 py-2 rounded-sm hover:border-gold hover:text-gold transition-colors"
               aria-label={`View ${room.name} details`}
             >
-              View Suite <ArrowRight size={12} />
-            </a>
+              View Room <ArrowRight size={12} />
+            </Link>
           </div>
         </motion.div>
       </motion.div>
@@ -125,20 +126,20 @@ export default function RoomsCarousel() {
       {/* Header */}
       <div className="max-w-[1600px] mx-auto px-6 md:px-10 mb-12 flex flex-col md:flex-row md:items-end justify-between gap-6">
         <div className="max-w-xl">
-          <SectionLabel className="mb-4">Rooms &amp; Suites</SectionLabel>
+          <SectionLabel className="mb-4">Rooms &amp; Stays</SectionLabel>
           <h2 className="font-display text-4xl md:text-[52px] italic text-forest mb-4 leading-tight">
             Your Private World Awaits
           </h2>
           <p className="font-serif text-xl font-light text-taupe leading-relaxed">
-            Forty-seven sanctuaries, each one curated around solitude, beauty, and quiet intention.
+            Three unique sanctuaries, each one curated around solitude, beauty, and quiet intention.
           </p>
         </div>
-        <a
+        <Link
           href="/rooms"
           className="inline-flex items-center gap-2 font-sans text-[11px] uppercase tracking-[0.18em] text-forest border border-forest/30 px-7 py-3 rounded-sm hover:border-gold hover:text-gold transition-colors whitespace-nowrap self-start md:self-auto"
         >
-          View All Suites <ArrowRight size={13} />
-        </a>
+          View All Rooms <ArrowRight size={13} />
+        </Link>
       </div>
 
       {/* Carousel */}

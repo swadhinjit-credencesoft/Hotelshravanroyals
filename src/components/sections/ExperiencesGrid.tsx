@@ -98,18 +98,25 @@ function ExperienceCard({
         </div>
 
         <div className="absolute bottom-0 left-0 right-0 p-8">
-          <span className="font-sans text-[10px] uppercase tracking-[0.2em] text-gold mb-2 block">
-            {experience.category}
-          </span>
+          <div className="flex items-center justify-between mb-2">
+            <span className="font-sans text-[10px] uppercase tracking-[0.2em] text-gold">
+              {experience.category}
+            </span>
+            {experience.priceInfo && (
+              <span className="font-sans text-[9px] uppercase tracking-widest text-ivory/60 bg-white/5 px-2 py-0.5 border border-white/10">
+                {experience.priceInfo}
+              </span>
+            )}
+          </div>
           <h3 className="font-serif text-2xl md:text-3xl italic text-ivory mb-4 group-hover:text-gold transition-colors">
             {experience.title}
           </h3>
 
-          <div className="max-h-0 overflow-hidden group-hover:max-h-40 transition-all duration-500 ease-in-out">
+          <div className="max-h-0 overflow-hidden group-hover:max-h-60 transition-all duration-700 ease-in-out opacity-0 group-hover:opacity-100">
             <p className="font-sans text-sm text-ivory/70 mb-6 leading-relaxed">
               {experience.description}
             </p>
-            <a href="/reservations" className="flex items-center gap-2 font-sans text-[10px] uppercase tracking-widest text-gold hover:text-ivory transition-colors">
+            <a href="/reservations" className="inline-flex items-center gap-2 font-sans text-[10px] uppercase tracking-[0.2em] text-[#1a1004] bg-gold px-6 py-3 hover:bg-gold-light transition-all rounded-sm">
               Add to Stay <ArrowRight size={12} />
             </a>
           </div>

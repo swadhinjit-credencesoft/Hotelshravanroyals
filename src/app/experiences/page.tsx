@@ -42,6 +42,39 @@ export default function ExperiencesPage() {
          </div>
       </section>
 
+      {/* SEO Schema */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "ItemList",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "item": {
+                  "@type": "TouristAttraction",
+                  "name": "Bhivpuri Waterfalls",
+                  "description": "Spectacular monsoon waterfalls near Karjat.",
+                  "location": { "@type": "Place", "name": "Karjat, Maharashtra" }
+                }
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "item": {
+                  "@type": "TouristAttraction",
+                  "name": "Kondana Caves",
+                  "description": "Ancient Buddhist rock-cut caves.",
+                  "location": { "@type": "Place", "name": "Kondana, Karjat" }
+                }
+              }
+            ]
+          })
+        }}
+      />
+
       <ExperiencesGrid />
 
       {/* Nearby Attractions */}
@@ -51,31 +84,43 @@ export default function ExperiencesPage() {
             <h2 className="font-display text-4xl md:text-6xl italic text-forest mb-16">Nearby Attractions</h2>
             
             <div className="grid grid-cols-1 md:grid-cols-3 gap-12 text-left">
-               <div className="bg-white p-8 border border-gold/10 hover:shadow-warm-lg transition-shadow duration-300">
-                  <div className="w-12 h-12 bg-gold/10 rounded-full flex items-center justify-center mb-6">
+               <div className="bg-white p-10 border border-gold/10 hover:border-gold/30 hover:shadow-warm-lg transition-all duration-500 rounded-sm group">
+                  <div className="w-14 h-14 bg-gold/5 rounded-full flex items-center justify-center mb-8 group-hover:bg-gold/10 transition-colors">
                      <MapPin className="text-gold" size={24} />
                   </div>
-                  <h3 className="font-display text-2xl italic text-forest mb-3">Bhivpuri Waterfalls</h3>
-                  <p className="font-serif text-taupe leading-relaxed mb-4">A spectacular sight during the monsoons, perfect for a short morning trek.</p>
-                  <p className="font-sans text-[10px] uppercase tracking-widest text-gold">Distance: 15 mins</p>
+                  <h3 className="font-display text-3xl italic text-forest mb-4">Bhivpuri Waterfalls</h3>
+                  <p className="font-serif text-taupe leading-relaxed mb-6 text-lg">A spectacular sight during the monsoons, perfect for a short morning trek and natural showers.</p>
+                  <div className="flex items-center gap-2 pt-6 border-t border-gold/10">
+                    <span className="font-sans text-[10px] uppercase tracking-widest text-gold font-bold">15 mins drive</span>
+                    <span className="w-1 h-1 rounded-full bg-gold/30" />
+                    <span className="font-sans text-[10px] uppercase tracking-widest text-taupe/60">Trekking & Sightseeing</span>
+                  </div>
                </div>
 
-               <div className="bg-white p-8 border border-gold/10 hover:shadow-warm-lg transition-shadow duration-300">
-                  <div className="w-12 h-12 bg-gold/10 rounded-full flex items-center justify-center mb-6">
+               <div className="bg-white p-10 border border-gold/10 hover:border-gold/30 hover:shadow-warm-lg transition-all duration-500 rounded-sm group">
+                  <div className="w-14 h-14 bg-gold/5 rounded-full flex items-center justify-center mb-8 group-hover:bg-gold/10 transition-colors">
                      <MapPin className="text-gold" size={24} />
                   </div>
-                  <h3 className="font-display text-2xl italic text-forest mb-3">Kondana Caves</h3>
-                  <p className="font-serif text-taupe leading-relaxed mb-4">Ancient Buddhist caves nestled in the lush forests. Ideal for history and nature buffs.</p>
-                  <p className="font-sans text-[10px] uppercase tracking-widest text-gold">Distance: 30 mins</p>
+                  <h3 className="font-display text-3xl italic text-forest mb-4">Kondana Caves</h3>
+                  <p className="font-serif text-taupe leading-relaxed mb-6 text-lg">Ancient Buddhist caves nestled in lush forests. A historical sanctuary for meditation and nature buffs.</p>
+                  <div className="flex items-center gap-2 pt-6 border-t border-gold/10">
+                    <span className="font-sans text-[10px] uppercase tracking-widest text-gold font-bold">30 mins drive</span>
+                    <span className="w-1 h-1 rounded-full bg-gold/30" />
+                    <span className="font-sans text-[10px] uppercase tracking-widest text-taupe/60">History & Caves</span>
+                  </div>
                </div>
 
-               <div className="bg-white p-8 border border-gold/10 hover:shadow-warm-lg transition-shadow duration-300">
-                  <div className="w-12 h-12 bg-gold/10 rounded-full flex items-center justify-center mb-6">
+               <div className="bg-white p-10 border border-gold/10 hover:border-gold/30 hover:shadow-warm-lg transition-all duration-500 rounded-sm group">
+                  <div className="w-14 h-14 bg-gold/5 rounded-full flex items-center justify-center mb-8 group-hover:bg-gold/10 transition-colors">
                      <MapPin className="text-gold" size={24} />
                   </div>
-                  <h3 className="font-display text-2xl italic text-forest mb-3">Karjat Railway Route</h3>
-                  <p className="font-serif text-taupe leading-relaxed mb-4">A scenic drive or train ride through the valleys, especially beautiful at dawn.</p>
-                  <p className="font-sans text-[10px] uppercase tracking-widest text-gold">Distance: 10 mins</p>
+                  <h3 className="font-display text-3xl italic text-forest mb-4">Peth Fort</h3>
+                  <p className="font-serif text-taupe leading-relaxed mb-6 text-lg">Also known as Kothaligad, it offers breathtaking 360-degree views of the Western Ghats and Sahyadri range.</p>
+                  <div className="flex items-center gap-2 pt-6 border-t border-gold/10">
+                    <span className="font-sans text-[10px] uppercase tracking-widest text-gold font-bold">45 mins drive</span>
+                    <span className="w-1 h-1 rounded-full bg-gold/30" />
+                    <span className="font-sans text-[10px] uppercase tracking-widest text-taupe/60">Advanced Trekking</span>
+                  </div>
                </div>
             </div>
          </div>
