@@ -53,7 +53,7 @@ function StatItem({ stat, index, active }: { stat: { value: string; label: strin
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.7, delay: 2.0 + index * 0.1, ease: [0.16, 1, 0.3, 1] }}
     >
-      <span className="font-serif text-3xl md:text-[38px] text-gold font-light leading-none">
+      <span className="font-serif text-4xl md:text-[46px] text-gold font-light leading-none">
         {displayValue}
       </span>
       <span className="font-sans text-[10px] uppercase tracking-[0.14em] text-ivory/60 mt-1">
@@ -198,31 +198,16 @@ export default function HeroSection() {
 
       {/* z-10: Main content */}
       <motion.div
-        className="absolute inset-0 flex flex-col justify-center pb-24 md:pb-32 pt-28 md:pt-32"
+        className="absolute inset-0 flex flex-col justify-center pb-24 md:pb-32 pt-32 md:pt-40"
         style={{ zIndex: 10, y: reduced ? 0 : contentY, opacity: contentOpacity }}
       >
         <motion.div
           className="px-6 md:px-[6vw] max-w-[700px]"
           style={{ x: reduced ? 0 : springX, y: reduced ? 0 : springY }}
         >
-          {/* Award pill (Commented out as per request) */}
-          {/*
-          <motion.div
-            className="inline-flex items-center gap-2 mb-4 px-3 py-1.5 border border-gold/20 backdrop-blur-sm rounded-sm"
-            initial={{ opacity: 0, x: -30 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.7, delay: 0.4 }}
-          >
-            <span className="w-1 h-1 rounded-full bg-gold" />
-            <span className="font-sans text-[10px] uppercase tracking-[0.2em] text-gold/90">
-              {awards[0]}
-            </span>
-          </motion.div>
-          */}
-
           {/* Tagline */}
           <motion.div
-            className="flex items-center gap-3 mb-3"
+            className="flex items-center gap-3 mb-4"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.7, delay: 0.6 }}
@@ -233,15 +218,15 @@ export default function HeroSection() {
               animate={{ width: 40 }}
               transition={{ duration: 0.5, delay: 0.8 }}
             />
-            <span className="font-sans text-[10px] md:text-[11px] uppercase tracking-[0.28em] text-gold">
+            <span className="font-sans text-[11px] uppercase tracking-[0.28em] text-gold">
               {slide.tagline}
             </span>
           </motion.div>
 
           {/* Headline — word-by-word */}
           <h1
-            className="font-display font-normal italic text-ivory mb-3 leading-[1.08]"
-            style={{ fontSize: 'clamp(30px, 4.5vw, 56px)' }}
+            className="font-display font-normal italic text-ivory mb-5 leading-[1.08]"
+            style={{ fontSize: 'clamp(44px, 7vw, 80px)' }}
           >
             <AnimatePresence mode="wait">
               <motion.span key={slide.id} className="inline">
@@ -268,18 +253,18 @@ export default function HeroSection() {
 
           {/* Gold rule */}
           <motion.div
-            className="h-px bg-gold mb-4"
+            className="h-px bg-gold mb-5"
             initial={{ scaleX: 0, originX: 0 }}
             animate={{ scaleX: 1 }}
             transition={{ duration: 0.8, delay: 1.3 }}
-            style={{ width: 60 }}
+            style={{ width: 80 }}
           />
 
           {/* Subheadline */}
           <AnimatePresence mode="wait">
             <motion.p
               key={`sub-${slide.id}`}
-              className="font-serif text-base md:text-[18px] font-light text-ivory/80 max-w-[450px] mb-6 leading-relaxed"
+              className="font-serif text-xl md:text-[22px] font-light text-ivory/80 max-w-[550px] mb-8 leading-relaxed"
               initial={{ opacity: 0, y: 25 }}
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0 }}
@@ -290,10 +275,10 @@ export default function HeroSection() {
           </AnimatePresence>
 
           {/* CTA row */}
-          <div className="flex flex-wrap gap-4">
+          <div className="flex flex-wrap gap-5">
             <motion.a
               href={slide.primaryHref}
-              className="group inline-flex items-center gap-2 bg-gold text-[#1a1004] font-sans text-[11px] uppercase tracking-[0.16em] px-8 py-3 rounded-sm hover:bg-gold-light transition-all duration-300"
+              className="group inline-flex items-center gap-2 bg-gold text-[#1a1004] font-sans text-[12px] uppercase tracking-[0.16em] px-10 py-4 rounded-sm hover:bg-gold-light transition-all duration-300"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 1.7 }}
@@ -307,7 +292,7 @@ export default function HeroSection() {
             </motion.a>
             <motion.a
               href={slide.secondaryHref}
-              className="inline-flex items-center gap-2 border border-gold/50 text-ivory font-sans text-[11px] uppercase tracking-[0.16em] px-8 py-3 rounded-sm hover:bg-gold/10 hover:border-gold transition-all duration-300"
+              className="inline-flex items-center gap-2 border border-gold/50 text-ivory font-sans text-[12px] uppercase tracking-[0.16em] px-10 py-4 rounded-sm hover:bg-gold/10 hover:border-gold transition-all duration-300"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 1.85 }}
@@ -319,7 +304,7 @@ export default function HeroSection() {
 
         {/* Stats row */}
         <motion.div
-          className="mt-6 md:mt-8 px-6 md:px-[6vw]"
+          className="mt-10 md:mt-12 px-6 md:px-[6vw]"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 2.0 }}
@@ -361,7 +346,7 @@ export default function HeroSection() {
               <div className="ml-auto pl-6">
                 <a
                   href="/reservations"
-                  className="bg-gold text-[#1a1004] font-sans text-[11px] uppercase tracking-[0.15em] px-8 py-3 rounded-sm hover:bg-gold-light transition-colors whitespace-nowrap inline-block"
+                  className="bg-gold text-[#1a1004] font-sans text-[12px] uppercase tracking-[0.15em] px-10 py-3.5 rounded-sm hover:bg-gold-light transition-colors whitespace-nowrap inline-block"
                 >
                   Check Availability
                 </a>
@@ -374,7 +359,7 @@ export default function HeroSection() {
         <div className="md:hidden flex justify-center pb-6">
           <a
             href="/reservations"
-            className="bg-gold text-[#1a1004] font-sans text-[11px] uppercase tracking-[0.16em] px-10 py-4 rounded-full shadow-warm-lg"
+            className="bg-gold text-[#1a1004] font-sans text-[12px] uppercase tracking-[0.16em] px-10 py-4 rounded-full shadow-warm-lg"
           >
             Book Now
           </a>
@@ -394,7 +379,7 @@ export default function HeroSection() {
             aria-label={`Go to slide ${i + 1}: ${s.tagline}`}
           >
             <motion.span
-              className="font-sans text-[10px] uppercase tracking-[0.14em] text-ivory/40 group-hover:text-ivory/70 transition-colors hidden md:block"
+              className="font-sans text-[11px] uppercase tracking-[0.14em] text-ivory/40 group-hover:text-ivory/70 transition-colors hidden md:block"
               animate={{ opacity: currentSlide === i ? 1 : 0 }}
             >
               {s.tagline}
@@ -462,7 +447,7 @@ function BookingField({ label, placeholder, type = 'text' }: { label: string; pl
       className="flex-1 min-w-[140px] px-4 py-1 cursor-pointer group"
       onClick={handleContainerClick}
     >
-      <label className="font-sans text-[9px] uppercase tracking-[0.18em] text-gold/70 block mb-1 pointer-events-none">
+      <label className="font-sans text-[11px] uppercase tracking-[0.18em] text-gold/70 block mb-1 pointer-events-none">
         {label}
       </label>
       <div className="relative flex items-center">
@@ -470,7 +455,7 @@ function BookingField({ label, placeholder, type = 'text' }: { label: string; pl
           ref={inputRef}
           type={isMounted && type === 'date' ? 'date' : 'text'}
           placeholder={placeholder}
-          className={`booking-input w-full bg-transparent border-b border-gold/40 text-ivory placeholder-gold/50 font-sans text-[12px] pb-1 focus:outline-none focus:border-gold transition-colors ${type === 'date' ? 'pr-6' : ''}`}
+          className={`booking-input w-full bg-transparent border-b border-gold/40 text-ivory placeholder-gold/50 font-sans text-[14px] pb-1 focus:outline-none focus:border-gold transition-colors ${type === 'date' ? 'pr-6' : ''}`}
           aria-label={label}
         />
         {type === 'date' && (
