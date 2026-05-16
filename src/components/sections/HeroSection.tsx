@@ -12,60 +12,11 @@ import {
   useReducedMotion,
 } from 'framer-motion'
 import { ArrowRight, Calendar } from 'lucide-react'
-import { heroSlides, heroStats } from '@/data/hero'
-import { awards } from '@/data/awards'
+import { heroSlides } from '@/data/hero'
 import ParticleCanvas from '@/components/ui/ParticleCanvas'
-import ScrollIndicator from '@/components/ui/ScrollIndicator'
-
-// Count-up hook
-function useCountUp(target: string, active: boolean) {
-  const [value, setValue] = useState('0')
-  const isNumeric = !isNaN(parseInt(target))
-  const numTarget = parseInt(target)
-
-  useEffect(() => {
-    if (!active || !isNumeric) {
-      setValue(target)
-      return
-    }
-    let start = 0
-    const duration = 1800
-    const step = (timestamp: number) => {
-      if (!start) start = timestamp
-      const progress = Math.min((timestamp - start) / duration, 1)
-      const eased = 1 - Math.pow(1 - progress, 3)
-      setValue(String(Math.floor(eased * numTarget)))
-      if (progress < 1) requestAnimationFrame(step)
-      else setValue(target)
-    }
-    requestAnimationFrame(step)
-  }, [active, target, isNumeric, numTarget])
-
-  return value
-}
-
-function StatItem({ stat, index, active }: { stat: { value: string; label: string }; index: number; active: boolean }) {
-  const displayValue = useCountUp(stat.value, active)
-  return (
-    <motion.div
-      className="flex flex-col"
-      initial={{ opacity: 0, y: 20 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.7, delay: 2.0 + index * 0.1, ease: [0.16, 1, 0.3, 1] }}
-    >
-      <span className="font-serif text-4xl md:text-[46px] text-gold font-light leading-none">
-        {displayValue}
-      </span>
-      <span className="font-sans text-[10px] uppercase tracking-[0.14em] text-ivory/60 mt-1">
-        {stat.label}
-      </span>
-    </motion.div>
-  )
-}
 
 export default function HeroSection() {
   const [currentSlide, setCurrentSlide] = useState(0)
-  const [statsActive, setStatsActive] = useState(false)
   const heroRef = useRef<HTMLElement>(null)
   const reduced = useReducedMotion()
   const SLIDE_DURATION = 8000
@@ -102,11 +53,6 @@ export default function HeroSection() {
     return () => clearInterval(timer)
   }, [reduced])
 
-  // Activate stats count-up
-  useEffect(() => {
-    const t = setTimeout(() => setStatsActive(true), 2000)
-    return () => clearTimeout(t)
-  }, [])
 
   const slide = heroSlides[currentSlide]
   const words = slide.headline.split(' ')
@@ -309,16 +255,6 @@ export default function HeroSection() {
           animate={{ opacity: 1 }}
           transition={{ delay: 2.0 }}
         >
-          {/* <div className="flex flex-wrap gap-8 md:gap-0">
-            {heroStats.map((stat, i) => (
-              <div key={stat.label} className="flex items-center">
-                <StatItem stat={stat} index={i} active={statsActive} />
-                {i < heroStats.length - 1 && (
-                  <div className="hidden md:block w-px h-10 bg-gold/30 mx-8" />
-                )}
-              </div>
-            ))}
-          </div> */}
         </motion.div>
       </motion.div>
 

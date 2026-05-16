@@ -142,7 +142,7 @@ export default function EventsPage() {
             <div className="border border-ivory/10 p-8 hover:bg-ivory/5 transition-colors group">
               <Utensils className="text-gold mb-6 group-hover:scale-110 transition-transform" size={32} />
               <h3 className="font-display text-2xl italic mb-4">Multi-Cuisine Feasts</h3>
-              <p className="font-serif text-ivory/70 leading-relaxed text-sm">From authentic Maharashtrian thalis to lavish Continental spreads, our culinary team designs menus tailored precisely to your guests' palates.</p>
+              <p className="font-serif text-ivory/70 leading-relaxed text-sm">From authentic Maharashtrian thalis to lavish Continental spreads, our culinary team designs menus tailored precisely to your guests&apos; palates.</p>
             </div>
             <div className="border border-ivory/10 p-8 hover:bg-ivory/5 transition-colors group">
               <GlassWater className="text-gold mb-6 group-hover:scale-110 transition-transform" size={32} />
@@ -162,7 +162,7 @@ export default function EventsPage() {
       <section className="py-24 bg-cream border-t border-gold/10" id="enquiry">
         <div className="max-w-3xl mx-auto px-6">
           <div className="text-center mb-12">
-            <SectionLabel className="justify-center mb-6">Let's Connect</SectionLabel>
+            <SectionLabel className="justify-center mb-6">Let&apos;s Connect</SectionLabel>
             <h2 className="font-display text-5xl italic text-forest mb-4">Request a Proposal</h2>
             <p className="font-serif text-taupe text-lg italic">Let our event concierges craft the perfect package for you.</p>
           </div>

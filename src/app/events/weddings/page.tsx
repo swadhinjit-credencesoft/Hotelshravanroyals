@@ -42,7 +42,7 @@ export default function WeddingsPage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center mb-32">
             <div>
               <SectionLabel className="mb-6">The Venue</SectionLabel>
-              <h2 className="font-display text-4xl md:text-6xl italic text-forest mb-8">Karjat's Premier Wedding Destination</h2>
+              <h2 className="font-display text-4xl md:text-6xl italic text-forest mb-8">Karjat&apos;s Premier Wedding Destination</h2>
               <p className="font-serif text-lg text-taupe leading-relaxed mb-10">
                 At Unwind Karjat, we transform your dream wedding into a reality. Our expansive lawns can host up to 250 guests, offering a seamless blend of rustic charm and premium luxury.
               </p>

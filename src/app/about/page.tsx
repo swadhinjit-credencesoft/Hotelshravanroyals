@@ -63,11 +63,11 @@ export default function AboutPage() {
               </h2>
               <GoldDivider className="mb-10" />
               <p className="font-serif text-xl text-taupe italic mb-8 leading-relaxed">
-                &ldquo;We didn't just want to build a resort. We wanted to build a sanctuary that frames the Sahyadris and respects the earth.&rdquo;
+                &ldquo;We didn&apos;t just want to build a resort. We wanted to build a sanctuary that frames the Sahyadris and respects the earth.&rdquo;
               </p>
               <div className="space-y-6 font-sans text-base text-taupe/80 leading-loose">
                 <p>
-                  Unwind Karjat was conceived in 2019 by a family of nature enthusiasts who wanted to create a pristine escape just a short drive from Mumbai and Pune. What started as a small passion project quickly blossomed into Karjat's premier boutique retreat.
+                  Unwind Karjat was conceived in 2019 by a family of nature enthusiasts who wanted to create a pristine escape just a short drive from Mumbai and Pune. What started as a small passion project quickly blossomed into Karjat&apos;s premier boutique retreat.
                 </p>
                 <p>
                   Our design language is one of restraint and sustainability. We use local red bricks, reclaimed timber, and the natural movement of light to create spaces like our <Link href="/rooms/red-brick-cottage" className="text-gold hover:underline">Red Brick Cottages</Link> that breathe with the landscape.

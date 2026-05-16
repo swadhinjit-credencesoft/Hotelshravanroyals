@@ -82,7 +82,7 @@ export default function RoomsGrid() {
           className={`grid gap-12 ${comparisonMode ? 'grid-cols-2 lg:grid-cols-4 gap-4' : 'grid-cols-1 md:grid-cols-2 lg:grid-cols-3'}`}
         >
           <AnimatePresence mode="popLayout">
-            {filteredRooms.map((room, i) => (
+            {filteredRooms.map((room) => (
               <motion.div
                 layout
                 key={room.slug}
@@ -99,12 +99,24 @@ export default function RoomsGrid() {
                     fill
                     className="object-cover group-hover:scale-105 transition-transform duration-1000"
                   />
-                  <div className="absolute top-4 left-4 z-10 bg-cream/90 px-3 py-1 rounded-sm">
-                    <span className="font-sans text-[10px] uppercase tracking-[0.14em] text-gold">{room.category}</span>
+                  <div className="absolute top-4 left-4 z-10 flex flex-col gap-2">
+                    <div className="bg-cream/90 px-3 py-1 rounded-sm shadow-sm border border-gold/10">
+                      <span className="font-sans text-[10px] uppercase tracking-[0.14em] text-gold">{room.category}</span>
+                    </div>
+                    <div className="bg-forest/90 px-3 py-1 rounded-sm shadow-sm border border-ivory/10">
+                      <span className="font-sans text-[9px] uppercase tracking-[0.14em] text-ivory">Only 2 rooms left!</span>
+                    </div>
                   </div>
                 </div>
 
                 <div className="flex-1 flex flex-col">
+                  {/* Trust Badges */}
+                  <div className="flex gap-4 mb-4 opacity-60">
+                     <span className="font-sans text-[8px] uppercase tracking-widest text-gold flex items-center gap-1">Parking</span>
+                     <span className="font-sans text-[8px] uppercase tracking-widest text-gold flex items-center gap-1">Water</span>
+                     <span className="font-sans text-[8px] uppercase tracking-widest text-gold flex items-center gap-1">Housekeeping</span>
+                  </div>
+
                   <h3 className={`font-display italic text-forest mb-2 ${comparisonMode ? 'text-2xl' : 'text-3xl'}`}>{room.name}</h3>
                   {!comparisonMode && (
                     <p className="font-serif text-base text-taupe/70 italic mb-6 leading-relaxed">

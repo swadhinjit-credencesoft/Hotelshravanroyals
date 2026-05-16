@@ -6,7 +6,6 @@ import SectionLabel from '@/components/ui/SectionLabel';
 import GoldDivider from '@/components/ui/GoldDivider';
 import { siteConfig } from '@/data/site';
 import { MapPin, Phone, Mail, Clock, Train, Car, MessageCircle } from 'lucide-react';
-import { motion } from 'framer-motion';
 
 export default function ContactPage() {
   return (

@@ -44,7 +44,7 @@ export default function PartiesPage() {
               <SectionLabel className="mb-6">The Deck</SectionLabel>
               <h2 className="font-display text-4xl md:text-6xl italic text-forest mb-8">Host the Ultimate Celebration</h2>
               <p className="font-serif text-lg text-taupe leading-relaxed mb-10">
-                Whether it's a milestone birthday or a long-awaited reunion, our celebration deck and poolside area offer the perfect vibe for every party.
+                Whether it&apos;s a milestone birthday or a long-awaited reunion, our celebration deck and poolside area offer the perfect vibe for every party.
               </p>
               
               <div className="grid grid-cols-2 gap-8 mb-10">

@@ -5,10 +5,10 @@ import SectionLabel from '@/components/ui/SectionLabel';
 import GoldDivider from '@/components/ui/GoldDivider';
 
 const serviceDetails = [
-  { title: 'The Pillow Menu', description: 'Seven options of varying density, from Hungarian goose down to organic buckwheat.' },
-  { title: 'Private Butler', description: 'Available at the touch of a button for unpacking, garment care, and itinerary planning.' },
-  { title: 'Estate Botanist', description: 'Discover the native flora with our resident expert on a private morning walk.' },
-  { title: 'The Vault', description: 'A temperature-controlled sanctuary for your personal vintages and rare finds.' },
+  { title: 'The Pillow Menu', description: 'Choose from five organic options, from Sahyadri buckwheat to hypoallergenic goose down.' },
+  { title: 'Forest Guide', description: 'Discover the native flora and birdlife with our resident expert on a private morning trail.' },
+  { title: 'Fireside Lounge', description: 'Gather around the communal bonfire for acoustic music and locally-inspired appetizers.' },
+  { title: 'Custom Dining', description: 'Specialty Fish and Mutton preparations available on request, curated by our head chef.' },
 ];
 
 export default function ArtOfStaySection() {

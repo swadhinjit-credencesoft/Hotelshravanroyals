@@ -3,6 +3,7 @@
 import { useState, useEffect } from 'react'
 import { motion, AnimatePresence, useScroll } from 'framer-motion'
 import Link from 'next/link'
+import { usePathname } from 'next/navigation'
 import { Menu, X } from 'lucide-react'
 import { siteConfig } from '@/data/site'
 import MagneticButton from '@/components/ui/MagneticButton'
@@ -22,6 +23,8 @@ export default function Navbar() {
   const [scrolled, setScrolled] = useState(false)
   const [mobileOpen, setMobileOpen] = useState(false)
   const { scrollY } = useScroll()
+  const pathname = usePathname()
+  const isHome = pathname === '/'
 
   useEffect(() => {
     const unsub = scrollY.on('change', (v) => setScrolled(v > 60))
@@ -39,7 +42,7 @@ export default function Navbar() {
       <motion.header
         role="banner"
         className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
-          scrolled
+          scrolled || !isHome
             ? 'bg-cream/95 backdrop-blur-md shadow-warm border-b border-gold/10'
             : 'bg-transparent'
         }`}
@@ -50,14 +53,14 @@ export default function Navbar() {
         <div className="max-w-[1600px] mx-auto px-6 md:px-10 h-20 flex items-center justify-between">
           {/* Logo */}
           <Link href="/" className="flex flex-col leading-none group focus-visible:ring-2 focus-visible:ring-gold rounded-sm">
-            <span className={`font-serif text-lg tracking-[0.18em] uppercase transition-colors duration-300 ${scrolled ? 'text-forest' : 'text-ivory'}`}>
+            <span className={`font-serif text-lg tracking-[0.18em] uppercase transition-colors duration-300 ${scrolled || !isHome ? 'text-forest' : 'text-ivory'}`}>
               Unwind
             </span>
-            <span className={`font-sans text-[9px] tracking-[0.28em] uppercase mt-0.5 transition-colors duration-300 ${scrolled ? 'text-gold' : 'text-gold-light'}`}>
+            <span className={`font-sans text-[9px] tracking-[0.28em] uppercase mt-0.5 transition-colors duration-300 ${scrolled || !isHome ? 'text-gold' : 'text-gold-light'}`}>
               Karjat
             </span>
           </Link>
-
+ 
           {/* Desktop Nav */}
           <nav className="hidden md:flex items-center gap-8" aria-label="Main navigation">
             {navLinks.map((link) => (
@@ -65,38 +68,29 @@ export default function Navbar() {
                 key={link.label}
                 href={link.href}
                 className={`font-sans text-[11px] uppercase tracking-[0.18em] transition-colors duration-300 hover:text-gold focus-visible:text-gold focus-visible:outline-none ${
-                  scrolled ? 'text-forest/70' : 'text-ivory/80'
+                  scrolled || !isHome ? 'text-forest/70' : 'text-ivory/80'
                 }`}
               >
                 {link.label}
               </Link>
             ))}
           </nav>
-
+ 
           {/* Desktop CTA */}
           <div className="flex items-center gap-4">
-            {/*
-            <a
-              href={`tel:${siteConfig.phone}`}
-              className={`font-sans text-[11px] tracking-[0.12em] transition-colors duration-300 ${scrolled ? 'text-taupe' : 'text-ivory/60'} hover:text-gold hidden sm:block`}
-              aria-label={`Call us at ${siteConfig.phone}`}
-            >
-              {siteConfig.phone}
-            </a>
-            */}
             <MagneticButton
               as="a"
               href="/reservations"
-              className="bg-gold text-[#1a1004] font-sans text-[11px] uppercase tracking-[0.16em] px-6 py-2.5 rounded-sm hover:bg-gold-light transition-colors duration-300"
+              className="bg-gold text-[#1a1004] font-sans text-[11px] uppercase tracking-[0.16em] px-6 py-2.5 rounded-sm hover:bg-gold-light transition-colors duration-300 shadow-md"
               aria-label="Book your stay now"
             >
               Book Now
             </MagneticButton>
           </div>
-
+ 
           {/* Mobile hamburger */}
           <button
-            className={`md:hidden p-2 transition-colors ${scrolled ? 'text-forest' : 'text-ivory'} hover:text-gold`}
+            className={`md:hidden p-2 transition-colors ${scrolled || !isHome ? 'text-forest' : 'text-ivory'} hover:text-gold`}
             onClick={() => setMobileOpen(true)}
             aria-label="Open navigation menu"
             id="mobile-menu-trigger"

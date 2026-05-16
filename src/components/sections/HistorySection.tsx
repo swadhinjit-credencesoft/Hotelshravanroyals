@@ -25,7 +25,7 @@ export default function HistorySection() {
             <div className="relative aspect-[4/5] w-full max-w-md mx-auto z-10 overflow-hidden border border-gold/10">
               <Image
                 src="https://images.unsplash.com/photo-1544161515-4ab6ce6db874?w=1200&q=95"
-                alt="The original Estate drawing room, 1924"
+                alt="Modern rustic interior at Unwind Karjat"
                 fill
                 className="object-cover grayscale hover:grayscale-0 transition-all duration-1000"
               />
@@ -37,7 +37,7 @@ export default function HistorySection() {
             >
                <Image
                 src="https://images.unsplash.com/photo-1559329007-40df8a9345d8?w=800&q=95"
-                alt="Vintage crystal at the Estate"
+                alt="Natural details at the retreat"
                 fill
                 className="object-cover"
               />
@@ -49,7 +49,7 @@ export default function HistorySection() {
             >
                <Image
                 src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=800&q=95"
-                alt="Archival estate blueprints"
+                alt="Architecture sketches of Unwind Karjat"
                 fill
                 className="object-cover"
               />
@@ -59,30 +59,30 @@ export default function HistorySection() {
           <div className="flex flex-col">
             <SectionLabel className="mb-6">Our Legacy</SectionLabel>
             <h2 className="font-display text-4xl md:text-[56px] italic text-forest mb-8 leading-tight">
-              A Century of <br /> Invisible Service
+              A Vision of <br /> Natural Stillness
             </h2>
             <GoldDivider className="mb-10" />
             
             <div className="space-y-6">
               <p className="font-serif text-xl text-taupe leading-relaxed italic">
-                &ldquo;We did not intend to build a hotel. We intended to preserve a feeling.&rdquo;
+                &ldquo;We didn&apos;t just build a resort; we framed the Sahyadris.&rdquo;
               </p>
               <p className="font-sans text-base text-taupe/80 leading-loose">
-                Established in 1924 as a private retreat in the heart of the Karjat, Unwind Karjat has evolved over a century into Karjat&apos;s most distinguished boutique sanctuary. While the world has changed, our philosophy has remained unyielding: true luxury is not heard; it is felt in the silence of the morning and the unhurried grace of the evening.
+                Conceived in 2019 as a sanctuary for those seeking a deeper connection with nature, Unwind Karjat was born from a passion for the rugged beauty of the Sahyadri mountain range. Our retreat is designed to be a quiet observer of the landscape, offering a space where the unhurried grace of the forest meets modern luxury.
               </p>
               <p className="font-sans text-base text-taupe/80 leading-loose">
-                Every stone in our courtyard, every bottle in our cellar, and every ritual in our spa carries the weight of a hundred years of quiet excellence.
+                Every red brick in our cottages and every trail in our forest has been thoughtfully curated to provide an immersive experience that celebrates the soul of Karjat.
               </p>
             </div>
 
             <div className="mt-12 grid grid-cols-2 gap-8 border-t border-gold/10 pt-12">
                <div>
-                  <span className="font-serif text-3xl text-gold">1924</span>
-                  <p className="font-sans text-[10px] uppercase tracking-widest text-taupe mt-2">Founded</p>
+                  <span className="font-serif text-3xl text-gold">2019</span>
+                  <p className="font-sans text-[10px] uppercase tracking-widest text-taupe mt-2">Conceived</p>
                </div>
                <div>
-                  <span className="font-serif text-3xl text-gold">3rd Gen</span>
-                  <p className="font-sans text-[10px] uppercase tracking-widest text-taupe mt-2">Family Owned</p>
+                  <span className="font-serif text-3xl text-gold">Karjat</span>
+                  <p className="font-sans text-[10px] uppercase tracking-widest text-taupe mt-2">Heart of Sahyadris</p>
                </div>
             </div>
           </div>

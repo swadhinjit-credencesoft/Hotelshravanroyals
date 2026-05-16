@@ -8,6 +8,24 @@ export default function GalleryPage() {
   return (
     <main className="bg-cream min-h-screen">
       <Navbar />
+      
+      {/* SEO Schema */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "ImageGallery",
+            "name": "Unwind Karjat Photo Collection",
+            "description": "High-resolution photos of our Red Brick Cottages, infinity pool, and lush forest surroundings in Karjat.",
+            "image": [
+              "https://images.unsplash.com/photo-1631049307264-da0ec9d70304?w=1200",
+              "https://images.unsplash.com/photo-1540555700478-4be289fbecef?w=1200"
+            ]
+          })
+        }}
+      />
+
       <div className="pt-32 pb-12 px-6 md:px-10 max-w-[1600px] mx-auto text-center">
         <SectionLabel className="justify-center mb-4">Visual Stories</SectionLabel>
         <h1 className="font-display text-5xl md:text-7xl italic text-forest mb-8">The Collection</h1>

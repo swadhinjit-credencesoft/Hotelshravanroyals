@@ -82,8 +82,8 @@ function OfferCard({
         <div className="mb-8">
             <p className="font-display text-lg text-forest mb-2">{offer.nights} Nights of Seclusion</p>
             <div className="flex items-baseline gap-3">
-                <span className="font-serif text-4xl text-gold">${offer.price.toLocaleString()}</span>
-                <span className="font-sans text-sm text-taupe/60 line-through">${offer.originalPrice.toLocaleString()}</span>
+                <span className="font-serif text-4xl text-gold">₹{offer.price.toLocaleString()}</span>
+                <span className="font-sans text-sm text-taupe/60 line-through">₹{offer.originalPrice.toLocaleString()}</span>
             </div>
         </div>
 

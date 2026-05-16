@@ -5,7 +5,7 @@ import Footer from '@/components/layout/Footer';
 import CinematicHero from '@/components/ui/CinematicHero';
 import SectionLabel from '@/components/ui/SectionLabel';
 import Image from 'next/image';
-import { Sun, Utensils, MapPin, Clock, Users, MessageCircle } from 'lucide-react';
+import { Sun, Utensils, MapPin, Clock, MessageCircle } from 'lucide-react';
 import Link from 'next/link';
 
 export default function DayTripsPage() {
@@ -75,7 +75,7 @@ export default function DayTripsPage() {
 
           <div className="text-center mb-16">
             <SectionLabel className="justify-center mb-6">Package Highlights</SectionLabel>
-            <h2 className="font-display text-4xl italic text-forest">What's Included</h2>
+            <h2 className="font-display text-4xl italic text-forest">What&apos;s Included</h2>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
