@@ -1,0 +1,280 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500;1,600&family=Playfair+Display:ital,wght@0,400;0,500;1,400;1,500&family=Jost:wght@300;400;500&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --cream: #FBF7F0;
+  --cream-light: #FEFCF7;
+  --cream-dark: #F0E8D5;
+  --gold: #C8A96E;
+  --gold-light: #E8C98A;
+  --gold-dark: #A07840;
+  --gold-deep: #7A5C2E;
+  --forest: #2C3E2D;
+  --forest-light: #4A6741;
+  --forest-dark: #1A2B1B;
+  --taupe: #8B7355;
+  --ivory: #FEFCF7;
+  --champagne: #F5EDD8;
+  --parchment: #EDE0C4;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: auto;
+}
+
+body {
+  background-color: var(--cream);
+  color: var(--forest);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--cream-dark);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--gold);
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--gold-dark);
+}
+
+/* Skip to main */
+.skip-to-main {
+  position: absolute;
+  top: -100px;
+  left: 1rem;
+  background: var(--gold);
+  color: #1a1004;
+  padding: 0.5rem 1rem;
+  border-radius: 2px;
+  font-family: var(--font-jost), sans-serif;
+  font-size: 13px;
+  z-index: 9999;
+  transition: top 0.2s;
+}
+
+.skip-to-main:focus {
+  top: 1rem;
+}
+
+/* Focus styles */
+:focus-visible {
+  outline: 2px solid var(--gold);
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
+/* Perspective for 3D word animations */
+.perspective-1000 {
+  perspective: 1000px;
+}
+
+/* Lenis smooth scroll */
+html.lenis {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+.lenis.lenis-scrolling iframe {
+  pointer-events: none;
+}
+
+/* Gold gradient text */
+.text-gold-gradient {
+  background: linear-gradient(135deg, var(--gold-light) 0%, var(--gold) 50%, var(--gold-dark) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Warm card shadow */
+.shadow-warm {
+  box-shadow: 0 4px 32px rgba(122, 92, 46, 0.12);
+}
+
+.shadow-warm-lg {
+  box-shadow: 0 8px 48px rgba(122, 92, 46, 0.18);
+}
+
+/* Grain overlay */
+.grain-overlay {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 3;
+}
+
+/* Masonry layout */
+.masonry-grid {
+  columns: 3;
+  column-gap: 0.75rem;
+}
+
+@media (max-width: 1024px) {
+  .masonry-grid {
+    columns: 2;
+  }
+}
+
+@media (max-width: 640px) {
+  .masonry-grid {
+    columns: 1;
+  }
+}
+
+.masonry-item {
+  break-inside: avoid;
+  margin-bottom: 0.75rem;
+}
+
+/* Marquee containers */
+.marquee-wrapper {
+  overflow: hidden;
+  width: 100%;
+}
+
+.marquee-track {
+  display: flex;
+  width: max-content;
+  animation: marquee 25s linear infinite;
+}
+
+.marquee-track-reverse {
+  display: flex;
+  width: max-content;
+  animation: marqueeReverse 25s linear infinite;
+}
+
+.marquee-wrapper:hover .marquee-track,
+.marquee-wrapper:hover .marquee-track-reverse {
+  animation-play-state: paused;
+}
+
+/* Room card hover */
+.room-card-overlay {
+  background: linear-gradient(to top, rgba(26, 16, 4, 0.85) 0%, rgba(26, 16, 4, 0) 60%);
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.room-card:hover .room-card-overlay {
+  opacity: 1;
+}
+
+/* Drag cursor */
+.drag-cursor {
+  cursor: grab;
+}
+
+.drag-cursor:active {
+  cursor: grabbing;
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+
+  .marquee-track,
+  .marquee-track-reverse {
+    animation: none;
+  }
+}
+
+/* Booking bar input focus */
+.booking-input:focus {
+  outline: none;
+  border-bottom-color: var(--gold);
+}
+
+/* Lightbox */
+.lightbox-backdrop {
+  background: rgba(26, 16, 4, 0.92);
+  backdrop-filter: blur(8px);
+}
+
+/* Section label line */
+.section-label-line {
+  display: inline-block;
+  width: 32px;
+  height: 1px;
+  background: var(--gold);
+  vertical-align: middle;
+  margin-right: 12px;
+}
+
+/* Ornament SVG */
+.ornament-gold path,
+.ornament-gold line,
+.ornament-gold circle {
+  stroke: var(--gold);
+}
+
+/* Bento grid */
+.bento-tall {
+  grid-row: span 2;
+}
+
+@keyframes marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+@keyframes marqueeReverse {
+  0% { transform: translateX(-50%); }
+  100% { transform: translateX(0); }
+}
+
+@keyframes kenBurns {
+  0% { transform: scale(1.08); }
+  100% { transform: scale(1.0); }
+}
+
+@keyframes pulseDot {
+  0%, 100% { opacity: 1; transform: scaleY(1); }
+  50% { opacity: 0.4; transform: scaleY(0.6); }
+}
+
+@keyframes scrollLineAnim {
+  0% { height: 0; opacity: 1; top: 0; }
+  50% { height: 50px; opacity: 1; top: 0; }
+  100% { height: 0; opacity: 0; top: 50px; }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-12px); }
+}
