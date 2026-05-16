@@ -3,6 +3,7 @@
 import { useState, useEffect } from 'react'
 import { motion, AnimatePresence, useScroll } from 'framer-motion'
 import Link from 'next/link'
+import Image from 'next/image'
 import { Menu, X } from 'lucide-react'
 import { siteConfig } from '@/data/site'
 import MagneticButton from '@/components/ui/MagneticButton'
@@ -49,13 +50,23 @@ export default function Navbar() {
       >
         <div className="max-w-[1600px] mx-auto px-6 md:px-10 h-20 flex items-center justify-between">
           {/* Logo */}
-          <Link href="/" className="flex flex-col leading-none group focus-visible:ring-2 focus-visible:ring-gold rounded-sm">
-            <span className={`font-serif text-lg tracking-[0.18em] uppercase transition-colors duration-300 ${scrolled ? 'text-forest' : 'text-ivory'}`}>
-              Shravan Royal
-            </span>
-            <span className={`font-sans text-[9px] tracking-[0.28em] uppercase mt-0.5 transition-colors duration-300 ${scrolled ? 'text-gold' : 'text-gold-light'}`}>
-              Inn
-            </span>
+          <Link href="/" className="flex items-center gap-3 group focus-visible:ring-2 focus-visible:ring-gold rounded-sm">
+            <div className="relative w-12 h-12">
+              <Image 
+                src="/Shravan Logo.png" 
+                alt={siteConfig.name} 
+                fill 
+                className="object-contain transition-all duration-300"
+              />
+            </div>
+            <div className="flex flex-col leading-none">
+              <span className={`font-serif text-lg tracking-[0.18em] uppercase transition-colors duration-300 ${scrolled ? 'text-forest' : 'text-ivory'}`}>
+                Hotel Shravan
+              </span>
+              <span className={`font-sans text-[9px] tracking-[0.28em] uppercase mt-0.5 transition-colors duration-300 ${scrolled ? 'text-gold' : 'text-gold-light'}`}>
+                Royal Inn
+              </span>
+            </div>
           </Link>
 
           {/* Desktop Nav */}

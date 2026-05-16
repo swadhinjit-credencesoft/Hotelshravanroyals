@@ -2,6 +2,7 @@
 
 import Link from 'next/link'
 import { Globe, Share2, Camera, MapPin, Phone, Mail, Clock } from 'lucide-react'
+import Image from 'next/image'
 import { siteConfig } from '@/data/site'
 
 const quickLinks = [
@@ -22,12 +23,22 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
           {/* Col 1 — Brand */}
           <div>
-            <Link href="/" className="inline-block mb-4">
-              <div className="font-serif text-xl tracking-[0.18em] uppercase text-ivory">
-                Shravan Royal
+            <Link href="/" className="flex items-center gap-3 mb-6 group">
+              <div className="relative w-10 h-10">
+                <Image 
+                  src="/Shravan Logo.png" 
+                  alt={siteConfig.name} 
+                  fill 
+                  className="object-contain transition-opacity"
+                />
               </div>
-              <div className="font-sans text-[9px] tracking-[0.28em] uppercase text-gold mt-0.5">
-                Inn
+              <div className="flex flex-col leading-none">
+                <div className="font-serif text-lg tracking-[0.18em] uppercase text-ivory">
+                  Hotel Shravan
+                </div>
+                <div className="font-sans text-[8px] tracking-[0.28em] uppercase text-gold mt-0.5">
+                  Royal Inn
+                </div>
               </div>
             </Link>
             <p className="font-serif text-base italic text-ivory/50 mb-6 leading-relaxed max-w-[220px]">
