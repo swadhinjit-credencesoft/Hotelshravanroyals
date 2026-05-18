@@ -170,33 +170,6 @@ export default function ContactPage() {
 
           {/* Right Column: Contact Form & Map */}
           <div>
-            <div className="bg-white p-8 md:p-12 shadow-warm-lg rounded-sm border border-gold/10 mb-12 mx-6 md:mx-0">
-              <h2 className="font-display text-3xl italic text-forest mb-8">Send an Enquiry</h2>
-              <form className="space-y-6" onSubmit={(e) => e.preventDefault()}>
-                <div>
-                  <label className="font-sans text-[11px] uppercase tracking-widest text-taupe/60 block mb-2">Full Name</label>
-                  <input type="text" className="w-full border-b border-gold/30 pb-3 font-sans text-sm text-forest focus:outline-none focus:border-gold transition-colors bg-transparent" placeholder="Your Name" required />
-                </div>
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                  <div>
-                    <label className="font-sans text-[11px] uppercase tracking-widest text-taupe/60 block mb-2">Phone</label>
-                    <input type="tel" className="w-full border-b border-gold/30 pb-3 font-sans text-sm text-forest focus:outline-none focus:border-gold transition-colors bg-transparent" placeholder="+91" required />
-                  </div>
-                  <div>
-                    <label className="font-sans text-[11px] uppercase tracking-widest text-taupe/60 block mb-2">Travel Date</label>
-                    <input type="date" className="w-full border-b border-gold/30 pb-3 font-sans text-sm text-forest focus:outline-none focus:border-gold transition-colors bg-transparent" />
-                  </div>
-                </div>
-                <div>
-                  <label className="font-sans text-[11px] uppercase tracking-widest text-taupe/60 block mb-2">Message</label>
-                  <textarea className="w-full border-b border-gold/30 pb-3 font-sans text-sm text-forest focus:outline-none focus:border-gold transition-colors bg-transparent resize-none" rows={4} placeholder="Your requirements..."></textarea>
-                </div>
-                <button type="submit" className="w-full bg-gold text-[#1a1004] font-sans text-[11px] uppercase tracking-[0.2em] px-8 py-5 hover:bg-gold-light transition-all rounded-sm font-bold">
-                  Send Message
-                </button>
-              </form>
-            </div>
-
             {/* Embedded Map - Full width on mobile by removing parent padding/margin if needed */}
             <div className="w-full aspect-[4/3] md:aspect-video lg:aspect-square relative overflow-hidden border-y md:border border-gold/20 md:rounded-sm grayscale hover:grayscale-0 transition-all duration-1000 shadow-inner">
               <iframe 
