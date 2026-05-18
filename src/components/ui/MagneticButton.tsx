@@ -8,6 +8,8 @@ interface MagneticButtonProps {
   className?: string
   onClick?: () => void
   href?: string
+  target?: string
+  rel?: string
   as?: 'button' | 'a'
   type?: 'button' | 'submit'
   disabled?: boolean
@@ -20,6 +22,8 @@ export default function MagneticButton({
   className = '',
   onClick,
   href,
+  target,
+  rel,
   as: Tag = 'button',
   type = 'button',
   disabled,
@@ -63,6 +67,8 @@ export default function MagneticButton({
     return (
       <motion.a
         href={href}
+        target={target}
+        rel={rel}
         id={id}
         className={className}
         onClick={onClick}

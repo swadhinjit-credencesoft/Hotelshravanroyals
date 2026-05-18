@@ -214,9 +214,9 @@ export default function AboutPage() {
             <p className="font-serif text-xl italic text-taupe mb-12">
               Join us for a weekend of unmatched serenity, exceptional food, and raw nature.
             </p>
-            <Link href="/reservations" className="inline-block bg-gold text-[#1a1004] font-sans text-[11px] uppercase tracking-[0.2em] px-12 py-5 hover:bg-gold-light transition-all rounded-sm">
+            <a href="https://bookone.io/Unwind-Karjat?bookingEngine=true" target="_blank" rel="noopener noreferrer" className="inline-block bg-gold text-[#1a1004] font-sans text-[11px] uppercase tracking-[0.2em] px-12 py-5 hover:bg-gold-light transition-all rounded-sm">
                Come Experience It
-            </Link>
+            </a>
          </div>
       </section>
 

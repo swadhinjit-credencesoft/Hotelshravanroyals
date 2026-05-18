@@ -68,12 +68,14 @@ export default function RoomDetailContent({ room }: RoomDetailContentProps) {
                       <span className="font-sans text-[9px] uppercase tracking-[0.2em] text-gold mb-1">Starting from</span>
                       <span className="font-serif text-4xl text-forest">${room.price.toLocaleString()}<span className="text-base text-taupe/60 ml-2">/ night</span></span>
                    </div>
-                   <a 
-                     href="/reservations" 
-                     className="bg-gold text-[#1a1004] font-sans text-[11px] uppercase tracking-[0.2em] px-12 py-5 rounded-sm hover:bg-gold-light transition-all flex items-center gap-3 shadow-warm-lg"
-                   >
-                      Book Your Stay <ArrowRight size={14} />
-                   </a>
+                    <a 
+                      href="https://bookone.io/Unwind-Karjat?bookingEngine=true"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="bg-gold text-[#1a1004] font-sans text-[11px] uppercase tracking-[0.2em] px-12 py-5 rounded-sm hover:bg-gold-light transition-all flex items-center gap-3 shadow-warm-lg"
+                    >
+                       Book Your Stay <ArrowRight size={14} />
+                    </a>
                 </div>
              </div>
 

@@ -253,13 +253,15 @@ export default function RoomDetailClient({ room, otherRooms }: RoomDetailClientP
               </div>
             </div>
 
-            <Link
-              href="/reservations"
+            <a
+              href="https://bookone.io/Unwind-Karjat?bookingEngine=true"
+              target="_blank"
+              rel="noopener noreferrer"
               className="w-full bg-gold text-[#1a1004] py-4 rounded-sm font-sans text-[11px] uppercase tracking-widest flex items-center justify-center gap-2 hover:bg-gold-light transition-all active:scale-[0.98]"
             >
               <Calendar size={14} />
               Check Availability
-            </Link>
+            </a>
           </div>
         </div>
       </div>

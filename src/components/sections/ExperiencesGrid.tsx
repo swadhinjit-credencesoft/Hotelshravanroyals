@@ -116,7 +116,7 @@ function ExperienceCard({
             <p className="font-sans text-sm text-ivory/70 mb-6 leading-relaxed">
               {experience.description}
             </p>
-            <a href="/reservations" className="inline-flex items-center gap-2 font-sans text-[10px] uppercase tracking-[0.2em] text-[#1a1004] bg-gold px-6 py-3 hover:bg-gold-light transition-all rounded-sm">
+            <a href="https://bookone.io/Unwind-Karjat?bookingEngine=true" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 font-sans text-[10px] uppercase tracking-[0.2em] text-[#1a1004] bg-gold px-6 py-3 hover:bg-gold-light transition-all rounded-sm">
               Add to Stay <ArrowRight size={12} />
             </a>
           </div>

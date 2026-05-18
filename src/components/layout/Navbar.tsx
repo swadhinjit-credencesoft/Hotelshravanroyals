@@ -80,7 +80,9 @@ export default function Navbar() {
           <div className="flex items-center gap-4">
             <MagneticButton
               as="a"
-              href="/reservations"
+              href="https://bookone.io/Unwind-Karjat?bookingEngine=true"
+              target="_blank"
+              rel="noopener noreferrer"
               className="bg-gold text-[#1a1004] font-sans text-[11px] uppercase tracking-[0.16em] px-6 py-2.5 rounded-sm hover:bg-gold-light transition-colors duration-300 shadow-md"
               aria-label="Book your stay now"
             >
@@ -149,7 +151,9 @@ export default function Navbar() {
               </a>
               <div className="mt-6">
                 <a
-                  href="/reservations"
+                  href="https://bookone.io/Unwind-Karjat?bookingEngine=true"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   onClick={() => setMobileOpen(false)}
                   className="inline-block bg-gold text-[#1a1004] font-sans text-[11px] uppercase tracking-[0.16em] px-8 py-3 rounded-sm hover:bg-gold-light transition-colors"
                 >

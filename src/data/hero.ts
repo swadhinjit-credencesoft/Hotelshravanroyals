@@ -20,7 +20,7 @@ export const heroSlides: HeroSlide[] = [
     image: '/images/unwindvideo.mp4',
     imageAlt: 'Luxury resort infinity pool at golden hour',
     primaryCta: 'Book Now',
-    primaryHref: '/reservations',
+    primaryHref: 'https://bookone.io/Unwind-Karjat?bookingEngine=true',
     secondaryCta: 'Explore',
     secondaryHref: '/rooms',
   },
@@ -46,7 +46,7 @@ export const heroSlides: HeroSlide[] = [
     primaryCta: 'Explore Activities',
     primaryHref: '/experiences',
     secondaryCta: 'Book a Stay',
-    secondaryHref: '/reservations',
+    secondaryHref: 'https://bookone.io/Unwind-Karjat?bookingEngine=true',
   },
   {
     id: 's4',

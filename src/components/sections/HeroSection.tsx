@@ -14,6 +14,7 @@ import {
 import { ArrowRight, Calendar } from 'lucide-react'
 import { heroSlides } from '@/data/hero'
 import ParticleCanvas from '@/components/ui/ParticleCanvas'
+import { buildBookingUrl, addDays, todayString } from '@/lib/hotelmate'
 
 export default function HeroSection() {
   const [currentSlide, setCurrentSlide] = useState(0)
@@ -53,6 +54,31 @@ export default function HeroSection() {
     return () => clearInterval(timer)
   }, [reduced])
 
+
+  const checkoutRef = useRef<HTMLInputElement>(null)
+  const [checkIn, setCheckIn] = useState('')
+  const [checkOut, setCheckOut] = useState('')
+  const [guests, setGuests] = useState('1')
+  const [rooms, setRooms] = useState('1')
+
+  const handleCheckInChange = (date: string) => {
+    setCheckIn(date)
+    setCheckOut(prev => date && (!prev || prev <= date) ? addDays(date, 1) : prev)
+  }
+
+  const handleCheckOutChange = (date: string) => {
+    setCheckOut(date)
+  }
+
+  const openBooking = useCallback(() => {
+    const url = buildBookingUrl({
+      fromDate: checkIn || undefined,
+      toDate: checkOut || undefined,
+      noOfPersons: guests || undefined,
+      noOfRooms: rooms || undefined,
+    })
+    window.open(url, '_blank', 'noopener,noreferrer')
+  }, [checkIn, checkOut, guests, rooms])
 
   const slide = heroSlides[currentSlide]
   const words = slide.headline.split(' ')
@@ -272,20 +298,20 @@ export default function HeroSection() {
         >
           <div className="max-w-[1600px] mx-auto px-6 md:px-10 py-4">
             <div className="flex items-center gap-0 md:gap-6">
-              <BookingField label="Check-In" placeholder="Arrival date" type="date" />
+              <BookingField label="Check-In" type="date" value={checkIn} onChange={handleCheckInChange} min={todayString()} />
               <div className="hidden md:block w-px h-8 bg-gold/20" />
-              <BookingField label="Check-Out" placeholder="Departure date" type="date" />
+              <BookingField label="Check-Out" type="date" value={checkOut} onChange={handleCheckOutChange} inputRef={checkoutRef} min={checkIn ? addDays(checkIn, 1) : todayString()} />
               <div className="hidden md:block w-px h-8 bg-gold/20" />
-              <BookingField label="Guests" placeholder="2 guests" />
+              <BookingField label="Guests" type="number" value={guests} onChange={setGuests} />
               <div className="hidden md:block w-px h-8 bg-gold/20" />
-              <BookingField label="Room Type" placeholder="Any room" />
+              <BookingField label="Rooms" type="number" value={rooms} onChange={setRooms} />
               <div className="ml-auto pl-6">
-                <a
-                  href="/reservations"
+                <button
+                  onClick={openBooking}
                   className="bg-gold text-[#1a1004] font-sans text-[12px] uppercase tracking-[0.15em] px-10 py-3.5 rounded-sm hover:bg-gold-light transition-colors whitespace-nowrap inline-block"
                 >
                   Check Availability
-                </a>
+                </button>
               </div>
             </div>
           </div>
@@ -293,12 +319,12 @@ export default function HeroSection() {
 
         {/* Mobile book button */}
         <div className="md:hidden flex justify-center pb-6">
-          <a
-            href="/reservations"
+          <button
+            onClick={openBooking}
             className="bg-gold text-[#1a1004] font-sans text-[12px] uppercase tracking-[0.16em] px-10 py-4 rounded-full shadow-warm-lg"
           >
             Book Now
-          </a>
+          </button>
         </div>
       </motion.div>
 
@@ -354,9 +380,10 @@ export default function HeroSection() {
   )
 }
 
-function BookingField({ label, placeholder, type = 'text' }: { label: string; placeholder: string; type?: string }) {
+function BookingField({ label, type = 'text', value, onChange, inputRef: externalRef, min }: { label: string; type?: string; value: string; onChange: (v: string) => void; inputRef?: React.RefObject<HTMLInputElement | null>; min?: string }) {
   const [isMounted, setIsMounted] = useState(false)
-  const inputRef = useRef<HTMLInputElement>(null)
+  const internalRef = useRef<HTMLInputElement>(null)
+  const inputRef = externalRef || internalRef
 
   useEffect(() => {
     setIsMounted(true)
@@ -367,20 +394,16 @@ function BookingField({ label, placeholder, type = 'text' }: { label: string; pl
     if (type === 'date' && el) {
       const inputEl = el as HTMLInputElement & { showPicker?: () => void }
       try {
-        if (inputEl.showPicker) {
-          inputEl.showPicker()
-        } else {
-          inputEl.focus()
-        }
-      } catch {
-        inputEl.focus()
-      }
+        if (inputEl.showPicker) inputEl.showPicker()
+        else inputEl.focus()
+      } catch { inputEl.focus() }
     }
   }
 
   return (
     <div
-      className="flex-1 min-w-[140px] px-4 py-1 cursor-pointer group"
+      className="flex-1 px-4 py-1 cursor-pointer group"
+      style={{ minWidth: type === 'number' ? '80px' : '140px' }}
       onClick={handleContainerClick}
     >
       <label className="font-sans text-[11px] uppercase tracking-[0.18em] text-gold/70 block mb-1 pointer-events-none">
@@ -388,9 +411,11 @@ function BookingField({ label, placeholder, type = 'text' }: { label: string; pl
       </label>
       <div className="relative flex items-center">
         <input
-          ref={inputRef}
-          type={isMounted && type === 'date' ? 'date' : 'text'}
-          placeholder={placeholder}
+          ref={inputRef as React.Ref<HTMLInputElement>}
+          type={isMounted && type === 'date' ? 'date' : type === 'number' ? 'number' : 'text'}
+          value={value}
+          min={min ?? (type === 'number' ? '1' : undefined)}
+          onChange={(e) => onChange(e.target.value)}
           className={`booking-input w-full bg-transparent border-b border-gold/40 text-ivory placeholder-gold/50 font-sans text-[14px] pb-1 focus:outline-none focus:border-gold transition-colors ${type === 'date' ? 'pr-6' : ''}`}
           aria-label={label}
         />
