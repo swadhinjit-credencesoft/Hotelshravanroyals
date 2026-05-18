@@ -29,7 +29,11 @@ const jost = Jost({
 })
 
 export const metadata: Metadata = {
-  title: 'Unwind Karjat | Resort & Nature Retreat near Mumbai',
+  metadataBase: new URL('https://unwindkarjat.com'),
+  title: {
+    default: 'Unwind Karjat | Resort & Nature Retreat near Mumbai',
+    template: '%s | Unwind Karjat'
+  },
   description:
     'A boutique nature retreat in Karjat, Maharashtra offering luxurious yet cozy stays for leisure travellers, event groups, and corporate teams.',
   keywords: [
@@ -39,13 +43,36 @@ export const metadata: Metadata = {
     'Unwind Karjat',
     'nature resort',
     'Karjat resort',
+    'luxury cottages Karjat',
   ],
+  alternates: {
+    canonical: '/',
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
+  },
   openGraph: {
     title: 'Unwind Karjat | Resort & Nature Retreat near Mumbai',
     description:
       'A boutique nature retreat in Karjat, Maharashtra offering luxurious yet cozy stays for leisure travellers, event groups, and corporate teams.',
+    url: 'https://unwindkarjat.com',
+    siteName: 'Unwind Karjat',
     type: 'website',
     locale: 'en_US',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Unwind Karjat | Resort & Nature Retreat near Mumbai',
+    description:
+      'A boutique nature retreat in Karjat, Maharashtra offering luxurious yet cozy stays for leisure travellers, event groups, and corporate teams.',
   },
 }
 

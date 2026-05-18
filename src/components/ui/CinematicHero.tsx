@@ -1,6 +1,6 @@
 'use client';
 
-import { motion, useScroll, useTransform } from 'framer-motion';
+import { motion, useScroll, useTransform, useReducedMotion } from 'framer-motion';
 import { useRef } from 'react';
 import Image from 'next/image';
 import SectionLabel from '@/components/ui/SectionLabel';
@@ -14,6 +14,7 @@ interface CinematicHeroProps {
 
 export default function CinematicHero({ title, tagline, label, image }: CinematicHeroProps) {
   const containerRef = useRef<HTMLDivElement>(null);
+  const reduced = useReducedMotion();
   const { scrollY } = useScroll({
     target: containerRef,
     offset: ['start start', 'end start'],
@@ -23,21 +24,36 @@ export default function CinematicHero({ title, tagline, label, image }: Cinemati
   const opacity = useTransform(scrollY, [0, 500], [1, 0]);
   const textY = useTransform(scrollY, [0, 500], ['0%', '-15%']);
 
+  const isVideo = image.match(/\.(mp4|webm|ogg)$/);
+
   return (
     <section ref={containerRef} className="relative h-[90vh] min-h-[600px] w-full overflow-hidden flex items-end pb-24 pt-32">
       {/* Background with Parallax */}
       <motion.div 
-        style={{ y, opacity }}
+        style={{ y: reduced ? 0 : y, opacity }}
         className="absolute inset-0 z-0"
       >
-        <Image
-          src={image}
-          alt={title}
-          fill
-          priority
-          className="object-cover animate-ken-burns"
-          sizes="100vw"
-        />
+        {isVideo ? (
+          <video
+            src={image}
+            autoPlay
+            muted
+            loop
+            playsInline
+            className={`w-full h-full object-cover ${reduced ? '' : 'animate-ken-burns'}`}
+            style={{ animationName: reduced ? 'none' : 'kenBurns' }}
+          />
+        ) : (
+          <Image
+            src={image}
+            alt={title}
+            fill
+            priority
+            className={`object-cover ${reduced ? '' : 'animate-ken-burns'}`}
+            sizes="100vw"
+            style={{ animationName: reduced ? 'none' : 'kenBurns' }}
+          />
+        )}
         <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent" />
         <div className="absolute inset-0 bg-forest/20 mix-blend-overlay" />
       </motion.div>
