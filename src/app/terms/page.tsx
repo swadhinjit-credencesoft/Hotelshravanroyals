@@ -6,6 +6,28 @@ export default function TermsPage() {
   return (
     <main className="bg-cream min-h-screen">
       <Navbar />
+      
+      {/* WebPage Schema */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "WebPage",
+            "@id": "https://unwindkarjat.com/terms/#webpage",
+            "url": "https://unwindkarjat.com/terms",
+            "name": "Terms of Service & Booking Conditions | Unwind Karjat",
+            "description": "Review the official terms of service, check-in schedules, lodging policies, and cancellation conditions for resort reservations at Unwind Karjat.",
+            "isPartOf": {
+              "@type": "WebSite",
+              "@id": "https://unwindkarjat.com/#website",
+              "name": "Unwind Karjat",
+              "url": "https://unwindkarjat.com"
+            }
+          })
+        }}
+      />
+
       <div className="pt-32 pb-32 px-6 md:px-10 max-w-4xl mx-auto">
         <SectionLabel className="mb-6">Legal</SectionLabel>
         <h1 className="font-display text-5xl md:text-7xl italic text-forest mb-12">Terms &amp; Conditions</h1>
