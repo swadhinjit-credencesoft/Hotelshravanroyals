@@ -49,13 +49,24 @@ function VenueRow({ venue, index }: { venue: (typeof venues)[0]; index: number }
       transition={{ duration: 1.0, ease: [0.76, 0, 0.24, 1], delay: 0.1 }}
     >
       <div ref={imgRef} className="absolute inset-0" style={{ height: '116%', top: '-8%' }}>
-        <Image
-          src={venue.image}
-          alt={venue.imageAlt}
-          fill
-          className="object-cover"
-          sizes="(max-width: 768px) 100vw, 50vw"
-        />
+        {venue.image.match(/\.(mp4|webm|ogg)$/) ? (
+          <video
+            src={venue.image}
+            autoPlay
+            muted
+            loop
+            playsInline
+            className="w-full h-full object-cover"
+          />
+        ) : (
+          <Image
+            src={venue.image}
+            alt={venue.imageAlt}
+            fill
+            className="object-cover"
+            sizes="(max-width: 768px) 100vw, 50vw"
+          />
+        )}
       </div>
     </motion.div>
   )

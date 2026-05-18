@@ -12,7 +12,7 @@ export default function DiningPage() {
         label="Culinary Excellence"
         title="A Symphony for the Senses"
         tagline="From wood-fired coastal grills to twelve-course forest immersions, every plate tells a story of the land."
-        image="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=2400&q=95"
+        image="https://bookonelocal.in/cdn/IMG_6311+%281%29+%281%29.mp4"
       />
       
       <section className="py-32 bg-cream text-center">
