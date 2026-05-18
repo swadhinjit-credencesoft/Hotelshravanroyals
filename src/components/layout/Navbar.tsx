@@ -9,14 +9,14 @@ import { siteConfig } from '@/data/site'
 import MagneticButton from '@/components/ui/MagneticButton'
 
 const navLinks = [
-  { label: 'About', href: '/about' },
+  { label: 'Home', href: '/' },
   { label: 'Rooms', href: '/rooms' },
-  { label: 'Dining', href: '/dining' },
   { label: 'Experiences', href: '/experiences' },
-  { label: 'Events', href: '/events' },
-  { label: 'Gallery', href: '/gallery' },
-  { label: 'Blog', href: '/blog' },
+  { label: 'Events & Weddings', href: '/events' },
+  { label: 'Dining', href: '/dining' },
+  { label: 'About', href: '/about' },
   { label: 'Contact', href: '/contact' },
+  { label: 'Blog', href: '/blog' },
 ]
 
 export default function Navbar() {

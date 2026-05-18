@@ -2,7 +2,7 @@ export const siteConfig = {
   name: 'Unwind Karjat',
   tagline: 'Premium Nature Resort near Mumbai',
   description: 'A boutique nature retreat in Karjat, Maharashtra offering luxurious yet cozy stays, forest weddings, and corporate offsites.',
-  phone: '+91 90000 00000',
+  phone: '+91 9619198839',
   email: 'stay@unwindkarjat.com',
   address: 'Karjat - Chowk Rd, behind Baba Dairy, Wavarle, Karjat, Maharashtra 410206',
   social: { instagram: 'https://instagram.com/unwindkarjat', facebook: '#', twitter: '#' },

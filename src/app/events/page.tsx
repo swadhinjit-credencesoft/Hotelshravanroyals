@@ -36,28 +36,46 @@ export default function EventsPage() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "FAQPage",
-            "mainEntity": [
-              {
-                "@type": "Question",
-                "name": "What is the wedding capacity at Unwind Karjat?",
-                "acceptedAnswer": {
-                  "@type": "Answer",
-                  "text": "Our outdoor wedding lawns can comfortably host up to 250 guests with bespoke catering and decor."
-                }
+          __html: JSON.stringify([
+            {
+              "@context": "https://schema.org",
+              "@type": "EventVenue",
+              "name": "Unwind Karjat Event Spaces",
+              "description": "Premium outdoor lawns, corporate hub, and poolside venues for weddings, parties, and corporate retreats in Karjat.",
+              "url": "https://unwindkarjat.com/events",
+              "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "Karjat - Chowk Rd, behind Baba Dairy, Wavarle",
+                "addressLocality": "Karjat",
+                "addressRegion": "Maharashtra",
+                "postalCode": "410206",
+                "addressCountry": "IN"
               },
-              {
-                "@type": "Question",
-                "name": "Do you provide corporate offsite facilities?",
-                "acceptedAnswer": {
-                  "@type": "Answer",
-                  "text": "Yes, we have a dedicated Corporate Hub with high-speed Wi-Fi, projectors, and team-building activities for up to 60 guests."
+              "telephone": "+91 9619198839"
+            },
+            {
+              "@context": "https://schema.org",
+              "@type": "FAQPage",
+              "mainEntity": [
+                {
+                  "@type": "Question",
+                  "name": "What is the wedding capacity at Unwind Karjat?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Our outdoor wedding lawns can comfortably host up to 250 guests with bespoke catering and decor."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "Do you provide corporate offsite facilities?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes, we have a dedicated Corporate Hub with high-speed Wi-Fi, projectors, and team-building activities for up to 60 guests."
+                  }
                 }
-              }
-            ]
-          })
+              ]
+            }
+          ])
         }}
       />
 

@@ -9,6 +9,7 @@ import AwardsMarquee from '@/components/sections/AwardsMarquee';
 import { motion } from 'framer-motion';
 import Image from 'next/image';
 import Link from 'next/link';
+import { siteConfig } from '@/data/site';
 
 export default function AboutPage() {
   return (
@@ -190,7 +191,7 @@ export default function AboutPage() {
               </p>
               <div className="space-y-4">
                 <p className="font-sans text-[11px] uppercase tracking-widest text-gold font-bold">Address</p>
-                <p className="font-serif text-forest text-xl italic">Survey No. 123, Forest Lane, Karjat, Maharashtra 410201</p>
+                <p className="font-serif text-forest text-xl italic">{siteConfig.address}</p>
               </div>
             </div>
           </div>

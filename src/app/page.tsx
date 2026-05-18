@@ -45,7 +45,7 @@ export default function Home() {
               "latitude": 18.922485,
               "longitude": 73.315053
             },
-            "telephone": "+91 90000 00000",
+            "telephone": "+91 9619198839",
             "starRating": {
               "@type": "Rating",
               "ratingValue": "4.5"

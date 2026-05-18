@@ -15,7 +15,7 @@ export const heroSlides: HeroSlide[] = [
   {
     id: 's1',
     tagline: 'Nature Resort near Mumbai',
-    headline: 'Escape to Unwind Karjat',
+    headline: 'Escape to Unwind Karjat ',
     subheadline: 'A boutique nature retreat offering luxurious yet cozy stays for leisure travellers and groups.',
     image: '/images/unwindvideo.mp4',
     imageAlt: 'Luxury resort infinity pool at golden hour',
@@ -65,5 +65,5 @@ export const heroSlides: HeroSlide[] = [
 export const heroStats = [
   { value: '1.5', label: 'Hours from Mumbai' },
   { value: '3', label: 'Room Categories' },
-  { value: '24/7', label: 'Concierge Service' },
+  { value: '5+', label: 'Years Open' },
 ]

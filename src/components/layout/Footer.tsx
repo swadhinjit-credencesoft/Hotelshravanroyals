@@ -55,6 +55,13 @@ export default function Footer() {
               >
                 <Camera size={18} />
               </a>
+              <a
+                href={`https://wa.me/9619198839`}
+                aria-label="Chat with us on WhatsApp"
+                className="text-ivory/40 hover:text-[#25D366] transition-colors duration-300"
+              >
+                <Phone size={18} />
+              </a>
             </div>
           </div>
 
@@ -151,13 +158,21 @@ export default function Footer() {
           <p className="font-sans text-[11px] text-ivory/30 tracking-wide">
             Designed and Developed By CredenceSoft, Powered By BookOne.
           </p>
-          <div className="flex gap-6">
+          <div className="flex gap-4 flex-wrap justify-end max-w-[50%]">
+            <Link href="/sitemap.xml" className="font-sans text-[11px] text-ivory/30 hover:text-gold transition-colors">
+              Sitemap
+            </Link>
+            <span className="text-ivory/20">·</span>
             <Link href="/privacy" className="font-sans text-[11px] text-ivory/30 hover:text-gold transition-colors">
               Privacy Policy
             </Link>
             <span className="text-ivory/20">·</span>
             <Link href="/terms" className="font-sans text-[11px] text-ivory/30 hover:text-gold transition-colors">
-              Terms
+              Terms & Conditions
+            </Link>
+            <span className="text-ivory/20">·</span>
+            <Link href="/cancellation" className="font-sans text-[11px] text-ivory/30 hover:text-gold transition-colors">
+              Cancellation Policy
             </Link>
           </div>
         </div>
