@@ -29,7 +29,7 @@ export default function ContactPage() {
             "@context": "https://schema.org",
             "@type": "Hotel",
             "name": "Unwind Karjat",
-            "image": "https://images.unsplash.com/photo-1566073771259-6a8506099945?w=1200",
+            "image": '/images/room2.jpeg',
             "address": {
               "@type": "PostalAddress",
               "streetAddress": "Karjat - Chowk Rd, behind Baba Dairy, Wavarle",

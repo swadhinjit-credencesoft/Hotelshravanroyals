@@ -15,7 +15,7 @@ export default function DiningPage() {
         label="Culinary Experience"
         title="Flavors of Karjat"
         tagline="From rustic local delicacies to multi-cuisine feasts, experience dining that satisfies the soul."
-        image="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=2400&q=95"
+        image='/images/exterior.jpeg'
       />
       
       {/* SEO Schema */}
@@ -106,22 +106,22 @@ export default function DiningPage() {
           </div>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 h-[600px]">
             <div className="relative overflow-hidden group">
-               <Image src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=800&q=95" alt="Warm ambient dining atmosphere" fill className="object-cover grayscale hover:grayscale-0 transition-all duration-1000" />
+               <Image src='/images/exterior2.jpeg' alt="Warm ambient dining atmosphere" fill className="object-cover grayscale hover:grayscale-0 transition-all duration-1000" />
             </div>
             <div className="relative overflow-hidden group row-span-2">
-               <Image src="https://images.unsplash.com/photo-1544148103-0773bf10d330?w=800&q=95" alt="Chef preparing local delicacies" fill className="object-cover grayscale hover:grayscale-0 transition-all duration-1000" />
+               <Image src='/images/exterior3.jpeg' alt="Chef preparing local delicacies" fill className="object-cover grayscale hover:grayscale-0 transition-all duration-1000" />
             </div>
             <div className="relative overflow-hidden group">
-               <Image src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=800&q=95" alt="Gourmet plated dish" fill className="object-cover grayscale hover:grayscale-0 transition-all duration-1000" />
+               <Image src='/images/exterior4.jpeg' alt="Gourmet plated dish" fill className="object-cover grayscale hover:grayscale-0 transition-all duration-1000" />
             </div>
             <div className="relative overflow-hidden group row-span-2">
-               <Image src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=800&q=95" alt="Rustic grill setup" fill className="object-cover grayscale hover:grayscale-0 transition-all duration-1000" />
+               <Image src='/images/exterior5.jpeg' alt="Rustic grill setup" fill className="object-cover grayscale hover:grayscale-0 transition-all duration-1000" />
             </div>
             <div className="relative overflow-hidden group">
-               <Image src="https://images.unsplash.com/photo-1559339352-11d035aa65de?w=800&q=95" alt="Outdoor dining at dusk" fill className="object-cover grayscale hover:grayscale-0 transition-all duration-1000" />
+               <Image src='/images/exterior6.jpeg' alt="Outdoor dining at dusk" fill className="object-cover grayscale hover:grayscale-0 transition-all duration-1000" />
             </div>
             <div className="relative overflow-hidden group">
-               <Image src="https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?w=800&q=95" alt="Refreshing cocktails and drinks" fill className="object-cover grayscale hover:grayscale-0 transition-all duration-1000" />
+               <Image src='/images/exterior7.jpeg' alt="Refreshing cocktails and drinks" fill className="object-cover grayscale hover:grayscale-0 transition-all duration-1000" />
             </div>
           </div>
         </div>

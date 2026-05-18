@@ -18,7 +18,7 @@ export default function AboutPage() {
         label="Our Story"
         title="Rooted in Nature"
         tagline="Founded on the belief that true luxury is reconnecting with the wild. Discover the vision behind Unwind Karjat."
-        image="https://images.unsplash.com/photo-1470770841072-f978cf4d019e?w=2400&q=95"
+        image='/images/exterior.jpeg'
       />
 
       {/* Organization Schema for SEO (E-E-A-T) */}
@@ -86,7 +86,7 @@ export default function AboutPage() {
               className="relative aspect-[4/5] overflow-hidden border border-gold/10"
             >
               <Image
-                src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=1200&q=95"
+                src='/images/exterior2.jpeg'
                 alt="Architectural detail seamlessly blending with nature"
                 fill
                 className="object-cover"
@@ -137,9 +137,9 @@ export default function AboutPage() {
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
             {[
-              { name: 'Rahul Desai', role: 'General Manager', bio: 'With over 15 years in luxury hospitality, Rahul ensures every guest feels the soul of our retreat.', image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=800&q=95' },
-              { name: 'Priya Sharma', role: 'Head Chef', bio: 'Master of local Maharashtrian flavors, Priya brings forest-to-fork dining to life.', image: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=800&q=95' },
-              { name: 'Vikram Singh', role: 'Guest Experience Lead', bio: 'Expert naturalist and guide, Vikram curates our signature forest immersions.', image: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=800&q=95' },
+              { name: 'Rahul Desai', role: 'General Manager', bio: 'With over 15 years in luxury hospitality, Rahul ensures every guest feels the soul of our retreat.', image: '/images/exterior3.jpeg' },
+              { name: 'Priya Sharma', role: 'Head Chef', bio: 'Master of local Maharashtrian flavors, Priya brings forest-to-fork dining to life.', image: '/images/exterior4.jpeg' },
+              { name: 'Vikram Singh', role: 'Guest Experience Lead', bio: 'Expert naturalist and guide, Vikram curates our signature forest immersions.', image: '/images/exterior5.jpeg' },
             ].map((person, i) => (
               <motion.div 
                 key={i}

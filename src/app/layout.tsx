@@ -90,7 +90,7 @@ export default function RootLayout({
       className={`${playfair.variable} ${cormorant.variable} ${jost.variable}`}
     >
       <head>
-        <link rel="preconnect" href="https://images.unsplash.com" />
+        
         <meta name="theme-color" content="#FBF7F0" />
       </head>
       <body>

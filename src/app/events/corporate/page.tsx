@@ -34,7 +34,7 @@ export default function CorporatePage() {
         label="Corporate Retreats"
         title="Strategy in Serenity"
         tagline="Foster innovation and team spirit in a setting that inspires. Our corporate hub blends professional needs with nature."
-        image="https://images.unsplash.com/photo-1517457373958-b7bdd4587205?w=2400&q=95"
+        image='/images/exterior8.jpeg'
       />
 
       <section className="py-24">
@@ -69,7 +69,7 @@ export default function CorporatePage() {
               </a>
             </div>
             <div className="relative aspect-square">
-               <Image src="https://images.unsplash.com/photo-1517048676732-d65bc937f952?w=1200&q=95" alt="Corporate team meeting in a luxury nature resort" fill className="object-cover rounded-sm shadow-2xl" />
+               <Image src='/images/room1.jpeg' alt="Corporate team meeting in a luxury nature resort" fill className="object-cover rounded-sm shadow-2xl" />
             </div>
           </div>
 

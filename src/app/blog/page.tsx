@@ -16,7 +16,7 @@ const blogPosts = [
     excerpt: 'From pristine waterfalls to historic treks, discover the ultimate guide to exploring Karjat year-round.',
     date: 'Oct 12, 2024',
     category: 'Travel & Destination',
-    image: 'https://images.unsplash.com/photo-1448375240586-882707db888b?w=1200&q=95',
+    image: '/images/exterior6.jpeg',
   },
   {
     id: 'b2',
@@ -24,7 +24,7 @@ const blogPosts = [
     excerpt: 'Experience the magic of the Sahyadris coming alive with lush greenery and cascading waterfalls.',
     date: 'Sep 28, 2024',
     category: 'Travel & Destination',
-    image: 'https://images.unsplash.com/photo-1540555700478-4be289fbecef?w=1200&q=95',
+    image: '/images/exterior7.jpeg',
   },
   {
     id: 'b3',
@@ -32,7 +32,7 @@ const blogPosts = [
     excerpt: 'A comprehensive checklist for organizing a successful offsite that blends strategy with serenity.',
     date: 'Aug 15, 2024',
     category: 'Hospitality & Events',
-    image: 'https://images.unsplash.com/photo-1517457373958-b7bdd4587205?w=1200&q=95',
+    image: '/images/exterior8.jpeg',
   },
 ];
 
@@ -44,7 +44,7 @@ export default function BlogPage() {
         label="Stories & Guides"
         title="The Karjat Journal"
         tagline="Discover the hidden gems, seasonal itineraries, and insider tips for your perfect getaway."
-        image="https://images.unsplash.com/photo-1511795409834-ef04bbd61622?w=2400&q=95"
+        image='/images/room1.jpeg'
       />
 
       <section className="py-32">

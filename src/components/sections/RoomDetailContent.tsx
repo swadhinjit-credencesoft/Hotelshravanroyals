@@ -90,7 +90,7 @@ export default function RoomDetailContent({ room }: RoomDetailContentProps) {
                 <div className="grid grid-cols-2 gap-8">
                    <div className="relative aspect-square overflow-hidden border border-gold/10">
                       <Image 
-                        src="https://images.unsplash.com/photo-1590490360182-c33d57733427?w=1200&q=95" 
+                        src='/images/exterior2.jpeg' 
                         alt={`${room.name} detail 2`} 
                         fill 
                         className="object-cover"
@@ -98,7 +98,7 @@ export default function RoomDetailContent({ room }: RoomDetailContentProps) {
                    </div>
                    <div className="relative aspect-square overflow-hidden border border-gold/10">
                       <Image 
-                        src="https://images.unsplash.com/photo-1566665797739-1674de7a421a?w=1200&q=95" 
+                        src='/images/exterior3.jpeg' 
                         alt={`${room.name} detail 3`} 
                         fill 
                         className="object-cover"
@@ -122,7 +122,7 @@ export default function RoomDetailContent({ room }: RoomDetailContentProps) {
          {/* Background Texture */}
          <div className="absolute inset-0 opacity-10 pointer-events-none">
             <Image 
-               src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=2400&q=95" 
+               src='/images/exterior4.jpeg' 
                alt="Forest texture" 
                fill 
                className="object-cover mix-blend-overlay"

@@ -19,8 +19,8 @@ export default function GalleryPage() {
             "name": "Unwind Karjat Photo Collection",
             "description": "High-resolution photos of our Red Brick Cottages, infinity pool, and lush forest surroundings in Karjat.",
             "image": [
-              "https://images.unsplash.com/photo-1631049307264-da0ec9d70304?w=1200",
-              "https://images.unsplash.com/photo-1540555700478-4be289fbecef?w=1200"
+              '/images/room1.jpeg',
+              '/images/room2.jpeg'
             ]
           })
         }}
@@ -65,7 +65,7 @@ export default function GalleryPage() {
              {/* Simulating IG posts */}
              {[1, 2, 3, 4].map(num => (
                <div key={num} className="relative aspect-square overflow-hidden group cursor-pointer border border-gold/10">
-                 <Image src={`https://images.unsplash.com/photo-1540555700478-4be289fbecef?w=400&q=80&sig=${num}`} alt="Guest photo" fill className="object-cover group-hover:scale-105 transition-transform duration-700" />
+                 <Image src={'/images/exterior.jpeg'} alt="Guest photo" fill className="object-cover group-hover:scale-105 transition-transform duration-700" />
                  <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
                     <span className="text-white font-sans text-xs">View on Instagram</span>
                  </div>

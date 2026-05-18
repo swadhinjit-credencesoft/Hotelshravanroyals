@@ -34,7 +34,7 @@ export default function DayTripsPage() {
         label="Day Picnics & Outings"
         title="A Day in Paradise"
         tagline="Short on time? Experience the best of Unwind Karjat with our curated day-trip packages for families and groups."
-        image="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=2400&q=95"
+        image='/images/room2.jpeg'
       />
 
       <section className="py-24">
@@ -69,7 +69,7 @@ export default function DayTripsPage() {
               </a>
             </div>
             <div className="relative aspect-square">
-               <Image src="https://images.unsplash.com/photo-1533777857889-4be7c70b33f7?w=1200&q=95" alt="Family enjoying a day picnic at a luxury resort" fill className="object-cover rounded-sm shadow-2xl" />
+               <Image src='/images/exterior.jpeg' alt="Family enjoying a day picnic at a luxury resort" fill className="object-cover rounded-sm shadow-2xl" />
             </div>
           </div>
 

@@ -32,7 +32,7 @@ export default function WellnessSection() {
           <div className="order-1 lg:order-2 relative flex justify-center lg:justify-end">
              <div className="relative w-full max-w-lg aspect-[3/4] overflow-hidden border border-gold/10">
                 <Image
-                  src="https://images.unsplash.com/photo-1544161515-4ab6ce6db874?w=1200&q=95"
+                  src='/images/exterior8.jpeg'
                   alt="Minimalist spa interior"
                   fill
                   className="object-cover hover:scale-105 transition-transform duration-1000"
@@ -45,7 +45,7 @@ export default function WellnessSection() {
                 className="absolute -bottom-12 -left-12 w-64 h-80 hidden md:block border border-gold/20 overflow-hidden bg-cream"
              >
                 <Image
-                  src="https://images.unsplash.com/photo-1515377905703-c4788e51af15?w=800&q=95"
+                  src='/images/room1.jpeg'
                   alt="Therapeutic botanicals"
                   fill
                   className="object-cover grayscale"

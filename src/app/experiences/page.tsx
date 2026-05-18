@@ -14,7 +14,7 @@ export default function ExperiencesPage() {
         label="Beyond the Room"
         title="Immerse in Nature"
         tagline="From monsoon treks to cozy winter bonfires, discover activities designed to help you reconnect with the outdoors."
-        image="https://images.unsplash.com/photo-1540946485063-a40da27545f8?w=2400&q=95"
+        image='/images/exterior7.jpeg'
       />
 
       <section className="py-32 bg-forest text-ivory/80">
@@ -33,7 +33,7 @@ export default function ExperiencesPage() {
             </div>
             <div className="relative aspect-[4/3] border border-ivory/10">
                <Image 
-                  src="https://images.unsplash.com/photo-1517594422361-5e18d0333396?w=1200&q=95" 
+                  src='/images/exterior8.jpeg' 
                   alt="Outdoor campfire and seating area in nature" 
                   fill
                   className="object-cover grayscale hover:grayscale-0 transition-all duration-1000"

@@ -15,7 +15,7 @@ export const estateEvents: EstateEvent[] = [
     category: 'Weddings',
     description: 'A magical open-air setting surrounded by the Sahyadri hills, perfect for your special day.',
     capacity: 'Up to 250 guests',
-    image: 'https://images.unsplash.com/photo-1519741497674-611481863552?w=1200&q=95',
+    image: '/images/exterior3.jpeg',
     features: ['Custom floral decoration', 'Multi-cuisine catering', 'Bridal suite included'],
   },
   {
@@ -24,7 +24,7 @@ export const estateEvents: EstateEvent[] = [
     category: 'Corporate',
     description: 'Where strategy meets serenity. Equipped with modern tech for offsites and board retreats.',
     capacity: 'Up to 60 guests',
-    image: 'https://images.unsplash.com/photo-1517457373958-b7bdd4587205?w=1200&q=95',
+    image: '/images/exterior4.jpeg',
     features: ['High-speed Wi-Fi', 'Projector & sound system', 'Team-building activities'],
   },
   {
@@ -33,7 +33,7 @@ export const estateEvents: EstateEvent[] = [
     category: 'Parties',
     description: 'An intimate setting by the infinity pool for birthday parties and private get-togethers.',
     capacity: 'Up to 40 guests',
-    image: 'https://images.unsplash.com/photo-1540555700478-4be289fbecef?w=1200&q=95',
+    image: '/images/exterior5.jpeg',
     features: ['Live BBQ setup', 'Pool access', 'Custom music playlists'],
   },
 ];

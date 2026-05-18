@@ -34,7 +34,7 @@ export default function PartiesPage() {
         label="Celebrations & Parties"
         title="Unforgettable Moments"
         tagline="From poolside birthdays to intimate family get-togethers, we host Karjat's most vibrant celebrations."
-        image="https://images.unsplash.com/photo-1540555700478-4be289fbecef?w=2400&q=95"
+        image='/images/exterior3.jpeg'
       />
 
       <section className="py-24">
@@ -69,7 +69,7 @@ export default function PartiesPage() {
               </a>
             </div>
             <div className="relative aspect-square">
-               <Image src="https://images.unsplash.com/photo-1527529482837-4698179dc6ce?w=1200&q=95" alt="Group of friends celebrating at a luxury resort" fill className="object-cover rounded-sm shadow-2xl" />
+               <Image src='/images/exterior4.jpeg' alt="Group of friends celebrating at a luxury resort" fill className="object-cover rounded-sm shadow-2xl" />
             </div>
           </div>
 

@@ -24,7 +24,7 @@ export default function HistorySection() {
           <div className="relative">
             <div className="relative aspect-[4/5] w-full max-w-md mx-auto z-10 overflow-hidden border border-gold/10">
               <Image
-                src="https://images.unsplash.com/photo-1544161515-4ab6ce6db874?w=1200&q=95"
+                src='/images/exterior4.jpeg'
                 alt="Modern rustic interior at Unwind Karjat"
                 fill
                 className="object-cover grayscale hover:grayscale-0 transition-all duration-1000"
@@ -36,7 +36,7 @@ export default function HistorySection() {
               className="absolute -top-12 -right-8 w-64 aspect-square hidden lg:block z-20 border border-gold/20 overflow-hidden"
             >
                <Image
-                src="https://images.unsplash.com/photo-1559329007-40df8a9345d8?w=800&q=95"
+                src='/images/exterior5.jpeg'
                 alt="Natural details at the retreat"
                 fill
                 className="object-cover"
@@ -48,7 +48,7 @@ export default function HistorySection() {
               className="absolute -bottom-16 -left-12 w-80 aspect-[3/2] hidden lg:block z-0 opacity-40 grayscale"
             >
                <Image
-                src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=800&q=95"
+                src='/images/exterior6.jpeg'
                 alt="Architecture sketches of Unwind Karjat"
                 fill
                 className="object-cover"

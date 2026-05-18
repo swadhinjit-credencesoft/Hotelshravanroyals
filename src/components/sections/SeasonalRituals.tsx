@@ -9,19 +9,19 @@ const rituals = [
     season: 'Autumn', 
     title: 'The Harvest Table', 
     description: 'A communal forest feast celebrating the peak of the estate’s organic harvest.',
-    image: 'https://images.unsplash.com/photo-1533616688419-b7a585564566?w=800&q=95' 
+    image: '/images/exterior5.jpeg' 
   },
   { 
     season: 'Winter', 
     title: 'Solstice Stargazing', 
     description: 'Guided by our resident astronomer on the shoreline deck with mulled library vintages.',
-    image: 'https://images.unsplash.com/photo-1519681393784-d120267933ba?w=800&q=95' 
+    image: '/images/exterior6.jpeg' 
   },
   { 
     season: 'Spring', 
     title: 'Bloom Bathing', 
     description: 'Therapeutic walks through the wildflower meadows followed by botanical spa rituals.',
-    image: 'https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?w=800&q=95' 
+    image: '/images/exterior7.jpeg' 
   },
 ];
 

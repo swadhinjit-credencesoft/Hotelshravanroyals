@@ -9,7 +9,7 @@ export default function ForestSection() {
       {/* Background Texture */}
       <div className="absolute inset-0 opacity-10 pointer-events-none">
          <Image 
-            src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=2400&q=95" 
+            src='/images/exterior3.jpeg' 
             alt="Forest texture" 
             fill 
             className="object-cover mix-blend-overlay"

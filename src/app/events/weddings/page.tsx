@@ -34,7 +34,7 @@ export default function WeddingsPage() {
         label="Destination Weddings"
         title="Begin Your Forever"
         tagline="A magical forest-side setting for your most significant moments. Exchange vows surrounded by the Sahyadris."
-        image="https://images.unsplash.com/photo-1519741497674-611481863552?w=2400&q=95"
+        image='/images/exterior5.jpeg'
       />
 
       <section className="py-24">
@@ -69,7 +69,7 @@ export default function WeddingsPage() {
               </a>
             </div>
             <div className="relative aspect-square">
-               <Image src="https://images.unsplash.com/photo-1519225421980-715cb0215aed?w=1200&q=95" alt="Outdoor wedding setup at sunset" fill className="object-cover rounded-sm shadow-2xl" />
+               <Image src='/images/exterior6.jpeg' alt="Outdoor wedding setup at sunset" fill className="object-cover rounded-sm shadow-2xl" />
             </div>
           </div>
 

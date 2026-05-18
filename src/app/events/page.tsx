@@ -29,7 +29,7 @@ export default function EventsPage() {
         label="Events & Celebrations"
         title="Unforgettable Gatherings"
         tagline="From intimate forest weddings to strategic corporate retreats, we provide the perfect backdrop for your significant moments."
-        image="https://images.unsplash.com/photo-1511795409834-ef04bbd61622?w=2400&q=95"
+        image='/images/exterior2.jpeg'
       />
 
       {/* SEO Schema */}

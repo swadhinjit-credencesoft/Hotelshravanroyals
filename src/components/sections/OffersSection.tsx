@@ -52,7 +52,7 @@ function OfferCard({
     >
       <div className="relative h-[120px] w-full">
         <Image
-          src={`https://images.unsplash.com/photo-${index === 0 ? '1540555700478-4be289fbecef' : index === 1 ? '1506126613408-eca07ce68773' : '1517248135467-4c7edcad34c4'}?w=800&q=80`}
+          src={['/images/exterior8.jpeg', '/images/room1.jpeg', '/images/room2.jpeg'][index]}
           alt={offer.name}
           fill
           className="object-cover"

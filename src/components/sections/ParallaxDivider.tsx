@@ -59,7 +59,7 @@ export default function ParallaxDivider() {
         style={{ height: '130%', top: '-15%' }}
       >
         <Image
-          src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?w=2400&q=90"
+          src='/images/exterior.jpeg'
           alt="Serene estate landscape at dusk"
           fill
           className="object-cover"

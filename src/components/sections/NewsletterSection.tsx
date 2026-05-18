@@ -41,7 +41,7 @@ export default function NewsletterSection() {
       {/* Cinematic Background */}
       <div className="absolute inset-0 z-0">
         <Image
-          src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?w=2400&q=95"
+          src='/images/exterior7.jpeg'
           alt="Inn at twilight"
           fill
           className="object-cover"
