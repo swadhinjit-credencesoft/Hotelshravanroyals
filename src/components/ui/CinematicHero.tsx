@@ -30,14 +30,25 @@ export default function CinematicHero({ title, tagline, label, image }: Cinemati
         style={{ y, opacity }}
         className="absolute inset-0 z-0"
       >
-        <Image
-          src={image}
-          alt={title}
-          fill
-          priority
-          className="object-cover animate-ken-burns"
-          sizes="100vw"
-        />
+        {image.match(/\.(mp4|webm|ogg)$/) ? (
+          <video
+            src={image}
+            autoPlay
+            muted
+            loop
+            playsInline
+            className="w-full h-full object-cover animate-ken-burns"
+          />
+        ) : (
+          <Image
+            src={image}
+            alt={title}
+            fill
+            priority
+            className="object-cover animate-ken-burns"
+            sizes="100vw"
+          />
+        )}
         <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent" />
         <div className="absolute inset-0 bg-forest/20 mix-blend-overlay" />
       </motion.div>

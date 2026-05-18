@@ -14,7 +14,7 @@ export default function ExperiencesPage() {
         label="Beyond the Inn"
         title="Immerse in the Extraordinary"
         tagline="Private heritage tours, organic farm-to-table dining, and ancient spa rituals designed to transform the soul."
-        image="https://images.unsplash.com/photo-1540946485063-a40da27545f8?w=2400&q=95"
+        image="https://bookonelocal.in/cdn/IMG_6390.mp4"
       />
 
       <section className="py-32 bg-forest text-ivory/80">
@@ -33,7 +33,7 @@ export default function ExperiencesPage() {
             </div>
             <div className="relative aspect-[4/3] border border-ivory/10">
                <Image 
-                  src="https://images.unsplash.com/photo-1577219491135-ce391730fb2c?w=1200&q=95" 
+                  src="https://bookonelocal.in/cdn/IMG_6298.JPG" 
                   alt="Private chef table preparation" 
                   fill
                   className="object-cover grayscale hover:grayscale-0 transition-all duration-1000"

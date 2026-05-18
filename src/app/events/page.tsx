@@ -17,7 +17,7 @@ export default function EventsPage() {
         label="Celebrations & Summits"
         title="Stage Your Legacy"
         tagline="From clifftop vows to boardroom breakthroughs, we provide the backdrop for life's most significant moments."
-        image="https://images.unsplash.com/photo-1511795409834-ef04bbd61622?w=2400&q=95"
+        image="https://bookonelocal.in/cdn/IMG_6350.mp4"
       />
 
       <section className="py-32">

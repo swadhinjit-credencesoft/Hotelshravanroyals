@@ -12,7 +12,7 @@ export default function RoomsPage() {
         label="Our Accommodations"
         title="Sanctuaries of Stillness"
         tagline="Forty-seven bespoke suites, each designed as a private world where the horizon is your only neighbor."
-        image="https://images.unsplash.com/photo-1631049307264-da0ec9d70304?w=2400&q=95"
+        image="https://bookonelocal.in/cdn/IMG_6381.mp4"
       />
       <RoomsGrid />
       <LuxuryAmenities />

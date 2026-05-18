@@ -55,29 +55,39 @@ function ExperienceCard({
 
   return (
     <motion.div
-      className={`group relative overflow-hidden rounded-none ${
-        isTall ? 'lg:row-span-2' : ''
-      }`}
+      className={`group relative overflow-hidden rounded-none ${isTall ? 'lg:row-span-2' : ''
+        }`}
       initial={{ opacity: 0, y: 40 }}
       animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 40 }}
       transition={{ duration: 0.8, delay: index * 0.12, ease: [0.16, 1, 0.3, 1] }}
     >
       <div className="relative h-full w-full min-h-[400px] lg:min-h-0">
-        <Image
-          src={experience.image}
-          alt={experience.imageAlt}
-          fill
-          className="object-cover transition-transform duration-700 group-hover:scale-110"
-          sizes={isTall ? '50vw' : '33vw'}
-        />
+        {experience.image.match(/\.(mp4|webm|ogg)$/) ? (
+          <video
+            src={experience.image}
+            autoPlay
+            muted
+            loop
+            playsInline
+            className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+          />
+        ) : (
+          <Image
+            src={experience.image}
+            alt={experience.imageAlt}
+            fill
+            className="object-cover transition-transform duration-700 group-hover:scale-110"
+            sizes={isTall ? '50vw' : '33vw'}
+          />
+        )}
         <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent" />
 
         <div className="absolute top-4 right-4">
-            <div className="bg-ivory/10 backdrop-blur-sm px-3 py-1 border border-ivory/20 rounded-none">
-                <span className="font-sans text-[9px] uppercase tracking-widest text-ivory/80 flex items-center gap-1.5">
-                    <Clock size={10} className="text-gold" /> {experience.duration}
-                </span>
-            </div>
+          <div className="bg-ivory/10 backdrop-blur-sm px-3 py-1 border border-ivory/20 rounded-none">
+            <span className="font-sans text-[9px] uppercase tracking-widest text-ivory/80 flex items-center gap-1.5">
+              <Clock size={10} className="text-gold" /> {experience.duration}
+            </span>
+          </div>
         </div>
 
         <div className="absolute bottom-0 left-0 right-0 p-8">

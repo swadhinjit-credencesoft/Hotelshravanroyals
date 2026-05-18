@@ -16,7 +16,7 @@ export default function AboutPage() {
         label="Shravan Royal Legacy"
         title="Architecture of Silence"
         tagline="Founded on the belief that true luxury is not heard, but felt. Discover the vision behind our Jaipur sanctuary."
-        image="https://images.unsplash.com/photo-1470770841072-f978cf4d019e?w=2400&q=95"
+        image="https://bookonelocal.in/cdn/IMG_6229.mp4"
       />
 
       {/* Vision Section */}
