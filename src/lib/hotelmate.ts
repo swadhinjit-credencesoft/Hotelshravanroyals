@@ -126,6 +126,7 @@ export function buildBookingUrl(params?: {
   noOfRooms?: string
   noOfPersons?: string
   roomName?: string
+  roomId?: string
 }): string {
   const baseUrl = 'https://bookone.io/Unwind-Karjat'
   
@@ -193,6 +194,10 @@ export function buildBookingUrl(params?: {
   query.set("noOfRooms", String(safeRooms))
 
   if (params?.roomName) query.set("room", params.roomName)
+  if (params?.roomId) {
+    query.set("roomId", params.roomId)
+    query.set("roomTypeId", params.roomId)
+  }
 
   return `${baseUrl}?${query.toString()}`
 }

@@ -1,6 +1,44 @@
+'use client'
+
+import { Suspense } from 'react'
+import { useSearchParams } from 'next/navigation'
 import Navbar from '@/components/layout/Navbar'
 import Footer from '@/components/layout/Footer'
 import SectionLabel from '@/components/ui/SectionLabel'
+import { buildBookingUrl } from '@/lib/hotelmate'
+
+function ReservationsIframe() {
+  const searchParams = useSearchParams()
+  
+  // Extract all parameters safely
+  const fromDate = searchParams.get('fromDate') || undefined
+  const toDate = searchParams.get('toDate') || undefined
+  const noOfRooms = searchParams.get('noOfRooms') || undefined
+  const noOfPersons = searchParams.get('noOfPersons') || undefined
+  const roomName = searchParams.get('roomName') || undefined
+  const roomId = searchParams.get('roomId') || undefined
+
+  const iframeUrl = buildBookingUrl({
+    fromDate,
+    toDate,
+    noOfRooms,
+    noOfPersons,
+    roomName,
+    roomId
+  })
+
+  return (
+    <div className="w-full max-w-5xl mx-auto bg-cream-dark border border-gold/20">
+      <iframe
+        src={iframeUrl}
+        className="w-full border-0"
+        style={{ height: '800px' }}
+        title="Unwind Karjat Booking Engine"
+        allow="payment"
+      />
+    </div>
+  )
+}
 
 export default function ReservationsPage() {
   return (
@@ -13,15 +51,13 @@ export default function ReservationsPage() {
           Select your preferred dates and sanctuary. Book directly through our secure booking engine.
         </p>
 
-        <div className="w-full max-w-5xl mx-auto bg-cream-dark border border-gold/20">
-          <iframe
-            src="https://bookone.io/Unwind-Karjat?bookingEngine=true"
-            className="w-full border-0"
-            style={{ height: '800px' }}
-            title="Unwind Karjat Booking Engine"
-            allow="payment"
-          />
-        </div>
+        <Suspense fallback={
+          <div className="w-full max-w-5xl mx-auto bg-cream-dark border border-gold/20 flex items-center justify-center" style={{ height: '800px' }}>
+            <p className="font-sans text-sm text-gold uppercase tracking-[0.2em] animate-pulse">Loading Booking Portal...</p>
+          </div>
+        }>
+          <ReservationsIframe />
+        </Suspense>
       </div>
       <Footer />
     </main>

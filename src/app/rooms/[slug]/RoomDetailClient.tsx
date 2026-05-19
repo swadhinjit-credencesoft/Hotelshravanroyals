@@ -1,11 +1,12 @@
 'use client'
 
-import { useState } from 'react'
+import { useState, useEffect, useCallback } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 import { motion, AnimatePresence } from 'framer-motion'
 import Navbar from '@/components/layout/Navbar'
 import Footer from '@/components/layout/Footer'
+import { todayString, addDays, buildBookingUrl, fetchAvailability } from '@/lib/hotelmate'
 import { 
   Wifi, 
   Wind, 
@@ -236,33 +237,7 @@ export default function RoomDetailClient({ room, otherRooms }: RoomDetailClientP
 
         {/* Right Column: Sticky Booking Widget */}
         <div className="lg:col-span-4 lg:sticky lg:top-32 h-fit">
-          <div className="bg-forest p-8 rounded-sm shadow-2xl text-ivory">
-            <h3 className="font-serif text-2xl mb-2 text-gold">Ready to Escape?</h3>
-            <p className="font-sans text-[11px] uppercase tracking-widest text-ivory/60 mb-8 border-b border-ivory/10 pb-4">
-              Secure your {room.name} at Unwind Karjat
-            </p>
-            
-            <div className="space-y-6 mb-8">
-              <div className="flex items-center justify-between">
-                <span className="font-serif">{room.name}</span>
-                <span className="font-serif text-gold">₹{room.price}</span>
-              </div>
-              <div className="flex items-center justify-between text-ivory/60 text-sm">
-                <span>Taxes & Fees</span>
-                <span>Calculated at checkout</span>
-              </div>
-            </div>
-
-            <a
-              href="https://bookone.io/Unwind-Karjat?bookingEngine=true"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="w-full bg-gold text-[#1a1004] py-4 rounded-sm font-sans text-[11px] uppercase tracking-widest flex items-center justify-center gap-2 hover:bg-gold-light transition-all active:scale-[0.98]"
-            >
-              <Calendar size={14} />
-              Check Availability
-            </a>
-          </div>
+          <BookingSidebar room={room} />
         </div>
       </div>
 
@@ -294,5 +269,184 @@ export default function RoomDetailClient({ room, otherRooms }: RoomDetailClientP
 
       <Footer />
     </main>
+  )
+}
+
+function BookingSidebar({ room }: { room: Room }) {
+  const [checkIn, setCheckIn] = useState('')
+  const [checkOut, setCheckOut] = useState('')
+  const [guests, setGuests] = useState('1')
+  const [roomsCount, setRoomsCount] = useState('1')
+  const [livePrice, setLivePrice] = useState<number | null>(null)
+  const [liveRoomId, setLiveRoomId] = useState<string | null>(null)
+  const [loading, setLoading] = useState(false)
+  const [isAvailable, setIsAvailable] = useState(true)
+
+  // Initialize dates safely in client to avoid hydration mismatch
+  useEffect(() => {
+    setCheckIn(todayString())
+    setCheckOut(addDays(todayString(), 1))
+  }, [])
+
+  useEffect(() => {
+    if (!checkIn || !checkOut) return
+
+    let active = true
+    async function checkLiveAvailability() {
+      setLoading(true)
+      try {
+        const data = await fetchAvailability({
+          fromDate: checkIn,
+          toDate: checkOut,
+          noOfRooms: Number(roomsCount),
+          noOfPersons: Number(guests)
+        })
+        
+        if (!active) return
+
+        const matched = data.roomList?.find(r => 
+          r.name.toLowerCase().includes(room.name.toLowerCase()) || 
+          room.name.toLowerCase().includes(r.name.toLowerCase())
+        )
+
+        if (matched) {
+          setLiveRoomId(String(matched.id))
+          // Find standard plan rate or fallback
+          const matchedPlan = matched.ratesAndAvailabilityDtos?.[0]?.roomRatePlans?.[0]
+          const price = matchedPlan?.amount || matched.roomOnlyPrice || room.price
+          setLivePrice(price)
+          setIsAvailable(true)
+        } else {
+          setIsAvailable(false)
+          setLivePrice(null)
+          setLiveRoomId(null)
+        }
+      } catch (err) {
+        console.error("CORS or network error fetching live rate. Falling back to local data.", err)
+        if (active) {
+          // Gracefully fallback to static price
+          setLivePrice(room.price)
+          setIsAvailable(true)
+        }
+      } finally {
+        if (active) setLoading(false)
+      }
+    }
+
+    checkLiveAvailability()
+    return () => { active = false }
+  }, [checkIn, checkOut, guests, roomsCount, room.name, room.price])
+
+  const handleBookNow = useCallback(() => {
+    const url = buildBookingUrl({
+      fromDate: checkIn || undefined,
+      toDate: checkOut || undefined,
+      noOfPersons: guests || undefined,
+      noOfRooms: roomsCount || undefined,
+      roomName: room.name,
+      roomId: liveRoomId || undefined
+    })
+    window.open(url, '_blank', 'noopener,noreferrer')
+  }, [checkIn, checkOut, guests, roomsCount, room.name, liveRoomId])
+
+  const handleCheckInChange = (val: string) => {
+    setCheckIn(val)
+    if (val && (!checkOut || checkOut <= val)) {
+      setCheckOut(addDays(val, 1))
+    }
+  }
+
+  return (
+    <div className="bg-forest p-8 rounded-sm shadow-2xl text-ivory">
+      <h3 className="font-display italic text-2xl mb-2 text-gold">Ready to Escape?</h3>
+      <p className="font-sans text-[11px] uppercase tracking-widest text-ivory/60 mb-6 border-b border-ivory/10 pb-4">
+        Secure your {room.name} at Unwind Karjat
+      </p>
+
+      {/* Date Fields */}
+      <div className="space-y-4 mb-6">
+        <div>
+          <label className="font-sans text-[10px] uppercase tracking-widest text-gold/70 block mb-1">Check-In</label>
+          <input
+            type="date"
+            value={checkIn}
+            min={todayString()}
+            onChange={(e) => handleCheckInChange(e.target.value)}
+            className="w-full bg-transparent border-b border-gold/30 text-ivory placeholder-gold/50 font-sans text-sm pb-1 focus:outline-none focus:border-gold transition-colors"
+          />
+        </div>
+
+        <div>
+          <label className="font-sans text-[10px] uppercase tracking-widest text-gold/70 block mb-1">Check-Out</label>
+          <input
+            type="date"
+            value={checkOut}
+            min={checkIn ? addDays(checkIn, 1) : todayString()}
+            onChange={(e) => setCheckOut(e.target.value)}
+            className="w-full bg-transparent border-b border-gold/30 text-ivory placeholder-gold/50 font-sans text-sm pb-1 focus:outline-none focus:border-gold transition-colors"
+          />
+        </div>
+
+        <div className="grid grid-cols-2 gap-4">
+          <div>
+            <label className="font-sans text-[10px] uppercase tracking-widest text-gold/70 block mb-1">Guests</label>
+            <select
+              value={guests}
+              onChange={(e) => setGuests(e.target.value)}
+              className="w-full bg-transparent border-b border-gold/30 text-ivory font-sans text-sm pb-1 focus:outline-none focus:border-gold transition-colors"
+            >
+              {[1, 2, 3, 4, 5, 6].map(n => (
+                <option key={n} value={String(n)} className="text-forest">{n} Guest{n > 1 ? 's' : ''}</option>
+              ))}
+            </select>
+          </div>
+          <div>
+            <label className="font-sans text-[10px] uppercase tracking-widest text-gold/70 block mb-1">Rooms</label>
+            <select
+              value={roomsCount}
+              onChange={(e) => setRoomsCount(e.target.value)}
+              className="w-full bg-transparent border-b border-gold/30 text-ivory font-sans text-sm pb-1 focus:outline-none focus:border-gold transition-colors"
+            >
+              {[1, 2, 3, 4].map(n => (
+                <option key={n} value={String(n)} className="text-forest">{n} Room{n > 1 ? 's' : ''}</option>
+              ))}
+            </select>
+          </div>
+        </div>
+      </div>
+
+      {/* Pricing / Live Status */}
+      <div className="space-y-4 mb-8 border-t border-ivory/10 pt-6">
+        <div className="flex items-center justify-between">
+          <span className="font-serif">{room.name}</span>
+          <div className="text-right">
+            {loading ? (
+              <span className="text-gold font-sans text-xs animate-pulse">Checking live rate...</span>
+            ) : isAvailable ? (
+              <div className="flex flex-col items-end">
+                <span className="font-serif text-xl text-gold">₹{(livePrice || room.price).toLocaleString()}</span>
+                {livePrice && livePrice !== room.price && (
+                  <span className="text-[9px] uppercase tracking-widest text-gold/80 bg-gold/10 px-1.5 py-0.5 rounded-sm font-sans mt-1">Live Rate</span>
+                )}
+              </div>
+            ) : (
+              <span className="text-rose-400 font-sans text-xs uppercase tracking-wider">Sold Out / Unavailable</span>
+            )}
+          </div>
+        </div>
+        <div className="flex items-center justify-between text-ivory/60 text-sm">
+          <span>Taxes & Fees</span>
+          <span>Calculated at checkout</span>
+        </div>
+      </div>
+
+      <button
+        onClick={handleBookNow}
+        className="w-full bg-gold text-[#1a1004] py-4 rounded-sm font-sans text-[11px] uppercase tracking-[0.2em] flex items-center justify-center gap-2 hover:bg-gold-light transition-all active:scale-[0.98]"
+      >
+        <Calendar size={14} />
+        {isAvailable ? 'Book Sanctuary' : 'Check Alternate Dates'}
+      </button>
+    </div>
   )
 }

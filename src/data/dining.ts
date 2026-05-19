@@ -20,7 +20,7 @@ export const venues: Venue[] = [
     hours: '7:30 AM – 10:30 PM daily',
     image: '/images/room2.jpeg',
     imageAlt: 'Authentic multi-cuisine dining hall at Unwind Karjat',
-    reservationHref: '/contact',
+    reservationHref: 'https://bookone.io/Unwind-Karjat?bookingEngine=true',
   },
   {
     id: 'd2',
@@ -31,7 +31,7 @@ export const venues: Venue[] = [
     hours: '7:00 PM – 11:00 PM',
     image: '/images/exterior.jpeg',
     imageAlt: 'Live barbecue grill in nature',
-    reservationHref: '/contact',
+    reservationHref: 'https://bookone.io/Unwind-Karjat?bookingEngine=true',
   },
   {
     id: 'd3',
@@ -42,6 +42,6 @@ export const venues: Venue[] = [
     hours: '7:00 AM – 9:00 PM',
     image: '/images/exterior2.jpeg',
     imageAlt: 'Cozy garden cafe and lounge at Unwind Karjat',
-    reservationHref: '/contact',
+    reservationHref: 'https://bookone.io/Unwind-Karjat?bookingEngine=true',
   },
 ]

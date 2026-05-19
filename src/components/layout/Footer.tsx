@@ -159,10 +159,10 @@ export default function Footer() {
             Designed and Developed By CredenceSoft, Powered By BookOne.
           </p>
           <div className="flex gap-4 flex-wrap justify-end max-w-[50%]">
-            <Link href="/sitemap.xml" className="font-sans text-[11px] text-ivory/30 hover:text-gold transition-colors">
+            {/* <Link href="/sitemap.xml" className="font-sans text-[11px] text-ivory/30 hover:text-gold transition-colors">
               Sitemap
             </Link>
-            <span className="text-ivory/20">·</span>
+            <span className="text-ivory/20">·</span> */}
             <Link href="/privacy" className="font-sans text-[11px] text-ivory/30 hover:text-gold transition-colors">
               Privacy Policy
             </Link>

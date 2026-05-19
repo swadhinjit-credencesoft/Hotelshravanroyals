@@ -5,7 +5,7 @@ import Footer from '@/components/layout/Footer';
 import CinematicHero from '@/components/ui/CinematicHero';
 import SectionLabel from '@/components/ui/SectionLabel';
 import Image from 'next/image';
-import { Gift, Music, Flame, GlassWater, Users, MessageCircle } from 'lucide-react';
+import { Gift, Music, Flame, GlassWater, Users, Calendar } from 'lucide-react';
 import Link from 'next/link';
 
 export default function PartiesPage() {
@@ -61,11 +61,13 @@ export default function PartiesPage() {
               </div>
 
               <a 
-                href="https://wa.me/910000000000" 
+                href="https://bookone.io/Unwind-Karjat?bookingEngine=true" 
+                target="_blank"
+                rel="noopener noreferrer"
                 className="inline-flex items-center gap-3 bg-forest text-ivory font-sans text-[11px] uppercase tracking-[0.2em] px-10 py-5 hover:bg-forest/90 transition-all rounded-sm"
               >
-                <MessageCircle size={18} />
-                WhatsApp Party Enquiry
+                <Calendar size={18} />
+                Book Direct Online
               </a>
             </div>
             <div className="relative aspect-square">
