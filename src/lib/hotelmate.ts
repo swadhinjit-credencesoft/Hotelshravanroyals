@@ -127,21 +127,97 @@ export function buildBookingUrl(params?: {
   noOfPersons?: string
   roomName?: string
 }): string {
-  const q = new URLSearchParams({ bookingEngine: 'true' })
-  if (params?.fromDate) q.set('fromDate', params.fromDate)
-  if (params?.toDate) q.set('toDate', params.toDate)
-  if (params?.noOfRooms) q.set('noOfRooms', params.noOfRooms)
-  if (params?.noOfPersons) q.set('noOfPersons', params.noOfPersons)
-  if (params?.roomName) q.set('room', params.roomName)
-  return `https://bookone.io/Unwind-Karjat?${q.toString()}`
+  const baseUrl = 'https://bookone.io/Unwind-Karjat'
+  
+  const fromStr = params?.fromDate || todayString()
+  const toStr = params?.toDate || addDays(todayString(), 1)
+  
+  // Parse incoming YYYY-MM-DD
+  const partsFrom = fromStr.split('-').map(Number)
+  const [fYear, fMonth, fDay] = partsFrom[0] > 1000 ? partsFrom : [partsFrom[2], partsFrom[1], partsFrom[0]]
+  const start = new Date(fYear, fMonth - 1, fDay)
+  
+  const partsTo = toStr.split('-').map(Number)
+  const [tYear, tMonth, tDay] = partsTo[0] > 1000 ? partsTo : [partsTo[2], partsTo[1], partsTo[0]]
+  const end = new Date(tYear, tMonth - 1, tDay)
+
+  const pad = (n: number) => String(n).padStart(2, "0")
+  
+  // YYYY-MM-DD
+  const checkInIso = `${start.getFullYear()}-${pad(start.getMonth() + 1)}-${pad(start.getDate())}`
+  const checkOutIso = `${end.getFullYear()}-${pad(end.getMonth() + 1)}-${pad(end.getDate())}`
+
+  // DD-MM-YYYY (Required for BookOne / HotelMate fromDate/toDate)
+  const checkInDDMMYYYY = `${pad(start.getDate())}-${pad(start.getMonth() + 1)}-${start.getFullYear()}`
+  const checkOutDDMMYYYY = `${pad(end.getDate())}-${pad(end.getMonth() + 1)}-${end.getFullYear()}`
+
+  const safeAdults = Math.max(1, Number(params?.noOfPersons) || 1)
+  const safeRooms = Math.max(1, Number(params?.noOfRooms) || 1)
+  const safeChildren = 0
+  const numGuests = safeAdults + safeChildren
+
+  const nights = Math.max(
+    1,
+    Math.round((end.getTime() - start.getTime()) / (1000 * 60 * 60 * 24))
+  )
+
+  const query = new URLSearchParams()
+  query.set("bookingEngine", "true")
+
+  // Format 1 — ISO (newer engines)
+  query.set("checkin", checkInIso)
+  query.set("checkout", checkOutIso)
+
+  // Format 2 — split day/month/year (legacy widget fallback)
+  query.set("checkinDay", String(start.getDate()))
+  query.set("checkinMonth", String(start.getMonth() + 1))
+  query.set("checkinYear", String(start.getFullYear()))
+  query.set("checkoutDay", String(end.getDate()))
+  query.set("checkoutMonth", String(end.getMonth() + 1))
+  query.set("checkoutYear", String(end.getFullYear()))
+
+  // Format 3 — fromDate/toDate (DD-MM-YYYY)
+  query.set("fromDate", checkInDDMMYYYY)
+  query.set("toDate", checkOutDDMMYYYY)
+
+  query.set("nights", String(nights))
+
+  query.set("adults", String(safeAdults))
+  query.set("numAdults", String(safeAdults))
+  query.set("children", String(safeChildren))
+  query.set("Children", String(safeChildren))
+  query.set("numGuests", String(numGuests))
+  query.set("noOfPersons", String(numGuests))
+
+  query.set("rooms", String(safeRooms))
+  query.set("noOfRooms", String(safeRooms))
+
+  if (params?.roomName) query.set("room", params.roomName)
+
+  return `${baseUrl}?${query.toString()}`
+}
+
+export function formatDate(date: Date): string {
+  const y = date.getFullYear()
+  const m = String(date.getMonth() + 1).padStart(2, '0')
+  const d = String(date.getDate()).padStart(2, '0')
+  return `${y}-${m}-${d}`
 }
 
 export function todayString(): string {
-  return new Date().toISOString().split('T')[0]
+  return formatDate(new Date())
 }
 
 export function addDays(date: string, days: number): string {
-  const d = new Date(date)
-  d.setDate(d.getDate() + days)
-  return d.toISOString().split('T')[0]
+  if (!date) return ''
+  const parts = date.split('-').map(Number)
+  let day, month, year
+  if (parts[0] > 1000) {
+    [year, month, day] = parts
+  } else {
+    [day, month, year] = parts
+  }
+  const localDate = new Date(year, month - 1, day)
+  localDate.setDate(localDate.getDate() + days)
+  return formatDate(localDate)
 }
