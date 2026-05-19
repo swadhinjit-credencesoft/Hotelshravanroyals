@@ -74,10 +74,15 @@ export default function GallerySection() {
                 {image.type === 'video' ? (
                   <video
                     src={image.src}
-                    autoPlay
                     loop
                     muted
                     playsInline
+                    preload="metadata"
+                    onMouseEnter={(e) => e.currentTarget.play()}
+                    onMouseLeave={(e) => {
+                      e.currentTarget.pause();
+                      e.currentTarget.currentTime = 0;
+                    }}
                     className="w-full h-auto transition-transform duration-700 group-hover:scale-105 grayscale-[40%] group-hover:grayscale-0"
                   />
                 ) : (
