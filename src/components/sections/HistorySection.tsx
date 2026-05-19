@@ -4,6 +4,7 @@ import { useRef } from 'react';
 import { motion, useScroll, useTransform } from 'framer-motion';
 import SectionLabel from '@/components/ui/SectionLabel';
 import GoldDivider from '@/components/ui/GoldDivider';
+import OptimizedVideo from '@/components/ui/OptimizedVideo';
 
 export default function HistorySection() {
   const containerRef = useRef<HTMLDivElement>(null);
@@ -27,14 +28,10 @@ export default function HistorySection() {
           {/* Images Section */}
           <div className="relative">
 
-            <div className="relative aspect-[4/5] w-full max-w-md mx-auto z-10 overflow-hidden border border-gold/10 rounded-2xl">
-              <video
+             <div className="relative aspect-[4/5] w-full max-w-md mx-auto z-10 overflow-hidden border border-gold/10 rounded-2xl">
+              <OptimizedVideo
                 src="https://bookonelocal.in/cdn/IMG_6359.mp4"
-                autoPlay
-                loop
-                muted
-                playsInline
-                className="absolute inset-0 w-full h-full object-cover hover:scale-105 transition-all duration-1000"
+                className="hover:scale-105 transition-all duration-1000"
               />
             </div>
 
@@ -42,13 +39,8 @@ export default function HistorySection() {
               style={{ y: y1 }}
               className="absolute -top-12 -right-8 w-64 aspect-square hidden lg:block z-20 border border-gold/20 overflow-hidden rounded-2xl"
             >
-              <video
+              <OptimizedVideo
                 src="https://bookonelocal.in/cdn/IMG_6317.mp4"
-                autoPlay
-                loop
-                muted
-                playsInline
-                className="absolute inset-0 w-full h-full object-cover"
               />
             </motion.div>
 
@@ -56,13 +48,8 @@ export default function HistorySection() {
               style={{ y: y2 }}
               className="absolute -bottom-16 -left-12 w-80 aspect-[3/2] hidden lg:block z-0 opacity-60 overflow-hidden rounded-2xl"
             >
-              <video
+              <OptimizedVideo
                 src="https://bookonelocal.in/cdn/IMG_6319.mp4"
-                autoPlay
-                loop
-                muted
-                playsInline
-                className="absolute inset-0 w-full h-full object-cover"
               />
             </motion.div>
           </div>

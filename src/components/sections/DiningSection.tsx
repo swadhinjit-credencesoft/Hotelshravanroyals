@@ -7,6 +7,7 @@ import { ArrowRight, Clock } from 'lucide-react'
 import { venues } from '@/data/dining'
 import SectionLabel from '@/components/ui/SectionLabel'
 import GoldDivider from '@/components/ui/GoldDivider'
+import OptimizedVideo from '@/components/ui/OptimizedVideo'
 
 function VenueRow({ venue, index }: { venue: (typeof venues)[0]; index: number }) {
   const ref = useRef<HTMLDivElement>(null)
@@ -50,12 +51,8 @@ function VenueRow({ venue, index }: { venue: (typeof venues)[0]; index: number }
     >
       <div ref={imgRef} className="absolute inset-0" style={{ height: '116%', top: '-8%' }}>
         {venue.image.match(/\.(mp4|webm|ogg)$/) ? (
-          <video
+          <OptimizedVideo
             src={venue.image}
-            autoPlay
-            muted
-            loop
-            playsInline
             className="w-full h-full object-cover"
           />
         ) : (

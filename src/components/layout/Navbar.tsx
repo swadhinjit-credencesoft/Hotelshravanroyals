@@ -7,6 +7,7 @@ import Image from 'next/image'
 import { Menu, X } from 'lucide-react'
 import { siteConfig } from '@/data/site'
 import MagneticButton from '@/components/ui/MagneticButton'
+import { buildBookingEngineUrl } from '@/lib/hotelmate-availability'
 
 const navLinks = [
   { label: 'About', href: '/about' },
@@ -23,6 +24,21 @@ export default function Navbar() {
   const [scrolled, setScrolled] = useState(false)
   const [mobileOpen, setMobileOpen] = useState(false)
   const { scrollY } = useScroll()
+
+  // Generate a default booking link for today to tomorrow
+  const getBookingLink = () => {
+    const today = new Date();
+    const tomorrow = new Date(today);
+    tomorrow.setDate(tomorrow.getDate() + 1);
+
+    return buildBookingEngineUrl({
+      baseUrl: 'https://bookone.io/Hotel-Shravan-Royal-Inn',
+      checkIn: today,
+      checkOut: tomorrow,
+      adults: 2,
+      rooms: 1,
+    });
+  };
 
   useEffect(() => {
     const unsub = scrollY.on('change', (v) => setScrolled(v > 60))
@@ -95,7 +111,9 @@ export default function Navbar() {
             </a>
             <MagneticButton
               as="a"
-              href="/reservations"
+              href={getBookingLink()}
+              target="_blank"
+              rel="noopener noreferrer"
               className="bg-gold text-[#1a1004] font-sans text-[11px] uppercase tracking-[0.16em] px-6 py-2.5 rounded-sm hover:bg-gold-light transition-colors duration-300"
               aria-label="Book your stay now"
             >
@@ -164,7 +182,9 @@ export default function Navbar() {
               </a>
               <div className="mt-6">
                 <a
-                  href="/reservations"
+                  href={getBookingLink()}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   onClick={() => setMobileOpen(false)}
                   className="inline-block bg-gold text-[#1a1004] font-sans text-[11px] uppercase tracking-[0.16em] px-8 py-3 rounded-sm hover:bg-gold-light transition-colors"
                 >

@@ -16,6 +16,7 @@ import { heroSlides, heroStats } from '@/data/hero'
 import { awards } from '@/data/awards'
 import ParticleCanvas from '@/components/ui/ParticleCanvas'
 import ScrollIndicator from '@/components/ui/ScrollIndicator'
+import { buildBookingEngineUrl } from '@/lib/hotelmate-availability'
 
 // Count-up hook
 function useCountUp(target: string, active: boolean) {
@@ -66,6 +67,27 @@ function StatItem({ stat, index, active }: { stat: { value: string; label: strin
 export default function HeroSection() {
   const [currentSlide, setCurrentSlide] = useState(0)
   const [statsActive, setStatsActive] = useState(false)
+  
+  // Booking state
+  const [checkIn, setCheckIn] = useState('')
+  const [checkOut, setCheckOut] = useState('')
+  const [guests, setGuests] = useState('2')
+  const [roomType, setRoomType] = useState('1')
+
+  const getBookingLink = () => {
+    const today = new Date();
+    const tomorrow = new Date(today);
+    tomorrow.setDate(tomorrow.getDate() + 1);
+
+    return buildBookingEngineUrl({
+      baseUrl: 'https://bookone.io/Hotel-Shravan-Royal-Inn',
+      checkIn: checkIn ? new Date(checkIn) : today,
+      checkOut: checkOut ? new Date(checkOut) : tomorrow,
+      adults: parseInt(guests) || 2,
+      rooms: parseInt(roomType) || 1,
+    });
+  };
+  
   const heroRef = useRef<HTMLElement>(null)
   const reduced = useReducedMotion()
   const SLIDE_DURATION = 8000
@@ -350,16 +372,18 @@ export default function HeroSection() {
         >
           <div className="max-w-[1600px] mx-auto px-6 md:px-10 py-4">
             <div className="flex items-center gap-0 md:gap-6">
-              <BookingField label="Check-In" placeholder="Arrival date" type="date" />
+              <BookingField label="Check-In" placeholder="Arrival date" type="date" value={checkIn} onChange={setCheckIn} />
               <div className="hidden md:block w-px h-8 bg-gold/20" />
-              <BookingField label="Check-Out" placeholder="Departure date" type="date" />
+              <BookingField label="Check-Out" placeholder="Departure date" type="date" value={checkOut} onChange={setCheckOut} />
               <div className="hidden md:block w-px h-8 bg-gold/20" />
-              <BookingField label="Guests" placeholder="2 guests" />
+              <BookingField label="Guests" placeholder="2 guests" type="number" value={guests} onChange={setGuests} />
               <div className="hidden md:block w-px h-8 bg-gold/20" />
-              <BookingField label="Room Type" placeholder="Any room" />
+              <BookingField label="Room Type" placeholder="Any room" type="number" value={roomType} onChange={setRoomType} />
               <div className="ml-auto pl-6">
                 <a
-                  href="/reservations"
+                  href={getBookingLink()}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="bg-gold text-[#1a1004] font-sans text-[11px] uppercase tracking-[0.15em] px-8 py-3 rounded-sm hover:bg-gold-light transition-colors whitespace-nowrap inline-block"
                 >
                   Check Availability
@@ -372,7 +396,9 @@ export default function HeroSection() {
         {/* Mobile book button */}
         <div className="md:hidden flex justify-center pb-6">
           <a
-            href="/reservations"
+            href={getBookingLink()}
+            target="_blank"
+            rel="noopener noreferrer"
             className="bg-gold text-[#1a1004] font-sans text-[11px] uppercase tracking-[0.16em] px-10 py-4 rounded-full shadow-warm-lg"
           >
             Book Now
@@ -432,7 +458,7 @@ export default function HeroSection() {
   )
 }
 
-function BookingField({ label, placeholder, type = 'text' }: { label: string; placeholder: string; type?: string }) {
+function BookingField({ label, placeholder, type = 'text', value, onChange }: { label: string; placeholder: string; type?: string; value: string; onChange: (val: string) => void }) {
   const [isMounted, setIsMounted] = useState(false)
   const inputRef = useRef<HTMLInputElement>(null)
 
@@ -453,6 +479,8 @@ function BookingField({ label, placeholder, type = 'text' }: { label: string; pl
       } catch {
         inputEl.focus()
       }
+    } else if (el) {
+      el.focus();
     }
   }
 
@@ -467,8 +495,11 @@ function BookingField({ label, placeholder, type = 'text' }: { label: string; pl
       <div className="relative flex items-center">
         <input
           ref={inputRef}
-          type={isMounted && type === 'date' ? 'date' : 'text'}
+          type={isMounted && type === 'date' ? 'date' : type}
+          min={type === 'number' ? '1' : undefined}
           placeholder={placeholder}
+          value={value}
+          onChange={(e) => onChange(e.target.value)}
           className={`booking-input w-full bg-transparent border-b border-gold/40 text-ivory placeholder-gold/50 font-sans text-[12px] pb-1 focus:outline-none focus:border-gold transition-colors ${type === 'date' ? 'pr-6' : ''}`}
           aria-label={label}
         />

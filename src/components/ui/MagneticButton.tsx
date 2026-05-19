@@ -13,6 +13,8 @@ interface MagneticButtonProps {
   disabled?: boolean
   id?: string
   'aria-label'?: string
+  target?: string
+  rel?: string
 }
 
 export default function MagneticButton({
@@ -25,6 +27,8 @@ export default function MagneticButton({
   disabled,
   id,
   'aria-label': ariaLabel,
+  target,
+  rel,
 }: MagneticButtonProps) {
   const ref = useRef<HTMLElement>(null)
   const x = useMotionValue(0)
@@ -69,6 +73,8 @@ export default function MagneticButton({
         onMouseMove={handleMouseMove}
         onMouseLeave={handleMouseLeave}
         aria-label={ariaLabel}
+        target={target}
+        rel={rel}
         style={{ x: springX, y: springY }}
       >
         {children}

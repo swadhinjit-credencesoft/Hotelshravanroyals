@@ -3,6 +3,7 @@
 import { motion } from 'framer-motion';
 import Image from 'next/image';
 import SectionLabel from '@/components/ui/SectionLabel';
+import OptimizedVideo from '@/components/ui/OptimizedVideo';
 
 const rituals = [
   {
@@ -59,13 +60,9 @@ export default function SeasonalRituals() {
             >
               <div className="relative aspect-[3/4] overflow-hidden border border-gold/10 rounded-2xl">
                 {ritual.image.match(/\.(mp4|webm|ogg)$/) ? (
-                  <video
+                  <OptimizedVideo
                     src={ritual.image}
-                    autoPlay
-                    muted
-                    loop
-                    playsInline
-                    className="w-full h-full object-cover group-hover:scale-105 transition-all duration-1000"
+                    className="group-hover:scale-105 transition-all duration-1000"
                   />
                 ) : (
                   <Image

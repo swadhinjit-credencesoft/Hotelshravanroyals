@@ -8,12 +8,28 @@ import SectionLabel from '@/components/ui/SectionLabel';
 import GoldDivider from '@/components/ui/GoldDivider';
 import { CheckCircle2, ArrowRight } from 'lucide-react';
 import Image from 'next/image';
+import { buildBookingEngineUrl } from '@/lib/hotelmate-availability';
 
 interface RoomDetailContentProps {
   room: typeof rooms[0];
 }
 
 export default function RoomDetailContent({ room }: RoomDetailContentProps) {
+  // Generate a default booking link for today to tomorrow
+  const getBookingLink = () => {
+    const today = new Date();
+    const tomorrow = new Date(today);
+    tomorrow.setDate(tomorrow.getDate() + 1);
+
+    return buildBookingEngineUrl({
+      baseUrl: 'https://bookone.io/Hotel-Shravan-Royal-Inn',
+      checkIn: today,
+      checkOut: tomorrow,
+      adults: room.guests || 2, // Pre-fill with the room's max guests
+      rooms: 1,
+    });
+  };
+
   return (
     <main className="bg-cream min-h-screen">
       <Navbar />
@@ -69,7 +85,9 @@ export default function RoomDetailContent({ room }: RoomDetailContentProps) {
                       <span className="font-serif text-4xl text-forest">${room.price.toLocaleString()}<span className="text-base text-taupe/60 ml-2">/ night</span></span>
                    </div>
                    <a 
-                     href="/reservations" 
+                     href={getBookingLink()}
+                     target="_blank"
+                     rel="noopener noreferrer" 
                      className="bg-gold text-[#1a1004] font-sans text-[11px] uppercase tracking-[0.2em] px-12 py-5 rounded-sm hover:bg-gold-light transition-all flex items-center gap-3 shadow-warm-lg"
                    >
                       Book Your Stay <ArrowRight size={14} />

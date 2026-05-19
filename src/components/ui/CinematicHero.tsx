@@ -4,6 +4,7 @@ import { motion, useScroll, useTransform } from 'framer-motion';
 import { useRef } from 'react';
 import Image from 'next/image';
 import SectionLabel from '@/components/ui/SectionLabel';
+import OptimizedVideo from '@/components/ui/OptimizedVideo';
 
 interface CinematicHeroProps {
   title: string;
@@ -31,13 +32,9 @@ export default function CinematicHero({ title, tagline, label, image }: Cinemati
         className="absolute inset-0 z-0"
       >
         {image.match(/\.(mp4|webm|ogg)$/) ? (
-          <video
+          <OptimizedVideo
             src={image}
-            autoPlay
-            muted
-            loop
-            playsInline
-            className="w-full h-full object-cover animate-ken-burns"
+            className="animate-ken-burns"
           />
         ) : (
           <Image

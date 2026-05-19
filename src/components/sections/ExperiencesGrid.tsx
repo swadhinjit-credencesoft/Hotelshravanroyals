@@ -6,6 +6,7 @@ import { motion, useInView } from 'framer-motion';
 import { experiences } from '@/data/experiences';
 import SectionLabel from '@/components/ui/SectionLabel';
 import { Clock, ArrowRight } from 'lucide-react';
+import OptimizedVideo from '@/components/ui/OptimizedVideo';
 
 export default function ExperiencesGrid() {
   const containerRef = useRef<HTMLDivElement>(null);
@@ -63,13 +64,9 @@ function ExperienceCard({
     >
       <div className="relative h-full w-full min-h-[400px] lg:min-h-0">
         {experience.image.match(/\.(mp4|webm|ogg)$/) ? (
-          <video
+          <OptimizedVideo
             src={experience.image}
-            autoPlay
-            muted
-            loop
-            playsInline
-            className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+            className="transition-transform duration-700 group-hover:scale-105"
           />
         ) : (
           <Image
