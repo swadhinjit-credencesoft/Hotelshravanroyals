@@ -1,7 +1,6 @@
 'use client';
 
 import { useRef } from 'react';
-import Image from 'next/image';
 import { motion, useScroll, useTransform } from 'framer-motion';
 import SectionLabel from '@/components/ui/SectionLabel';
 import GoldDivider from '@/components/ui/GoldDivider';
@@ -29,11 +28,13 @@ export default function HistorySection() {
           <div className="relative">
 
             <div className="relative aspect-[4/5] w-full max-w-md mx-auto z-10 overflow-hidden border border-gold/10 rounded-2xl">
-              <Image
-                src="https://images.unsplash.com/photo-1566073771259-6a8506099945?w=1200&q=95"
-                alt="Hotel Shravan Royal Inn room"
-                fill
-                className="object-cover hover:scale-105 transition-all duration-1000"
+              <video
+                src="https://bookonelocal.in/cdn/IMG_6359.mp4"
+                autoPlay
+                loop
+                muted
+                playsInline
+                className="absolute inset-0 w-full h-full object-cover hover:scale-105 transition-all duration-1000"
               />
             </div>
 
@@ -41,11 +42,13 @@ export default function HistorySection() {
               style={{ y: y1 }}
               className="absolute -top-12 -right-8 w-64 aspect-square hidden lg:block z-20 border border-gold/20 overflow-hidden rounded-2xl"
             >
-              <Image
-                src="https://images.unsplash.com/photo-1559339352-11d035aa65de?w=800&q=95"
-                alt="Hotel dining area"
-                fill
-                className="object-cover"
+              <video
+                src="https://bookonelocal.in/cdn/IMG_6317.mp4"
+                autoPlay
+                loop
+                muted
+                playsInline
+                className="absolute inset-0 w-full h-full object-cover"
               />
             </motion.div>
 
@@ -53,11 +56,13 @@ export default function HistorySection() {
               style={{ y: y2 }}
               className="absolute -bottom-16 -left-12 w-80 aspect-[3/2] hidden lg:block z-0 opacity-60 overflow-hidden rounded-2xl"
             >
-              <Image
-                src="https://images.unsplash.com/photo-1519167758481-83f550bb49b3?w=800&q=95"
-                alt="Hotel banquet hall"
-                fill
-                className="object-cover"
+              <video
+                src="https://bookonelocal.in/cdn/IMG_6319.mp4"
+                autoPlay
+                loop
+                muted
+                playsInline
+                className="absolute inset-0 w-full h-full object-cover"
               />
             </motion.div>
           </div>

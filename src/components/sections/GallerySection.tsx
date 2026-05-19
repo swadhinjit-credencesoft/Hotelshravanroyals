@@ -7,7 +7,7 @@ import { galleryImages } from '@/data/gallery';
 import SectionLabel from '@/components/ui/SectionLabel';
 import LightboxModal from '@/components/ui/LightboxModal';
 
-const categories = ['all', 'rooms', 'dining', 'spa', 'nature'] as const;
+const categories = ['all', 'rooms', 'dining', 'exp', 'nature', 'events'] as const;
 
 export default function GallerySection() {
   const [activeCategory, setActiveCategory] = useState<typeof categories[number]>('all');
@@ -40,9 +40,8 @@ export default function GallerySection() {
               <button
                 key={cat}
                 onClick={() => setActiveCategory(cat)}
-                className={`font-sans text-[11px] uppercase tracking-[0.2em] relative transition-colors duration-300 ${
-                  activeCategory === cat ? 'text-gold' : 'text-taupe hover:text-forest'
-                }`}
+                className={`font-sans text-[11px] uppercase tracking-[0.2em] relative transition-colors duration-300 ${activeCategory === cat ? 'text-gold' : 'text-taupe hover:text-forest'
+                  }`}
               >
                 {cat}
                 {activeCategory === cat && (
@@ -72,13 +71,24 @@ export default function GallerySection() {
                 className="relative break-inside-avoid group cursor-pointer overflow-hidden border border-gold/10"
                 onClick={() => handleOpenLightbox(image.id)}
               >
-                <Image
-                  src={image.src}
-                  alt={image.alt}
-                  width={image.width}
-                  height={image.height}
-                  className="w-full h-auto transition-transform duration-700 group-hover:scale-105 grayscale-[40%] group-hover:grayscale-0"
-                />
+                {image.type === 'video' ? (
+                  <video
+                    src={image.src}
+                    autoPlay
+                    loop
+                    muted
+                    playsInline
+                    className="w-full h-auto transition-transform duration-700 group-hover:scale-105 grayscale-[40%] group-hover:grayscale-0"
+                  />
+                ) : (
+                  <Image
+                    src={image.src}
+                    alt={image.alt}
+                    width={image.width}
+                    height={image.height}
+                    className="w-full h-auto transition-transform duration-700 group-hover:scale-105 grayscale-[40%] group-hover:grayscale-0"
+                  />
+                )}
                 <div className="absolute inset-0 border-0 group-hover:border-[12px] border-gold/10 transition-all duration-500 pointer-events-none" />
                 <div className="absolute inset-0 bg-forest/0 group-hover:bg-forest/10 transition-colors duration-500" />
               </motion.div>

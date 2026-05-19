@@ -97,13 +97,25 @@ export default function LightboxModal({
             transition={{ duration: 0.35 }}
             onClick={(e) => e.stopPropagation()}
           >
-            <Image
-              src={current.src}
-              alt={current.alt}
-              fill
-              className="object-contain"
-              sizes="90vw"
-            />
+            {current.type === 'video' ? (
+              <video
+                src={current.src}
+                autoPlay
+                loop
+                muted
+                controls
+                playsInline
+                className="w-full h-full object-contain"
+              />
+            ) : (
+              <Image
+                src={current.src}
+                alt={current.alt}
+                fill
+                className="object-contain"
+                sizes="90vw"
+              />
+            )}
           </motion.div>
 
           {/* Caption */}
