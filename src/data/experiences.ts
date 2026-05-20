@@ -34,14 +34,14 @@ export const experiences: Experience[] = [
 
   {
     id: 'e3',
-    title: 'Rooftop Restaurant',
-    category: 'Dining',
+    title: 'Rooftop City Views',
+    category: 'Leisure',
     description:
-      'Enjoy delicious food and refreshing beverages at our rooftop restaurant with peaceful ambiance, stylish seating, and beautiful city views during day and night.',
-    duration: '2 Hours',
+      'Unwind on our scenic rooftop terrace with stunning panoramic views of Jaipur. Enjoy the golden city skyline, fresh air, and a relaxing atmosphere any time of day.',
+    duration: 'Open Daily',
     image:
-      'https://images.unsplash.com/photo-1552566626-52f8b828add9?w=1920&q=95',
-    imageAlt: 'Luxury rooftop restaurant',
+      'https://bookonelocal.in/cdn/IMG_6390.mp4',
+    imageAlt: 'Rooftop terrace with city views at Hotel Shravan Royal Inn',
   },
 
   {
@@ -58,14 +58,14 @@ export const experiences: Experience[] = [
 
   {
     id: 'e5',
-    title: 'Fine Dining Experience',
-    category: 'Dining',
+    title: 'In-Room Premium Service',
+    category: 'Hospitality',
     description:
-      'Enjoy delicious multi-cuisine dishes with elegant ambiance, premium seating, quality service, and a memorable dining experience perfect for families, couples, and guests.',
-    duration: '2 Hours',
+      'Enjoy round-the-clock in-room service with premium amenities, curated room-service options, housekeeping, and personalised attention to make every moment of your stay exceptional.',
+    duration: '24 Hours',
     image:
-      'https://bookonelocal.in/cdn/IMG_6310.mp4',
-    imageAlt: 'Luxury fine dining restaurant setup',
+      'https://bookonelocal.in/cdn/IMG_6309.mp4',
+    imageAlt: 'Premium in-room hotel service at Hotel Shravan Royal Inn',
   },
   {
     id: 'e6',

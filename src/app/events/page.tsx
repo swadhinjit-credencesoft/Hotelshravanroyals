@@ -77,7 +77,7 @@ export default function EventsPage() {
          <div className="max-w-3xl mx-auto px-6">
             <h2 className="font-display text-4xl md:text-6xl italic mb-8">Exclusive Buyouts</h2>
             <p className="font-serif text-xl italic mb-12 opacity-80">
-              For total privacy and unyielding focus, the entire inn—including all 47 suites and 4 dining venues—can be reserved exclusively for your party.
+              For total privacy and unyielding focus, the entire inn—including all 47 suites and our 3 premium event spaces—can be reserved exclusively for your party.
             </p>
             <button className="bg-gold text-[#1a1004] font-sans text-[11px] uppercase tracking-[0.2em] px-12 py-5 hover:bg-gold-light transition-all">
                Request Buyout Proposal

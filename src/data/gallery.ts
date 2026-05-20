@@ -2,7 +2,7 @@ export interface GalleryImage {
   id: string
   src: string
   alt: string
-  category: 'rooms' | 'dining' | 'exp' | 'nature' | 'events'
+  category: 'rooms' | 'exp' | 'nature' | 'events'
   width: number
   height: number
   type: 'image' | 'video'
@@ -17,11 +17,6 @@ export const galleryImages: GalleryImage[] = [
   { id: 'g5', src: 'https://bookonelocal.in/cdn/IMG_6381.mp4', alt: 'Rooms overview', category: 'rooms', width: 1200, height: 800, type: 'video' },
   { id: 'g6', src: 'https://bookonelocal.in/cdn/IMG_6229.mp4', alt: 'Hotel surroundings', category: 'rooms', width: 1200, height: 800, type: 'video' },
 
-  // Dining
-  { id: 'g7', src: 'https://bookonelocal.in/cdn/IMG_6310.mp4', alt: 'Exquisite dining experience', category: 'dining', width: 1200, height: 900, type: 'video' },
-  { id: 'g8', src: 'https://bookonelocal.in/cdn/IMG_6322.mp4', alt: 'Fine dining', category: 'dining', width: 1200, height: 900, type: 'video' },
-  { id: 'g9', src: 'https://bookonelocal.in/cdn/IMG_6311+%281%29+%281%29.mp4', alt: 'Culinary delight', category: 'dining', width: 1200, height: 900, type: 'video' },
-  { id: 'g10', src: 'https://bookonelocal.in/cdn/IMG_6222.JPG', alt: 'Dining ambiance', category: 'dining', width: 1200, height: 900, type: 'image' },
 
   // Experience-based content added — removed spa-specific references
   { id: 'g11', src: 'https://bookonelocal.in/cdn/IMG_6313.mp4', alt: 'Luxury experience', category: 'exp', width: 1200, height: 800, type: 'video' },

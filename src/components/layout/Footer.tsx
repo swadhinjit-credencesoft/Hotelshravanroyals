@@ -8,7 +8,6 @@ import { siteConfig } from '@/data/site'
 const quickLinks = [
   { label: 'About Us', href: '/about' },
   { label: 'Rooms & Suites', href: '/rooms' },
-  { label: 'Dining', href: '/dining' },
   { label: 'Experiences', href: '/experiences' },
   { label: 'Events', href: '/events' },
   { label: 'Gallery', href: '/gallery' },

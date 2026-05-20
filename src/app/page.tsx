@@ -4,7 +4,6 @@ import HeroSection from '@/components/sections/HeroSection';
 import BrandStatement from '@/components/sections/BrandStatement';
 import RoomsCarousel from '@/components/sections/RoomsCarousel';
 import ParallaxDivider from '@/components/sections/ParallaxDivider';
-import DiningSection from '@/components/sections/DiningSection';
 import ExperiencesGrid from '@/components/sections/ExperiencesGrid';
 import TestimonialsSection from '@/components/sections/TestimonialsSection';
 import GallerySection from '@/components/sections/GallerySection';
@@ -40,16 +39,13 @@ export default function Home() {
       {/* Parallax Quote Divider */}
       <ParallaxDivider />
       
-      {/* Dining Section */}
-      <DiningSection />
-      
       {/* Experiences Bento Grid */}
       <ExperiencesGrid />
 
       {/* Luxury Amenities */}
       <LuxuryAmenities />
 
-      {/* Wellness & Spa */}
+      {/* Wellness & Hospitality */}
       <WellnessSection />
       
       {/* Awards Marquee */}

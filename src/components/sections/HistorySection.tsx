@@ -75,7 +75,7 @@ export default function HistorySection() {
 
               <p className="font-sans text-base text-taupe/80 leading-loose">
                 Hotel Shravan Royal Inn offers modern luxury rooms,
-                rooftop dining, elegant banquet facilities, and
+                elegant banquet facilities, and
                 exceptional guest services designed for families,
                 couples, business travelers, and event guests.
               </p>

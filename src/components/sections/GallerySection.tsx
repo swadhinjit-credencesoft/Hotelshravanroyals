@@ -7,7 +7,7 @@ import { galleryImages } from '@/data/gallery';
 import SectionLabel from '@/components/ui/SectionLabel';
 import LightboxModal from '@/components/ui/LightboxModal';
 
-const categories = ['all', 'rooms', 'dining', 'exp', 'nature', 'events'] as const;
+const categories = ['all', 'rooms', 'exp', 'nature', 'events'] as const;
 
 export default function GallerySection() {
   const [activeCategory, setActiveCategory] = useState<typeof categories[number]>('all');

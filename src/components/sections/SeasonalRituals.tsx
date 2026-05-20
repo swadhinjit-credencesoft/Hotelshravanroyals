@@ -16,10 +16,10 @@ const rituals = [
   },
 
   {
-    season: 'Dining Experience',
-    title: 'Rooftop Restaurant',
+    season: 'Hospitality & Service',
+    title: 'Personalized Care',
     description:
-      'Enjoy delicious multi-cuisine food with rooftop seating, peaceful ambiance, quality service, and beautiful evening views perfect for families and couples.',
+      'Experience round-the-clock service, curated local experiences, and dedicated attention to detail to ensure every moment of your stay is effortless and exceptional.',
     image:
       'https://bookonelocal.in/cdn/IMG_6316.mp4',
   },

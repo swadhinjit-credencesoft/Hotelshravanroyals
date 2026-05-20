@@ -31,7 +31,7 @@ const jost = Jost({
 export const metadata: Metadata = {
   title: 'Shravan Royal Inn — Excellence in Jaipur Hospitality',
   description:
-    'A premium luxury hotel in Jaipur offering bespoke service, world-class dining, and timeless comfort.',
+    'A premium luxury hotel in Jaipur offering bespoke service and timeless comfort.',
   keywords: [
     'luxury hotel Jaipur',
     'Shravan Royal Inn',

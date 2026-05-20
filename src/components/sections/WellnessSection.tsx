@@ -30,14 +30,14 @@ export default function WellnessSection() {
             <div className="space-y-6 mb-12">
               <p className="font-sans text-base text-taupe/80 leading-loose">
                 Hotel Shravan Royal Inn offers beautifully designed rooms,
-                quality dining experiences, and modern facilities for families,
+                premium in-room services, and modern facilities for families,
                 couples, business travelers, and event guests. Every space is
                 thoughtfully created to provide comfort, convenience, and a
                 relaxing atmosphere during your stay.
               </p>
 
               <p className="font-sans text-base text-taupe/80 leading-loose">
-                From elegant accommodations to rooftop dining and banquet
+                From elegant accommodations to world-class banquet
                 facilities, the hotel combines modern luxury with warm
                 hospitality to create a truly comfortable Jaipur experience.
               </p>
@@ -68,7 +68,7 @@ export default function WellnessSection() {
             >
               <Image
                 src="https://bookonelocal.in/cdn/IMG_6334.JPG"
-                alt="Luxury hotel dining experience"
+                alt="Hotel Shravan Royal Inn premium room interior"
                 fill
                 className="object-cover"
               />

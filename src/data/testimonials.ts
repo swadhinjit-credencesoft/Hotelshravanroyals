@@ -32,8 +32,8 @@ export const testimonials: Testimonial[] = [
     name: 'Priya Kapoor',
     country: 'India',
     rating: 5,
-    text: 'The spa alone is worth the journey. The immersion ritual left me genuinely transformed. Every detail — the temperature, the scent, the silence — was curated with intention.',
-    stayType: 'Spa Retreat Package',
+    text: 'The warmth and attentiveness of the staff made our anniversary truly unforgettable. The rooms are impeccably styled, and every little detail was taken care of without even asking.',
+    stayType: 'Anniversary Stay',
     avatar: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=80&q=80',
   },
   {
@@ -41,8 +41,8 @@ export const testimonials: Testimonial[] = [
     name: 'David Chen',
     country: 'Singapore',
     rating: 5,
-    text: "The chef's table was the finest dining experience of my life. Twelve courses, each a conversation between land and sea. We wept at the dessert. Genuinely.",
-    stayType: 'Culinary Getaway',
+    text: 'Shravan Royal Inn exceeded all expectations. Spotless rooms, a spectacular banquet setup for our corporate event, and a concierge team that went above and beyond. Truly world-class service.',
+    stayType: 'Corporate Stay',
     avatar: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=80&q=80',
   },
 ]

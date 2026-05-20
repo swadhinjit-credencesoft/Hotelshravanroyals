@@ -13,7 +13,7 @@ export default function ExperiencesPage() {
       <CinematicHero 
         label="Beyond the Inn"
         title="Immerse in the Extraordinary"
-        tagline="Private heritage tours, organic farm-to-table dining, and ancient spa rituals designed to transform the soul."
+        tagline="Private heritage tours, cultural exploration, and premium hospitality designed to transform your stay."
         image="https://bookonelocal.in/cdn/IMG_6390.mp4"
       />
 
