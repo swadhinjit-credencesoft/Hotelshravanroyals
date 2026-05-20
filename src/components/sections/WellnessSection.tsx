@@ -53,8 +53,8 @@ export default function WellnessSection() {
             
             <div className="relative w-full max-w-lg aspect-[3/4] overflow-hidden border border-gold/10 rounded-2xl">
               <Image
-                src="https://images.unsplash.com/photo-1566073771259-6a8506099945?w=1200&q=95"
-                alt="Luxury hotel room"
+                src="https://bookonelocal.in/cdn/IMG_6333.JPG"
+                alt="Luxury hotel comfort"
                 fill
                 className="object-cover hover:scale-105 transition-transform duration-1000"
               />
@@ -67,8 +67,8 @@ export default function WellnessSection() {
               className="absolute -bottom-12 -left-12 w-64 h-80 hidden md:block border border-gold/20 overflow-hidden bg-cream rounded-2xl"
             >
               <Image
-                src="https://images.unsplash.com/photo-1559339352-11d035aa65de?w=800&q=95"
-                alt="Luxury hotel dining"
+                src="https://bookonelocal.in/cdn/IMG_6334.JPG"
+                alt="Luxury hotel dining experience"
                 fill
                 className="object-cover"
               />

@@ -10,7 +10,7 @@ import TestimonialsSection from '@/components/sections/TestimonialsSection';
 import GallerySection from '@/components/sections/GallerySection';
 import OffersSection from '@/components/sections/OffersSection';
 import AwardsMarquee from '@/components/sections/AwardsMarquee';
-import NewsletterSection from '@/components/sections/NewsletterSection';
+// import NewsletterSection from '@/components/sections/NewsletterSection';
 import HistorySection from '@/components/sections/HistorySection';
 import LuxuryAmenities from '@/components/sections/LuxuryAmenities';
 import WellnessSection from '@/components/sections/WellnessSection';
@@ -68,7 +68,7 @@ export default function Home() {
       <ForestSection />
       
       {/* Newsletter & Contact */}
-      <NewsletterSection />
+      {/* <NewsletterSection /> */}
       
       <Footer />
     </main>

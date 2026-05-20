@@ -12,7 +12,6 @@ import { buildBookingEngineUrl } from '@/lib/hotelmate-availability'
 const navLinks = [
   { label: 'About', href: '/about' },
   { label: 'Rooms', href: '/rooms' },
-  { label: 'Dining', href: '/dining' },
   { label: 'Experiences', href: '/experiences' },
   { label: 'Events', href: '/events' },
   { label: 'Gallery', href: '/gallery' },

@@ -1,18 +1,20 @@
 'use client';
 
-import Image from 'next/image';
+
 import SectionLabel from '@/components/ui/SectionLabel';
 
 export default function ForestSection() {
   return (
     <section className="bg-forest py-48 relative overflow-hidden">
-      {/* Background Texture */}
-      <div className="absolute inset-0 opacity-10 pointer-events-none">
-         <Image 
-            src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=2400&q=95" 
-            alt="Forest texture" 
-            fill 
-            className="object-cover mix-blend-overlay"
+      {/* Background Video */}
+      <div className="absolute inset-0 opacity-15 pointer-events-none z-0">
+         <video
+            src="https://bookonelocal.in/cdn/IMG_6317.mp4"
+            autoPlay
+            muted
+            loop
+            playsInline
+            className="w-full h-full object-cover mix-blend-overlay"
          />
       </div>
 

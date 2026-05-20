@@ -5,6 +5,7 @@ import { motion } from 'framer-motion';
 import Image from 'next/image';
 import { ArrowRight, Users, Maximize } from 'lucide-react';
 import { fetchAvailability, PROPERTY_ID } from '@/services/api';
+import { buildBookingEngineUrl } from '@/lib/hotelmate-availability';
 
 interface RoomData {
   id: number;
@@ -102,10 +103,26 @@ export default function RoomsGrid() {
                     <div className="mt-auto pt-6 border-t border-gold/10 flex items-center justify-between">
                       <div className="flex flex-col">
                         <span className="font-sans text-[9px] uppercase tracking-widest text-gold/60 mb-0.5">From</span>
-                        <span className="font-serif text-xl text-forest">₹{room.roomOnlyPrice?.toLocaleString()}<span className="text-sm opacity-50 ml-1">/nt</span></span>
+                        <span className="font-serif text-xl text-forest">
+                          {room.roomOnlyPrice
+                            ? `₹${room.roomOnlyPrice.toLocaleString()}`
+                            : 'Contact for price'}
+                          <span className="text-sm opacity-50 ml-1">/nt</span>
+                        </span>
                       </div>
                       <a
-                        href="https://bookone.io/Hotel-Shravan-Royal-Inn?bookingEngine=true"
+                        href={(() => {
+                          const today = new Date();
+                          const tomorrow = new Date(today);
+                          tomorrow.setDate(tomorrow.getDate() + 1);
+                          return buildBookingEngineUrl({
+                            baseUrl: 'https://bookone.io/Hotel-Shravan-Royal-Inn',
+                            checkIn: today,
+                            checkOut: tomorrow,
+                            adults: room.maximumOccupancy || room.maxAdult || 2,
+                            rooms: 1,
+                          });
+                        })()}
                         target="_blank"
                         rel="noopener noreferrer"
                         className="flex items-center gap-2 font-sans text-[10px] uppercase tracking-[0.2em] text-forest hover:text-gold transition-colors duration-300"

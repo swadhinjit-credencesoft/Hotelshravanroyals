@@ -1,21 +1,96 @@
 'use client'
 
-import { useRef, useState } from 'react'
+import { useRef, useState, useEffect } from 'react'
 import Image from 'next/image'
 import { motion, useInView } from 'framer-motion'
 import { ArrowRight, ChevronLeft, ChevronRight, Users, Maximize } from 'lucide-react'
-import { rooms } from '@/data/rooms'
+import { fetchAvailability, PROPERTY_ID } from '@/services/api'
+import { buildBookingEngineUrl } from '@/lib/hotelmate-availability'
 import SectionLabel from '@/components/ui/SectionLabel'
 
-function RoomCard({ room, index }: { room: (typeof rooms)[0]; index: number }) {
+interface ApiRoom {
+  id: number
+  name: string
+  description?: string
+  roomOnlyPrice?: number
+  maxAdult?: number
+  maxChildren?: number
+  maximumOccupancy?: number
+  size?: number
+  imageList?: { url: string }[]
+}
+
+interface NormalizedRoom {
+  id: string
+  name: string
+  tagline: string
+  size: number
+  guests: number
+  price: number
+  category: string
+  image: string
+  imageAlt: string
+  amenities: string[]
+}
+
+function normalizeRoom(room: ApiRoom): NormalizedRoom {
+  const image =
+    room.imageList && room.imageList.length > 0
+      ? room.imageList[0].url
+      : 'https://images.unsplash.com/photo-1566073771259-6a8506099945?w=1200&q=95'
+
+  const stripped = room.description
+    ? room.description.replace(/<[^>]*>?/gm, '').trim()
+    : ''
+  const tagline = stripped.length > 60 ? stripped.slice(0, 60) + '…' : stripped || 'An exclusive retreat curated for you'
+
+  const nameLower = room.name.toLowerCase()
+  let category = 'deluxe'
+  if (nameLower.includes('suite')) category = 'suite'
+  else if (nameLower.includes('villa')) category = 'villa'
+  else if (nameLower.includes('standard') || nameLower.includes('classic')) category = 'standard'
+
+  const guests = room.maximumOccupancy ?? ((room.maxAdult ?? 2) + (room.maxChildren ?? 0))
+
+  return {
+    id: String(room.id),
+    name: room.name,
+    tagline,
+    size: room.size ?? 45,
+    guests,
+    price: room.roomOnlyPrice ?? 0,
+    category,
+    image,
+    imageAlt: room.name,
+    amenities: [],
+  }
+}
+
+function RoomCard({ room, index }: { room: NormalizedRoom; index: number }) {
   const [hovered, setHovered] = useState(false)
-  const ref = useRef<HTMLDivElement>(null)
+  const ref = useRef<HTMLAnchorElement>(null)
   const isInView = useInView(ref, { once: true, margin: '-50px' })
 
+  const bookingUrl = (() => {
+    const today = new Date()
+    const tomorrow = new Date(today)
+    tomorrow.setDate(tomorrow.getDate() + 1)
+    return buildBookingEngineUrl({
+      baseUrl: 'https://bookone.io/Hotel-Shravan-Royal-Inn',
+      checkIn: today,
+      checkOut: tomorrow,
+      adults: room.guests || 2,
+      rooms: 1,
+    })
+  })()
+
   return (
-    <motion.div
+    <motion.a
       ref={ref}
-      className="room-card relative flex-shrink-0 overflow-hidden cursor-pointer rounded-sm"
+      href={bookingUrl}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="room-card relative flex-shrink-0 overflow-hidden cursor-pointer rounded-sm block"
       style={{ width: '380px', height: '540px' }}
       initial={{ opacity: 0, y: 40 }}
       animate={isInView ? { opacity: 1, y: 0 } : {}}
@@ -46,7 +121,10 @@ function RoomCard({ room, index }: { room: (typeof rooms)[0]; index: number }) {
       {/* Hover overlay */}
       <motion.div
         className="absolute inset-0 flex flex-col justify-end p-7"
-        style={{ background: 'linear-gradient(to top, rgba(26,16,4,0.85) 0%, rgba(26,16,4,0) 60%)' }}
+        style={{
+          background: 'linear-gradient(to top, rgba(26,16,4,0.85) 0%, rgba(26,16,4,0) 60%)',
+          pointerEvents: hovered ? 'auto' : 'none',
+        }}
         initial={{ opacity: 0 }}
         animate={{ opacity: hovered ? 1 : 0 }}
         transition={{ duration: 0.4 }}
@@ -68,25 +146,16 @@ function RoomCard({ room, index }: { room: (typeof rooms)[0]; index: number }) {
             </span>
           </div>
 
-          <div className="flex flex-wrap gap-2 mb-5">
-            {room.amenities.map((a) => (
-              <span key={a} className="font-sans text-[10px] text-ivory/50 border border-ivory/20 px-2 py-0.5 rounded-sm">
-                {a}
-              </span>
-            ))}
-          </div>
-
           <div className="flex items-center justify-between">
             <span className="font-serif text-xl text-gold font-light">
-              From ${room.price.toLocaleString()}/night
+              {room.price > 0 ? `₹${room.price.toLocaleString()}/night` : 'Contact for pricing'}
             </span>
-            <a
-              href={`/rooms/${room.id}`}
+            <div
               className="flex items-center gap-1 font-sans text-[11px] uppercase tracking-[0.12em] text-ivory border border-ivory/30 px-4 py-2 rounded-sm hover:border-gold hover:text-gold transition-colors"
-              aria-label={`View ${room.name} details`}
+              aria-label={`Book ${room.name}`}
             >
-              View Suite <ArrowRight size={12} />
-            </a>
+              Book Now <ArrowRight size={12} />
+            </div>
           </div>
         </motion.div>
       </motion.div>
@@ -100,7 +169,16 @@ function RoomCard({ room, index }: { room: (typeof rooms)[0]; index: number }) {
         <div className="h-px w-8 bg-gold/60 mb-3" />
         <p className="font-sans text-[10px] uppercase tracking-[0.16em] text-ivory/50">{room.category}</p>
       </motion.div>
-    </motion.div>
+    </motion.a>
+  )
+}
+
+function SkeletonCard() {
+  return (
+    <div
+      className="flex-shrink-0 rounded-sm overflow-hidden bg-champagne/60 animate-pulse"
+      style={{ width: '380px', height: '540px' }}
+    />
   )
 }
 
@@ -108,6 +186,30 @@ export default function RoomsCarousel() {
   const containerRef = useRef<HTMLDivElement>(null)
   const [canScrollLeft, setCanScrollLeft] = useState(false)
   const [canScrollRight, setCanScrollRight] = useState(true)
+  const [rooms, setRooms] = useState<NormalizedRoom[]>([])
+  const [loading, setLoading] = useState(true)
+
+  useEffect(() => {
+    const today = new Date()
+    const tomorrow = new Date(today)
+    tomorrow.setDate(tomorrow.getDate() + 1)
+
+    const pad = (n: number) => String(n).padStart(2, '0')
+    const fromDate = `${today.getFullYear()}-${pad(today.getMonth() + 1)}-${pad(today.getDate())}`
+    const toDate = `${tomorrow.getFullYear()}-${pad(tomorrow.getMonth() + 1)}-${pad(tomorrow.getDate())}`
+
+    fetchAvailability(PROPERTY_ID, fromDate, toDate)
+      .then((data) => {
+        if (data && data.roomList && data.roomList.length > 0) {
+          setRooms(data.roomList.map(normalizeRoom))
+        }
+        setLoading(false)
+      })
+      .catch((err) => {
+        console.error('Failed to load rooms for carousel:', err)
+        setLoading(false)
+      })
+  }, [])
 
   const scroll = (dir: 'left' | 'right') => {
     if (!containerRef.current) return
@@ -170,11 +272,17 @@ export default function RoomsCarousel() {
             setCanScrollRight(el.scrollLeft < el.scrollWidth - el.clientWidth - 10)
           }}
         >
-          {rooms.map((room, i) => (
-            <div key={room.id} style={{ scrollSnapAlign: 'start' }}>
-              <RoomCard room={room} index={i} />
-            </div>
-          ))}
+          {loading
+            ? Array.from({ length: 4 }).map((_, i) => (
+                <div key={i} style={{ scrollSnapAlign: 'start' }}>
+                  <SkeletonCard />
+                </div>
+              ))
+            : rooms.map((room, i) => (
+                <div key={room.id} style={{ scrollSnapAlign: 'start' }}>
+                  <RoomCard room={room} index={i} />
+                </div>
+              ))}
           {/* Spacer */}
           <div className="flex-shrink-0 w-2" />
         </div>

@@ -82,7 +82,10 @@ export default function RoomDetailContent({ room }: RoomDetailContentProps) {
                 <div className="flex items-center gap-8">
                    <div className="flex flex-col">
                       <span className="font-sans text-[9px] uppercase tracking-[0.2em] text-gold mb-1">Starting from</span>
-                      <span className="font-serif text-4xl text-forest">${room.price.toLocaleString()}<span className="text-base text-taupe/60 ml-2">/ night</span></span>
+                      <span className="font-serif text-4xl text-forest">
+                        ₹{room.price.toLocaleString()}
+                        <span className="text-base text-taupe/60 ml-2">/ night</span>
+                      </span>
                    </div>
                    <a 
                      href={getBookingLink()}

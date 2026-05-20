@@ -13,7 +13,7 @@ import {
 } from 'framer-motion'
 import { ArrowRight, Calendar } from 'lucide-react'
 import { heroSlides, heroStats } from '@/data/hero'
-import { awards } from '@/data/awards'
+// import { awards } from '@/data/awards'
 import ParticleCanvas from '@/components/ui/ParticleCanvas'
 import ScrollIndicator from '@/components/ui/ScrollIndicator'
 import { buildBookingEngineUrl } from '@/lib/hotelmate-availability'
@@ -228,7 +228,7 @@ export default function HeroSection() {
           style={{ x: reduced ? 0 : springX, y: reduced ? 0 : springY }}
         >
           {/* Award pill */}
-          <motion.div
+          {/* <motion.div
             className="inline-flex items-center gap-2 mb-5 px-3 py-1.5 border border-gold/20 backdrop-blur-sm rounded-sm"
             initial={{ opacity: 0, x: -30 }}
             animate={{ opacity: 1, x: 0 }}
@@ -238,7 +238,7 @@ export default function HeroSection() {
             <span className="font-sans text-[10px] uppercase tracking-[0.2em] text-gold/90">
               {awards[0]}
             </span>
-          </motion.div>
+          </motion.div> */}
 
           {/* Tagline */}
           <motion.div

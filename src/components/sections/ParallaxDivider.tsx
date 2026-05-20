@@ -1,7 +1,6 @@
 'use client'
 
 import { useRef, useEffect } from 'react'
-import Image from 'next/image'
 import { motion, useInView } from 'framer-motion'
 
 export default function ParallaxDivider() {
@@ -52,18 +51,19 @@ export default function ParallaxDivider() {
       style={{ height: '70vh' }}
       aria-label="Parallax quote divider"
     >
-      {/* Parallax image */}
+      {/* Parallax video */}
       <div
         ref={imageRef}
         className="absolute inset-0"
         style={{ height: '130%', top: '-15%' }}
       >
-        <Image
-          src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?w=2400&q=90"
-          alt="Serene estate landscape at dusk"
-          fill
-          className="object-cover"
-          sizes="100vw"
+        <video
+          src="https://bookonelocal.in/cdn/IMG_6238.mp4"
+          autoPlay
+          muted
+          loop
+          playsInline
+          className="w-full h-full object-cover"
         />
       </div>
 
