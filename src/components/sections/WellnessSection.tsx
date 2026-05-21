@@ -4,8 +4,25 @@ import { motion } from 'framer-motion';
 import Image from 'next/image';
 import SectionLabel from '@/components/ui/SectionLabel';
 import GoldDivider from '@/components/ui/GoldDivider';
+import { buildBookingEngineUrl } from '@/lib/hotelmate-availability';
+
+function getBookingUrl() {
+  const today = new Date();
+  const tomorrow = new Date(today);
+  tomorrow.setDate(tomorrow.getDate() + 1);
+
+  return buildBookingEngineUrl({
+    baseUrl: 'https://bookone.io/Hotel-Shravan-Royal-Inn',
+    checkIn: today,
+    checkOut: tomorrow,
+    adults: 2,
+    rooms: 1,
+  });
+}
 
 export default function WellnessSection() {
+  const bookingUrl = getBookingUrl();
+
   return (
     <section className="bg-ivory py-32 overflow-hidden">
       <div className="max-w-[1600px] mx-auto px-6 md:px-10">
@@ -43,9 +60,14 @@ export default function WellnessSection() {
               </p>
             </div>
 
-            <button className="border border-forest/30 text-forest font-sans text-[11px] uppercase tracking-[0.2em] px-12 py-5 hover:border-gold hover:text-gold transition-all duration-500">
+            <a
+              href={bookingUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block border border-forest/30 text-forest font-sans text-[11px] uppercase tracking-[0.2em] px-12 py-5 hover:border-gold hover:text-gold transition-all duration-500"
+            >
               Explore Our Services
-            </button>
+            </a>
           </div>
 
           {/* Image Section */}

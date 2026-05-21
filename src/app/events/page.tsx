@@ -1,5 +1,6 @@
 'use client';
 
+import { useState } from 'react';
 import Navbar from '@/components/layout/Navbar';
 import Footer from '@/components/layout/Footer';
 import CinematicHero from '@/components/ui/CinematicHero';
@@ -8,8 +9,59 @@ import GoldDivider from '@/components/ui/GoldDivider';
 import { estateEvents } from '@/data/events';
 import { motion } from 'framer-motion';
 import Image from 'next/image';
+import { buildBookingEngineUrl } from '@/lib/hotelmate-availability';
+
+function getEventBookingUrl() {
+  const today = new Date();
+  const tomorrow = new Date(today);
+  tomorrow.setDate(tomorrow.getDate() + 1);
+
+  return buildBookingEngineUrl({
+    baseUrl: 'https://bookone.io/Hotel-Shravan-Royal-Inn',
+    checkIn: today,
+    checkOut: tomorrow,
+    adults: 2,
+    rooms: 1,
+  });
+}
+
+function EventMedia({ media, title }: { media: string | string[]; title: string }) {
+  const sources = Array.isArray(media) ? media : [media];
+  const [activeIndex, setActiveIndex] = useState(0);
+  const activeSource = sources[activeIndex];
+  const isVideo = /\.(mp4|webm|ogg)(\?.*)?$/i.test(activeSource);
+
+  if (isVideo) {
+    return (
+      <video
+        key={activeSource}
+        src={activeSource}
+        className="h-full w-full object-cover hover:scale-105 transition-transform duration-1000"
+        autoPlay
+        muted
+        playsInline
+        loop={sources.length === 1}
+        preload="metadata"
+        aria-label={title}
+        onEnded={() => setActiveIndex((index) => (index + 1) % sources.length)}
+        onError={() => setActiveIndex((index) => (index + 1) % sources.length)}
+      />
+    );
+  }
+
+  return (
+    <Image
+      src={activeSource}
+      alt={title}
+      fill
+      className="object-cover hover:scale-105 transition-transform duration-1000"
+    />
+  );
+}
 
 export default function EventsPage() {
+  const bookingUrl = getEventBookingUrl();
+
   return (
     <main className="bg-cream min-h-screen">
       <Navbar />
@@ -39,12 +91,7 @@ export default function EventsPage() {
                  className={`grid grid-cols-1 lg:grid-cols-2 gap-16 items-center ${i % 2 === 1 ? 'lg:flex-row-reverse' : ''}`}
                >
                  <div className={`relative aspect-[4/3] overflow-hidden border border-gold/10 ${i % 2 === 1 ? 'lg:order-2' : ''}`}>
-                    <Image
-                      src={event.image}
-                      alt={event.title}
-                      fill
-                      className="object-cover hover:scale-105 transition-transform duration-1000"
-                    />
+                    <EventMedia media={event.image} title={event.title} />
                  </div>
                  <div className={i % 2 === 1 ? 'lg:order-1' : ''}>
                     <span className="font-sans text-[10px] uppercase tracking-[0.3em] text-gold mb-4 block">
@@ -63,9 +110,14 @@ export default function EventsPage() {
                        ))}
                     </ul>
 
-                    <button className="border border-forest/30 text-forest font-sans text-[11px] uppercase tracking-[0.2em] px-10 py-4 hover:bg-gold hover:text-forest transition-all">
+                    <a
+                      href={bookingUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-block border border-forest/30 text-forest font-sans text-[11px] uppercase tracking-[0.2em] px-10 py-4 hover:bg-gold hover:text-forest transition-all"
+                    >
                        Inquire for {event.title}
-                    </button>
+                    </a>
                  </div>
                </motion.div>
              ))}
@@ -79,9 +131,14 @@ export default function EventsPage() {
             <p className="font-serif text-xl italic mb-12 opacity-80">
               For total privacy and unyielding focus, the entire inn—including all 47 suites and our 3 premium event spaces—can be reserved exclusively for your party.
             </p>
-            <button className="bg-gold text-[#1a1004] font-sans text-[11px] uppercase tracking-[0.2em] px-12 py-5 hover:bg-gold-light transition-all">
+            <a
+              href={bookingUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block bg-gold text-[#1a1004] font-sans text-[11px] uppercase tracking-[0.2em] px-12 py-5 hover:bg-gold-light transition-all"
+            >
                Request Buyout Proposal
-            </button>
+            </a>
          </div>
       </section>
 
