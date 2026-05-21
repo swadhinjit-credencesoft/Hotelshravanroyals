@@ -7,7 +7,7 @@ import ParallaxDivider from '@/components/sections/ParallaxDivider';
 import ExperiencesGrid from '@/components/sections/ExperiencesGrid';
 import TestimonialsSection from '@/components/sections/TestimonialsSection';
 import GallerySection from '@/components/sections/GallerySection';
-import OffersSection from '@/components/sections/OffersSection';
+// import OffersSection from '@/components/sections/OffersSection';
 import AwardsMarquee from '@/components/sections/AwardsMarquee';
 // import NewsletterSection from '@/components/sections/NewsletterSection';
 import HistorySection from '@/components/sections/HistorySection';
@@ -58,7 +58,7 @@ export default function Home() {
       <GallerySection />
       
       {/* Seasonal Offers */}
-      <OffersSection />
+      {/* <OffersSection /> */}
 
       {/* Sustainability & Forest */}
       <ForestSection />
