@@ -33,7 +33,7 @@ export default function ExperiencesPage() {
             </div>
             <div className="relative aspect-[4/3] border border-ivory/10">
                <Image 
-                  src='/images/exterior8.jpeg' 
+                  src='/LawnsDecks.png' 
                   alt="Outdoor campfire and seating area in nature" 
                   fill
                   className="object-cover grayscale hover:grayscale-0 transition-all duration-1000"

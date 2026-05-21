@@ -16,7 +16,7 @@ const blogPosts = [
     excerpt: 'From pristine waterfalls to historic treks, discover the ultimate guide to exploring Karjat year-round.',
     date: 'Oct 12, 2024',
     category: 'Travel & Destination',
-    image: '/images/exterior6.jpeg',
+    image: '/blog1.png',
   },
   {
     id: 'b2',
@@ -44,7 +44,7 @@ export default function BlogPage() {
         label="Stories & Guides"
         title="The Karjat Journal"
         tagline="Discover the hidden gems, seasonal itineraries, and insider tips for your perfect getaway."
-        image='/images/room1.jpeg'
+        image='/bloghero.png'
       />
 
       <section className="py-32">

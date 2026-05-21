@@ -18,7 +18,7 @@ export const venues: Venue[] = [
     cuisine: 'Indian, Tandoor, Mughlai, Asian, Continental',
     description: 'A diverse menu featuring homestyle comfort and global classics, served in a cozy dining space.',
     hours: '7:30 AM – 10:30 PM daily',
-    image: '/images/room2.jpeg',
+    image: '/TheMainDiningHall.png',
     imageAlt: 'Authentic multi-cuisine dining hall at Unwind Karjat',
     reservationHref: 'https://bookone.io/Unwind-Karjat?bookingEngine=true',
   },

@@ -87,7 +87,7 @@ export default function AboutPage() {
               className="relative aspect-[4/5] overflow-hidden border border-gold/10"
             >
               <Image
-                src='/images/exterior2.jpeg'
+                src='/aboutimg.png'
                 alt="Architectural detail seamlessly blending with nature"
                 fill
                 className="object-cover"
