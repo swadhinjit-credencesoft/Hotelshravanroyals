@@ -95,7 +95,7 @@ function ExperienceCard({
             {experience.title}
           </h3>
 
-          <div className="max-h-0 overflow-hidden group-hover:max-h-40 transition-all duration-500 ease-in-out">
+          <div className="max-h-40 lg:max-h-0 overflow-hidden lg:group-hover:max-h-40 transition-all duration-500 ease-in-out">
             <p className="font-sans text-sm text-ivory/70 mb-6 leading-relaxed">
               {experience.description}
             </p>

@@ -23,21 +23,23 @@ export default function HistorySection() {
       className="bg-cream py-32 overflow-hidden"
     >
       <div className="max-w-[1600px] mx-auto px-6 md:px-10">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-20 items-center">
 
           {/* Images Section */}
           <div className="relative">
 
-             <div className="relative aspect-[4/5] w-full max-w-md mx-auto z-10 overflow-hidden border border-gold/10 rounded-2xl">
+            {/* Main video */}
+            <div className="relative aspect-[4/5] w-full max-w-md mx-auto z-10 overflow-hidden border border-gold/10 rounded-2xl">
               <OptimizedVideo
                 src="https://bookonelocal.in/cdn/IMG_6359.mp4"
                 className="hover:scale-105 transition-all duration-1000"
               />
             </div>
 
+            {/* Floating overlays — desktop only to prevent mobile overflow */}
             <motion.div
               style={{ y: y1 }}
-              className="absolute -top-12 -right-8 w-64 aspect-square hidden lg:block z-20 border border-gold/20 overflow-hidden rounded-2xl"
+              className="absolute -top-12 -right-8 w-56 xl:w-64 aspect-square hidden lg:block z-20 border border-gold/20 overflow-hidden rounded-2xl"
             >
               <OptimizedVideo
                 src="https://bookonelocal.in/cdn/IMG_6317.mp4"
@@ -46,7 +48,7 @@ export default function HistorySection() {
 
             <motion.div
               style={{ y: y2 }}
-              className="absolute -bottom-16 -left-12 w-80 aspect-[3/2] hidden lg:block z-0 opacity-60 overflow-hidden rounded-2xl"
+              className="absolute -bottom-16 -left-12 w-64 xl:w-80 aspect-[3/2] hidden lg:block z-0 opacity-60 overflow-hidden rounded-2xl"
             >
               <OptimizedVideo
                 src="https://bookonelocal.in/cdn/IMG_6319.mp4"
@@ -61,8 +63,8 @@ export default function HistorySection() {
               About Hotel
             </SectionLabel>
 
-            <h2 className="font-display text-4xl md:text-[56px] italic text-forest mb-8 leading-tight">
-              Comfort, Elegance <br /> & Modern Hospitality
+            <h2 className="font-display text-4xl md:text-[52px] italic text-forest mb-8 leading-tight">
+              Comfort, Elegance &amp; Modern Hospitality
             </h2>
 
             <GoldDivider className="mb-10" />

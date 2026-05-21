@@ -15,7 +15,7 @@ import { ArrowRight, Calendar } from 'lucide-react'
 import { heroSlides, heroStats } from '@/data/hero'
 // import { awards } from '@/data/awards'
 import ParticleCanvas from '@/components/ui/ParticleCanvas'
-import ScrollIndicator from '@/components/ui/ScrollIndicator'
+// import ScrollIndicator from '@/components/ui/ScrollIndicator'
 import { buildBookingEngineUrl } from '@/lib/hotelmate-availability'
 
 // Count-up hook
@@ -220,29 +220,16 @@ export default function HeroSection() {
 
       {/* z-10: Main content */}
       <motion.div
-        className="absolute inset-0 flex flex-col justify-end pb-24 md:pb-28 pt-32"
+        className="absolute inset-0 flex flex-col justify-center md:justify-end pb-28 md:pb-28 pt-24 md:pt-32"
         style={{ zIndex: 10, y: reduced ? 0 : contentY, opacity: contentOpacity }}
       >
         <motion.div
           className="px-6 md:px-[6vw] max-w-[700px]"
           style={{ x: reduced ? 0 : springX, y: reduced ? 0 : springY }}
         >
-          {/* Award pill */}
-          {/* <motion.div
-            className="inline-flex items-center gap-2 mb-5 px-3 py-1.5 border border-gold/20 backdrop-blur-sm rounded-sm"
-            initial={{ opacity: 0, x: -30 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.7, delay: 0.4 }}
-          >
-            <span className="w-1 h-1 rounded-full bg-gold" />
-            <span className="font-sans text-[10px] uppercase tracking-[0.2em] text-gold/90">
-              {awards[0]}
-            </span>
-          </motion.div> */}
-
           {/* Tagline */}
           <motion.div
-            className="flex items-center gap-3 mb-4"
+            className="flex items-center gap-3 mb-3 sm:mb-4"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.7, delay: 0.6 }}
@@ -253,15 +240,14 @@ export default function HeroSection() {
               animate={{ width: 40 }}
               transition={{ duration: 0.5, delay: 0.8 }}
             />
-            <span className="font-sans text-[11px] uppercase tracking-[0.28em] text-gold">
+            <span className="font-sans text-[10px] sm:text-[11px] uppercase tracking-[0.28em] text-gold">
               {slide.tagline}
             </span>
           </motion.div>
 
           {/* Headline — word-by-word */}
           <h1
-            className="font-display font-normal italic text-ivory mb-5 leading-[1.08]"
-            style={{ fontSize: 'clamp(40px, 6vw, 80px)' }}
+            className="font-display font-normal italic text-ivory mb-4 sm:mb-5 leading-[1.1] text-3xl xs:text-4xl sm:text-6xl md:text-7xl lg:text-[80px]"
             aria-live="polite"
           >
             <AnimatePresence mode="wait">
@@ -289,7 +275,7 @@ export default function HeroSection() {
 
           {/* Gold rule */}
           <motion.div
-            className="h-px bg-gold mb-5"
+            className="h-px bg-gold mb-4 sm:mb-5"
             initial={{ scaleX: 0, originX: 0 }}
             animate={{ scaleX: 1 }}
             transition={{ duration: 0.8, delay: 1.3 }}
@@ -300,7 +286,7 @@ export default function HeroSection() {
           <AnimatePresence mode="wait">
             <motion.p
               key={`sub-${slide.id}`}
-              className="font-serif text-lg md:text-[21px] font-light text-ivory/80 max-w-[500px] mb-8 leading-relaxed"
+              className="font-serif text-sm sm:text-base md:text-lg lg:text-[21px] font-light text-ivory/80 max-w-[500px] mb-6 sm:mb-8 leading-relaxed"
               initial={{ opacity: 0, y: 25 }}
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0 }}
@@ -311,10 +297,10 @@ export default function HeroSection() {
           </AnimatePresence>
 
           {/* CTA row */}
-          <div className="flex flex-wrap gap-4">
+          <div className="flex flex-wrap gap-3 sm:gap-4">
             <motion.a
               href={slide.primaryHref}
-              className="group inline-flex items-center gap-2 bg-gold text-[#1a1004] font-sans text-[11px] uppercase tracking-[0.16em] px-9 py-4 rounded-sm hover:bg-gold-light transition-all duration-300"
+              className="group inline-flex items-center gap-2 bg-gold text-[#1a1004] font-sans text-[11px] uppercase tracking-[0.16em] px-8 sm:px-9 py-3.5 sm:py-4 rounded-sm hover:bg-gold-light transition-all duration-300"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 1.7 }}
@@ -328,7 +314,7 @@ export default function HeroSection() {
             </motion.a>
             <motion.a
               href={slide.secondaryHref}
-              className="inline-flex items-center gap-2 border border-gold/50 text-ivory font-sans text-[11px] uppercase tracking-[0.16em] px-9 py-4 rounded-sm hover:bg-gold/10 hover:border-gold transition-all duration-300"
+              className="inline-flex items-center gap-2 border border-gold/50 text-ivory font-sans text-[11px] uppercase tracking-[0.16em] px-8 sm:px-9 py-3.5 sm:py-4 rounded-sm hover:bg-gold/10 hover:border-gold transition-all duration-300"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 1.85 }}
@@ -338,9 +324,9 @@ export default function HeroSection() {
           </div>
         </motion.div>
 
-        {/* Stats row */}
+        {/* Stats row - hidden on mobile for clean spacing */}
         <motion.div
-          className="mt-8 md:mt-10 px-6 md:px-[6vw]"
+          className="mt-6 md:mt-10 px-6 md:px-[6vw] hidden sm:block"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 2.0 }}
@@ -448,12 +434,12 @@ export default function HeroSection() {
       </div>
 
       {/* Scroll indicator */}
-      <div
+      {/* <div
         className="absolute bottom-8 left-1/2 -translate-x-1/2"
         style={{ zIndex: 20 }}
       >
         <ScrollIndicator />
-      </div>
+      </div> */}
     </section>
   )
 }

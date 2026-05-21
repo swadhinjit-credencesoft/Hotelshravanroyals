@@ -18,8 +18,8 @@ export default function ArtOfStaySection() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-24 items-center">
            <div>
               <SectionLabel className="mb-6">The Royal Standards</SectionLabel>
-              <h2 className="font-display text-4xl md:text-6xl italic text-forest mb-8 leading-tight">
-                The Art of <br /> the Stay
+              <h2 className="font-display text-4xl md:text-5xl lg:text-6xl italic text-forest mb-8 leading-tight">
+                The Art of the Stay
               </h2>
               <GoldDivider className="mb-10" />
               <p className="font-serif text-xl text-taupe italic mb-12 leading-relaxed">

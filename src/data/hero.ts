@@ -27,8 +27,8 @@ export const heroSlides: HeroSlide[] = [
   {
     id: 's2',
     tagline: 'Premium Banquet & Events',
-    headline: 'Stage Your Finest Moments',
-    subheadline: 'Elegant banquet halls and event spaces for weddings, celebrations, and corporate gatherings — curated to perfection.',
+    headline: 'Let Moments Shine',
+    subheadline: 'Elegant spaces for weddings, celebrations, and corporate events — crafted to perfection',
     image: 'https://bookonelocal.in/cdn/IMG_6260.mp4',
     imageAlt: 'Premium banquet hall at Hotel Shravan Royal Inn',
     primaryCta: 'View Event Spaces',
@@ -51,8 +51,8 @@ export const heroSlides: HeroSlide[] = [
   {
     id: 's4',
     tagline: 'Jaipur Experiences',
-    headline: 'Discover the Pink City',
-    subheadline: 'Perfectly located for heritage tours, local markets, and cultural exploration — with expert guidance from our concierge.',
+    headline: 'Explore the Pink City',
+    subheadline: 'Perfectly located for heritage tours and cultural exploration — with expert guidance from our concierge.',
     image: 'https://bookonelocal.in/cdn/IMG_6294.mp4',
     imageAlt: 'Jaipur heritage experience from Hotel Shravan Royal Inn',
     primaryCta: 'Explore Experiences',

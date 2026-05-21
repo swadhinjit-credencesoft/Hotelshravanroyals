@@ -17,8 +17,8 @@ export default function WellnessSection() {
               Hotel Shravan Royal Inn
             </SectionLabel>
 
-            <h2 className="font-display text-4xl md:text-6xl italic text-forest mb-8 leading-tight">
-              Luxury Comfort <br /> Exceptional Hospitality
+            <h2 className="font-display text-4xl md:text-5xl lg:text-6xl italic text-forest mb-8 leading-tight">
+              Luxury Comfort &amp; Exceptional Hospitality
             </h2>
 
             <GoldDivider className="mb-10" />
@@ -60,11 +60,12 @@ export default function WellnessSection() {
               />
             </div>
 
+            {/* Floating overlay — desktop only to avoid tablet overflow */}
             <motion.div
               initial={{ opacity: 0, x: 50 }}
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 1, delay: 0.5 }}
-              className="absolute -bottom-12 -left-12 w-64 h-80 hidden md:block border border-gold/20 overflow-hidden bg-cream rounded-2xl"
+              className="absolute -bottom-12 -left-8 xl:-left-12 w-52 xl:w-64 h-64 xl:h-80 hidden lg:block border border-gold/20 overflow-hidden bg-cream rounded-2xl"
             >
               <Image
                 src="https://bookonelocal.in/cdn/IMG_6334.JPG"

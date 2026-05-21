@@ -26,8 +26,8 @@ export async function fetchAvailability(
   const url = buildHotelMateCheckAvailabilityUrl(propertyId, {
     fromDate,
     toDate,
-    noOfRooms: options?.noOfRooms ?? 1,
-    noOfPersons: options?.noOfPersons ?? 1,
+    noOfRooms: options?.noOfRooms ?? 3,
+    noOfPersons: options?.noOfPersons ?? 3,
   });
   const response = await fetch(url, {
     cache: "no-store", // Availability must always be fresh

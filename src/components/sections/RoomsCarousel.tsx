@@ -104,19 +104,39 @@ function RoomCard({ room, index, totalRooms = 3 }: { room: NormalizedRoom; index
       onHoverStart={() => setHovered(true)}
       onHoverEnd={() => setHovered(false)}
     >
-      {/* Image */}
+      {/* Image / Video */}
       <motion.div
         className="absolute inset-0"
         animate={{ scale: hovered ? 1.06 : 1 }}
         transition={{ duration: 0.7, ease: [0.16, 1, 0.3, 1] }}
       >
-        <Image
-          src={room.image}
-          alt={room.imageAlt}
-          fill
-          className="object-cover"
-          sizes="400px"
-        />
+        {room.category === 'suite' ? (
+          <video
+            src="https://bookonelocal.in/cdn/IMG_6309.mp4"
+            autoPlay
+            loop
+            muted
+            playsInline
+            style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', display: 'block' }}
+          />
+        ) : room.category === 'deluxe' ? (
+          <video
+            src="https://bookonelocal.in/cdn/IMG_6369.mp4"
+            autoPlay
+            loop
+            muted
+            playsInline
+            style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', display: 'block' }}
+          />
+        ) : (
+          <Image
+            src={room.image}
+            alt={room.imageAlt}
+            fill
+            className="object-cover"
+            sizes="400px"
+          />
+        )}
       </motion.div>
 
       {/* Category pill */}
@@ -125,20 +145,15 @@ function RoomCard({ room, index, totalRooms = 3 }: { room: NormalizedRoom; index
       </div>
 
       {/* Hover overlay */}
-      <motion.div
-        className="absolute inset-0 flex flex-col justify-end p-7"
+      <div
+        className="absolute inset-0 flex flex-col justify-end p-7 opacity-100 lg:opacity-0 lg:group-hover:opacity-100 transition-opacity duration-300"
         style={{
-          background: 'linear-gradient(to top, rgba(26,16,4,0.85) 0%, rgba(26,16,4,0) 60%)',
-          pointerEvents: hovered ? 'auto' : 'none',
+          background: 'linear-gradient(to top, rgba(26,16,4,0.9) 0%, rgba(26,16,4,0.3) 50%, rgba(26,16,4,0) 100%)',
+          pointerEvents: 'auto',
         }}
-        initial={{ opacity: 0 }}
-        animate={{ opacity: hovered ? 1 : 0 }}
-        transition={{ duration: 0.4 }}
       >
-        <motion.div
-          initial={{ y: 24, opacity: 0 }}
-          animate={hovered ? { y: 0, opacity: 1 } : { y: 24, opacity: 0 }}
-          transition={{ duration: 0.4, ease: [0.16, 1, 0.3, 1] }}
+        <div
+          className="transform translate-y-0 lg:translate-y-6 lg:opacity-0 lg:group-hover:translate-y-0 lg:group-hover:opacity-100 transition-all duration-500 ease-[cubic-bezier(0.16,1,0.3,1)]"
         >
           <p className="font-sans text-[10px] uppercase tracking-[0.18em] text-gold mb-2">{room.tagline}</p>
           <h3 className="font-display text-2xl italic text-ivory mb-1">{room.name}</h3>
@@ -163,18 +178,16 @@ function RoomCard({ room, index, totalRooms = 3 }: { room: NormalizedRoom; index
               Book Now <ArrowRight size={12} />
             </div>
           </div>
-        </motion.div>
-      </motion.div>
+        </div>
+      </div>
 
-      {/* At-rest: minimal name at bottom */}
-      <motion.div
-        className="absolute bottom-0 left-0 right-0 p-5"
-        animate={{ opacity: hovered ? 0 : 1 }}
-        transition={{ duration: 0.3 }}
+      {/* At-rest: minimal name at bottom - hidden on mobile/tablet to avoid overlapping */}
+      <div
+        className="absolute bottom-0 left-0 right-0 p-5 hidden lg:block group-hover:opacity-0 transition-opacity duration-300"
       >
         <div className="h-px w-8 bg-gold/60 mb-3" />
         <p className="font-sans text-[10px] uppercase tracking-[0.16em] text-ivory/50">{room.category}</p>
-      </motion.div>
+      </div>
     </motion.a>
   )
 }

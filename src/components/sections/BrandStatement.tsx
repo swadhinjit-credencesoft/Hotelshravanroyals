@@ -46,22 +46,19 @@ export default function BrandStatement() {
         </div>
 
         {/* Quote lines */}
-        <blockquote className="font-serif text-3xl md:text-[48px] italic font-light text-forest leading-[1.35] mb-12">
-          {quoteLines.map((line, i) => (
-            <motion.span
-              key={i}
-              className="block overflow-hidden"
-              initial={{ clipPath: 'inset(0 100% 0 0)' }}
-              animate={isInView ? { clipPath: 'inset(0 0% 0 0)' } : { clipPath: 'inset(0 100% 0 0)' }}
-              transition={{
-                duration: 0.9,
-                delay: 0.2 + i * 0.4,
-                ease: [0.76, 0, 0.24, 1],
-              }}
-            >
-              {line}
-            </motion.span>
-          ))}
+        <blockquote className="font-serif text-xl xs:text-2xl sm:text-3xl md:text-[44px] lg:text-[48px] italic font-light text-forest leading-[1.4] mb-12 max-w-4xl mx-auto">
+          <motion.span
+            className="block"
+            initial={{ opacity: 0, y: 30 }}
+            animate={isInView ? { opacity: 1, y: 0 } : {}}
+            transition={{
+              duration: 1,
+              delay: 0.2,
+              ease: [0.16, 1, 0.3, 1],
+            }}
+          >
+            "Shravan Royals is more than a stay — it is a world of refined luxury, peaceful escapes, and unforgettable experiences where comfort, beauty, and hospitality exist in perfect harmony."
+          </motion.span>
         </blockquote>
 
         {/* SVG Ornament */}

@@ -67,8 +67,8 @@ export default function Navbar({ forceDark = false }: { forceDark?: boolean }) {
       >
         <div className="max-w-[1600px] mx-auto px-6 md:px-10 h-20 flex items-center justify-between">
           {/* Logo */}
-          <Link href="/" className="flex items-center gap-3 group focus-visible:ring-2 focus-visible:ring-gold rounded-sm">
-            <div className="relative w-12 h-12">
+          <Link href="/" className="flex items-center gap-2 sm:gap-3 group focus-visible:ring-2 focus-visible:ring-gold rounded-sm">
+            <div className="relative w-9 h-9 xs:w-11 xs:h-11 sm:w-12 sm:h-12">
               <Image 
                 src="/Shravan Logo.png" 
                 alt={siteConfig.name} 
@@ -77,10 +77,10 @@ export default function Navbar({ forceDark = false }: { forceDark?: boolean }) {
               />
             </div>
             <div className="flex flex-col leading-none">
-              <span className={`font-serif text-lg tracking-[0.18em] uppercase transition-colors duration-300 ${isDarkText ? 'text-forest' : 'text-ivory'}`}>
+              <span className={`font-serif text-[13px] xs:text-base sm:text-lg tracking-[0.15em] sm:tracking-[0.18em] uppercase transition-colors duration-300 ${isDarkText ? 'text-forest' : 'text-ivory'}`}>
                 Hotel Shravan
               </span>
-              <span className={`font-sans text-[9px] tracking-[0.28em] uppercase mt-0.5 transition-colors duration-300 ${isDarkText ? 'text-gold' : 'text-gold-light'}`}>
+              <span className={`font-sans text-[7px] xs:text-[8px] sm:text-[9px] tracking-[0.25em] sm:tracking-[0.28em] uppercase mt-0.5 transition-colors duration-300 ${isDarkText ? 'text-gold' : 'text-gold-light'}`}>
                 Royal Inn
               </span>
             </div>

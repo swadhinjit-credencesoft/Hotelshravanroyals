@@ -72,12 +72,34 @@ export default function RoomsGrid() {
                   className="group flex flex-col"
                 >
                   <div className="relative aspect-[4/5] overflow-hidden border border-gold/10 mb-6">
-                    <Image
-                      src={imageUrl}
-                      alt={room.name}
-                      fill
-                      className="object-cover group-hover:scale-105 transition-transform duration-1000"
-                    />
+                    {room.name.toLowerCase().includes('suite') ? (
+                      <video
+                        src="https://bookonelocal.in/cdn/IMG_6309.mp4"
+                        autoPlay
+                        loop
+                        muted
+                        playsInline
+                        style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', display: 'block' }}
+                        className="group-hover:scale-105 transition-transform duration-1000"
+                      />
+                    ) : room.name.toLowerCase().includes('deluxe') ? (
+                      <video
+                        src="https://bookonelocal.in/cdn/IMG_6369.mp4"
+                        autoPlay
+                        loop
+                        muted
+                        playsInline
+                        style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', display: 'block' }}
+                        className="group-hover:scale-105 transition-transform duration-1000"
+                      />
+                    ) : (
+                      <Image
+                        src={imageUrl}
+                        alt={room.name}
+                        fill
+                        className="object-cover group-hover:scale-105 transition-transform duration-1000"
+                      />
+                    )}
                     <div className="absolute top-4 left-4 z-10 bg-cream/90 px-3 py-1 rounded-sm">
                       <span className="font-sans text-[10px] uppercase tracking-[0.14em] text-gold">
                         {room.name.toLowerCase().includes('suite') ? 'suite' : 'deluxe'}
