@@ -7,7 +7,7 @@ import SectionLabel from '@/components/ui/SectionLabel';
 import GoldDivider from '@/components/ui/GoldDivider';
 import { motion } from 'framer-motion';
 import Image from 'next/image';
-import Link from 'next/link';
+// import Link from 'next/link';
 
 const blogPosts = [
   {
@@ -63,9 +63,9 @@ export default function BlogPage() {
                  whileInView={{ opacity: 1, y: 0 }}
                  viewport={{ once: true }}
                  transition={{ duration: 0.8, delay: i * 0.1 }}
-                 className="group cursor-pointer"
+                 className="group"
                >
-                 <Link href={`/blog/${post.id}`}>
+                 <div>
                    <div className="relative aspect-[4/3] overflow-hidden border border-gold/10 mb-6">
                       <Image
                         src={post.image}
@@ -89,7 +89,7 @@ export default function BlogPage() {
                    <p className="font-serif text-base text-taupe leading-relaxed italic">
                      {post.excerpt}
                    </p>
-                 </Link>
+                 </div>
                </motion.article>
              ))}
           </div>

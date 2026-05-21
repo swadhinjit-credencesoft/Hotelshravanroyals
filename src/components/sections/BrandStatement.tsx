@@ -82,7 +82,7 @@ export default function BrandStatement() {
         </motion.div>
 
         {/* Stats row */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-0 mb-16">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-0 mb-16">
           {heroStats.map((stat, i) => (
             <div key={stat.label} className="flex flex-col items-center">
               <motion.div

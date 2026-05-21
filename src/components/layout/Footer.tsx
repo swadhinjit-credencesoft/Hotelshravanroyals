@@ -156,7 +156,7 @@ export default function Footer() {
         {/* Copyright */}
         <div className="flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="font-sans text-[11px] text-ivory/30 tracking-wide">
-            Designed and Developed By CredenceSoft, Powered By BookOne.
+            Designed and Developed By <a href="https://www.credencesoft.in/" target="_blank" rel="noopener noreferrer" className="hover:text-gold transition-colors">CredenceSoft</a>, Powered By <a href="https://bookonepms.com/" target="_blank" rel="noopener noreferrer" className="hover:text-gold transition-colors">BookOne</a>.
           </p>
           <div className="flex gap-4 flex-wrap justify-end max-w-[50%]">
             {/* <Link href="/sitemap.xml" className="font-sans text-[11px] text-ivory/30 hover:text-gold transition-colors">
