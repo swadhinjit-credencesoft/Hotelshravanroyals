@@ -220,6 +220,12 @@ html.lenis {
   border-bottom-color: var(--gold);
 }
 
+/* Hide native calendar icon in date inputs */
+.booking-input::-webkit-calendar-picker-indicator {
+  display: none;
+  -webkit-appearance: none;
+}
+
 /* Lightbox */
 .lightbox-backdrop {
   background: rgba(26, 16, 4, 0.92);

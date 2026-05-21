@@ -56,8 +56,8 @@ export default function HeroSection() {
 
 
   const checkoutRef = useRef<HTMLInputElement>(null)
-  const [checkIn, setCheckIn] = useState('')
-  const [checkOut, setCheckOut] = useState('')
+  const [checkIn, setCheckIn] = useState(todayString())
+  const [checkOut, setCheckOut] = useState(addDays(todayString(), 1))
   const [guests, setGuests] = useState('1')
   const [rooms, setRooms] = useState('1')
 

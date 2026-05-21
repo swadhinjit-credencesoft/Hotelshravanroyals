@@ -122,7 +122,7 @@ export default function Home() {
       <GallerySection />
 
       {/* Seasonal Offers */}
-      <OffersSection />
+      {/* <OffersSection /> */}
 
       {/* Sustainability & Forest */}
       <ForestSection />
