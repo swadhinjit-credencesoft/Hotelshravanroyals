@@ -57,7 +57,7 @@ export default function RoomsGrid() {
             </div>
           </div>
         ) : (
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
+          <div className={`grid grid-cols-1 md:grid-cols-2 ${dynamicRooms.length === 1 ? 'lg:grid-cols-1 max-w-2xl mx-auto' : dynamicRooms.length === 2 ? 'lg:grid-cols-2 max-w-[1100px] mx-auto' : 'lg:grid-cols-3'} gap-12`}>
             {dynamicRooms.map((room, i) => {
               const imageUrl = room.imageList && room.imageList.length > 0 ? room.imageList[0].url : 'https://images.unsplash.com/photo-1566073771259-6a8506099945?w=1200&q=95';
               const description = room.description ? room.description.replace(/<[^>]*>?/gm, '') : '';

@@ -19,7 +19,7 @@ const navLinks = [
   { label: 'Contact', href: '/contact' },
 ]
 
-export default function Navbar() {
+export default function Navbar({ forceDark = false }: { forceDark?: boolean }) {
   const [scrolled, setScrolled] = useState(false)
   const [mobileOpen, setMobileOpen] = useState(false)
   const { scrollY } = useScroll()
@@ -50,6 +50,8 @@ export default function Navbar() {
     return () => { document.body.style.overflow = '' }
   }, [mobileOpen])
 
+  const isDarkText = forceDark || scrolled;
+
   return (
     <>
       <motion.header
@@ -75,10 +77,10 @@ export default function Navbar() {
               />
             </div>
             <div className="flex flex-col leading-none">
-              <span className={`font-serif text-lg tracking-[0.18em] uppercase transition-colors duration-300 ${scrolled ? 'text-forest' : 'text-ivory'}`}>
+              <span className={`font-serif text-lg tracking-[0.18em] uppercase transition-colors duration-300 ${isDarkText ? 'text-forest' : 'text-ivory'}`}>
                 Hotel Shravan
               </span>
-              <span className={`font-sans text-[9px] tracking-[0.28em] uppercase mt-0.5 transition-colors duration-300 ${scrolled ? 'text-gold' : 'text-gold-light'}`}>
+              <span className={`font-sans text-[9px] tracking-[0.28em] uppercase mt-0.5 transition-colors duration-300 ${isDarkText ? 'text-gold' : 'text-gold-light'}`}>
                 Royal Inn
               </span>
             </div>
@@ -91,7 +93,7 @@ export default function Navbar() {
                 key={link.label}
                 href={link.href}
                 className={`font-sans text-[11px] uppercase tracking-[0.18em] transition-colors duration-300 hover:text-gold focus-visible:text-gold focus-visible:outline-none ${
-                  scrolled ? 'text-forest/70' : 'text-ivory/80'
+                  isDarkText ? 'text-forest/70' : 'text-ivory/80'
                 }`}
               >
                 {link.label}
@@ -103,7 +105,7 @@ export default function Navbar() {
           <div className="hidden md:flex items-center gap-4">
             <a
               href={`tel:${siteConfig.phone}`}
-              className={`font-sans text-[11px] tracking-[0.12em] transition-colors duration-300 ${scrolled ? 'text-taupe' : 'text-ivory/60'} hover:text-gold`}
+              className={`font-sans text-[11px] tracking-[0.12em] transition-colors duration-300 ${isDarkText ? 'text-taupe' : 'text-ivory/60'} hover:text-gold`}
               aria-label={`Call us at ${siteConfig.phone}`}
             >
               {siteConfig.phone}
@@ -122,7 +124,7 @@ export default function Navbar() {
 
           {/* Mobile hamburger */}
           <button
-            className={`md:hidden p-2 transition-colors ${scrolled ? 'text-forest' : 'text-ivory'} hover:text-gold`}
+            className={`md:hidden p-2 transition-colors ${isDarkText ? 'text-forest' : 'text-ivory'} hover:text-gold`}
             onClick={() => setMobileOpen(true)}
             aria-label="Open navigation menu"
             id="mobile-menu-trigger"

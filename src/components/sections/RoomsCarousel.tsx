@@ -66,10 +66,16 @@ function normalizeRoom(room: ApiRoom): NormalizedRoom {
   }
 }
 
-function RoomCard({ room, index }: { room: NormalizedRoom; index: number }) {
+function RoomCard({ room, index, totalRooms = 3 }: { room: NormalizedRoom; index: number; totalRooms?: number }) {
   const [hovered, setHovered] = useState(false)
   const ref = useRef<HTMLAnchorElement>(null)
   const isInView = useInView(ref, { once: true, margin: '-50px' })
+
+  const widthClass = totalRooms === 1 
+    ? 'w-[85vw] md:w-full max-w-[1000px]' 
+    : totalRooms === 2 
+      ? 'w-[85vw] sm:w-[45vw] max-w-[700px]' 
+      : 'w-[85vw] sm:w-[380px] lg:w-[450px] xl:w-[500px]';
 
   const bookingUrl = (() => {
     const today = new Date()
@@ -90,8 +96,8 @@ function RoomCard({ room, index }: { room: NormalizedRoom; index: number }) {
       href={bookingUrl}
       target="_blank"
       rel="noopener noreferrer"
-      className="room-card relative flex-shrink-0 overflow-hidden cursor-pointer rounded-sm block"
-      style={{ width: '380px', height: '540px' }}
+      className={`room-card relative flex-shrink-0 overflow-hidden cursor-pointer rounded-sm block ${widthClass}`}
+      style={{ height: '540px', scrollSnapAlign: 'start' }}
       initial={{ opacity: 0, y: 40 }}
       animate={isInView ? { opacity: 1, y: 0 } : {}}
       transition={{ duration: 0.8, delay: index * 0.1, ease: [0.16, 1, 0.3, 1] }}
@@ -173,11 +179,17 @@ function RoomCard({ room, index }: { room: NormalizedRoom; index: number }) {
   )
 }
 
-function SkeletonCard() {
+function SkeletonCard({ totalRooms = 3 }: { totalRooms?: number }) {
+  const widthClass = totalRooms === 1 
+    ? 'w-[85vw] md:w-full max-w-[1000px]' 
+    : totalRooms === 2 
+      ? 'w-[85vw] sm:w-[45vw] max-w-[700px]' 
+      : 'w-[85vw] sm:w-[380px] lg:w-[450px] xl:w-[500px]';
+
   return (
     <div
-      className="flex-shrink-0 rounded-sm overflow-hidden bg-champagne/60 animate-pulse"
-      style={{ width: '380px', height: '540px' }}
+      className={`flex-shrink-0 rounded-sm overflow-hidden bg-champagne/60 animate-pulse ${widthClass}`}
+      style={{ height: '540px', scrollSnapAlign: 'start' }}
     />
   )
 }
@@ -213,7 +225,7 @@ export default function RoomsCarousel() {
 
   const scroll = (dir: 'left' | 'right') => {
     if (!containerRef.current) return
-    containerRef.current.scrollBy({ left: dir === 'right' ? 420 : -420, behavior: 'smooth' })
+    containerRef.current.scrollBy({ left: dir === 'right' ? 600 : -600, behavior: 'smooth' })
     setTimeout(() => {
       if (!containerRef.current) return
       const { scrollLeft, scrollWidth, clientWidth } = containerRef.current
@@ -244,7 +256,7 @@ export default function RoomsCarousel() {
       </div>
 
       {/* Carousel */}
-      <div className="relative">
+      <div className="relative max-w-[1600px] mx-auto">
         {/* Scroll arrows */}
         <button
           onClick={() => scroll('left')}
@@ -274,14 +286,10 @@ export default function RoomsCarousel() {
         >
           {loading
             ? Array.from({ length: 4 }).map((_, i) => (
-                <div key={i} style={{ scrollSnapAlign: 'start' }}>
-                  <SkeletonCard />
-                </div>
+                <SkeletonCard key={i} />
               ))
             : rooms.map((room, i) => (
-                <div key={room.id} style={{ scrollSnapAlign: 'start' }}>
-                  <RoomCard room={room} index={i} />
-                </div>
+                <RoomCard key={room.id} room={room} index={i} totalRooms={rooms.length} />
               ))}
           {/* Spacer */}
           <div className="flex-shrink-0 w-2" />
