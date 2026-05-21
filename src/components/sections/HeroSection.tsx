@@ -136,8 +136,7 @@ export default function HeroSection() {
   return (
     <section
       ref={heroRef}
-      className="relative w-full overflow-hidden"
-      style={{ height: '100svh', minHeight: '600px' }}
+      className="relative w-full min-h-[720px] overflow-hidden sm:min-h-[740px] md:min-h-[760px] lg:h-[100svh] lg:min-h-[680px]"
       role="banner"
       aria-label="Hero section"
       onMouseMove={handleMouseMove}
@@ -220,11 +219,11 @@ export default function HeroSection() {
 
       {/* z-10: Main content */}
       <motion.div
-        className="absolute inset-0 flex flex-col justify-center md:justify-end pb-28 md:pb-28 pt-24 md:pt-32"
+        className="absolute inset-0 flex flex-col justify-end pb-36 pt-28 sm:pb-40 sm:pt-32 md:pb-36 lg:pb-28"
         style={{ zIndex: 10, y: reduced ? 0 : contentY, opacity: contentOpacity }}
       >
         <motion.div
-          className="px-6 md:px-[6vw] max-w-[700px]"
+          className="w-full max-w-[700px] px-5 sm:px-6 md:px-[6vw]"
           style={{ x: reduced ? 0 : springX, y: reduced ? 0 : springY }}
         >
           {/* Tagline */}
@@ -247,7 +246,7 @@ export default function HeroSection() {
 
           {/* Headline — word-by-word */}
           <h1
-            className="font-display font-normal italic text-ivory mb-4 sm:mb-5 leading-[1.1] text-3xl xs:text-4xl sm:text-6xl md:text-7xl lg:text-[80px]"
+            className="font-display font-normal italic text-ivory mb-4 sm:mb-5 leading-[1.08] text-[clamp(2.45rem,12vw,4rem)] sm:text-[clamp(4rem,8vw,4.75rem)] md:text-7xl lg:text-[80px]"
             aria-live="polite"
           >
             <AnimatePresence mode="wait">
@@ -297,10 +296,10 @@ export default function HeroSection() {
           </AnimatePresence>
 
           {/* CTA row */}
-          <div className="flex flex-wrap gap-3 sm:gap-4">
+          <div className="flex flex-col gap-3 min-[420px]:flex-row min-[420px]:flex-wrap sm:gap-4">
             <motion.a
               href={slide.primaryHref}
-              className="group inline-flex items-center gap-2 bg-gold text-[#1a1004] font-sans text-[11px] uppercase tracking-[0.16em] px-8 sm:px-9 py-3.5 sm:py-4 rounded-sm hover:bg-gold-light transition-all duration-300"
+              className="group inline-flex min-h-12 w-full items-center justify-center gap-2 bg-gold px-5 py-3.5 text-center font-sans text-[10px] uppercase tracking-[0.14em] text-[#1a1004] transition-all duration-300 hover:bg-gold-light min-[420px]:w-auto sm:px-9 sm:py-4 sm:text-[11px] sm:tracking-[0.16em]"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 1.7 }}
@@ -314,7 +313,7 @@ export default function HeroSection() {
             </motion.a>
             <motion.a
               href={slide.secondaryHref}
-              className="inline-flex items-center gap-2 border border-gold/50 text-ivory font-sans text-[11px] uppercase tracking-[0.16em] px-8 sm:px-9 py-3.5 sm:py-4 rounded-sm hover:bg-gold/10 hover:border-gold transition-all duration-300"
+              className="inline-flex min-h-12 w-full items-center justify-center gap-2 border border-gold/50 px-5 py-3.5 text-center font-sans text-[10px] uppercase tracking-[0.14em] text-ivory transition-all duration-300 hover:border-gold hover:bg-gold/10 min-[420px]:w-auto sm:px-9 sm:py-4 sm:text-[11px] sm:tracking-[0.16em]"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 1.85 }}
@@ -353,7 +352,7 @@ export default function HeroSection() {
         transition={{ duration: 0.8, delay: 2.2 }}
       >
         <div
-          className="hidden md:block border-t border-gold/15"
+          className="hidden border-t border-gold/15 lg:block"
           style={{ background: 'rgba(251,247,240,0.07)', backdropFilter: 'blur(16px)' }}
         >
           <div className="max-w-[1600px] mx-auto px-6 md:px-10 py-4">
@@ -380,12 +379,12 @@ export default function HeroSection() {
         </div>
 
         {/* Mobile book button */}
-        <div className="md:hidden flex justify-center pb-6">
+        <div className="flex justify-center px-5 pb-6 lg:hidden">
           <a
             href={getBookingLink()}
             target="_blank"
             rel="noopener noreferrer"
-            className="bg-gold text-[#1a1004] font-sans text-[11px] uppercase tracking-[0.16em] px-10 py-4 rounded-full shadow-warm-lg"
+            className="inline-flex min-h-12 w-full max-w-[280px] items-center justify-center rounded-full bg-gold px-8 py-4 text-center font-sans text-[11px] uppercase tracking-[0.16em] text-[#1a1004] shadow-warm-lg"
           >
             Book Now
           </a>
@@ -394,7 +393,7 @@ export default function HeroSection() {
 
       {/* Slide dots (bottom-right) */}
       <div
-        className="absolute bottom-24 right-6 md:right-10 flex flex-col gap-2 items-end"
+        className="absolute bottom-24 right-4 flex flex-col items-end gap-2 sm:bottom-28 sm:right-6 md:right-10 lg:bottom-24"
         style={{ zIndex: 20 }}
       >
         {heroSlides.map((s, i) => (

@@ -6,21 +6,14 @@ import { heroStats } from '@/data/hero'
 import GoldDivider from '@/components/ui/GoldDivider'
 import SectionLabel from '@/components/ui/SectionLabel'
 
-
 export default function BrandStatement() {
   const ref = useRef<HTMLElement>(null)
   const isInView = useInView(ref, { once: true, margin: '-80px' })
 
-  const quoteLines = [
-    'Shravan Royals is more than a stay — it is a world of refined luxury',
-    'peaceful escapes, and unforgettable experiences where comfort, beauty',
-    'and hospitality exist in perfect harmony.',
-  ]
-
   return (
     <section
       ref={ref}
-      className="bg-cream-light py-32 text-center relative overflow-hidden"
+      className="relative overflow-hidden bg-cream-light py-24 text-center sm:py-28 md:py-32"
       aria-label="Brand statement"
     >
       {/* Subtle background ornament */}
@@ -34,19 +27,19 @@ export default function BrandStatement() {
         </svg>
       </div>
 
-      <div className="max-w-5xl mx-auto px-6 md:px-10 relative z-10">
+      <div className="relative z-10 mx-auto max-w-5xl px-6 md:px-10">
         {/* Label */}
-        <div className="flex justify-center mb-6">
+        <div className="mb-6 flex justify-center">
           <SectionLabel>Our Philosophy</SectionLabel>
         </div>
 
         {/* Divider */}
-        <div className="flex justify-center mb-12">
+        <div className="mb-12 flex justify-center">
           <GoldDivider width="w-12" />
         </div>
 
         {/* Quote lines */}
-        <blockquote className="font-serif text-xl xs:text-2xl sm:text-3xl md:text-[44px] lg:text-[48px] italic font-light text-forest leading-[1.4] mb-12 max-w-4xl mx-auto">
+        <blockquote className="mx-auto mb-12 max-w-4xl font-serif text-xl font-light italic leading-[1.4] text-forest sm:text-3xl md:text-[44px] lg:text-[48px]">
           <motion.span
             className="block"
             initial={{ opacity: 0, y: 30 }}
@@ -57,13 +50,13 @@ export default function BrandStatement() {
               ease: [0.16, 1, 0.3, 1],
             }}
           >
-            "Shravan Royals is more than a stay — it is a world of refined luxury, peaceful escapes, and unforgettable experiences where comfort, beauty, and hospitality exist in perfect harmony."
+            &ldquo;Shravan Royals is more than a stay &mdash; it is a world of refined luxury, peaceful escapes, and unforgettable experiences where comfort, beauty, and hospitality exist in perfect harmony.&rdquo;
           </motion.span>
         </blockquote>
 
         {/* SVG Ornament */}
         <motion.div
-          className="flex justify-center mb-14"
+          className="mb-14 flex justify-center"
           initial={{ opacity: 0, scale: 0.8 }}
           animate={isInView ? { opacity: 1, scale: 1 } : {}}
           transition={{ duration: 0.8, delay: 1.6 }}
@@ -79,23 +72,23 @@ export default function BrandStatement() {
         </motion.div>
 
         {/* Stats row */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-0 mb-16">
+        <div className="mb-16 grid grid-cols-2 gap-8 md:grid-cols-4 md:gap-0">
           {heroStats.map((stat, i) => (
-            <div key={stat.label} className="flex flex-col items-center">
+            <div key={stat.label} className="relative flex flex-col items-center">
               <motion.div
                 initial={{ opacity: 0, y: 30 }}
                 animate={isInView ? { opacity: 1, y: 0 } : {}}
                 transition={{ duration: 0.8, delay: 1.8 + i * 0.12 }}
               >
-                <span className="font-serif text-5xl md:text-[56px] text-gold font-light leading-none">
+                <span className="font-serif text-5xl font-light leading-none text-gold md:text-[56px]">
                   {stat.value}
                 </span>
-                <p className="font-sans text-[11px] uppercase tracking-[0.18em] text-taupe mt-2">
+                <p className="mt-2 font-sans text-[11px] uppercase tracking-[0.18em] text-taupe">
                   {stat.label}
                 </p>
               </motion.div>
               {i < heroStats.length - 1 && (
-                <div className="hidden md:block absolute translate-x-[calc(var(--col)*100%+50%)] top-1/2 -translate-y-1/2 w-px h-12 bg-gold/20" />
+                <div className="absolute right-0 top-1/2 hidden h-12 w-px -translate-y-1/2 bg-gold/20 md:block" />
               )}
             </div>
           ))}
@@ -103,14 +96,14 @@ export default function BrandStatement() {
 
         {/* Subtext */}
         <motion.p
-          className="font-sans text-base md:text-[16px] text-taupe max-w-xl mx-auto leading-[1.9]"
+          className="mx-auto max-w-xl font-sans text-base leading-[1.9] text-taupe md:text-[16px]"
           initial={{ opacity: 0, y: 20 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.8, delay: 2.2 }}
         >
-         At Shravan Royals, luxury is not just experienced — it is remembered. 
-Surrounded by breathtaking landscapes, timeless architecture, and curated hospitality, 
-every stay is designed to awaken serenity, indulgence, and unforgettable moments.
+          At Shravan Royals, luxury is not just experienced &mdash; it is remembered. Surrounded by breathtaking landscapes,
+          timeless architecture, and curated hospitality, every stay is designed to awaken serenity, indulgence, and
+          unforgettable moments.
         </motion.p>
       </div>
     </section>
