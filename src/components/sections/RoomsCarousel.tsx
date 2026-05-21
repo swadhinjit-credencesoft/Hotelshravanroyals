@@ -6,6 +6,7 @@ import { motion, useInView } from 'framer-motion'
 import { ArrowRight, ChevronLeft, ChevronRight, Users, Maximize } from 'lucide-react'
 import { fetchAvailability, PROPERTY_ID } from '@/services/api'
 import { buildBookingEngineUrl } from '@/lib/hotelmate-availability'
+import { getRoomCategory, getRoomMedia, type RoomCategory, type RoomMediaType } from '@/lib/room-media'
 import SectionLabel from '@/components/ui/SectionLabel'
 
 interface ApiRoom {
@@ -27,28 +28,26 @@ interface NormalizedRoom {
   size: number
   guests: number
   price: number
-  category: string
+  category: RoomCategory
   image: string
+  mediaType: RoomMediaType
   imageAlt: string
   amenities: string[]
 }
 
 function normalizeRoom(room: ApiRoom): NormalizedRoom {
-  const image =
+  const apiImage =
     room.imageList && room.imageList.length > 0
       ? room.imageList[0].url
-      : 'https://images.unsplash.com/photo-1566073771259-6a8506099945?w=1200&q=95'
+      : undefined
 
   const stripped = room.description
     ? room.description.replace(/<[^>]*>?/gm, '').trim()
     : ''
   const tagline = stripped.length > 60 ? stripped.slice(0, 60) + '…' : stripped || 'An exclusive retreat curated for you'
 
-  const nameLower = room.name.toLowerCase()
-  let category = 'deluxe'
-  if (nameLower.includes('suite')) category = 'suite'
-  else if (nameLower.includes('villa')) category = 'villa'
-  else if (nameLower.includes('standard') || nameLower.includes('classic')) category = 'standard'
+  const category = getRoomCategory(room.name)
+  const media = getRoomMedia(category, apiImage)
 
   const guests = room.maximumOccupancy ?? ((room.maxAdult ?? 2) + (room.maxChildren ?? 0))
 
@@ -60,7 +59,8 @@ function normalizeRoom(room: ApiRoom): NormalizedRoom {
     guests,
     price: room.roomOnlyPrice ?? 0,
     category,
-    image,
+    image: media.src,
+    mediaType: media.type,
     imageAlt: room.name,
     amenities: [],
   }
@@ -104,19 +104,32 @@ function RoomCard({ room, index, totalRooms = 3 }: { room: NormalizedRoom; index
       onHoverStart={() => setHovered(true)}
       onHoverEnd={() => setHovered(false)}
     >
-      {/* Image */}
+      {/* Media */}
       <motion.div
         className="absolute inset-0"
         animate={{ scale: hovered ? 1.06 : 1 }}
         transition={{ duration: 0.7, ease: [0.16, 1, 0.3, 1] }}
       >
-        <Image
-          src={room.image}
-          alt={room.imageAlt}
-          fill
-          className="object-cover"
-          sizes="400px"
-        />
+        {room.mediaType === 'video' ? (
+          <video
+            src={room.image}
+            className="h-full w-full object-cover"
+            autoPlay
+            muted
+            loop
+            playsInline
+            preload="metadata"
+            aria-label={room.imageAlt}
+          />
+        ) : (
+          <Image
+            src={room.image}
+            alt={room.imageAlt}
+            fill
+            className="object-cover"
+            sizes="400px"
+          />
+        )}
       </motion.div>
 
       {/* Category pill */}

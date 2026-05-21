@@ -220,6 +220,53 @@ html.lenis {
   border-bottom-color: var(--gold);
 }
 
+.react-datepicker-wrapper,
+.react-datepicker__input-container {
+  width: 100%;
+}
+
+.booking-datepicker-popper {
+  z-index: 60 !important;
+}
+
+.booking-datepicker {
+  border: 1px solid rgba(200, 169, 110, 0.35) !important;
+  border-radius: 2px !important;
+  background: var(--cream) !important;
+  color: var(--forest) !important;
+  box-shadow: 0 18px 45px rgba(26, 16, 4, 0.22) !important;
+  font-family: var(--font-jost), sans-serif !important;
+}
+
+.booking-datepicker .react-datepicker__header {
+  border-bottom: 1px solid rgba(200, 169, 110, 0.25) !important;
+  background: var(--cream-light) !important;
+}
+
+.booking-datepicker .react-datepicker__current-month,
+.booking-datepicker .react-datepicker__day-name {
+  color: var(--forest) !important;
+}
+
+.booking-datepicker .react-datepicker__day {
+  color: var(--taupe) !important;
+}
+
+.booking-datepicker .react-datepicker__day:hover,
+.booking-datepicker .react-datepicker__day--keyboard-selected {
+  background: rgba(200, 169, 110, 0.18) !important;
+  color: var(--forest) !important;
+}
+
+.booking-datepicker .react-datepicker__day--selected {
+  background: var(--gold) !important;
+  color: #1a1004 !important;
+}
+
+.booking-datepicker .react-datepicker__day--disabled {
+  color: rgba(139, 115, 85, 0.35) !important;
+}
+
 /* Lightbox */
 .lightbox-backdrop {
   background: rgba(26, 16, 4, 0.92);

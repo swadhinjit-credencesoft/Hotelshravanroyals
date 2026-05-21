@@ -1,7 +1,8 @@
 'use client'
 
-import { useState, useEffect, useRef, useCallback } from 'react'
+import { forwardRef, useState, useEffect, useRef, useCallback } from 'react'
 import Image from 'next/image'
+import DatePicker from 'react-datepicker'
 import {
   motion,
   AnimatePresence,
@@ -12,67 +13,56 @@ import {
   useReducedMotion,
 } from 'framer-motion'
 import { ArrowRight, Calendar } from 'lucide-react'
-import { heroSlides, heroStats } from '@/data/hero'
+import { heroSlides } from '@/data/hero'
 // import { awards } from '@/data/awards'
 import ParticleCanvas from '@/components/ui/ParticleCanvas'
-import ScrollIndicator from '@/components/ui/ScrollIndicator'
 import { buildBookingEngineUrl } from '@/lib/hotelmate-availability'
 
-// Count-up hook
-function useCountUp(target: string, active: boolean) {
-  const [value, setValue] = useState('0')
-  const isNumeric = !isNaN(parseInt(target))
-  const numTarget = parseInt(target)
+function formatDateValue(date: Date) {
+  const year = date.getFullYear()
+  const month = String(date.getMonth() + 1).padStart(2, '0')
+  const day = String(date.getDate()).padStart(2, '0')
 
-  useEffect(() => {
-    if (!active || !isNumeric) {
-      setValue(target)
-      return
-    }
-    let start = 0
-    const duration = 1800
-    const step = (timestamp: number) => {
-      if (!start) start = timestamp
-      const progress = Math.min((timestamp - start) / duration, 1)
-      const eased = 1 - Math.pow(1 - progress, 3)
-      setValue(String(Math.floor(eased * numTarget)))
-      if (progress < 1) requestAnimationFrame(step)
-      else setValue(target)
-    }
-    requestAnimationFrame(step)
-  }, [active, target, isNumeric, numTarget])
-
-  return value
+  return `${year}-${month}-${day}`
 }
 
-function StatItem({ stat, index, active }: { stat: { value: string; label: string }; index: number; active: boolean }) {
-  const displayValue = useCountUp(stat.value, active)
-  return (
-    <motion.div
-      className="flex flex-col"
-      initial={{ opacity: 0, y: 20 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.7, delay: 2.0 + index * 0.1, ease: [0.16, 1, 0.3, 1] }}
-    >
-      <span className="font-serif text-3xl md:text-[38px] text-gold font-light leading-none">
-        {displayValue}
-      </span>
-      <span className="font-sans text-[10px] uppercase tracking-[0.14em] text-ivory/60 mt-1">
-        {stat.label}
-      </span>
-    </motion.div>
-  )
+function parseDateValue(value: string) {
+  const [year, month, day] = value.split('-').map(Number)
+
+  if (!year || !month || !day) return null
+
+  return new Date(year, month - 1, day)
+}
+
+function getOffsetDate(days: number) {
+  const date = new Date()
+  date.setHours(0, 0, 0, 0)
+  date.setDate(date.getDate() + days)
+
+  return date
 }
 
 export default function HeroSection() {
   const [currentSlide, setCurrentSlide] = useState(0)
-  const [statsActive, setStatsActive] = useState(false)
   
   // Booking state
-  const [checkIn, setCheckIn] = useState('')
-  const [checkOut, setCheckOut] = useState('')
+  const [checkIn, setCheckIn] = useState(() => formatDateValue(getOffsetDate(0)))
+  const [checkOut, setCheckOut] = useState(() => formatDateValue(getOffsetDate(1)))
   const [guests, setGuests] = useState('2')
   const [roomType, setRoomType] = useState('1')
+
+  const handleCheckInChange = (value: string) => {
+    setCheckIn(value)
+
+    const nextCheckIn = parseDateValue(value)
+    const currentCheckOut = parseDateValue(checkOut)
+
+    if (nextCheckIn && (!currentCheckOut || currentCheckOut <= nextCheckIn)) {
+      const nextCheckOut = new Date(nextCheckIn)
+      nextCheckOut.setDate(nextCheckOut.getDate() + 1)
+      setCheckOut(formatDateValue(nextCheckOut))
+    }
+  }
 
   const getBookingLink = () => {
     const today = new Date();
@@ -81,8 +71,8 @@ export default function HeroSection() {
 
     return buildBookingEngineUrl({
       baseUrl: 'https://bookone.io/Hotel-Shravan-Royal-Inn',
-      checkIn: checkIn ? new Date(checkIn) : today,
-      checkOut: checkOut ? new Date(checkOut) : tomorrow,
+      checkIn: parseDateValue(checkIn) || today,
+      checkOut: parseDateValue(checkOut) || tomorrow,
       adults: parseInt(guests) || 2,
       rooms: parseInt(roomType) || 1,
     });
@@ -123,12 +113,6 @@ export default function HeroSection() {
     }, SLIDE_DURATION)
     return () => clearInterval(timer)
   }, [reduced])
-
-  // Activate stats count-up
-  useEffect(() => {
-    const t = setTimeout(() => setStatsActive(true), 2000)
-    return () => clearTimeout(t)
-  }, [])
 
   const slide = heroSlides[currentSlide]
   const words = slide.headline.split(' ')
@@ -338,24 +322,6 @@ export default function HeroSection() {
           </div>
         </motion.div>
 
-        {/* Stats row */}
-        <motion.div
-          className="mt-8 md:mt-10 px-6 md:px-[6vw]"
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 2.0 }}
-        >
-          <div className="flex flex-wrap gap-8 md:gap-0">
-            {heroStats.map((stat, i) => (
-              <div key={stat.label} className="flex items-center">
-                <StatItem stat={stat} index={i} active={statsActive} />
-                {i < heroStats.length - 1 && (
-                  <div className="hidden md:block w-px h-10 bg-gold/30 mx-8" />
-                )}
-              </div>
-            ))}
-          </div>
-        </motion.div>
       </motion.div>
 
       {/* Booking bar */}
@@ -372,9 +338,24 @@ export default function HeroSection() {
         >
           <div className="max-w-[1600px] mx-auto px-6 md:px-10 py-4">
             <div className="flex items-center gap-0 md:gap-6">
-              <BookingField label="Check-In" placeholder="Arrival date" type="date" value={checkIn} onChange={setCheckIn} />
+              <BookingDateField
+                label="Check-In"
+                value={checkIn}
+                minDate={getOffsetDate(0)}
+                onChange={handleCheckInChange}
+              />
               <div className="hidden md:block w-px h-8 bg-gold/20" />
-              <BookingField label="Check-Out" placeholder="Departure date" type="date" value={checkOut} onChange={setCheckOut} />
+              <BookingDateField
+                label="Check-Out"
+                value={checkOut}
+                minDate={(() => {
+                  const selectedCheckIn = parseDateValue(checkIn) || getOffsetDate(0)
+                  const minCheckOut = new Date(selectedCheckIn)
+                  minCheckOut.setDate(minCheckOut.getDate() + 1)
+                  return minCheckOut
+                })()}
+                onChange={setCheckOut}
+              />
               <div className="hidden md:block w-px h-8 bg-gold/20" />
               <BookingField label="Guests" placeholder="2 guests" type="number" value={guests} onChange={setGuests} />
               <div className="hidden md:block w-px h-8 bg-gold/20" />
@@ -446,40 +427,68 @@ export default function HeroSection() {
           </button>
         ))}
       </div>
-
-      {/* Scroll indicator */}
-      <div
-        className="absolute bottom-8 left-1/2 -translate-x-1/2"
-        style={{ zIndex: 20 }}
-      >
-        <ScrollIndicator />
-      </div>
     </section>
   )
 }
 
-function BookingField({ label, placeholder, type = 'text', value, onChange }: { label: string; placeholder: string; type?: string; value: string; onChange: (val: string) => void }) {
-  const [isMounted, setIsMounted] = useState(false)
-  const inputRef = useRef<HTMLInputElement>(null)
+const DatePickerInput = forwardRef<HTMLButtonElement, { value?: string; onClick?: () => void; label: string }>(
+  ({ value, onClick, label }, ref) => (
+    <button
+      ref={ref}
+      type="button"
+      onClick={onClick}
+      className="booking-input w-full bg-transparent border-b border-gold/40 text-ivory font-sans text-[12px] pb-1 pr-6 text-left focus:outline-none focus:border-gold transition-colors"
+      aria-label={label}
+    >
+      {value}
+    </button>
+  )
+)
 
-  useEffect(() => {
-    setIsMounted(true)
-  }, [])
+DatePickerInput.displayName = 'DatePickerInput'
+
+function BookingDateField({
+  label,
+  value,
+  minDate,
+  onChange,
+}: {
+  label: string
+  value: string
+  minDate: Date
+  onChange: (val: string) => void
+}) {
+  const selectedDate = parseDateValue(value)
+
+  return (
+    <div className="flex-1 min-w-[140px] px-4 py-1 cursor-pointer group">
+      <label className="font-sans text-[9px] uppercase tracking-[0.18em] text-gold/70 block mb-1 pointer-events-none">
+        {label}
+      </label>
+      <div className="relative flex items-center">
+        <DatePicker
+          selected={selectedDate}
+          onChange={(date: Date | null) => {
+            if (date) onChange(formatDateValue(date))
+          }}
+          minDate={minDate}
+          dateFormat="dd MMM yyyy"
+          popperClassName="booking-datepicker-popper"
+          calendarClassName="booking-datepicker"
+          customInput={<DatePickerInput label={label} />}
+        />
+        <Calendar size={12} className="absolute right-0 bottom-2 text-gold/50 group-hover:text-gold transition-colors pointer-events-none" />
+      </div>
+    </div>
+  )
+}
+
+function BookingField({ label, placeholder, type = 'text', value, onChange }: { label: string; placeholder: string; type?: string; value: string; onChange: (val: string) => void }) {
+  const inputRef = useRef<HTMLInputElement>(null)
 
   const handleContainerClick = () => {
     const el = inputRef.current
-    if (type === 'date' && el) {
-      const inputEl = el as HTMLInputElement & { showPicker?: () => void }
-      try {
-        if (inputEl.showPicker) {
-          inputEl.showPicker()
-        } else {
-          inputEl.focus()
-        }
-      } catch {
-        inputEl.focus()
-      }
-    } else if (el) {
+    if (el) {
       el.focus();
     }
   }
@@ -495,17 +504,14 @@ function BookingField({ label, placeholder, type = 'text', value, onChange }: { 
       <div className="relative flex items-center">
         <input
           ref={inputRef}
-          type={isMounted && type === 'date' ? 'date' : type}
+          type={type}
           min={type === 'number' ? '1' : undefined}
           placeholder={placeholder}
           value={value}
           onChange={(e) => onChange(e.target.value)}
-          className={`booking-input w-full bg-transparent border-b border-gold/40 text-ivory placeholder-gold/50 font-sans text-[12px] pb-1 focus:outline-none focus:border-gold transition-colors ${type === 'date' ? 'pr-6' : ''}`}
+          className="booking-input w-full bg-transparent border-b border-gold/40 text-ivory placeholder-gold/50 font-sans text-[12px] pb-1 focus:outline-none focus:border-gold transition-colors"
           aria-label={label}
         />
-        {type === 'date' && (
-          <Calendar size={12} className="absolute right-0 bottom-2 text-gold/50 group-hover:text-gold transition-colors pointer-events-none" />
-        )}
       </div>
     </div>
   )

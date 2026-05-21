@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import { Playfair_Display, Cormorant_Garamond, Jost } from 'next/font/google'
 import './globals.css'
+import 'react-datepicker/dist/react-datepicker.css'
 import LenisProvider from '@/components/providers/LenisProvider'
 import CustomCursor from '@/components/ui/CustomCursor'
 import PageTransition from '@/components/providers/PageTransition'

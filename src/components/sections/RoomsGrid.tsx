@@ -6,6 +6,7 @@ import Image from 'next/image';
 import { ArrowRight, Users, Maximize } from 'lucide-react';
 import { fetchAvailability, PROPERTY_ID } from '@/services/api';
 import { buildBookingEngineUrl } from '@/lib/hotelmate-availability';
+import { getRoomCategory, getRoomMedia } from '@/lib/room-media';
 
 interface RoomData {
   id: number;
@@ -59,7 +60,9 @@ export default function RoomsGrid() {
         ) : (
           <div className={`grid grid-cols-1 md:grid-cols-2 ${dynamicRooms.length === 1 ? 'lg:grid-cols-1 max-w-2xl mx-auto' : dynamicRooms.length === 2 ? 'lg:grid-cols-2 max-w-[1100px] mx-auto' : 'lg:grid-cols-3'} gap-12`}>
             {dynamicRooms.map((room, i) => {
-              const imageUrl = room.imageList && room.imageList.length > 0 ? room.imageList[0].url : 'https://images.unsplash.com/photo-1566073771259-6a8506099945?w=1200&q=95';
+              const apiImage = room.imageList && room.imageList.length > 0 ? room.imageList[0].url : undefined;
+              const category = getRoomCategory(room.name);
+              const media = getRoomMedia(category, apiImage);
               const description = room.description ? room.description.replace(/<[^>]*>?/gm, '') : '';
               
               return (
@@ -72,15 +75,28 @@ export default function RoomsGrid() {
                   className="group flex flex-col"
                 >
                   <div className="relative aspect-[4/5] overflow-hidden border border-gold/10 mb-6">
-                    <Image
-                      src={imageUrl}
-                      alt={room.name}
-                      fill
-                      className="object-cover group-hover:scale-105 transition-transform duration-1000"
-                    />
+                    {media.type === 'video' ? (
+                      <video
+                        src={media.src}
+                        className="h-full w-full object-cover group-hover:scale-105 transition-transform duration-1000"
+                        autoPlay
+                        muted
+                        loop
+                        playsInline
+                        preload="metadata"
+                        aria-label={room.name}
+                      />
+                    ) : (
+                      <Image
+                        src={media.src}
+                        alt={room.name}
+                        fill
+                        className="object-cover group-hover:scale-105 transition-transform duration-1000"
+                      />
+                    )}
                     <div className="absolute top-4 left-4 z-10 bg-cream/90 px-3 py-1 rounded-sm">
                       <span className="font-sans text-[10px] uppercase tracking-[0.14em] text-gold">
-                        {room.name.toLowerCase().includes('suite') ? 'suite' : 'deluxe'}
+                        {category}
                       </span>
                     </div>
                   </div>
