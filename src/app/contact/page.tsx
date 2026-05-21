@@ -5,7 +5,7 @@ import Footer from '@/components/layout/Footer'
 import NewsletterSection from '@/components/sections/NewsletterSection'
 import SectionLabel from '@/components/ui/SectionLabel'
 import { siteConfig } from '@/data/site'
-import { MapPin, Phone, Mail, Clock, Send } from 'lucide-react'
+import { MapPin, Phone, Mail, Clock } from 'lucide-react'
 
 export default function ContactPage() {
   return (

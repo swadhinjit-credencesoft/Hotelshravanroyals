@@ -6,7 +6,6 @@ import CinematicHero from '@/components/ui/CinematicHero';
 import SectionLabel from '@/components/ui/SectionLabel';
 import GoldDivider from '@/components/ui/GoldDivider';
 import { motion } from 'framer-motion';
-import Image from 'next/image';
 
 export default function AboutPage() {
   return (
@@ -54,11 +53,13 @@ export default function AboutPage() {
               transition={{ duration: 1.2 }}
               className="relative aspect-[4/5] overflow-hidden border border-gold/10"
             >
-              <Image
-                src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=1200&q=95"
-                alt="Architectural detail of the estate"
-                fill
-                className="object-cover"
+              <video
+                src="https://bookonelocal.in/cdn/IMG_6260.mp4"
+                autoPlay
+                loop
+                muted
+                playsInline
+                className="object-cover w-full h-full"
               />
             </motion.div>
           </div>
@@ -66,7 +67,7 @@ export default function AboutPage() {
       </section>
 
       {/* The Founders / Leadership */}
-      <section className="bg-forest py-32 text-ivory overflow-hidden">
+      {/* <section className="bg-forest py-32 text-ivory overflow-hidden">
         <div className="max-w-[1600px] mx-auto px-6 md:px-10">
           <div className="text-center mb-20">
             <SectionLabel light className="justify-center mb-6">Custodians</SectionLabel>
@@ -101,7 +102,7 @@ export default function AboutPage() {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Craftsmanship Section */}
       <section className="py-32 bg-ivory">
