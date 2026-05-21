@@ -2,6 +2,8 @@
 
 import { useState, useEffect, useRef, useCallback } from 'react'
 import Image from 'next/image'
+import DatePicker from 'react-datepicker'
+import 'react-datepicker/dist/react-datepicker.css'
 import {
   motion,
   AnimatePresence,
@@ -12,81 +14,45 @@ import {
   useReducedMotion,
 } from 'framer-motion'
 import { ArrowRight, Calendar } from 'lucide-react'
-import { heroSlides, heroStats } from '@/data/hero'
+import { heroSlides } from '@/data/hero'
 // import { awards } from '@/data/awards'
 import ParticleCanvas from '@/components/ui/ParticleCanvas'
 // import ScrollIndicator from '@/components/ui/ScrollIndicator'
 import { buildBookingEngineUrl } from '@/lib/hotelmate-availability'
 
-// Count-up hook
-function useCountUp(target: string, active: boolean) {
-  const [value, setValue] = useState('0')
-  const isNumeric = !isNaN(parseInt(target))
-  const numTarget = parseInt(target)
-
-  useEffect(() => {
-    if (!active || !isNumeric) {
-      setValue(target)
-      return
-    }
-    let start = 0
-    const duration = 1800
-    const step = (timestamp: number) => {
-      if (!start) start = timestamp
-      const progress = Math.min((timestamp - start) / duration, 1)
-      const eased = 1 - Math.pow(1 - progress, 3)
-      setValue(String(Math.floor(eased * numTarget)))
-      if (progress < 1) requestAnimationFrame(step)
-      else setValue(target)
-    }
-    requestAnimationFrame(step)
-  }, [active, target, isNumeric, numTarget])
-
-  return value
+function getStartOfToday() {
+  const date = new Date()
+  date.setHours(0, 0, 0, 0)
+  return date
 }
 
-function StatItem({ stat, index, active }: { stat: { value: string; label: string }; index: number; active: boolean }) {
-  const displayValue = useCountUp(stat.value, active)
-  return (
-    <motion.div
-      className="flex flex-col"
-      initial={{ opacity: 0, y: 20 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.7, delay: 2.0 + index * 0.1, ease: [0.16, 1, 0.3, 1] }}
-    >
-      <span className="font-serif text-3xl md:text-[38px] text-gold font-light leading-none">
-        {displayValue}
-      </span>
-      <span className="font-sans text-[10px] uppercase tracking-[0.14em] text-ivory/60 mt-1">
-        {stat.label}
-      </span>
-    </motion.div>
-  )
+function addDays(date: Date, days: number) {
+  const next = new Date(date)
+  next.setDate(next.getDate() + days)
+  return next
 }
 
 export default function HeroSection() {
   const [currentSlide, setCurrentSlide] = useState(0)
-  const [statsActive, setStatsActive] = useState(false)
   
   // Booking state
-  const [checkIn, setCheckIn] = useState('')
-  const [checkOut, setCheckOut] = useState('')
+  const [checkIn, setCheckIn] = useState(() => getStartOfToday())
+  const [checkOut, setCheckOut] = useState(() => addDays(getStartOfToday(), 1))
   const [guests, setGuests] = useState('2')
   const [roomType, setRoomType] = useState('1')
 
   const getBookingLink = () => {
-    const today = new Date();
-    const tomorrow = new Date(today);
-    tomorrow.setDate(tomorrow.getDate() + 1);
+    const today = getStartOfToday()
+    const tomorrow = addDays(today, 1)
 
     return buildBookingEngineUrl({
       baseUrl: 'https://bookone.io/Hotel-Shravan-Royal-Inn',
-      checkIn: checkIn ? new Date(checkIn) : today,
-      checkOut: checkOut ? new Date(checkOut) : tomorrow,
+      checkIn: checkIn || today,
+      checkOut: checkOut || tomorrow,
       adults: parseInt(guests) || 2,
       rooms: parseInt(roomType) || 1,
-    });
-  };
+    })
+  }
   
   const heroRef = useRef<HTMLElement>(null)
   const reduced = useReducedMotion()
@@ -123,12 +89,6 @@ export default function HeroSection() {
     }, SLIDE_DURATION)
     return () => clearInterval(timer)
   }, [reduced])
-
-  // Activate stats count-up
-  useEffect(() => {
-    const t = setTimeout(() => setStatsActive(true), 2000)
-    return () => clearTimeout(t)
-  }, [])
 
   const slide = heroSlides[currentSlide]
   const words = slide.headline.split(' ')
@@ -322,25 +282,6 @@ export default function HeroSection() {
             </motion.a>
           </div>
         </motion.div>
-
-        {/* Stats row - hidden on mobile for clean spacing */}
-        <motion.div
-          className="mt-6 md:mt-10 px-6 md:px-[6vw] hidden sm:block"
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 2.0 }}
-        >
-          <div className="flex flex-wrap gap-8 md:gap-0">
-            {heroStats.map((stat, i) => (
-              <div key={stat.label} className="flex items-center">
-                <StatItem stat={stat} index={i} active={statsActive} />
-                {i < heroStats.length - 1 && (
-                  <div className="hidden md:block w-px h-10 bg-gold/30 mx-8" />
-                )}
-              </div>
-            ))}
-          </div>
-        </motion.div>
       </motion.div>
 
       {/* Booking bar */}
@@ -352,14 +293,32 @@ export default function HeroSection() {
         transition={{ duration: 0.8, delay: 2.2 }}
       >
         <div
-          className="hidden border-t border-gold/15 lg:block"
-          style={{ background: 'rgba(251,247,240,0.07)', backdropFilter: 'blur(16px)' }}
+          className="hidden border-t border-gold/20 bg-[#2a1f14]/80 shadow-[0_-16px_48px_rgba(0,0,0,0.18)] backdrop-blur-xl lg:block"
         >
-          <div className="max-w-[1600px] mx-auto px-6 md:px-10 py-4">
-            <div className="flex items-center gap-0 md:gap-6">
-              <BookingField label="Check-In" placeholder="Arrival date" type="date" value={checkIn} onChange={setCheckIn} />
+          <div className="mx-auto max-w-[1600px] px-6 py-5 md:px-10">
+            <div className="flex items-center gap-6">
+              <DateBookingField
+                label="Check-In"
+                selected={checkIn}
+                minDate={getStartOfToday()}
+                onChange={(date) => {
+                  if (!date) return
+                  setCheckIn(date)
+                  if (checkOut <= date) {
+                    setCheckOut(addDays(date, 1))
+                  }
+                }}
+              />
               <div className="hidden md:block w-px h-8 bg-gold/20" />
-              <BookingField label="Check-Out" placeholder="Departure date" type="date" value={checkOut} onChange={setCheckOut} />
+              <DateBookingField
+                label="Check-Out"
+                selected={checkOut}
+                minDate={addDays(checkIn, 1)}
+                onChange={(date) => {
+                  if (!date) return
+                  setCheckOut(date)
+                }}
+              />
               <div className="hidden md:block w-px h-8 bg-gold/20" />
               <BookingField label="Guests" placeholder="2 guests" type="number" value={guests} onChange={setGuests} />
               <div className="hidden md:block w-px h-8 bg-gold/20" />
@@ -440,6 +399,40 @@ export default function HeroSection() {
         <ScrollIndicator />
       </div> */}
     </section>
+  )
+}
+
+function DateBookingField({
+  label,
+  selected,
+  minDate,
+  onChange,
+}: {
+  label: string
+  selected: Date
+  minDate: Date
+  onChange: (date: Date | null) => void
+}) {
+  return (
+    <div className="group min-w-[160px] flex-1 cursor-pointer px-4 py-1">
+      <label className="mb-1 block font-sans text-[9px] uppercase tracking-[0.18em] text-gold/70 pointer-events-none">
+        {label}
+      </label>
+      <div className="relative flex items-center">
+        <DatePicker
+          selected={selected}
+          onChange={onChange}
+          minDate={minDate}
+          dateFormat="dd MMM yyyy"
+          calendarClassName="hero-booking-calendar"
+          popperClassName="hero-booking-popper"
+          wrapperClassName="w-full"
+          className="booking-input w-full cursor-pointer bg-transparent border-b border-gold/40 pb-1 pr-7 font-sans text-[13px] text-ivory placeholder-gold/50 transition-colors focus:border-gold focus:outline-none"
+          ariaLabelledBy={label}
+        />
+        <Calendar size={13} className="absolute right-0 bottom-2 text-gold/70 transition-colors pointer-events-none group-hover:text-gold" />
+      </div>
+    </div>
   )
 }
 
