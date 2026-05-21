@@ -247,25 +247,28 @@ export default function HeroSection() {
             className="font-display font-normal italic text-ivory mb-5 leading-[1.08]"
             style={{ fontSize: 'clamp(40px, 6vw, 80px)' }}
             aria-live="polite"
+            aria-label={slide.headline}
           >
             <AnimatePresence mode="wait">
               <motion.span key={slide.id} className="inline">
                 {words.map((word, i) => (
-                  <motion.span
-                    key={`${slide.id}-${word}-${i}`}
-                    className="inline-block mr-[0.2em]"
-                    initial={{ opacity: 0, y: 70, rotateX: -20 }}
-                    animate={{ opacity: 1, y: 0, rotateX: 0 }}
-                    exit={{ opacity: 0, y: -50 }}
-                    transition={{
-                      duration: 0.9,
-                      delay: 0.8 + i * 0.09,
-                      ease: [0.16, 1, 0.3, 1],
-                    }}
-                    style={{ perspective: 1000, display: 'inline-block' }}
-                  >
-                    {word}
-                  </motion.span>
+                  <span key={`${slide.id}-${word}-${i}`} aria-hidden="true">
+                    <motion.span
+                      className="inline-block"
+                      initial={{ opacity: 0, y: 70, rotateX: -20 }}
+                      animate={{ opacity: 1, y: 0, rotateX: 0 }}
+                      exit={{ opacity: 0, y: -50 }}
+                      transition={{
+                        duration: 0.9,
+                        delay: 0.8 + i * 0.09,
+                        ease: [0.16, 1, 0.3, 1],
+                      }}
+                      style={{ perspective: 1000, display: 'inline-block' }}
+                    >
+                      {word}
+                    </motion.span>
+                    {i < words.length - 1 ? ' ' : ''}
+                  </span>
                 ))}
               </motion.span>
             </AnimatePresence>
