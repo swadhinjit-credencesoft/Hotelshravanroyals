@@ -1,12 +1,13 @@
 'use client'
 
-import { useState, useEffect, useCallback } from 'react'
+import React, { useState, useEffect, useCallback } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 import { motion, AnimatePresence } from 'framer-motion'
 import Navbar from '@/components/layout/Navbar'
 import Footer from '@/components/layout/Footer'
 import { todayString, addDays, buildBookingUrl, fetchAvailability } from '@/lib/hotelmate'
+import { useLivePrices } from '@/lib/useLivePrices'
 import { 
   Wifi, 
   Wind, 
@@ -21,7 +22,8 @@ import {
   CheckCircle2,
   Calendar,
   ArrowRight,
-  X
+  X,
+  Zap
 } from 'lucide-react'
 
 import { Room } from '@/data/rooms'
@@ -46,6 +48,12 @@ interface RoomDetailClientProps {
 
 export default function RoomDetailClient({ room, otherRooms }: RoomDetailClientProps) {
   const [isLightboxOpen, setIsLightboxOpen] = useState(false)
+
+  // Fetch live price from API for the header "Starting from" display
+  const { prices: livePrices, loading: headerPriceLoading } = useLivePrices()
+  const headerLiveData = livePrices[room.slug]
+  const headerPrice = headerLiveData?.price ?? room.price
+  const isHeaderLive = headerLiveData?.isLive ?? false
 
   // JSON-LD Schema for SEO
   const jsonLd = {
@@ -155,7 +163,21 @@ export default function RoomDetailClient({ room, otherRooms }: RoomDetailClientP
               transition={{ duration: 0.6 }}
             >
               <p className="text-taupe/60 text-[10px] uppercase tracking-widest mb-1 font-sans">Starting from</p>
-              <p className="text-3xl font-serif text-forest">₹{room.price.toLocaleString()}<span className="text-sm font-sans text-taupe/60 ml-1">/ night</span></p>
+              {headerPriceLoading ? (
+                <p className="text-xl font-sans text-taupe/40 animate-pulse">Fetching live rate…</p>
+              ) : (
+                <div className="flex flex-col items-end gap-1">
+                  <p className="text-3xl font-serif text-forest">
+                    ₹{headerPrice.toLocaleString('en-IN')}
+                    <span className="text-sm font-sans text-taupe/60 ml-1">/ night</span>
+                  </p>
+                  {isHeaderLive && (
+                    <span className="inline-flex items-center gap-1 text-[9px] font-sans uppercase tracking-widest text-gold bg-gold/10 px-2 py-0.5 rounded-sm">
+                      <Zap size={9} /> Live API Rate
+                    </span>
+                  )}
+                </div>
+              )}
             </motion.div>
           </div>
 
@@ -304,18 +326,25 @@ function BookingSidebar({ room }: { room: Room }) {
         
         if (!active) return
 
-        const matched = data.roomList?.find(r => 
-          r.name.toLowerCase().includes(room.name.toLowerCase()) || 
-          room.name.toLowerCase().includes(r.name.toLowerCase())
-        )
+        const matched = data.roomList?.find(r => {
+          const apiName = r.name.toLowerCase().trim()
+          const localName = room.name.toLowerCase().trim()
+          return (
+            apiName.includes(localName) ||
+            localName.includes(apiName) ||
+            // keyword match: e.g. "lawn", "forest", "cottage"
+            localName.split(' ').some(w => w.length > 4 && apiName.includes(w))
+          )
+        })
 
         if (matched) {
           setLiveRoomId(String(matched.id))
-          // Find standard plan rate or fallback
+          // Prefer first rate plan amount, then roomOnlyPrice, then static fallback
           const matchedPlan = matched.ratesAndAvailabilityDtos?.[0]?.roomRatePlans?.[0]
           const price = matchedPlan?.amount || matched.roomOnlyPrice || room.price
           setLivePrice(price)
-          setIsAvailable(true)
+          const noOfAvailable = matched.ratesAndAvailabilityDtos?.[0]?.noOfAvailable ?? 1
+          setIsAvailable(noOfAvailable > 0)
         } else {
           setIsAvailable(false)
           setLivePrice(null)
@@ -424,9 +453,11 @@ function BookingSidebar({ room }: { room: Room }) {
               <span className="text-gold font-sans text-xs animate-pulse">Checking live rate...</span>
             ) : isAvailable ? (
               <div className="flex flex-col items-end">
-                <span className="font-serif text-xl text-gold">₹{(livePrice || room.price).toLocaleString()}</span>
-                {livePrice && livePrice !== room.price && (
-                  <span className="text-[9px] uppercase tracking-widest text-gold/80 bg-gold/10 px-1.5 py-0.5 rounded-sm font-sans mt-1">Live Rate</span>
+                <span className="font-serif text-xl text-gold">₹{(livePrice || room.price).toLocaleString('en-IN')}</span>
+                {livePrice && (
+                  <span className="text-[9px] uppercase tracking-widest text-gold/80 bg-gold/10 px-1.5 py-0.5 rounded-sm font-sans mt-1 flex items-center gap-1">
+                    ⚡ Live Rate
+                  </span>
                 )}
               </div>
             ) : (

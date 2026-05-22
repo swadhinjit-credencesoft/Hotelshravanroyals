@@ -4,14 +4,52 @@ import { useRef, useState } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 import { motion, useInView } from 'framer-motion'
-import { ArrowRight, ChevronLeft, ChevronRight, Users, Maximize } from 'lucide-react'
+import { ArrowRight, ChevronLeft, ChevronRight, Users, Maximize, Zap } from 'lucide-react'
 import { rooms } from '@/data/rooms'
+import { buildBookingUrl, todayString, addDays } from '@/lib/hotelmate'
+import { useLivePrices, RoomLivePrice } from '@/lib/useLivePrices'
+import { useRouter } from 'next/navigation'
 import SectionLabel from '@/components/ui/SectionLabel'
 
-function RoomCard({ room, index }: { room: (typeof rooms)[0]; index: number }) {
+interface RoomCardProps {
+  room: (typeof rooms)[0]
+  index: number
+  liveData?: RoomLivePrice
+  priceLoading: boolean
+}
+
+function RoomCard({ room, index, liveData, priceLoading }: RoomCardProps) {
   const [hovered, setHovered] = useState(false)
   const ref = useRef<HTMLDivElement>(null)
   const isInView = useInView(ref, { once: true, margin: '-50px' })
+  const router = useRouter()
+
+  const displayPrice = liveData?.price ?? room.price
+  const isLive = liveData?.isLive ?? false
+
+  const handleBookNow = (e: React.MouseEvent) => {
+    e.stopPropagation()
+    e.preventDefault()
+    const today = todayString()
+    const tomorrow = addDays(today, 1)
+    const url = buildBookingUrl({
+      fromDate: today,
+      toDate: tomorrow,
+      noOfRooms: '1',
+      noOfPersons: '2',
+      roomName: room.name,
+      roomId: liveData?.roomId ?? undefined,
+    })
+    window.open(url, '_blank', 'noopener,noreferrer')
+  }
+
+  const handleCardClick = (e: React.MouseEvent) => {
+    const target = e.target as HTMLElement
+    if (target.closest('button') || target.closest('a')) {
+      return
+    }
+    router.push(`/rooms/${room.slug}`)
+  }
 
   return (
     <motion.div
@@ -23,6 +61,7 @@ function RoomCard({ room, index }: { room: (typeof rooms)[0]; index: number }) {
       transition={{ duration: 0.8, delay: index * 0.1, ease: [0.16, 1, 0.3, 1] }}
       onHoverStart={() => setHovered(true)}
       onHoverEnd={() => setHovered(false)}
+      onClick={handleCardClick}
     >
       {/* Image */}
       <motion.div
@@ -44,10 +83,45 @@ function RoomCard({ room, index }: { room: (typeof rooms)[0]; index: number }) {
         <span className="font-sans text-[10px] uppercase tracking-[0.14em] text-gold">{room.category}</span>
       </div>
 
+      {/* Live price badge top-left */}
+      {isLive && !priceLoading && (
+        <div className="absolute top-4 left-4 z-10 flex items-center gap-1 bg-gold/90 px-2 py-1 rounded-sm">
+          <Zap size={9} className="text-[#1a1004]" />
+          <span className="font-sans text-[9px] uppercase tracking-widest text-[#1a1004] font-semibold">Live Rate</span>
+        </div>
+      )}
+
+      {/* At-rest: minimal info at bottom */}
+      <motion.div
+        className="absolute bottom-0 left-0 right-0 p-5 z-0"
+        style={{ pointerEvents: hovered ? 'none' : 'auto' }}
+        animate={{ opacity: hovered ? 0 : 1 }}
+        transition={{ duration: 0.3 }}
+      >
+        <div className="h-px w-8 bg-gold/60 mb-3" />
+        <p className="font-sans text-[10px] uppercase tracking-[0.16em] text-ivory/50">{room.category}</p>
+        {/* Show price at rest too */}
+        <div className="mt-2 flex items-center gap-2">
+          {priceLoading ? (
+            <span className="font-sans text-[10px] text-ivory/40 animate-pulse">Loading…</span>
+          ) : (
+            <>
+              <span className="font-serif text-base text-ivory/80">
+                From ₹{displayPrice.toLocaleString('en-IN')}
+              </span>
+              {isLive && <Zap size={10} className="text-gold" />}
+            </>
+          )}
+        </div>
+      </motion.div>
+
       {/* Hover overlay */}
       <motion.div
-        className="absolute inset-0 flex flex-col justify-end p-7"
-        style={{ background: 'linear-gradient(to top, rgba(26,16,4,0.85) 0%, rgba(26,16,4,0) 60%)' }}
+        className="absolute inset-0 flex flex-col justify-end p-7 z-10"
+        style={{ 
+          background: 'linear-gradient(to top, rgba(26,16,4,0.92) 0%, rgba(26,16,4,0.3) 50%, rgba(26,16,4,0) 80%)',
+          pointerEvents: hovered ? 'auto' : 'none'
+        }}
         initial={{ opacity: 0 }}
         animate={{ opacity: hovered ? 1 : 0 }}
         transition={{ duration: 0.4 }}
@@ -70,36 +144,55 @@ function RoomCard({ room, index }: { room: (typeof rooms)[0]; index: number }) {
           </div>
 
           <div className="flex flex-wrap gap-2 mb-5">
-            {room.amenities.map((a) => (
+            {room.amenities.slice(0, 5).map((a) => (
               <span key={a} className="font-sans text-[10px] text-ivory/50 border border-ivory/20 px-2 py-0.5 rounded-sm">
                 {a}
               </span>
             ))}
           </div>
 
-          <div className="flex items-center justify-between">
-            <span className="font-serif text-xl text-gold font-light">
-              From ₹{room.price.toLocaleString()}/night
-            </span>
+          {/* Price row */}
+          <div className="flex items-center justify-between mb-4">
+            <div className="flex flex-col">
+              {priceLoading ? (
+                <span className="font-sans text-xs text-gold/60 animate-pulse">Checking rate…</span>
+              ) : (
+                <>
+                  <span className="font-serif text-xl text-gold font-light">
+                    ₹{displayPrice.toLocaleString('en-IN')}/night
+                  </span>
+                  {isLive && (
+                    <span className="font-sans text-[9px] uppercase tracking-widest text-gold/70 mt-0.5 flex items-center gap-1">
+                      <Zap size={9} /> Live API Rate
+                    </span>
+                  )}
+                </>
+              )}
+            </div>
+          </div>
+
+          {/* Action buttons */}
+          <div className="flex items-center gap-3">
+            {/* Primary: Book Now */}
+            <button
+              onClick={handleBookNow}
+              className="flex-1 flex items-center justify-center gap-1.5 font-sans text-[11px] uppercase tracking-[0.14em] bg-gold text-[#1a1004] px-4 py-2.5 rounded-sm hover:bg-[#e8c97a] transition-colors font-semibold"
+              aria-label={`Book ${room.name} now`}
+            >
+              Book Now <ArrowRight size={12} />
+            </button>
+
+            {/* Secondary: View Details */}
             <Link
               href={`/rooms/${room.slug}`}
-              className="flex items-center gap-1 font-sans text-[11px] uppercase tracking-[0.12em] text-ivory border border-ivory/30 px-4 py-2 rounded-sm hover:border-gold hover:text-gold transition-colors"
+              className="flex items-center gap-1 font-sans text-[11px] uppercase tracking-[0.12em] text-ivory border border-ivory/30 px-4 py-2.5 rounded-sm hover:border-gold hover:text-gold transition-colors whitespace-nowrap"
               aria-label={`View ${room.name} details`}
+              onClick={(e) => e.stopPropagation()}
             >
-              View Room <ArrowRight size={12} />
+              View Room
             </Link>
           </div>
         </motion.div>
-      </motion.div>
-
-      {/* At-rest: minimal name at bottom */}
-      <motion.div
-        className="absolute bottom-0 left-0 right-0 p-5"
-        animate={{ opacity: hovered ? 0 : 1 }}
-        transition={{ duration: 0.3 }}
-      >
-        <div className="h-px w-8 bg-gold/60 mb-3" />
-        <p className="font-sans text-[10px] uppercase tracking-[0.16em] text-ivory/50">{room.category}</p>
       </motion.div>
     </motion.div>
   )
@@ -109,6 +202,7 @@ export default function RoomsCarousel() {
   const containerRef = useRef<HTMLDivElement>(null)
   const [canScrollLeft, setCanScrollLeft] = useState(false)
   const [canScrollRight, setCanScrollRight] = useState(true)
+  const { prices, loading: priceLoading } = useLivePrices()
 
   const scroll = (dir: 'left' | 'right') => {
     if (!containerRef.current) return
@@ -173,7 +267,12 @@ export default function RoomsCarousel() {
         >
           {rooms.map((room, i) => (
             <div key={room.id} style={{ scrollSnapAlign: 'start' }}>
-              <RoomCard room={room} index={i} />
+              <RoomCard
+                room={room}
+                index={i}
+                liveData={prices[room.slug]}
+                priceLoading={priceLoading}
+              />
             </div>
           ))}
           {/* Spacer */}
