@@ -8,14 +8,14 @@ export interface GalleryImage {
 }
 
 export const galleryImages: GalleryImage[] = [
-  { id: 'g1', src: '/images/exterior3.jpeg', alt: 'Infinity pool at Unwind Karjat overlooking Sahyadri hills', category: 'outdoors', width: 1200, height: 800 },
-  { id: 'g2', src: '/images/exterior4.jpeg', alt: 'Bespoke Maharashtrian thali at our main dining hall', category: 'food', width: 1200, height: 900 },
-  { id: 'g3', src: '/images/exterior5.jpeg', alt: 'Outdoor forest wedding setup at Unwind Karjat', category: 'events', width: 1200, height: 800 },
-  { id: 'g4', src: '/images/exterior6.jpeg', alt: 'Monsoon trekking trail in the Karjat forest', category: 'nature', width: 800, height: 1200 },
-  { id: 'g5', src: '/images/exterior7.jpeg', alt: 'Rustic luxury interior of the Red Brick Cottage', category: 'rooms', width: 1200, height: 800 },
-  { id: 'g6', src: '/images/exterior8.jpeg', alt: 'The Cafe & Lounge - perfect for morning tea', category: 'food', width: 800, height: 1000 },
-  { id: 'g7', src: '/images/room1.jpeg', alt: 'Cozy bonfire setup for winter evenings', category: 'outdoors', width: 1200, height: 800 },
-  { id: 'g8', src: '/images/room2.jpeg', alt: 'Birdwatching and nature photography in Karjat', category: 'nature', width: 1200, height: 800 },
-  { id: 'g9', src: '/images/exterior.jpeg', alt: 'Lawn Facing Room with large glass windows', category: 'rooms', width: 1200, height: 800 },
-  { id: 'g10', src: '/images/exterior2.jpeg', alt: 'Forest Facing Room with private balcony', category: 'rooms', width: 1200, height: 800 },
+  { id: 'g1', src: '/images/reception.png', alt: 'Welcoming reception and check-in lobby at Hotel Bella Casa', category: 'outdoors', width: 1200, height: 800 },
+  { id: 'g2', src: '/images/dining.png', alt: 'Our clean, pure vegetarian dining hall serving local and multi-cuisine dishes', category: 'food', width: 1200, height: 900 },
+  { id: 'g3', src: 'https://bookonelocal.in/cdn/2026-04-09-070105794-1000080272.jpg', alt: 'Spacious Super Deluxe Room with modern amenities', category: 'rooms', width: 1200, height: 800 },
+  { id: 'g4', src: '/images/lounge.png', alt: 'Cozy lounge area for visitors and corporate meetings', category: 'outdoors', width: 800, height: 1200 },
+  { id: 'g5', src: 'https://bookonelocal.in/cdn/2026-04-09-070306938-1000080271.jpg', alt: 'Comfortable Deluxe AC Room at Hotel Bella Casa', category: 'rooms', width: 1200, height: 800 },
+  { id: 'g6', src: '/images/bedroom.png', alt: 'Beautifully arranged standard rooms with premium linens', category: 'rooms', width: 800, height: 1000 },
+  { id: 'g7', src: 'https://bookonelocal.in/cdn/2026-04-09-070330986-1000080270.jpg', alt: 'Well-ventilated Deluxe Non AC Room', category: 'rooms', width: 1200, height: 800 },
+  { id: 'g8', src: 'https://bookonelocal.in/cdn/2026-04-09-070349660-1000080268.jpg', alt: 'Standard Non AC Room for budget-friendly stays', category: 'rooms', width: 1200, height: 800 },
+  { id: 'g9', src: '/images/bathroom.png', alt: 'Clean and modern bathroom facilities in all rooms', category: 'rooms', width: 1200, height: 800 },
+  { id: 'g10', src: '/images/exterior2.jpeg', alt: 'Street view of Hotel Bella Casa Purnia', category: 'outdoors', width: 1200, height: 800 },
 ]

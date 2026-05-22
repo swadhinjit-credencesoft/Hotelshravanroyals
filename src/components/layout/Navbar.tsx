@@ -3,17 +3,17 @@
 import { useState, useEffect } from 'react'
 import { motion, AnimatePresence, useScroll } from 'framer-motion'
 import Link from 'next/link'
-import Image from 'next/image'
 import { usePathname } from 'next/navigation'
 import { Menu, X } from 'lucide-react'
 import { siteConfig } from '@/data/site'
 import MagneticButton from '@/components/ui/MagneticButton'
+import { BOOKING_ENGINE_URL } from '@/lib/hotelmate'
 
 const navLinks = [
   { label: 'Home', href: '/' },
   { label: 'Rooms', href: '/rooms' },
   { label: 'Experiences', href: '/experiences' },
-  { label: 'Events & Weddings', href: '/events' },
+  { label: 'Events', href: '/events' },
   { label: 'Dining', href: '/dining' },
   { label: 'About', href: '/about' },
   { label: 'Contact', href: '/contact' },
@@ -54,21 +54,12 @@ export default function Navbar() {
         <div className="max-w-[1600px] mx-auto px-6 md:px-10 h-20 flex items-center justify-between">
           {/* Logo */}
           <Link href="/" className="flex items-center gap-3 group focus-visible:ring-2 focus-visible:ring-gold rounded-sm">
-            <div className="relative w-16 h-12">
-              <Image 
-                src="/unwindkarjatlogo.png" 
-                alt="Unwind Karjat Logo" 
-                fill
-                className="object-contain"
-                priority
-              />
-            </div>
-            <div className="hidden md:flex flex-col leading-none">
-              <span className={`font-serif text-lg tracking-[0.18em] uppercase transition-colors duration-300 ${scrolled || !isHome ? 'text-forest' : 'text-ivory'}`}>
-                Unwind
+            <div className="flex flex-col leading-none">
+              <span className={`font-serif text-lg md:text-xl tracking-[0.15em] uppercase transition-colors duration-300 ${scrolled || !isHome ? 'text-forest' : 'text-ivory'}`}>
+                Bella Casa
               </span>
-              <span className={`font-sans text-[9px] tracking-[0.28em] uppercase mt-0.5 transition-colors duration-300 ${scrolled || !isHome ? 'text-gold' : 'text-gold-light'}`}>
-                Karjat
+              <span className={`font-sans text-[9px] tracking-[0.3em] uppercase mt-1 transition-colors duration-300 ${scrolled || !isHome ? 'text-gold' : 'text-gold-light'}`}>
+                HOTEL
               </span>
             </div>
           </Link>
@@ -92,7 +83,7 @@ export default function Navbar() {
           <div className="hidden md:flex items-center gap-4">
             <MagneticButton
               as="a"
-              href="https://bookone.io/Unwind-Karjat?bookingEngine=true"
+              href={BOOKING_ENGINE_URL}
               target="_blank"
               rel="noopener noreferrer"
               className="bg-gold text-[#1a1004] font-sans text-[11px] uppercase tracking-[0.16em] px-6 py-2.5 rounded-sm hover:bg-gold-light transition-colors duration-300 shadow-md"
@@ -126,7 +117,7 @@ export default function Navbar() {
           >
             <div className="flex items-center justify-between px-6 h-20">
               <span className="font-serif text-lg tracking-[0.18em] uppercase text-ivory">
-                Unwind Karjat
+                Hotel Bella Casa
               </span>
               <button
                 onClick={() => setMobileOpen(false)}
@@ -163,7 +154,7 @@ export default function Navbar() {
               </a>
               <div className="mt-6">
                 <a
-                  href="https://bookone.io/Unwind-Karjat?bookingEngine=true"
+                  href={BOOKING_ENGINE_URL}
                   target="_blank"
                   rel="noopener noreferrer"
                   onClick={() => setMobileOpen(false)}

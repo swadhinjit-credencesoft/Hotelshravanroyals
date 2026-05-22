@@ -1,6 +1,6 @@
-export const HOTELMATE_PROPERTY_ID = 3561
+export const HOTELMATE_PROPERTY_ID = 3525
 export const HOTELMATE_API_BASE = 'https://api.thehotelmate.co/api/thm'
-export const BOOKING_ENGINE_URL = 'https://bookone.io/Unwind-Karjat?bookingEngine=true'
+export const BOOKING_ENGINE_URL = 'https://bookone.io/Hotel-Bella-Casa?bookingEngine=true'
 
 export interface HotelAddress {
   country: string
@@ -128,7 +128,7 @@ export function buildBookingUrl(params?: {
   roomName?: string
   roomId?: string
 }): string {
-  const baseUrl = 'https://bookone.io/Unwind-Karjat'
+  const baseUrl = 'https://bookone.io/Hotel-Bella-Casa'
   
   const fromStr = params?.fromDate || todayString()
   const toStr = params?.toDate || addDays(todayString(), 1)

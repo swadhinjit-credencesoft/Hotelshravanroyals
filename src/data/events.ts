@@ -8,32 +8,33 @@ export interface EstateEvent {
   features: string[];
 }
 
+
 export const estateEvents: EstateEvent[] = [
   {
     id: 'e1',
-    title: 'Outdoor Wedding Lawns',
+    title: 'Family & Marriage Group Stays',
     category: 'Weddings',
-    description: 'A magical open-air setting surrounded by the Sahyadri hills, perfect for your special day.',
-    capacity: 'Up to 250 guests',
-    image: '/images/exterior3.jpeg',
-    features: ['Custom floral decoration', 'Multi-cuisine catering', 'Bridal suite included'],
+    description: 'Provide a comfortable and hassle-free stay for your wedding guests visiting Purnia.',
+    capacity: 'Up to 50 guests',
+    image: 'https://bookonelocal.in/cdn/2026-04-09-070002480-1000080267.jpg',
+    features: ['Convenient location near markets', 'Vegetarian food delivery options', 'Clean, well-maintained rooms'],
   },
   {
     id: 'e2',
-    title: 'The Corporate Hub',
+    title: 'Corporate Travel Hub',
     category: 'Corporate',
-    description: 'Where strategy meets serenity. Equipped with modern tech for offsites and board retreats.',
-    capacity: 'Up to 60 guests',
-    image: '/images/exterior4.jpeg',
-    features: ['High-speed Wi-Fi', 'Projector & sound system', 'Team-building activities'],
+    description: 'Perfect for business travelers seeking simple, comfortable, and budget-friendly accommodation.',
+    capacity: 'Single & group bookings',
+    image: 'https://bookonelocal.in/cdn/2026-04-09-070017792-1000080277.jpg',
+    features: ['Free high-speed Wi-Fi', 'Desk space in premium rooms', 'Convenient town center access'],
   },
   {
     id: 'e3',
-    title: 'Poolside Celebrations',
+    title: 'Private & Birthday Group Bookings',
     category: 'Parties',
-    description: 'An intimate setting by the infinity pool for birthday parties and private get-togethers.',
-    capacity: 'Up to 40 guests',
-    image: '/images/exterior5.jpeg',
-    features: ['Live BBQ setup', 'Pool access', 'Custom music playlists'],
+    description: 'Book blocks of rooms to gather with friends and family for private milestones and celebrations.',
+    capacity: 'Up to 30 guests',
+    image: 'https://bookonelocal.in/cdn/2026-04-09-070022437-1000080276.jpg',
+    features: ['Attentive hospitality', 'Spacious Deluxe Rooms', 'Close to local sweet shops'],
   },
 ];
