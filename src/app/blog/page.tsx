@@ -12,23 +12,23 @@ import Image from 'next/image';
 const blogPosts = [
   {
     id: 'b1',
-    title: 'Best things to do in Karjat (All Seasons)',
-    excerpt: 'From pristine waterfalls to historic treks, discover the ultimate guide to exploring Karjat year-round.',
+    title: 'Best things to do in Purnia (All Seasons)',
+    excerpt: 'From cultural landmarks to local markets, discover the ultimate guide to exploring Purnia year-round.',
     date: 'Oct 12, 2024',
     category: 'Travel & Destination',
     image: '/blog1.png',
   },
   {
     id: 'b2',
-    title: 'Karjat in Monsoon: What to Expect',
-    excerpt: 'Experience the magic of the Sahyadris coming alive with lush greenery and cascading waterfalls.',
+    title: 'Purnia Travel Guide: What to Expect',
+    excerpt: 'Experience the vibrant culture and warm hospitality of Bihar&apos;s emerging travel destination.',
     date: 'Sep 28, 2024',
     category: 'Travel & Destination',
     image: '/images/exterior7.jpeg',
   },
   {
     id: 'b3',
-    title: 'How to Plan a Corporate Retreat Near Mumbai',
+    title: 'How to Plan a Corporate Retreat in Purnia',
     excerpt: 'A comprehensive checklist for organizing a successful offsite that blends strategy with serenity.',
     date: 'Aug 15, 2024',
     category: 'Hospitality & Events',
@@ -42,7 +42,7 @@ export default function BlogPage() {
       <Navbar />
       <CinematicHero 
         label="Stories & Guides"
-        title="The Karjat Journal"
+        title="The Purnia Journal"
         tagline="Discover the hidden gems, seasonal itineraries, and insider tips for your perfect getaway."
         image='/bloghero.png'
       />

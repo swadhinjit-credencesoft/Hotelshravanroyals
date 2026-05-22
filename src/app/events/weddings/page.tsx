@@ -12,8 +12,8 @@ export default function WeddingsPage() {
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "EventVenue",
-    "name": "Unwind Karjat Wedding Lawns",
-    "description": "Premium destination wedding venue near Mumbai with forest views and bespoke catering.",
+    "name": "Hotel Bella Casa Wedding Lawns",
+    "description": "Premium destination wedding venue in Purnia with forest views and bespoke catering.",
     "address": {
       "@type": "PostalAddress",
       "addressLocality": "Karjat",
@@ -42,9 +42,9 @@ export default function WeddingsPage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center mb-32">
             <div>
               <SectionLabel className="mb-6">The Venue</SectionLabel>
-              <h2 className="font-display text-4xl md:text-6xl italic text-forest mb-8">Karjat&apos;s Premier Wedding Destination</h2>
+              <h2 className="font-display text-4xl md:text-6xl italic text-forest mb-8">Purnia&apos;s Premier Wedding Destination</h2>
               <p className="font-serif text-lg text-taupe leading-relaxed mb-10">
-                At Unwind Karjat, we transform your dream wedding into a reality. Our expansive lawns can host up to 250 guests, offering a seamless blend of rustic charm and premium luxury.
+                At Hotel Bella Casa, we transform your dream wedding into a reality. Our expansive lawns can host up to 250 guests, offering a seamless blend of rustic charm and premium luxury.
               </p>
               
               <div className="grid grid-cols-2 gap-8 mb-10">
@@ -61,7 +61,7 @@ export default function WeddingsPage() {
               </div>
 
               <a 
-                href="https://bookone.io/Unwind-Karjat?bookingEngine=true" 
+                href="https://bookone.io/Hotel-Bella-Casa?bookingEngine=true" 
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-3 bg-forest text-ivory font-sans text-[11px] uppercase tracking-[0.2em] px-10 py-5 hover:bg-forest/90 transition-all rounded-sm"

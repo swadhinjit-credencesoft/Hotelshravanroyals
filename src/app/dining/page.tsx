@@ -13,7 +13,7 @@ export default function DiningPage() {
       <Navbar />
       <CinematicHero 
         label="Culinary Experience"
-        title="Flavors of Karjat"
+        title="Flavors of Purnia"
         tagline="From rustic local delicacies to multi-cuisine feasts, experience dining that satisfies the soul."
         image='/images/exterior.jpeg'
       />
@@ -25,9 +25,9 @@ export default function DiningPage() {
           __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "Restaurant",
-            "name": "The Dining Hall at Unwind Karjat",
+            "name": "The Dining Hall at Hotel Bella Casa",
             "servesCuisine": ["Indian", "Tandoor", "Mughlai", "Asian", "Continental"],
-            "description": "Authentic dining experience in Karjat featuring local specialties and global favorites.",
+            "description": "Authentic dining experience in Purnia featuring local specialties and global favorites.",
             "menu": {
               "@type": "Menu",
               "name": "Main Menu",
@@ -47,7 +47,7 @@ export default function DiningPage() {
              &ldquo;Locally Sourced. Lovingly Crafted.&rdquo;
            </h2>
            <p className="font-sans text-lg text-taupe leading-relaxed">
-             Our chefs blend authentic Maharashtrian techniques with global inspirations. Enjoy a diverse range of Indian, Tandoor, Mughlai, Asian, and Continental cuisine. <span className="text-gold font-bold">Special Fish and Mutton dishes are prepared upon request</span> to ensure maximum freshness.
+             Our chefs blend authentic Bihari techniques with global inspirations. Enjoy a diverse range of Indian, Tandoor, Mughlai, Asian, and Continental cuisine. <span className="text-gold font-bold">Special Fish and Mutton dishes are prepared upon request</span> to ensure maximum freshness.
            </p>
         </div>
       </section>
@@ -79,9 +79,9 @@ export default function DiningPage() {
               <h3 className="font-display text-3xl italic text-forest mb-4">All-Inclusive Meal Plan</h3>
               <p className="font-sans text-[11px] uppercase tracking-[0.2em] text-gold mb-8">Breakfast, Lunch, High Tea & Dinner</p>
               <p className="font-serif text-taupe mb-10 leading-relaxed text-lg">
-                Enjoy a hassle-free stay with our comprehensive meal plan covering all major meals and evening snacks. Choose from our extensive buffet or à la carte menu.
+                Enjoy a hassle-free stay with our comprehensive meal plan covering all major meals and evening snacks. Choose from our extensive buffet or ÃƒÂ  la carte menu.
               </p>
-              <div className="text-forest font-serif text-4xl">₹2,000 <span className="text-sm font-sans uppercase tracking-[0.15em] opacity-50">/ person / day</span></div>
+              <div className="text-forest font-serif text-4xl">Ã¢â€šÂ¹2,000 <span className="text-sm font-sans uppercase tracking-[0.15em] opacity-50">/ person / day</span></div>
             </div>
 
             <div className="p-10 border border-gold/20 shadow-sm rounded-sm hover:shadow-warm-lg transition-all bg-[#fdfcf8] group">
@@ -91,7 +91,7 @@ export default function DiningPage() {
               <p className="font-serif text-taupe mb-10 leading-relaxed text-lg">
                 Elevate your evening with a private bonfire setup and a live BBQ grill featuring marinated vegetables, paneer, and meats (<span className="italic">Fish/Mutton on request</span>).
               </p>
-              <div className="text-forest font-serif text-4xl">₹1,500 <span className="text-sm font-sans uppercase tracking-[0.15em] opacity-50">/ couple</span></div>
+              <div className="text-forest font-serif text-4xl">Ã¢â€šÂ¹1,500 <span className="text-sm font-sans uppercase tracking-[0.15em] opacity-50">/ couple</span></div>
             </div>
           </div>
         </div>
@@ -135,7 +135,7 @@ export default function DiningPage() {
           <Coffee className="text-gold mx-auto mb-8" size={40} />
           <h2 className="font-display text-4xl italic mb-6">In-Room Convenience</h2>
           <p className="font-serif text-ivory/80 leading-[1.8] mb-10 text-lg italic">
-            For your absolute comfort, every room at Unwind Karjat is equipped with a hot water kettle, complimentary tea/coffee supplies, and a mini-fridge for your personal use.
+            For your absolute comfort, every room at Hotel Bella Casa is equipped with a hot water kettle, complimentary tea/coffee supplies, and a mini-fridge for your personal use.
           </p>
           <GoldDivider className="justify-center" />
         </div>

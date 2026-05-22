@@ -16,8 +16,8 @@ export default function GalleryPage() {
           __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "ImageGallery",
-            "name": "Unwind Karjat Photo Collection",
-            "description": "High-resolution photos of our Red Brick Cottages, infinity pool, and lush forest surroundings in Karjat.",
+            "name": "Hotel Bella Casa Photo Collection",
+            "description": "High-resolution photos of our Red Brick Cottages, infinity pool, and lush forest surroundings in Purnia.",
             "image": [
               '/images/room1.jpeg',
               '/images/room2.jpeg'
@@ -37,13 +37,13 @@ export default function GalleryPage() {
       <section className="py-24 bg-forest text-ivory text-center border-y border-gold/10">
         <div className="max-w-[1000px] mx-auto px-6">
           <SectionLabel light className="justify-center mb-6">Virtual Tour</SectionLabel>
-          <h2 className="font-display text-4xl italic mb-12">Experience Unwind Karjat</h2>
+          <h2 className="font-display text-4xl italic mb-12">Experience Hotel Bella Casa</h2>
           <div className="relative aspect-video w-full border border-gold/20 shadow-warm-lg">
              <iframe 
                width="100%" 
                height="100%" 
                src="https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=0&controls=1" 
-               title="Unwind Karjat Resort Walkthrough" 
+               title="Hotel Bella Casa Resort Walkthrough" 
                frameBorder="0" 
                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
                allowFullScreen
@@ -58,7 +58,7 @@ export default function GalleryPage() {
           <h2 className="font-display text-4xl md:text-5xl italic text-forest mb-6">Through Your Lens</h2>
           <p className="font-serif text-lg text-taupe mb-12">
             Share your favorite memories with us. Tag us to be featured. <br />
-            <a href="https://instagram.com" target="_blank" rel="noreferrer" className="text-gold font-sans uppercase tracking-widest text-[11px] hover:text-forest transition-colors mt-4 inline-block">@unwindkarjat</a>
+            <span className="text-gold font-sans uppercase tracking-widest text-[11px] mt-4 inline-block">Tag us to be featured</span>
           </p>
           
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">

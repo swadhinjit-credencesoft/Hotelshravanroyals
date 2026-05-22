@@ -20,7 +20,7 @@ export default function ExperiencesGrid() {
             Curated Immersions
           </h2>
           <p className="font-serif text-xl font-light text-ivory/60 max-w-xl leading-relaxed">
-            Beyond the suite, Unwind Karjat offers a collection of adventures and rituals designed to connect you with nature.
+            Beyond the suite, Hotel Bella Casa offers a collection of adventures and rituals designed to connect you with nature.
           </p>
         </div>
 
@@ -116,7 +116,7 @@ function ExperienceCard({
             <p className="font-sans text-sm text-ivory/70 mb-6 leading-relaxed">
               {experience.description}
             </p>
-            <a href="https://bookone.io/Unwind-Karjat?bookingEngine=true" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 font-sans text-[10px] uppercase tracking-[0.2em] text-[#1a1004] bg-gold px-6 py-3 hover:bg-gold-light transition-all rounded-sm">
+            <a href="https://bookone.io/Hotel-Bella-Casa?bookingEngine=true" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 font-sans text-[10px] uppercase tracking-[0.2em] text-[#1a1004] bg-gold px-6 py-3 hover:bg-gold-light transition-all rounded-sm">
               Add to Stay <ArrowRight size={12} />
             </a>
           </div>

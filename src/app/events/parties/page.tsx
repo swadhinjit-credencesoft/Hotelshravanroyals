@@ -12,8 +12,8 @@ export default function PartiesPage() {
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "EventVenue",
-    "name": "Unwind Karjat Celebration Deck",
-    "description": "The perfect resort near Mumbai for birthday parties, pool parties, and private celebrations.",
+    "name": "Hotel Bella Casa Celebration Deck",
+    "description": "The perfect resort in Purnia for birthday parties, pool parties, and private celebrations.",
     "address": {
       "@type": "PostalAddress",
       "addressLocality": "Karjat",
@@ -61,7 +61,7 @@ export default function PartiesPage() {
               </div>
 
               <a 
-                href="https://bookone.io/Unwind-Karjat?bookingEngine=true" 
+                href="https://bookone.io/Hotel-Bella-Casa?bookingEngine=true" 
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-3 bg-forest text-ivory font-sans text-[11px] uppercase tracking-[0.2em] px-10 py-5 hover:bg-forest/90 transition-all rounded-sm"

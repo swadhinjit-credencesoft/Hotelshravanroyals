@@ -12,8 +12,8 @@ export default function DayTripsPage() {
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "TouristInformationCenter",
-    "name": "Unwind Karjat Day Outing",
-    "description": "The perfect one-day picnic and resort visit near Mumbai and Pune with pool access and lunch packages.",
+    "name": "Hotel Bella Casa Day Outing",
+    "description": "The perfect one-day picnic and resort visit in Purnia and Pune with pool access and lunch packages.",
     "address": {
       "@type": "PostalAddress",
       "addressLocality": "Karjat",
@@ -33,7 +33,7 @@ export default function DayTripsPage() {
       <CinematicHero 
         label="Day Picnics & Outings"
         title="A Day in Paradise"
-        tagline="Short on time? Experience the best of Unwind Karjat with our curated day-trip packages for families and groups."
+        tagline="Short on time? Experience the best of Hotel Bella Casa with our curated day-trip packages for families and groups."
         image='/images/room2.jpeg'
       />
 
@@ -61,7 +61,7 @@ export default function DayTripsPage() {
               </div>
 
               <a 
-                href="https://bookone.io/Unwind-Karjat?bookingEngine=true" 
+                href="https://bookone.io/Hotel-Bella-Casa?bookingEngine=true" 
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-3 bg-forest text-ivory font-sans text-[11px] uppercase tracking-[0.2em] px-10 py-5 hover:bg-forest/90 transition-all rounded-sm"

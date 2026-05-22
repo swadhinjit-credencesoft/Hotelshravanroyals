@@ -12,8 +12,8 @@ export default function CorporatePage() {
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "EventVenue",
-    "name": "Unwind Karjat Corporate Hub",
-    "description": "Professional corporate retreat and offsite venue in Karjat with team building and tech facilities.",
+    "name": "Hotel Bella Casa Corporate Hub",
+    "description": "Professional corporate retreat and offsite venue in Purnia with team building and tech facilities.",
     "address": {
       "@type": "PostalAddress",
       "addressLocality": "Karjat",
@@ -61,7 +61,7 @@ export default function CorporatePage() {
               </div>
 
               <a 
-                href="https://bookone.io/Unwind-Karjat?bookingEngine=true" 
+                href="https://bookone.io/Hotel-Bella-Casa?bookingEngine=true" 
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-3 bg-forest text-ivory font-sans text-[11px] uppercase tracking-[0.2em] px-10 py-5 hover:bg-forest/90 transition-all rounded-sm"

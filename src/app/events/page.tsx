@@ -38,9 +38,9 @@ export default function EventsPage() {
             {
               "@context": "https://schema.org",
               "@type": "EventVenue",
-              "name": "Unwind Karjat Event Spaces",
-              "description": "Premium outdoor lawns, corporate hub, and poolside venues for weddings, parties, and corporate retreats in Karjat.",
-              "url": "https://unwindkarjat.com/events",
+              "name": "Hotel Bella Casa Event Spaces",
+              "description": "Premium outdoor lawns, corporate hub, and poolside venues for weddings, parties, and corporate retreats in Purnia.",
+              "url": "https://hotelbellacasa.com/events",
               "address": {
                 "@type": "PostalAddress",
                 "streetAddress": "Karjat - Chowk Rd, behind Baba Dairy, Wavarle",
@@ -57,7 +57,7 @@ export default function EventsPage() {
               "mainEntity": [
                 {
                   "@type": "Question",
-                  "name": "What is the wedding capacity at Unwind Karjat?",
+                  "name": "What is the wedding capacity at Hotel Bella Casa?",
                   "acceptedAnswer": {
                     "@type": "Answer",
                     "text": "Our outdoor wedding lawns can comfortably host up to 250 guests with bespoke catering and decor."
@@ -183,7 +183,7 @@ export default function EventsPage() {
             Whether planning a dream wedding, corporate retreat, or private celebration, let us craft the perfect experience. Secure your dates directly via our booking portal.
           </p>
           <a
-            href="https://bookone.io/Unwind-Karjat?bookingEngine=true"
+            href="https://bookone.io/Hotel-Bella-Casa?bookingEngine=true"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-3 bg-gold text-[#1a1004] font-sans text-xs uppercase tracking-[0.25em] px-12 py-5 hover:bg-gold-light transition-all shadow-xl hover:shadow-gold/20 duration-500 rounded-sm font-bold"

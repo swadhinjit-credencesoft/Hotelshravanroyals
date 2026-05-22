@@ -164,11 +164,11 @@ export default function RoomDetailClient({ room, otherRooms }: RoomDetailClientP
             >
               <p className="text-taupe/60 text-[10px] uppercase tracking-widest mb-1 font-sans">Starting from</p>
               {headerPriceLoading ? (
-                <p className="text-xl font-sans text-taupe/40 animate-pulse">Fetching live rate…</p>
+                <p className="text-xl font-sans text-taupe/40 animate-pulse">Fetching live rateâ€¦</p>
               ) : (
                 <div className="flex flex-col items-end gap-1">
                   <p className="text-3xl font-serif text-forest">
-                    ₹{headerPrice.toLocaleString('en-IN')}
+                    â‚¹{headerPrice.toLocaleString('en-IN')}
                     <span className="text-sm font-sans text-taupe/60 ml-1">/ night</span>
                   </p>
                   {isHeaderLive && (
@@ -242,7 +242,7 @@ export default function RoomDetailClient({ room, otherRooms }: RoomDetailClientP
             <div className="space-y-4">
               {[
                 { title: 'Check-in & Check-out', content: 'Check-in: 1:00 PM | Check-out: 11:00 AM' },
-                { title: 'Extra Bed Policy', content: 'Available on request for an additional charge of ₹1,500 per night.' },
+                { title: 'Extra Bed Policy', content: 'Available on request for an additional charge of â‚¹1,500 per night.' },
                 { title: 'Cancellation Policy', content: 'Free cancellation up to 48 hours before arrival. 100% charge for late cancellations.' }
               ].map((policy, i) => (
                 <div key={i} className="border-b border-gold/10 pb-4">
@@ -389,7 +389,7 @@ function BookingSidebar({ room }: { room: Room }) {
     <div className="bg-forest p-8 rounded-sm shadow-2xl text-ivory">
       <h3 className="font-display italic text-2xl mb-2 text-gold">Ready to Escape?</h3>
       <p className="font-sans text-[11px] uppercase tracking-widest text-ivory/60 mb-6 border-b border-ivory/10 pb-4">
-        Secure your {room.name} at Unwind Karjat
+        Secure your {room.name} at Hotel Bella Casa
       </p>
 
       {/* Date Fields */}
@@ -453,10 +453,10 @@ function BookingSidebar({ room }: { room: Room }) {
               <span className="text-gold font-sans text-xs animate-pulse">Checking live rate...</span>
             ) : isAvailable ? (
               <div className="flex flex-col items-end">
-                <span className="font-serif text-xl text-gold">₹{(livePrice || room.price).toLocaleString('en-IN')}</span>
+                <span className="font-serif text-xl text-gold">â‚¹{(livePrice || room.price).toLocaleString('en-IN')}</span>
                 {livePrice && (
                   <span className="text-[9px] uppercase tracking-widest text-gold/80 bg-gold/10 px-1.5 py-0.5 rounded-sm font-sans mt-1 flex items-center gap-1">
-                    ⚡ Live Rate
+                    âš¡ Live Rate
                   </span>
                 )}
               </div>

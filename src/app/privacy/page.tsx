@@ -14,15 +14,15 @@ export default function PrivacyPage() {
           __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "WebPage",
-            "@id": "https://unwindkarjat.com/privacy/#webpage",
-            "url": "https://unwindkarjat.com/privacy",
-            "name": "Privacy Policy | Unwind Karjat",
-            "description": "Read the privacy policy guidelines of Unwind Karjat regarding data collection, storage, and customer reservation security protocols.",
+            "@id": "https://hotelbellacasa.com/privacy/#webpage",
+            "url": "https://hotelbellacasa.com/privacy",
+            "name": "Privacy Policy | Hotel Bella Casa",
+            "description": "Read the privacy policy guidelines of Hotel Bella Casa regarding data collection, storage, and customer reservation security protocols.",
             "isPartOf": {
               "@type": "WebSite",
-              "@id": "https://unwindkarjat.com/#website",
-              "name": "Unwind Karjat",
-              "url": "https://unwindkarjat.com"
+              "@id": "https://hotelbellacasa.com/#website",
+              "name": "Hotel Bella Casa",
+              "url": "https://hotelbellacasa.com"
             }
           })
         }}
@@ -36,7 +36,7 @@ export default function PrivacyPage() {
           <section>
             <h2 className="font-serif text-2xl text-forest mb-4">Introduction</h2>
             <p>
-              At Unwind Karjat, your privacy is as paramount as your comfort. This policy outlines how we protect and manage the personal data you entrust to us during your stay and your interactions with our digital platforms.
+              At Hotel Bella Casa, your privacy is as paramount as your comfort. This policy outlines how we protect and manage the personal data you entrust to us during your stay and your interactions with our digital platforms.
             </p>
           </section>
 
@@ -50,7 +50,7 @@ export default function PrivacyPage() {
           <section>
             <h2 className="font-serif text-2xl text-forest mb-4">Confidentiality</h2>
             <p>
-              Unwind Karjat never sells or shares your personal data with third-party marketers. Access to your information is strictly limited to authorized personnel who require it to serve you.
+              Hotel Bella Casa never sells or shares your personal data with third-party marketers. Access to your information is strictly limited to authorized personnel who require it to serve you.
             </p>
           </section>
 

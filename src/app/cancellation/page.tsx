@@ -14,15 +14,15 @@ export default function CancellationPage() {
           __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "WebPage",
-            "@id": "https://unwindkarjat.com/cancellation/#webpage",
-            "url": "https://unwindkarjat.com/cancellation",
-            "name": "Cancellation & Refund Policy | Unwind Karjat",
-            "description": "Read the cancellation and refund policy guidelines of Unwind Karjat regarding direct booking reservation amendments, monsoon policies, and refunds.",
+            "@id": "https://hotelbellacasa.com/cancellation/#webpage",
+            "url": "https://hotelbellacasa.com/cancellation",
+            "name": "Cancellation & Refund Policy | Hotel Bella Casa",
+            "description": "Read the cancellation and refund policy guidelines of Hotel Bella Casa regarding direct booking reservation amendments, monsoon policies, and refunds.",
             "isPartOf": {
               "@type": "WebSite",
-              "@id": "https://unwindkarjat.com/#website",
-              "name": "Unwind Karjat",
-              "url": "https://unwindkarjat.com"
+              "@id": "https://hotelbellacasa.com/#website",
+              "name": "Hotel Bella Casa",
+              "url": "https://hotelbellacasa.com"
             }
           })
         }}
@@ -64,7 +64,7 @@ export default function CancellationPage() {
           <section>
             <h2 className="font-serif text-2xl text-forest mb-4">Monsoon & Force Majeure Policy</h2>
             <p>
-              Unwind Karjat is a deep-nature retreat. In rare circumstances of extreme monsoon weather, natural disasters, or government travel advisories that prevent safe travel to Karjat, guests may request a complimentary reschedule voucher valid for up to 6 months.
+              Hotel Bella Casa is a deep-nature retreat. In rare circumstances of extreme monsoon weather, natural disasters, or government travel advisories that prevent safe travel to Purnia, guests may request a complimentary reschedule voucher valid for up to 6 months.
             </p>
           </section>
         </div>

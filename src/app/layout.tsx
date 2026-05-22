@@ -29,21 +29,21 @@ const jost = Jost({
 })
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://unwindkarjat.com'),
+  metadataBase: new URL('https://hotelbellacasa.com'),
   title: {
-    default: 'Unwind Karjat | Resort & Nature Retreat near Mumbai',
-    template: '%s | Unwind Karjat'
+    default: 'Hotel Bella Casa | Comfortable Stay in Purnia',
+    template: '%s | Hotel Bella Casa'
   },
   description:
-    'A boutique nature retreat in Karjat, Maharashtra offering luxurious yet cozy stays for leisure travellers, event groups, and corporate teams.',
+    'Hotel Bella Casa offers well-maintained rooms with essential amenities in Purnia, Bihar. Ideal for business and leisure travelers with easy access to local markets and transport.',
   keywords: [
-    'resort near Mumbai',
-    'weekend getaway Karjat',
-    'Karjat hotel',
-    'Unwind Karjat',
-    'nature resort',
-    'Karjat resort',
-    'luxury cottages Karjat',
+    'Hotel Bella Casa',
+    'Purnia hotel',
+    'budget stay Purnia',
+    'hotels in Purnia',
+    'Bihar accommodation',
+    'Bihar hotel',
+    'Purnia accommodation',
   ],
   alternates: {
     canonical: '/',
@@ -60,19 +60,19 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: 'Unwind Karjat | Resort & Nature Retreat near Mumbai',
+    title: 'Hotel Bella Casa | Comfortable Stay in Purnia',
     description:
-      'A boutique nature retreat in Karjat, Maharashtra offering luxurious yet cozy stays for leisure travellers, event groups, and corporate teams.',
-    url: 'https://unwindkarjat.com',
-    siteName: 'Unwind Karjat',
+      'Hotel Bella Casa offers well-maintained rooms with essential amenities in Purnia, Bihar. Ideal for business and leisure travelers with easy access to local markets and transport.',
+    url: 'https://hotelbellacasa.com',
+    siteName: 'Hotel Bella Casa',
     type: 'website',
     locale: 'en_US',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Unwind Karjat | Resort & Nature Retreat near Mumbai',
+    title: 'Hotel Bella Casa | Comfortable Stay in Purnia',
     description:
-      'A boutique nature retreat in Karjat, Maharashtra offering luxurious yet cozy stays for leisure travellers, event groups, and corporate teams.',
+      'Hotel Bella Casa offers well-maintained rooms with essential amenities in Purnia, Bihar. Ideal for business and leisure travelers with easy access to local markets and transport.',
   },
 }
 
@@ -105,7 +105,7 @@ export default function RootLayout({
             
             {/* Global Floating WhatsApp Button */}
             <a 
-              href="https://wa.me/9619198839" 
+              href="https://wa.me/9835923601" 
               target="_blank" 
               rel="noreferrer"
               className="fixed bottom-8 right-8 z-[100] bg-green-500 text-white p-4 rounded-full shadow-2xl hover:bg-green-600 hover:scale-110 transition-all duration-300 group"

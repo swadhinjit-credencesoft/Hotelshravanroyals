@@ -20,14 +20,14 @@ export default function Footer() {
     <footer className="bg-forest text-ivory/70" role="contentinfo">
       <div className="max-w-[1600px] mx-auto px-6 md:px-10 pt-20 pb-10">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
-          {/* Col 1 — Brand */}
+          {/* Col 1 â€” Brand */}
           <div>
             <Link href="/" className="inline-block mb-4">
               <div className="font-serif text-xl tracking-[0.18em] uppercase text-ivory">
-                Unwind
+                Bella Casa
               </div>
               <div className="font-sans text-[9px] tracking-[0.28em] uppercase text-gold mt-0.5">
-                Karjat
+                Hotel
               </div>
             </Link>
             <p className="font-serif text-base italic text-ivory/50 mb-6 leading-relaxed max-w-[220px]">
@@ -56,7 +56,7 @@ export default function Footer() {
                 <Camera size={18} />
               </a>
               <a
-                href={`https://wa.me/9619198839`}
+                href={`https://wa.me/9835923601`}
                 aria-label="Chat with us on WhatsApp"
                 className="text-ivory/40 hover:text-[#25D366] transition-colors duration-300"
               >
@@ -65,7 +65,7 @@ export default function Footer() {
             </div>
           </div>
 
-          {/* Col 2 — Quick Links */}
+          {/* Col 2 â€” Quick Links */}
           <div>
             <h3 className="font-sans text-[10px] uppercase tracking-[0.22em] text-gold mb-6">
               Quick Links
@@ -84,7 +84,7 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Col 3 — Contact */}
+          {/* Col 3 â€” Contact */}
           <div>
             <h3 className="font-sans text-[10px] uppercase tracking-[0.22em] text-gold mb-6">
               Contact
@@ -117,7 +117,7 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Col 4 — Visit */}
+          {/* Col 4 â€” Visit */}
           <div>
             <h3 className="font-sans text-[10px] uppercase tracking-[0.22em] text-gold mb-6">
               Visit Us
@@ -138,11 +138,11 @@ export default function Footer() {
                 </div>
               </div>
               <a
-                href="https://www.google.com/maps?q=Unwind,+Karjat,+Karjat+-+Chowk+Rd,+behind+Baba+Dairy,+Wavarle,+Maharashtra+410206&ftid=0x3be7fb0039371721:0x6c226bd87e40fd2f&entry=gps&lucs=,94224825,94227247,94227248,94231188,47071704,47069508,94218641,94282134,94203019,47084304&g_ep=CAISEjI1LjI0LjEuNzY5MjczNTU2MBgAINeCAypaLDk0MjI0ODI1LDk0MjI3MjQ3LDk0MjI3MjQ4LDk0MjMxMTg4LDQ3MDcxNzA0LDQ3MDY5NTA4LDk0MjE4NjQxLDk0MjgyMTM0LDk0MjAzMDE5LDQ3MDg0MzA0QgJJTg%3D%3D&skid=f4b3cd0b-935d-4d04-9db5-6d5d2e525f90&g_st=com.google.maps.preview.copy"
+                href="https://www.google.com/maps?q=Hotel+Bella+Casa,+Purnia,+Bihar"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 mt-2 font-sans text-[11px] uppercase tracking-[0.14em] text-gold border border-gold/30 px-4 py-2 rounded-sm hover:border-gold hover:bg-gold/10 transition-all duration-300"
-                aria-label="Get directions to Unwind Karjat"
+                aria-label="Get directions to Hotel Bella Casa"
               >
                 Get Directions
               </a>
@@ -162,15 +162,15 @@ export default function Footer() {
             {/* <Link href="/sitemap.xml" className="font-sans text-[11px] text-ivory/30 hover:text-gold transition-colors">
               Sitemap
             </Link>
-            <span className="text-ivory/20">·</span> */}
+            <span className="text-ivory/20">Â·</span> */}
             <Link href="/privacy" className="font-sans text-[11px] text-ivory/30 hover:text-gold transition-colors">
               Privacy Policy
             </Link>
-            <span className="text-ivory/20">·</span>
+            <span className="text-ivory/20">Â·</span>
             <Link href="/terms" className="font-sans text-[11px] text-ivory/30 hover:text-gold transition-colors">
               Terms & Conditions
             </Link>
-            <span className="text-ivory/20">·</span>
+            <span className="text-ivory/20">Â·</span>
             <Link href="/cancellation" className="font-sans text-[11px] text-ivory/30 hover:text-gold transition-colors">
               Cancellation Policy
             </Link>

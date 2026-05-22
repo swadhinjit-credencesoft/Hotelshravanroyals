@@ -29,23 +29,23 @@ export default function Home() {
           __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "Hotel",
-            "name": "Unwind Karjat",
-            "description": "A boutique nature retreat in Karjat, Maharashtra offering luxurious yet cozy stays, forest weddings, and corporate offsites.",
-            "url": "https://unwindkarjat.com",
+            "name": "Hotel Bella Casa",
+            "description": "Hotel Bella Casa offers well-maintained rooms with essential amenities in Purnia, Bihar. Ideal for business and leisure travelers with easy access to local markets and transport.",
+            "url": "https://hotelbellacasa.com",
             "address": {
               "@type": "PostalAddress",
-              "streetAddress": "Karjat - Chowk Rd, behind Baba Dairy, Wavarle",
-              "addressLocality": "Karjat",
-              "addressRegion": "Maharashtra",
-              "postalCode": "410206",
+              "streetAddress": "Suryalok Complex, Opposite Vikass Market, Near Bus Stand",
+              "addressLocality": "Purnia",
+              "addressRegion": "Bihar",
+              "postalCode": "854301",
               "addressCountry": "IN"
             },
             "geo": {
               "@type": "GeoCoordinates",
-              "latitude": 18.922485,
-              "longitude": 73.315053
+              "latitude": 25.76889728,
+              "longitude": 87.47058097
             },
-            "telephone": "+91 9619198839",
+            "telephone": "+91 9835923601",
             "starRating": {
               "@type": "Rating",
               "ratingValue": "4.5"
@@ -63,18 +63,18 @@ export default function Home() {
             "mainEntity": [
               {
                 "@type": "Question",
-                "name": "What are the best things to do in Karjat?",
+                "name": "What are the best things to do in Purnia?",
                 "acceptedAnswer": {
                   "@type": "Answer",
-                  "text": "Karjat offers trekking to Kondana Caves, visiting Bhivpuri Waterfalls, and birdwatching. Unwind Karjat provides guided forest immersions and infinity pool access."
+                  "text": "Purnia offers local markets like Vikass Market, visits to historic Kali Mandir temple, and easy access to Purnea Junction for rail connectivity. Hotel Bella Casa provides comfortable stays with free WiFi and room service."
                 }
               },
               {
                 "@type": "Question",
-                "name": "How do I reach Unwind Karjat from Mumbai?",
+                "name": "How do I reach Hotel Bella Casa in Purnia?",
                 "acceptedAnswer": {
                   "@type": "Answer",
-                  "text": "Take the Mumbai-Pune Expressway, exit at Chowk/Karjat, and follow the Karjat-Chowk road for 15km. We are located behind Baba Dairy in Wavarle village."
+                  "text": "Hotel Bella Casa is located at Suryalok Complex, opposite Vikass Market, near the Bus Stand in Purnia, Bihar. Purnea Junction Railway Station is 7.5 km away with easy rickshaw connectivity."
                 }
               }
             ]

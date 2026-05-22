@@ -11,7 +11,7 @@ export default function RoomsPage() {
       <CinematicHero 
         label="Our Accommodations"
         title="Sanctuaries of Stillness"
-        tagline="From rustic Red Brick Cottages to serene Lawn and Forest facing rooms, discover your perfect nature retreat in Karjat."
+        tagline="From rustic Red Brick Cottages to serene Lawn and Forest facing rooms, discover your perfect nature retreat in Purnia."
         image='/images/exterior2.jpeg'
       />
       <RoomsGrid />

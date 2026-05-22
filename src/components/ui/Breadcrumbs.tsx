@@ -56,13 +56,13 @@ export default function Breadcrumbs() {
                 "@type": "ListItem",
                 "position": 1,
                 "name": "Home",
-                "item": "https://unwindkarjat.com"
+                "item": "https://hotelbellacasa.com"
               },
               ...breadcrumbs.map((crumb, index) => ({
                 "@type": "ListItem",
                 "position": index + 2,
                 "name": crumb.label,
-                "item": `https://unwindkarjat.com${crumb.href}`
+                "item": `https://hotelbellacasa.com${crumb.href}`
               }))
             ]
           })

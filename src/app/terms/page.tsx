@@ -14,15 +14,15 @@ export default function TermsPage() {
           __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "WebPage",
-            "@id": "https://unwindkarjat.com/terms/#webpage",
-            "url": "https://unwindkarjat.com/terms",
-            "name": "Terms of Service & Booking Conditions | Unwind Karjat",
-            "description": "Review the official terms of service, check-in schedules, lodging policies, and cancellation conditions for resort reservations at Unwind Karjat.",
+            "@id": "https://hotelbellacasa.com/terms/#webpage",
+            "url": "https://hotelbellacasa.com/terms",
+            "name": "Terms of Service & Booking Conditions | Hotel Bella Casa",
+            "description": "Review the official terms of service, check-in schedules, lodging policies, and cancellation conditions for resort reservations at Hotel Bella Casa.",
             "isPartOf": {
               "@type": "WebSite",
-              "@id": "https://unwindkarjat.com/#website",
-              "name": "Unwind Karjat",
-              "url": "https://unwindkarjat.com"
+              "@id": "https://hotelbellacasa.com/#website",
+              "name": "Hotel Bella Casa",
+              "url": "https://hotelbellacasa.com"
             }
           })
         }}
@@ -50,7 +50,7 @@ export default function TermsPage() {
           <section>
             <h2 className="font-serif text-2xl text-forest mb-4">Estate Conduct</h2>
             <p>
-              Unwind Karjat is a sanctuary of comfort and privacy. We ask all guests to respect the tranquility of the grounds and the privacy of other residents.
+              Hotel Bella Casa is a sanctuary of comfort and privacy. We ask all guests to respect the tranquility of the grounds and the privacy of other residents.
             </p>
           </section>
 

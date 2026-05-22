@@ -23,7 +23,7 @@ export default function ForestSection() {
                Preserving the <br /> Eternal Horizon
             </h2>
             <p className="font-serif text-xl md:text-2xl font-light italic mb-16 leading-relaxed opacity-80">
-               At Unwind Karjat, we do not own the land; we hold it in trust. From our solar-passive sanctuaries to our preservation programs, every aspect of the inn is designed to leave no trace but memories.
+               At Hotel Bella Casa, we do not own the land; we hold it in trust. From our solar-passive sanctuaries to our preservation programs, every aspect of the inn is designed to leave no trace but memories.
             </p>
             
             <div className="grid grid-cols-1 md:grid-cols-3 gap-12 text-left">

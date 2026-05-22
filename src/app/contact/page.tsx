@@ -28,22 +28,22 @@ export default function ContactPage() {
           __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "Hotel",
-            "name": "Unwind Karjat",
+            "name": "Hotel Bella Casa",
             "image": '/images/room2.jpeg',
             "address": {
               "@type": "PostalAddress",
-              "streetAddress": "Karjat - Chowk Rd, behind Baba Dairy, Wavarle",
-              "addressLocality": "Karjat",
-              "addressRegion": "Maharashtra",
-              "postalCode": "410206",
+              "streetAddress": "Suryalok Complex, Opposite Vikass Market, Near Bus Stand",
+              "addressLocality": "Purnia",
+              "addressRegion": "Bihar",
+              "postalCode": "854301",
               "addressCountry": "IN"
             },
             "geo": {
               "@type": "GeoCoordinates",
-              "latitude": 18.922485,
-              "longitude": 73.315053
+              "latitude": 25.76889728,
+              "longitude": 87.47058097
             },
-            "url": "https://unwindkarjat.com/contact",
+            "url": "https://hotelbellacasa.com/contact",
             "telephone": siteConfig.phone,
             "openingHoursSpecification": {
               "@type": "OpeningHoursSpecification",
@@ -122,11 +122,11 @@ export default function ContactPage() {
                     <div className="w-8 h-8 rounded-full bg-gold/10 flex items-center justify-center text-gold group-hover:bg-gold group-hover:text-white transition-colors">
                       <Car size={16} />
                     </div>
-                    <h3 className="font-sans text-sm uppercase tracking-widest text-forest font-bold">From Mumbai</h3>
+                    <h3 className="font-sans text-sm uppercase tracking-widest text-forest font-bold">From Patna</h3>
                   </div>
                   <div className="pl-11 space-y-3 font-serif text-base text-taupe leading-relaxed">
-                    <p>Take the <strong>Mumbai-Pune Expressway</strong> and exit at <strong>Chowk/Karjat</strong>.</p>
-                    <p>Follow the Karjat-Chowk Road for 15km. Look for <strong>Baba Dairy</strong> on your right; Unwind Karjat is located immediately behind it in Wavarle.</p>
+                    <p>Take <strong>NH 31</strong> eastwards towards Purnia via Begusarai, Khagaria, and Katihar.</p>
+                    <p>The drive is approximately 230 km and takes about 5-6 hours. Hotel Bella Casa is located at Suryalok Complex, opposite Vikass Market, near Bus Stand.</p>
                   </div>
                 </div>
 
@@ -135,11 +135,11 @@ export default function ContactPage() {
                     <div className="w-8 h-8 rounded-full bg-gold/10 flex items-center justify-center text-gold group-hover:bg-gold group-hover:text-white transition-colors">
                       <Car size={16} />
                     </div>
-                    <h3 className="font-sans text-sm uppercase tracking-widest text-forest font-bold">From Pune</h3>
+                    <h3 className="font-sans text-sm uppercase tracking-widest text-forest font-bold">From Siliguri</h3>
                   </div>
                   <div className="pl-11 space-y-3 font-serif text-base text-taupe leading-relaxed">
-                    <p>Take the <strong>Mumbai-Pune Expressway</strong> towards Mumbai. Exit at <strong>Lonavala/Khopoli</strong>.</p>
-                    <p>Continue towards Karjat via the Old Highway. Turn right towards Chowk and follow signs for Unwind Karjat.</p>
+                    <p>Take <strong>NH 27</strong> south to <strong>NH 31</strong>, then proceed west towards Purnia.</p>
+                    <p>The drive is approximately 200 km and takes about 4-5 hours. Hotel Bella Casa is situated in the heart of the city near the main bus stand.</p>
                   </div>
                 </div>
 
@@ -151,17 +151,17 @@ export default function ContactPage() {
                     <h3 className="font-sans text-sm uppercase tracking-widest text-forest font-bold">By Railway</h3>
                   </div>
                   <div className="pl-11 space-y-3 font-serif text-base text-taupe leading-relaxed">
-                    <p>Board a <strong>Central Line Fast Train</strong> to <strong>Karjat Railway Station</strong>. </p>
-                    <p>From the station, we are just a 10-minute rickshaw ride away. Contact us for complimentary pickup coordination.</p>
+                    <p>The nearest major railway station is <strong>Purnia Junction (PRNA)</strong>, well-connected to Patna, Kolkata, and New Jalpaiguri.</p>
+                    <p>From the station, Hotel Bella Casa is approximately 1 km via Bus Stand Road. Auto-rickshaws and cycle-rickshaws are readily available.</p>
                   </div>
                 </div>
 
                 <div className="bg-[#fdfcf8] p-8 border border-gold/20 rounded-sm shadow-sm">
                   <h4 className="font-sans text-[11px] uppercase tracking-widest text-gold mb-4 flex items-center gap-2"><Clock size={14} /> Arrival Essentials</h4>
                   <ul className="font-serif text-sm text-taupe space-y-3">
-                    <li className="flex gap-3"><span className="text-gold">✔</span> Secure Valet Parking (Complimentary)</li>
-                    <li className="flex gap-3"><span className="text-gold">✔</span> Electric Vehicle Charging Points</li>
-                    <li className="flex gap-3"><span className="text-gold">✔</span> 24/7 Concierge for Route Guidance</li>
+                    <li className="flex gap-3"><span className="text-gold">âœ”</span> Secure Valet Parking (Complimentary)</li>
+                    <li className="flex gap-3"><span className="text-gold">âœ”</span> Electric Vehicle Charging Points</li>
+                    <li className="flex gap-3"><span className="text-gold">âœ”</span> 24/7 Concierge for Route Guidance</li>
                   </ul>
                 </div>
               </div>
@@ -173,14 +173,14 @@ export default function ContactPage() {
             {/* Embedded Map - Full width on mobile by removing parent padding/margin if needed */}
             <div className="w-full aspect-[4/3] md:aspect-video lg:aspect-square relative overflow-hidden border-y md:border border-gold/20 md:rounded-sm grayscale hover:grayscale-0 transition-all duration-1000 shadow-inner">
               <iframe 
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3774.200375618456!2d73.31505357597148!3d18.922485556773534!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7fb0039371721%3A0x6c226bd87e40fd2f!2sUnwind%2C%20Karjat!5e0!3m2!1sen!2sin!4v1715750000000!5m2!1sen!2sin" 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3595.8!2d87.4706!3d25.7689!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f2efc24c4a7af%3A0x0!2sHotel+Bella+Casa!5e0!3m2!1sen!2sin!4v1!5m2!1sen!2sin" 
                 width="100%" 
                 height="100%" 
                 style={{ border: 0 }} 
                 allowFullScreen={false} 
                 loading="lazy" 
                 referrerPolicy="no-referrer-when-downgrade"
-                title="Unwind Karjat Map Location"
+                title="Hotel Bella Casa Map Location"
               ></iframe>
             </div>
           </div>

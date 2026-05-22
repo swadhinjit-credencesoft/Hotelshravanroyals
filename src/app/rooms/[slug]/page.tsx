@@ -12,14 +12,14 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const room = rooms.find(r => r.slug === params.slug)
   if (!room) return {}
 
-  const title = `${room.name} | Luxury Cottages | Unwind Karjat`
-  const description = `${room.tagline}. Spaced at ${room.size} sq.m with a ${room.view} for up to ${room.guests} guests. Book your luxury stay near Mumbai today.`
+  const title = `${room.name} | Luxury Cottages | Hotel Bella Casa`
+  const description = `${room.tagline}. Spaced at ${room.size} sq.m with a ${room.view} for up to ${room.guests} guests. Book your luxury stay in Purnia today.`
   
   return {
     title,
     description,
     alternates: {
-      canonical: `https://unwindkarjat.com/rooms/${room.slug}`,
+      canonical: `https://hotelbellacasa.com/rooms/${room.slug}`,
     },
     openGraph: {
       title,

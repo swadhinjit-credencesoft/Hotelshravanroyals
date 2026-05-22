@@ -25,7 +25,7 @@ export default function HistorySection() {
             <div className="relative aspect-[4/5] w-full max-w-md mx-auto z-10 overflow-hidden border border-gold/10">
               <Image
                 src='/images/exterior4.jpeg'
-                alt="Modern rustic interior at Unwind Karjat"
+                alt="Modern rustic interior at Hotel Bella Casa"
                 fill
                 className="object-cover grayscale hover:grayscale-0 transition-all duration-1000"
               />
@@ -49,7 +49,7 @@ export default function HistorySection() {
             >
                <Image
                 src='/images/exterior6.jpeg'
-                alt="Architecture sketches of Unwind Karjat"
+                alt="Architecture sketches of Hotel Bella Casa"
                 fill
                 className="object-cover"
               />
@@ -68,7 +68,7 @@ export default function HistorySection() {
                 &ldquo;We didn&apos;t just build a resort; we framed the Sahyadris.&rdquo;
               </p>
               <p className="font-sans text-base text-taupe/80 leading-loose">
-                Conceived in 2019 as a sanctuary for those seeking a deeper connection with nature, Unwind Karjat was born from a passion for the rugged beauty of the Sahyadri mountain range. Our retreat is designed to be a quiet observer of the landscape, offering a space where the unhurried grace of the forest meets modern luxury.
+                Conceived in 2019 as a sanctuary for those seeking a deeper connection with nature, Hotel Bella Casa was born from a passion for the rugged beauty of the Sahyadri mountain range. Our retreat is designed to be a quiet observer of the landscape, offering a space where the unhurried grace of the forest meets modern luxury.
               </p>
               <p className="font-sans text-base text-taupe/80 leading-loose">
                 Every red brick in our cottages and every trail in our forest has been thoughtfully curated to provide an immersive experience that celebrates the soul of Karjat.

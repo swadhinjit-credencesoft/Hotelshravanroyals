@@ -15,15 +15,15 @@ export default function OffersPage() {
           __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "WebPage",
-            "@id": "https://unwindkarjat.com/offers/#webpage",
-            "url": "https://unwindkarjat.com/offers",
-            "name": "Seasonal Packages & Resort Offers | Unwind Karjat",
-            "description": "Save on your weekend getaways near Mumbai. Check out active lodging promotions, culinary meal plan packages, and adventure tour add-ons.",
+            "@id": "https://hotelbellacasa.com/offers/#webpage",
+            "url": "https://hotelbellacasa.com/offers",
+            "name": "Seasonal Packages & Resort Offers | Hotel Bella Casa",
+            "description": "Save on your weekend getaways in Purnia. Check out active lodging promotions, culinary meal plan packages, and adventure tour add-ons.",
             "isPartOf": {
               "@type": "WebSite",
-              "@id": "https://unwindkarjat.com/#website",
-              "name": "Unwind Karjat",
-              "url": "https://unwindkarjat.com"
+              "@id": "https://hotelbellacasa.com/#website",
+              "name": "Hotel Bella Casa",
+              "url": "https://hotelbellacasa.com"
             }
           })
         }}

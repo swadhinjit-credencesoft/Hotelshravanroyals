@@ -1,21 +1,21 @@
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Luxury Cottages & Rooms near Mumbai | Unwind Karjat',
-  description: 'Explore our premium accommodations, featuring rustic Red Brick Cottages, Lawn-facing rooms, and Forest suites with deep nature views in Karjat.',
+  title: 'Luxury Cottages & Rooms in Purnia | Hotel Bella Casa',
+  description: 'Explore our premium accommodations, featuring rustic Red Brick Cottages, Lawn-facing rooms, and Forest suites with deep nature views in Purnia.',
   alternates: {
-    canonical: 'https://unwindkarjat.com/rooms',
+    canonical: 'https://hotelbellacasa.com/rooms',
   },
   openGraph: {
-    title: 'Luxury Cottages & Rooms near Mumbai | Unwind Karjat',
-    description: 'Explore our premium accommodations, featuring rustic Red Brick Cottages, Lawn-facing rooms, and Forest suites with deep nature views in Karjat.',
-    url: 'https://unwindkarjat.com/rooms',
+    title: 'Luxury Cottages & Rooms in Purnia | Hotel Bella Casa',
+    description: 'Explore our premium accommodations, featuring rustic Red Brick Cottages, Lawn-facing rooms, and Forest suites with deep nature views in Purnia.',
+    url: 'https://hotelbellacasa.com/rooms',
     type: 'website',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Luxury Cottages & Rooms near Mumbai | Unwind Karjat',
-    description: 'Explore our premium accommodations, featuring rustic Red Brick Cottages, Lawn-facing rooms, and Forest suites with deep nature views in Karjat.',
+    title: 'Luxury Cottages & Rooms in Purnia | Hotel Bella Casa',
+    description: 'Explore our premium accommodations, featuring rustic Red Brick Cottages, Lawn-facing rooms, and Forest suites with deep nature views in Purnia.',
   }
 }
 

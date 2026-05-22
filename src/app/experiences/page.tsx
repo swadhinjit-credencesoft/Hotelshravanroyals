@@ -25,7 +25,7 @@ export default function ExperiencesPage() {
                   Lawns, Decks & <br /> Campfire Areas
                </h2>
                 <p className="font-sans text-lg leading-relaxed mb-8">
-                  Unwind Karjat features expansive outdoor spaces designed for relaxation and gathering. Enjoy morning yoga on our wooden decks, spend the afternoon reading on our manicured lawns, or end the night sharing stories around our dedicated campfire zones.
+                  Hotel Bella Casa features expansive outdoor spaces designed for relaxation and gathering. Enjoy morning yoga on our wooden decks, spend the afternoon reading on our manicured lawns, or end the night sharing stories around our dedicated campfire zones.
                 </p>
                <a href="/gallery" className="inline-block bg-gold text-[#1a1004] font-sans text-[11px] uppercase tracking-[0.2em] px-12 py-5 hover:bg-gold-light transition-all">
                   View Gallery
@@ -57,7 +57,7 @@ export default function ExperiencesPage() {
                   "@type": "TouristAttraction",
                   "name": "Bhivpuri Waterfalls",
                   "description": "Spectacular monsoon waterfalls near Karjat.",
-                  "location": { "@type": "Place", "name": "Karjat, Maharashtra" }
+                  "location": { "@type": "Place", "name": "Purnia, Bihar" }
                 }
               },
               {
