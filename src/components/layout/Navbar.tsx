@@ -3,6 +3,7 @@
 import { useState, useEffect } from 'react'
 import { motion, AnimatePresence, useScroll } from 'framer-motion'
 import Link from 'next/link'
+import Image from 'next/image'
 import { usePathname } from 'next/navigation'
 import { Menu, X } from 'lucide-react'
 import { siteConfig } from '@/data/site'
@@ -52,13 +53,24 @@ export default function Navbar() {
       >
         <div className="max-w-[1600px] mx-auto px-6 md:px-10 h-20 flex items-center justify-between">
           {/* Logo */}
-          <Link href="/" className="flex flex-col leading-none group focus-visible:ring-2 focus-visible:ring-gold rounded-sm">
-            <span className={`font-serif text-lg tracking-[0.18em] uppercase transition-colors duration-300 ${scrolled || !isHome ? 'text-forest' : 'text-ivory'}`}>
-              Unwind
-            </span>
-            <span className={`font-sans text-[9px] tracking-[0.28em] uppercase mt-0.5 transition-colors duration-300 ${scrolled || !isHome ? 'text-gold' : 'text-gold-light'}`}>
-              Karjat
-            </span>
+          <Link href="/" className="flex items-center gap-3 group focus-visible:ring-2 focus-visible:ring-gold rounded-sm">
+            <div className="relative w-16 h-12">
+              <Image 
+                src="/unwindkarjatlogo.png" 
+                alt="Unwind Karjat Logo" 
+                fill
+                className="object-contain"
+                priority
+              />
+            </div>
+            <div className="hidden md:flex flex-col leading-none">
+              <span className={`font-serif text-lg tracking-[0.18em] uppercase transition-colors duration-300 ${scrolled || !isHome ? 'text-forest' : 'text-ivory'}`}>
+                Unwind
+              </span>
+              <span className={`font-sans text-[9px] tracking-[0.28em] uppercase mt-0.5 transition-colors duration-300 ${scrolled || !isHome ? 'text-gold' : 'text-gold-light'}`}>
+                Karjat
+              </span>
+            </div>
           </Link>
  
           {/* Desktop Nav */}
@@ -77,7 +89,7 @@ export default function Navbar() {
           </nav>
  
           {/* Desktop CTA */}
-          <div className="flex items-center gap-4">
+          <div className="hidden md:flex items-center gap-4">
             <MagneticButton
               as="a"
               href="https://bookone.io/Unwind-Karjat?bookingEngine=true"
