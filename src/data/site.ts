@@ -5,7 +5,7 @@ export const siteConfig = {
   phone: '+91 9619198839',
   email: 'stay@unwindkarjat.com',
   address: 'Karjat - Chowk Rd, behind Baba Dairy, Wavarle, Karjat, Maharashtra 410206',
-  social: { instagram: 'https://instagram.com/unwindkarjat', facebook: '#', twitter: '#' },
+  social: { instagram: 'https://www.instagram.com/unwind_karjat?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==', facebook: '#', twitter: '#' },
   checkInTime: '1:00 PM',
   checkOutTime: '11:00 AM',
 }

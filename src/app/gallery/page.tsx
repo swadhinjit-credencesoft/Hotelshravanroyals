@@ -34,7 +34,7 @@ export default function GalleryPage() {
       <GallerySection />
 
       {/* Video Walkthrough Section */}
-      <section className="py-24 bg-forest text-ivory text-center border-y border-gold/10">
+      {/* <section className="py-24 bg-forest text-ivory text-center border-y border-gold/10">
         <div className="max-w-[1000px] mx-auto px-6">
           <SectionLabel light className="justify-center mb-6">Virtual Tour</SectionLabel>
           <h2 className="font-display text-4xl italic mb-12">Experience Unwind Karjat</h2>
@@ -50,7 +50,7 @@ export default function GalleryPage() {
              ></iframe>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* UGC / Guest Photos Section */}
       <section className="py-24 bg-cream text-center">
@@ -58,7 +58,7 @@ export default function GalleryPage() {
           <h2 className="font-display text-4xl md:text-5xl italic text-forest mb-6">Through Your Lens</h2>
           <p className="font-serif text-lg text-taupe mb-12">
             Share your favorite memories with us. Tag us to be featured. <br />
-            <a href="https://instagram.com" target="_blank" rel="noreferrer" className="text-gold font-sans uppercase tracking-widest text-[11px] hover:text-forest transition-colors mt-4 inline-block">@unwindkarjat</a>
+            <a href="https://www.instagram.com/unwind_karjat?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" rel="noreferrer" className="text-gold font-sans uppercase tracking-widest text-[11px] hover:text-forest transition-colors mt-4 inline-block">@unwindkarjat</a>
           </p>
           
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">

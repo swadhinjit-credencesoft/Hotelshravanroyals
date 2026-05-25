@@ -1,7 +1,7 @@
 'use client'
 
 import Link from 'next/link'
-import { Globe, Share2, Camera, MapPin, Phone, Mail, Clock } from 'lucide-react'
+import { Globe, MapPin, Phone, Mail, Clock } from 'lucide-react'
 import { siteConfig } from '@/data/site'
 
 const quickLinks = [
@@ -41,20 +41,20 @@ export default function Footer() {
               >
                 <Globe size={18} />
               </a>
-              <a
+              {/* <a
                 href={siteConfig.social.facebook}
                 aria-label="Follow us on Facebook"
                 className="text-ivory/40 hover:text-gold transition-colors duration-300"
               >
                 <Share2 size={18} />
-              </a>
-              <a
+              </a> */}
+              {/* <a
                 href={siteConfig.social.twitter}
                 aria-label="Follow us on X (Twitter)"
                 className="text-ivory/40 hover:text-gold transition-colors duration-300"
               >
                 <Camera size={18} />
-              </a>
+              </a> */}
               <a
                 href={`https://wa.me/9619198839`}
                 aria-label="Chat with us on WhatsApp"
