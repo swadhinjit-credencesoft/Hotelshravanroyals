@@ -1,7 +1,7 @@
 export interface EstateEvent {
   id: string;
   title: string;
-  category: 'Weddings' | 'Corporate' | 'Parties' | 'Day Trips';
+  category: 'Weddings' | 'Corporate' | 'Parties' | 'Live Musical Evenings' |'Day Trips' ;
   description: string;
   capacity: string;
   image: string;
@@ -35,5 +35,32 @@ export const estateEvents: EstateEvent[] = [
     capacity: 'Up to 40 guests',
     image: '/images/exterior5.jpeg',
     features: ['Live BBQ setup', 'Pool access', 'Custom music playlists'],
+  },
+  {
+    id: 'e4',
+    title: 'Acoustic Nights',
+    category: 'Live Musical Evenings',
+    description: 'Soulful acoustic performances by talented local artists under the starlit Karjat sky. Perfect for intimate gatherings and romantic evenings.',
+    capacity: 'Up to 80 guests',
+    image: '/images/exterior2.jpeg',
+    features: ['Live acoustic artists', 'Bonfire setup', 'Custom song requests'],
+  },
+  {
+    id: 'e5',
+    title: 'Live Bands & DJ Nights',
+    category: 'Live Musical Evenings',
+    description: 'High-energy performances with professional live bands and DJs for weddings, parties, and corporate celebrations.',
+    capacity: 'Up to 150 guests',
+    image: '/images/exterior1.jpeg',
+    features: ['Professional sound system', 'Custom playlists', 'Stage lighting'],
+  },
+  {
+    id: 'e6',
+    title: 'Bonfire Jam Sessions',
+    category: 'Live Musical Evenings',
+    description: 'An interactive musical experience where guests become part of the performance around a warm bonfire.',
+    capacity: 'Up to 40 guests',
+    image: '/images/exterior5.jpeg',
+    features: ['Guided jam sessions', 'Instruments provided', 'Late-night setup'],
   },
 ];

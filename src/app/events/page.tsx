@@ -11,7 +11,7 @@ import { motion } from 'framer-motion';
 import Image from 'next/image';
 import { Calendar, ArrowRight, Utensils, GlassWater } from 'lucide-react';
 
-const TABS = ['Weddings', 'Corporate', 'Parties', 'Day Trips'];
+const TABS = ['Weddings', 'Corporate', 'Parties', 'Day Trips', 'Live Musical Evenings'];
 
 export default function EventsPage() {
   const [activeTab, setActiveTab] = useState('Weddings');
@@ -103,7 +103,7 @@ export default function EventsPage() {
             <GoldDivider className="justify-center mt-8" />
             <div className="mt-8">
               <a
-                href={`/events/${activeTab.toLowerCase().replace(' ', '-')}`}
+                href={`/events/${activeTab.toLowerCase().replace(/\s+/g, '-')}`}
                 className="inline-flex items-center gap-2 font-sans text-[10px] uppercase tracking-[0.3em] text-gold hover:text-forest transition-colors"
               >
                 View Dedicated {activeTab} Page <ArrowRight size={14} />
@@ -139,7 +139,7 @@ export default function EventsPage() {
                   </ul>
                   <div className="flex gap-4">
                     <a href="#enquiry" className="bg-forest text-ivory font-sans text-[11px] uppercase tracking-[0.2em] px-8 py-4 hover:bg-forest/90 transition-all rounded-sm">Enquire Now</a>
-                    <a href={`/events/${activeTab.toLowerCase().replace(' ', '-')}`} className="border border-gold/30 text-gold font-sans text-[11px] uppercase tracking-[0.2em] px-8 py-4 hover:bg-gold/5 transition-all rounded-sm">Learn More</a>
+                    <a href={`/events/${activeTab.toLowerCase().replace(/\s+/g, '-')}`} className="border border-gold/30 text-gold font-sans text-[11px] uppercase tracking-[0.2em] px-8 py-4 hover:bg-gold/5 transition-all rounded-sm">Learn More</a>
                   </div>
                 </div>
               </motion.div>
