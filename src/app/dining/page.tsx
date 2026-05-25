@@ -81,7 +81,7 @@ export default function DiningPage() {
               <p className="font-serif text-taupe mb-10 leading-relaxed text-lg">
                 Enjoy a hassle-free stay with our comprehensive meal plan covering all major meals and evening snacks. Choose from our extensive buffet or ÃƒÂ  la carte menu.
               </p>
-              <div className="text-forest font-serif text-4xl">Ã¢â€šÂ¹2,000 <span className="text-sm font-sans uppercase tracking-[0.15em] opacity-50">/ person / day</span></div>
+              <div className="text-forest font-serif text-4xl">₹2,000 <span className="text-sm font-sans uppercase tracking-[0.15em] opacity-50">/ person / day</span></div>
             </div>
 
             <div className="p-10 border border-gold/20 shadow-sm rounded-sm hover:shadow-warm-lg transition-all bg-[#fdfcf8] group">
@@ -91,7 +91,7 @@ export default function DiningPage() {
               <p className="font-serif text-taupe mb-10 leading-relaxed text-lg">
                 Elevate your evening with a private bonfire setup and a live BBQ grill featuring marinated vegetables, paneer, and meats (<span className="italic">Fish/Mutton on request</span>).
               </p>
-              <div className="text-forest font-serif text-4xl">Ã¢â€šÂ¹1,500 <span className="text-sm font-sans uppercase tracking-[0.15em] opacity-50">/ couple</span></div>
+              <div className="text-forest font-serif text-4xl">₹1,500 <span className="text-sm font-sans uppercase tracking-[0.15em] opacity-50">/ couple</span></div>
             </div>
           </div>
         </div>

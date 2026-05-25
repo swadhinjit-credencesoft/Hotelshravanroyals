@@ -20,7 +20,7 @@ export default function Footer() {
     <footer className="bg-forest text-ivory/70" role="contentinfo">
       <div className="max-w-[1600px] mx-auto px-6 md:px-10 pt-20 pb-10">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
-          {/* Col 1 â€” Brand */}
+        
           <div>
             <Link href="/" className="inline-block mb-4">
               <div className="font-serif text-xl tracking-[0.18em] uppercase text-ivory">
@@ -64,8 +64,6 @@ export default function Footer() {
               </a>
             </div>
           </div>
-
-          {/* Col 2 â€” Quick Links */}
           <div>
             <h3 className="font-sans text-[10px] uppercase tracking-[0.22em] text-gold mb-6">
               Quick Links
@@ -83,8 +81,6 @@ export default function Footer() {
               ))}
             </ul>
           </div>
-
-          {/* Col 3 â€” Contact */}
           <div>
             <h3 className="font-sans text-[10px] uppercase tracking-[0.22em] text-gold mb-6">
               Contact
@@ -116,8 +112,6 @@ export default function Footer() {
               </li>
             </ul>
           </div>
-
-          {/* Col 4 â€” Visit */}
           <div>
             <h3 className="font-sans text-[10px] uppercase tracking-[0.22em] text-gold mb-6">
               Visit Us

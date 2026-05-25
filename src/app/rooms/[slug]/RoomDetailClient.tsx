@@ -164,7 +164,7 @@ export default function RoomDetailClient({ room, otherRooms }: RoomDetailClientP
             >
               <p className="text-taupe/60 text-[10px] uppercase tracking-widest mb-1 font-sans">Starting from</p>
               {headerPriceLoading ? (
-                <p className="text-xl font-sans text-taupe/40 animate-pulse">Fetching live rateâ€¦</p>
+                <p className="text-xl font-sans text-taupe/40 animate-pulse">Fetching live rate…</p>
               ) : (
                 <div className="flex flex-col items-end gap-1">
                   <p className="text-3xl font-serif text-forest">

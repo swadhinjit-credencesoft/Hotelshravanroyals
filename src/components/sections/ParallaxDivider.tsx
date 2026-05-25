@@ -96,7 +96,7 @@ export default function ParallaxDivider() {
           </svg>
 
           <blockquote className="font-serif text-2xl md:text-[36px] italic font-light text-ivory leading-[1.55] mb-6">
-            Luxury is not a thing. It is a feeling â€” the rare sensation that time belongs entirely to you.
+          Luxury is not a thing. It is a feeling — the rare sensation that time belongs entirely to you.
           </blockquote>
 
           <motion.p
@@ -105,7 +105,7 @@ export default function ParallaxDivider() {
             animate={isInView ? { opacity: 1 } : {}}
             transition={{ duration: 0.7, delay: 0.5 }}
           >
-            â€” Hotel Bella Casa
+            — Hotel Bella Casa
           </motion.p>
         </motion.div>
       </div>
