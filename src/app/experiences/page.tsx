@@ -55,9 +55,9 @@ export default function ExperiencesPage() {
                 "position": 1,
                 "item": {
                   "@type": "TouristAttraction",
-                  "name": "Bhivpuri Waterfalls",
-                  "description": "Spectacular monsoon waterfalls near Karjat.",
-                  "location": { "@type": "Place", "name": "Purnia, Bihar" }
+                  "name": "Jalalgarh Fort",
+                  "description": "Historic 300-year-old fort displaying a unique blend of Hindu and Islamic architecture.",
+                  "location": { "@type": "Place", "name": "Jalalgarh, Purnia, Bihar" }
                 }
               },
               {
@@ -65,9 +65,19 @@ export default function ExperiencesPage() {
                 "position": 2,
                 "item": {
                   "@type": "TouristAttraction",
-                  "name": "Kondana Caves",
-                  "description": "Ancient Buddhist rock-cut caves.",
-                  "location": { "@type": "Place", "name": "Kondana, Karjat" }
+                  "name": "Puran Devi Temple",
+                  "description": "Ancient temple dedicated to Goddess Puran Devi, the namesake of Purnia.",
+                  "location": { "@type": "Place", "name": "Purnia, Bihar" }
+                }
+              },
+              {
+                "@type": "ListItem",
+                "position": 3,
+                "item": {
+                  "@type": "TouristAttraction",
+                  "name": "Kali Mandir Temple",
+                  "description": "Revered historic temple in Purnia dedicated to Goddess Kali.",
+                  "location": { "@type": "Place", "name": "Purnia, Bihar" }
                 }
               }
             ]
@@ -80,7 +90,7 @@ export default function ExperiencesPage() {
       {/* Nearby Attractions */}
       <section className="py-32 bg-cream">
          <div className="max-w-[1600px] mx-auto px-6 md:px-10 text-center">
-            <SectionLabel className="justify-center mb-6">Explore Karjat</SectionLabel>
+            <SectionLabel className="justify-center mb-6">Explore Purnia</SectionLabel>
             <h2 className="font-display text-4xl md:text-6xl italic text-forest mb-16">Nearby Attractions</h2>
             
             <div className="grid grid-cols-1 md:grid-cols-3 gap-12 text-left">
@@ -88,12 +98,12 @@ export default function ExperiencesPage() {
                   <div className="w-14 h-14 bg-gold/5 rounded-full flex items-center justify-center mb-8 group-hover:bg-gold/10 transition-colors">
                      <MapPin className="text-gold" size={24} />
                   </div>
-                  <h3 className="font-display text-3xl italic text-forest mb-4">Bhivpuri Waterfalls</h3>
-                  <p className="font-serif text-taupe leading-relaxed mb-6 text-lg">A spectacular sight during the monsoons, perfect for a short morning trek and natural showers.</p>
+                  <h3 className="font-display text-3xl italic text-forest mb-4">Jalalgarh Fort</h3>
+                  <p className="font-serif text-taupe leading-relaxed mb-6 text-lg">A 300-year-old historic fort exhibiting a mix of Hindu and Islamic styles, built to protect the region from invaders.</p>
                   <div className="flex items-center gap-2 pt-6 border-t border-gold/10">
-                    <span className="font-sans text-[10px] uppercase tracking-widest text-gold font-bold">15 mins drive</span>
+                    <span className="font-sans text-[10px] uppercase tracking-widest text-gold font-bold">25 mins drive</span>
                     <span className="w-1 h-1 rounded-full bg-gold/30" />
-                    <span className="font-sans text-[10px] uppercase tracking-widest text-taupe/60">Trekking & Sightseeing</span>
+                    <span className="font-sans text-[10px] uppercase tracking-widest text-taupe/60">History & Heritage</span>
                   </div>
                </div>
 
@@ -101,12 +111,12 @@ export default function ExperiencesPage() {
                   <div className="w-14 h-14 bg-gold/5 rounded-full flex items-center justify-center mb-8 group-hover:bg-gold/10 transition-colors">
                      <MapPin className="text-gold" size={24} />
                   </div>
-                  <h3 className="font-display text-3xl italic text-forest mb-4">Kondana Caves</h3>
-                  <p className="font-serif text-taupe leading-relaxed mb-6 text-lg">Ancient Buddhist caves nestled in lush forests. A historical sanctuary for meditation and nature buffs.</p>
+                  <h3 className="font-display text-3xl italic text-forest mb-4">Puran Devi Temple</h3>
+                  <p className="font-serif text-taupe leading-relaxed mb-6 text-lg">One of the oldest and most important spiritual landmarks in Purnia, believed to be the origin of the city's name.</p>
                   <div className="flex items-center gap-2 pt-6 border-t border-gold/10">
-                    <span className="font-sans text-[10px] uppercase tracking-widest text-gold font-bold">30 mins drive</span>
+                    <span className="font-sans text-[10px] uppercase tracking-widest text-gold font-bold">10 mins drive</span>
                     <span className="w-1 h-1 rounded-full bg-gold/30" />
-                    <span className="font-sans text-[10px] uppercase tracking-widest text-taupe/60">History & Caves</span>
+                    <span className="font-sans text-[10px] uppercase tracking-widest text-taupe/60">Spiritual & Historic</span>
                   </div>
                </div>
 
@@ -114,12 +124,12 @@ export default function ExperiencesPage() {
                   <div className="w-14 h-14 bg-gold/5 rounded-full flex items-center justify-center mb-8 group-hover:bg-gold/10 transition-colors">
                      <MapPin className="text-gold" size={24} />
                   </div>
-                  <h3 className="font-display text-3xl italic text-forest mb-4">Peth Fort</h3>
-                  <p className="font-serif text-taupe leading-relaxed mb-6 text-lg">Also known as Kothaligad, it offers breathtaking 360-degree views of the Western Ghats and Sahyadri range.</p>
+                  <h3 className="font-display text-3xl italic text-forest mb-4">Kali Mandir Temple</h3>
+                  <p className="font-serif text-taupe leading-relaxed mb-6 text-lg">A highly revered temple in Purnia town dedicated to Goddess Kali, offering a peaceful atmosphere for visitors.</p>
                   <div className="flex items-center gap-2 pt-6 border-t border-gold/10">
-                    <span className="font-sans text-[10px] uppercase tracking-widest text-gold font-bold">45 mins drive</span>
+                    <span className="font-sans text-[10px] uppercase tracking-widest text-gold font-bold">5 mins drive</span>
                     <span className="w-1 h-1 rounded-full bg-gold/30" />
-                    <span className="font-sans text-[10px] uppercase tracking-widest text-taupe/60">Advanced Trekking</span>
+                    <span className="font-sans text-[10px] uppercase tracking-widest text-taupe/60">Heritage & Devotion</span>
                   </div>
                </div>
             </div>

@@ -36,21 +36,21 @@ export default function TermsPage() {
           <section>
             <h2 className="font-serif text-2xl text-forest mb-4">Reservation Policy</h2>
             <p>
-              All reservations are subject to availability and the specific terms of the package selected. A valid credit card is required to secure your sanctuary.
+              All reservations are subject to availability and the specific terms of the room selected. A valid payment method is required to secure your reservation.
             </p>
           </section>
 
           <section>
             <h2 className="font-serif text-2xl text-forest mb-4">Cancellation &amp; No-Show</h2>
             <p>
-              To respect the intimacy of the estate, cancellations must be made 14 days prior to arrival for a full refund. Cancellations within the 14-day window will be subject to a 50% sanctuary fee.
+              To respect our scheduling, cancellations must be made at least 48 hours prior to check-in (12:00 PM) for a full refund. Cancellations made within the 48-hour window will be subject to a 100% room reservation fee.
             </p>
           </section>
 
           <section>
-            <h2 className="font-serif text-2xl text-forest mb-4">Estate Conduct</h2>
+            <h2 className="font-serif text-2xl text-forest mb-4">Hotel Conduct</h2>
             <p>
-              Hotel Bella Casa is a sanctuary of comfort and privacy. We ask all guests to respect the tranquility of the grounds and the privacy of other residents.
+              Hotel Bella Casa is committed to providing a comfortable and private stay. We ask all guests to respect the comfort of other guests and follow the hotel's policies during their stay.
             </p>
           </section>
 

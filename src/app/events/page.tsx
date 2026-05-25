@@ -43,13 +43,13 @@ export default function EventsPage() {
               "url": "https://hotelbellacasa.com/events",
               "address": {
                 "@type": "PostalAddress",
-                "streetAddress": "Karjat - Chowk Rd, behind Baba Dairy, Wavarle",
-                "addressLocality": "Karjat",
-                "addressRegion": "Maharashtra",
-                "postalCode": "410206",
+                "streetAddress": "Suryalok Complex, Opposite Vikass Market, Near Bus Stand",
+                "addressLocality": "Purnia",
+                "addressRegion": "Bihar",
+                "postalCode": "854301",
                 "addressCountry": "IN"
               },
-              "telephone": "+91 9619198839"
+              "telephone": "+91 9835923601"
             },
             {
               "@context": "https://schema.org",
@@ -158,17 +158,17 @@ export default function EventsPage() {
             <div className="border border-ivory/10 p-8 hover:bg-ivory/5 transition-colors group">
               <Utensils className="text-gold mb-6 group-hover:scale-110 transition-transform" size={32} />
               <h3 className="font-display text-2xl italic mb-4">Multi-Cuisine Feasts</h3>
-              <p className="font-serif text-ivory/70 leading-relaxed text-sm">From authentic Maharashtrian thalis to lavish Continental spreads, our culinary team designs menus tailored precisely to your guests&apos; palates.</p>
+              <p className="font-serif text-ivory/70 leading-relaxed text-sm">From authentic North Indian and regional cuisines to lavish Continental spreads, our culinary team designs menus tailored precisely to your guests&apos; palates.</p>
             </div>
             <div className="border border-ivory/10 p-8 hover:bg-ivory/5 transition-colors group">
               <GlassWater className="text-gold mb-6 group-hover:scale-110 transition-transform" size={32} />
               <h3 className="font-display text-2xl italic mb-4">Barbecue & Bonfire</h3>
-              <p className="font-serif text-ivory/70 leading-relaxed text-sm">Our signature live grills under the Karjat sky. Perfect for pre-wedding events, corporate mixers, or intimate birthday celebrations.</p>
+              <p className="font-serif text-ivory/70 leading-relaxed text-sm">Our signature live grills under the Purnia sky. Perfect for pre-wedding events, corporate mixers, or family celebrations.</p>
             </div>
             <div className="border border-ivory/10 p-8 hover:bg-ivory/5 transition-colors group">
               <Utensils className="text-gold mb-6 group-hover:scale-110 transition-transform" size={32} />
               <h3 className="font-display text-2xl italic mb-4">Specialty Menus</h3>
-              <p className="font-serif text-ivory/70 leading-relaxed text-sm">Dedicated Jain menus, vegan setups, and our highly-requested local Fish & Mutton delicacies prepared on special request.</p>
+              <p className="font-serif text-ivory/70 leading-relaxed text-sm">Dedicated Jain menus, vegan setups, and our highly-requested local vegetarian delicacies prepared on special request.</p>
             </div>
           </div>
         </div>

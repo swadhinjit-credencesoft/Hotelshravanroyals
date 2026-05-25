@@ -16,8 +16,8 @@ export default function DayTripsPage() {
     "description": "The perfect one-day picnic and resort visit in Purnia and Pune with pool access and lunch packages.",
     "address": {
       "@type": "PostalAddress",
-      "addressLocality": "Karjat",
-      "addressRegion": "Maharashtra",
+      "addressLocality": "Purnia",
+      "addressRegion": "Bihar",
       "addressCountry": "IN"
     }
   };
@@ -44,7 +44,7 @@ export default function DayTripsPage() {
               <SectionLabel className="mb-6">The Escape</SectionLabel>
               <h2 className="font-display text-4xl md:text-6xl italic text-forest mb-8">Quick Retreat, Lasting Memories</h2>
               <p className="font-serif text-lg text-taupe leading-relaxed mb-10">
-                Our day-out packages are designed for those seeking a quick escape from the city. Enjoy access to our infinity pool, expansive lawns, and a lavish multi-cuisine lunch.
+                Our day-out packages are designed for those seeking a quick escape from their busy schedules. Enjoy access to our comfortable lounges, local dining options, and customized event support.
               </p>
               
               <div className="grid grid-cols-2 gap-8 mb-10">
@@ -82,9 +82,9 @@ export default function DayTripsPage() {
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
             {[
-              { icon: Sun, title: 'Pool & Lawn Access', desc: 'Full access to our signature infinity pool and manicured emerald lawns.' },
+              { icon: Sun, title: 'Comfort & Lounge Access', desc: 'Full access to our premium air-conditioned rooms and guest lounges.' },
               { icon: Utensils, title: 'Lavish Buffet Lunch', desc: 'A wide spread of Indian and global cuisines prepared by our expert chefs.' },
-              { icon: MapPin, title: 'Nature Trails', desc: 'Guided access to our private forest trails for a quick morning exploration.' }
+              { icon: MapPin, title: 'City Tours', desc: 'Guided local sightseeing and shopping excursions around Purnia town.' }
             ].map((feature, i) => (
               <div key={i} className="text-center p-10 bg-white border border-gold/10 hover:shadow-warm-lg transition-all duration-500 group">
                 <feature.icon className="text-gold mx-auto mb-8 group-hover:scale-110 transition-transform" size={40} />

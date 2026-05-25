@@ -16,8 +16,8 @@ export default function PartiesPage() {
     "description": "The perfect resort in Purnia for birthday parties, pool parties, and private celebrations.",
     "address": {
       "@type": "PostalAddress",
-      "addressLocality": "Karjat",
-      "addressRegion": "Maharashtra",
+      "addressLocality": "Purnia",
+      "addressRegion": "Bihar",
       "addressCountry": "IN"
     }
   };
@@ -33,7 +33,7 @@ export default function PartiesPage() {
       <CinematicHero 
         label="Celebrations & Parties"
         title="Unforgettable Moments"
-        tagline="From poolside birthdays to intimate family get-togethers, we host Karjat's most vibrant celebrations."
+        tagline="From birthdays to intimate family get-togethers, we host Purnia's most vibrant celebrations."
         image='/images/exterior3.jpeg'
       />
 
@@ -44,7 +44,7 @@ export default function PartiesPage() {
               <SectionLabel className="mb-6">The Deck</SectionLabel>
               <h2 className="font-display text-4xl md:text-6xl italic text-forest mb-8">Host the Ultimate Celebration</h2>
               <p className="font-serif text-lg text-taupe leading-relaxed mb-10">
-                Whether it&apos;s a milestone birthday or a long-awaited reunion, our celebration deck and poolside area offer the perfect vibe for every party.
+                Whether it&apos;s a milestone birthday or a long-awaited reunion, our celebration deck and modern banquet space offer the perfect vibe for every party.
               </p>
               
               <div className="grid grid-cols-2 gap-8 mb-10">
@@ -82,7 +82,7 @@ export default function PartiesPage() {
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
             {[
-              { icon: GlassWater, title: 'Poolside Vibe', desc: 'Host a vibrant afternoon pool party with refreshing drinks and light bites.' },
+              { icon: GlassWater, title: 'Celebration Vibe', desc: 'Host a vibrant afternoon or evening celebration with refreshing drinks and vegetarian delights.' },
               { icon: Music, title: 'Music & Setup', desc: 'Dedicated sound systems and customizable lighting to set the perfect mood.' },
               { icon: Gift, title: 'Theme Decor', desc: 'Our event team can help bring your specific birthday or celebration theme to life.' }
             ].map((element, i) => (

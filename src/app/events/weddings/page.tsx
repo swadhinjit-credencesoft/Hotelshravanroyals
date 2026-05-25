@@ -16,8 +16,8 @@ export default function WeddingsPage() {
     "description": "Premium destination wedding venue in Purnia with forest views and bespoke catering.",
     "address": {
       "@type": "PostalAddress",
-      "addressLocality": "Karjat",
-      "addressRegion": "Maharashtra",
+      "addressLocality": "Purnia",
+      "addressRegion": "Bihar",
       "addressCountry": "IN"
     }
   };
@@ -33,7 +33,7 @@ export default function WeddingsPage() {
       <CinematicHero 
         label="Destination Weddings"
         title="Begin Your Forever"
-        tagline="A magical forest-side setting for your most significant moments. Exchange vows surrounded by the Sahyadris."
+        tagline="A magical setting for your most significant moments. Exchange vows surrounded by our warm hospitality."
         image='/images/exterior5.jpeg'
       />
 
@@ -56,7 +56,7 @@ export default function WeddingsPage() {
                 <div className="flex flex-col gap-3">
                   <MapPin className="text-gold" size={24} />
                   <p className="font-sans text-[11px] uppercase tracking-widest text-gold">Setting</p>
-                  <p className="font-serif text-forest text-xl italic">Forest-Side Lawns</p>
+                  <p className="font-serif text-forest text-xl italic">Banquets & Lawns</p>
                 </div>
               </div>
 
@@ -82,7 +82,7 @@ export default function WeddingsPage() {
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
             {[
-              { icon: Utensils, title: 'Bespoke Catering', desc: 'Customizable menus featuring local Maharashtrian flavors and global cuisines.' },
+              { icon: Utensils, title: 'Bespoke Catering', desc: 'Customizable menus featuring regional vegetarian specialties and global cuisines.' },
               { icon: Heart, title: 'Decor & Planning', desc: 'From minimal rustic setups to lavish floral arrangements, we handle it all.' },
               { icon: Camera, title: 'Memories', desc: 'Exclusive bridal suites and stunning photo locations throughout the resort.' }
             ].map((service, i) => (
