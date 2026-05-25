@@ -115,13 +115,13 @@ export default function DiningPage() {
                <Image src='/images/exterior4.jpeg' alt="Gourmet plated dish" fill className="object-cover grayscale hover:grayscale-0 transition-all duration-1000" />
             </div>
             <div className="relative overflow-hidden group row-span-2">
-               <Image src='/images/exterior5.jpeg' alt="Rustic grill setup" fill className="object-cover grayscale hover:grayscale-0 transition-all duration-1000" />
+               <Image src='/bloghero.png' alt="Rustic grill setup" fill className="object-cover grayscale hover:grayscale-0 transition-all duration-1000" />
             </div>
             <div className="relative overflow-hidden group">
-               <Image src='/images/exterior6.jpeg' alt="Outdoor dining at dusk" fill className="object-cover grayscale hover:grayscale-0 transition-all duration-1000" />
+               <Image src='/Lawn Facing Room.png' alt="Outdoor dining at dusk" fill className="object-cover grayscale hover:grayscale-0 transition-all duration-1000" />
             </div>
             <div className="relative overflow-hidden group">
-               <Image src='/images/exterior7.jpeg' alt="Refreshing cocktails and drinks" fill className="object-cover grayscale hover:grayscale-0 transition-all duration-1000" />
+               <Image src='/TheMainDiningHall.png' alt="Refreshing cocktails and drinks" fill className="object-cover grayscale hover:grayscale-0 transition-all duration-1000" />
             </div>
           </div>
         </div>
