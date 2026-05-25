@@ -71,7 +71,7 @@ export default function HistorySection() {
                 Conceived in 2019 as a sanctuary for those seeking a deeper connection with nature, Hotel Bella Casa was born from a passion for the rugged beauty of the Sahyadri mountain range. Our retreat is designed to be a quiet observer of the landscape, offering a space where the unhurried grace of the forest meets modern luxury.
               </p>
               <p className="font-sans text-base text-taupe/80 leading-loose">
-                Every red brick in our cottages and every trail in our forest has been thoughtfully curated to provide an immersive experience that celebrates the soul of Karjat.
+                Every red brick in our cottages and every trail in our forest has been thoughtfully curated to provide an immersive experience that celebrates the soul of Purnea.
               </p>
             </div>
 
@@ -81,7 +81,7 @@ export default function HistorySection() {
                   <p className="font-sans text-[10px] uppercase tracking-widest text-taupe mt-2">Conceived</p>
                </div>
                <div>
-                  <span className="font-serif text-3xl text-gold">Karjat</span>
+                  <span className="font-serif text-3xl text-gold">Bella Casa</span>
                   <p className="font-sans text-[10px] uppercase tracking-widest text-taupe mt-2">Heart of Sahyadris</p>
                </div>
             </div>

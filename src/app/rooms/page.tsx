@@ -12,7 +12,7 @@ export default function RoomsPage() {
         label="Our Accommodations"
         title="Sanctuaries of Stillness"
         tagline="From rustic Red Brick Cottages to serene Lawn and Forest facing rooms, discover your perfect nature retreat in Purnia."
-        image='/images/exterior2.jpeg'
+        image='https://bookonelocal.in/cdn/IMG_3678.avif'
       />
       <RoomsGrid />
       <LuxuryAmenities />

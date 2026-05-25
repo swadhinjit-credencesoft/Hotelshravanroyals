@@ -19,7 +19,7 @@ export default function AboutPage() {
         label="Our Story"
         title="Rooted in Nature"
         tagline="Founded on the belief that true luxury is reconnecting with the wild. Discover the vision behind Hotel Bella Casa."
-        image='/images/exterior.jpeg'
+        image='https://bookonelocal.in/cdn/IMG_3808.avif'
       />
 
       {/* Organization Schema for SEO (E-E-A-T) */}
@@ -87,7 +87,7 @@ export default function AboutPage() {
               className="relative aspect-[4/5] overflow-hidden border border-gold/10"
             >
               <Image
-                src='/aboutimg.png'
+                src='https://bookonelocal.in/cdn/IMG_3815.avif'
                 alt="Architectural detail seamlessly blending with nature"
                 fill
                 className="object-cover"
@@ -129,7 +129,7 @@ export default function AboutPage() {
       </section>
 
       {/* The Team / Leadership */}
-      <section className="bg-forest py-24 text-ivory overflow-hidden">
+      {/* <section className="bg-forest py-24 text-ivory overflow-hidden">
         <div className="max-w-[1600px] mx-auto px-6 md:px-10">
           <div className="text-center mb-20">
             <SectionLabel light className="justify-center mb-6">Hospitality Team</SectionLabel>
@@ -165,7 +165,7 @@ export default function AboutPage() {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Location Section */}
       <section className="py-24 bg-cream">

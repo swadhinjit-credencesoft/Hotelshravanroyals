@@ -456,7 +456,7 @@ function BookingSidebar({ room }: { room: Room }) {
                 <span className="font-serif text-xl text-gold">â‚¹{(livePrice || room.price).toLocaleString('en-IN')}</span>
                 {livePrice && (
                   <span className="text-[9px] uppercase tracking-widest text-gold/80 bg-gold/10 px-1.5 py-0.5 rounded-sm font-sans mt-1 flex items-center gap-1">
-                    âš¡ Live Rate
+                  -- Live Rate
                   </span>
                 )}
               </div>

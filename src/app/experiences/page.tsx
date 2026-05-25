@@ -14,7 +14,7 @@ export default function ExperiencesPage() {
         label="Beyond the Room"
         title="Immerse in Nature"
         tagline="From monsoon treks to cozy winter bonfires, discover activities designed to help you reconnect with the outdoors."
-        image='/images/exterior7.jpeg'
+        image='https://bookonelocal.in/cdn/IMG_3739.avif'
       />
 
       <section className="py-32 bg-forest text-ivory/80">
@@ -33,7 +33,7 @@ export default function ExperiencesPage() {
             </div>
             <div className="relative aspect-[4/3] border border-ivory/10">
                <Image 
-                  src='/LawnsDecks.png' 
+                  src='https://bookonelocal.in/cdn/IMG_3764.avif' 
                   alt="Outdoor campfire and seating area in nature" 
                   fill
                   className="object-cover grayscale hover:grayscale-0 transition-all duration-1000"
