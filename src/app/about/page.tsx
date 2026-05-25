@@ -129,7 +129,7 @@ export default function AboutPage() {
       </section>
 
       {/* The Team / Leadership */}
-      <section className="bg-forest py-24 text-ivory overflow-hidden">
+      {/* <section className="bg-forest py-24 text-ivory overflow-hidden">
         <div className="max-w-[1600px] mx-auto px-6 md:px-10">
           <div className="text-center mb-20">
             <SectionLabel light className="justify-center mb-6">Hospitality Team</SectionLabel>
@@ -165,7 +165,7 @@ export default function AboutPage() {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Location Section */}
       <section className="py-24 bg-cream">

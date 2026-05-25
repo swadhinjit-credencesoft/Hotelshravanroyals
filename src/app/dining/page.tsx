@@ -15,7 +15,7 @@ export default function DiningPage() {
         label="Culinary Experience"
         title="Flavors of Karjat"
         tagline="From rustic local delicacies to multi-cuisine feasts, experience dining that satisfies the soul."
-        image='/images/exterior.jpeg'
+        image='/TheMainDiningHall.png'
       />
       
       {/* SEO Schema */}
