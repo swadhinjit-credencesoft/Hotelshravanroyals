@@ -30,6 +30,9 @@ const jost = Jost({
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://unwindkarjat.com'),
+  icons: {
+    icon: '/unwindkarjatlogo.png',
+  },
   title: {
     default: 'Unwind Karjat | Resort & Nature Retreat near Mumbai',
     template: '%s | Unwind Karjat'
