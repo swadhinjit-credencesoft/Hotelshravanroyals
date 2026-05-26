@@ -50,7 +50,7 @@ export default function TermsPage() {
           <section>
             <h2 className="font-serif text-2xl text-forest mb-4">Hotel Conduct</h2>
             <p>
-              Hotel Bella Casa is committed to providing a comfortable and private stay. We ask all guests to respect the comfort of other guests and follow the hotel's policies during their stay.
+              Hotel Bella Casa is committed to providing a comfortable and private stay. We ask all guests to respect the comfort of other guests and follow the hotel&apos;s policies during their stay.
             </p>
           </section>
 

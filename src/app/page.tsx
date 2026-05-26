@@ -74,7 +74,7 @@ export default function Home() {
                 "name": "How do I reach Hotel Bella Casa in Purnia?",
                 "acceptedAnswer": {
                   "@type": "Answer",
-                  "text": "Hotel Bella Casa is located at Suryalok Complex, opposite Vikass Market, near the Bus Stand in Purnia, Bihar. Purnea Junction Railway Station is 7.5 km away with easy rickshaw connectivity."
+                  "text": "Hotel Bella Casa is located at Suryalok Complex, opposite Vikass Market, near the Bus Stand in Purnia, Bihar. Purnea Junction Railway Station is 6.1 km away with easy rickshaw connectivity."
                 }
               }
             ]

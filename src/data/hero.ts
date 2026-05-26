@@ -17,7 +17,7 @@ export const heroSlides: HeroSlide[] = [
     tagline: 'Premium Stay in Purnia, Bihar',
     headline: 'Escape to Hotel Bella Casa',
     subheadline: 'A comfortable and budget-friendly stay located at Suryalok Complex, opposite Vikass Market in Purnia.',
-    image: 'https://bookonelocal.in/cdn/2026-04-09-070002480-1000080267.jpg',
+    image: 'https://bookonelocal.in/cdn/homeimg.avif',
     imageAlt: 'Hotel Bella Casa Exterior View',
     primaryCta: 'Book Now',
     primaryHref: 'https://bookone.io/Hotel-Bella-Casa?bookingEngine=true',
@@ -29,7 +29,7 @@ export const heroSlides: HeroSlide[] = [
     tagline: 'Convenient & Comfortable Stays',
     headline: 'Well-Maintained Accommodations',
     subheadline: 'Modern amenities including air conditioning, geyser, flat-screen TVs, and cozy bedding for business and leisure travelers.',
-    image: 'https://bookonelocal.in/cdn/2026-04-09-070007338-1000080265.jpg',
+    image: 'https://bookonelocal.in/cdn/IMG_3678.avif',
     imageAlt: 'Comfortable Deluxe Room Interior',
     primaryCta: 'Explore Rooms',
     primaryHref: '/rooms',
@@ -41,7 +41,7 @@ export const heroSlides: HeroSlide[] = [
     tagline: 'Heart of the City',
     headline: 'Prime Location & Connectivity',
     subheadline: 'Located opposite Vikass Market and near the Bus Stand with easy access to Purnea Junction Railway Station.',
-    image: 'https://bookonelocal.in/cdn/2026-04-09-070012393-1000080263.jpg',
+    image: 'https://bookonelocal.in/cdn/IMG_3725.avif',
     imageAlt: 'Hotel Entrance and Reception Area',
     primaryCta: 'Get Directions',
     primaryHref: '/contact',
@@ -53,7 +53,7 @@ export const heroSlides: HeroSlide[] = [
     tagline: 'Exquisite Amenities',
     headline: 'Free Wi-Fi & Dedicated Parking',
     subheadline: 'Enjoy high-speed internet connectivity, lift/elevator access, doctor on call, and local newspaper services during your stay.',
-    image: 'https://bookonelocal.in/cdn/2026-04-09-070017792-1000080277.jpg',
+    image: 'https://bookonelocal.in/cdn/IMG_3791.avif',
     imageAlt: 'Hotel Amenities and Facilities',
     primaryCta: 'Book Now',
     primaryHref: 'https://bookone.io/Hotel-Bella-Casa?bookingEngine=true',
@@ -63,7 +63,7 @@ export const heroSlides: HeroSlide[] = [
 ]
 
 export const heroStats = [
-  { value: '7.5 Km', label: 'From Purnea Junction' },
+  { value: '6.1 Km', label: 'From Purnea Junction' },
   { value: '4', label: 'Room Categories' },
   { value: '24/7', label: 'Room Service & Care' },
 ]

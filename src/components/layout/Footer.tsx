@@ -1,6 +1,7 @@
 'use client'
 
 import Link from 'next/link'
+import Image from 'next/image'
 import { Globe, Share2, Camera, MapPin, Phone, Mail, Clock } from 'lucide-react'
 import { siteConfig } from '@/data/site'
 
@@ -23,11 +24,22 @@ export default function Footer() {
         
           <div>
             <Link href="/" className="inline-block mb-4">
-              <div className="font-serif text-xl tracking-[0.18em] uppercase text-ivory">
-                Bella Casa
-              </div>
-              <div className="font-sans text-[9px] tracking-[0.28em] uppercase text-gold mt-0.5">
-                Hotel
+              <div className="flex items-center gap-3">
+                <Image
+                  src="/logo.avif"
+                  alt="Hotel Bella Casa Logo"
+                  width={40}
+                  height={40}
+                  className="h-10 w-10 object-contain rounded-sm"
+                />
+                <div className="flex flex-col leading-none">
+                  <div className="font-serif text-xl tracking-[0.18em] uppercase text-ivory">
+                    Bella Casa
+                  </div>
+                  <div className="font-sans text-[9px] tracking-[0.28em] uppercase text-gold mt-0.5">
+                    Hotel
+                  </div>
+                </div>
               </div>
             </Link>
             <p className="font-serif text-base italic text-ivory/50 mb-6 leading-relaxed max-w-[220px]">

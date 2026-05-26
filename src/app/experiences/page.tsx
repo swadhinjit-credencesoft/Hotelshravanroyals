@@ -112,7 +112,7 @@ export default function ExperiencesPage() {
                      <MapPin className="text-gold" size={24} />
                   </div>
                   <h3 className="font-display text-3xl italic text-forest mb-4">Puran Devi Temple</h3>
-                  <p className="font-serif text-taupe leading-relaxed mb-6 text-lg">One of the oldest and most important spiritual landmarks in Purnia, believed to be the origin of the city's name.</p>
+                  <p className="font-serif text-taupe leading-relaxed mb-6 text-lg">One of the oldest and most important spiritual landmarks in Purnia, believed to be the origin of the city&apos;s name.</p>
                   <div className="flex items-center gap-2 pt-6 border-t border-gold/10">
                     <span className="font-sans text-[10px] uppercase tracking-widest text-gold font-bold">10 mins drive</span>
                     <span className="w-1 h-1 rounded-full bg-gold/30" />

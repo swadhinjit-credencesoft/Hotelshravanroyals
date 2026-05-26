@@ -36,6 +36,11 @@ export const metadata: Metadata = {
   },
   description:
     'Hotel Bella Casa offers well-maintained rooms with essential amenities in Purnia, Bihar. Ideal for business and leisure travelers with easy access to local markets and transport.',
+  icons: {
+    icon: '/logo.avif',
+    shortcut: '/logo.avif',
+    apple: '/logo.avif',
+  },
   keywords: [
     'Hotel Bella Casa',
     'Purnia hotel',

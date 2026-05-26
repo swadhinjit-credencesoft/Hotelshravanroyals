@@ -3,6 +3,7 @@
 import { useState, useEffect } from 'react'
 import { motion, AnimatePresence, useScroll } from 'framer-motion'
 import Link from 'next/link'
+import Image from 'next/image'
 import { usePathname } from 'next/navigation'
 import { Menu, X } from 'lucide-react'
 import { siteConfig } from '@/data/site'
@@ -54,6 +55,14 @@ export default function Navbar() {
         <div className="max-w-[1600px] mx-auto px-6 md:px-10 h-20 flex items-center justify-between">
           {/* Logo */}
           <Link href="/" className="flex items-center gap-3 group focus-visible:ring-2 focus-visible:ring-gold rounded-sm">
+            <Image
+              src="/logo.avif"
+              alt="Hotel Bella Casa Logo"
+              width={40}
+              height={40}
+              className="h-10 w-10 object-contain rounded-sm"
+              priority
+            />
             <div className="flex flex-col leading-none">
               <span className={`font-serif text-lg md:text-xl tracking-[0.15em] uppercase transition-colors duration-300 ${scrolled || !isHome ? 'text-forest' : 'text-ivory'}`}>
                 Bella Casa
@@ -116,9 +125,18 @@ export default function Navbar() {
             transition={{ duration: 0.5, ease: [0.76, 0, 0.24, 1] }}
           >
             <div className="flex items-center justify-between px-6 h-20">
-              <span className="font-serif text-lg tracking-[0.18em] uppercase text-ivory">
-                Hotel Bella Casa
-              </span>
+              <Link href="/" onClick={() => setMobileOpen(false)} className="flex items-center gap-3">
+                <Image
+                  src="/logo.avif"
+                  alt="Hotel Bella Casa Logo"
+                  width={36}
+                  height={36}
+                  className="h-9 w-9 object-contain rounded-sm"
+                />
+                <span className="font-serif text-lg tracking-[0.18em] uppercase text-ivory">
+                  Hotel Bella Casa
+                </span>
+              </Link>
               <button
                 onClick={() => setMobileOpen(false)}
                 className="p-2 text-ivory/70 hover:text-gold"

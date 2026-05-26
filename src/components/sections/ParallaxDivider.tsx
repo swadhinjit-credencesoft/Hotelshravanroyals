@@ -59,7 +59,7 @@ export default function ParallaxDivider() {
         style={{ height: '130%', top: '-15%' }}
       >
         <Image
-          src='/images/exterior.jpeg'
+          src='https://bookonelocal.in/cdn/IMG_3809.avif'
           alt="Serene estate landscape at dusk"
           fill
           className="object-cover"

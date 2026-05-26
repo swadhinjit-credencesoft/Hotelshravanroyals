@@ -24,7 +24,7 @@ export default function HistorySection() {
           <div className="relative">
             <div className="relative aspect-[4/5] w-full max-w-md mx-auto z-10 overflow-hidden border border-gold/10">
               <Image
-                src='/images/exterior4.jpeg'
+                src='https://bookonelocal.in/cdn/IMG_3808.avif'
                 alt="Modern rustic interior at Hotel Bella Casa"
                 fill
                 className="object-cover grayscale hover:grayscale-0 transition-all duration-1000"
@@ -36,7 +36,7 @@ export default function HistorySection() {
               className="absolute -top-12 -right-8 w-64 aspect-square hidden lg:block z-20 border border-gold/20 overflow-hidden"
             >
                <Image
-                src='/images/exterior5.jpeg'
+                src='https://bookonelocal.in/cdn/IMG_3815.avif'
                 alt="Natural details at the retreat"
                 fill
                 className="object-cover"
@@ -48,7 +48,7 @@ export default function HistorySection() {
               className="absolute -bottom-16 -left-12 w-80 aspect-[3/2] hidden lg:block z-0 opacity-40 grayscale"
             >
                <Image
-                src='/images/exterior6.jpeg'
+                src='https://bookonelocal.in/cdn/IMG_3784.avif'
                 alt="Architecture sketches of Hotel Bella Casa"
                 fill
                 className="object-cover"
