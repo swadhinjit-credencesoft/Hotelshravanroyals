@@ -14,15 +14,15 @@ export default function CancellationPage() {
           __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "WebPage",
-            "@id": "https://hotelbellacasa.com/cancellation/#webpage",
-            "url": "https://hotelbellacasa.com/cancellation",
+            "@id": "https://hotelsuryabellacasa.com/cancellation/#webpage",
+            "url": "https://hotelsuryabellacasa.com/cancellation",
             "name": "Cancellation & Refund Policy | Hotel Bella Casa",
             "description": "Read the cancellation and refund policy guidelines of Hotel Bella Casa regarding direct booking reservation amendments, monsoon policies, and refunds.",
             "isPartOf": {
               "@type": "WebSite",
-              "@id": "https://hotelbellacasa.com/#website",
+              "@id": "https://hotelsuryabellacasa.com/#website",
               "name": "Hotel Bella Casa",
-              "url": "https://hotelbellacasa.com"
+              "url": "https://hotelsuryabellacasa.com"
             }
           })
         }}

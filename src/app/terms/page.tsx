@@ -14,15 +14,15 @@ export default function TermsPage() {
           __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "WebPage",
-            "@id": "https://hotelbellacasa.com/terms/#webpage",
-            "url": "https://hotelbellacasa.com/terms",
+            "@id": "https://hotelsuryabellacasa.com/terms/#webpage",
+            "url": "https://hotelsuryabellacasa.com/terms",
             "name": "Terms of Service & Booking Conditions | Hotel Bella Casa",
             "description": "Review the official terms of service, check-in schedules, lodging policies, and cancellation conditions for resort reservations at Hotel Bella Casa.",
             "isPartOf": {
               "@type": "WebSite",
-              "@id": "https://hotelbellacasa.com/#website",
+              "@id": "https://hotelsuryabellacasa.com/#website",
               "name": "Hotel Bella Casa",
-              "url": "https://hotelbellacasa.com"
+              "url": "https://hotelsuryabellacasa.com"
             }
           })
         }}

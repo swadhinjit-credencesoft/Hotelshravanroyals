@@ -4,12 +4,12 @@ export const metadata: Metadata = {
   title: 'Farm-to-Table Restaurant & BBQ in Purnia | Hotel Bella Casa',
   description: 'Savor exquisite Maharashtrian thalis, coastal BBQ, and international cuisines at our multi-cuisine dining hall. Custom fish & mutton on request.',
   alternates: {
-    canonical: 'https://hotelbellacasa.com/dining',
+    canonical: 'https://hotelsuryabellacasa.com/dining',
   },
   openGraph: {
     title: 'Farm-to-Table Restaurant & BBQ in Purnia | Hotel Bella Casa',
     description: 'Savor exquisite Maharashtrian thalis, coastal BBQ, and international cuisines at our multi-cuisine dining hall. Custom fish & mutton on request.',
-    url: 'https://hotelbellacasa.com/dining',
+    url: 'https://hotelsuryabellacasa.com/dining',
     type: 'website',
   },
   twitter: {

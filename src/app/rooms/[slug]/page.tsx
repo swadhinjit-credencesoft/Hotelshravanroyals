@@ -19,7 +19,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     title,
     description,
     alternates: {
-      canonical: `https://hotelbellacasa.com/rooms/${room.slug}`,
+      canonical: `https://hotelsuryabellacasa.com/rooms/${room.slug}`,
     },
     openGraph: {
       title,

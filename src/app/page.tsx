@@ -10,11 +10,11 @@ import TestimonialsSection from '@/components/sections/TestimonialsSection';
 import GallerySection from '@/components/sections/GallerySection';
 // import OffersSection from '@/components/sections/OffersSection';
 import AwardsMarquee from '@/components/sections/AwardsMarquee';
-import NewsletterSection from '@/components/sections/NewsletterSection';
+// import NewsletterSection from '@/components/sections/NewsletterSection';
 import HistorySection from '@/components/sections/HistorySection';
 import LuxuryAmenities from '@/components/sections/LuxuryAmenities';
 // import WellnessSection from '@/components/sections/WellnessSection';
-import ForestSection from '@/components/sections/ForestSection';
+// import ForestSection from '@/components/sections/ForestSection';
 import ArtOfStaySection from '@/components/sections/ArtOfStaySection';
 
 export default function Home() {
@@ -31,7 +31,7 @@ export default function Home() {
             "@type": "Hotel",
             "name": "Hotel Bella Casa",
             "description": "Hotel Bella Casa offers well-maintained rooms with essential amenities in Purnia, Bihar. Ideal for business and leisure travelers with easy access to local markets and transport.",
-            "url": "https://hotelbellacasa.com",
+            "url": "https://hotelsuryabellacasa.com",
             "address": {
               "@type": "PostalAddress",
               "streetAddress": "Suryalok Complex, Opposite Vikass Market, Near Bus Stand",
@@ -125,10 +125,10 @@ export default function Home() {
       {/* <OffersSection /> */}
 
       {/* Sustainability & Forest */}
-      <ForestSection />
+      {/* <ForestSection /> */}
 
       {/* Newsletter & Contact */}
-      <NewsletterSection />
+      {/* <NewsletterSection /> */}
 
       <Footer />
     </main>

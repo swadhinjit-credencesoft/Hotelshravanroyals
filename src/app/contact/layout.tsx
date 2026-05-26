@@ -4,12 +4,12 @@ export const metadata: Metadata = {
   title: 'Contact Concierge & Travel Directions | Hotel Bella Casa',
   description: 'Plan your nature getaway. Contact our dedicated concierge team for reservations, custom booking rates, and travel guides from Mumbai or Pune.',
   alternates: {
-    canonical: 'https://hotelbellacasa.com/contact',
+    canonical: 'https://hotelsuryabellacasa.com/contact',
   },
   openGraph: {
     title: 'Contact Concierge & Travel Directions | Hotel Bella Casa',
     description: 'Plan your nature getaway. Contact our dedicated concierge team for reservations, custom booking rates, and travel guides from Mumbai or Pune.',
-    url: 'https://hotelbellacasa.com/contact',
+    url: 'https://hotelsuryabellacasa.com/contact',
     type: 'website',
   },
   twitter: {

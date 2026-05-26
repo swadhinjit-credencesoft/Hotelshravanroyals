@@ -14,15 +14,15 @@ export default function PrivacyPage() {
           __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "WebPage",
-            "@id": "https://hotelbellacasa.com/privacy/#webpage",
-            "url": "https://hotelbellacasa.com/privacy",
+            "@id": "https://hotelsuryabellacasa.com/privacy/#webpage",
+            "url": "https://hotelsuryabellacasa.com/privacy",
             "name": "Privacy Policy | Hotel Bella Casa",
             "description": "Read the privacy policy guidelines of Hotel Bella Casa regarding data collection, storage, and customer reservation security protocols.",
             "isPartOf": {
               "@type": "WebSite",
-              "@id": "https://hotelbellacasa.com/#website",
+              "@id": "https://hotelsuryabellacasa.com/#website",
               "name": "Hotel Bella Casa",
-              "url": "https://hotelbellacasa.com"
+              "url": "https://hotelsuryabellacasa.com"
             }
           })
         }}

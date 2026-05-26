@@ -4,12 +4,12 @@ export const metadata: Metadata = {
   title: 'Book Your Stay | Hotel Bella Casa',
   description: 'Secure your room booking at Hotel Bella Casa in Purnia. Select dates and room type to book directly through our secure booking engine.',
   alternates: {
-    canonical: 'https://hotelbellacasa.com/reservations',
+    canonical: 'https://hotelsuryabellacasa.com/reservations',
   },
   openGraph: {
     title: 'Book Your Stay | Hotel Bella Casa',
     description: 'Secure your room booking at Hotel Bella Casa in Purnia. Select dates and room type to book directly through our secure booking engine.',
-    url: 'https://hotelbellacasa.com/reservations',
+    url: 'https://hotelsuryabellacasa.com/reservations',
     type: 'website',
   },
   twitter: {

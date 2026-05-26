@@ -4,12 +4,12 @@ export const metadata: Metadata = {
   title: 'Terms of Service & Booking Conditions | Hotel Bella Casa',
   description: 'Review the official terms of service, check-in schedules, lodging policies, and cancellation conditions for resort reservations at Hotel Bella Casa.',
   alternates: {
-    canonical: 'https://hotelbellacasa.com/terms',
+    canonical: 'https://hotelsuryabellacasa.com/terms',
   },
   openGraph: {
     title: 'Terms of Service & Booking Conditions | Hotel Bella Casa',
     description: 'Review the official terms of service, check-in schedules, lodging policies, and cancellation conditions for resort reservations at Hotel Bella Casa.',
-    url: 'https://hotelbellacasa.com/terms',
+    url: 'https://hotelsuryabellacasa.com/terms',
     type: 'website',
   },
   twitter: {

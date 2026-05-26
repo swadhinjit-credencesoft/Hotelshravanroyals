@@ -4,12 +4,12 @@ export const metadata: Metadata = {
   title: 'Purnia Travel Blog & Guides | Hotel Bella Casa',
   description: 'Discover local travel insights, itineraries, business trip guides, and city exploration tips in our official Purnia travel journal.',
   alternates: {
-    canonical: 'https://hotelbellacasa.com/blog',
+    canonical: 'https://hotelsuryabellacasa.com/blog',
   },
   openGraph: {
     title: 'Purnia Travel Blog & Guides | Hotel Bella Casa',
     description: 'Discover local travel insights, itineraries, business trip guides, and city exploration tips in our official Purnia travel journal.',
-    url: 'https://hotelbellacasa.com/blog',
+    url: 'https://hotelsuryabellacasa.com/blog',
     type: 'website',
   },
   twitter: {

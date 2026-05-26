@@ -1,8 +1,18 @@
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500;1,600&family=Playfair+Display:ital,wght@0,400;0,500;1,400;1,500&family=Jost:wght@300;400;500&display=swap');
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* ============================================
+   GLOBAL FONT STYLE OVERRIDE
+   Force Barlow normal (non-italic) on all elements.
+   Overrides Tailwind's .italic utility class globally.
+   ============================================ */
+*,
+*::before,
+*::after {
+  font-style: normal !important;
+}
 
 :root {
   --cream: #FBF7F0;
@@ -23,18 +33,43 @@
 
 * {
   box-sizing: border-box;
+  font-family: 'Barlow', sans-serif;
 }
 
 html {
   scroll-behavior: auto;
+  font-family: 'Barlow', sans-serif;
 }
 
 body {
+  font-family: 'Barlow', sans-serif;
+  font-weight: 400;
+  font-style: normal;
   background-color: var(--cream);
   color: var(--forest);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Barlow', sans-serif;
+  font-weight: 600;
+}
+
+p, span, a, li, label, button, input, textarea, select {
+  font-family: 'Barlow', sans-serif;
+  font-weight: 400;
+}
+
+.tangerine-title {
+  font-family: 'Tangerine', cursive;
+  font-weight: 700;
 }
 
 /* Custom scrollbar */
@@ -64,7 +99,7 @@ body {
   color: #1a1004;
   padding: 0.5rem 1rem;
   border-radius: 2px;
-  font-family: var(--font-jost), sans-serif;
+  font-family: 'Barlow', sans-serif;
   font-size: 13px;
   z-index: 9999;
   transition: top 0.2s;

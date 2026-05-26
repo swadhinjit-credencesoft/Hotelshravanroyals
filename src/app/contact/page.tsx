@@ -43,7 +43,7 @@ export default function ContactPage() {
               "latitude": 25.76889728,
               "longitude": 87.47058097
             },
-            "url": "https://hotelbellacasa.com/contact",
+            "url": "https://hotelsuryabellacasa.com/contact",
             "telephone": siteConfig.phone,
             "openingHoursSpecification": {
               "@type": "OpeningHoursSpecification",

@@ -4,12 +4,12 @@ export const metadata: Metadata = {
   title: 'Destination Weddings & Corporate Offsites | Hotel Bella Casa',
   description: 'Host beautiful forest weddings and strategic corporate offsite retreats near Pune and Mumbai. Premium lawns & modern corporate hubs for up to 250 guests.',
   alternates: {
-    canonical: 'https://hotelbellacasa.com/events',
+    canonical: 'https://hotelsuryabellacasa.com/events',
   },
   openGraph: {
     title: 'Destination Weddings & Corporate Offsites | Hotel Bella Casa',
     description: 'Host beautiful forest weddings and strategic corporate offsite retreats near Pune and Mumbai. Premium lawns & modern corporate hubs for up to 250 guests.',
-    url: 'https://hotelbellacasa.com/events',
+    url: 'https://hotelsuryabellacasa.com/events',
     type: 'website',
   },
   twitter: {

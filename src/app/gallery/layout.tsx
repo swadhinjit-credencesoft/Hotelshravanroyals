@@ -4,12 +4,12 @@ export const metadata: Metadata = {
   title: 'Resort Gallery & Virtual Walkthrough | Hotel Bella Casa',
   description: 'Browse photos of our stunning red brick cottages, infinity pool, and lush forest surroundings. Take a virtual walkthrough tour of our resort.',
   alternates: {
-    canonical: 'https://hotelbellacasa.com/gallery',
+    canonical: 'https://hotelsuryabellacasa.com/gallery',
   },
   openGraph: {
     title: 'Resort Gallery & Virtual Walkthrough | Hotel Bella Casa',
     description: 'Browse photos of our stunning red brick cottages, infinity pool, and lush forest surroundings. Take a virtual walkthrough tour of our resort.',
-    url: 'https://hotelbellacasa.com/gallery',
+    url: 'https://hotelsuryabellacasa.com/gallery',
     type: 'website',
   },
   twitter: {

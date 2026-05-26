@@ -35,9 +35,10 @@ const config: Config = {
         parchment: '#EDE0C4',
       },
       fontFamily: {
-        serif: ['var(--font-cormorant)', 'Georgia', 'serif'],
-        sans: ['var(--font-jost)', 'system-ui', 'sans-serif'],
-        display: ['var(--font-playfair)', 'Georgia', 'serif'],
+        serif: ['var(--font-barlow)', 'sans-serif'],
+        sans: ['var(--font-barlow)', 'system-ui', 'sans-serif'],
+        display: ['var(--font-barlow)', 'sans-serif'],
+        tangerine: ['var(--font-tangerine)', 'cursive'],
       },
       backgroundImage: {
         'gradient-warm': 'linear-gradient(135deg, #FBF7F0 0%, #F5EDD8 100%)',

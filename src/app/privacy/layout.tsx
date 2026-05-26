@@ -4,12 +4,12 @@ export const metadata: Metadata = {
   title: 'Privacy Policy | Lodge & Resort Stays | Hotel Bella Casa',
   description: 'Read the privacy policy guidelines of Hotel Bella Casa regarding data collection, storage, and customer reservation security protocols.',
   alternates: {
-    canonical: 'https://hotelbellacasa.com/privacy',
+    canonical: 'https://hotelsuryabellacasa.com/privacy',
   },
   openGraph: {
     title: 'Privacy Policy | Lodge & Resort Stays | Hotel Bella Casa',
     description: 'Read the privacy policy guidelines of Hotel Bella Casa regarding data collection, storage, and customer reservation security protocols.',
-    url: 'https://hotelbellacasa.com/privacy',
+    url: 'https://hotelsuryabellacasa.com/privacy',
     type: 'website',
   },
   twitter: {

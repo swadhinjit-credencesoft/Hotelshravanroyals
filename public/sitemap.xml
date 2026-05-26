@@ -1,83 +1,83 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://hotelbellacasa.com</loc>
+    <loc>https://hotelsuryabellacasa.com/</loc>
     <priority>1.0</priority>
     <changefreq>weekly</changefreq>
   </url>
   <url>
-    <loc>https://hotelbellacasa.com/about</loc>
+    <loc>https://hotelsuryabellacasa.com//about</loc>
     <priority>0.8</priority>
     <changefreq>weekly</changefreq>
   </url>
   <url>
-    <loc>https://hotelbellacasa.com/rooms</loc>
+    <loc>https://hotelsuryabellacasa.com//rooms</loc>
     <priority>0.8</priority>
     <changefreq>weekly</changefreq>
   </url>
   <url>
-    <loc>https://hotelbellacasa.com/dining</loc>
+    <loc>https://hotelsuryabellacasa.com//dining</loc>
     <priority>0.8</priority>
     <changefreq>weekly</changefreq>
   </url>
   <url>
-    <loc>https://hotelbellacasa.com/experiences</loc>
+    <loc>https://hotelsuryabellacasa.com/experiences</loc>
     <priority>0.8</priority>
     <changefreq>weekly</changefreq>
   </url>
   <url>
-    <loc>https://hotelbellacasa.com/events</loc>
+    <loc>https://hotelsuryabellacasa.com/events</loc>
     <priority>0.8</priority>
     <changefreq>weekly</changefreq>
   </url>
   <url>
-    <loc>https://hotelbellacasa.com/gallery</loc>
+    <loc>https://hotelsuryabellacasa.com/gallery</loc>
     <priority>0.8</priority>
     <changefreq>weekly</changefreq>
   </url>
   <url>
-    <loc>https://hotelbellacasa.com/contact</loc>
+    <loc>https://hotelsuryabellacasa.com/contact</loc>
     <priority>0.8</priority>
     <changefreq>weekly</changefreq>
   </url>
   <url>
-    <loc>https://hotelbellacasa.com/reservations</loc>
+    <loc>https://hotelsuryabellacasa.com/reservations</loc>
     <priority>0.8</priority>
     <changefreq>weekly</changefreq>
   </url>
   <url>
-    <loc>https://hotelbellacasa.com/privacy</loc>
+    <loc>https://hotelsuryabellacasa.com/privacy</loc>
     <priority>0.8</priority>
     <changefreq>weekly</changefreq>
   </url>
   <url>
-    <loc>https://hotelbellacasa.com/terms</loc>
+    <loc>https://hotelsuryabellacasa.com/terms</loc>
     <priority>0.8</priority>
     <changefreq>weekly</changefreq>
   </url>
   <url>
-    <loc>https://hotelbellacasa.com/cancellation</loc>
+    <loc>https://hotelsuryabellacasa.com/cancellation</loc>
     <priority>0.8</priority>
     <changefreq>weekly</changefreq>
   </url>
   <!-- Room Routes -->
   <url>
-    <loc>https://hotelbellacasa.com/rooms/super-deluxe-room</loc>
+    <loc>https://hotelsuryabellacasa.com/rooms/super-deluxe-room</loc>
     <priority>0.9</priority>
     <changefreq>weekly</changefreq>
   </url>
   <url>
-    <loc>https://hotelbellacasa.com/rooms/deluxe-ac-room</loc>
+    <loc>https://hotelsuryabellacasa.com/rooms/deluxe-ac-room</loc>
     <priority>0.9</priority>
     <changefreq>weekly</changefreq>
   </url>
   <url>
-    <loc>https://hotelbellacasa.com/rooms/deluxe-non-ac-room</loc>
+    <loc>https://hotelsuryabellacasa.com/rooms/deluxe-non-ac-room</loc>
     <priority>0.9</priority>
     <changefreq>weekly</changefreq>
   </url>
   <url>
-    <loc>https://hotelbellacasa.com/rooms/standard-non-ac-room</loc>
+    <loc>https://hotelsuryabellacasa.com/rooms/standard-non-ac-room</loc>
     <priority>0.9</priority>
     <changefreq>weekly</changefreq>
   </url>

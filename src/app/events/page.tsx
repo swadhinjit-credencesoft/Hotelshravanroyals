@@ -40,7 +40,7 @@ export default function EventsPage() {
               "@type": "EventVenue",
               "name": "Hotel Bella Casa Event Spaces",
               "description": "Premium outdoor lawns, corporate hub, and poolside venues for weddings, parties, and corporate retreats in Purnia.",
-              "url": "https://hotelbellacasa.com/events",
+              "url": "https://hotelsuryabellacasa.com/events",
               "address": {
                 "@type": "PostalAddress",
                 "streetAddress": "Suryalok Complex, Opposite Vikass Market, Near Bus Stand",

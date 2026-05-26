@@ -1,35 +1,11 @@
 import type { Metadata } from 'next'
-import { Playfair_Display, Cormorant_Garamond, Jost } from 'next/font/google'
 import './globals.css'
 import LenisProvider from '@/components/providers/LenisProvider'
 import CustomCursor from '@/components/ui/CustomCursor'
 import PageTransition from '@/components/providers/PageTransition'
 
-const playfair = Playfair_Display({
-  subsets: ['latin'],
-  weight: ['400', '500'],
-  style: ['normal', 'italic'],
-  variable: '--font-playfair',
-  display: 'swap',
-})
-
-const cormorant = Cormorant_Garamond({
-  subsets: ['latin'],
-  weight: ['300', '400', '500', '600'],
-  style: ['normal', 'italic'],
-  variable: '--font-cormorant',
-  display: 'swap',
-})
-
-const jost = Jost({
-  subsets: ['latin'],
-  weight: ['300', '400', '500'],
-  variable: '--font-jost',
-  display: 'swap',
-})
-
 export const metadata: Metadata = {
-  metadataBase: new URL('https://hotelbellacasa.com'),
+  metadataBase: new URL('https://hotelsuryabellacasa.com'),
   title: {
     default: 'Hotel Bella Casa | Comfortable Stay in Purnia',
     template: '%s | Hotel Bella Casa'
@@ -68,7 +44,7 @@ export const metadata: Metadata = {
     title: 'Hotel Bella Casa | Comfortable Stay in Purnia',
     description:
       'Hotel Bella Casa offers well-maintained rooms with essential amenities in Purnia, Bihar. Ideal for business and leisure travelers with easy access to local markets and transport.',
-    url: 'https://hotelbellacasa.com',
+    url: 'https://hotelsuryabellacasa.com',
     siteName: 'Hotel Bella Casa',
     type: 'website',
     locale: 'en_US',
@@ -90,15 +66,17 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html
-      lang="en"
-      className={`${playfair.variable} ${cormorant.variable} ${jost.variable}`}
-    >
+    <html lang="en">
       <head>
-        
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&family=Tangerine:wght@700&display=swap"
+          rel="stylesheet"
+        />
         <meta name="theme-color" content="#FBF7F0" />
       </head>
-      <body>
+      <body className="antialiased">
         <CustomCursor />
         <a href="#main-content" className="skip-to-main">
           Skip to main content
