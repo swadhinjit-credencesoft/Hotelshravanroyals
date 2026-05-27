@@ -1,22 +1,47 @@
 import type { Metadata } from 'next'
 import './globals.css'
+
+import { Barlow, Tangerine } from 'next/font/google'
+
 import LenisProvider from '@/components/providers/LenisProvider'
 import CustomCursor from '@/components/ui/CustomCursor'
 import PageTransition from '@/components/providers/PageTransition'
+import Breadcrumbs from '@/components/ui/Breadcrumbs'
+
+import { MessageCircle } from 'lucide-react'
+
+const barlow = Barlow({
+  subsets: ['latin'],
+  weight: ['300', '400', '500', '600', '700'],
+  style: ['normal', 'italic'],
+  display: 'swap',
+  variable: '--font-barlow',
+})
+
+const tangerine = Tangerine({
+  subsets: ['latin'],
+  weight: ['700'],
+  display: 'swap',
+  variable: '--font-tangerine',
+})
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://hotelsuryabellacasa.com'),
+
   title: {
     default: 'Hotel Bella Casa | Comfortable Stay in Purnia',
-    template: '%s | Hotel Bella Casa'
+    template: '%s | Hotel Bella Casa',
   },
+
   description:
     'Hotel Bella Casa offers well-maintained rooms with essential amenities in Purnia, Bihar. Ideal for business and leisure travelers with easy access to local markets and transport.',
+
   icons: {
     icon: '/suryabellacasalogo.png',
     shortcut: '/suryabellacasalogo.png',
     apple: '/suryabellacasalogo.png',
   },
+
   keywords: [
     'Hotel Bella Casa',
     'Purnia hotel',
@@ -26,9 +51,11 @@ export const metadata: Metadata = {
     'Bihar hotel',
     'Purnia accommodation',
   ],
+
   alternates: {
     canonical: '/',
   },
+
   robots: {
     index: true,
     follow: true,
@@ -40,6 +67,7 @@ export const metadata: Metadata = {
       'max-snippet': -1,
     },
   },
+
   openGraph: {
     title: 'Hotel Bella Casa | Comfortable Stay in Purnia',
     description:
@@ -49,6 +77,7 @@ export const metadata: Metadata = {
     type: 'website',
     locale: 'en_US',
   },
+
   twitter: {
     card: 'summary_large_image',
     title: 'Hotel Bella Casa | Comfortable Stay in Purnia',
@@ -56,9 +85,6 @@ export const metadata: Metadata = {
       'Hotel Bella Casa offers well-maintained rooms with essential amenities in Purnia, Bihar. Ideal for business and leisure travelers with easy access to local markets and transport.',
   },
 }
-
-import Breadcrumbs from '@/components/ui/Breadcrumbs'
-import { MessageCircle } from 'lucide-react'
 
 export default function RootLayout({
   children,
@@ -68,33 +94,34 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&family=Tangerine:wght@700&display=swap"
-          rel="stylesheet"
-        />
         <meta name="theme-color" content="#FBF7F0" />
       </head>
-      <body className="antialiased">
+
+      <body
+        className={`${barlow.variable} ${tangerine.variable} antialiased`}
+      >
         <CustomCursor />
+
         <a href="#main-content" className="skip-to-main">
           Skip to main content
         </a>
+
         <LenisProvider>
           <PageTransition>
             <Breadcrumbs />
+
             {children}
-            
+
             {/* Global Floating WhatsApp Button */}
-            <a 
-              href="https://wa.me/9835923601" 
-              target="_blank" 
+            <a
+              href="https://wa.me/9835923601"
+              target="_blank"
               rel="noreferrer"
               className="fixed bottom-8 right-8 z-[100] bg-green-500 text-white p-4 rounded-full shadow-2xl hover:bg-green-600 hover:scale-110 transition-all duration-300 group"
               aria-label="Chat on WhatsApp"
             >
               <MessageCircle size={28} />
+
               <span className="absolute right-full mr-4 top-1/2 -translate-y-1/2 bg-white text-forest px-4 py-2 rounded-sm text-[10px] uppercase tracking-widest font-bold opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap shadow-xl border border-gold/10">
                 How can we help?
               </span>
