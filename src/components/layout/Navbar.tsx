@@ -13,7 +13,7 @@ import { BOOKING_ENGINE_URL } from '@/lib/hotelmate'
 const navLinks = [
   { label: 'Home', href: '/' },
   { label: 'Rooms', href: '/rooms' },
-  { label: 'Experiences', href: '/experiences' },
+  // { label: 'Experiences', href: '/experiences' },
   { label: 'Events', href: '/events' },
   { label: 'Dining', href: '/dining' },
   { label: 'About', href: '/about' },
@@ -56,7 +56,7 @@ export default function Navbar() {
           {/* Logo */}
           <Link href="/" className="flex items-center gap-3 group focus-visible:ring-2 focus-visible:ring-gold rounded-sm">
             <Image
-              src="/logo.avif"
+              src="/suryabellacasalogo.png"
               alt="Hotel Bella Casa Logo"
               width={40}
               height={40}
@@ -127,7 +127,7 @@ export default function Navbar() {
             <div className="flex items-center justify-between px-6 h-20">
               <Link href="/" onClick={() => setMobileOpen(false)} className="flex items-center gap-3">
                 <Image
-                  src="/logo.avif"
+                  src="/suryabellacasalogo.png"
                   alt="Hotel Bella Casa Logo"
                   width={36}
                   height={36}

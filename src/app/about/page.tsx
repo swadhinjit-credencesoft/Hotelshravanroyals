@@ -32,7 +32,7 @@ export default function AboutPage() {
             "name": "Hotel Bella Casa",
             "description": "Premium boutique hotel in Purnia offering modern rooms, Bihari cuisine, and warm hospitality.",
             "url": "https://hotelsuryabellacasa.com",
-            "logo": "https://hotelsuryabellacasa.com/logo.avif",
+            "logo": "https://hotelsuryabellacasa.com/suryabellacasalogo.png",
             "foundingDate": "2019",
             "address": {
               "@type": "PostalAddress",

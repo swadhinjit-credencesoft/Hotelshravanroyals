@@ -83,9 +83,9 @@ function ExperienceCard({
         <div className="absolute top-4 left-4">
             <div className="bg-forest/80 backdrop-blur-sm px-3 py-1 border border-ivory/10 flex items-center gap-2">
                 <span className="text-gold">{getSeasonIcon(experience.season)}</span>
-                <span className="font-sans text-[9px] uppercase tracking-widest text-ivory/80">
+                {/* <span className="font-sans text-[9px] uppercase tracking-widest text-ivory/80">
                     {experience.season}
-                </span>
+                </span> */}
             </div>
         </div>
 
