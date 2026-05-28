@@ -19,7 +19,7 @@ export default function AboutPage() {
         label="Our Story"
         title="Rooted in Nature"
         tagline="Founded on the belief that true luxury is reconnecting with the wild. Discover the vision behind Hotel Bella Casa."
-        image='https://bookonelocal.in/cdn/IMG_3808.avif'
+        image='https://bookonelocal.in/cdn/IMG_7429.mp4'
       />
 
       {/* Organization Schema for SEO (E-E-A-T) */}

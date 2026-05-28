@@ -5,7 +5,7 @@ import Footer from '@/components/layout/Footer';
 import SectionLabel from '@/components/ui/SectionLabel';
 import GoldDivider from '@/components/ui/GoldDivider';
 import { siteConfig } from '@/data/site';
-import { MapPin, Phone, Mail, Clock, Train, Car, MessageCircle } from 'lucide-react';
+import { MapPin, Phone, Mail, Train, Car, MessageCircle } from 'lucide-react';
 
 export default function ContactPage() {
   return (
@@ -156,14 +156,14 @@ export default function ContactPage() {
                   </div>
                 </div>
 
-                <div className="bg-[#fdfcf8] p-8 border border-gold/20 rounded-sm shadow-sm">
+                {/* <div className="bg-[#fdfcf8] p-8 border border-gold/20 rounded-sm shadow-sm">
                   <h4 className="font-sans text-[11px] uppercase tracking-widest text-gold mb-4 flex items-center gap-2"><Clock size={14} /> Arrival Essentials</h4>
                   <ul className="font-serif text-sm text-taupe space-y-3">
                     <li className="flex gap-3"><span className="text-gold">âœ”</span> Secure Valet Parking (Complimentary)</li>
                     <li className="flex gap-3"><span className="text-gold">âœ”</span> Electric Vehicle Charging Points</li>
                     <li className="flex gap-3"><span className="text-gold">âœ”</span> 24/7 Concierge for Route Guidance</li>
                   </ul>
-                </div>
+                </div> */}
               </div>
             </div>
           </div>

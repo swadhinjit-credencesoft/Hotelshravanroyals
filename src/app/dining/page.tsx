@@ -15,7 +15,7 @@ export default function DiningPage() {
         label="Culinary Experience"
         title="Flavors of Purnia"
         tagline="From rustic local delicacies to multi-cuisine feasts, experience dining that satisfies the soul."
-        image='https://bookonelocal.in/cdn/IMG_3784.avif'
+        image='https://bookonelocal.in/cdn/IMG_7424.mp4'
       />
       
       {/* SEO Schema */}

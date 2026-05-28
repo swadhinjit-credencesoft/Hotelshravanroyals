@@ -27,7 +27,7 @@ export default function EventsPage() {
         label="Events & Celebrations"
         title="Unforgettable Gatherings"
         tagline="From intimate forest weddings to strategic corporate retreats, we provide the perfect backdrop for your significant moments."
-        image='/images/exterior2.jpeg'
+        image='https://bookonelocal.in/cdn/IMG_7431.mp4'
       />
 
       {/* SEO Schema */}
