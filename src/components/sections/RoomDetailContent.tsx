@@ -14,6 +14,8 @@ interface RoomDetailContentProps {
 }
 
 export default function RoomDetailContent({ room }: RoomDetailContentProps) {
+  const roomImages = room.images.length > 0 ? room.images : [room.image];
+
   return (
     <main className="bg-cream min-h-screen">
       <Navbar />
@@ -83,29 +85,23 @@ export default function RoomDetailContent({ room }: RoomDetailContentProps) {
              <div className="space-y-8">
                 <div className="relative aspect-[4/3] overflow-hidden border border-gold/10">
                    <Image 
-                     src={room.image} 
+                     src={roomImages[0]} 
                      alt={`${room.name} detail 1`} 
                      fill 
                      className="object-cover"
                    />
                 </div>
-                <div className="grid grid-cols-2 gap-8">
-                   <div className="relative aspect-square overflow-hidden border border-gold/10">
-                      <Image 
-                        src='/images/exterior2.jpeg' 
-                        alt={`${room.name} detail 2`} 
-                        fill 
-                        className="object-cover"
-                      />
-                   </div>
-                   <div className="relative aspect-square overflow-hidden border border-gold/10">
-                      <Image 
-                        src='/images/exterior3.jpeg' 
-                        alt={`${room.name} detail 3`} 
-                        fill 
-                        className="object-cover"
-                      />
-                   </div>
+                <div className="flex gap-4 overflow-x-auto pb-2">
+                   {roomImages.slice(1).map((image, index) => (
+                     <div key={image} className="relative h-40 w-56 flex-shrink-0 overflow-hidden border border-gold/10">
+                        <Image 
+                          src={image} 
+                          alt={`${room.name} detail ${index + 2}`} 
+                          fill 
+                          className="object-cover"
+                        />
+                     </div>
+                   ))}
                 </div>
              </div>
           </div>

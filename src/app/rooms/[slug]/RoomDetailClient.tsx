@@ -47,6 +47,13 @@ interface RoomDetailClientProps {
 
 export default function RoomDetailClient({ room, otherRooms }: RoomDetailClientProps) {
   const [isLightboxOpen, setIsLightboxOpen] = useState(false)
+  const [selectedImageIndex, setSelectedImageIndex] = useState(0)
+  const roomImages = room.images.length > 0 ? room.images : [room.image]
+  const selectedImage = roomImages[selectedImageIndex] ?? room.image
+
+  useEffect(() => {
+    setSelectedImageIndex(0)
+  }, [room.slug])
 
   // Fetch live price from API for the header "Starting from" display
   const { prices: livePrices, loading: headerPriceLoading } = useLivePrices()
@@ -60,7 +67,7 @@ export default function RoomDetailClient({ room, otherRooms }: RoomDetailClientP
     '@type': 'HotelRoom',
     'name': room.name,
     'description': room.description,
-    'image': room.image,
+    'image': roomImages,
     'occupancy': {
       '@type': 'QuantitativeValue',
       'value': room.guests
@@ -102,8 +109,8 @@ export default function RoomDetailClient({ room, otherRooms }: RoomDetailClientP
               className="relative w-full h-full max-w-6xl max-h-[80vh]"
             >
               <Image
-                src={room.image}
-                alt={room.imageAlt}
+                src={selectedImage}
+                alt={`${room.name} image ${selectedImageIndex + 1}`}
                 fill
                 className="object-contain"
                 sizes="100vw"
@@ -127,23 +134,55 @@ export default function RoomDetailClient({ room, otherRooms }: RoomDetailClientP
       <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-12 gap-12 pb-24">
         {/* Left Column: Content */}
         <div className="lg:col-span-8">
-          {/* Hero Image / Gallery Trigger */}
-          <div 
-            className="relative aspect-[16/9] w-full overflow-hidden rounded-sm mb-12 group cursor-zoom-in shadow-2xl"
-            onClick={() => setIsLightboxOpen(true)}
-          >
-            <Image
-              src={room.image}
-              alt={room.imageAlt}
-              fill
-              className="object-cover transition-transform duration-1000 group-hover:scale-105"
-              priority
-              sizes="(max-w-1024px) 100vw, 800px"
-            />
-            <div className="absolute inset-0 bg-black/10 group-hover:bg-black/0 transition-colors duration-500" />
-            <div className="absolute bottom-6 right-6 bg-white/10 backdrop-blur-md border border-white/20 px-4 py-2 rounded-sm text-white font-sans text-[10px] uppercase tracking-widest opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-              Click to Enlarge
+          <div className="mb-12">
+            <div
+              className="relative aspect-[16/9] w-full overflow-hidden rounded-sm group cursor-zoom-in shadow-2xl"
+              onClick={() => setIsLightboxOpen(true)}
+            >
+              <Image
+                src={selectedImage}
+                alt={`${room.name} image ${selectedImageIndex + 1}`}
+                fill
+                className="object-cover transition-transform duration-1000 group-hover:scale-105"
+                priority
+                sizes="(max-width: 1024px) 100vw, 800px"
+              />
+              <div className="absolute inset-0 bg-black/10 group-hover:bg-black/0 transition-colors duration-500" />
+              <div className="absolute bottom-6 right-6 bg-white/10 backdrop-blur-md border border-white/20 px-4 py-2 rounded-sm text-white font-sans text-[10px] uppercase tracking-widest opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                Click to Enlarge
+              </div>
             </div>
+
+            {roomImages.length > 1 && (
+              <div
+                className="mt-4 flex gap-3 overflow-x-auto pb-2"
+                style={{ scrollSnapType: 'x mandatory', msOverflowStyle: 'none', scrollbarWidth: 'thin' }}
+                aria-label={`${room.name} image gallery`}
+              >
+                {roomImages.map((image, index) => (
+                  <button
+                    key={image}
+                    type="button"
+                    onClick={() => setSelectedImageIndex(index)}
+                    className={`relative h-24 w-36 flex-shrink-0 overflow-hidden rounded-sm border transition-all ${
+                      selectedImageIndex === index
+                        ? 'border-gold shadow-md'
+                        : 'border-gold/10 opacity-75 hover:opacity-100 hover:border-gold/50'
+                    }`}
+                    style={{ scrollSnapAlign: 'start' }}
+                    aria-label={`Show ${room.name} image ${index + 1}`}
+                  >
+                    <Image
+                      src={image}
+                      alt={`${room.name} thumbnail ${index + 1}`}
+                      fill
+                      className="object-cover"
+                      sizes="144px"
+                    />
+                  </button>
+                ))}
+              </div>
+            )}
           </div>
 
           <div className="flex flex-wrap items-center justify-between gap-6 mb-8 border-b border-gold/10 pb-8">

@@ -12,6 +12,7 @@ export interface Room {
   category: string
   view: string
   image: string
+  images: string[]
   imageAlt: string
   amenities: string[]
   featured: boolean
@@ -65,7 +66,10 @@ export function mapHotelMateRoom(room: HotelRoom): Room {
   const description = stripHtml(room.description)
   const amenities = room.roomFacilities?.map((facility) => stripHtml(facility.name)).filter(Boolean) ?? []
   const category = name.replace(/\s*room\s*$/i, '').trim() || name
-  const firstImage = room.imageList?.find((image) => image.url)?.url ?? ''
+  const images = Array.from(
+    new Set(room.imageList?.map((image) => image.url).filter(Boolean) ?? [])
+  )
+  const firstImage = images[0] ?? ''
 
   return {
     id: String(room.id),
@@ -80,6 +84,7 @@ export function mapHotelMateRoom(room: HotelRoom): Room {
     category,
     view: 'Hotel View',
     image: firstImage,
+    images,
     imageAlt: `${name} at Hotel Bella Casa`,
     amenities,
     featured: true,
