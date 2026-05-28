@@ -52,25 +52,17 @@ export default function Navbar() {
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
       >
-        <div className="max-w-[1600px] mx-auto px-6 md:px-10 h-20 flex items-center justify-between">
+        <div className="max-w-[1600px] mx-auto px-6 md:px-10 h-24 flex items-center justify-between">
           {/* Logo */}
           <Link href="/" className="flex items-center gap-3 group focus-visible:ring-2 focus-visible:ring-gold rounded-sm">
             <Image
               src="/suryabellacasalogo.png"
               alt="Hotel Bella Casa Logo"
-              width={40}
-              height={40}
-              className="h-10 w-10 object-contain rounded-sm"
+              width={150}
+              height={88}
+              className="h-14 md:h-16 w-auto object-contain"
               priority
             />
-            <div className="flex flex-col leading-none">
-              <span className={`font-serif text-lg md:text-xl tracking-[0.15em] uppercase transition-colors duration-300 ${scrolled || !isHome ? 'text-forest' : 'text-ivory'}`}>
-                Bella Casa
-              </span>
-              <span className={`font-sans text-[9px] tracking-[0.3em] uppercase mt-1 transition-colors duration-300 ${scrolled || !isHome ? 'text-gold' : 'text-gold-light'}`}>
-                HOTEL
-              </span>
-            </div>
           </Link>
  
           {/* Desktop Nav */}
@@ -124,18 +116,15 @@ export default function Navbar() {
             exit={{ opacity: 0, x: '100%' }}
             transition={{ duration: 0.5, ease: [0.76, 0, 0.24, 1] }}
           >
-            <div className="flex items-center justify-between px-6 h-20">
+            <div className="flex items-center justify-between px-6 h-24">
               <Link href="/" onClick={() => setMobileOpen(false)} className="flex items-center gap-3">
                 <Image
                   src="/suryabellacasalogo.png"
                   alt="Hotel Bella Casa Logo"
-                  width={36}
-                  height={36}
-                  className="h-9 w-9 object-contain rounded-sm"
+                  width={128}
+                  height={75}
+                  className="h-12 w-auto object-contain"
                 />
-                <span className="font-serif text-lg tracking-[0.18em] uppercase text-ivory">
-                  Hotel Bella Casa
-                </span>
               </Link>
               <button
                 onClick={() => setMobileOpen(false)}

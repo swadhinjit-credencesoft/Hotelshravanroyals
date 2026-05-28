@@ -167,7 +167,7 @@ export default function RoomDetailClient({ room, otherRooms }: RoomDetailClientP
               ) : (
                 <div className="flex flex-col items-end gap-1">
                   <p className="text-3xl font-serif text-forest">
-                    â‚¹{headerPrice.toLocaleString('en-IN')}
+                    ₹{headerPrice.toLocaleString('en-IN')}
                     <span className="text-sm font-sans text-taupe/60 ml-1">/ night</span>
                   </p>
                   {isHeaderLive && (
@@ -241,7 +241,7 @@ export default function RoomDetailClient({ room, otherRooms }: RoomDetailClientP
             <div className="space-y-4">
               {[
                 { title: 'Check-in & Check-out', content: 'Check-in: 1:00 PM | Check-out: 11:00 AM' },
-                { title: 'Extra Bed Policy', content: 'Available on request for an additional charge of â‚¹1,500 per night.' },
+                { title: 'Extra Bed Policy', content: 'Available on request for an additional charge of ₹1,500 per night.' },
                 { title: 'Cancellation Policy', content: 'Free cancellation up to 48 hours before arrival. 100% charge for late cancellations.' }
               ].map((policy, i) => (
                 <div key={i} className="border-b border-gold/10 pb-4">
@@ -438,7 +438,7 @@ function BookingSidebar({ room }: { room: Room }) {
               <span className="text-gold font-sans text-xs animate-pulse">Checking live rate...</span>
             ) : isAvailable ? (
               <div className="flex flex-col items-end">
-                <span className="font-serif text-xl text-gold">â‚¹{(livePrice || room.price).toLocaleString('en-IN')}</span>
+                <span className="font-serif text-xl text-gold">₹{(livePrice || room.price).toLocaleString('en-IN')}</span>
                 {livePrice && (
                   <span className="text-[9px] uppercase tracking-widest text-gold/80 bg-gold/10 px-1.5 py-0.5 rounded-sm font-sans mt-1 flex items-center gap-1">
                   -- Live Rate
