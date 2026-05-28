@@ -1,5 +1,5 @@
 'use client'
-
+import Link from 'next/link'
 import { useState, useEffect, useRef, useCallback } from 'react'
 import Image from 'next/image'
 import {
@@ -248,29 +248,31 @@ export default function HeroSection() {
 
           {/* CTA row */}
           <div className="flex flex-wrap gap-5">
-            <motion.a
-              href={slide.primaryHref}
-              className="group inline-flex items-center gap-2 bg-gold text-[#1a1004] font-sans text-[12px] uppercase tracking-[0.16em] px-10 py-4 rounded-sm hover:bg-gold-light transition-all duration-300"
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 1.7 }}
-              whileHover={{ y: -2 }}
-            >
-              {slide.primaryCta}
-              <ArrowRight
-                size={14}
-                className="transition-transform duration-300 group-hover:translate-x-1"
-              />
-            </motion.a>
-            <motion.a
-              href={slide.secondaryHref}
-              className="inline-flex items-center gap-2 border border-gold/50 text-ivory font-sans text-[12px] uppercase tracking-[0.16em] px-10 py-4 rounded-sm hover:bg-gold/10 hover:border-gold transition-all duration-300"
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 1.85 }}
-            >
-              {slide.secondaryCta}
-            </motion.a>
+          <Link href={slide.primaryHref}>
+  <motion.div
+    className="group inline-flex items-center gap-2 bg-gold text-[#1a1004] font-sans text-[12px] uppercase tracking-[0.16em] px-10 py-4 rounded-sm hover:bg-gold-light transition-all duration-300"
+    initial={{ opacity: 0, y: 20 }}
+    animate={{ opacity: 1, y: 0 }}
+    transition={{ duration: 0.6, delay: 1.7 }}
+    whileHover={{ y: -2 }}
+  >
+    {slide.primaryCta}
+    <ArrowRight
+      size={14}
+      className="transition-transform duration-300 group-hover:translate-x-1"
+    />
+  </motion.div>
+</Link>
+           <Link href={slide.secondaryHref}>
+  <motion.div
+    className="inline-flex items-center gap-2 border border-gold/50 text-ivory font-sans text-[12px] uppercase tracking-[0.16em] px-10 py-4 rounded-sm hover:bg-gold/10 hover:border-gold transition-all duration-300"
+    initial={{ opacity: 0, y: 20 }}
+    animate={{ opacity: 1, y: 0 }}
+    transition={{ duration: 0.6, delay: 1.85 }}
+  >
+    {slide.secondaryCta}
+  </motion.div>
+</Link>
           </div>
         </motion.div>
 
