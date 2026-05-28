@@ -5,7 +5,8 @@ import DiningSection from '@/components/sections/DiningSection';
 import CinematicHero from '@/components/ui/CinematicHero';
 import SectionLabel from '@/components/ui/SectionLabel';
 import GoldDivider from '@/components/ui/GoldDivider';
-import { Coffee, Flame, UtensilsCrossed } from 'lucide-react';
+import { Coffee } from 'lucide-react';
+// import { Coffee, Flame, UtensilsCrossed } from 'lucide-react';
 
 export default function DiningPage() {
   return (
@@ -66,7 +67,7 @@ export default function DiningPage() {
       </section>
 
       {/* Meal Plans */}
-      <section className="py-24 bg-white border-y border-gold/10">
+      {/* <section className="py-24 bg-white border-y border-gold/10">
         <div className="max-w-[1200px] mx-auto px-6 md:px-10">
           <div className="text-center mb-16">
             <SectionLabel className="justify-center mb-6">Dining Packages</SectionLabel>
@@ -95,7 +96,7 @@ export default function DiningPage() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Photo Gallery - Ambient Photography */}
       <section className="py-24 bg-cream">
