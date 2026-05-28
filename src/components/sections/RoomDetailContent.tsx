@@ -1,6 +1,6 @@
 'use client';
 
-import { rooms } from '@/data/rooms';
+import { Room } from '@/lib/rooms';
 import Navbar from '@/components/layout/Navbar';
 import Footer from '@/components/layout/Footer';
 import CinematicHero from '@/components/ui/CinematicHero';
@@ -10,7 +10,7 @@ import { CheckCircle2, ArrowRight } from 'lucide-react';
 import Image from 'next/image';
 
 interface RoomDetailContentProps {
-  room: typeof rooms[0];
+  room: Room;
 }
 
 export default function RoomDetailContent({ room }: RoomDetailContentProps) {

@@ -8,6 +8,7 @@ import Navbar from '@/components/layout/Navbar'
 import Footer from '@/components/layout/Footer'
 import { todayString, addDays, buildBookingUrl, fetchAvailability } from '@/lib/hotelmate'
 import { useLivePrices } from '@/lib/useLivePrices'
+import { getRoomAvailability, getRoomPrice, Room, slugifyRoomName } from '@/lib/rooms'
 import { 
   Wifi, 
   Wind, 
@@ -25,8 +26,6 @@ import {
   X,
   Zap
 } from 'lucide-react'
-
-import { Room } from '@/data/rooms'
 
 const amenityIcons: Record<string, React.ElementType> = {
   'AC': Wind,
@@ -326,35 +325,21 @@ function BookingSidebar({ room }: { room: Room }) {
         
         if (!active) return
 
-        const matched = data.roomList?.find(r => {
-          const apiName = r.name.toLowerCase().trim()
-          const localName = room.name.toLowerCase().trim()
-          return (
-            apiName.includes(localName) ||
-            localName.includes(apiName) ||
-            // keyword match: e.g. "lawn", "forest", "cottage"
-            localName.split(' ').some(w => w.length > 4 && apiName.includes(w))
-          )
-        })
+        const matched = data.roomList?.find(r => slugifyRoomName(r.name) === room.slug)
 
         if (matched) {
           setLiveRoomId(String(matched.id))
-          // Prefer first rate plan amount, then roomOnlyPrice, then static fallback
-          const matchedPlan = matched.ratesAndAvailabilityDtos?.[0]?.roomRatePlans?.[0]
-          const price = matchedPlan?.amount || matched.roomOnlyPrice || room.price
-          setLivePrice(price)
-          const noOfAvailable = matched.ratesAndAvailabilityDtos?.[0]?.noOfAvailable ?? 1
-          setIsAvailable(noOfAvailable > 0)
+          setLivePrice(getRoomPrice(matched) || room.price)
+          setIsAvailable(getRoomAvailability(matched))
         } else {
           setIsAvailable(false)
           setLivePrice(null)
           setLiveRoomId(null)
         }
       } catch (err) {
-        console.error("CORS or network error fetching live rate. Falling back to local data.", err)
+        console.error("CORS or network error fetching live rate.", err)
         if (active) {
-          // Gracefully fallback to static price
-          setLivePrice(room.price)
+          setLivePrice(null)
           setIsAvailable(true)
         }
       } finally {
@@ -364,7 +349,7 @@ function BookingSidebar({ room }: { room: Room }) {
 
     checkLiveAvailability()
     return () => { active = false }
-  }, [checkIn, checkOut, guests, roomsCount, room.name, room.price])
+  }, [checkIn, checkOut, guests, roomsCount, room.name, room.price, room.slug])
 
   const handleBookNow = useCallback(() => {
     const url = buildBookingUrl({

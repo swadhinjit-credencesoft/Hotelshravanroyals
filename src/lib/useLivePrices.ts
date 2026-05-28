@@ -1,8 +1,8 @@
 'use client'
 
-import { useState, useEffect } from 'react'
-import { fetchAvailability, todayString, addDays } from '@/lib/hotelmate'
-import { rooms } from '@/data/rooms'
+import { useEffect, useState } from 'react'
+import { addDays, fetchAvailability, todayString } from '@/lib/hotelmate'
+import { getRoomAvailability, getRoomPrice, slugifyRoomName } from '@/lib/rooms'
 
 export interface RoomLivePrice {
   price: number
@@ -13,10 +13,6 @@ export interface RoomLivePrice {
 
 export type LivePriceMap = Record<string, RoomLivePrice>
 
-/**
- * Fetches live prices for all rooms from the HotelMate API for today's dates.
- * Falls back to static prices if the API call fails.
- */
 export function useLivePrices() {
   const [prices, setPrices] = useState<LivePriceMap>({})
   const [loading, setLoading] = useState(true)
@@ -26,10 +22,10 @@ export function useLivePrices() {
 
     async function loadPrices() {
       setLoading(true)
+
       try {
         const today = todayString()
         const tomorrow = addDays(today, 1)
-
         const data = await fetchAvailability({
           fromDate: today,
           toDate: tomorrow,
@@ -40,62 +36,25 @@ export function useLivePrices() {
         if (!active) return
 
         const map: LivePriceMap = {}
-
-        rooms.forEach((room) => {
-          // Try to match by name substring (bidirectional)
-          const apiRoom = data.roomList?.find((r) => {
-            const apiName = r.name.toLowerCase().trim()
-            const localName = room.name.toLowerCase().trim()
-            return (
-              apiName.includes(localName) ||
-              localName.includes(apiName) ||
-              // also try matching key words (e.g. "lawn", "forest", "cottage")
-              localName.split(' ').some((w) => w.length > 4 && apiName.includes(w))
-            )
-          })
-
-          if (apiRoom) {
-            // Prefer the first rate plan amount, then roomOnlyPrice, then static fallback
-            const plan = apiRoom.ratesAndAvailabilityDtos?.[0]?.roomRatePlans?.[0]
-            const price = plan?.amount || apiRoom.roomOnlyPrice || room.price
-            const noOfAvailable = apiRoom.ratesAndAvailabilityDtos?.[0]?.noOfAvailable ?? 1
-            map[room.slug] = {
-              price,
-              roomId: String(apiRoom.id),
-              isLive: true,
-              available: noOfAvailable > 0,
-            }
-          } else {
-            // Room not found in API response — use static price
-            map[room.slug] = {
-              price: room.price,
-              roomId: null,
-              isLive: false,
-              available: true,
-            }
+        data.roomList?.forEach((room) => {
+          map[slugifyRoomName(room.name)] = {
+            price: getRoomPrice(room),
+            roomId: String(room.id),
+            isLive: true,
+            available: getRoomAvailability(room),
           }
         })
 
         setPrices(map)
       } catch {
-        if (!active) return
-        // Network / CORS failure — fall back to static prices gracefully
-        const map: LivePriceMap = {}
-        rooms.forEach((room) => {
-          map[room.slug] = {
-            price: room.price,
-            roomId: null,
-            isLive: false,
-            available: true,
-          }
-        })
-        setPrices(map)
+        if (active) setPrices({})
       } finally {
         if (active) setLoading(false)
       }
     }
 
     loadPrices()
+
     return () => {
       active = false
     }
