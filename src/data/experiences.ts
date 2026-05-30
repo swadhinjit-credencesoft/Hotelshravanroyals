@@ -55,7 +55,6 @@ export const experiences: Experience[] = [
     description:
       'Stay seamlessly connected with quick access to Purnea Junction Railway Station, ensuring smooth travel for business guests, families, and leisure travelers.',
     duration: '15 mins drive',
-    video: 'https://bookonelocal.in/cdn/IMG_0141.MP4',
     image: 'https://bookonelocal.in/cdn/IMG_3678.avif',
     imageAlt: 'Purnea Junction Railway Connectivity',
     season: 'Year-round',

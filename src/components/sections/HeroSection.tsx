@@ -1,7 +1,7 @@
 'use client'
 import Link from 'next/link'
 import { useState, useEffect, useRef, useCallback } from 'react'
-import Image from 'next/image'
+// import Image from 'next/image'
 import {
   motion,
   AnimatePresence,
@@ -21,6 +21,15 @@ export default function HeroSection() {
   const heroRef = useRef<HTMLElement>(null)
   const reduced = useReducedMotion()
   const SLIDE_DURATION = 8000
+
+  // Auto-advance slides
+  useEffect(() => {
+    if (reduced) return
+    const timer = setInterval(() => {
+      setCurrentSlide((p) => (p + 1) % heroSlides.length)
+    }, SLIDE_DURATION)
+    return () => clearInterval(timer)
+  }, [reduced])
 
   // Scroll parallax
   const { scrollY } = useScroll({ target: heroRef, offset: ['start start', 'end start'] })
@@ -44,16 +53,6 @@ export default function HeroSection() {
     mouseX.set(x)
     mouseY.set(y)
   }, [reduced, mouseX, mouseY])
-
-  // Auto-advance slides
-  useEffect(() => {
-    if (reduced) return
-    const timer = setInterval(() => {
-      setCurrentSlide((p) => (p + 1) % heroSlides.length)
-    }, SLIDE_DURATION)
-    return () => clearInterval(timer)
-  }, [reduced])
-
 
   const checkoutRef = useRef<HTMLInputElement>(null)
   const [checkIn, setCheckIn] = useState(todayString())
@@ -93,45 +92,21 @@ export default function HeroSection() {
       onMouseMove={handleMouseMove}
       onMouseLeave={() => { mouseX.set(0); mouseY.set(0) }}
     >
-      {/* z-0: Background image with parallax */}
+      {/* z-0: Background video (static, never re-mounts) */}
       <motion.div
         className="absolute inset-0"
         style={{ y: reduced ? 0 : imageY, x: reduced ? 0 : imgSpringX }}
       >
-        <AnimatePresence mode="wait">
-          <motion.div
-            key={slide.id}
-            className="absolute inset-0"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            exit={{ opacity: 0 }}
-            transition={{ duration: 1.2 }}
-          >
-            {slide.image.match(/\.(mp4|webm|ogg)$/) ? (
-              <video
-                src={slide.image}
-                autoPlay
-                muted
-                loop
-                playsInline
-                poster="/images/exterior.jpeg"
-                className={`w-full h-full object-cover ${reduced ? '' : 'animate-ken-burns'}`}
-                style={{ animationName: reduced ? 'none' : 'kenBurns' }}
-              />
-            ) : (
-              <Image
-                src={slide.image}
-                alt={slide.imageAlt}
-                fill
-                priority
-                quality={100}
-                className={`object-cover ${reduced ? '' : 'animate-ken-burns'}`}
-                sizes="100vw"
-                style={{ animationName: reduced ? 'none' : 'kenBurns' }}
-              />
-            )}
-          </motion.div>
-        </AnimatePresence>
+        <video
+          src="https://bookonelocal.in/cdn/website-home-video.mp4"
+          autoPlay
+          muted
+          loop
+          playsInline
+          poster="https://bookonelocal.in/cdn/IMG_3815.avif"
+          className={`w-full h-full object-cover ${reduced ? '' : 'animate-ken-burns'}`}
+          style={{ animationName: reduced ? 'none' : 'kenBurns' }}
+        />
       </motion.div>
 
       {/* z-1: Atmospheric overlays */}
