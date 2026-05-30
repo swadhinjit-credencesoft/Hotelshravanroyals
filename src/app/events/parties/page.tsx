@@ -38,7 +38,7 @@ export default function PartiesPage() {
       />
 
       <section className="py-24">
-        <div className="max-w-7xl mx-auto px-6">
+        <div className="max-w-[1600px] mx-auto px-6 md:px-10">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center mb-32">
             <div>
               <SectionLabel className="mb-6">The Deck</SectionLabel>

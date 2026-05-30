@@ -55,7 +55,7 @@ export default function Footer() {
   return (
     <footer className="bg-forest text-ivory/70" role="contentinfo">
       {/* Match the same container width as Navbar and all other sections */}
-     <div className="max-w-7xl mx-auto px-6 md:px-8 pt-10 pb-6">
+     <div className="max-w-[1600px] mx-auto px-6 md:px-10 pt-10 pb-6">
 
         {/* Top Footer */}
       <div className="flex flex-col lg:flex-row lg:justify-between gap-y-10 gap-x-8 mb-10">  
@@ -109,7 +109,7 @@ export default function Footer() {
           </div>
 
           {/* Right columns — tightly grouped, no stretch */}
-          <div className="flex flex-col sm:flex-row flex-wrap lg:flex-nowrap gap-x-12 gap-y-10">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:flex lg:flex-row lg:flex-nowrap gap-x-12 gap-y-10">
 
             {/* Quick Links */}
             <div className="min-w-[130px]">

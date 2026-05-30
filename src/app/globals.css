@@ -39,6 +39,7 @@
 html {
   scroll-behavior: auto;
   font-family: 'Barlow', sans-serif;
+  overflow-x: hidden;
 }
 
 body {

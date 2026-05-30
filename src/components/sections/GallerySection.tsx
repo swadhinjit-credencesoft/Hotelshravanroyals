@@ -42,12 +42,12 @@ export default function GallerySection() {
             </h2>
           </div>
 
-          <div className="flex flex-wrap gap-6 md:gap-8 border-b border-forest/10 pb-4">
+          <div className="flex gap-6 md:gap-8 border-b border-forest/10 pb-4 overflow-x-auto whitespace-nowrap scrollbar-hide">
             {categories.map((cat) => (
               <button
                 key={cat.id}
                 onClick={() => setActiveCategory(cat.id)}
-                className={`font-sans text-[11px] uppercase tracking-[0.2em] relative transition-colors duration-300 ${
+                className={`font-sans text-[11px] uppercase tracking-[0.2em] relative transition-colors duration-300 flex-shrink-0 whitespace-nowrap ${
                   activeCategory === cat.id ? 'text-gold' : 'text-taupe hover:text-forest'
                 }`}
               >

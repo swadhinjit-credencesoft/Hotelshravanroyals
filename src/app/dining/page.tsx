@@ -1,6 +1,6 @@
 import Navbar from '@/components/layout/Navbar';
 import Footer from '@/components/layout/Footer';
-import Image from 'next/image';
+// import Image from 'next/image';
 import DiningSection from '@/components/sections/DiningSection';
 import CinematicHero from '@/components/ui/CinematicHero';
 import SectionLabel from '@/components/ui/SectionLabel';
@@ -97,36 +97,6 @@ export default function DiningPage() {
           </div>
         </div>
       </section> */}
-
-      {/* Photo Gallery - Ambient Photography */}
-      <section className="py-24 bg-cream">
-        <div className="max-w-[1600px] mx-auto px-6 md:px-10">
-          <div className="text-center mb-16">
-            <SectionLabel className="justify-center mb-6">Visual Feast</SectionLabel>
-            <h2 className="font-display text-4xl italic text-forest">Ambient Dining Scenes</h2>
-          </div>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 h-[600px]">
-            <div className="relative overflow-hidden group">
-               <Image src='/images/exterior2.jpeg' alt="Warm ambient dining atmosphere" fill className="object-cover grayscale hover:grayscale-0 transition-all duration-1000" />
-            </div>
-            <div className="relative overflow-hidden group row-span-2">
-               <Image src='/images/exterior3.jpeg' alt="Chef preparing local delicacies" fill className="object-cover grayscale hover:grayscale-0 transition-all duration-1000" />
-            </div>
-            <div className="relative overflow-hidden group">
-               <Image src='/images/exterior4.jpeg' alt="Gourmet plated dish" fill className="object-cover grayscale hover:grayscale-0 transition-all duration-1000" />
-            </div>
-            <div className="relative overflow-hidden group row-span-2">
-               <Image src='/images/exterior5.jpeg' alt="Rustic grill setup" fill className="object-cover grayscale hover:grayscale-0 transition-all duration-1000" />
-            </div>
-            <div className="relative overflow-hidden group">
-               <Image src='/images/exterior6.jpeg' alt="Outdoor dining at dusk" fill className="object-cover grayscale hover:grayscale-0 transition-all duration-1000" />
-            </div>
-            <div className="relative overflow-hidden group">
-               <Image src='/images/exterior7.jpeg' alt="Refreshing cocktails and drinks" fill className="object-cover grayscale hover:grayscale-0 transition-all duration-1000" />
-            </div>
-          </div>
-        </div>
-      </section>
 
       <DiningSection />
 

@@ -11,10 +11,10 @@ export default function AwardsMarquee() {
     <section className="bg-forest py-12 border-y border-ivory/10 overflow-hidden group">
       <div className="flex flex-col gap-8">
         <div className="marquee-wrapper">
-          <div className="marquee-track flex items-center gap-12 whitespace-nowrap">
+          <div className="marquee-track flex items-center gap-6 md:gap-12 whitespace-nowrap">
             {row1.map((award, i) => (
-              <div key={i} className="flex items-center gap-12">
-                <span className="font-serif text-lg md:text-xl italic text-ivory/40 group-hover:text-ivory/90 transition-colors duration-500">
+              <div key={i} className="flex items-center gap-6 md:gap-12">
+                <span className="font-serif text-sm md:text-lg lg:text-xl italic text-ivory/40 group-hover:text-ivory/90 transition-colors duration-500">
                   {award}
                 </span>
                 <span className="text-gold text-xs">◆</span>
@@ -24,10 +24,10 @@ export default function AwardsMarquee() {
         </div>
 
         <div className="marquee-wrapper">
-          <div className="marquee-track-reverse flex items-center gap-12 whitespace-nowrap">
+          <div className="marquee-track-reverse flex items-center gap-6 md:gap-12 whitespace-nowrap">
             {row2Extended.map((award, i) => (
-              <div key={i} className="flex items-center gap-12">
-                <span className="font-serif text-lg md:text-xl italic text-ivory/40 group-hover:text-ivory/90 transition-colors duration-500">
+              <div key={i} className="flex items-center gap-6 md:gap-12">
+                <span className="font-serif text-sm md:text-lg lg:text-xl italic text-ivory/40 group-hover:text-ivory/90 transition-colors duration-500">
                   {award}
                 </span>
                 <span className="text-gold text-xs">◆</span>

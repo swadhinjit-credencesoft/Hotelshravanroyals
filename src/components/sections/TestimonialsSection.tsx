@@ -1,7 +1,6 @@
 'use client';
 
 import { useRef, useState, useCallback, useEffect } from 'react';
-import Image from 'next/image';
 import { motion } from 'framer-motion';
 import { testimonials } from '@/data/testimonials';
 import SectionLabel from '@/components/ui/SectionLabel';
@@ -140,14 +139,11 @@ function TestimonialCard({ testimonial }: { testimonial: (typeof testimonials)[0
         &ldquo;{testimonial.text}&rdquo;
       </blockquote>
 
-      <div className="flex items-center gap-4 mt-8 pt-6 border-t border-gold/10">
-        <div className="relative w-11 h-11 rounded-full overflow-hidden grayscale group-hover:grayscale-0 transition-all duration-500 flex-shrink-0">
-          <Image
-            src={testimonial.avatar}
-            alt={testimonial.name}
-            fill
-            className="object-cover"
-          />
+        <div className="flex items-center gap-4 mt-8 pt-6 border-t border-gold/10">
+        <div className="w-11 h-11 rounded-full flex-shrink-0 bg-gold/10 border border-gold/20 flex items-center justify-center">
+          <span className="font-sans text-xs font-semibold text-gold uppercase tracking-wider">
+            {testimonial.name.split(' ').map(n => n[0]).join('')}
+          </span>
         </div>
         <div>
           <h4 className="font-sans text-[11px] uppercase tracking-widest text-forest font-medium">

@@ -1,22 +1,18 @@
 'use client';
 
-import { useRef } from 'react';
 import Image from 'next/image';
-import { motion, useInView } from 'framer-motion';
+import { motion } from 'framer-motion';
 import { experiences } from '@/data/experiences';
 import SectionLabel from '@/components/ui/SectionLabel';
 import { Clock, ArrowRight, Sun, CloudRain, Snowflake } from 'lucide-react';
 
 export default function ExperiencesGrid() {
-  const containerRef = useRef<HTMLDivElement>(null);
-  const isInView = useInView(containerRef, { once: true, margin: '-100px' });
-
   return (
     <section className="bg-forest py-24" id="experiences">
       <div className="max-w-[1600px] mx-auto px-6 md:px-10">
         <div className="mb-16">
           <SectionLabel light className="mb-4">Experiences</SectionLabel>
-          <h2 className="font-display text-4xl md:text-[52px] italic text-ivory mb-6 leading-tight">
+          <h2 className="font-display text-4xl md:text-[52px] italic text-forest mb-6 leading-tight">
             Curated Immersions
           </h2>
           <p className="font-serif text-xl font-light text-ivory/60 max-w-xl leading-relaxed">
@@ -24,16 +20,12 @@ export default function ExperiencesGrid() {
           </p>
         </div>
 
-        <div
-          ref={containerRef}
-          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 h-auto lg:h-[800px]"
-        >
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 h-auto">
           {experiences.map((experience, i) => (
             <ExperienceCard
               key={experience.id}
               experience={experience}
               index={i}
-              isInView={isInView}
             />
           ))}
         </div>
@@ -45,11 +37,9 @@ export default function ExperiencesGrid() {
 function ExperienceCard({
   experience,
   index,
-  isInView,
 }: {
   experience: (typeof experiences)[0];
   index: number;
-  isInView: boolean;
 }) {
   const isTall = index === 0;
 
@@ -67,10 +57,11 @@ function ExperienceCard({
         isTall ? 'lg:row-span-2' : ''
       }`}
       initial={{ opacity: 0, y: 40 }}
-      animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 40 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true, margin: '-100px' }}
       transition={{ duration: 0.8, delay: index * 0.12, ease: [0.16, 1, 0.3, 1] }}
     >
-      <div className="relative h-full w-full min-h-[400px] lg:min-h-0">
+      <div className="relative h-full w-full min-h-[400px]">
         {experience.video ? (
           <video
             src={experience.video}

@@ -120,7 +120,7 @@ export default function RootLayout({
               href="https://wa.me/9835923601"
               target="_blank"
               rel="noreferrer"
-              className="fixed bottom-8 right-8 z-[100] bg-green-500 text-white p-4 rounded-full shadow-2xl hover:bg-green-600 hover:scale-110 transition-all duration-300 group"
+              className="fixed bottom-20 md:bottom-8 right-6 md:right-8 z-40 bg-green-500 text-white p-4 rounded-full shadow-2xl hover:bg-green-600 hover:scale-110 transition-all duration-300 group"
               aria-label="Chat on WhatsApp"
             >
               <MessageCircle size={28} />

@@ -114,6 +114,7 @@ export default function HeroSection() {
                 muted
                 loop
                 playsInline
+                poster="/images/exterior.jpeg"
                 className={`w-full h-full object-cover ${reduced ? '' : 'animate-ken-burns'}`}
                 style={{ animationName: reduced ? 'none' : 'kenBurns' }}
               />

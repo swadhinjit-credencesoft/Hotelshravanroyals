@@ -58,8 +58,8 @@ export default function HistorySection() {
 
           <div className="flex flex-col">
             <SectionLabel className="mb-6">Our Legacy</SectionLabel>
-            <h2 className="font-display text-4xl md:text-[56px] italic text-forest mb-8 leading-tight">
-              A Vision of <br /> Natural Stillness
+            <h2 className="font-display text-4xl md:text-[56px] italic text-forest mb-8 leading-tight" style={{ textWrap: 'balance' }}>
+              A Vision of Natural Stillness
             </h2>
             <GoldDivider className="mb-10" />
             
