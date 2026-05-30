@@ -42,7 +42,7 @@ export default function GallerySection() {
             </h2>
           </div>
 
-          <div className="flex flex-wrap gap-6 md:gap-8 border-b border-forest/10 pb-4 md:overflow-x-auto md:flex-nowrap md:pb-2">
+          <div className="flex gap-6 md:gap-8 border-b border-forest/10 pb-4 overflow-x-auto flex-nowrap md:pb-2 scrollbar-hide">
             {categories.map((cat) => (
               <button
                 key={cat.id}

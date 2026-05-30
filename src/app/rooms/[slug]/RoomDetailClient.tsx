@@ -115,7 +115,7 @@ export default function RoomDetailClient({ room, otherRooms }: RoomDetailClientP
       </AnimatePresence>
 
       {/* Breadcrumbs */}
-      <div className="max-w-7xl mx-auto px-6 py-8">
+      <div className="max-w-[1600px] mx-auto px-6 md:px-10 py-8">
         <nav className="flex items-center gap-2 text-[10px] uppercase tracking-widest text-taupe/60">
           <Link href="/" className="hover:text-gold transition-colors">Home</Link>
           <ChevronRight size={10} />
@@ -125,7 +125,7 @@ export default function RoomDetailClient({ room, otherRooms }: RoomDetailClientP
         </nav>
       </div>
 
-      <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-12 gap-12 pb-24">
+      <div className="max-w-[1600px] mx-auto px-6 md:px-10 grid grid-cols-1 lg:grid-cols-12 gap-12 pb-24">
         {/* Left Column: Content */}
         <div className="lg:col-span-8">
           {/* Hero Image / Gallery Trigger */}

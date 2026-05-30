@@ -104,7 +104,7 @@ export default function DiningPage() {
             <SectionLabel className="justify-center mb-6">Visual Feast</SectionLabel>
             <h2 className="font-display text-4xl italic text-forest">Ambient Dining Scenes</h2>
           </div>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 h-[600px]">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 h-auto md:h-[600px]">
             <div className="relative overflow-hidden group">
                <Image src='/images/exterior2.jpeg' alt="Warm ambient dining atmosphere" fill className="object-cover grayscale hover:grayscale-0 transition-all duration-1000" />
             </div>

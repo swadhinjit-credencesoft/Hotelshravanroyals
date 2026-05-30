@@ -1,6 +1,6 @@
 'use client';
 
-import { useRef, useState } from 'react';
+import { useRef, useState, useEffect } from 'react';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
 import { testimonials } from '@/data/testimonials';
@@ -9,10 +9,27 @@ import { Star } from 'lucide-react';
 
 export default function TestimonialsSection() {
   const [currentIndex, setCurrentIndex] = useState(0);
-  const containerRef = useRef<HTMLDivElement>(null);
+  const trackRef = useRef<HTMLDivElement>(null);
+  const [xOffset, setXOffset] = useState(0);
+
+  useEffect(() => {
+    const track = trackRef.current;
+    if (!track) return;
+    const updateX = () => {
+      const firstCard = track.children[0] as HTMLElement;
+      if (!firstCard) return;
+      const gap = 32;
+      setXOffset(-(currentIndex * (firstCard.offsetWidth + gap)));
+    };
+    updateX();
+    requestAnimationFrame(updateX);
+    const observer = new ResizeObserver(updateX);
+    observer.observe(track);
+    return () => observer.disconnect();
+  }, [currentIndex]);
 
   return (
-    <section className="bg-parchment py-24 overflow-hidden" id="testimonials">
+    <section className="bg-parchment py-24" id="testimonials">
       <div className="max-w-[1600px] mx-auto px-6 md:px-10">
         <div className="text-center mb-16">
           <SectionLabel className="justify-center mb-4">Guest Stories</SectionLabel>
@@ -21,14 +38,15 @@ export default function TestimonialsSection() {
           </h2>
         </div>
 
-        <div className="relative">
+        <div className="relative overflow-hidden">
           <motion.div
-            ref={containerRef}
+            ref={trackRef}
             drag="x"
             dragConstraints={{ left: 0, right: 0 }}
             dragElastic={0.1}
             className="flex gap-8 cursor-grab active:cursor-grabbing"
-            style={{ x: `-${currentIndex * 100}%` }}
+            animate={{ x: xOffset }}
+            transition={{ duration: 0.5, ease: [0.16, 1, 0.3, 1] }}
           >
             {testimonials.map((testimonial) => (
               <TestimonialCard key={testimonial.id} testimonial={testimonial} />

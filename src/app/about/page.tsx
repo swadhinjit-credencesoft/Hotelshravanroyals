@@ -200,7 +200,7 @@ export default function AboutPage() {
 
       {/* Awards & Press */}
       <section className="py-24 border-y border-gold/10">
-        <div className="text-center mb-16">
+        <div className="max-w-[1600px] mx-auto px-6 md:px-10 text-center mb-16">
           <SectionLabel className="justify-center mb-6">Recognitions</SectionLabel>
           <h2 className="font-display text-4xl italic text-forest">Award-Winning Hospitality</h2>
         </div>

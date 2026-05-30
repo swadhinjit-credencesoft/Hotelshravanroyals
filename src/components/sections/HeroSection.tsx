@@ -197,9 +197,9 @@ export default function HeroSection() {
           </motion.div>
 
           {/* Headline — word-by-word */}
-          <h1
-            className="font-display font-normal italic text-ivory mb-5 leading-[1.08]"
-            style={{ fontSize: 'clamp(44px, 7vw, 80px)', overflowWrap: 'break-word', wordBreak: 'break-word' }}
+            <h1
+            className="font-display font-normal italic text-ivory mb-5 leading-[1.08] w-full"
+            style={{ fontSize: 'clamp(44px, 7vw, 80px)' }}
           >
             <AnimatePresence mode="wait">
               <motion.span key={slide.id} className="inline">
@@ -215,7 +215,7 @@ export default function HeroSection() {
                       delay: 0.8 + i * 0.09,
                       ease: [0.16, 1, 0.3, 1],
                     }}
-                    style={{ perspective: 1000, display: 'inline-block' }}
+                    style={{ perspective: 1000, display: 'inline-block', maxWidth: '100%', overflowWrap: 'break-word' }}
                   >
                     {word}
                   </motion.span>
@@ -237,7 +237,7 @@ export default function HeroSection() {
           <AnimatePresence mode="wait">
             <motion.p
               key={`sub-${slide.id}`}
-              className="font-serif text-xl md:text-[22px] font-light text-ivory/80 max-w-[550px] mb-8 leading-relaxed"
+              className="font-serif text-xl md:text-[22px] font-light text-ivory/80 max-w-[550px] mb-8 leading-relaxed break-words"
               initial={{ opacity: 0, y: 25 }}
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0 }}

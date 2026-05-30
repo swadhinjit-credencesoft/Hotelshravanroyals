@@ -19,7 +19,7 @@ export default function NewsletterSection() {
         <div className="absolute inset-0 bg-gradient-to-b from-transparent via-forest/20 to-forest" />
       </div>
 
-      <div className="max-w-4xl mx-auto px-6 relative z-10">
+      <div className="max-w-4xl mx-auto px-6 md:px-10 relative z-10">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}

@@ -54,7 +54,7 @@ export default function GalleryPage() {
 
       {/* UGC / Guest Photos Section */}
       <section className="py-24 bg-cream text-center">
-        <div className="max-w-[1200px] mx-auto px-6">
+        <div className="max-w-[1200px] mx-auto px-6 md:px-10">
           <h2 className="font-display text-4xl md:text-5xl italic text-forest mb-6">Through Your Lens</h2>
           <p className="font-serif text-lg text-taupe mb-12">
             Share your favorite memories with us. Tag us to be featured. <br />

@@ -102,7 +102,7 @@ function VenueRow({ venue, index }: { venue: (typeof venues)[0]; index: number }
   )
 
   return (
-    <div ref={ref} className="grid grid-cols-1 md:grid-cols-2 gap-0 md:gap-0 mb-24 last:mb-0">
+    <div ref={ref} className="grid grid-cols-1 md:grid-cols-2 gap-0 mb-24 last:mb-0">
       {isEven ? (
         <>
           <div className="md:pr-8">{imageBlock}</div>
