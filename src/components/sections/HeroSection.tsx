@@ -330,46 +330,7 @@ export default function HeroSection() {
         </div>
       </motion.div>
 
-      {/* Slide dots (bottom-right) */}
-      <div
-        className="absolute bottom-32 right-6 md:right-10 flex flex-col gap-2 items-end"
-        style={{ zIndex: 20 }}
-      >
-        {heroSlides.map((s, i) => (
-          <button
-            key={s.id}
-            onClick={() => setCurrentSlide(i)}
-            className="relative overflow-hidden flex items-center gap-2 group"
-            aria-label={`Go to slide ${i + 1}: ${s.tagline}`}
-          >
-            <motion.span
-              className="font-sans text-[11px] uppercase tracking-[0.14em] text-ivory/40 group-hover:text-ivory/70 transition-colors hidden md:block"
-              animate={{ opacity: currentSlide === i ? 1 : 0 }}
-            >
-              {s.tagline}
-            </motion.span>
-            <motion.div
-              className="bg-gold/40 rounded-full overflow-hidden"
-              animate={{
-                width: currentSlide === i ? 28 : 6,
-                height: currentSlide === i ? 28 : 6,
-                borderRadius: currentSlide === i ? '2px' : '9999px',
-                backgroundColor: currentSlide === i ? 'rgba(200,169,110,1)' : 'rgba(200,169,110,0.4)',
-              }}
-              transition={{ duration: 0.4, ease: [0.16, 1, 0.3, 1] }}
-            >
-              {currentSlide === i && (
-                <motion.div
-                  className="h-full bg-gold-dark/40"
-                  initial={{ width: '0%' }}
-                  animate={{ width: '100%' }}
-                  transition={{ duration: SLIDE_DURATION / 1000, ease: 'linear' }}
-                />
-              )}
-            </motion.div>
-          </button>
-        ))}
-      </div>
+      {/* Slide dots commented out */}
 
       {/* Scroll indicator */}
       {/* <div

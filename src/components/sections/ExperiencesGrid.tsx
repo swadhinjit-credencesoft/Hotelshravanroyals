@@ -71,13 +71,24 @@ function ExperienceCard({
       transition={{ duration: 0.8, delay: index * 0.12, ease: [0.16, 1, 0.3, 1] }}
     >
       <div className="relative h-full w-full min-h-[400px] lg:min-h-0">
-        <Image
-          src={experience.image}
-          alt={experience.imageAlt}
-          fill
-          className="object-cover transition-transform duration-700 group-hover:scale-110"
-          sizes={isTall ? '50vw' : '33vw'}
-        />
+        {experience.video ? (
+          <video
+            src={experience.video}
+            autoPlay
+            muted
+            loop
+            playsInline
+            className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+          />
+        ) : (
+          <Image
+            src={experience.image}
+            alt={experience.imageAlt}
+            fill
+            className="object-cover transition-transform duration-700 group-hover:scale-110"
+            sizes={isTall ? '50vw' : '33vw'}
+          />
+        )}
         <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent" />
 
         <div className="absolute top-4 left-4">

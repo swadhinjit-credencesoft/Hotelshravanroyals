@@ -1,3 +1,16 @@
+export interface Experience {
+  id: string
+  title: string
+  category: string
+  description: string
+  duration: string
+  image: string
+  video?: string
+  imageAlt: string
+  season: string
+  priceInfo?: string
+}
+
 export const experiences: Experience[] = [
   {
     id: 'e1',
@@ -6,7 +19,7 @@ export const experiences: Experience[] = [
     description:
       'Perfectly positioned in the heart of Purnea at Suryalok Complex, Bella Casa offers effortless access to business districts, shopping avenues, restaurants, and major transit points.',
     duration: 'Central Access',
-    image: '/purneacity.jpg',
+    image: '/purneacity.png',
     imageAlt: 'Hotel Bella Casa City Center Location',
     season: 'Year-round',
   },
@@ -43,6 +56,7 @@ export const experiences: Experience[] = [
       'Stay seamlessly connected with quick access to Purnea Junction Railway Station, ensuring smooth travel for business guests, families, and leisure travelers.',
     duration: '15 mins drive',
     video: 'https://bookonelocal.in/cdn/IMG_0141.MP4',
+    image: 'https://bookonelocal.in/cdn/IMG_3678.avif',
     imageAlt: 'Purnea Junction Railway Connectivity',
     season: 'Year-round',
   },
