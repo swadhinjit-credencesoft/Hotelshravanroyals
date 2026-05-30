@@ -72,7 +72,7 @@ export default function Navbar() {
                 key={link.label}
                 href={link.href}
                 className={`font-sans text-[11px] uppercase tracking-[0.18em] transition-colors duration-300 hover:text-gold focus-visible:text-gold focus-visible:outline-none ${
-                  scrolled || !isHome ? 'text-forest/70' : 'text-ivory/80'
+                  scrolled || !isHome ? 'text-forest' : 'text-ivory'
                 }`}
               >
                 {link.label}

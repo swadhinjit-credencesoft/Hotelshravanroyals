@@ -304,7 +304,7 @@ export default function HeroSection() {
               <div className="hidden md:block w-px h-8 bg-gold/20" />
               <BookingField label="Check-Out" type="date" value={checkOut} onChange={handleCheckOutChange} inputRef={checkoutRef} min={checkIn ? addDays(checkIn, 1) : todayString()} />
               <div className="hidden md:block w-px h-8 bg-gold/20" />
-              <BookingField label="Guests" type="number" value={guests} onChange={setGuests} />
+              <BookingField label="Guests" type="number" value={guests} onChange={setGuests} options={['1','2','3','4']} />
               <div className="hidden md:block w-px h-8 bg-gold/20" />
               <BookingField label="Rooms" type="number" value={rooms} onChange={setRooms} />
               <div className="ml-auto pl-6">
@@ -343,7 +343,7 @@ export default function HeroSection() {
   )
 }
 
-function BookingField({ label, type = 'text', value, onChange, inputRef: externalRef, min }: { label: string; type?: string; value: string; onChange: (v: string) => void; inputRef?: React.RefObject<HTMLInputElement | null>; min?: string }) {
+function BookingField({ label, type = 'text', value, onChange, inputRef: externalRef, min, options }: { label: string; type?: string; value: string; onChange: (v: string) => void; inputRef?: React.RefObject<HTMLInputElement | null>; min?: string; options?: string[] }) {
   const [isMounted, setIsMounted] = useState(false)
   const internalRef = useRef<HTMLInputElement>(null)
   const inputRef = externalRef || internalRef
@@ -353,6 +353,7 @@ function BookingField({ label, type = 'text', value, onChange, inputRef: externa
   }, [])
 
   const handleContainerClick = () => {
+    if (options) return
     const el = inputRef.current
     if (type === 'date' && el) {
       const inputEl = el as HTMLInputElement & { showPicker?: () => void }
@@ -366,22 +367,35 @@ function BookingField({ label, type = 'text', value, onChange, inputRef: externa
   return (
     <div
       className="flex-1 px-4 py-1 cursor-pointer group"
-      style={{ minWidth: type === 'number' ? '80px' : '140px' }}
+      style={{ minWidth: type === 'number' && !options ? '80px' : '140px' }}
       onClick={handleContainerClick}
     >
       <label className="font-sans text-[11px] uppercase tracking-[0.18em] text-gold/70 block mb-1 pointer-events-none">
         {label}
       </label>
       <div className="relative flex items-center">
-        <input
-          ref={inputRef as React.Ref<HTMLInputElement>}
-          type={isMounted && type === 'date' ? 'date' : type === 'number' ? 'number' : 'text'}
-          value={value}
-          min={min ?? (type === 'number' ? '1' : undefined)}
-          onChange={(e) => onChange(e.target.value)}
-          className={`booking-input w-full bg-transparent border-b border-gold/40 text-ivory placeholder-gold/50 font-sans text-[14px] pb-1 focus:outline-none focus:border-gold transition-colors ${type === 'date' ? 'pr-6' : ''}`}
-          aria-label={label}
-        />
+        {options ? (
+          <select
+            value={value}
+            onChange={(e) => onChange(e.target.value)}
+            className="w-full bg-transparent border-b border-gold/40 text-ivory font-sans text-[14px] pb-1 focus:outline-none focus:border-gold transition-colors appearance-none cursor-pointer"
+            aria-label={label}
+          >
+            {options.map((opt) => (
+              <option key={opt} value={opt} className="text-forest">{opt}</option>
+            ))}
+          </select>
+        ) : (
+          <input
+            ref={inputRef as React.Ref<HTMLInputElement>}
+            type={isMounted && type === 'date' ? 'date' : type === 'number' ? 'number' : 'text'}
+            value={value}
+            min={min ?? (type === 'number' ? '1' : undefined)}
+            onChange={(e) => onChange(e.target.value)}
+            className={`booking-input w-full bg-transparent border-b border-gold/40 text-ivory placeholder-gold/50 font-sans text-[14px] pb-1 focus:outline-none focus:border-gold transition-colors ${type === 'date' ? 'pr-6' : ''}`}
+            aria-label={label}
+          />
+        )}
         {type === 'date' && (
           <Calendar size={12} className="absolute right-0 bottom-2 text-gold/50 group-hover:text-gold transition-colors pointer-events-none" />
         )}
