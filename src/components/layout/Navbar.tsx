@@ -58,9 +58,9 @@ export default function Navbar() {
             <Image
               src="/suryabellacasalogo.png"
               alt="Hotel Bella Casa Logo"
-              width={150}
-              height={88}
-              className="h-14 md:h-16 w-auto object-contain"
+              width={180}
+              height={106}
+              className="h-16 md:h-20 w-auto object-contain"
               priority
             />
           </Link>
@@ -121,9 +121,9 @@ export default function Navbar() {
                 <Image
                   src="/suryabellacasalogo.png"
                   alt="Hotel Bella Casa Logo"
-                  width={128}
-                  height={75}
-                  className="h-12 w-auto object-contain"
+                  width={160}
+                  height={94}
+                  className="h-14 w-auto object-contain"
                 />
               </Link>
               <button
