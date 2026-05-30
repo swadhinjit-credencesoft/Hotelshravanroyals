@@ -10,8 +10,8 @@ import LightboxModal from '@/components/ui/LightboxModal';
 const categories = [
   { id: 'all', label: 'All' },
   { id: 'rooms', label: 'Rooms' },
-  { id: 'outdoors', label: 'Pool & Outdoors' },
-  { id: 'food', label: 'Food' },
+  { id: 'outdoors', label: ' Outdoors' },
+  { id: 'dining', label: 'Dining' },
   { id: 'events', label: 'Events' },
   { id: 'nature', label: 'Nature & Surroundings' }
 ] as const;

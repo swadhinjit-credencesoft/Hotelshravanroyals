@@ -48,8 +48,7 @@ function RoomCard({ room, index }: RoomCardProps) {
   return (
     <motion.div
       ref={ref}
-      className="room-card relative flex-shrink-0 overflow-hidden cursor-pointer rounded-sm"
-      style={{ width: '380px', height: '540px' }}
+      className="room-card relative h-[340px] sm:h-[380px] lg:h-[420px] w-full overflow-hidden cursor-pointer rounded-sm"
       initial={{ opacity: 0, y: 40 }}
       animate={isInView ? { opacity: 1, y: 0 } : {}}
       transition={{ duration: 0.8, delay: index * 0.1, ease: [0.16, 1, 0.3, 1] }}
@@ -109,7 +108,7 @@ function RoomCard({ room, index }: RoomCardProps) {
           animate={hovered ? { y: 0, opacity: 1 } : { y: 24, opacity: 0 }}
           transition={{ duration: 0.4, ease: [0.16, 1, 0.3, 1] }}
         >
-          <p className="font-sans text-[10px] uppercase tracking-[0.18em] text-gold mb-2">{room.tagline}</p>
+          {/* API room description hidden here to keep carousel cards clean. */}
           <h3 className="font-display text-2xl italic text-ivory mb-1">{room.name}</h3>
 
           <div className="flex items-center gap-4 mb-4">
@@ -178,7 +177,9 @@ export default function RoomsCarousel() {
 
   const scroll = (dir: 'left' | 'right') => {
     if (!containerRef.current) return
-    containerRef.current.scrollBy({ left: dir === 'right' ? 420 : -420, behavior: 'smooth' })
+    const firstCard = containerRef.current.firstElementChild as HTMLElement | null
+    const cardWidth = firstCard?.offsetWidth ?? 380
+    containerRef.current.scrollBy({ left: dir === 'right' ? cardWidth + 20 : -(cardWidth + 20), behavior: 'smooth' })
     setTimeout(() => {
       if (!containerRef.current) return
       const { scrollLeft, scrollWidth, clientWidth } = containerRef.current
@@ -209,8 +210,12 @@ export default function RoomsCarousel() {
 
       <div className="relative">
         {loading && (
-          <div className="px-6 md:px-10">
-            <div className="h-[540px] max-w-[380px] animate-pulse rounded-sm bg-forest/10" />
+          <div className="max-w-[1600px] mx-auto px-6 md:px-10">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
+              {[0, 1, 2, 3].map((item) => (
+                <div key={item} className="h-[340px] sm:h-[380px] lg:h-[420px] animate-pulse rounded-sm bg-forest/10" />
+              ))}
+            </div>
           </div>
         )}
 
@@ -243,22 +248,27 @@ export default function RoomsCarousel() {
               <ChevronRight size={20} />
             </button>
 
-            <div
-              ref={containerRef}
-              className="flex gap-5 overflow-x-auto scrollbar-hide drag-cursor pb-4 px-6 md:px-10"
-              style={{ scrollSnapType: 'x mandatory', msOverflowStyle: 'none', scrollbarWidth: 'none' }}
-              onScroll={(e) => {
-                const el = e.currentTarget
-                setCanScrollLeft(el.scrollLeft > 10)
-                setCanScrollRight(el.scrollLeft < el.scrollWidth - el.clientWidth - 10)
-              }}
-            >
-              {rooms.map((room, i) => (
-                <div key={room.id} style={{ scrollSnapAlign: 'start' }}>
-                  <RoomCard room={room} index={i} />
-                </div>
-              ))}
-              <div className="flex-shrink-0 w-2" />
+            <div className="max-w-[1600px] mx-auto px-6 md:px-10 overflow-hidden">
+              <div
+                ref={containerRef}
+                className="flex gap-5 overflow-x-auto scrollbar-hide drag-cursor pb-4"
+                style={{ scrollSnapType: 'x mandatory', msOverflowStyle: 'none', scrollbarWidth: 'none' }}
+                onScroll={(e) => {
+                  const el = e.currentTarget
+                  setCanScrollLeft(el.scrollLeft > 10)
+                  setCanScrollRight(el.scrollLeft < el.scrollWidth - el.clientWidth - 10)
+                }}
+              >
+                {rooms.map((room, i) => (
+                  <div
+                    key={room.id}
+                    className="flex-shrink-0 basis-full md:basis-[calc((100%_-_20px)/2)] lg:basis-[calc((100%_-_60px)/4)]"
+                    style={{ scrollSnapAlign: 'start' }}
+                  >
+                    <RoomCard room={room} index={i} />
+                  </div>
+                ))}
+              </div>
             </div>
           </>
         )}

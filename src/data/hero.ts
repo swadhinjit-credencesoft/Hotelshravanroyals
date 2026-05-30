@@ -17,7 +17,7 @@ export const heroSlides: HeroSlide[] = [
     tagline: 'Premium Stay in Purnia, Bihar',
     headline: 'Escape to Hotel Bella Casa',
     subheadline: 'A comfortable and budget-friendly stay located at Suryalok Complex, opposite Vikass Market in Purnia.',
-    image: 'https://bookonelocal.in/cdn/IMG_7434.mp4',
+    image: 'https://bookonelocal.in/cdn/website-home-video.mp4',
     imageAlt: 'Hotel Bella Casa Exterior View',
     primaryCta: 'Book Now',
     primaryHref: 'https://bookone.io/Hotel-Bella-Casa?bookingEngine=true',
