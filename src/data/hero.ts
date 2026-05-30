@@ -15,7 +15,7 @@ export const heroSlides: HeroSlide[] = [
   {
     id: 's1',
     tagline: 'Nature Resort near Mumbai',
-    headline: 'Escape to Unwind Karjat ',
+    headline: 'Escape to Unwind Karjat',
     subheadline: 'A boutique nature retreat offering luxurious yet cozy stays for leisure travellers and groups.',
     image: '/images/unwindvideo.mp4',
     imageAlt: 'Luxury resort infinity pool at golden hour',
@@ -27,7 +27,7 @@ export const heroSlides: HeroSlide[] = [
   {
     id: 's2',
     tagline: 'Culinary Excellence',
-    headline: 'Farm to Table Dining',
+    headline: 'Farm-to-Table Dining',
     subheadline: 'Chef-curated tasting menus where local flavors meet rustic charm. Every meal an occasion.',
     image: '/images/unwindvideo.mp4',
     imageAlt: 'Private terrace fine dining at sunset',

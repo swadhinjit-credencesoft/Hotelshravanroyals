@@ -23,19 +23,28 @@ export function useLivePrices() {
 
   useEffect(() => {
     let active = true
+    let timeoutId: ReturnType<typeof setTimeout> | null = null
 
     async function loadPrices() {
       setLoading(true)
+
+      const timeout = new Promise<never>((_, reject) => {
+        timeoutId = setTimeout(() => reject(new Error('Timeout')), 8000)
+      })
+
       try {
         const today = todayString()
         const tomorrow = addDays(today, 1)
 
-        const data = await fetchAvailability({
-          fromDate: today,
-          toDate: tomorrow,
-          noOfRooms: 1,
-          noOfPersons: 2,
-        })
+        const data = await Promise.race([
+          fetchAvailability({
+            fromDate: today,
+            toDate: tomorrow,
+            noOfRooms: 1,
+            noOfPersons: 2,
+          }),
+          timeout,
+        ]) as Awaited<ReturnType<typeof fetchAvailability>>
 
         if (!active) return
 
@@ -91,6 +100,7 @@ export function useLivePrices() {
         })
         setPrices(map)
       } finally {
+        if (timeoutId) clearTimeout(timeoutId)
         if (active) setLoading(false)
       }
     }
@@ -98,6 +108,7 @@ export function useLivePrices() {
     loadPrices()
     return () => {
       active = false
+      if (timeoutId) clearTimeout(timeoutId)
     }
   }, [])
 

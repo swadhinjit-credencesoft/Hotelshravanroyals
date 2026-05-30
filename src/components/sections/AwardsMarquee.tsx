@@ -8,9 +8,9 @@ export default function AwardsMarquee() {
   const row2Extended = [...row2, ...row2];
 
   return (
-    <section className="bg-forest py-12 border-y border-ivory/10 overflow-hidden group">
+    <section className="bg-forest py-12 border-y border-ivory/10 overflow-hidden group" style={{ overflow: 'hidden' }}>
       <div className="flex flex-col gap-8">
-        <div className="marquee-wrapper">
+        <div className="marquee-wrapper" style={{ overflow: 'hidden', width: '100%' }}>
           <div className="marquee-track flex items-center gap-12 whitespace-nowrap">
             {row1.map((award, i) => (
               <div key={i} className="flex items-center gap-12">
@@ -23,7 +23,7 @@ export default function AwardsMarquee() {
           </div>
         </div>
 
-        <div className="marquee-wrapper">
+        <div className="marquee-wrapper" style={{ overflow: 'hidden', width: '100%' }}>
           <div className="marquee-track-reverse flex items-center gap-12 whitespace-nowrap">
             {row2Extended.map((award, i) => (
               <div key={i} className="flex items-center gap-12">

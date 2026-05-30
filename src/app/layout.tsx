@@ -112,6 +112,7 @@ export default function RootLayout({
               target="_blank" 
               rel="noreferrer"
               className="fixed bottom-8 right-8 z-[100] bg-green-500 text-white p-4 rounded-full shadow-2xl hover:bg-green-600 hover:scale-110 transition-all duration-300 group"
+              style={{ bottom: 'calc(1.5rem + env(safe-area-inset-bottom, 0px))' }}
               aria-label="Chat on WhatsApp"
             >
               <MessageCircle size={28} />

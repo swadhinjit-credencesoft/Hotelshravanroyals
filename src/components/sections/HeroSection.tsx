@@ -81,7 +81,7 @@ export default function HeroSection() {
   }, [checkIn, checkOut, guests, rooms])
 
   const slide = heroSlides[currentSlide]
-  const words = slide.headline.split(' ')
+  const words = slide.headline.split(' ').filter(Boolean)
 
   return (
     <section
@@ -114,6 +114,7 @@ export default function HeroSection() {
                 muted
                 loop
                 playsInline
+                poster="/images/exterior.jpeg"
                 className={`w-full h-full object-cover ${reduced ? '' : 'animate-ken-burns'}`}
                 style={{ animationName: reduced ? 'none' : 'kenBurns' }}
               />
@@ -198,7 +199,7 @@ export default function HeroSection() {
           {/* Headline — word-by-word */}
           <h1
             className="font-display font-normal italic text-ivory mb-5 leading-[1.08]"
-            style={{ fontSize: 'clamp(44px, 7vw, 80px)' }}
+            style={{ fontSize: 'clamp(44px, 7vw, 80px)', overflowWrap: 'break-word', wordBreak: 'break-word' }}
           >
             <AnimatePresence mode="wait">
               <motion.span key={slide.id} className="inline">
@@ -297,7 +298,7 @@ export default function HeroSection() {
           style={{ background: 'rgba(251,247,240,0.07)', backdropFilter: 'blur(16px)' }}
         >
           <div className="max-w-[1600px] mx-auto px-6 md:px-10 py-4">
-            <div className="flex items-center gap-0 md:gap-6">
+            <div className="flex items-center gap-0 md:gap-6 flex-wrap">
               <BookingField label="Check-In" type="date" value={checkIn} onChange={handleCheckInChange} min={todayString()} />
               <div className="hidden md:block w-px h-8 bg-gold/20" />
               <BookingField label="Check-Out" type="date" value={checkOut} onChange={handleCheckOutChange} inputRef={checkoutRef} min={checkIn ? addDays(checkIn, 1) : todayString()} />
@@ -402,8 +403,8 @@ function BookingField({ label, type = 'text', value, onChange, inputRef: externa
 
   return (
     <div
-      className="flex-1 px-4 py-1 cursor-pointer group"
-      style={{ minWidth: type === 'number' ? '80px' : '140px' }}
+      className="flex-1 px-3 py-1 cursor-pointer group"
+      style={{ minWidth: type === 'number' ? '80px' : '130px', flexBasis: type === 'number' ? '90px' : '160px' }}
       onClick={handleContainerClick}
     >
       <label className="font-sans text-[11px] uppercase tracking-[0.18em] text-gold/70 block mb-1 pointer-events-none">

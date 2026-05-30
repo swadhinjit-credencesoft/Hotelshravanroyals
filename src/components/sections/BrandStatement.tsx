@@ -98,7 +98,7 @@ export default function BrandStatement() {
                 </p>
               </motion.div>
               {i < heroStats.length - 1 && (
-                <div className="hidden md:block absolute translate-x-[calc(var(--col)*100%+50%)] top-1/2 -translate-y-1/2 w-px h-12 bg-gold/20" />
+                <div className="hidden md:block absolute top-1/2 -translate-y-1/2 w-px h-12 bg-gold/20" style={{ left: 'calc(100% + 0.5rem)' }} />
               )}
             </div>
           ))}

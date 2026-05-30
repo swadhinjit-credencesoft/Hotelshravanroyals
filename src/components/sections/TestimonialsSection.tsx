@@ -55,7 +55,7 @@ export default function TestimonialsSection() {
 
 function TestimonialCard({ testimonial }: { testimonial: (typeof testimonials)[0] }) {
   return (
-    <div className="min-w-full md:min-w-[48%] lg:min-w-[31%] bg-cream border border-gold/10 p-10 relative group">
+    <div className="min-w-full md:min-w-[48%] lg:min-w-[31%] xl:min-w-[24%] bg-cream border border-gold/10 p-6 md:p-10 relative group">
       <div className="absolute top-8 left-8 text-gold/10 pointer-events-none">
         <svg width="60" height="48" viewBox="0 0 60 48" fill="currentColor">
           <path d="M13.5 0C6.04416 0 0 6.04416 0 13.5V31.5C0 38.9558 6.04416 45 13.5 45H22.5V36H13.5C11.0147 36 9 33.9853 9 31.5V27H22.5V0H13.5ZM46.5 0C39.0442 0 33 6.04416 33 13.5V31.5C33 38.9558 39.0442 45 46.5 45H55.5V36H46.5C44.0147 36 42 33.9853 42 31.5V27H55.5V0H46.5Z" />
@@ -76,7 +76,7 @@ function TestimonialCard({ testimonial }: { testimonial: (typeof testimonials)[0
         ))}
       </div>
 
-      <blockquote className="font-serif text-xl italic text-forest leading-relaxed mb-10 min-h-[160px]">
+      <blockquote className="font-serif text-lg md:text-xl italic text-forest leading-relaxed mb-10 min-h-[120px] md:min-h-[160px]">
         &ldquo;{testimonial.text}&rdquo;
       </blockquote>
 
