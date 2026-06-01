@@ -14,7 +14,7 @@ import NewsletterSection from '@/components/sections/NewsletterSection';
 import HistorySection from '@/components/sections/HistorySection';
 import LuxuryAmenities from '@/components/sections/LuxuryAmenities';
 // import WellnessSection from '@/components/sections/WellnessSection';
-import ForestSection from '@/components/sections/ForestSection';
+// import ForestSection from '@/components/sections/ForestSection';
 import ArtOfStaySection from '@/components/sections/ArtOfStaySection';
 
 export default function Home() {
@@ -125,7 +125,7 @@ export default function Home() {
       {/* <OffersSection /> */}
 
       {/* Sustainability & Forest */}
-      <ForestSection />
+      {/* <ForestSection /> */}
 
       {/* Newsletter & Contact */}
       <NewsletterSection />
