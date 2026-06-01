@@ -63,4 +63,22 @@ export const estateEvents: EstateEvent[] = [
     image: '/images/exterior5.jpeg',
     features: ['Guided jam sessions', 'Instruments provided', 'Late-night setup'],
   },
+  {
+    id: 'e7',
+    title: 'Day Picnic Package',
+    category: 'Day Trips',
+    description: 'A perfect one-day escape from the city. Enjoy pool access, manicured lawns, guided nature trails and a lavish multi-cuisine buffet lunch.',
+    capacity: 'Up to 100 guests',
+    image: '/images/exterior.jpeg',
+    features: ['Infinity pool access', 'Lavish buffet lunch', 'Guided nature trails', 'Lawn games included'],
+  },
+  {
+    id: 'e8',
+    title: 'Group Day Outing',
+    category: 'Day Trips',
+    description: 'Curated group day-trip packages for corporate teams, school trips, and large families — complete with activities and catering.',
+    capacity: 'Up to 200 guests',
+    image: '/images/exterior3.jpeg',
+    features: ['Team building activities', 'BBQ & bonfire option', 'Dedicated coordinator', 'Prior booking required'],
+  },
 ];
