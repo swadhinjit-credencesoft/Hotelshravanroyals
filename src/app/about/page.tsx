@@ -8,7 +8,6 @@ import GoldDivider from '@/components/ui/GoldDivider';
 import AwardsMarquee from '@/components/sections/AwardsMarquee';
 import { motion } from 'framer-motion';
 import Image from 'next/image';
-import Link from 'next/link';
 import { siteConfig } from '@/data/site';
 
 export default function AboutPage() {
@@ -17,8 +16,8 @@ export default function AboutPage() {
       <Navbar />
       <CinematicHero 
         label="Our Story"
-        title="Rooted in Nature"
-        tagline="Founded on the belief that true luxury is reconnecting with the wild. Discover the vision behind Hotel Bella Casa."
+        title="Genuine Hospitality"
+        tagline="Dedicated to offering clean, comfortable, and affordable accommodation in Purnia for families and business travelers."
         image='https://bookonelocal.in/cdn/IMG_7429.mp4'
       />
 
@@ -29,8 +28,8 @@ export default function AboutPage() {
           __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "Hotel",
-            "name": "Hotel Bella Casa",
-            "description": "Premium boutique hotel in Purnia offering modern rooms, Bihari cuisine, and warm hospitality.",
+            "name": "Hotel Surya Bella Casa",
+            "description": "Premium budget and mid-range hotel in Purnia offering modern rooms, delicious pure veg dining partners, and warm local hospitality.",
             "url": "https://hotelsuryabellacasa.com",
             "logo": "https://hotelsuryabellacasa.com/suryabellacasalogo.png",
             "foundingDate": "2019",
@@ -41,9 +40,8 @@ export default function AboutPage() {
               "addressCountry": "IN"
             },
             "sameAs": [
-              "#",
-              "#",
-              "#"
+              "https://www.facebook.com/",
+              "https://www.instagram.com/hotel.bellacasaa/"
             ]
           })
         }}
@@ -60,21 +58,21 @@ export default function AboutPage() {
             >
               <SectionLabel className="mb-6">Ethos & Origins</SectionLabel>
               <h2 className="font-display text-4xl md:text-6xl italic text-forest mb-8 leading-tight">
-                Where the Wild <br /> Meets the Refined
+                Comfortable Stays <br /> Warm Local Welcome
               </h2>
               <GoldDivider className="mb-10" />
               <p className="font-serif text-xl text-taupe italic mb-8 leading-relaxed">
-                &ldquo;We didn&apos;t just want to build a hotel. We wanted to build a sanctuary that frames the vibrant spirit of Purnia and respects the earth.&rdquo;
+                &ldquo;We wanted to establish a premium budget-friendly stay that matches the vibrant commercial growth of Purnia while treating every guest like family.&rdquo;
               </p>
               <div className="space-y-6 font-sans text-base text-taupe/80 leading-loose">
                 <p>
-                  Hotel Bella Casa was conceived in 2019 by a family of hospitality enthusiasts who wanted to create a premium stay experience in the heart of Purnia. What started as a small passion project quickly blossomed into Purnia&apos;s premier boutique hotel.
+                  Hotel Surya Bella Casa was established in 2019 with a vision to bridge the gap in quality budget-friendly lodging in Seemanchal. Over the years, we have grown to become a preferred destination for corporate executives, family travelers, and tourists visiting Purnia.
                 </p>
                 <p>
-                  Our design language is one of comfort and sophistication. Every room is thoughtfully appointed with modern amenities and elegant interiors to ensure a relaxing stay in the heart of the city.
+                  Our hotel stands opposite Vikass Market, just a short walk from the main Purnia Bus Stand, making it exceptionally easy to navigate the city. Every room has been designed for functionality, cleanliness, and comfort.
                 </p>
                 <p>
-                  Explore our <Link href="/experiences" className="text-gold hover:underline">curated experiences</Link> or our <Link href="/blog" className="text-gold hover:underline">nature blog</Link> to learn more about our philosophy.
+                  Whether you are in town for an overnight business meeting or a multi-day family celebration, our hospitable staff is here to make your visit seamless and memorable.
                 </p>
               </div>
             </motion.div>
@@ -97,31 +95,31 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* Nature & Sustainability Section */}
+      {/* Quality Commitments Section */}
       <section className="py-24 bg-ivory">
         <div className="max-w-[1600px] mx-auto px-6 md:px-10 text-center">
           <div className="max-w-3xl mx-auto">
-            <SectionLabel className="justify-center mb-8">Eco Commitments</SectionLabel>
-            <h2 className="font-display text-4xl md:text-6xl italic text-forest mb-12">Treading Lightly</h2>
+            <SectionLabel className="justify-center mb-8">Our Commitments</SectionLabel>
+            <h2 className="font-display text-4xl md:text-6xl italic text-forest mb-12">Reliability & Trust</h2>
             <p className="font-serif text-xl italic text-taupe mb-16 leading-relaxed">
-              We are dedicated to providing a comfortable and responsible stay experience. From rainwater harvesting to eliminating single-use plastics, our operations are designed to protect the environment and serve our guests better.
+              We are dedicated to providing an exceptionally clean, comfortable, and reliable stay experience. Our operations are fully geared towards business efficiency and cozy family comfort.
             </p>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
               <div className="p-8 border border-gold/10">
                 <span className="block font-serif text-4xl text-gold mb-2">100%</span>
-                <span className="font-sans text-[10px] uppercase tracking-widest text-taupe/60">Solar Water Heating</span>
+                <span className="font-sans text-[10px] uppercase tracking-widest text-taupe/60">Power Backup & AC</span>
               </div>
               <div className="p-8 border border-gold/10">
-                <span className="block font-serif text-4xl text-gold mb-2">400+</span>
-                <span className="font-sans text-[10px] uppercase tracking-widest text-taupe/60">Trees Planted</span>
+                <span className="block font-serif text-4xl text-gold mb-2">Daily</span>
+                <span className="font-sans text-[10px] uppercase tracking-widest text-taupe/60">Hygiene & Sanitization</span>
               </div>
               <div className="p-8 border border-gold/10">
                 <span className="block font-serif text-4xl text-gold mb-2">Zero</span>
-                <span className="font-sans text-[10px] uppercase tracking-widest text-taupe/60">Single-Use Plastics</span>
+                <span className="font-sans text-[10px] uppercase tracking-widest text-taupe/60">Hidden Charges</span>
               </div>
               <div className="p-8 border border-gold/10">
                 <span className="block font-serif text-4xl text-gold mb-2">Local</span>
-                <span className="font-sans text-[10px] uppercase tracking-widest text-taupe/60">Farm-to-Table</span>
+                <span className="font-sans text-[10px] uppercase tracking-widest text-taupe/60">Warm Bihari Service</span>
               </div>
             </div>
           </div>

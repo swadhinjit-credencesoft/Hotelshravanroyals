@@ -3,44 +3,44 @@
 import { motion } from 'framer-motion';
 import SectionLabel from '@/components/ui/SectionLabel';
 import { 
-  Sparkles, 
+  Wifi, 
   Wind, 
-  Wine, 
-  Compass, 
+  Tv, 
   ShieldCheck, 
-  CalendarDays 
+  ParkingCircle, 
+  ArrowUpCircle 
 } from 'lucide-react';
 
 const amenities = [
   {
-    icon: Sparkles,
-    title: 'Personal Butler',
-    description: 'Bespoke service that anticipates your needs before they arise, with absolute discretion.'
-  },
-  {
-    icon: Wine,
-    title: 'Private Cellar',
-    description: 'Access to our library of over 12,000 rare vintages, including private premium reserves.'
-  },
-  {
     icon: Wind,
-    title: 'Helipad Access',
-    description: 'Seamless arrivals and departures via our private clifftop landing pad.'
+    title: 'Air Conditioned Rooms',
+    description: 'Fully air-conditioned spaces with individual climate controls to keep you comfortable year-round.'
   },
   {
-    icon: Compass,
-    title: 'Estate Botanist',
-    description: 'Private guided tours of our 12-acre ancient forest and organic gardens.'
+    icon: Wifi,
+    title: 'Free High-Speed Wi-Fi',
+    description: 'Stay connected with complimentary high-speed internet available throughout the property.'
+  },
+  {
+    icon: ArrowUpCircle,
+    title: 'Elevator & Lift Access',
+    description: 'Convenient modern lift access ensuring comfort and hassle-free movement for all guests and elder family members.'
+  },
+  {
+    icon: ParkingCircle,
+    title: 'Secure Dedicated Parking',
+    description: 'Rest easy with secure, complimentary on-site parking facilities for your private vehicles.'
   },
   {
     icon: ShieldCheck,
-    title: 'Discreet Security',
-    description: 'State-of-the-art privacy measures designed to be entirely invisible to the guest.'
+    title: '24/7 Safety & Care',
+    description: 'Continuous room service, backup power generators, and secure lock systems for complete peace of mind.'
   },
   {
-    icon: CalendarDays,
-    title: 'Daily Rituals',
-    description: 'From dawn breathwork to evening starlit libations, every hour is a curated event.'
+    icon: Tv,
+    title: 'Modern Flat Screen TVs',
+    description: 'Entertainment at your fingertips with multi-channel LED TVs equipped in every room.'
   }
 ];
 
@@ -51,7 +51,7 @@ export default function LuxuryAmenities() {
         <div className="text-center mb-20">
           <SectionLabel className="justify-center mb-6">Our Standards</SectionLabel>
           <h2 className="font-display text-4xl md:text-[52px] italic text-forest">
-            Bespoke Without Compromise
+            Comfort Without Compromise
           </h2>
         </div>
 

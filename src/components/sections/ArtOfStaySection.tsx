@@ -5,10 +5,10 @@ import SectionLabel from '@/components/ui/SectionLabel';
 import GoldDivider from '@/components/ui/GoldDivider';
 
 const serviceDetails = [
-  { title: 'The Pillow Menu', description: 'Choose from five organic options, from Sahyadri buckwheat to hypoallergenic goose down.' },
-  { title: 'Forest Guide', description: 'Discover the native flora and birdlife with our resident expert on a private morning trail.' },
-  { title: 'Fireside Lounge', description: 'Gather around the communal bonfire for acoustic music and locally-inspired appetizers.' },
-  { title: 'Custom Dining', description: 'Specialty Fish and Mutton preparations available on request, curated by our head chef.' },
+  { title: 'Cozy Bedding', description: 'Enjoy clean, soft linens and premium pillows in every room, ensuring a perfect night of sleep.' },
+  { title: 'Local Sightseeing', description: 'Our desk helps coordinate local transport and routes to Kali Mandir, Puran Devi, and historic monuments.' },
+  { title: 'Quiet Safe Stays', description: 'Enjoy a peaceful and secure environment opposite Vikass Market, ideal for business travelers.' },
+  { title: 'Pure Veg Ordering', description: 'Easily order vegetarian delicacies from top local restaurants directly to your room via partner apps.' },
 ];
 
 export default function ArtOfStaySection() {
@@ -23,7 +23,7 @@ export default function ArtOfStaySection() {
               </h2>
               <GoldDivider className="mb-10" />
               <p className="font-serif text-xl text-taupe italic mb-12 leading-relaxed">
-                True luxury is found in the details that you never have to ask for. It is the silent adjustment of the room temperature, the unprompted tea at twilight, and the perfect pillow before you even know you need it.
+                True hospitality is found in the essential details that make you feel at home. It is the spotless cleanliness of your room, the seamless connectivity of our Wi-Fi, and a helpful team ready to assist you at any hour.
               </p>
            </div>
            

@@ -12,9 +12,9 @@ export default function BrandStatement() {
   const isInView = useInView(ref, { once: true, margin: '-80px' })
 
   const quoteLines = [
-    'Hotel Bella Casa is more than a stay — it is a world of refined luxury',
-    'peaceful escapes, and unforgettable experiences where comfort, beauty',
-    'and hospitality exist in perfect harmony.',
+    'Hotel Surya Bella Casa is more than a stay — it is a sanctuary of comfort',
+    'warm hospitality, and absolute peace of mind where business travelers',
+    'and families experience Purnia at its very best.',
   ]
 
   return (
@@ -111,9 +111,7 @@ export default function BrandStatement() {
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.8, delay: 2.2 }}
         >
-         At Hotel Bella Casa, luxury is not just experienced — it is remembered.  
-Surrounded by breathtaking landscapes, timeless architecture, and curated hospitality,  
-every stay is designed to awaken serenity, indulgence, and unforgettable moments.
+         At Hotel Surya Bella Casa, comfort is not just provided — it is delivered with genuine warmth. Located centrally opposite Vikass Market, our rooms offer modern amenities, a quiet environment, and unparalleled local accessibility, ensuring that your business trip or family stay is completely hassle-free.
         </motion.p>
       </div>
     </section>

@@ -25,9 +25,9 @@ export default function HistorySection() {
             <div className="relative aspect-[4/5] w-full max-w-md mx-auto z-10 overflow-hidden border border-gold/10">
               <Image
                 src='https://bookonelocal.in/cdn/IMG_3808.avif'
-                alt="Modern rustic interior at Hotel Bella Casa"
+                alt="Comfortable clean rooms at Hotel Surya Bella Casa"
                 fill
-                className="object-cover grayscale hover:grayscale-0 transition-all duration-1000"
+                className="object-cover transition-all duration-1000"
               />
             </div>
             
@@ -37,7 +37,7 @@ export default function HistorySection() {
             >
                <Image
                 src='https://bookonelocal.in/cdn/IMG_3815.avif'
-                alt="Natural details at the retreat"
+                alt="Well-appointed budget stay in Purnia"
                 fill
                 className="object-cover"
               />
@@ -49,7 +49,7 @@ export default function HistorySection() {
             >
                <Image
                 src='https://bookonelocal.in/cdn/IMG_3784.avif'
-                alt="Architecture sketches of Hotel Bella Casa"
+                alt="Clean hotel interiors at Surya Bella Casa"
                 fill
                 className="object-cover"
               />
@@ -59,30 +59,30 @@ export default function HistorySection() {
           <div className="flex flex-col">
             <SectionLabel className="mb-6">Our Legacy</SectionLabel>
             <h2 className="font-display text-4xl md:text-[56px] italic text-forest mb-8 leading-tight" style={{ textWrap: 'balance' }}>
-              A Vision of Natural Stillness
+              A New Standard of Local Hospitality
             </h2>
             <GoldDivider className="mb-10" />
             
             <div className="space-y-6">
               <p className="font-serif text-xl text-taupe leading-relaxed italic">
-                &ldquo;We didn&apos;t just build a resort; we framed the Sahyadris.&rdquo;
+                &ldquo;We didn&apos;t just build a hotel; we created a home away from home in Purnia.&rdquo;
               </p>
               <p className="font-sans text-base text-taupe/80 leading-loose">
-                Conceived in 2019 as a sanctuary for those seeking a deeper connection with nature, Hotel Bella Casa was born from a passion for the rugged beauty of the Sahyadri mountain range. Our retreat is designed to be a quiet observer of the landscape, offering a space where the unhurried grace of the forest meets modern luxury.
+                Established in 2019 to cater to the growing needs of corporate guests and families visiting Seemanchal, Hotel Surya Bella Casa has quickly become the preferred choice for comfortable and affordable accommodation in Purnia, Bihar.
               </p>
               <p className="font-sans text-base text-taupe/80 leading-loose">
-                Every red brick in our cottages and every trail in our forest has been thoughtfully curated to provide an immersive experience that celebrates the soul of Purnea.
+                Every corner of our hotel is designed to offer a peaceful stay with a focus on hygiene, modern facilities, and courteous service. Situated opposite Vikass Market and near the main Bus Stand, our strategic location provides business travelers and tourists with effortless connectivity to the entire city.
               </p>
             </div>
 
             <div className="mt-12 grid grid-cols-2 gap-8 border-t border-gold/10 pt-12">
                <div>
                   <span className="font-serif text-3xl text-gold">2019</span>
-                  <p className="font-sans text-[10px] uppercase tracking-widest text-taupe mt-2">Conceived</p>
+                  <p className="font-sans text-[10px] uppercase tracking-widest text-taupe mt-2">Established</p>
                </div>
                <div>
-                  <span className="font-serif text-3xl text-gold">Bella Casa</span>
-                  <p className="font-sans text-[10px] uppercase tracking-widest text-taupe mt-2">Heart of Sahyadris</p>
+                  <span className="font-serif text-3xl text-gold">Surya Bella Casa</span>
+                  <p className="font-sans text-[10px] uppercase tracking-widest text-taupe mt-2">Heart of Purnia</p>
                </div>
             </div>
           </div>

@@ -29,12 +29,12 @@ export const metadata: Metadata = {
   metadataBase: new URL('https://hotelsuryabellacasa.com'),
 
   title: {
-    default: 'Hotel Bella Casa | Comfortable Stay in Purnia',
-    template: '%s | Hotel Bella Casa',
+    default: 'Hotel Surya Bella Casa Purnia | Best Stay in Purnia',
+    template: '%s | Hotel Surya Bella Casa',
   },
 
   description:
-    'Hotel Bella Casa offers well-maintained rooms with essential amenities in Purnia, Bihar. Ideal for business and leisure travelers with easy access to local markets and transport.',
+    'Book a comfortable, budget-friendly stay at Hotel Surya Bella Casa in Purnia, Bihar. Near Bus Stand & Vikass Market. Perfect for families & business travelers.',
 
   icons: {
     icon: [
@@ -46,13 +46,22 @@ export const metadata: Metadata = {
   },
 
   keywords: [
-    'Hotel Bella Casa',
-    'Purnia hotel',
-    'budget stay Purnia',
-    'hotels in Purnia',
-    'Bihar accommodation',
-    'Bihar hotel',
-    'Purnia accommodation',
+    'Hotel Surya Bella Casa',
+    'hotel in purnia',
+    'best hotel in purnia',
+    'bella casa purnia',
+    'hotel near bus stand purnia',
+    'hotel near vikass market purnia',
+    'budget hotel in purnia',
+    'family hotel in purnia',
+    'business hotel in purnia',
+    'hotel rooms in purnia',
+    'accommodation in purnia',
+    'stay in purnia',
+    'hotel near purnia railway station',
+    'affordable hotel in purnia',
+    'hotel in bhatta bazar purnia',
+    'banquet hall purnia',
   ],
 
   alternates: {
@@ -72,20 +81,29 @@ export const metadata: Metadata = {
   },
 
   openGraph: {
-    title: 'Hotel Bella Casa | Comfortable Stay in Purnia',
+    title: 'Hotel Surya Bella Casa Purnia | Best Stay in Purnia',
     description:
-      'Hotel Bella Casa offers well-maintained rooms with essential amenities in Purnia, Bihar. Ideal for business and leisure travelers with easy access to local markets and transport.',
+      'Book a comfortable, budget-friendly stay at Hotel Surya Bella Casa in Purnia, Bihar. Near Bus Stand & Vikass Market. Perfect for families & business travelers.',
     url: 'https://hotelsuryabellacasa.com',
-    siteName: 'Hotel Bella Casa',
+    siteName: 'Hotel Surya Bella Casa',
     type: 'website',
     locale: 'en_US',
+    images: [
+      {
+        url: 'https://bookonelocal.in/cdn/IMG_3815.avif',
+        width: 1200,
+        height: 630,
+        alt: 'Hotel Surya Bella Casa Purnia',
+      },
+    ],
   },
 
   twitter: {
     card: 'summary_large_image',
-    title: 'Hotel Bella Casa | Comfortable Stay in Purnia',
+    title: 'Hotel Surya Bella Casa Purnia | Best Stay in Purnia',
     description:
-      'Hotel Bella Casa offers well-maintained rooms with essential amenities in Purnia, Bihar. Ideal for business and leisure travelers with easy access to local markets and transport.',
+      'Book a comfortable, budget-friendly stay at Hotel Surya Bella Casa in Purnia, Bihar. Near Bus Stand & Vikass Market. Perfect for families & business travelers.',
+    images: ['https://bookonelocal.in/cdn/IMG_3815.avif'],
   },
 }
 

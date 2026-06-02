@@ -125,13 +125,13 @@ export default function DiningSection() {
       <div className="max-w-[1600px] mx-auto px-6 md:px-10">
         {/* Header */}
         <div className="text-center mb-20">
-          <SectionLabel className="justify-center mb-5">Dining &amp; Libations</SectionLabel>
+          <SectionLabel className="justify-center mb-5">Dining &amp; Local Flavors</SectionLabel>
           <h2 className="font-display text-4xl md:text-[52px] italic text-forest mb-6 leading-tight">
-            Four Venues, One Inn
+            Convenient Dining Options
           </h2>
           <GoldDivider className="justify-center mb-6" />
           <p className="font-serif text-xl font-light text-taupe max-w-xl mx-auto leading-relaxed">
-            From forest-to-fork tasting menus to wood-fired coastal feasts — every meal here is a reason to linger.
+            Enjoy premium pure vegetarian dining in Purnia. Relish partner deliveries or step out to savor the sweet shops and street delicacies of Vikass Market.
           </p>
         </div>
 

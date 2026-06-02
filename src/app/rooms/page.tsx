@@ -10,8 +10,8 @@ export default function RoomsPage() {
       <Navbar />
       <CinematicHero 
         label="Our Accommodations"
-        title="Sanctuaries of Stillness"
-        tagline="From rustic Red Brick Cottages to serene Lawn and Forest facing rooms, discover your perfect nature retreat in Purnia."
+        title="Rooms & Stays"
+        tagline="Discover clean, comfortable, and well-maintained rooms featuring air conditioning, free Wi-Fi, and premium service in Purnia."
         image='https://bookonelocal.in/cdn/IMG_7420.mp4'
       />
       <RoomsGrid />

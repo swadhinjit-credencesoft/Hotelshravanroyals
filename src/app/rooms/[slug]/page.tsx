@@ -6,7 +6,7 @@ import { mapHotelMateRooms, Room } from '@/lib/rooms'
 import type { Metadata } from 'next'
 
 interface Props {
-  params: { slug: string }
+  params: Promise<{ slug: string }>
 }
 
 async function getRooms(): Promise<Room[]> {
@@ -28,13 +28,14 @@ async function getRooms(): Promise<Room[]> {
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const { slug } = await params
   const rooms = await getRooms()
-  const room = rooms.find(r => r.slug === params.slug)
+  const room = rooms.find(r => r.slug === slug)
   if (!room) return {}
 
-  const title = `${room.name} | Luxury Cottages | Hotel Bella Casa`
-  const description = `${room.tagline}. Available for up to ${room.guests} guests. Book your luxury stay in Purnia today.`
-  
+  const title = `${room.name} | Hotel Surya Bella Casa | Purnia`
+  const description = `${room.tagline}. Available for up to ${room.guests} guests. Book your stay in Purnia today.`
+
   return {
     title,
     description,
@@ -52,7 +53,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       title,
       description,
       images: [room.image],
-    }
+    },
   }
 }
 
@@ -64,12 +65,13 @@ export async function generateStaticParams() {
 }
 
 export default async function RoomDetailPage({ params }: Props) {
+  const { slug } = await params
   const rooms = await getRooms()
-  const room = rooms.find(r => r.slug === params.slug)
-  
+  const room = rooms.find(r => r.slug === slug)
+
   if (!room) notFound()
 
-  const otherRooms = rooms.filter(r => r.slug !== params.slug)
+  const otherRooms = rooms.filter(r => r.slug !== slug)
 
   return <RoomDetailClient room={room} otherRooms={otherRooms} />
 }

@@ -1,7 +1,7 @@
 User-agent: *
 Allow: /
+Allow: /_next/static/
 Disallow: /api/
 Disallow: /admin/
-Disallow: /_next/
 
 Sitemap: https://hotelsuryabellacasa.com/sitemap.xml

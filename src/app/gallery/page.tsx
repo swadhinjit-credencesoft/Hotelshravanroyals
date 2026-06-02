@@ -16,8 +16,8 @@ export default function GalleryPage() {
           __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "ImageGallery",
-            "name": "Hotel Bella Casa Photo Collection",
-            "description": "High-resolution photos of our Red Brick Cottages, infinity pool, and lush forest surroundings in Purnia.",
+            "name": "Hotel Surya Bella Casa Photo Collection",
+            "description": "High-resolution photos of our clean accommodations, dining options, and hospitable atmosphere in Purnia, Bihar.",
             "image": [
               '/images/room1.jpeg',
               '/images/room2.jpeg'

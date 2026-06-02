@@ -12,11 +12,11 @@ export default function ExperiencesGrid() {
       <div className="max-w-[1600px] mx-auto px-6 md:px-10">
         <div className="mb-16">
           <SectionLabel light className="mb-4">Experiences</SectionLabel>
-          <h2 className="font-display text-4xl md:text-[52px] italic text-forest mb-6 leading-tight">
+          <h2 className="font-display text-4xl md:text-[52px] italic text-ivory mb-6 leading-tight">
             Curated Immersions
           </h2>
           <p className="font-serif text-xl font-light text-ivory/60 max-w-xl leading-relaxed">
-            Beyond the suite, Hotel Bella Casa offers a collection of adventures and rituals designed to connect you with nature.
+            Ideally located in the heart of Purnia, Hotel Surya Bella Casa connects you to spiritual landmarks, local shopping, and essential business hubs.
           </p>
         </div>
 

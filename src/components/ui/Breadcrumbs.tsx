@@ -6,7 +6,7 @@ import { ChevronRight, Home } from 'lucide-react';
 
 export default function Breadcrumbs() {
   const pathname = usePathname();
-  if (pathname === '/') return null;
+  if (!pathname || pathname === '/') return null;
 
   // Pages with dark CinematicHeroes where we need light text
   const darkHeroPages = ['/about', '/rooms', '/dining', '/experiences', '/events', '/gallery', '/blog'];

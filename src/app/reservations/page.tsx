@@ -14,10 +14,10 @@ const stripHtml = (html: string) => html.replace(/<[^>]+>/g, '')
 function ReservationsContent() {
   const searchParams = useSearchParams()
 
-  const fromDate = searchParams.get('fromDate') || todayString()
-  const toDate = searchParams.get('toDate') || addDays(todayString(), 1)
-  const noOfPersons = searchParams.get('noOfPersons') || '1'
-  const noOfRooms = searchParams.get('noOfRooms') || '1'
+  const fromDate = searchParams?.get('fromDate') ?? todayString()
+  const toDate = searchParams?.get('toDate') ?? addDays(todayString(), 1)
+  const noOfPersons = searchParams?.get('noOfPersons') ?? '1'
+  const noOfRooms = searchParams?.get('noOfRooms') ?? '1'
 
   const [property, setProperty] = useState<HotelProperty | null>(null)
   const [loading, setLoading] = useState(true)

@@ -12,20 +12,20 @@ export default function ExperiencesPage() {
       <Navbar />
       <CinematicHero 
         label="Beyond the Room"
-        title="Immerse in Nature"
-        tagline="From monsoon treks to cozy winter bonfires, discover activities designed to help you reconnect with the outdoors."
+        title="Explore Purnia"
+        tagline="Discover the rich history, spiritual landmarks, and commercial hubs of Purnia, Bihar, during your comfortable stay with us."
         image='https://bookonelocal.in/cdn/IMG_3739.avif'
       />
 
       <section className="py-32 bg-forest text-ivory/80">
          <div className="max-w-[1600px] mx-auto px-6 md:px-10 grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
             <div>
-               <SectionLabel light className="mb-6">Outdoor Spaces</SectionLabel>
+               <SectionLabel light className="mb-6">Local Accessibility</SectionLabel>
                <h2 className="font-display text-4xl md:text-6xl italic text-ivory mb-8">
-                  Lawns, Decks & <br /> Campfire Areas
+                  Central Stays & <br /> Easy Sightseeing
                </h2>
                 <p className="font-sans text-lg leading-relaxed mb-8">
-                  Hotel Bella Casa features expansive outdoor spaces designed for relaxation and gathering. Enjoy morning yoga on our wooden decks, spend the afternoon reading on our manicured lawns, or end the night sharing stories around our dedicated campfire zones.
+                  Hotel Surya Bella Casa stands centrally in Suryalok Complex. Enjoy effortless access to Purnia Bus Stand and regional transport, making it simple to plan visits to the historic Jalalgarh Fort or sacred temples like Puran Devi and Kali Mandir.
                 </p>
                <a href="/gallery" className="inline-block bg-gold text-[#1a1004] font-sans text-[11px] uppercase tracking-[0.2em] px-12 py-5 hover:bg-gold-light transition-all">
                   View Gallery
@@ -34,9 +34,9 @@ export default function ExperiencesPage() {
             <div className="relative aspect-[4/3] border border-ivory/10">
                <Image 
                   src='https://bookonelocal.in/cdn/IMG_3764.avif' 
-                  alt="Outdoor campfire and seating area in nature" 
+                  alt="Comfortable lounge and lobby space at Surya Bella Casa" 
                   fill
-                  className="object-cover grayscale hover:grayscale-0 transition-all duration-1000"
+                  className="object-cover transition-all duration-1000"
                />
             </div>
          </div>
