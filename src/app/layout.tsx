@@ -1,5 +1,5 @@
 import type { Metadata } from 'next'
-import { Playfair_Display, Cormorant_Garamond, Jost } from 'next/font/google'
+import { Playfair_Display, Cormorant_Garamond, Barlow } from 'next/font/google'
 import './globals.css'
 import LenisProvider from '@/components/providers/LenisProvider'
 import CustomCursor from '@/components/ui/CustomCursor'
@@ -21,10 +21,10 @@ const cormorant = Cormorant_Garamond({
   display: 'swap',
 })
 
-const jost = Jost({
+const barlow = Barlow({
   subsets: ['latin'],
-  weight: ['300', '400', '500'],
-  variable: '--font-jost',
+  weight: ['300', '400', '500', '600', '700'],
+  variable: '--font-barlow',
   display: 'swap',
 })
 
@@ -90,7 +90,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${playfair.variable} ${cormorant.variable} ${jost.variable}`}
+      className={`${playfair.variable} ${cormorant.variable} ${barlow.variable}`}
     >
       <head>
         
