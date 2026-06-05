@@ -68,6 +68,14 @@ export const metadata: Metadata = {
       'A boutique nature retreat in Karjat, Maharashtra offering luxurious yet cozy stays for leisure travellers, event groups, and corporate teams.',
     url: 'https://unwindkarjat.com',
     siteName: 'Unwind Karjat',
+    images: [
+      {
+        url: 'https://unwindkarjat.com/images/resort-exterior.png',
+        width: 1200,
+        height: 630,
+        alt: 'Unwind Karjat Nature Resort View'
+      }
+    ],
     type: 'website',
     locale: 'en_US',
   },
@@ -76,6 +84,7 @@ export const metadata: Metadata = {
     title: 'Unwind Karjat | Resort & Nature Retreat near Mumbai',
     description:
       'A boutique nature retreat in Karjat, Maharashtra offering luxurious yet cozy stays for leisure travellers, event groups, and corporate teams.',
+    images: ['https://unwindkarjat.com/images/resort-exterior.png'],
   },
 }
 

@@ -56,7 +56,7 @@ export default function ExperiencesPage() {
                 "item": {
                   "@type": "TouristAttraction",
                   "name": "Bhivpuri Waterfalls",
-                  "description": "Spectacular monsoon waterfalls near Karjat.",
+                  "description": "Spectacular monsoon waterfalls near Karjat, perfect for a natural shower and trekking.",
                   "location": { "@type": "Place", "name": "Karjat, Maharashtra" }
                 }
               },
@@ -66,8 +66,18 @@ export default function ExperiencesPage() {
                 "item": {
                   "@type": "TouristAttraction",
                   "name": "Kondana Caves",
-                  "description": "Ancient Buddhist rock-cut caves.",
+                  "description": "Ancient Buddhist rock-cut caves set within lush forest greenery, offering historic and peaceful trails.",
                   "location": { "@type": "Place", "name": "Kondana, Karjat" }
+                }
+              },
+              {
+                "@type": "ListItem",
+                "position": 3,
+                "item": {
+                  "@type": "TouristAttraction",
+                  "name": "Peth Fort (Kothaligad)",
+                  "description": "A popular historic fort offering panoramic views of the Western Ghats and the Sahyadri range.",
+                  "location": { "@type": "Place", "name": "Karjat, Maharashtra" }
                 }
               }
             ]

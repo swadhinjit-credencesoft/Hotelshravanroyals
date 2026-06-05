@@ -40,6 +40,52 @@ export default function BlogPage() {
   return (
     <main className="bg-cream min-h-screen">
       <Navbar />
+      
+      {/* Blog/Articles Schema */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Blog",
+            "name": "The Karjat Journal | Unwind Karjat Blog",
+            "description": "Discover local travel insights, monsoon itineraries, corporate retreat checklists, and peak weekend getaway tips in our official Karjat journal.",
+            "url": "https://unwindkarjat.com/blog",
+            "publisher": {
+              "@type": "Hotel",
+              "name": "Unwind Karjat",
+              "url": "https://unwindkarjat.com"
+            },
+            "blogPost": [
+              {
+                "@type": "BlogPosting",
+                "headline": "Best things to do in Karjat (All Seasons)",
+                "description": "From pristine waterfalls to historic treks, discover the ultimate guide to exploring Karjat year-round.",
+                "datePublished": "2024-10-12",
+                "image": "https://unwindkarjat.com/blog1.png",
+                "author": { "@type": "Organization", "name": "Unwind Karjat" }
+              },
+              {
+                "@type": "BlogPosting",
+                "headline": "Karjat in Monsoon: What to Expect",
+                "description": "Experience the magic of the Sahyadris coming alive with lush greenery and cascading waterfalls.",
+                "datePublished": "2024-09-28",
+                "image": "https://unwindkarjat.com/images/exterior7.jpeg",
+                "author": { "@type": "Organization", "name": "Unwind Karjat" }
+              },
+              {
+                "@type": "BlogPosting",
+                "headline": "How to Plan a Corporate Retreat Near Mumbai",
+                "description": "A comprehensive checklist for organizing a successful offsite that blends strategy with serenity.",
+                "datePublished": "2024-08-15",
+                "image": "https://unwindkarjat.com/images/exterior8.jpeg",
+                "author": { "@type": "Organization", "name": "Unwind Karjat" }
+              }
+            ]
+          })
+        }}
+      />
+
       <CinematicHero 
         label="Stories & Guides"
         title="The Karjat Journal"

@@ -19,8 +19,12 @@ export default function GalleryPage() {
             "name": "Unwind Karjat Photo Collection",
             "description": "High-resolution photos of our Red Brick Cottages, infinity pool, and lush forest surroundings in Karjat.",
             "image": [
-              '/images/room1.jpeg',
-              '/images/room2.jpeg'
+              'https://unwindkarjat.com/images/room1.jpeg',
+              'https://unwindkarjat.com/images/room2.jpeg',
+              'https://unwindkarjat.com/images/resort-exterior.png',
+              'https://unwindkarjat.com/images/cottage-exterior.png',
+              'https://unwindkarjat.com/images/pool.png',
+              'https://unwindkarjat.com/images/dining.png'
             ]
           })
         }}
