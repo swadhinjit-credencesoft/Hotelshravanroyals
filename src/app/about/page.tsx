@@ -40,8 +40,9 @@ export default function AboutPage() {
               "addressCountry": "IN"
             },
             "sameAs": [
-              "https://www.facebook.com/",
-              "https://www.instagram.com/hotel.bellacasaa/"
+              "https://www.facebook.com/hotelsuryabellacasa",
+              "https://www.instagram.com/hotel.bellacasaa/",
+              "https://www.youtube.com/@hotelsuryabellacasa"
             ]
           })
         }}

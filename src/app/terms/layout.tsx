@@ -1,21 +1,25 @@
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Terms of Service & Booking Conditions | Hotel Bella Casa',
-  description: 'Review the official terms of service, check-in schedules, lodging policies, and cancellation conditions for resort reservations at Hotel Bella Casa.',
+  title: 'Terms & Conditions | Hotel Surya Bella Casa Purnia',
+  description: 'Read the terms and conditions of Hotel Surya Bella Casa, Purnia, Bihar. Understand our booking, check-in/check-out, and guest conduct policies.',
   alternates: {
     canonical: 'https://hotelsuryabellacasa.com/terms',
   },
+  robots: {
+    index: true,
+    follow: true,
+  },
   openGraph: {
-    title: 'Terms of Service & Booking Conditions | Hotel Bella Casa',
-    description: 'Review the official terms of service, check-in schedules, lodging policies, and cancellation conditions for resort reservations at Hotel Bella Casa.',
+    title: 'Terms & Conditions | Hotel Surya Bella Casa Purnia',
+    description: 'Read the terms and conditions of Hotel Surya Bella Casa, Purnia, Bihar. Understand our booking, check-in/check-out, and guest conduct policies.',
     url: 'https://hotelsuryabellacasa.com/terms',
     type: 'website',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Terms of Service & Booking Conditions | Hotel Bella Casa',
-    description: 'Review the official terms of service, check-in schedules, lodging policies, and cancellation conditions for resort reservations at Hotel Bella Casa.',
+    title: 'Terms & Conditions | Hotel Surya Bella Casa Purnia',
+    description: 'Read the terms and conditions of Hotel Surya Bella Casa, Purnia, Bihar. Understand our booking, check-in/check-out, and guest conduct policies.',
   }
 }
 

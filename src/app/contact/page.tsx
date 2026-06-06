@@ -74,7 +74,7 @@ export default function ContactPage() {
                  <a 
                   href={`https://wa.me/${siteConfig.phone.replace(/[^0-9]/g, '')}`} 
                   target="_blank" 
-                  rel="noreferrer" 
+                  rel="noopener noreferrer" 
                   className="flex items-center justify-center gap-3 bg-green-600 text-white font-sans text-[11px] uppercase tracking-[0.2em] py-5 rounded-sm hover:bg-green-700 transition-all shadow-md group"
                  >
                     <MessageCircle size={18} className="group-hover:scale-110 transition-transform" />

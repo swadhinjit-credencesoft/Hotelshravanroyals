@@ -167,7 +167,7 @@ export default function Footer() {
                 </div>
 
                 <a
-                  href="https://www.google.com/maps"
+                  href="https://www.google.com/maps/dir/?api=1&destination=25.7771,87.4753"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 mt-2 border border-gold/30 px-4 py-2 text-[11px] uppercase tracking-[0.16em] text-gold hover:bg-gold/10 hover:border-gold transition-all duration-300 rounded-sm"
@@ -185,7 +185,7 @@ export default function Footer() {
                   href={siteConfig.social.facebook}
                   target="_blank"
                   rel="noopener noreferrer"
-                  aria-label="Facebook"
+                  aria-label="Hotel Surya Bella Casa on Facebook"
                   className="text-ivory/60 hover:text-gold transition-colors duration-300 w-fit"
                 >
                   <FacebookIcon size={24} />
@@ -195,7 +195,7 @@ export default function Footer() {
                   href={siteConfig.social.instagram}
                   target="_blank"
                   rel="noopener noreferrer"
-                  aria-label="Instagram"
+                  aria-label="Hotel Surya Bella Casa on Instagram"
                   className="text-ivory/60 hover:text-gold transition-colors duration-300 w-fit"
                 >
                   <InstagramIcon size={24} />
@@ -205,7 +205,7 @@ export default function Footer() {
                   href={siteConfig.social.youtube}
                   target="_blank"
                   rel="noopener noreferrer"
-                  aria-label="YouTube"
+                  aria-label="Hotel Surya Bella Casa on YouTube"
                   className="text-ivory/60 hover:text-gold transition-colors duration-300 w-fit"
                 >
                   <YouTubeIcon size={24} />

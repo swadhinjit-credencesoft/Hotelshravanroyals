@@ -1,24 +1,55 @@
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Farm-to-Table Restaurant & BBQ in Purnia | Hotel Bella Casa',
-  description: 'Savor exquisite Maharashtrian thalis, coastal BBQ, and international cuisines at our multi-cuisine dining hall. Custom fish & mutton on request.',
+  title: 'Dining in Purnia | Pure Vegetarian Food — Hotel Surya Bella Casa',
+  description: 'Enjoy pure vegetarian dining at Hotel Surya Bella Casa, Purnia. Order from top local restaurants via Swiggy & Zomato or explore Vikass Market street food nearby.',
   alternates: {
     canonical: 'https://hotelsuryabellacasa.com/dining',
   },
+  robots: {
+    index: true,
+    follow: true,
+  },
   openGraph: {
-    title: 'Farm-to-Table Restaurant & BBQ in Purnia | Hotel Bella Casa',
-    description: 'Savor exquisite Maharashtrian thalis, coastal BBQ, and international cuisines at our multi-cuisine dining hall. Custom fish & mutton on request.',
+    title: 'Dining in Purnia | Pure Vegetarian Food — Hotel Surya Bella Casa',
+    description: 'Enjoy pure vegetarian dining at Hotel Surya Bella Casa, Purnia. Order from top local restaurants via Swiggy & Zomato or explore Vikass Market street food nearby.',
     url: 'https://hotelsuryabellacasa.com/dining',
     type: 'website',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Farm-to-Table Restaurant & BBQ in Purnia | Hotel Bella Casa',
-    description: 'Savor exquisite Maharashtrian thalis, coastal BBQ, and international cuisines at our multi-cuisine dining hall. Custom fish & mutton on request.',
+    title: 'Dining in Purnia | Pure Vegetarian Food — Hotel Surya Bella Casa',
+    description: 'Enjoy pure vegetarian dining at Hotel Surya Bella Casa, Purnia. Order from top local restaurants via Swiggy & Zomato or explore Vikass Market street food nearby.',
   }
 }
 
 export default function DiningLayout({ children }: { children: React.ReactNode }) {
-  return <>{children}</>
+  return (
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://hotelsuryabellacasa.com"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Dining",
+                "item": "https://hotelsuryabellacasa.com/dining"
+              }
+            ]
+          })
+        }}
+      />
+      {children}
+    </>
+  )
 }

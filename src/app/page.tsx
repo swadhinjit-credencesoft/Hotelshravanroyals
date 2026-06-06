@@ -19,7 +19,6 @@ export default function Home() {
     <main className="relative bg-cream min-h-screen" id="main-content">
       <Navbar />
       
-      {/* Comprehensive SEO Structured Data Graph */}
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
@@ -30,11 +29,20 @@ export default function Home() {
                 "@type": "Hotel",
                 "@id": "https://hotelsuryabellacasa.com/#hotel",
                 "name": "Hotel Surya Bella Casa",
-                "description": "Book a comfortable, budget-friendly stay at Hotel Surya Bella Casa in Purnia, Bihar. Near Bus Stand & Vikass Market. Perfect for families & business travelers.",
+                "alternateName": "Hotel Bella Casa Purnia",
+                "description": "Hotel Surya Bella Casa is a comfortable and budget-friendly hotel in Purnia, Bihar, located at Suryalok Complex opposite Vikass Market near the main Bus Stand. Offering 4 room categories, free Wi-Fi, air conditioning, elevator, and 24/7 room service for business travelers and families.",
                 "url": "https://hotelsuryabellacasa.com",
-                "telephone": "+91 9835923601",
+                "logo": "https://hotelsuryabellacasa.com/suryabellacasalogo.png",
+                "image": [
+                  "https://bookonelocal.in/cdn/IMG_3815.avif",
+                  "https://bookonelocal.in/cdn/IMG_3808.avif",
+                  "https://bookonelocal.in/cdn/IMG_3809.avif"
+                ],
+                "telephone": "+919835923601",
                 "email": "bellacasa561@gmail.com",
-                "priceRange": "INR 1200 - INR 3500",
+                "priceRange": "₹₹",
+                "checkinTime": "12:00",
+                "checkoutTime": "12:00",
                 "address": {
                   "@type": "PostalAddress",
                   "streetAddress": "Suryalok Complex, Opposite Vikass Market, Near Bus Stand",
@@ -45,20 +53,28 @@ export default function Home() {
                 },
                 "geo": {
                   "@type": "GeoCoordinates",
-                  "latitude": 25.76889728,
-                  "longitude": 87.47058097
+                  "latitude": 25.7771,
+                  "longitude": 87.4753
                 },
                 "starRating": {
                   "@type": "Rating",
-                  "ratingValue": "4.5"
+                  "ratingValue": "3"
                 },
                 "amenityFeature": [
-                  { "@type": "LocationFeatureSpecification", "name": "Free High-Speed Wi-Fi", "value": true },
-                  { "@type": "LocationFeatureSpecification", "name": "Air Conditioning (AC)", "value": true },
-                  { "@type": "LocationFeatureSpecification", "name": "Elevator / Lift Access", "value": true },
-                  { "@type": "LocationFeatureSpecification", "name": "Secure Dedicated Parking", "value": true },
-                  { "@type": "LocationFeatureSpecification", "name": "24/7 Room Service & Safety", "value": true },
-                  { "@type": "LocationFeatureSpecification", "name": "Geyser Hot Water", "value": true }
+                  { "@type": "LocationFeatureSpecification", "name": "Free Wi-Fi", "value": true },
+                  { "@type": "LocationFeatureSpecification", "name": "Air Conditioning", "value": true },
+                  { "@type": "LocationFeatureSpecification", "name": "Elevator", "value": true },
+                  { "@type": "LocationFeatureSpecification", "name": "Free Parking", "value": true },
+                  { "@type": "LocationFeatureSpecification", "name": "24/7 Room Service", "value": true },
+                  { "@type": "LocationFeatureSpecification", "name": "Flat Screen TV", "value": true },
+                  { "@type": "LocationFeatureSpecification", "name": "Power Backup", "value": true }
+                ],
+                "hasMap": "https://www.google.com/maps/place/Suryalok+Complex,+Purnia,+Bihar+854301",
+                "currenciesAccepted": "INR",
+                "paymentAccepted": "Cash, Credit Card, UPI",
+                "sameAs": [
+                  "https://www.instagram.com/hotel.bellacasaa/",
+                  "https://www.facebook.com/hotelsuryabellacasa"
                 ]
               },
               {
@@ -78,8 +94,8 @@ export default function Home() {
                 },
                 "geo": {
                   "@type": "GeoCoordinates",
-                  "latitude": 25.76889728,
-                  "longitude": 87.47058097
+                  "latitude": 25.7771,
+                  "longitude": 87.4753
                 },
                 "url": "https://hotelsuryabellacasa.com"
               },
@@ -90,8 +106,9 @@ export default function Home() {
                 "logo": "https://hotelsuryabellacasa.com/suryabellacasalogo.png",
                 "url": "https://hotelsuryabellacasa.com",
                 "sameAs": [
-                  "https://www.facebook.com/",
-                  "https://www.instagram.com/hotel.bellacasaa/"
+                  "https://www.facebook.com/hotelsuryabellacasa",
+                  "https://www.instagram.com/hotel.bellacasaa/",
+                  "https://www.youtube.com/@hotelsuryabellacasa"
                 ]
               },
               {
@@ -123,7 +140,7 @@ export default function Home() {
                 "name": "Where is Hotel Surya Bella Casa located in Purnia?",
                 "acceptedAnswer": {
                   "@type": "Answer",
-                  "text": "Hotel Surya Bella Casa is centrally located at Suryalok Complex, Opposite Vikass Market, Near the main Bus Stand, Purnia, Bihar 854301, India."
+                  "text": "Hotel Surya Bella Casa is located at Suryalok Complex, Opposite Vikass Market, Near the main Bus Stand, Purnia, Bihar 854301, India."
                 }
               },
               {
@@ -131,31 +148,63 @@ export default function Home() {
                 "name": "How far is the hotel from Purnea Junction Railway Station?",
                 "acceptedAnswer": {
                   "@type": "Answer",
-                  "text": "The hotel is approximately 6.1 km away from Purnea Junction Railway Station with easy rickshaw connectivity."
+                  "text": "Hotel Surya Bella Casa is approximately 6.1 km from Purnea Junction Railway Station, around a 15-minute drive."
                 }
               },
               {
                 "@type": "Question",
-                "name": "Is Hotel Surya Bella Casa family-friendly?",
+                "name": "Is Hotel Surya Bella Casa a family-friendly hotel?",
                 "acceptedAnswer": {
                   "@type": "Answer",
-                  "text": "Yes, we are a family-friendly hotel offering secure rooms, AC/Non-AC options, and a quiet environment."
+                  "text": "Yes, Hotel Surya Bella Casa is fully family-friendly with spacious rooms, a safe environment, elevator access, and 24/7 staff assistance."
                 }
               },
               {
                 "@type": "Question",
-                "name": "Is pure vegetarian food available?",
+                "name": "Is pure vegetarian food available at the hotel?",
                 "acceptedAnswer": {
                   "@type": "Answer",
-                  "text": "Yes, we allow direct pure veg ordering from local partners. Non-vegetarian food is strictly prohibited on the premises."
+                  "text": "Yes, pure vegetarian food is available via partner restaurant deliveries through Swiggy and Zomato. Non-vegetarian food is not permitted on the property premises."
                 }
               },
               {
                 "@type": "Question",
-                "name": "Does the hotel have a lift/elevator?",
+                "name": "What are the room categories available at Hotel Surya Bella Casa?",
                 "acceptedAnswer": {
                   "@type": "Answer",
-                  "text": "Yes, a modern lift access is available to all floors for our guests' comfort."
+                  "text": "Hotel Surya Bella Casa offers 4 room categories: Super Deluxe AC Room, Deluxe AC Room, Deluxe Non-AC Room, and Standard Non-AC Room."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "What are the check-in and check-out timings?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Check-in time is 12:00 PM and check-out time is 12:00 PM."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Is there free high-speed Wi-Fi at the hotel?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Yes, complimentary high-speed Wi-Fi is available throughout the property for all guests."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Is there dedicated parking available?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Yes, secure and complimentary dedicated parking facilities are available on-site for guests."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "How can I book a room at Hotel Surya Bella Casa?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "You can book directly at https://hotelsuryabellacasa.com or call +91 9835923601. Rooms are also available on Booking.com, MakeMyTrip, Goibibo, and Agoda."
                 }
               }
             ]

@@ -1,24 +1,55 @@
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'About Us | Comfortable Hotel in Purnia | Hotel Bella Casa',
-  description: 'Discover the history, comfort, and hospitality of Hotel Bella Casa, a premier boutique hotel offering well-maintained accommodations in Purnia, Bihar.',
+  title: 'About Hotel Surya Bella Casa — Best Hotel in Purnia, Bihar',
+  description: 'Learn about Hotel Surya Bella Casa, established in 2019 in Purnia, Bihar. Committed to warm hospitality, clean rooms, and affordable stays for families and business travelers.',
   alternates: {
     canonical: 'https://hotelsuryabellacasa.com/about',
   },
+  robots: {
+    index: true,
+    follow: true,
+  },
   openGraph: {
-    title: 'About Us | Comfortable Hotel in Purnia | Hotel Bella Casa',
-    description: 'Discover the history, comfort, and hospitality of Hotel Bella Casa, a premier boutique hotel offering well-maintained accommodations in Purnia, Bihar.',
+    title: 'About Hotel Surya Bella Casa — Best Hotel in Purnia, Bihar',
+    description: 'Learn about Hotel Surya Bella Casa, established in 2019 in Purnia, Bihar. Committed to warm hospitality, clean rooms, and affordable stays for families and business travelers.',
     url: 'https://hotelsuryabellacasa.com/about',
     type: 'website',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'About Us | Comfortable Hotel in Purnia | Hotel Bella Casa',
-    description: 'Discover the history, comfort, and hospitality of Hotel Bella Casa, a premier boutique hotel offering well-maintained accommodations in Purnia, Bihar.',
+    title: 'About Hotel Surya Bella Casa — Best Hotel in Purnia, Bihar',
+    description: 'Learn about Hotel Surya Bella Casa, established in 2019 in Purnia, Bihar. Committed to warm hospitality, clean rooms, and affordable stays for families and business travelers.',
   }
 }
 
 export default function AboutLayout({ children }: { children: React.ReactNode }) {
-  return <>{children}</>
+  return (
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://hotelsuryabellacasa.com"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "About",
+                "item": "https://hotelsuryabellacasa.com/about"
+              }
+            ]
+          })
+        }}
+      />
+      {children}
+    </>
+  )
 }
