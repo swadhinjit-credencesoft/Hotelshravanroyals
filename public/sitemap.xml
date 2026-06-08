@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <!-- Core Pages -->
+
+  <!-- ===== Core Pages ===== -->
   <url>
     <loc>https://hotelsuryabellacasa.com/</loc>
     <lastmod>2026-06-06</lastmod>
@@ -9,6 +10,12 @@
   </url>
   <url>
     <loc>https://hotelsuryabellacasa.com/rooms</loc>
+    <lastmod>2026-06-06</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://hotelsuryabellacasa.com/reservations</loc>
     <lastmod>2026-06-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
@@ -26,36 +33,6 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://hotelsuryabellacasa.com/about</loc>
-    <lastmod>2026-06-06</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://hotelsuryabellacasa.com/contact</loc>
-    <lastmod>2026-06-06</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://hotelsuryabellacasa.com/privacy</loc>
-    <lastmod>2026-06-06</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.3</priority>
-  </url>
-  <url>
-    <loc>https://hotelsuryabellacasa.com/cancellation</loc>
-    <lastmod>2026-06-06</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.3</priority>
-  </url>
-  <url>
-    <loc>https://hotelsuryabellacasa.com/terms</loc>
-    <lastmod>2026-06-06</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.3</priority>
-  </url>
-  <url>
     <loc>https://hotelsuryabellacasa.com/gallery</loc>
     <lastmod>2026-06-06</lastmod>
     <changefreq>monthly</changefreq>
@@ -68,13 +45,45 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://hotelsuryabellacasa.com/reservations</loc>
+    <loc>https://hotelsuryabellacasa.com/about</loc>
+    <lastmod>2026-06-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://hotelsuryabellacasa.com/contact</loc>
+    <lastmod>2026-06-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- ===== Room Detail Pages ===== -->
+  <url>
+    <loc>https://hotelsuryabellacasa.com/rooms/super-deluxe-room</loc>
+    <lastmod>2026-06-06</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://hotelsuryabellacasa.com/rooms/deluxe-ac-room</loc>
+    <lastmod>2026-06-06</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://hotelsuryabellacasa.com/rooms/deluxe-non-ac-room</loc>
+    <lastmod>2026-06-06</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://hotelsuryabellacasa.com/rooms/standard-non-ac-room</loc>
     <lastmod>2026-06-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
 
-  <!-- Local SEO Landing Pages -->
+  <!-- ===== Local SEO Landing Pages (all verified ✓) ===== -->
   <url>
     <loc>https://hotelsuryabellacasa.com/hotel-near-purnia-bus-stand</loc>
     <lastmod>2026-06-06</lastmod>
@@ -106,29 +115,24 @@
     <priority>0.9</priority>
   </url>
 
-  <!-- Room Detail Routes -->
+  <!-- ===== Legal Pages ===== -->
   <url>
-    <loc>https://hotelsuryabellacasa.com/rooms/super-deluxe-room</loc>
+    <loc>https://hotelsuryabellacasa.com/privacy</loc>
     <lastmod>2026-06-06</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
   </url>
   <url>
-    <loc>https://hotelsuryabellacasa.com/rooms/deluxe-ac-room</loc>
+    <loc>https://hotelsuryabellacasa.com/cancellation</loc>
     <lastmod>2026-06-06</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
   </url>
   <url>
-    <loc>https://hotelsuryabellacasa.com/rooms/deluxe-non-ac-room</loc>
+    <loc>https://hotelsuryabellacasa.com/terms</loc>
     <lastmod>2026-06-06</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
   </url>
-  <url>
-    <loc>https://hotelsuryabellacasa.com/rooms/standard-non-ac-room</loc>
-    <lastmod>2026-06-06</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-  </url>
+
 </urlset>

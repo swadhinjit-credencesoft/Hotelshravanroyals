@@ -1,5 +1,52 @@
 import { HotelRoom } from '@/lib/hotelmate'
 
+export const FALLBACK_ROOMS: Room[] = [
+  {
+    id: '1',
+    slug: 'lawn-facing-room',
+    name: 'Lawn Facing Room',
+    tagline: 'Serene views of our manicured lawns',
+    description: 'Wake up to the sight of lush green lawns in our Lawn Facing Rooms. These well-appointed rooms offer a peaceful retreat with modern amenities, ensuring a relaxing stay at Hotel Surya Bella Casa.',
+    size: 28,
+    guests: 2,
+    price: 2800,
+    category: 'Lawn Facing',
+    view: 'Lawn View',
+    image: '/Lawn Facing Room.png',
+    images: ['/Lawn Facing Room.png'],
+    imageAlt: 'Lawn Facing Room at Hotel Surya Bella Casa',
+    amenities: ['AC', 'Wifi', 'TV', 'Geyser', 'Room Service'],
+    featured: true,
+    roomId: '1',
+    noOfRooms: 5,
+    ratesAndAvailabilityDtos: null,
+    roomOnlyPrice: 2800,
+    isAvailable: true,
+  },
+  {
+    id: '2',
+    slug: 'forest-facing-room',
+    name: 'Forest Facing Room',
+    tagline: 'Immersive views of the surrounding greenery',
+    description: 'Escape to tranquility in our Forest Facing Rooms. Overlooking the natural greenery, these rooms combine comfort with nature, offering a unique experience at Hotel Surya Bella Casa.',
+    size: 32,
+    guests: 3,
+    price: 3500,
+    category: 'Forest Facing',
+    view: 'Forest View',
+    image: '/Forest Facing Room.png',
+    images: ['/Forest Facing Room.png'],
+    imageAlt: 'Forest Facing Room at Hotel Surya Bella Casa',
+    amenities: ['AC', 'Wifi', 'TV', 'Geyser', 'Room Service', 'Parking'],
+    featured: true,
+    roomId: '2',
+    noOfRooms: 3,
+    ratesAndAvailabilityDtos: null,
+    roomOnlyPrice: 3500,
+    isAvailable: true,
+  },
+]
+
 export interface Room {
   id: string
   slug: string

@@ -45,24 +45,99 @@ export const metadata: Metadata = {
     apple: [{ url: '/apple-touch-icon.png', type: 'image/png', sizes: '180x180' }],
   },
 
-  keywords: [
-    'Hotel Surya Bella Casa',
-    'hotel in purnia',
-    'best hotel in purnia',
-    'bella casa purnia',
-    'hotel near bus stand purnia',
-    'hotel near vikass market purnia',
-    'budget hotel in purnia',
-    'family hotel in purnia',
-    'business hotel in purnia',
-    'hotel rooms in purnia',
-    'accommodation in purnia',
-    'stay in purnia',
-    'hotel near purnia railway station',
-    'affordable hotel in purnia',
-    'hotel in bhatta bazar purnia',
-    'banquet hall purnia',
-  ],
+keywords: [
+  // Brand Keywords
+  'hotel surya bella casa',
+  'surya bella casa purnia',
+  'bella casa purnia',
+  'hotel surya bella casa purnia',
+  'surya bella casa hotel',
+
+  // Core Hotel Keywords
+  'hotel in purnia',
+  'best hotel in purnia',
+  'top hotel in purnia',
+  'luxury hotel in purnia',
+  'premium hotel in purnia',
+  'budget hotel in purnia',
+  'affordable hotel in purnia',
+  'family hotel in purnia',
+  'business hotel in purnia',
+  'hotel rooms in purnia',
+  'best accommodation in purnia',
+  'accommodation in purnia',
+  'stay in purnia',
+  'best place to stay in purnia',
+
+  // Booking Intent Keywords
+  'book hotel in purnia',
+  'hotel booking in purnia',
+  'online hotel booking purnia',
+  'hotel reservation purnia',
+  'best hotel deals in purnia',
+  'hotel near me in purnia',
+  'rooms available in purnia',
+  'hotel room booking purnia',
+
+  // Location Keywords
+  'hotel near purnia railway station',
+  'best hotel near purnia railway station',
+  'hotel near purnia bus stand',
+  'hotel near bus stand purnia',
+  'hotel near vikas market purnia',
+  'hotel in bhatta bazar purnia',
+  'hotel near bhatta bazar purnia',
+  'hotel near line bazar purnia',
+  'hotel near gulabbagh purnia',
+  'hotel in central purnia',
+
+  // Business Travel Keywords
+  'corporate hotel in purnia',
+  'hotel for business travelers in purnia',
+  'business stay in purnia',
+  'executive rooms in purnia',
+  'corporate accommodation in purnia',
+  'conference hotel in purnia',
+
+  // Family Stay Keywords
+  'family stay in purnia',
+  'safe hotel in purnia',
+  'hotel for family stay in purnia',
+  'comfortable stay in purnia',
+  'weekend stay in purnia',
+
+  // Banquet & Event Keywords
+  'banquet hall in purnia',
+  'best banquet hall in purnia',
+  'marriage hall in purnia',
+  'wedding venue in purnia',
+  'engagement venue in purnia',
+  'birthday party hall in purnia',
+  'event venue in purnia',
+  'conference hall in purnia',
+  'corporate event venue in purnia',
+  'party hall in purnia',
+
+  // Amenities Keywords
+  'hotel with restaurant in purnia',
+  'hotel with parking in purnia',
+  'hotel with banquet hall in purnia',
+  'hotel with conference hall in purnia',
+  'modern hotel in purnia',
+  'comfortable hotel rooms in purnia',
+
+  // Long Tail High Conversion Keywords
+  'best hotel near purnia railway station',
+  'best family hotel in purnia',
+  'best business hotel in purnia',
+  'affordable hotel near purnia bus stand',
+  'hotel with banquet hall in purnia',
+  'premium stay in purnia',
+  'top rated hotel in purnia',
+  'luxury stay in purnia',
+  'hotel for wedding guests in purnia',
+  'hotel for corporate stays in purnia'
+],
 
   alternates: {
     canonical: '/',

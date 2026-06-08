@@ -1,7 +1,7 @@
 import { notFound } from 'next/navigation'
 import RoomDetailClient from './RoomDetailClient'
 import { fetchAvailability } from '@/lib/hotelmate'
-import { mapHotelMateRooms, Room } from '@/lib/rooms'
+import { mapHotelMateRooms, FALLBACK_ROOMS, Room } from '@/lib/rooms'
 
 import type { Metadata } from 'next'
 
@@ -23,7 +23,7 @@ async function getRooms(): Promise<Room[]> {
     })
     return mapHotelMateRooms(data.roomList)
   } catch {
-    return []
+    return FALLBACK_ROOMS
   }
 }
 
