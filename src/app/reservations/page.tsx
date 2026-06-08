@@ -4,8 +4,6 @@ import { Suspense, useState, useEffect } from 'react'
 import { useSearchParams } from 'next/navigation'
 import Image from 'next/image'
 import { MapPin, Phone, Calendar, Clock, Users } from 'lucide-react'
-import Navbar from '@/components/layout/Navbar'
-import Footer from '@/components/layout/Footer'
 import { fetchAvailability, buildBookingUrl, todayString, addDays } from '@/lib/hotelmate'
 import type { HotelProperty, HotelRoom } from '@/lib/hotelmate'
 
@@ -264,7 +262,7 @@ function ReservationsContent() {
 export default function ReservationsPage() {
   return (
     <main className="bg-cream min-h-screen">
-      <Navbar />
+      
       <div className="pt-32 pb-32 px-6 md:px-10 max-w-[1600px] mx-auto">
         <Suspense fallback={
           <div className="max-w-5xl mx-auto animate-pulse space-y-8">
@@ -276,7 +274,6 @@ export default function ReservationsPage() {
           <ReservationsContent />
         </Suspense>
       </div>
-      <Footer />
     </main>
   )
 }

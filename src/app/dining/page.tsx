@@ -1,5 +1,3 @@
-import Navbar from '@/components/layout/Navbar';
-import Footer from '@/components/layout/Footer';
 // import Image from 'next/image';
 import DiningSection from '@/components/sections/DiningSection';
 import CinematicHero from '@/components/ui/CinematicHero';
@@ -11,7 +9,7 @@ import { Coffee } from 'lucide-react';
 export default function DiningPage() {
   return (
     <main className="bg-cream min-h-screen">
-      <Navbar />
+      
       <CinematicHero 
         label="Culinary Experience"
         title="Flavors of Purnia"
@@ -112,7 +110,6 @@ export default function DiningPage() {
         </div>
       </section>
 
-      <Footer />
     </main>
   );
 }

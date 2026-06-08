@@ -3,6 +3,8 @@ import './globals.css'
 
 import { Barlow, Tangerine } from 'next/font/google'
 
+import Navbar from '@/components/layout/Navbar'
+import Footer from '@/components/layout/Footer'
 import LenisProvider from '@/components/providers/LenisProvider'
 import CustomCursor from '@/components/ui/CustomCursor'
 import PageTransition from '@/components/providers/PageTransition'
@@ -204,6 +206,8 @@ export default function RootLayout({
         </a>
 
         <LenisProvider>
+          <Navbar />
+
           <PageTransition>
             <Breadcrumbs />
 
@@ -224,6 +228,8 @@ export default function RootLayout({
               </span>
             </a>
           </PageTransition>
+
+          <Footer />
         </LenisProvider>
       </body>
     </html>

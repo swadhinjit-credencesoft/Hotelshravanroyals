@@ -4,8 +4,6 @@ import React, { useState, useEffect, useCallback } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 import { motion, AnimatePresence } from 'framer-motion'
-import Navbar from '@/components/layout/Navbar'
-import Footer from '@/components/layout/Footer'
 import { todayString, addDays, buildBookingUrl, fetchAvailability } from '@/lib/hotelmate'
 import { useLivePrices } from '@/lib/useLivePrices'
 import { getRoomAvailability, getRoomPrice, Room, slugifyRoomName } from '@/lib/rooms'
@@ -81,7 +79,6 @@ export default function RoomDetailClient({ room, otherRooms }: RoomDetailClientP
 
   return (
     <main className="bg-[#fdfcf8] min-h-screen pt-20">
-      <Navbar />
       
       {/* Schema.org */}
       <script
@@ -327,7 +324,6 @@ export default function RoomDetailClient({ room, otherRooms }: RoomDetailClientP
         </div>
       </section>
 
-      <Footer />
     </main>
   )
 }

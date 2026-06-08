@@ -1,7 +1,5 @@
 'use client';
 
-import Navbar from '@/components/layout/Navbar';
-import Footer from '@/components/layout/Footer';
 import SectionLabel from '@/components/ui/SectionLabel';
 import GoldDivider from '@/components/ui/GoldDivider';
 import { siteConfig } from '@/data/site';
@@ -10,7 +8,7 @@ import { MapPin, Phone, Mail, Train, Car, MessageCircle } from 'lucide-react';
 export default function ContactPage() {
   return (
     <main className="bg-cream min-h-screen">
-      <Navbar />
+      
       
       {/* Hero Header */}
       <div className="pt-40 pb-20 px-6 md:px-10 max-w-[1600px] mx-auto text-center">
@@ -188,7 +186,6 @@ export default function ContactPage() {
         </div>
       </section>
 
-      <Footer />
     </main>
   );
 }

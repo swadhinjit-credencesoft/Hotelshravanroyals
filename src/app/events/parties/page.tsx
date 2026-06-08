@@ -1,7 +1,5 @@
 'use client';
 
-import Navbar from '@/components/layout/Navbar';
-import Footer from '@/components/layout/Footer';
 import CinematicHero from '@/components/ui/CinematicHero';
 import SectionLabel from '@/components/ui/SectionLabel';
 import Image from 'next/image';
@@ -24,7 +22,7 @@ export default function PartiesPage() {
 
   return (
     <main className="bg-cream min-h-screen">
-      <Navbar />
+      
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
@@ -105,7 +103,6 @@ export default function PartiesPage() {
         </div>
       </section>
 
-      <Footer />
     </main>
   );
 }

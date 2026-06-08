@@ -1,6 +1,4 @@
 import Link from 'next/link'
-import Navbar from '@/components/layout/Navbar'
-import Footer from '@/components/layout/Footer'
 
 export const metadata = {
   title: 'Page Not Found | Hotel Surya Bella Casa',
@@ -10,7 +8,6 @@ export const metadata = {
 export default function NotFound() {
   return (
     <main className="bg-cream min-h-screen flex flex-col justify-between">
-      <Navbar />
       
       <div className="flex-1 flex flex-col items-center justify-center text-center px-6 py-32 max-w-[600px] mx-auto">
         <h1 className="font-display text-8xl md:text-9xl text-gold mb-6 font-light">404</h1>
@@ -26,7 +23,6 @@ export default function NotFound() {
         </Link>
       </div>
 
-      <Footer />
     </main>
   )
 }

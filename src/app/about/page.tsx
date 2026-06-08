@@ -1,7 +1,5 @@
 'use client';
 
-import Navbar from '@/components/layout/Navbar';
-import Footer from '@/components/layout/Footer';
 import CinematicHero from '@/components/ui/CinematicHero';
 import SectionLabel from '@/components/ui/SectionLabel';
 import GoldDivider from '@/components/ui/GoldDivider';
@@ -13,7 +11,7 @@ import { siteConfig } from '@/data/site';
 export default function AboutPage() {
   return (
     <main className="bg-cream min-h-screen">
-      <Navbar />
+      
       <CinematicHero 
         label="Our Story"
         title="Genuine Hospitality"
@@ -219,7 +217,6 @@ export default function AboutPage() {
          </div>
       </section>
 
-      <Footer />
     </main>
   );
 }

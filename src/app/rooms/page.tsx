@@ -1,5 +1,3 @@
-import Navbar from '@/components/layout/Navbar'
-import Footer from '@/components/layout/Footer'
 import CinematicHero from '@/components/ui/CinematicHero'
 import LuxuryAmenities from '@/components/sections/LuxuryAmenities'
 import RoomsGrid from '@/components/sections/RoomsGrid'
@@ -7,7 +5,7 @@ import RoomsGrid from '@/components/sections/RoomsGrid'
 export default function RoomsPage() {
   return (
     <main className="bg-cream min-h-screen">
-      <Navbar />
+      
       <CinematicHero 
         label="Our Accommodations"
         title="Rooms & Stays"
@@ -16,7 +14,6 @@ export default function RoomsPage() {
       />
       <RoomsGrid />
       <LuxuryAmenities />
-      <Footer />
     </main>
   )
 }

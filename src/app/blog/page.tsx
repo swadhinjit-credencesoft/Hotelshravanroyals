@@ -1,7 +1,5 @@
 'use client';
 
-import Navbar from '@/components/layout/Navbar';
-import Footer from '@/components/layout/Footer';
 import CinematicHero from '@/components/ui/CinematicHero';
 import SectionLabel from '@/components/ui/SectionLabel';
 import GoldDivider from '@/components/ui/GoldDivider';
@@ -39,7 +37,7 @@ const blogPosts = [
 export default function BlogPage() {
   return (
     <main className="bg-cream min-h-screen">
-      <Navbar />
+      
       <CinematicHero 
         label="Stories & Guides"
         title="The Purnia Journal"
@@ -96,7 +94,6 @@ export default function BlogPage() {
         </div>
       </section>
 
-      <Footer />
     </main>
   );
 }

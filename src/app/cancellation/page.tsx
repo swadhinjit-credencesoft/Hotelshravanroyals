@@ -1,11 +1,9 @@
-import Navbar from '@/components/layout/Navbar'
-import Footer from '@/components/layout/Footer'
 import SectionLabel from '@/components/ui/SectionLabel'
 
 export default function CancellationPage() {
   return (
     <main className="bg-cream min-h-screen">
-      <Navbar />
+      
       
       {/* WebPage Schema */}
       <script
@@ -193,7 +191,6 @@ export default function CancellationPage() {
 </section>
    </div>
       </div>
-      <Footer />
     </main>
   )
 }

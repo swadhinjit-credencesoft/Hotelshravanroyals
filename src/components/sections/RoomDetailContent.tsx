@@ -1,8 +1,6 @@
 'use client';
 
 import { Room } from '@/lib/rooms';
-import Navbar from '@/components/layout/Navbar';
-import Footer from '@/components/layout/Footer';
 import CinematicHero from '@/components/ui/CinematicHero';
 import SectionLabel from '@/components/ui/SectionLabel';
 import GoldDivider from '@/components/ui/GoldDivider';
@@ -18,7 +16,7 @@ export default function RoomDetailContent({ room }: RoomDetailContentProps) {
 
   return (
     <main className="bg-cream min-h-screen">
-      <Navbar />
+      
       <CinematicHero 
         label={room.category}
         title={room.name}
@@ -128,7 +126,6 @@ export default function RoomDetailContent({ room }: RoomDetailContentProps) {
          </div>
       </section>
 
-      <Footer />
     </main>
   );
 }

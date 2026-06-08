@@ -1,11 +1,9 @@
-import Navbar from '@/components/layout/Navbar'
-import Footer from '@/components/layout/Footer'
 import SectionLabel from '@/components/ui/SectionLabel'
 
 export default function PrivacyPage() {
   return (
     <main className="bg-cream min-h-screen">
-      <Navbar />
+      
       
       {/* WebPage Schema */}
       <script
@@ -140,7 +138,6 @@ export default function PrivacyPage() {
           </section>
         </div>
       </div>
-      <Footer />
     </main>
   )
 }

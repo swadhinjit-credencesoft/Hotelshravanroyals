@@ -1,5 +1,3 @@
-import Navbar from '@/components/layout/Navbar';
-import Footer from '@/components/layout/Footer';
 import CinematicHero from '@/components/ui/CinematicHero';
 import SectionLabel from '@/components/ui/SectionLabel';
 import GoldDivider from '@/components/ui/GoldDivider';
@@ -17,7 +15,7 @@ export const metadata = {
 export default function PurniaBusStandLandingPage() {
   return (
     <main className="bg-cream min-h-screen">
-      <Navbar />
+      
       <CinematicHero 
         label="Strategic Location"
         title="Hotel Near Purnia Bus Stand"
@@ -94,7 +92,6 @@ export default function PurniaBusStandLandingPage() {
       </section>
 
       <LuxuryAmenities />
-      <Footer />
     </main>
   );
 }

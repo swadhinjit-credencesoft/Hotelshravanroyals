@@ -1,5 +1,3 @@
-import Navbar from '@/components/layout/Navbar'
-import Footer from '@/components/layout/Footer'
 import GallerySection from '@/components/sections/GallerySection'
 import SectionLabel from '@/components/ui/SectionLabel'
 import Image from 'next/image'
@@ -7,7 +5,7 @@ import Image from 'next/image'
 export default function GalleryPage() {
   return (
     <main className="bg-cream min-h-screen">
-      <Navbar />
+      
       
       {/* SEO Schema */}
       <script
@@ -75,7 +73,6 @@ export default function GalleryPage() {
         </div>
       </section>
 
-      <Footer />
     </main>
   )
 }

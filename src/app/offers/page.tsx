@@ -1,12 +1,10 @@
-import Navbar from '@/components/layout/Navbar'
-import Footer from '@/components/layout/Footer'
 import OffersSection from '@/components/sections/OffersSection'
 import SectionLabel from '@/components/ui/SectionLabel'
 
 export default function OffersPage() {
   return (
     <main className="bg-cream min-h-screen">
-      <Navbar />
+      
 
       {/* WebPage Schema */}
       <script
@@ -34,7 +32,6 @@ export default function OffersPage() {
         <h1 className="font-display text-5xl md:text-7xl italic text-forest mb-8">Seasonal Journeys</h1>
       </div>
       <OffersSection />
-      <Footer />
     </main>
   )
 }

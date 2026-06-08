@@ -3,16 +3,7 @@
 @tailwind components;
 @tailwind utilities;
 
-/* ============================================
-   GLOBAL FONT STYLE OVERRIDE
-   Force Barlow normal (non-italic) on all elements.
-   Overrides Tailwind's .italic utility class globally.
-   ============================================ */
-*,
-*::before,
-*::after {
-  font-style: normal !important;
-}
+
 
 :root {
   --cream: #FBF7F0;

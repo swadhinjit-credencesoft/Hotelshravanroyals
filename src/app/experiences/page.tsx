@@ -1,5 +1,3 @@
-import Navbar from '@/components/layout/Navbar'
-import Footer from '@/components/layout/Footer'
 import ExperiencesGrid from '@/components/sections/ExperiencesGrid'
 import CinematicHero from '@/components/ui/CinematicHero'
 import SectionLabel from '@/components/ui/SectionLabel'
@@ -9,7 +7,7 @@ import { MapPin } from 'lucide-react'
 export default function ExperiencesPage() {
   return (
     <main className="bg-cream min-h-screen">
-      <Navbar />
+      
       <CinematicHero 
         label="Beyond the Room"
         title="Explore Purnia"
@@ -136,7 +134,6 @@ export default function ExperiencesPage() {
          </div>
       </section>
 
-      <Footer />
     </main>
   )
 }

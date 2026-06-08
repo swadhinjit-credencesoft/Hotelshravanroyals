@@ -1,5 +1,3 @@
-import Navbar from '@/components/layout/Navbar';
-import Footer from '@/components/layout/Footer';
 import HeroSection from '@/components/sections/HeroSection';
 import BrandStatement from '@/components/sections/BrandStatement';
 import RoomsCarousel from '@/components/sections/RoomsCarousel';
@@ -17,7 +15,6 @@ import FAQSection from '@/components/sections/FAQSection';
 export default function Home() {
   return (
     <main className="relative bg-cream min-h-screen" id="main-content">
-      <Navbar />
       
       <script
         type="application/ld+json"
@@ -251,7 +248,6 @@ export default function Home() {
       {/* FAQ Section */}
       <FAQSection />
 
-      <Footer />
     </main>
   );
 }
