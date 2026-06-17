@@ -31,6 +31,10 @@ const tangerine = Tangerine({
 export const metadata: Metadata = {
   metadataBase: new URL('https://hotelsuryabellacasa.com'),
 
+  verification: {
+    google: 's9e0WgVryPjZz7nli6LschmQWmh498iEhqM0I4tRobE',
+  },
+
   title: {
     default: 'Hotel Surya Bella Casa Purnia | Best Stay in Purnia',
     template: '%s | Hotel Surya Bella Casa',
