@@ -10,6 +10,25 @@ export const metadata = {
   alternates: {
     canonical: 'https://hotelsuryabellacasa.com/family-hotel-in-purnia',
   },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: { index: true, follow: true, 'max-image-preview': 'large', 'max-snippet': -1 },
+  },
+  openGraph: {
+    title: 'Family Hotel in Purnia | Hotel Surya Bella Casa',
+    description: 'Looking for a safe, comfortable family hotel in Purnia? Hotel Surya Bella Casa offers spacious rooms, lift access, and peaceful environments for family stays.',
+    url: 'https://hotelsuryabellacasa.com/family-hotel-in-purnia',
+    siteName: 'Hotel Surya Bella Casa',
+    type: 'website',
+    images: [{ url: 'https://bookonelocal.in/cdn/IMG_3815.avif', width: 1200, height: 630, alt: 'Family Hotel in Purnia - Hotel Surya Bella Casa' }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Family Hotel in Purnia | Hotel Surya Bella Casa',
+    description: 'Spacious rooms, lift access, and peaceful environments for family stays in Purnia.',
+    images: ['https://bookonelocal.in/cdn/IMG_3815.avif'],
+  },
 };
 
 export default function FamilyHotelLandingPage() {

@@ -3,6 +3,10 @@ import Link from 'next/link'
 export const metadata = {
   title: 'Page Not Found | Hotel Surya Bella Casa',
   description: 'The page you are looking for does not exist. Return to Hotel Surya Bella Casa homepage.',
+  robots: {
+    index: false,
+    follow: true,
+  },
 }
 
 export default function NotFound() {

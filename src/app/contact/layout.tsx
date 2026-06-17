@@ -9,18 +9,34 @@ export const metadata: Metadata = {
   robots: {
     index: true,
     follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
   },
   openGraph: {
     title: 'Contact Hotel Surya Bella Casa — Purnia, Bihar | +91 9835923601',
     description: 'Contact Hotel Surya Bella Casa in Purnia, Bihar. Call +91 9835923601 or email bellacasa561@gmail.com. Located at Suryalok Complex, Near Bus Stand, Purnia 854301.',
     url: 'https://hotelsuryabellacasa.com/contact',
+    siteName: 'Hotel Surya Bella Casa',
     type: 'website',
+    images: [
+      {
+        url: 'https://bookonelocal.in/cdn/IMG_3815.avif',
+        width: 1200,
+        height: 630,
+        alt: 'Contact Hotel Surya Bella Casa Purnia',
+      },
+    ],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Contact Hotel Surya Bella Casa — Purnia, Bihar | +91 9835923601',
-    description: 'Contact Hotel Surya Bella Casa in Purnia, Bihar. Call +91 9835923601 or email bellacasa561@gmail.com. Located at Suryalok Complex, Near Bus Stand, Purnia 854301.',
-  }
+    description: 'Contact Hotel Surya Bella Casa in Purnia. Call +91 9835923601.',
+    images: ['https://bookonelocal.in/cdn/IMG_3815.avif'],
+  },
 }
 
 export default function ContactLayout({ children }: { children: React.ReactNode }) {
@@ -30,23 +46,23 @@ export default function ContactLayout({ children }: { children: React.ReactNode 
         type="application/ld+json"
         dangerouslySetInnerHTML={{
           __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "BreadcrumbList",
-            "itemListElement": [
+            '@context': 'https://schema.org',
+            '@type': 'BreadcrumbList',
+            itemListElement: [
               {
-                "@type": "ListItem",
-                "position": 1,
-                "name": "Home",
-                "item": "https://hotelsuryabellacasa.com"
+                '@type': 'ListItem',
+                position: 1,
+                name: 'Home',
+                item: 'https://hotelsuryabellacasa.com',
               },
               {
-                "@type": "ListItem",
-                "position": 2,
-                "name": "Contact",
-                "item": "https://hotelsuryabellacasa.com/contact"
-              }
-            ]
-          })
+                '@type': 'ListItem',
+                position: 2,
+                name: 'Contact',
+                item: 'https://hotelsuryabellacasa.com/contact',
+              },
+            ],
+          }),
         }}
       />
       {children}

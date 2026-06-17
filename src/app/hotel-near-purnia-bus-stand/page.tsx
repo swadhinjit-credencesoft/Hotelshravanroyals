@@ -10,6 +10,25 @@ export const metadata = {
   alternates: {
     canonical: 'https://hotelsuryabellacasa.com/hotel-near-purnia-bus-stand',
   },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: { index: true, follow: true, 'max-image-preview': 'large', 'max-snippet': -1 },
+  },
+  openGraph: {
+    title: 'Hotel Near Purnia Bus Stand | Hotel Surya Bella Casa',
+    description: 'Looking for a hotel near Purnia Bus Stand? Hotel Surya Bella Casa is located opposite Vikass Market, offering clean, affordable rooms with 24/7 service.',
+    url: 'https://hotelsuryabellacasa.com/hotel-near-purnia-bus-stand',
+    siteName: 'Hotel Surya Bella Casa',
+    type: 'website',
+    images: [{ url: 'https://bookonelocal.in/cdn/IMG_3815.avif', width: 1200, height: 630, alt: 'Hotel Near Purnia Bus Stand - Hotel Surya Bella Casa' }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Hotel Near Purnia Bus Stand | Hotel Surya Bella Casa',
+    description: 'Clean, affordable rooms near Purnia Bus Stand with 24/7 service.',
+    images: ['https://bookonelocal.in/cdn/IMG_3815.avif'],
+  },
 };
 
 export default function PurniaBusStandLandingPage() {

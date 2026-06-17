@@ -1,24 +1,71 @@
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Seasonal Packages & Resort Offers | Hotel Bella Casa',
-  description: 'Save on your weekend getaways in Purnia. Check out active lodging promotions, culinary meal plan packages, and adventure tour add-ons.',
+  title: 'Exclusive Offers & Packages | Hotel Surya Bella Casa Purnia',
+  description: 'Discover exclusive deals, seasonal packages, and special offers at Hotel Surya Bella Casa, Purnia. Book direct for the best rates on AC and Non-AC rooms.',
   alternates: {
     canonical: 'https://hotelsuryabellacasa.com/offers',
   },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
+  },
   openGraph: {
-    title: 'Seasonal Packages & Resort Offers | Hotel Bella Casa',
-    description: 'Save on your weekend getaways in Purnia. Check out active lodging promotions, culinary meal plan packages, and adventure tour add-ons.',
+    title: 'Exclusive Offers & Packages | Hotel Surya Bella Casa Purnia',
+    description: 'Discover exclusive deals, seasonal packages, and special offers at Hotel Surya Bella Casa, Purnia. Book direct for the best rates.',
     url: 'https://hotelsuryabellacasa.com/offers',
+    siteName: 'Hotel Surya Bella Casa',
     type: 'website',
+    images: [
+      {
+        url: 'https://bookonelocal.in/cdn/IMG_3815.avif',
+        width: 1200,
+        height: 630,
+        alt: 'Hotel Surya Bella Casa Purnia Offers',
+      },
+    ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Seasonal Packages & Resort Offers | Hotel Bella Casa',
-    description: 'Save on your weekend getaways in Purnia. Check out active lodging promotions, culinary meal plan packages, and adventure tour add-ons.',
-  }
+    title: 'Exclusive Offers & Packages | Hotel Surya Bella Casa Purnia',
+    description: 'Discover exclusive deals, seasonal packages, and special offers at Hotel Surya Bella Casa, Purnia.',
+    images: ['https://bookonelocal.in/cdn/IMG_3815.avif'],
+  },
 }
 
 export default function OffersLayout({ children }: { children: React.ReactNode }) {
-  return <>{children}</>
+  return (
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'BreadcrumbList',
+            itemListElement: [
+              {
+                '@type': 'ListItem',
+                position: 1,
+                name: 'Home',
+                item: 'https://hotelsuryabellacasa.com',
+              },
+              {
+                '@type': 'ListItem',
+                position: 2,
+                name: 'Offers',
+                item: 'https://hotelsuryabellacasa.com/offers',
+              },
+            ],
+          }),
+        }}
+      />
+      {children}
+    </>
+  )
 }

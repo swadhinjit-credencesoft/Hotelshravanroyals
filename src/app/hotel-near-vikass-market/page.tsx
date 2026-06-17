@@ -10,6 +10,25 @@ export const metadata = {
   alternates: {
     canonical: 'https://hotelsuryabellacasa.com/hotel-near-vikass-market',
   },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: { index: true, follow: true, 'max-image-preview': 'large', 'max-snippet': -1 },
+  },
+  openGraph: {
+    title: 'Hotel Near Vikass Market Purnia | Hotel Surya Bella Casa',
+    description: 'Looking for a hotel near Vikass Market Purnia? Hotel Surya Bella Casa is located opposite Vikass Market in Suryalok Complex, offering comfort and safety.',
+    url: 'https://hotelsuryabellacasa.com/hotel-near-vikass-market',
+    siteName: 'Hotel Surya Bella Casa',
+    type: 'website',
+    images: [{ url: 'https://bookonelocal.in/cdn/IMG_3815.avif', width: 1200, height: 630, alt: 'Hotel Near Vikass Market Purnia - Hotel Surya Bella Casa' }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Hotel Near Vikass Market Purnia | Hotel Surya Bella Casa',
+    description: 'Comfort and safety opposite Vikass Market, Suryalok Complex, Purnia.',
+    images: ['https://bookonelocal.in/cdn/IMG_3815.avif'],
+  },
 };
 
 export default function VikassMarketLandingPage() {
