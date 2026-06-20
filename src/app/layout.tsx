@@ -198,6 +198,24 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <meta name="theme-color" content="#FBF7F0" />
+        {/* Google tag (gtag.js) */}
+        <Script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-G1ZTFH35ZB"
+          strategy="afterInteractive"
+        />
+        <Script
+          id="gtag-config"
+          strategy="afterInteractive"
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-G1ZTFH35ZB');
+            `,
+          }}
+        />
         {/* Google Tag Manager */}
         <Script
           id="gtm-script"
@@ -221,7 +239,7 @@ export default function RootLayout({
         {/* Google Tag Manager (noscript) */}
         <noscript>
           <iframe
-            src={`https://www.googletagmanager.com/ns.html?id=${process.env.NEXT_PUBLIC_GTM_ID || 'GTM-WM9Z3LN3'}`}
+            src={`https://www.googletagmanager.com/ns.html?id=${ 'GTM-WM9Z3LN3'}`}
             height="0"
             width="0"
             style={{ display: 'none', visibility: 'hidden' }}
