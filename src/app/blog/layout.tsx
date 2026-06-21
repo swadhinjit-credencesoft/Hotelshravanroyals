@@ -1,8 +1,8 @@
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Purnia Travel Blog & Guides | Hotel Surya Bella Casa',
-  description: 'Discover local travel insights, itineraries, business trip guides, and city exploration tips in our official Purnia travel journal.',
+  title: 'Blog — Hotel Surya Bella Casa Purnia | Travel Guide & Insights',
+  description: 'Read the latest travel guides, local insights, and hotel tips for Purnia, Bihar from Hotel Surya Bella Casa. Discover the best places to visit, eat, and explore.',
   alternates: {
     canonical: 'https://hotelsuryabellacasa.com/blog',
   },
@@ -17,8 +17,8 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: 'Purnia Travel Blog & Guides | Hotel Surya Bella Casa',
-    description: 'Discover local travel insights, itineraries, business trip guides, and city exploration tips in our official Purnia travel journal.',
+    title: 'Blog — Hotel Surya Bella Casa Purnia | Travel Guide & Insights',
+    description: 'Read the latest travel guides, local insights, and hotel tips for Purnia, Bihar from Hotel Surya Bella Casa.',
     url: 'https://hotelsuryabellacasa.com/blog',
     siteName: 'Hotel Surya Bella Casa',
     type: 'website',
@@ -27,45 +27,18 @@ export const metadata: Metadata = {
         url: 'https://bookonelocal.in/cdn/IMG_3815.avif',
         width: 1200,
         height: 630,
-        alt: 'Hotel Surya Bella Casa Purnia - Blog',
+        alt: 'Hotel Surya Bella Casa Purnia Blog',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Purnia Travel Blog & Guides | Hotel Surya Bella Casa',
-    description: 'Discover local travel insights, itineraries, business trip guides, and city exploration tips in our official Purnia travel journal.',
+    title: 'Blog — Hotel Surya Bella Casa Purnia | Travel Guide & Insights',
+    description: 'Read the latest travel guides, local insights, and hotel tips for Purnia, Bihar from Hotel Surya Bella Casa.',
     images: ['https://bookonelocal.in/cdn/IMG_3815.avif'],
   },
 }
 
 export default function BlogLayout({ children }: { children: React.ReactNode }) {
-  return (
-    <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            '@context': 'https://schema.org',
-            '@type': 'BreadcrumbList',
-            itemListElement: [
-              {
-                '@type': 'ListItem',
-                position: 1,
-                name: 'Home',
-                item: 'https://hotelsuryabellacasa.com',
-              },
-              {
-                '@type': 'ListItem',
-                position: 2,
-                name: 'Blog',
-                item: 'https://hotelsuryabellacasa.com/blog',
-              },
-            ],
-          }),
-        }}
-      />
-      {children}
-    </>
-  )
+  return <>{children}</>
 }
