@@ -31,8 +31,6 @@ const tangerine = Tangerine({
 export const metadata: Metadata = {
   metadataBase: new URL('https://hotelsuryabellacasa.com'),
 
-
-
   title: {
     default: 'Hotel Surya Bella Casa Purnia | Best Stay in Purnia',
     template: '%s | Hotel Surya Bella Casa',
@@ -196,6 +194,23 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <meta name="theme-color" content="#FBF7F0" />
+        <meta name="robots" content="index, follow" />
+        <meta name="googlebot" content="index, follow, max-video-preview:-1, max-image-preview:large, max-snippet:-1" />
+        <link rel="canonical" href="https://hotelsuryabellacasa.com" />
+        <meta property="og:title" content="Hotel Surya Bella Casa Purnia | Best Stay in Purnia" />
+        <meta property="og:description" content="Book a comfortable, budget-friendly stay at Hotel Surya Bella Casa in Purnia, Bihar. Near Bus Stand &amp; Vikass Market. Perfect for families &amp; business travelers." />
+        <meta property="og:url" content="https://hotelsuryabellacasa.com" />
+        <meta property="og:site_name" content="Hotel Surya Bella Casa" />
+        <meta property="og:locale" content="en_US" />
+        <meta property="og:image" content="https://bookonelocal.in/cdn/IMG_3815.avif" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        <meta property="og:image:alt" content="Hotel Surya Bella Casa Purnia" />
+        <meta property="og:type" content="website" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Hotel Surya Bella Casa Purnia | Best Stay in Purnia" />
+        <meta name="twitter:description" content="Book a comfortable, budget-friendly stay at Hotel Surya Bella Casa in Purnia, Bihar. Near Bus Stand &amp; Vikass Market. Perfect for families &amp; business travelers." />
+        <meta name="twitter:image" content="https://bookonelocal.in/cdn/IMG_3815.avif" />
         {/* Google tag (gtag.js) */}
         <Script
           async
@@ -229,7 +244,6 @@ export default function RootLayout({
           }}
         />
       </head>
-
       <body
         className={`${barlow.variable} ${tangerine.variable} antialiased`}
         suppressHydrationWarning
@@ -243,6 +257,7 @@ export default function RootLayout({
             style={{ display: 'none', visibility: 'hidden' }}
           />
         </noscript>
+
         <CustomCursor />
 
         <a href="#main-content" className="skip-to-main">
