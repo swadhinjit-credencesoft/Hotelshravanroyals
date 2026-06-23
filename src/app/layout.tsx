@@ -168,7 +168,7 @@ keywords: [
     locale: 'en_US',
     images: [
       {
-        url: 'https://bookonelocal.in/cdn/IMG_3815.avif',
+        url: 'https://bookonelocal.in/cdn/IMG_3815.jpg',
         width: 1200,
         height: 630,
         alt: 'Hotel Surya Bella Casa Purnia',
@@ -181,7 +181,7 @@ keywords: [
     title: 'Hotel Surya Bella Casa Purnia | Best Stay in Purnia',
     description:
       'Book a comfortable, budget-friendly stay at Hotel Surya Bella Casa in Purnia, Bihar. Near Bus Stand & Vikass Market. Perfect for families & business travelers.',
-    images: ['https://bookonelocal.in/cdn/IMG_3815.avif'],
+    images: ['https://bookonelocal.in/cdn/IMG_3815.jpg'],
   },
 }
 
@@ -194,23 +194,6 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <meta name="theme-color" content="#FBF7F0" />
-        <meta name="robots" content="index, follow" />
-        <meta name="googlebot" content="index, follow, max-video-preview:-1, max-image-preview:large, max-snippet:-1" />
-        <link rel="canonical" href="https://hotelsuryabellacasa.com" />
-        <meta property="og:title" content="Hotel Surya Bella Casa Purnia | Best Stay in Purnia" />
-        <meta property="og:description" content="Book a comfortable, budget-friendly stay at Hotel Surya Bella Casa in Purnia, Bihar. Near Bus Stand &amp; Vikass Market. Perfect for families &amp; business travelers." />
-        <meta property="og:url" content="https://hotelsuryabellacasa.com" />
-        <meta property="og:site_name" content="Hotel Surya Bella Casa" />
-        <meta property="og:locale" content="en_US" />
-        <meta property="og:image" content="https://bookonelocal.in/cdn/IMG_3815.avif" />
-        <meta property="og:image:width" content="1200" />
-        <meta property="og:image:height" content="630" />
-        <meta property="og:image:alt" content="Hotel Surya Bella Casa Purnia" />
-        <meta property="og:type" content="website" />
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Hotel Surya Bella Casa Purnia | Best Stay in Purnia" />
-        <meta name="twitter:description" content="Book a comfortable, budget-friendly stay at Hotel Surya Bella Casa in Purnia, Bihar. Near Bus Stand &amp; Vikass Market. Perfect for families &amp; business travelers." />
-        <meta name="twitter:image" content="https://bookonelocal.in/cdn/IMG_3815.avif" />
         {/* Google tag (gtag.js) */}
         <Script
           async
@@ -229,35 +212,12 @@ export default function RootLayout({
             `,
           }}
         />
-        {/* Google Tag Manager */}
-        <Script
-          id="gtm-script"
-          strategy="afterInteractive"
-          dangerouslySetInnerHTML={{
-            __html: `
-              (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-              new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-              j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-              'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-              })(window,document,'script','dataLayer','${process.env.NEXT_PUBLIC_GTM_ID || 'GTM-WM9Z3LN3'}');
-            `,
-          }}
-        />
+
       </head>
       <body
         className={`${barlow.variable} ${tangerine.variable} antialiased`}
         suppressHydrationWarning
       >
-        {/* Google Tag Manager (noscript) */}
-        <noscript>
-          <iframe
-            src={`https://www.googletagmanager.com/ns.html?id=${ 'GTM-WM9Z3LN3'}`}
-            height="0"
-            width="0"
-            style={{ display: 'none', visibility: 'hidden' }}
-          />
-        </noscript>
-
         <CustomCursor />
 
         <a href="#main-content" className="skip-to-main">
