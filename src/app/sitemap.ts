@@ -28,6 +28,12 @@ const STATIC_ROUTES: MetadataRoute.Sitemap = [
     priority: 0.9,
   },
   {
+    url: `${BASE_URL}/reservations`,
+    lastModified: TODAY,
+    changeFrequency: 'weekly',
+    priority: 0.9,
+  },
+  {
     url: `${BASE_URL}/dining`,
     lastModified: TODAY,
     changeFrequency: 'monthly',

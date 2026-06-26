@@ -1,6 +1,6 @@
 'use client'
 
-import { Suspense, useState, useEffect } from 'react'
+import { Suspense, useState, useEffect, useCallback } from 'react'
 import { useSearchParams } from 'next/navigation'
 import Image from 'next/image'
 import { MapPin, Phone, Calendar, Clock, Users } from 'lucide-react'
@@ -20,8 +20,6 @@ function ReservationsContent() {
   const [property, setProperty] = useState<HotelProperty | null>(null)
   const [loading, setLoading] = useState(true)
   const [error, setError] = useState<string | null>(null)
-  const [selectedRoom, setSelectedRoom] = useState<{ name: string; id: number } | null>(null)
-
   useEffect(() => {
     setLoading(true)
     setError(null)
@@ -36,14 +34,17 @@ function ReservationsContent() {
       .finally(() => setLoading(false))
   }, [fromDate, toDate, noOfPersons, noOfRooms])
 
-  const iframeUrl = buildBookingUrl({
-    fromDate,
-    toDate,
-    noOfRooms,
-    noOfPersons,
-    roomName: selectedRoom?.name,
-    roomId: selectedRoom?.id?.toString(),
-  })
+  const handleBookRoom = useCallback((room: HotelRoom) => {
+    const url = buildBookingUrl({
+      fromDate,
+      toDate,
+      noOfRooms,
+      noOfPersons,
+      roomName: room.name,
+      roomId: room.id?.toString(),
+    })
+    window.location.href = url
+  }, [fromDate, toDate, noOfRooms, noOfPersons])
 
   const hotelName = property?.name || 'Hotel'
   const hotelDesc = stripHtml(property?.businessDescription || '')
@@ -157,28 +158,17 @@ function ReservationsContent() {
             <span className="inline-flex items-center gap-1.5 bg-cream-dark px-4 py-2 rounded-full border border-gold/20">
               {noOfRooms} Room{parseInt(noOfRooms) !== 1 ? 's' : ''}
             </span>
-            {selectedRoom && (
-              <span className="inline-flex items-center gap-1.5 bg-forest/10 text-forest px-4 py-2 rounded-full border border-forest/20">
-                {selectedRoom.name}
-              </span>
-            )}
           </div>
 
           {/* Room list */}
           <div>
-            <h2 className="font-display text-2xl italic text-forest mb-6 text-center">
-              {selectedRoom ? 'Select Another Room' : 'Choose Your Room'}
-            </h2>
+            <h2 className="font-display text-2xl italic text-forest mb-6 text-center">Choose Your Room</h2>
             {property.roomList && property.roomList.length > 0 ? (
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 {property.roomList.map((room: HotelRoom) => (
                   <div
                     key={room.id}
-                    className={`bg-cream-dark border rounded-sm overflow-hidden transition-all duration-300 ${
-                      selectedRoom?.id === room.id
-                        ? 'border-gold shadow-lg ring-1 ring-gold/30'
-                        : 'border-gold/10 hover:border-gold/30 hover:shadow-md'
-                    }`}
+                    className="bg-cream-dark border border-gold/10 rounded-sm overflow-hidden transition-all duration-300 hover:border-gold/30 hover:shadow-md"
                   >
                     <div className="relative h-44 bg-forest/10">
                       {room.imageList?.[0]?.url ? (
@@ -213,20 +203,10 @@ function ReservationsContent() {
                         </span>
                       </div>
                       <button
-                        onClick={() =>
-                          setSelectedRoom(
-                            selectedRoom?.id === room.id
-                              ? null
-                              : { name: room.name, id: room.id },
-                          )
-                        }
-                        className={`w-full font-sans text-xs uppercase tracking-[0.15em] py-3 rounded-sm transition-all duration-300 ${
-                          selectedRoom?.id === room.id
-                            ? 'bg-forest text-ivory'
-                            : 'bg-gold text-[#1a1004] hover:bg-gold-light'
-                        }`}
+                        onClick={() => handleBookRoom(room)}
+                        className="w-full bg-gold text-[#1a1004] font-sans text-xs uppercase tracking-[0.15em] py-3 rounded-sm transition-all duration-300 hover:bg-gold-light"
                       >
-                        {selectedRoom?.id === room.id ? 'Selected' : 'Select Room'}
+                        Book Now
                       </button>
                     </div>
                   </div>
@@ -238,20 +218,6 @@ function ReservationsContent() {
               </div>
             )}
           </div>
-
-          {/* Booking engine iframe */}
-          <div>
-            <h2 className="font-display text-2xl italic text-forest mb-6 text-center">Complete Your Booking</h2>
-            <div className="bg-cream-dark border border-gold/20">
-              <iframe
-                src={iframeUrl}
-                className="w-full border-0"
-                style={{ height: '800px' }}
-                title="Hotel Booking Engine"
-                allow="payment"
-              />
-            </div>
-          </div>
         </div>
       )}
     </>
@@ -261,7 +227,6 @@ function ReservationsContent() {
 export default function ReservationsPage() {
   return (
     <main className="bg-cream min-h-screen">
-      
       <div className="pt-32 pb-32 px-6 md:px-10 max-w-[1600px] mx-auto">
         <Suspense fallback={
           <div className="max-w-5xl mx-auto animate-pulse space-y-8">
