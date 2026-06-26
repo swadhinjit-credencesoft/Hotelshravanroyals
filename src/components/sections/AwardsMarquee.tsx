@@ -1,5 +1,3 @@
-'use client';
-
 import { awards } from '@/data/awards';
 
 export default function AwardsMarquee() {

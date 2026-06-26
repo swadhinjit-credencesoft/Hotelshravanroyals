@@ -5,7 +5,7 @@ import { AnimatePresence, motion } from 'framer-motion'
 import Image from 'next/image'
 import Link from 'next/link'
 import { ArrowRight, CalendarCheck, Check, Maximize, Users, Zap } from 'lucide-react'
-import { addDays, buildBookingUrl, todayString } from '@/lib/hotelmate'
+import { addDays, buildBookingUrl, todayString, trackBookingEvent } from '@/lib/hotelmate'
 import { Room } from '@/lib/rooms'
 import { useHotelMateRooms } from '@/lib/useHotelMateRooms'
 
@@ -24,6 +24,7 @@ export default function RoomsGrid() {
   })
 
   const handleBookNow = useCallback((room: Room) => {
+    trackBookingEvent('booking_click', { source: 'rooms_grid', roomName: room.name, roomId: room.roomId })
     const today = todayString()
     const tomorrow = addDays(today, 1)
     const url = buildBookingUrl({
@@ -113,7 +114,7 @@ export default function RoomsGrid() {
                   className="group flex flex-col bg-white border border-gold/10 p-6 shadow-sm hover:shadow-warm-lg transition-shadow duration-500 rounded-sm"
                 >
                   <div className="relative aspect-[4/3] overflow-hidden mb-6 rounded-sm">
-                    <Image src={room.image} alt={room.imageAlt} fill className="object-cover group-hover:scale-105 transition-transform duration-1000" />
+                    <Image src={room.image} alt={room.imageAlt} fill className="object-cover group-hover:scale-105 transition-transform duration-1000" sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw" />
                     <div className="absolute top-4 left-4 z-10 flex flex-col gap-2">
                       <div className="bg-cream/90 px-3 py-1 rounded-sm shadow-sm border border-gold/10">
                         <span className="font-sans text-[10px] uppercase tracking-[0.14em] text-gold">{room.category}</span>

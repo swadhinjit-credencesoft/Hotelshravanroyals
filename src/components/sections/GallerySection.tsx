@@ -2,10 +2,12 @@
 
 import { useState, useMemo } from 'react';
 import Image from 'next/image';
+import dynamic from 'next/dynamic';
 import { motion, AnimatePresence } from 'framer-motion';
 import { galleryImages } from '@/data/gallery';
 import SectionLabel from '@/components/ui/SectionLabel';
-import LightboxModal from '@/components/ui/LightboxModal';
+
+const LightboxModal = dynamic(() => import('@/components/ui/LightboxModal'), { ssr: false })
 
 const categories = [
   { id: 'all', label: 'All' },

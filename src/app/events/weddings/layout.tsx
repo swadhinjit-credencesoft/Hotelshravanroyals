@@ -10,12 +10,22 @@ export const metadata: Metadata = {
     title: 'Destination Wedding Lawns & Banquet in Purnia | Hotel Surya Bella Casa',
     description: 'Exchange your vows at Purnia\'s premier wedding venue. Exquisite lawns, catering, bridal suites, and banquet facilities at Hotel Surya Bella Casa.',
     url: 'https://hotelsuryabellacasa.com/events/weddings',
+    siteName: 'Hotel Surya Bella Casa',
     type: 'website',
+    images: [
+      {
+        url: 'https://bookonelocal.in/cdn/IMG_3815.avif',
+        width: 1200,
+        height: 630,
+        alt: 'Destination Wedding Venue at Hotel Surya Bella Casa Purnia',
+      },
+    ],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Destination Wedding Lawns & Banquet in Purnia | Hotel Surya Bella Casa',
     description: 'Exchange your vows at Purnia\'s premier wedding venue. Exquisite lawns, catering, bridal suites, and banquet facilities at Hotel Surya Bella Casa.',
+    images: ['https://bookonelocal.in/cdn/IMG_3815.avif'],
   }
 }
 

@@ -11,7 +11,7 @@ export default function DayTripsPage() {
     "@context": "https://schema.org",
     "@type": "TouristInformationCenter",
     "name": "Hotel Bella Casa Day Outing",
-    "description": "The perfect one-day picnic and resort visit in Purnia and Pune with pool access and lunch packages.",
+    "description": "The perfect one-day picnic and resort visit in Purnia with pool access and lunch packages.",
     "address": {
       "@type": "PostalAddress",
       "addressLocality": "Purnia",

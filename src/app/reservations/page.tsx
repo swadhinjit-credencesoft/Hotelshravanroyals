@@ -5,7 +5,7 @@ import { useSearchParams } from 'next/navigation'
 import Image from 'next/image'
 import { MapPin, Phone, Calendar, Clock, Users } from 'lucide-react'
 import { fetchAvailability, buildBookingUrl, todayString, addDays } from '@/lib/hotelmate'
-import type { HotelProperty, HotelRoom } from '@/lib/hotelmate'
+import type { HotelProperty, HotelRoom, PropertyService, BusinessServiceDto } from '@/lib/hotelmate'
 
 const stripHtml = (html: string) => html.replace(/<[^>]+>/g, '')
 
@@ -45,15 +45,14 @@ function ReservationsContent() {
     roomId: selectedRoom?.id?.toString(),
   })
 
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  const hydrate = property as any
   const hotelName = property?.name || 'Hotel'
   const hotelDesc = stripHtml(property?.businessDescription || '')
   const hotelImages = property?.imageList || []
-  const services: Array<{ id: number | null; name: string }> = hydrate?.propertyServicesList || []
+  const services: PropertyService[] = property?.propertyServicesList || []
   const addr = property?.address
-  const checkInTime = hydrate?.businessServiceDtoList?.[0]?.checkInTime as string | undefined
-  const checkOutTime = hydrate?.businessServiceDtoList?.[0]?.checkOutTime as string | undefined
+  const serviceDto: BusinessServiceDto | undefined = property?.businessServiceDtoList?.[0]
+  const checkInTime = serviceDto?.checkInTime
+  const checkOutTime = serviceDto?.checkOutTime
 
   return (
     <>

@@ -13,8 +13,12 @@ import {
 } from 'framer-motion'
 import { ArrowRight, Calendar } from 'lucide-react'
 import { heroSlides } from '@/data/hero'
-import ParticleCanvas from '@/components/ui/ParticleCanvas'
-import { buildBookingUrl, addDays, todayString } from '@/lib/hotelmate'
+import dynamic from 'next/dynamic'
+import { buildBookingUrl, addDays, todayString, trackBookingEvent } from '@/lib/hotelmate'
+
+const ParticleCanvas = dynamic(() => import('@/components/ui/ParticleCanvas'), {
+  ssr: false,
+})
 
 export default function HeroSection() {
   const [currentSlide, setCurrentSlide] = useState(0)
@@ -70,6 +74,7 @@ export default function HeroSection() {
   }
 
   const openBooking = useCallback(() => {
+    trackBookingEvent('booking_click', { source: 'hero_booking_bar' })
     const url = buildBookingUrl({
       fromDate: checkIn || undefined,
       toDate: checkOut || undefined,
@@ -298,7 +303,10 @@ export default function HeroSection() {
         {/* Mobile book button */}
         <div className="md:hidden flex justify-center pb-6">
           <button
-            onClick={openBooking}
+            onClick={() => {
+              trackBookingEvent('booking_click', { source: 'hero_mobile' })
+              openBooking()
+            }}
             className="bg-gold text-[#1a1004] font-sans text-[12px] uppercase tracking-[0.16em] px-10 py-4 rounded-full shadow-warm-lg"
           >
             Book Now

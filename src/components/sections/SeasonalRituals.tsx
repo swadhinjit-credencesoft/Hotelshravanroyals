@@ -45,12 +45,13 @@ export default function SeasonalRituals() {
                className="group relative"
              >
                 <div className="relative aspect-[3/4] overflow-hidden border border-gold/10">
-                   <Image
-                     src={ritual.image}
-                     alt={ritual.title}
-                     fill
-                     className="object-cover grayscale group-hover:grayscale-0 transition-all duration-1000 group-hover:scale-105"
-                   />
+                    <Image
+                      src={ritual.image}
+                      alt={ritual.title}
+                      fill
+                      sizes="(max-width: 768px) 100vw, 33vw"
+                      className="object-cover grayscale group-hover:grayscale-0 transition-all duration-1000 group-hover:scale-105"
+                    />
                    <div className="absolute inset-0 bg-gradient-to-t from-forest/80 via-transparent to-transparent opacity-60" />
                 </div>
                 <div className="mt-8">

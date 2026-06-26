@@ -4,7 +4,7 @@ import React, { useState, useEffect, useCallback } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 import { motion, AnimatePresence } from 'framer-motion'
-import { todayString, addDays, buildBookingUrl, fetchAvailability } from '@/lib/hotelmate'
+import { todayString, addDays, buildBookingUrl, fetchAvailability, trackBookingEvent } from '@/lib/hotelmate'
 import { useLivePrices } from '@/lib/useLivePrices'
 import { getRoomAvailability, getRoomPrice, Room, slugifyRoomName } from '@/lib/rooms'
 import { 
@@ -387,6 +387,7 @@ function BookingSidebar({ room }: { room: Room }) {
   }, [checkIn, checkOut, guests, roomsCount, room.name, room.price, room.slug])
 
   const handleBookNow = useCallback(() => {
+    trackBookingEvent('booking_click', { source: 'room_detail', roomName: room.name, roomId: liveRoomId || room.roomId })
     const url = buildBookingUrl({
       fromDate: checkIn || undefined,
       toDate: checkOut || undefined,
@@ -396,7 +397,7 @@ function BookingSidebar({ room }: { room: Room }) {
       roomId: liveRoomId || undefined
     })
     window.open(url, '_blank', 'noopener,noreferrer')
-  }, [checkIn, checkOut, guests, roomsCount, room.name, liveRoomId])
+  }, [checkIn, checkOut, guests, roomsCount, room.name, liveRoomId, room.roomId])
 
   const handleCheckInChange = (val: string) => {
     setCheckIn(val)

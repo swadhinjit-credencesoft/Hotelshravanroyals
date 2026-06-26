@@ -7,7 +7,7 @@ import { motion, useInView } from 'framer-motion'
 import { ArrowRight, ChevronLeft, ChevronRight, Maximize, Users, Zap } from 'lucide-react'
 import { useRouter } from 'next/navigation'
 import SectionLabel from '@/components/ui/SectionLabel'
-import { buildBookingUrl, addDays, todayString } from '@/lib/hotelmate'
+import { buildBookingUrl, addDays, todayString, trackBookingEvent } from '@/lib/hotelmate'
 import { Room } from '@/lib/rooms'
 import { useHotelMateRooms } from '@/lib/useHotelMateRooms'
 
@@ -26,6 +26,7 @@ function RoomCard({ room, index }: RoomCardProps) {
   const handleBookNow = (e: React.MouseEvent) => {
     e.stopPropagation()
     e.preventDefault()
+    trackBookingEvent('booking_click', { source: 'rooms_carousel', roomName: room.name, roomId: room.roomId })
     const today = todayString()
     const tomorrow = addDays(today, 1)
     const url = buildBookingUrl({

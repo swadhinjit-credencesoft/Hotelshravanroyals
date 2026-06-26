@@ -31,12 +31,13 @@ export default function WellnessSection() {
 
           <div className="order-1 lg:order-2 relative flex justify-center lg:justify-end">
              <div className="relative w-full max-w-lg aspect-[3/4] overflow-hidden border border-gold/10">
-                <Image
-                  src='/images/exterior8.jpeg'
-                  alt="Minimalist spa interior"
-                  fill
-                  className="object-cover hover:scale-105 transition-transform duration-1000"
-                />
+                 <Image
+                   src='/images/exterior8.jpeg'
+                   alt="Minimalist spa interior"
+                   fill
+                   sizes="(max-width: 1024px) 100vw, 50vw"
+                   className="object-cover hover:scale-105 transition-transform duration-1000"
+                 />
              </div>
              <motion.div
                 initial={{ opacity: 0, x: 50 }}
@@ -44,12 +45,13 @@ export default function WellnessSection() {
                 transition={{ duration: 1, delay: 0.5 }}
                 className="absolute -bottom-12 -left-12 w-64 h-80 hidden md:block border border-gold/20 overflow-hidden bg-cream"
              >
-                <Image
-                  src='/images/room1.jpeg'
-                  alt="Therapeutic botanicals"
-                  fill
-                  className="object-cover grayscale"
-                />
+                 <Image
+                   src='/images/room1.jpeg'
+                   alt="Therapeutic botanicals"
+                   fill
+                   sizes="256px"
+                   className="object-cover grayscale"
+                 />
              </motion.div>
           </div>
         </div>

@@ -55,6 +55,7 @@ function OfferCard({
           src={['/images/exterior8.jpeg', '/images/room1.jpeg', '/images/room2.jpeg'][index]}
           alt={offer.name}
           fill
+          sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
           className="object-cover"
         />
         <div className="absolute inset-0 bg-forest/20" />

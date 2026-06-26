@@ -86,6 +86,16 @@ export interface HotelRoom {
   imageList: { url: string }[]
 }
 
+export interface PropertyService {
+  id: number | null
+  name: string
+}
+
+export interface BusinessServiceDto {
+  checkInTime?: string
+  checkOutTime?: string
+}
+
 export interface HotelProperty {
   id: number
   name: string
@@ -104,6 +114,8 @@ export interface HotelProperty {
   roomList: HotelRoom[]
   imageList: { url: string }[]
   minimumRoooPrice: number
+  propertyServicesList?: PropertyService[]
+  businessServiceDtoList?: BusinessServiceDto[]
 }
 
 export interface AvailabilityParams {
@@ -211,6 +223,21 @@ export function formatDate(date: Date): string {
 
 export function todayString(): string {
   return formatDate(new Date())
+}
+
+/**
+ * Track booking events via GA4 (window.gtag)
+ */
+export function trackBookingEvent(event: 'booking_click' | 'booking_start' | 'booking_success', metadata?: Record<string, string | number | undefined>) {
+  if (typeof window !== 'undefined' && typeof window.gtag === 'function') {
+    window.gtag('event', event, metadata)
+  }
+}
+
+declare global {
+  interface Window {
+    gtag?: (command: string, ...args: unknown[]) => void
+  }
 }
 
 export function addDays(date: string, days: number): string {

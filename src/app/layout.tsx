@@ -10,8 +10,7 @@ import LenisProvider from '@/components/providers/LenisProvider'
 import CustomCursor from '@/components/ui/CustomCursor'
 import PageTransition from '@/components/providers/PageTransition'
 import Breadcrumbs from '@/components/ui/Breadcrumbs'
-
-import { MessageCircle } from 'lucide-react'
+import WhatsAppButton from '@/components/ui/WhatsAppButton'
 
 const barlow = Barlow({
   subsets: ['latin'],
@@ -215,7 +214,7 @@ export default function RootLayout({
 
       </head>
       <body
-        className={`${barlow.variable} ${tangerine.variable} antialiased`}
+        className={`${barlow.variable} ${tangerine.variable} antialiased pb-16 md:pb-0`}
         suppressHydrationWarning
       >
         <CustomCursor />
@@ -232,24 +231,24 @@ export default function RootLayout({
 
             {children}
 
-            {/* Global Floating WhatsApp Button */}
-            <a
-              href="https://wa.me/9835923601"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="fixed bottom-20 md:bottom-8 right-6 md:right-8 z-40 bg-green-500 text-white p-4 rounded-full shadow-2xl hover:bg-green-600 hover:scale-110 transition-all duration-300 group"
-              aria-label="Chat on WhatsApp"
-            >
-              <MessageCircle size={28} />
-
-              <span className="absolute right-full mr-4 top-1/2 -translate-y-1/2 bg-white text-forest px-4 py-2 rounded-sm text-[10px] uppercase tracking-widest font-bold opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap shadow-xl border border-gold/10">
-                How can we help?
-              </span>
-            </a>
+            <WhatsAppButton />
           </PageTransition>
 
           <Footer />
         </LenisProvider>
+        {/* Mobile Sticky Booking Button */}
+        <div className="fixed bottom-0 left-0 right-0 z-50 md:hidden bg-cream/95 backdrop-blur-md border-t border-gold/10 px-4 py-3 flex items-center justify-between shadow-warm-lg">
+          <span className="font-serif text-sm text-forest">Book Your Stay</span>
+          <a
+            href="https://bookone.io/Hotel-Bella-Casa?bookingEngine=true"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="bg-gold text-[#1a1004] font-sans text-[11px] uppercase tracking-[0.16em] px-6 py-2.5 rounded-sm hover:bg-gold-light transition-colors shadow-md"
+            aria-label="Book your stay now"
+          >
+            Book Now
+          </a>
+        </div>
       </body>
     </html>
   )

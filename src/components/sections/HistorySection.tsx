@@ -27,6 +27,7 @@ export default function HistorySection() {
                 src='https://bookonelocal.in/cdn/IMG_3808.avif'
                 alt="Comfortable clean rooms at Hotel Surya Bella Casa"
                 fill
+                sizes="(max-width: 1024px) 90vw, 40vw"
                 className="object-cover transition-all duration-1000"
               />
             </div>
@@ -39,6 +40,7 @@ export default function HistorySection() {
                 src='https://bookonelocal.in/cdn/IMG_3815.avif'
                 alt="Well-appointed budget stay in Purnia"
                 fill
+                sizes="256px"
                 className="object-cover"
               />
             </motion.div>
@@ -51,6 +53,7 @@ export default function HistorySection() {
                 src='https://bookonelocal.in/cdn/IMG_3784.avif'
                 alt="Clean hotel interiors at Surya Bella Casa"
                 fill
+                sizes="320px"
                 className="object-cover"
               />
             </motion.div>

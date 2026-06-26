@@ -1,7 +1,5 @@
-'use client';
-
-import Image from 'next/image';
-import SectionLabel from '@/components/ui/SectionLabel';
+import Image from 'next/image'
+import SectionLabel from '@/components/ui/SectionLabel'
 
 export default function ForestSection() {
   return (
@@ -12,9 +10,10 @@ export default function ForestSection() {
             src='/images/exterior3.jpeg' 
             alt="Forest texture" 
             fill 
-            className="object-cover mix-blend-overlay"
-         />
-      </div>
+             className="object-cover mix-blend-overlay"
+             sizes="100vw"
+          />
+       </div>
 
       <div className="max-w-[1600px] mx-auto px-6 md:px-10 relative z-10 text-center text-ivory">
          <div className="max-w-3xl mx-auto">

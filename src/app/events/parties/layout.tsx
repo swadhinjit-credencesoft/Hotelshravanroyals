@@ -10,12 +10,22 @@ export const metadata: Metadata = {
     title: 'Celebrations & Birthday Party Hall in Purnia | Hotel Surya Bella Casa',
     description: 'Celebrate birthdays, anniversaries, and private parties at our celebration deck and party hall in Purnia. Customized themes and dining options.',
     url: 'https://hotelsuryabellacasa.com/events/parties',
+    siteName: 'Hotel Surya Bella Casa',
     type: 'website',
+    images: [
+      {
+        url: 'https://bookonelocal.in/cdn/IMG_3815.avif',
+        width: 1200,
+        height: 630,
+        alt: 'Party and Celebration Hall at Hotel Surya Bella Casa Purnia',
+      },
+    ],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Celebrations & Birthday Party Hall in Purnia | Hotel Surya Bella Casa',
     description: 'Celebrate birthdays, anniversaries, and private parties at our celebration deck and party hall in Purnia. Customized themes and dining options.',
+    images: ['https://bookonelocal.in/cdn/IMG_3815.avif'],
   }
 }
 
