@@ -4,7 +4,7 @@ import React, { useState, useEffect, useCallback } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 import { motion, AnimatePresence } from 'framer-motion'
-import { todayString, addDays, buildBookingUrl, fetchAvailability, trackBookingEvent } from '@/lib/hotelmate'
+import { todayString, addDays, buildBookingUrl, buildWhatsAppUrl, fetchAvailability, trackBookingEvent } from '@/lib/hotelmate'
 import { useLivePrices } from '@/lib/useLivePrices'
 import { getRoomAvailability, getRoomPrice, Room, slugifyRoomName } from '@/lib/rooms'
 import { 
@@ -22,7 +22,11 @@ import {
   Calendar,
   ArrowRight,
   X,
-  Zap
+  Zap,
+  ShieldCheck,
+  Clock,
+  MessageCircle,
+  PhoneCall
 } from 'lucide-react'
 
 const amenityIcons: Record<string, React.ElementType> = {
@@ -58,6 +62,15 @@ export default function RoomDetailClient({ room, otherRooms }: RoomDetailClientP
   const headerLiveData = livePrices[room.slug]
   const headerPrice = headerLiveData?.price ?? room.price
   const isHeaderLive = headerLiveData?.isLive ?? false
+
+  // Floating desktop booking bar visibility
+  const [showFloatingBar, setShowFloatingBar] = useState(false)
+  useEffect(() => {
+    const handleScroll = () => setShowFloatingBar(window.scrollY > 500)
+    window.addEventListener('scroll', handleScroll, { passive: true })
+    handleScroll()
+    return () => window.removeEventListener('scroll', handleScroll)
+  }, [])
 
   // JSON-LD Schema for SEO
   const jsonLd = {
@@ -324,6 +337,100 @@ export default function RoomDetailClient({ room, otherRooms }: RoomDetailClientP
         </div>
       </section>
 
+      {/* Floating Desktop Booking Bar — Premium 3-Action Bar */}
+      <motion.div
+        initial={{ y: 120, opacity: 0 }}
+        animate={{ y: showFloatingBar ? 0 : 120, opacity: showFloatingBar ? 1 : 0 }}
+        transition={{ duration: 0.45, ease: 'easeOut' }}
+        className="hidden lg:flex fixed bottom-0 left-0 right-0 z-50 bg-forest/90 backdrop-blur-xl shadow-2xl"
+        style={{ boxShadow: '0 -4px 30px rgba(0,0,0,0.5)' }}
+      >
+        {/* Animated gold shimmer border */}
+        <div className="absolute top-0 left-0 right-0 h-[2px] overflow-hidden">
+          <div
+            className="absolute inset-0"
+            style={{
+              backgroundImage: 'linear-gradient(90deg, transparent 0%, #C9A84C 25%, #F5E6A3 50%, #C9A84C 75%, transparent 100%)',
+              backgroundSize: '200% 100%',
+              animation: 'shimmerSweep 2.5s ease-in-out infinite'
+            }}
+          />
+        </div>
+
+        <div className="max-w-[1600px] mx-auto w-full px-8 py-2.5 flex items-center justify-between">
+          {/* Room Info */}
+          <div className="flex items-center gap-5">
+            <div>
+              <p className="text-ivory font-serif text-lg leading-tight">{room.name}</p>
+              <p className="text-gold/80 font-sans text-[9px] uppercase tracking-[0.15em]">Hotel Surya Bella Casa</p>
+            </div>
+            <div className="h-9 w-px bg-gradient-to-b from-transparent via-ivory/15 to-transparent" />
+            <div>
+              <p className="text-ivory/40 font-sans text-[9px] uppercase tracking-widest">Starting from</p>
+              <div className="flex items-baseline gap-1.5">
+                <span className="text-gold font-serif text-xl">₹{(headerPrice).toLocaleString('en-IN')}</span>
+                <span className="text-ivory/40 font-sans text-[9px]">/ night</span>
+                {isHeaderLive && (
+                  <span className="text-gold/60"><Zap size={10} /></span>
+                )}
+              </div>
+            </div>
+          </div>
+
+          {/* 3 Action Icons */}
+          <div className="flex items-center gap-2.5">
+            {/* WhatsApp */}
+            <motion.a
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+              href={buildWhatsAppUrl('Room: ' + room.name)}
+              target="_blank"
+              rel="noopener noreferrer"
+              onClick={() => {
+                try { window.gtag?.('event', 'whatsapp_click', { source: 'floating_bar', roomName: room.name }) } catch {}
+              }}
+              className="group flex items-center gap-2.5 border border-green-500/35 text-green-400 hover:text-white px-5 py-2.5 rounded-sm font-sans text-[10px] uppercase tracking-[0.15em] hover:bg-green-600/20 hover:border-green-400/60 transition-all"
+              style={{
+                animation: 'waPulse 2.5s ease-in-out infinite'
+              }}
+            >
+              <MessageCircle size={16} className="group-hover:drop-shadow-[0_0_6px_rgba(74,222,128,0.6)] transition-all" />
+              <span className="hidden xl:inline">WhatsApp</span>
+            </motion.a>
+
+            {/* Call */}
+            <motion.a
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+              href="tel:+919835923601"
+              className="flex items-center gap-2.5 border border-ivory/15 text-ivory/70 hover:text-ivory px-5 py-2.5 rounded-sm font-sans text-[10px] uppercase tracking-[0.15em] hover:bg-ivory/5 hover:border-ivory/30 transition-all"
+            >
+              <PhoneCall size={16} />
+              <span className="hidden xl:inline">Call</span>
+            </motion.a>
+
+            {/* Divider */}
+            <div className="h-8 w-px bg-gradient-to-b from-transparent via-gold/30 to-transparent mx-1" />
+
+            {/* Book Direct — Gold Premium CTA */}
+            <motion.button
+              whileHover={{ scale: 1.05, boxShadow: '0 0 30px rgba(201,168,76,0.4)' }}
+              whileTap={{ scale: 0.95 }}
+              onClick={() => {
+                const url = buildBookingUrl({ roomName: room.name })
+                window.open(url, '_blank', 'noopener,noreferrer')
+                try { window.gtag?.('event', 'booking_click', { source: 'floating_bar', roomName: room.name }) } catch {}
+              }}
+              className="flex items-center gap-2.5 bg-gradient-to-r from-gold to-amber-400 text-[#1a1004] px-7 py-2.5 rounded-sm font-sans text-[10px] uppercase tracking-[0.2em] font-bold shadow-lg shadow-gold/20 hover:shadow-gold/40 active:shadow-gold/10 transition-all"
+            >
+              <Calendar size={15} />
+              <span>Book Direct</span>
+              <ArrowRight size={13} className="ml-0.5" />
+            </motion.button>
+          </div>
+        </div>
+      </motion.div>
+
     </main>
   )
 }
@@ -406,6 +513,13 @@ function BookingSidebar({ room }: { room: Room }) {
     }
   }
 
+  const WA_MSG = buildWhatsAppUrl(
+    'Room: ' + room.name +
+    '\nCheck-in: ' + checkIn +
+    '\nCheck-out: ' + checkOut +
+    '\nGuests: ' + guests
+  )
+
   return (
     <div className="bg-forest p-8 rounded-sm shadow-2xl text-ivory">
       <h3 className="font-display italic text-2xl mb-2 text-gold">Ready to Escape?</h3>
@@ -466,7 +580,7 @@ function BookingSidebar({ room }: { room: Room }) {
       </div>
 
       {/* Pricing / Live Status */}
-      <div className="space-y-4 mb-8 border-t border-ivory/10 pt-6">
+      <div className="space-y-4 mb-6 border-t border-ivory/10 pt-6">
         <div className="flex items-center justify-between">
           <span className="font-serif">{room.name}</span>
           <div className="text-right">
@@ -477,7 +591,7 @@ function BookingSidebar({ room }: { room: Room }) {
                 <span className="font-serif text-xl text-gold">₹{(livePrice || room.price).toLocaleString('en-IN')}</span>
                 {livePrice && (
                   <span className="text-[9px] uppercase tracking-widest text-gold/80 bg-gold/10 px-1.5 py-0.5 rounded-sm font-sans mt-1 flex items-center gap-1">
-                  -- Live Rate
+                    <Zap size={9} /> Live Rate
                   </span>
                 )}
               </div>
@@ -486,19 +600,50 @@ function BookingSidebar({ room }: { room: Room }) {
             )}
           </div>
         </div>
-        <div className="flex items-center justify-between text-ivory/60 text-sm">
+        <div className="flex items-center justify-between text-ivory/50 text-xs border-b border-ivory/5 pb-4">
           <span>Taxes & Fees</span>
           <span>Calculated at checkout</span>
         </div>
       </div>
 
+      {/* Trust Badges */}
+      <div className="grid grid-cols-3 gap-2 mb-6">
+        <div className="bg-ivory/5 rounded-sm p-2.5 text-center">
+          <ShieldCheck size={14} className="text-gold mx-auto mb-1" />
+          <span className="text-[8px] uppercase tracking-wider text-ivory/60 font-sans block">Best Rate</span>
+        </div>
+        <div className="bg-ivory/5 rounded-sm p-2.5 text-center">
+          <Clock size={14} className="text-gold mx-auto mb-1" />
+          <span className="text-[8px] uppercase tracking-wider text-ivory/60 font-sans block">Free Cancel</span>
+        </div>
+        <div className="bg-ivory/5 rounded-sm p-2.5 text-center">
+          <ShieldCheck size={14} className="text-gold mx-auto mb-1" />
+          <span className="text-[8px] uppercase tracking-wider text-ivory/60 font-sans block">Secure</span>
+        </div>
+      </div>
+
+      {/* Book Now Button */}
       <button
         onClick={handleBookNow}
-        className="w-full bg-gold text-[#1a1004] py-4 rounded-sm font-sans text-[11px] uppercase tracking-[0.2em] flex items-center justify-center gap-2 hover:bg-gold-light transition-all active:scale-[0.98]"
+        className="w-full bg-gold text-[#1a1004] py-4 rounded-sm font-sans text-[11px] uppercase tracking-[0.2em] flex items-center justify-center gap-2 hover:bg-gold-light transition-all active:scale-[0.98] font-bold mb-3 shadow-lg shadow-gold/20"
       >
         <Calendar size={14} />
         {isAvailable ? 'Book Sanctuary' : 'Check Alternate Dates'}
       </button>
+
+      {/* WhatsApp Enquiry */}
+      <a
+        href={WA_MSG}
+        target="_blank"
+        rel="noopener noreferrer"
+        onClick={() => {
+          try { window.gtag?.('event', 'whatsapp_click', { source: 'room_detail_sidebar', roomName: room.name }) } catch {}
+        }}
+        className="w-full flex items-center justify-center gap-2 border border-green-500/40 text-green-400 py-3 rounded-sm font-sans text-[10px] uppercase tracking-[0.18em] hover:bg-green-500/10 transition-all"
+      >
+        <MessageCircle size={14} />
+        Enquire via WhatsApp
+      </a>
     </div>
   )
 }

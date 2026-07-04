@@ -7,10 +7,12 @@ import { Barlow, Tangerine } from 'next/font/google'
 import Navbar from '@/components/layout/Navbar'
 import Footer from '@/components/layout/Footer'
 import LenisProvider from '@/components/providers/LenisProvider'
-import CustomCursor from '@/components/ui/CustomCursor'
+
 import PageTransition from '@/components/providers/PageTransition'
 import Breadcrumbs from '@/components/ui/Breadcrumbs'
 import WhatsAppButton from '@/components/ui/WhatsAppButton'
+import { MessageCircle, PhoneCall, Calendar } from 'lucide-react'
+import { buildWhatsAppUrl } from '@/lib/hotelmate'
 
 const barlow = Barlow({
   subsets: ['latin'],
@@ -217,8 +219,6 @@ export default function RootLayout({
         className={`${barlow.variable} ${tangerine.variable} antialiased pb-16 md:pb-0`}
         suppressHydrationWarning
       >
-        <CustomCursor />
-
         <a href="#main-content" className="skip-to-main">
           Skip to main content
         </a>
@@ -236,18 +236,55 @@ export default function RootLayout({
 
           <Footer />
         </LenisProvider>
-        {/* Mobile Sticky Booking Button */}
-        <div className="fixed bottom-0 left-0 right-0 z-50 md:hidden bg-cream/95 backdrop-blur-md border-t border-gold/10 px-4 py-3 flex items-center justify-between shadow-warm-lg">
-          <span className="font-serif text-sm text-forest">Book Your Stay</span>
-          <a
-            href="https://bookone.io/Hotel-Bella-Casa?bookingEngine=true"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="bg-gold text-[#1a1004] font-sans text-[11px] uppercase tracking-[0.16em] px-6 py-2.5 rounded-sm hover:bg-gold-light transition-colors shadow-md"
-            aria-label="Book your stay now"
-          >
-            Book Now
-          </a>
+        {/* Mobile Sticky Booking Bar */}
+        <div className="fixed bottom-0 left-0 right-0 z-50 md:hidden bg-gradient-to-t from-forest/95 via-forest to-forest/95 backdrop-blur-xl border-t border-gold/15 px-4 py-2.5 shadow-2xl" style={{ boxShadow: '0 -4px 30px rgba(0,0,0,0.5)' }}>
+          {/* Gold shimmer accent */}
+          <div className="absolute top-0 left-0 right-0 h-[1.5px] overflow-hidden">
+            <div
+              className="absolute inset-0"
+              style={{
+                backgroundImage: 'linear-gradient(90deg, transparent 0%, #C9A84C 25%, #F5E6A3 50%, #C9A84C 75%, transparent 100%)',
+                backgroundSize: '200% 100%',
+                animation: 'shimmerSweep 2.5s ease-in-out infinite'
+              }}
+            />
+          </div>
+          <div className="flex items-center justify-between gap-2">
+            <div className="flex-shrink-0">
+              <span className="font-sans text-[8px] uppercase tracking-[0.18em] text-gold/70">Best Rate Guarantee</span>
+              <span className="font-serif text-xs text-ivory block leading-tight">Book Direct & Save</span>
+            </div>
+            <div className="flex items-center gap-1.5">
+              <a
+                href={buildWhatsAppUrl()}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-1.5 border border-green-500/30 text-green-400 px-3 py-2 rounded-sm text-[10px] uppercase tracking-[0.12em] font-sans hover:bg-green-600/10 hover:border-green-400/50 transition-all"
+                aria-label="Enquire via WhatsApp"
+              >
+                <MessageCircle size={14} />
+                <span className="hidden sm:inline">WhatsApp</span>
+              </a>
+              <a
+                href="tel:+919835923601"
+                className="flex items-center gap-1.5 border border-gold/25 text-gold/80 px-3 py-2 rounded-sm text-[10px] uppercase tracking-[0.12em] font-sans hover:bg-gold/10 hover:border-gold/50 transition-all"
+                aria-label="Call hotel"
+              >
+                <PhoneCall size={14} />
+                <span className="hidden sm:inline">Call</span>
+              </a>
+              <a
+                href="https://bookone.io/Hotel-Bella-Casa?bookingEngine=true"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-1.5 bg-gradient-to-r from-gold to-amber-400 text-[#1a1004] px-4 py-2 rounded-sm text-[10px] uppercase tracking-[0.15em] font-sans font-bold hover:from-gold-light hover:to-amber-300 transition-all shadow-lg shadow-gold/20 active:scale-[0.97]"
+                aria-label="Book your stay now"
+              >
+                <Calendar size={13} />
+                <span>Book</span>
+              </a>
+            </div>
+          </div>
         </div>
       </body>
     </html>

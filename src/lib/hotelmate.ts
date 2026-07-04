@@ -214,6 +214,26 @@ export function buildBookingUrl(params?: {
   return `${baseUrl}?${query.toString()}`
 }
 
+const HOTEL_NAME = 'Hotel Surya Bella Casa'
+const HOTEL_ADDRESS = 'Suryalok Complex, Opposite Vikass Market, Near Bus Stand, Purnia, Bihar 854301'
+
+function buildEnquiryMessage(extra?: string): string {
+  return (
+    'This is an Enquiry from : The HotelMate Website' +
+    '\nHotel Name: ' + HOTEL_NAME +
+    '\nProperty Id: ' + HOTELMATE_PROPERTY_ID +
+    '\nexternalSite: WebSite' +
+    '\nAddress: ' + HOTEL_ADDRESS +
+    (extra ? '\n' + extra : '')
+  )
+}
+
+export function buildWhatsAppUrl(extra?: string): string {
+  const phoneNumber = '919835923601'
+  const message = buildEnquiryMessage(extra)
+  return 'https://api.whatsapp.com/send?phone=' + phoneNumber + '&text=' + encodeURIComponent(message)
+}
+
 export function formatDate(date: Date): string {
   const y = date.getFullYear()
   const m = String(date.getMonth() + 1).padStart(2, '0')

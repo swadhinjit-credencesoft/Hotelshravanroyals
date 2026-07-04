@@ -358,3 +358,31 @@ html.lenis {
     animation: none;
   }
 }
+
+/* WhatsApp pulse glow animation */
+@keyframes pulseGlow {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.6); }
+  50% { box-shadow: 0 0 0 12px rgba(37, 211, 102, 0); }
+}
+
+.animate-pulse-glow {
+  animation: pulseGlow 2s infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-pulse-glow {
+    animation: none;
+  }
+}
+
+/* Floating bar shimmer sweep */
+@keyframes shimmerSweep {
+  0% { background-position: 200% 0; }
+  100% { background-position: -200% 0; }
+}
+
+/* WhatsApp gentle pulse */
+@keyframes waPulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.7; }
+}
