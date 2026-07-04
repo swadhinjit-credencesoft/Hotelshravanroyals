@@ -101,9 +101,9 @@ function OfferCard({
           </ul>
         </div>
 
-        <button className="w-full bg-gold text-[#1a1004] font-sans text-[11px] uppercase tracking-[0.2em] py-5 transition-all duration-300 hover:bg-gold-light">
+        <a href="/offers" className="block w-full bg-gold text-[#1a1004] font-sans text-[11px] uppercase tracking-[0.2em] py-5 text-center transition-all duration-300 hover:bg-gold-light">
           Reserve This Package
-        </button>
+        </a>
       </div>
     </motion.div>
   );

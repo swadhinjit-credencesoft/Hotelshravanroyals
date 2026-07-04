@@ -36,12 +36,12 @@ export default function SeasonalRituals() {
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
            {rituals.map((ritual, i) => (
-             <motion.div 
-               key={i}
-               initial={{ opacity: 0, scale: 0.95 }}
-               whileInView={{ opacity: 1, scale: 1 }}
-               viewport={{ once: true }}
-               transition={{ duration: 1, delay: i * 0.2 }}
+              <motion.div 
+                key={ritual.season}
+                initial={{ opacity: 0, scale: 0.95 }}
+                whileInView={{ opacity: 1, scale: 1 }}
+                viewport={{ once: true }}
+                transition={{ duration: 1, delay: i * 0.2 }}
                className="group relative"
              >
                 <div className="relative aspect-[3/4] overflow-hidden border border-gold/10">

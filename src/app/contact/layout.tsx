@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     type: 'website',
     images: [
       {
-        url: 'https://bookonelocal.in/cdn/IMG_3815.avif',
+        url: 'https://bookonelocal.in/cdn/IMG_3784.avif',
         width: 1200,
         height: 630,
         alt: 'Contact Hotel Surya Bella Casa Purnia',
@@ -36,7 +36,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Contact Hotel Surya Bella Casa — Purnia, Bihar | +91 9835923601',
     description: 'Contact Hotel Surya Bella Casa in Purnia. Call +91 9835923601.',
-    images: ['https://bookonelocal.in/cdn/IMG_3815.avif'],
+    images: ['https://bookonelocal.in/cdn/IMG_3784.avif'],
   },
 }
 

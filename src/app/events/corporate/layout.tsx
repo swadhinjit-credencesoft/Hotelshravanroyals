@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     type: 'website',
     images: [
       {
-        url: 'https://bookonelocal.in/cdn/IMG_3815.avif',
+        url: 'https://bookonelocal.in/cdn/IMG_3784.avif',
         width: 1200,
         height: 630,
         alt: 'Corporate Event Venue at Hotel Surya Bella Casa Purnia',
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Corporate Event Venue & Retreats in Purnia | Hotel Surya Bella Casa',
     description: 'Host professional corporate events, offsites, retreats, and team-building workshops at Hotel Surya Bella Casa in Purnia, Bihar.',
-    images: ['https://bookonelocal.in/cdn/IMG_3815.avif'],
+    images: ['https://bookonelocal.in/cdn/IMG_3784.avif'],
   }
 }
 

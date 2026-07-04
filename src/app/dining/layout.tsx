@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     type: 'website',
     images: [
       {
-        url: 'https://bookonelocal.in/cdn/IMG_3815.avif',
+        url: 'https://bookonelocal.in/cdn/IMG_3808.avif',
         width: 1200,
         height: 630,
         alt: 'Dining at Hotel Surya Bella Casa Purnia',
@@ -36,7 +36,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Dining in Purnia | Pure Vegetarian Food | Hotel Surya Bella Casa',
     description: 'Enjoy pure vegetarian dining at Hotel Surya Bella Casa, Purnia.',
-    images: ['https://bookonelocal.in/cdn/IMG_3815.avif'],
+    images: ['https://bookonelocal.in/cdn/IMG_3808.avif'],
   },
 }
 

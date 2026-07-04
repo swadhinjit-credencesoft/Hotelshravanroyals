@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     type: 'website',
     images: [
       {
-        url: 'https://bookonelocal.in/cdn/IMG_3815.avif',
+        url: 'https://bookonelocal.in/cdn/IMG_3809.avif',
         width: 1200,
         height: 630,
         alt: 'Day Trips and Picnics at Hotel Surya Bella Casa Purnia',
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Day Trips & Picnics in Purnia | Hotel Surya Bella Casa',
     description: 'Plan your day trips, picnics, and family get-togethers at Hotel Surya Bella Casa in Purnia, Bihar. Enjoy delicious food and pristine settings.',
-    images: ['https://bookonelocal.in/cdn/IMG_3815.avif'],
+    images: ['https://bookonelocal.in/cdn/IMG_3809.avif'],
   }
 }
 

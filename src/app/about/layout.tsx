@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     type: 'website',
     images: [
       {
-        url: 'https://bookonelocal.in/cdn/IMG_3815.avif',
+        url: 'https://bookonelocal.in/cdn/IMG_3784.avif',
         width: 1200,
         height: 630,
         alt: 'About Hotel Surya Bella Casa Purnia',
@@ -36,7 +36,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'About Us — Best Hotel in Purnia, Bihar | Hotel Surya Bella Casa',
     description: 'Learn about Hotel Surya Bella Casa, established in 2019 in Purnia, Bihar.',
-    images: ['https://bookonelocal.in/cdn/IMG_3815.avif'],
+    images: ['https://bookonelocal.in/cdn/IMG_3784.avif'],
   },
 }
 

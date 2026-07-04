@@ -38,7 +38,7 @@ export default function RoomDetailContent({ room }: RoomDetailContentProps) {
                 <div className="flex gap-12 mb-12">
                    <div className="flex flex-col">
                       <span className="font-sans text-[10px] uppercase tracking-widest text-gold mb-2">Space</span>
-                      <span className="font-serif text-2xl text-forest">{room.size} mÂ²</span>
+                       <span className="font-serif text-2xl text-forest">{room.size} m²</span>
                    </div>
                    <div className="flex flex-col">
                       <span className="font-sans text-[10px] uppercase tracking-widest text-gold mb-2">Occupancy</span>
@@ -66,10 +66,11 @@ export default function RoomDetailContent({ room }: RoomDetailContentProps) {
                 <div className="flex items-center gap-8">
                    <div className="flex flex-col">
                       <span className="font-sans text-[9px] uppercase tracking-[0.2em] text-gold mb-1">Starting from</span>
-                      <span className="font-serif text-4xl text-forest">${room.price.toLocaleString()}<span className="text-base text-taupe/60 ml-2">/ night</span></span>
+                       <span className="font-serif text-4xl text-forest">₹{room.price.toLocaleString()}<span className="text-base text-taupe/60 ml-2">/ night</span></span>
                    </div>
                     <a 
                       href="https://bookone.io/Hotel-Bella-Casa?bookingEngine=true"
+                      onClick={() => { try { window.gtag?.('event', 'booking_start', { 'event_category': 'booking', 'event_label': room.name }); } catch {} } }
                       target="_blank"
                       rel="noopener noreferrer"
                       className="bg-gold text-[#1a1004] font-sans text-[11px] uppercase tracking-[0.2em] px-12 py-5 rounded-sm hover:bg-gold-light transition-all flex items-center gap-3 shadow-warm-lg"

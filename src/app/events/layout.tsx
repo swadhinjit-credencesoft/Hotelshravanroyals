@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     type: 'website',
     images: [
       {
-        url: 'https://bookonelocal.in/cdn/IMG_3815.avif',
+        url: 'https://bookonelocal.in/cdn/IMG_3809.avif',
         width: 1200,
         height: 630,
         alt: 'Events & Banquet Hall at Hotel Surya Bella Casa Purnia',
@@ -36,7 +36,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Event & Banquet Hall in Purnia — Hotel Surya Bella Casa',
     description: 'Host your corporate events, family functions, and celebrations at Hotel Surya Bella Casa, Purnia.',
-    images: ['https://bookonelocal.in/cdn/IMG_3815.avif'],
+    images: ['https://bookonelocal.in/cdn/IMG_3809.avif'],
   },
 }
 

@@ -1,8 +1,17 @@
 import CinematicHero from '@/components/ui/CinematicHero';
 import SectionLabel from '@/components/ui/SectionLabel';
 import GoldDivider from '@/components/ui/GoldDivider';
-import LuxuryAmenities from '@/components/sections/LuxuryAmenities';
+import LuxuryAmenities, { type AmenityItem } from '@/components/sections/LuxuryAmenities';
 import { Star, Calendar, Laptop, Wifi, Shield } from 'lucide-react';
+
+const businessAmenities: AmenityItem[] = [
+  { icon: 'Laptop', title: 'Dedicated Work Desk', description: 'Spacious desk with ergonomic chair, task lighting, and convenient power outlets in select premium rooms.' },
+  { icon: 'Wifi', title: 'Enterprise-Grade Wi-Fi', description: 'High-bandwidth fiber connection with backup link for uninterrupted video conferences and large file transfers.' },
+  { icon: 'Printer', title: 'Business Support Services', description: 'Print, scan, and fax assistance available at the front desk for last-minute documentation needs.' },
+  { icon: 'Shield', title: 'Express Check-In/Out', description: 'Pre-arranged billing and documentation for corporate travelers. Zero-wait departure process.' },
+  { icon: 'Clock', title: 'Early Arrival Assistance', description: 'Early check-in and luggage hold service for morning train and bus arrivals to Purnia.' },
+  { icon: 'Calendar', title: 'Corporate Billing', description: 'Simplified invoicing with GST compliance for corporate travel and reimbursements.' },
+];
 
 export const metadata = {
   title: 'Business Hotel in Purnia | Hotel Surya Bella Casa',
@@ -110,7 +119,7 @@ export default function BusinessHotelLandingPage() {
         </div>
       </section>
 
-      <LuxuryAmenities />
+      <LuxuryAmenities label="Corporate Essentials" heading="Built for the Business Traveler" amenities={businessAmenities} />
     </main>
   );
 }

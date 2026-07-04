@@ -3,6 +3,7 @@
 import { useRef, useEffect } from 'react'
 import Image from 'next/image'
 import { motion, useInView } from 'framer-motion'
+import { initGsap } from '@/lib/gsap'
 
 export default function ParallaxDivider() {
   const sectionRef = useRef<HTMLDivElement>(null)
@@ -10,39 +11,25 @@ export default function ParallaxDivider() {
   const isInView = useInView(sectionRef, { once: true, margin: '-100px' })
 
   useEffect(() => {
-    let gsap: typeof import('gsap').gsap
-    let ScrollTrigger: typeof import('gsap/ScrollTrigger').ScrollTrigger
-
-    import('gsap').then((g) => {
-      gsap = g.gsap
-      import('gsap/ScrollTrigger').then((st) => {
-        ScrollTrigger = st.ScrollTrigger
-        gsap.registerPlugin(ScrollTrigger)
-
-        if (imageRef.current) {
-          gsap.fromTo(
-            imageRef.current,
-            { y: '-15%' },
-            {
-              y: '15%',
-              ease: 'none',
-              scrollTrigger: {
-                trigger: sectionRef.current,
-                start: 'top bottom',
-                end: 'bottom top',
-                scrub: 1.4,
-              },
-            }
-          )
+    let killed = false
+    initGsap().then((g) => {
+      if (killed || !imageRef.current) return
+      g.gsap.fromTo(
+        imageRef.current,
+        { y: '-15%' },
+        {
+          y: '15%',
+          ease: 'none',
+          scrollTrigger: {
+            trigger: sectionRef.current,
+            start: 'top bottom',
+            end: 'bottom top',
+            scrub: 1.4,
+          },
         }
-      })
+      )
     })
-
-    return () => {
-      if (typeof ScrollTrigger !== 'undefined') {
-        ScrollTrigger.getAll().forEach((t) => t.kill())
-      }
-    }
+    return () => { killed = true }
   }, [])
 
   return (

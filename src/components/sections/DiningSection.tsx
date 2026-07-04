@@ -8,6 +8,7 @@ import { ArrowRight, Clock } from 'lucide-react'
 import { venues } from '@/data/dining'
 import SectionLabel from '@/components/ui/SectionLabel'
 import GoldDivider from '@/components/ui/GoldDivider'
+import { initGsap } from '@/lib/gsap'
 
 function VenueRow({ venue, index }: { venue: (typeof venues)[0]; index: number }) {
   const ref = useRef<HTMLDivElement>(null)
@@ -16,29 +17,25 @@ function VenueRow({ venue, index }: { venue: (typeof venues)[0]; index: number }
   const isEven = index % 2 === 0
 
   useEffect(() => {
-    let ScrollTrigger: typeof import('gsap/ScrollTrigger').ScrollTrigger
-    import('gsap').then((g) => {
-      import('gsap/ScrollTrigger').then((st) => {
-        ScrollTrigger = st.ScrollTrigger
-        g.gsap.registerPlugin(ScrollTrigger)
-        if (imgRef.current) {
-          g.gsap.fromTo(
-            imgRef.current,
-            { y: '-8%' },
-            {
-              y: '8%',
-              ease: 'none',
-              scrollTrigger: {
-                trigger: ref.current,
-                start: 'top bottom',
-                end: 'bottom top',
-                scrub: 1,
-              },
-            }
-          )
+    let killed = false
+    initGsap().then((g) => {
+      if (killed || !imgRef.current) return
+      g.gsap.fromTo(
+        imgRef.current,
+        { y: '-8%' },
+        {
+          y: '8%',
+          ease: 'none',
+          scrollTrigger: {
+            trigger: ref.current,
+            start: 'top bottom',
+            end: 'bottom top',
+            scrub: 1,
+          },
         }
-      })
+      )
     })
+    return () => { killed = true }
   }, [])
 
   const imageBlock = (

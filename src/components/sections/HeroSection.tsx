@@ -108,6 +108,7 @@ export default function HeroSection() {
           muted
           loop
           playsInline
+          preload="auto"
           poster="https://bookonelocal.in/cdn/IMG_3815.avif"
           className={`w-full h-full object-cover ${reduced ? '' : 'animate-ken-burns'}`}
           style={{ animationName: reduced ? 'none' : 'kenBurns' }}

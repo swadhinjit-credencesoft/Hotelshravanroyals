@@ -96,9 +96,9 @@ export default function RoomDetailClient({ room, otherRooms }: RoomDetailClientP
             className="fixed inset-0 z-[100] bg-black/95 flex items-center justify-center p-4 md:p-12"
             onClick={() => setIsLightboxOpen(false)}
           >
-            <button className="absolute top-8 right-8 text-white/70 hover:text-white transition-colors">
-              <X size={32} />
-            </button>
+             <button onClick={() => setIsLightboxOpen(false)} className="absolute top-8 right-8 text-white/70 hover:text-white transition-colors">
+               <X size={32} />
+             </button>
             <motion.div 
               initial={{ scale: 0.9, opacity: 0 }}
               animate={{ scale: 1, opacity: 1 }}
@@ -279,8 +279,8 @@ export default function RoomDetailClient({ room, otherRooms }: RoomDetailClientP
                 { title: 'Check-in & Check-out', content: 'Check-in: 1:00 PM | Check-out: 11:00 AM' },
                 { title: 'Extra Bed Policy', content: 'Available on request for an additional charge of ₹1,500 per night.' },
                 { title: 'Cancellation Policy', content: 'Free cancellation up to 48 hours before arrival. 100% charge for late cancellations.' }
-              ].map((policy, i) => (
-                <div key={i} className="border-b border-gold/10 pb-4">
+              ].map((policy) => (
+                <div key={policy.title} className="border-b border-gold/10 pb-4">
                   <div className="flex items-center justify-between w-full group py-2">
                     <span className="font-serif text-lg text-forest group-hover:text-gold transition-colors">{policy.title}</span>
                     <ChevronRight size={16} className="text-gold" />

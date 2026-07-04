@@ -1,8 +1,17 @@
 import CinematicHero from '@/components/ui/CinematicHero';
 import SectionLabel from '@/components/ui/SectionLabel';
 import GoldDivider from '@/components/ui/GoldDivider';
-import LuxuryAmenities from '@/components/sections/LuxuryAmenities';
+import LuxuryAmenities, { type AmenityItem } from '@/components/sections/LuxuryAmenities';
 import { Star, Calendar, Shield, Users, Heart } from 'lucide-react';
+
+const familyAmenities: AmenityItem[] = [
+  { icon: 'Users', title: 'Spacious Family Rooms', description: 'Room configurations that comfortably accommodate couples with children. Extra bedding available on request.' },
+  { icon: 'Baby', title: 'Child-Friendly Environment', description: 'Safe, alcohol-free premises with attentive staff who understand family travel needs.' },
+  { icon: 'Shield', title: 'Secure Premises', description: 'CCTV-monitored common areas and secure card-access room locks for total family safety.' },
+  { icon: 'Heart', title: 'Pure Vegetarian Ethos', description: 'Non-vegetarian food is not permitted on premises, ensuring a pure and respectful atmosphere for all families.' },
+  { icon: 'Utensils', title: 'Food Delivery Coordination', description: 'We coordinate with top-rated pure-veg local restaurants via Swiggy and Zomato for doorstep meals.' },
+  { icon: 'ArrowUpCircle', title: 'Elevator for Elder Access', description: 'Modern lift access ensures elderly parents and guests with mobility needs can move with complete ease.' },
+];
 
 export const metadata = {
   title: 'Family Hotel in Purnia | Hotel Surya Bella Casa',
@@ -110,7 +119,7 @@ export default function FamilyHotelLandingPage() {
         </div>
       </section>
 
-      <LuxuryAmenities />
+      <LuxuryAmenities label="Family-First Amenities" heading="Thoughtful Care for Every Member" amenities={familyAmenities} />
     </main>
   );
 }

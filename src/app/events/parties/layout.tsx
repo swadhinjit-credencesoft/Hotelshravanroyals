@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     type: 'website',
     images: [
       {
-        url: 'https://bookonelocal.in/cdn/IMG_3815.avif',
+        url: 'https://bookonelocal.in/cdn/IMG_3808.avif',
         width: 1200,
         height: 630,
         alt: 'Party and Celebration Hall at Hotel Surya Bella Casa Purnia',
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Celebrations & Birthday Party Hall in Purnia | Hotel Surya Bella Casa',
     description: 'Celebrate birthdays, anniversaries, and private parties at our celebration deck and party hall in Purnia. Customized themes and dining options.',
-    images: ['https://bookonelocal.in/cdn/IMG_3815.avif'],
+    images: ['https://bookonelocal.in/cdn/IMG_3808.avif'],
   }
 }
 

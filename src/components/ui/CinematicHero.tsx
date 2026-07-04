@@ -77,6 +77,7 @@ export default function CinematicHero({
             fill
             priority
             sizes="100vw"
+            fetchPriority="high"
             className={`object-cover ${
               reduced ? '' : 'animate-ken-burns'
             }`}

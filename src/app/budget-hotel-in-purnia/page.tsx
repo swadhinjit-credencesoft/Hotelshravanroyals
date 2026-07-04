@@ -1,8 +1,17 @@
 import CinematicHero from '@/components/ui/CinematicHero';
 import SectionLabel from '@/components/ui/SectionLabel';
 import GoldDivider from '@/components/ui/GoldDivider';
-import LuxuryAmenities from '@/components/sections/LuxuryAmenities';
+import LuxuryAmenities, { type AmenityItem } from '@/components/sections/LuxuryAmenities';
 import { Star, Calendar, ShieldCheck, DollarSign, Sparkles } from 'lucide-react';
+
+const budgetAmenities: AmenityItem[] = [
+  { icon: 'DollarSign', title: 'Best Price Guarantee', description: 'We actively match or beat competitor rates for comparable rooms in Purnia. No hidden charges, no surprises.' },
+  { icon: 'Sparkles', title: 'Immaculate Housekeeping', description: 'Daily professional cleaning with fresh linens, sanitized bathrooms, and spotless common areas.' },
+  { icon: 'ShieldCheck', title: 'No Hidden Fees', description: 'What you see is what you pay. Transparent pricing with no resort fees or surprise add-ons at check-in.' },
+  { icon: 'BadgePercent', title: 'Weekly & Monthly Discounts', description: 'Extended stay discounts for travelers, construction professionals, and medical visitors.' },
+  { icon: 'Headphones', title: '24/7 Front Desk', description: 'Round-the-clock assistance for late check-ins, early departures, and any guest requests.' },
+  { icon: 'Calendar', title: 'Flexible Booking Options', description: 'Free cancellation up to 48 hours. Easy online booking with instant confirmation.' },
+];
 
 export const metadata = {
   title: 'Budget Hotel in Purnia | Hotel Surya Bella Casa',
@@ -110,7 +119,7 @@ export default function BudgetHotelLandingPage() {
         </div>
       </section>
 
-      <LuxuryAmenities />
+      <LuxuryAmenities label="Budget-Friendly Features" heading="Maximum Value, Minimum Spend" amenities={budgetAmenities} />
     </main>
   );
 }

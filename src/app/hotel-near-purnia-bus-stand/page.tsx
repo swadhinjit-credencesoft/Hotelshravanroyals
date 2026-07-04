@@ -1,8 +1,17 @@
 import CinematicHero from '@/components/ui/CinematicHero';
 import SectionLabel from '@/components/ui/SectionLabel';
 import GoldDivider from '@/components/ui/GoldDivider';
-import LuxuryAmenities from '@/components/sections/LuxuryAmenities';
+import LuxuryAmenities, { type AmenityItem } from '@/components/sections/LuxuryAmenities';
 import { MapPin, Star, Calendar } from 'lucide-react';
+
+const busStandAmenities: AmenityItem[] = [
+  { icon: 'MapPin', title: '2 Minutes from Bus Stand', description: 'Purnia Bus Stand is less than a 2-minute walk. Step off the bus and check into comfort instantly.' },
+  { icon: 'Luggage', title: 'Luggage Assistance', description: 'Our staff helps with luggage from arrival at the bus stand to your room. Hassle-free transit.' },
+  { icon: 'Car', title: 'Auto & Rickshaw Access', description: 'Easy connectivity to Bhatta Bazar, railway station, and all parts of Purnia via auto-rickshaws right outside.' },
+  { icon: 'Clock', title: 'Early Check-In for Travelers', description: 'Arrived on an early bus? We offer early check-in and luggage hold service at no extra charge.' },
+  { icon: 'Calendar', title: 'Same-Day Booking Welcome', description: 'Walk-ins and same-day online bookings are always welcome. Instant room allocation.' },
+  { icon: 'Shield', title: 'Safe Neighborhood', description: 'Located in the well-lit Suryalok Complex with 24/7 security and active commercial activity around the clock.' },
+];
 
 export const metadata = {
   title: 'Hotel Near Purnia Bus Stand | Hotel Surya Bella Casa',
@@ -110,7 +119,7 @@ export default function PurniaBusStandLandingPage() {
         </div>
       </section>
 
-      <LuxuryAmenities />
+      <LuxuryAmenities label="Location Advantages" heading="Unbeatable Transit Access" amenities={busStandAmenities} />
     </main>
   );
 }

@@ -1,8 +1,17 @@
 import CinematicHero from '@/components/ui/CinematicHero';
 import SectionLabel from '@/components/ui/SectionLabel';
 import GoldDivider from '@/components/ui/GoldDivider';
-import LuxuryAmenities from '@/components/sections/LuxuryAmenities';
+import LuxuryAmenities, { type AmenityItem } from '@/components/sections/LuxuryAmenities';
 import { MapPin, Star, Calendar } from 'lucide-react';
+
+const marketAmenities: AmenityItem[] = [
+  { icon: 'ShoppingBag', title: 'Across from Vikass Market', description: 'Directly opposite Vikass Market. Shop for fabrics, garments, and daily essentials without any commute.' },
+  { icon: 'Store', title: 'Local Sweets & Dining', description: 'Famous Purnia sweet shops and restaurants are within walking distance from the hotel entrance.' },
+  { icon: 'Coffee', title: 'Tea & Snack Service', description: 'Complimentary morning tea and packaged snacks available at the front desk throughout the day.' },
+  { icon: 'MapPin', title: 'Bhatta Bazar Connectivity', description: 'Just a quick rickshaw ride to Bhatta Bazar, Purnia&apos;s oldest wholesale and retail commercial district.' },
+  { icon: 'Calendar', title: 'Business Meeting Access', description: 'Proximity to local businesses and banks makes Vikass Market area a preferred base for commercial travelers.' },
+  { icon: 'Star', title: 'Evening Shopping Walks', description: 'The market area comes alive in the evenings. Step out for a relaxed shopping walk right opposite the hotel.' },
+];
 
 export const metadata = {
   title: 'Hotel Near Vikass Market Purnia | Hotel Surya Bella Casa',
@@ -110,7 +119,7 @@ export default function VikassMarketLandingPage() {
         </div>
       </section>
 
-      <LuxuryAmenities />
+      <LuxuryAmenities label="Market-Facing Convenience" heading="Shop, Stay, Repeat" amenities={marketAmenities} />
     </main>
   );
 }

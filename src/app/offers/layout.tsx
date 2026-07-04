@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     type: 'website',
     images: [
       {
-        url: 'https://bookonelocal.in/cdn/IMG_3815.avif',
+        url: 'https://bookonelocal.in/cdn/IMG_3739.avif',
         width: 1200,
         height: 630,
         alt: 'Hotel Surya Bella Casa Purnia Offers',
@@ -36,7 +36,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Exclusive Offers & Packages | Hotel Surya Bella Casa Purnia',
     description: 'Discover exclusive deals, seasonal packages, and special offers at Hotel Surya Bella Casa, Purnia.',
-    images: ['https://bookonelocal.in/cdn/IMG_3815.avif'],
+    images: ['https://bookonelocal.in/cdn/IMG_3739.avif'],
   },
 }
 

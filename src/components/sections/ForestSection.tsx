@@ -40,9 +40,9 @@ export default function ForestSection() {
                </div>
             </div>
 
-            <button className="mt-20 bg-ivory text-forest font-sans text-[11px] uppercase tracking-[0.2em] px-12 py-5 hover:bg-gold hover:text-forest transition-all duration-500">
-               Our Commitment
-            </button>
+             <a href="/about" className="inline-block mt-20 bg-ivory text-forest font-sans text-[11px] uppercase tracking-[0.2em] px-12 py-5 hover:bg-gold hover:text-forest transition-all duration-500">
+                Our Commitment
+             </a>
          </div>
       </div>
 

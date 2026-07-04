@@ -28,9 +28,9 @@ export default function ArtOfStaySection() {
            </div>
            
            <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
-              {serviceDetails.map((item, i) => (
-                <motion.div 
-                  key={i}
+                {serviceDetails.map((item, i) => (
+                  <motion.div 
+                    key={item.title}
                   initial={{ opacity: 0, y: 30 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}

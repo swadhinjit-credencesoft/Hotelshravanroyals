@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     type: 'website',
     images: [
       {
-        url: 'https://bookonelocal.in/cdn/IMG_3815.avif',
+        url: 'https://bookonelocal.in/cdn/IMG_3764.avif',
         width: 1200,
         height: 630,
         alt: 'Destination Wedding Venue at Hotel Surya Bella Casa Purnia',
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Destination Wedding Lawns & Banquet in Purnia | Hotel Surya Bella Casa',
     description: 'Exchange your vows at Purnia\'s premier wedding venue. Exquisite lawns, catering, bridal suites, and banquet facilities at Hotel Surya Bella Casa.',
-    images: ['https://bookonelocal.in/cdn/IMG_3815.avif'],
+    images: ['https://bookonelocal.in/cdn/IMG_3764.avif'],
   }
 }
 

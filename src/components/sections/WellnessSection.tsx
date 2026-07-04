@@ -24,9 +24,9 @@ export default function WellnessSection() {
                    Our spa is built to honor ancient healing traditions, utilizing natural elements and local botanical essences. Every treatment is a bespoke ceremony designed by our resident healers to align your internal rhythm with the retreat&apos;s natural heartbeat.
                 </p>
              </div>
-             <button className="border border-forest/30 text-forest font-sans text-[11px] uppercase tracking-[0.2em] px-12 py-5 hover:border-gold hover:text-gold transition-all duration-500">
-                Explore Spa Rituals
-             </button>
+              <a href="/experiences" className="inline-block border border-forest/30 text-forest font-sans text-[11px] uppercase tracking-[0.2em] px-12 py-5 hover:border-gold hover:text-gold transition-all duration-500">
+                 Explore Spa Rituals
+              </a>
           </div>
 
           <div className="order-1 lg:order-2 relative flex justify-center lg:justify-end">
