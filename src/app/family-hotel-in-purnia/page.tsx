@@ -46,9 +46,9 @@ export default function FamilyHotelLandingPage() {
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-16">
           <div className="lg:col-span-2">
             <SectionLabel className="mb-6">Family Comfort</SectionLabel>
-            <h1 className="font-display text-4xl md:text-5xl italic text-forest mb-8 leading-tight">
+            <h2 className="font-display text-4xl md:text-5xl italic text-forest mb-8 leading-tight">
               A Warm, Safe & Comfortable Haven for Families in Purnia
-            </h1>
+            </h2>
             <GoldDivider className="mb-8" />
             
             <div className="font-sans text-base text-taupe/80 space-y-6 leading-loose">

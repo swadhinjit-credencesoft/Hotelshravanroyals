@@ -1,8 +1,9 @@
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Destination Wedding Lawns & Banquet in Purnia | Hotel Surya Bella Casa',
+  title: 'Destination Wedding Lawns & Banquet in Purnia',
   description: 'Exchange your vows at Purnia\'s premier wedding venue. Exquisite lawns, catering, bridal suites, and banquet facilities at Hotel Surya Bella Casa.',
+  keywords: ['wedding venue purnia', 'destination wedding purnia', 'marriage hall purnia', 'wedding lawns purnia', 'banquet hall wedding purnia', 'purnia wedding planner', 'bridal suite purnia', 'wedding catering purnia', 'purnia marriage lawn', 'engagement venue purnia', 'wedding reception hall purnia', 'purnia wedding decoration', 'purnia wedding packages', 'hotel wedding purnia bihar', 'purnia court marriage venue'],
   alternates: {
     canonical: 'https://hotelsuryabellacasa.com/events/weddings',
   },

@@ -1,8 +1,9 @@
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Experiences & Activities in Purnia | Hotel Surya Bella Casa',
+  title: 'Experiences & Activities in Purnia',
   description: 'Explore unique local experiences from Hotel Surya Bella Casa in Purnia — city tours, local markets, cultural attractions, and more.',
+  keywords: ['things to do in purnia', 'purnia attractions', 'local experiences purnia', 'purnia sightseeing', 'places to visit purnia', 'purnia city tour', 'purnia local market visit', 'purnia cultural attractions', 'purnia temples', 'shopping in purnia', 'purnia historical places', 'purnia bihar tourism', 'purnia weekend activities', 'things to do near purnia', 'purnia travel experiences'],
   alternates: {
     canonical: 'https://hotelsuryabellacasa.com/experiences',
   },

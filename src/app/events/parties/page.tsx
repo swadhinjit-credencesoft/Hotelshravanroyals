@@ -10,7 +10,7 @@ export default function PartiesPage() {
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "EventVenue",
-    "name": "Hotel Bella Casa Celebration Deck",
+    "name": "Hotel Surya Bella Casa Celebration Deck",
     "description": "The perfect resort in Purnia for birthday parties, pool parties, and private celebrations.",
     "address": {
       "@type": "PostalAddress",

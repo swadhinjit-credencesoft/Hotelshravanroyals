@@ -46,9 +46,9 @@ export default function PurniaBusStandLandingPage() {
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-16">
           <div className="lg:col-span-2">
             <SectionLabel className="mb-6">Local Advantage</SectionLabel>
-            <h1 className="font-display text-4xl md:text-5xl italic text-forest mb-8 leading-tight">
+            <h2 className="font-display text-4xl md:text-5xl italic text-forest mb-8 leading-tight">
               Comfortable Lodging Just Steps Away From Purnia Bus Stand
-            </h1>
+            </h2>
             <GoldDivider className="mb-8" />
             
             <div className="font-sans text-base text-taupe/80 space-y-6 leading-loose">

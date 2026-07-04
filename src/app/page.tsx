@@ -26,7 +26,7 @@ export default function Home() {
                 "@type": "Hotel",
                 "@id": "https://hotelsuryabellacasa.com/#hotel",
                 "name": "Hotel Surya Bella Casa",
-                "alternateName": "Hotel Bella Casa Purnia",
+                "alternateName": "Hotel Surya Bella Casa Purnia",
                 "description": "Hotel Surya Bella Casa is a comfortable and budget-friendly hotel in Purnia, Bihar, located at Suryalok Complex opposite Vikass Market near the main Bus Stand. Offering 4 room categories, free Wi-Fi, air conditioning, elevator, and 24/7 room service for business travelers and families.",
                 "url": "https://hotelsuryabellacasa.com",
                 "logo": "https://hotelsuryabellacasa.com/suryabellacasalogo.png",

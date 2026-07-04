@@ -10,7 +10,7 @@ export default function CorporatePage() {
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "EventVenue",
-    "name": "Hotel Bella Casa Corporate Hub",
+    "name": "Hotel Surya Bella Casa Corporate Hub",
     "description": "Professional corporate retreat and offsite venue in Purnia with team building and tech facilities.",
     "address": {
       "@type": "PostalAddress",

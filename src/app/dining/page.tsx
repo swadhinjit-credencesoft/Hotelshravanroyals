@@ -24,7 +24,7 @@ export default function DiningPage() {
           __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "Restaurant",
-            "name": "The Dining Hall at Hotel Bella Casa",
+            "name": "The Dining Hall at Hotel Surya Bella Casa",
             "servesCuisine": ["Indian", "Tandoor", "Mughlai", "Asian", "Continental"],
             "description": "Authentic dining experience in Purnia featuring local specialties and global favorites.",
             "menu": {
@@ -104,7 +104,7 @@ export default function DiningPage() {
           <Coffee className="text-gold mx-auto mb-8" size={40} />
           <h2 className="font-display text-4xl italic mb-6">In-Room Convenience</h2>
           <p className="font-serif text-ivory/80 leading-[1.8] mb-10 text-lg italic">
-            For your absolute comfort, every room at Hotel Bella Casa is equipped with a hot water kettle, complimentary tea/coffee supplies, and a mini-fridge for your personal use.
+            For your absolute comfort, every room at Hotel Surya Bella Casa is equipped with a hot water kettle, complimentary tea/coffee supplies, and a mini-fridge for your personal use.
           </p>
           <GoldDivider className="justify-center" />
         </div>

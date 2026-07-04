@@ -20,7 +20,7 @@ export const experiences: Experience[] = [
       'Perfectly positioned in the heart of Purnea at Suryalok Complex, Bella Casa offers effortless access to business districts, shopping avenues, restaurants, and major transit points.',
     duration: 'Central Access',
     image: '/purneacity.png',
-    imageAlt: 'Hotel Bella Casa City Center Location',
+    imageAlt: 'Hotel Surya Bella Casa City Center Location',
     season: 'Year-round',
   },
 
@@ -92,7 +92,7 @@ export const experiences: Experience[] = [
       'From spacious accommodations to convenient city access, Bella Casa creates a welcoming and secure environment for families, solo travelers, and group stays.',
     duration: 'Premium Hospitality',
     image: 'https://bookonelocal.in/cdn/IMG_3678.avif',
-    imageAlt: 'Family Stay at Hotel Bella Casa',
+    imageAlt: 'Family Stay at Hotel Surya Bella Casa',
     season: 'Year-round',
   },
 ]

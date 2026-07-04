@@ -1,8 +1,9 @@
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Event & Banquet Hall in Purnia — Hotel Surya Bella Casa',
+  title: 'Event & Banquet Hall in Purnia',
   description: 'Host your corporate events, family functions, weddings, and celebrations at Hotel Surya Bella Casa\'s event spaces in Purnia, Bihar. Contact us for bookings.',
+  keywords: ['event hall purnia', 'banquet hall purnia', 'party venue purnia', 'hotel events purnia', 'celebration hall bihar', 'purnia event venue', 'marriage hall purnia', 'conference venue purnia', 'purnia gathering hall', 'hotel event space purnia', 'purnia family function hall', 'birthday party venue purnia', 'purnia corporate event space', 'wedding reception purnia', 'purnia celebration venue'],
   alternates: {
     canonical: 'https://hotelsuryabellacasa.com/events',
   },

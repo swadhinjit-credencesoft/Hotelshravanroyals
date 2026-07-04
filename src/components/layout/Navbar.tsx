@@ -57,7 +57,7 @@ export default function Navbar() {
           <Link href="/" className="flex items-center gap-3 group focus-visible:ring-2 focus-visible:ring-gold rounded-sm">
             <Image
               src="/suryabellacasalogo.png"
-              alt="Hotel Bella Casa Logo"
+              alt="Hotel Surya Bella Casa Logo"
               width={180}
               height={106}
               className="h-16 md:h-20 w-auto object-contain"
@@ -120,7 +120,7 @@ export default function Navbar() {
               <Link href="/" onClick={() => setMobileOpen(false)} className="flex items-center gap-3">
                 <Image
                   src="/suryabellacasalogo.png"
-                  alt="Hotel Bella Casa Logo"
+                  alt="Hotel Surya Bella Casa Logo"
                   width={160}
                   height={94}
                   className="h-14 w-auto object-contain"

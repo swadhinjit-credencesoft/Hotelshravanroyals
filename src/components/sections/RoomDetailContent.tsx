@@ -86,6 +86,7 @@ export default function RoomDetailContent({ room }: RoomDetailContentProps) {
                      src={roomImages[0]} 
                      alt={`${room.name} detail 1`} 
                      fill 
+                     sizes="(max-width: 1024px) 100vw, 50vw"
                      className="object-cover"
                    />
                 </div>
@@ -96,6 +97,7 @@ export default function RoomDetailContent({ room }: RoomDetailContentProps) {
                           src={image} 
                           alt={`${room.name} detail ${index + 2}`} 
                           fill 
+                          sizes="224px"
                           className="object-cover"
                         />
                      </div>
@@ -121,6 +123,7 @@ export default function RoomDetailContent({ room }: RoomDetailContentProps) {
                src='/images/exterior4.jpeg' 
                alt="Forest texture" 
                fill 
+               sizes="100vw"
                className="object-cover mix-blend-overlay"
             />
          </div>

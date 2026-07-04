@@ -1,8 +1,9 @@
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Contact Hotel Surya Bella Casa — Purnia, Bihar | +91 9835923601',
+  title: 'Contact Us — Purnia, Bihar | +91 9835923601',
   description: 'Contact Hotel Surya Bella Casa in Purnia, Bihar. Call +91 9835923601 or email bellacasa561@gmail.com. Located at Suryalok Complex, Near Bus Stand, Purnia 854301.',
+  keywords: ['contact hotel surya bella casa', 'purnia hotel phone number', 'hotel near bus stand purnia', 'suryalok complex purnia', 'hotel purnia email', 'purnia hotel address', 'hotel purnia contact number', 'hotel surya bella casa location', 'purnia hotel map', 'hotel reception purnia', 'purnia hotel whatsapp number', 'hotel near vikass market contact', 'purnia hotel directions', 'hotel surya bella casa call'],
   alternates: {
     canonical: 'https://hotelsuryabellacasa.com/contact',
   },

@@ -1,8 +1,9 @@
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Day Trips & Picnics in Purnia | Hotel Surya Bella Casa',
+  title: 'Day Trips & Picnics in Purnia',
   description: 'Plan your day trips, picnics, and family get-togethers at Hotel Surya Bella Casa in Purnia, Bihar. Enjoy delicious food and pristine settings.',
+  keywords: ['day trips purnia', 'picnic purnia', 'weekend getaway purnia', 'family outing purnia', 'pool day pass purnia', 'one day trip purnia', 'purnia resort day outing', 'pool access purnia hotel', 'purnia weekend plan', 'day picnic purnia bihar', 'purnia family day out', 'swimming pool day pass purnia', 'purnia short getaway', 'purnia staycation', 'purnia relaxation day'],
   alternates: {
     canonical: 'https://hotelsuryabellacasa.com/events/day-trips',
   },

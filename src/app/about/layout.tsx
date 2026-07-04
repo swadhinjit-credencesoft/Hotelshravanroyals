@@ -1,8 +1,9 @@
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'About Hotel Surya Bella Casa — Best Hotel in Purnia, Bihar',
+  title: 'About Us — Best Hotel in Purnia, Bihar',
   description: 'Learn about Hotel Surya Bella Casa, established in 2019 in Purnia, Bihar. Committed to warm hospitality, clean rooms, and affordable stays for families and business travelers.',
+  keywords: ['about hotel surya bella casa', 'about purnia hotel', 'hotel purnia story', 'surya bella casa history', 'purnia hospitality', 'hotel established in purnia 2019', 'purnia hotel owners', 'best hotel in purnia about us', 'why choose hotel surya bella casa', 'purnia hotel overview', 'hotel near vikass market about', 'purnia accommodation story', 'purnia business hotel history', 'family hotel purnia about', 'purnia hotel mission'],
   alternates: {
     canonical: 'https://hotelsuryabellacasa.com/about',
   },
@@ -17,7 +18,7 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: 'About Hotel Surya Bella Casa — Best Hotel in Purnia, Bihar',
+    title: 'About Us — Best Hotel in Purnia, Bihar | Hotel Surya Bella Casa',
     description: 'Learn about Hotel Surya Bella Casa, established in 2019 in Purnia, Bihar. Committed to warm hospitality, clean rooms, and affordable stays for families and business travelers.',
     url: 'https://hotelsuryabellacasa.com/about',
     siteName: 'Hotel Surya Bella Casa',
@@ -33,7 +34,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'About Hotel Surya Bella Casa — Best Hotel in Purnia, Bihar',
+    title: 'About Us — Best Hotel in Purnia, Bihar | Hotel Surya Bella Casa',
     description: 'Learn about Hotel Surya Bella Casa, established in 2019 in Purnia, Bihar.',
     images: ['https://bookonelocal.in/cdn/IMG_3815.avif'],
   },

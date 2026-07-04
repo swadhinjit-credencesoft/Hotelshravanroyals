@@ -36,7 +36,7 @@ export default function EventsPage() {
             {
               "@context": "https://schema.org",
               "@type": "EventVenue",
-              "name": "Hotel Bella Casa Event Spaces",
+              "name": "Hotel Surya Bella Casa Event Spaces",
               "description": "Premium outdoor lawns, corporate hub, and poolside venues for weddings, parties, and corporate retreats in Purnia.",
               "url": "https://hotelsuryabellacasa.com/events",
               "address": {
@@ -55,7 +55,7 @@ export default function EventsPage() {
               "mainEntity": [
                 {
                   "@type": "Question",
-                  "name": "What is the wedding capacity at Hotel Bella Casa?",
+                  "name": "What is the wedding capacity at Hotel Surya Bella Casa?",
                   "acceptedAnswer": {
                     "@type": "Answer",
                     "text": "Our outdoor wedding lawns can comfortably host up to 250 guests with bespoke catering and decor."

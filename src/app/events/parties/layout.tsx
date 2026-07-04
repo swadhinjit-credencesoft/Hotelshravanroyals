@@ -1,8 +1,9 @@
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Celebrations & Birthday Party Hall in Purnia | Hotel Surya Bella Casa',
+  title: 'Celebrations & Birthday Party Hall in Purnia',
   description: 'Celebrate birthdays, anniversaries, and private parties at our celebration deck and party hall in Purnia. Customized themes and dining options.',
+  keywords: ['birthday party hall purnia', 'party venue purnia', 'celebration deck purnia', 'private party purnia', 'anniversary venue purnia', 'purnia party hall', 'birthday celebration purnia hotel', 'purnia celebration deck', 'party decoration purnia', 'purnia get together venue', 'friends gathering purnia', 'purnia private dining', 'pool party purnia', 'purnia event decoration', 'small party hall purnia'],
   alternates: {
     canonical: 'https://hotelsuryabellacasa.com/events/parties',
   },

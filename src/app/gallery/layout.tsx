@@ -1,8 +1,9 @@
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Hotel Photo Gallery | Hotel Surya Bella Casa Purnia',
+  title: 'Hotel Photo Gallery',
   description: 'Browse photos of our modern rooms, lobby, banquet halls, and facilities at Hotel Surya Bella Casa, Purnia, Bihar. See what makes us the best hotel in Purnia.',
+  keywords: ['hotel purnia photos', 'hotel surya bella casa gallery', 'purnia hotel pictures', 'hotel rooms purnia images', 'purnia hotel lobby', 'purnia hotel room photos', 'hotel banquet hall purnia images', 'purnia hotel exterior', 'hotel purnia interior photos', 'purnia hotel bathroom images', 'hotel deluxe room purnia', 'super deluxe room purnia photos', 'purnia hotel gallery 2024', 'ac room purnia images', 'purnia hotel facilities photos'],
   alternates: {
     canonical: 'https://hotelsuryabellacasa.com/gallery',
   },

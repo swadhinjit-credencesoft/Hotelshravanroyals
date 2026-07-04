@@ -130,7 +130,7 @@ export default function AboutPage() {
         <div className="max-w-[1600px] mx-auto px-6 md:px-10">
           <div className="text-center mb-20">
             <SectionLabel light className="justify-center mb-6">Hospitality Team</SectionLabel>
-            <h2 className="font-display text-4xl md:text-6xl italic">Faces of Hotel Bella Casa</h2>
+            <h2 className="font-display text-4xl md:text-6xl italic">Faces of Hotel Surya Bella Casa</h2>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
@@ -182,7 +182,7 @@ export default function AboutPage() {
             </div>
             <div className="order-1 lg:order-2">
               <SectionLabel className="mb-6">Find Your Way</SectionLabel>
-              <h2 className="font-display text-4xl md:text-6xl italic text-forest mb-8">Getting to Hotel Bella Casa</h2>
+              <h2 className="font-display text-4xl md:text-6xl italic text-forest mb-8">Getting to Hotel Surya Bella Casa</h2>
               <p className="font-serif text-lg text-taupe leading-relaxed mb-8">
                 Located in the heart of Purnia at Suryalok Complex, we are well-connected by road and rail to Patna, Siliguri, and Bhagalpur. Our hotel offers the perfect balance of accessibility and comfort.
               </p>

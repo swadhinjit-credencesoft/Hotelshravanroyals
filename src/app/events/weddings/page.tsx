@@ -10,7 +10,7 @@ export default function WeddingsPage() {
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "EventVenue",
-    "name": "Hotel Bella Casa Wedding Lawns",
+    "name": "Hotel Surya Bella Casa Wedding Lawns",
     "description": "Premium destination wedding venue in Purnia with forest views and bespoke catering.",
     "address": {
       "@type": "PostalAddress",
@@ -42,7 +42,7 @@ export default function WeddingsPage() {
               <SectionLabel className="mb-6">The Venue</SectionLabel>
               <h2 className="font-display text-4xl md:text-6xl italic text-forest mb-8">Purnia&apos;s Premier Wedding Destination</h2>
               <p className="font-serif text-lg text-taupe leading-relaxed mb-10">
-                At Hotel Bella Casa, we transform your dream wedding into a reality. Our expansive lawns can host up to 250 guests, offering a seamless blend of rustic charm and premium luxury.
+                At Hotel Surya Bella Casa, we transform your dream wedding into a reality. Our expansive lawns can host up to 250 guests, offering a seamless blend of rustic charm and premium luxury.
               </p>
               
               <div className="grid grid-cols-2 gap-8 mb-10">

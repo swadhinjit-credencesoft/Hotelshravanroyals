@@ -14,12 +14,12 @@ export default function CancellationPage() {
             "@type": "WebPage",
             "@id": "https://hotelsuryabellacasa.com/cancellation/#webpage",
             "url": "https://hotelsuryabellacasa.com/cancellation",
-            "name": "Cancellation & Refund Policy | Hotel Bella Casa",
-            "description": "Read the cancellation and refund policy guidelines of Hotel Bella Casa regarding direct booking reservation amendments, monsoon policies, and refunds.",
+            "name": "Cancellation & Refund Policy | Hotel Surya Bella Casa",
+            "description": "Read the cancellation and refund policy guidelines of Hotel Surya Bella Casa regarding direct booking reservation amendments, monsoon policies, and refunds.",
             "isPartOf": {
               "@type": "WebSite",
               "@id": "https://hotelsuryabellacasa.com/#website",
-              "name": "Hotel Bella Casa",
+              "name": "Hotel Surya Bella Casa",
               "url": "https://hotelsuryabellacasa.com"
             }
           })

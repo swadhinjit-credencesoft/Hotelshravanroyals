@@ -13,6 +13,7 @@ export default function NewsletterSection() {
           src='/images/exterior7.jpeg'
           alt="Inn at twilight"
           fill
+          sizes="100vw"
           className="object-cover"
         />
         <div className="absolute inset-0 bg-forest/90 mix-blend-multiply" />

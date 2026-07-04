@@ -14,12 +14,12 @@ export default function TermsPage() {
             "@type": "WebPage",
             "@id": "https://hotelsuryabellacasa.com/terms/#webpage",
             "url": "https://hotelsuryabellacasa.com/terms",
-            "name": "Terms of Service & Booking Conditions | Hotel Bella Casa",
-            "description": "Review the official terms of service, check-in schedules, lodging policies, and cancellation conditions for resort reservations at Hotel Bella Casa.",
+            "name": "Terms of Service & Booking Conditions | Hotel Surya Bella Casa",
+            "description": "Review the official terms of service, check-in schedules, lodging policies, and cancellation conditions for resort reservations at Hotel Surya Bella Casa.",
             "isPartOf": {
               "@type": "WebSite",
               "@id": "https://hotelsuryabellacasa.com/#website",
-              "name": "Hotel Bella Casa",
+              "name": "Hotel Surya Bella Casa",
               "url": "https://hotelsuryabellacasa.com"
             }
           })

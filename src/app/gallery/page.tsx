@@ -35,13 +35,13 @@ export default function GalleryPage() {
       <section className="py-24 bg-forest text-ivory text-center border-y border-gold/10">
         <div className="max-w-[1000px] mx-auto px-6">
           <SectionLabel light className="justify-center mb-6">Virtual Tour</SectionLabel>
-          <h2 className="font-display text-4xl italic mb-12">Experience Hotel Bella Casa</h2>
+          <h2 className="font-display text-4xl italic mb-12">Experience Hotel Surya Bella Casa</h2>
           <div className="relative aspect-video w-full border border-gold/20 shadow-warm-lg">
              <iframe 
                width="100%" 
                height="100%" 
                src="https://www.youtube.com/embed/REDACTED?autoplay=0&controls=1" 
-               title="Hotel Bella Casa Resort Walkthrough" 
+               title="Hotel Surya Bella Casa Resort Walkthrough" 
                frameBorder="0" 
                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
                allowFullScreen

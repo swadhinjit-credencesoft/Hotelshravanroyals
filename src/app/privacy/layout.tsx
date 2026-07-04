@@ -1,8 +1,9 @@
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Privacy Policy | Hotel Surya Bella Casa Purnia',
+  title: 'Privacy Policy',
   description: 'Read the privacy policy of Hotel Surya Bella Casa, Purnia, Bihar — guidelines on data collection, storage, and reservation security.',
+  keywords: ['hotel privacy policy', 'purnia hotel privacy', 'hotel surya bella casa privacy', 'data policy purnia hotel', 'guest privacy purnia hotel', 'hotel data protection', 'purnia hotel personal information', 'hotel privacy terms purnia', 'cookie policy purnia hotel', 'purnia hotel booking privacy', 'hotel information security purnia', 'privacy policy bihar hotel'],
   alternates: {
     canonical: 'https://hotelsuryabellacasa.com/privacy',
   },

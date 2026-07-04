@@ -35,9 +35,33 @@ const blogPosts = [
 ];
 
 export default function BlogPage() {
+  const articleSchema = {
+    "@context": "https://schema.org",
+    "@type": "Blog",
+    "@id": "https://hotelsuryabellacasa.com/blog/#blog",
+    "name": "Purnia Travel Blog | Hotel Surya Bella Casa",
+    "description": "Travel guides, local insights, and hotel tips for Purnia, Bihar from Hotel Surya Bella Casa.",
+    "url": "https://hotelsuryabellacasa.com/blog",
+    "blogPost": blogPosts.map((post, i) => ({
+      "@type": "BlogPosting",
+      "@id": `https://hotelsuryabellacasa.com/blog/#post-${i + 1}`,
+      "headline": post.title,
+      "description": post.excerpt,
+      "datePublished": post.date,
+      "image": `https://hotelsuryabellacasa.com${post.image}`,
+      "author": {
+        "@type": "Organization",
+        "name": "Hotel Surya Bella Casa"
+      }
+    }))
+  }
+
   return (
     <main className="bg-cream min-h-screen">
-      
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
+      />
       <CinematicHero 
         label="Stories & Guides"
         title="The Purnia Journal"

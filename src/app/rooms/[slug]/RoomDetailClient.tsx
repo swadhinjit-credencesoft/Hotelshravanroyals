@@ -410,7 +410,7 @@ function BookingSidebar({ room }: { room: Room }) {
     <div className="bg-forest p-8 rounded-sm shadow-2xl text-ivory">
       <h3 className="font-display italic text-2xl mb-2 text-gold">Ready to Escape?</h3>
       <p className="font-sans text-[11px] uppercase tracking-widest text-ivory/60 mb-6 border-b border-ivory/10 pb-4">
-        Secure your {room.name} at Hotel Bella Casa
+        Secure your {room.name} at Hotel Surya Bella Casa
       </p>
 
       {/* Date Fields */}

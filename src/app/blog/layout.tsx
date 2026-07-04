@@ -1,8 +1,9 @@
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Blog — Hotel Surya Bella Casa Purnia | Travel Guide & Insights',
+  title: 'Blog — Travel Guide & Insights',
   description: 'Read the latest travel guides, local insights, and hotel tips for Purnia, Bihar from Hotel Surya Bella Casa. Discover the best places to visit, eat, and explore.',
+  keywords: ['purnia travel guide', 'things to do in purnia', 'purnia blog', 'bihar travel blog', 'hotel surya bella casa blog', 'purnia trip planner', 'weekend getaway purnia blog', 'purnia local attractions', 'best time to visit purnia', 'purnia food guide', 'purnia sightseeing blog', 'corporate retreat purnia tips', 'purnia tourism blog', 'places to eat in purnia', 'purnia travel tips'],
   alternates: {
     canonical: 'https://hotelsuryabellacasa.com/blog',
   },

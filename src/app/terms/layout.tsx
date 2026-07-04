@@ -1,8 +1,9 @@
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Terms & Conditions | Hotel Surya Bella Casa Purnia',
+  title: 'Terms & Conditions',
   description: 'Read the terms and conditions of Hotel Surya Bella Casa, Purnia, Bihar. Understand our booking, check-in/check-out, and guest conduct policies.',
+  keywords: ['hotel terms and conditions', 'purnia hotel policies', 'hotel surya bella casa terms', 'booking policy purnia', 'purnia hotel check in time', 'purnia hotel check out time', 'hotel guest conduct purnia', 'purnia hotel tariff terms', 'purnia hotel age policy', 'hotel id proof purnia', 'purnia hotel foreign guest policy', 'purnia hotel pet policy', 'hotel smoking policy purnia', 'purnia hotel group booking terms'],
   alternates: {
     canonical: 'https://hotelsuryabellacasa.com/terms',
   },

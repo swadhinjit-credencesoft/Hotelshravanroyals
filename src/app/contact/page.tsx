@@ -26,7 +26,7 @@ export default function ContactPage() {
           __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "Hotel",
-            "name": "Hotel Bella Casa",
+            "name": "Hotel Surya Bella Casa",
             "image": '/images/room2.jpeg',
             "address": {
               "@type": "PostalAddress",
@@ -124,7 +124,7 @@ export default function ContactPage() {
                   </div>
                   <div className="pl-11 space-y-3 font-serif text-base text-taupe leading-relaxed">
                     <p>Take <strong>NH 31</strong> eastwards towards Purnia via Begusarai, Khagaria, and Katihar.</p>
-                    <p>The drive is approximately 230 km and takes about 5-6 hours. Hotel Bella Casa is located at Suryalok Complex, opposite Vikass Market, near Bus Stand.</p>
+                    <p>The drive is approximately 230 km and takes about 5-6 hours. Hotel Surya Bella Casa is located at Suryalok Complex, opposite Vikass Market, near Bus Stand.</p>
                   </div>
                 </div>
 
@@ -137,7 +137,7 @@ export default function ContactPage() {
                   </div>
                   <div className="pl-11 space-y-3 font-serif text-base text-taupe leading-relaxed">
                     <p>Take <strong>NH 27</strong> south to <strong>NH 31</strong>, then proceed west towards Purnia.</p>
-                    <p>The drive is approximately 200 km and takes about 4-5 hours. Hotel Bella Casa is situated in the heart of the city near the main bus stand.</p>
+                    <p>The drive is approximately 200 km and takes about 4-5 hours. Hotel Surya Bella Casa is situated in the heart of the city near the main bus stand.</p>
                   </div>
                 </div>
 
@@ -150,7 +150,7 @@ export default function ContactPage() {
                   </div>
                   <div className="pl-11 space-y-3 font-serif text-base text-taupe leading-relaxed">
                     <p>The nearest major railway station is <strong>Purnia Junction (PRNA)</strong>, well-connected to Patna, Kolkata, and New Jalpaiguri.</p>
-                    <p>From the station, Hotel Bella Casa is approximately 1 km via Bus Stand Road. Auto-rickshaws and cycle-rickshaws are readily available.</p>
+                    <p>From the station, Hotel Surya Bella Casa is approximately 1 km via Bus Stand Road. Auto-rickshaws and cycle-rickshaws are readily available.</p>
                   </div>
                 </div>
 
@@ -178,7 +178,7 @@ export default function ContactPage() {
                 allowFullScreen={false} 
                 loading="lazy" 
                 referrerPolicy="no-referrer-when-downgrade"
-                title="Hotel Bella Casa Map Location"
+                title="Hotel Surya Bella Casa Map Location"
               ></iframe>
             </div>
           </div>

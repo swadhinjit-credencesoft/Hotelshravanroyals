@@ -1,8 +1,9 @@
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Book Your Stay Online | Hotel Surya Bella Casa Purnia',
+  title: 'Book Your Stay Online',
   description: 'Book your hotel room directly at Hotel Surya Bella Casa, Purnia. Choose from AC and Non-AC rooms. Best rates guaranteed on direct bookings.',
+  keywords: ['book hotel purnia', 'hotel reservation purnia', 'purnia room booking', 'hotel surya bella casa reservation', 'online booking purnia', 'purnia hotel booking online', 'purnia ac room booking', 'purnia non ac room booking', 'hotel near bus stand purnia booking', 'purnia hotel best rate', 'purnia hotel direct booking', 'instant booking purnia hotel', 'purnia hotel room availability', 'purnia hotel reservation online', 'secure hotel booking purnia'],
   alternates: {
     canonical: 'https://hotelsuryabellacasa.com/reservations',
   },

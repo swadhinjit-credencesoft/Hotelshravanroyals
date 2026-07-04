@@ -10,7 +10,7 @@ export default function DayTripsPage() {
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "TouristInformationCenter",
-    "name": "Hotel Bella Casa Day Outing",
+    "name": "Hotel Surya Bella Casa Day Outing",
     "description": "The perfect one-day picnic and resort visit in Purnia with pool access and lunch packages.",
     "address": {
       "@type": "PostalAddress",
@@ -31,7 +31,7 @@ export default function DayTripsPage() {
       <CinematicHero 
         label="Day Picnics & Outings"
         title="A Day in Paradise"
-        tagline="Short on time? Experience the best of Hotel Bella Casa with our curated day-trip packages for families and groups."
+        tagline="Short on time? Experience the best of Hotel Surya Bella Casa with our curated day-trip packages for families and groups."
         image='/images/room2.jpeg'
       />
 

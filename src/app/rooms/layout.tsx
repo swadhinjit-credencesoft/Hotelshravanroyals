@@ -1,8 +1,9 @@
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Hotel Rooms in Purnia | AC & Non-AC Rooms — Hotel Surya Bella Casa',
+  title: 'Hotel Rooms in Purnia | AC & Non-AC Rooms',
   description: 'Explore room categories at Hotel Surya Bella Casa, Purnia — Lawn Facing, Forest Facing, AC & Non-AC rooms. Book directly for the best rates.',
+  keywords: ['hotel rooms purnia', 'ac rooms purnia', 'non ac rooms purnia', 'purnia accommodation', 'rooms near bus stand purnia', 'super deluxe room purnia', 'deluxe ac room purnia', 'standard non ac room purnia', 'purnia budget room', 'purnia family room', 'purnia suite room', 'purnia hotel room price', 'purnia hotel tariff', 'purnia overnight stay', 'purnia lodging'],
   alternates: {
     canonical: 'https://hotelsuryabellacasa.com/rooms',
   },
@@ -17,7 +18,7 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: 'Hotel Rooms in Purnia | AC & Non-AC Rooms — Hotel Surya Bella Casa',
+    title: 'Hotel Rooms in Purnia | AC & Non-AC Rooms | Hotel Surya Bella Casa',
     description: 'Explore room categories at Hotel Surya Bella Casa, Purnia — Lawn Facing, Forest Facing, AC & Non-AC rooms. Book directly for the best rates.',
     url: 'https://hotelsuryabellacasa.com/rooms',
     siteName: 'Hotel Surya Bella Casa',
@@ -33,7 +34,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Hotel Rooms in Purnia | AC & Non-AC Rooms — Hotel Surya Bella Casa',
+    title: 'Hotel Rooms in Purnia | AC & Non-AC Rooms | Hotel Surya Bella Casa',
     description: 'Explore room categories at Hotel Surya Bella Casa, Purnia. Book directly for the best rates.',
     images: ['https://bookonelocal.in/cdn/IMG_3815.avif'],
   },

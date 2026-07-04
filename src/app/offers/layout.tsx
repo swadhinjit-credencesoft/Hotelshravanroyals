@@ -1,8 +1,9 @@
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Exclusive Offers & Packages | Hotel Surya Bella Casa Purnia',
+  title: 'Exclusive Offers & Packages',
   description: 'Discover exclusive deals, seasonal packages, and special offers at Hotel Surya Bella Casa, Purnia. Book direct for the best rates on AC and Non-AC rooms.',
+  keywords: ['hotel deals purnia', 'purnia hotel offers', 'discount hotel purnia', 'seasonal packages purnia', 'budget stay purnia offers', 'purnia hotel discount', 'hotel promotional offers purnia', 'purnia room package deals', 'purnia hotel weekend offer', 'purnia hotel festival offer', 'couple package purnia hotel', 'purnia hotel long stay discount', 'purnia hotel corporate discount', 'purnia hotel advance booking offer', 'best rate purnia hotel'],
   alternates: {
     canonical: 'https://hotelsuryabellacasa.com/offers',
   },

@@ -1,8 +1,9 @@
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Cancellation & Refund Policy | Hotel Surya Bella Casa Purnia',
+  title: 'Cancellation & Refund Policy',
   description: 'Read the cancellation and refund policy of Hotel Surya Bella Casa, Purnia. Understand amendment charges, cancellation timelines, and general terms.',
+  keywords: ['hotel cancellation policy', 'purnia hotel refund', 'hotel surya bella casa cancellation', 'booking cancellation purnia', 'hotel amendment charges', 'purnia hotel cancellation refund', 'hotel booking terms purnia', 'cancel hotel reservation purnia', 'purnia hotel refund policy', 'hotel cancellation timeline', 'no show policy purnia hotel', 'hotel surya bella casa refund'],
   alternates: {
     canonical: 'https://hotelsuryabellacasa.com/cancellation',
   },

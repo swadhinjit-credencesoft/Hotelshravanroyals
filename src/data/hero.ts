@@ -18,7 +18,7 @@ export const heroSlides: HeroSlide[] = [
     headline: 'Best Hotel in Purnia, Bihar — Hotel Surya Bella Casa',
     subheadline: 'A comfortable and budget-friendly stay located at Suryalok Complex, opposite Vikass Market in Purnia.',
     image: 'https://bookonelocal.in/cdn/website-home-video.mp4',
-    imageAlt: 'Hotel Bella Casa Exterior View',
+    imageAlt: 'Hotel Surya Bella Casa Exterior View',
     primaryCta: 'Book Now',
     primaryHref: 'https://bookone.io/Hotel-Bella-Casa?bookingEngine=true',
     secondaryCta: 'Explore Rooms',

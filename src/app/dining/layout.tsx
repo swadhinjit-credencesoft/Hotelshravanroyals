@@ -1,8 +1,9 @@
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Dining in Purnia | Pure Vegetarian Food — Hotel Surya Bella Casa',
+  title: 'Dining in Purnia | Pure Vegetarian Food',
   description: 'Enjoy pure vegetarian dining at Hotel Surya Bella Casa, Purnia. Order from top local restaurants via Swiggy & Zomato or explore Vikass Market street food nearby.',
+  keywords: ['dining in purnia', 'pure vegetarian hotel purnia', 'food near vikass market purnia', 'restaurant purnia', 'hotel dining purnia', 'swiggy purnia hotel', 'zomato delivery purnia hotel', 'vegetarian food purnia hotel', 'purnia street food near hotel', 'in room dining purnia', 'purnia restaurant delivery', 'best food purnia hotel', 'purnia lunch hotel', 'purnia dinner options', 'pure veg hotel bihar purnia'],
   alternates: {
     canonical: 'https://hotelsuryabellacasa.com/dining',
   },
@@ -17,7 +18,7 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: 'Dining in Purnia | Pure Vegetarian Food — Hotel Surya Bella Casa',
+    title: 'Dining in Purnia | Pure Vegetarian Food | Hotel Surya Bella Casa',
     description: 'Enjoy pure vegetarian dining at Hotel Surya Bella Casa, Purnia. Order from top local restaurants via Swiggy & Zomato or explore Vikass Market street food nearby.',
     url: 'https://hotelsuryabellacasa.com/dining',
     siteName: 'Hotel Surya Bella Casa',
@@ -33,7 +34,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Dining in Purnia | Pure Vegetarian Food — Hotel Surya Bella Casa',
+    title: 'Dining in Purnia | Pure Vegetarian Food | Hotel Surya Bella Casa',
     description: 'Enjoy pure vegetarian dining at Hotel Surya Bella Casa, Purnia.',
     images: ['https://bookonelocal.in/cdn/IMG_3815.avif'],
   },

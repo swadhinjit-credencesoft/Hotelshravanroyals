@@ -14,12 +14,12 @@ export default function PrivacyPage() {
             "@type": "WebPage",
             "@id": "https://hotelsuryabellacasa.com/privacy/#webpage",
             "url": "https://hotelsuryabellacasa.com/privacy",
-            "name": "Privacy Policy | Hotel Bella Casa",
-            "description": "Read the privacy policy guidelines of Hotel Bella Casa regarding data collection, storage, and customer reservation security protocols.",
+            "name": "Privacy Policy | Hotel Surya Bella Casa",
+            "description": "Read the privacy policy guidelines of Hotel Surya Bella Casa regarding data collection, storage, and customer reservation security protocols.",
             "isPartOf": {
               "@type": "WebSite",
               "@id": "https://hotelsuryabellacasa.com/#website",
-              "name": "Hotel Bella Casa",
+              "name": "Hotel Surya Bella Casa",
               "url": "https://hotelsuryabellacasa.com"
             }
           })
