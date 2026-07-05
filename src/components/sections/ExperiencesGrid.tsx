@@ -1,6 +1,7 @@
 'use client';
 
 import Image from 'next/image';
+import Link from 'next/link';
 import { motion } from 'framer-motion';
 import { experiences } from '@/data/experiences';
 import SectionLabel from '@/components/ui/SectionLabel';
@@ -28,6 +29,12 @@ export default function ExperiencesGrid() {
               index={i}
             />
           ))}
+        </div>
+
+        <div className="text-center mt-16">
+          <Link href="/experiences" className="inline-flex items-center gap-2 font-sans text-[10px] uppercase tracking-[0.2em] text-gold border border-gold/30 px-8 py-4 hover:bg-gold hover:text-forest transition-all rounded-sm">
+            Explore All Places to Visit in Purnea <ArrowRight size={12} />
+          </Link>
         </div>
       </div>
     </section>

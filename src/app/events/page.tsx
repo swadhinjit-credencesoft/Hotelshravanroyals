@@ -22,9 +22,9 @@ export default function EventsPage() {
     <main className="bg-cream min-h-screen">
       
       <CinematicHero
-        label="Events & Celebrations"
-        title="Unforgettable Gatherings"
-        tagline="From intimate forest weddings to strategic corporate retreats, we provide the perfect backdrop for your significant moments."
+        label="Best Banquet Hall in Purnea - Wedding Hall Near Bus Stand"
+        title="Banquet Hall & Wedding Venue in Purnea"
+        tagline="Best banquet hall in Purnea near Bus Stand. Host weddings, corporate events & parties. Perfect venue near Vikass Market for your special celebrations."
         image='https://bookonelocal.in/cdn/IMG_7431.mp4'
       />
 
@@ -36,8 +36,8 @@ export default function EventsPage() {
             {
               "@context": "https://schema.org",
               "@type": "EventVenue",
-              "name": "Hotel Surya Bella Casa Event Spaces",
-              "description": "Premium outdoor lawns, corporate hub, and poolside venues for weddings, parties, and corporate retreats in Purnia.",
+              "name": "Hotel Surya Bella Casa Banquet Hall & Wedding Venue Purnea",
+              "description": "Best banquet hall in Purnea at Hotel Surya Bella Casa near Bus Stand. Wedding hall, marriage hall, conference hall, party hall near Vikass Market. Perfect for weddings, corporate events, and family celebrations.",
               "url": "https://hotelsuryabellacasa.com/events",
               "address": {
                 "@type": "PostalAddress",
@@ -55,18 +55,34 @@ export default function EventsPage() {
               "mainEntity": [
                 {
                   "@type": "Question",
-                  "name": "What is the wedding capacity at Hotel Surya Bella Casa?",
+                  "name": "What is the best banquet hall in Purnea?",
                   "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "Our outdoor wedding lawns can comfortably host up to 250 guests with bespoke catering and decor."
+                    "text": "Hotel Surya Bella Casa is the best banquet hall in Purnea, located near Bus Stand opposite Vikass Market. We host weddings, corporate events, and birthday parties."
                   }
                 },
                 {
                   "@type": "Question",
-                  "name": "Do you provide corporate offsite facilities?",
+                  "name": "What is the wedding capacity at Hotel Surya Bella Casa?",
                   "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "Yes, we have a dedicated Corporate Hub with high-speed Wi-Fi, projectors, and team-building activities for up to 60 guests."
+                    "text": "Our wedding banquet hall and lawns in Purnea can comfortably host up to 250 guests with bespoke catering and decor."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "Do you provide conference hall facilities in Purnea?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes, we have a dedicated conference hall in Purnea with high-speed Wi-Fi, projectors, and team-building activities for up to 60 guests."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "Is there a marriage hall near Purnea Bus Stand?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes, Hotel Surya Bella Casa is a marriage hall near Purnea Bus Stand with wedding lawns, banquet facilities, and bridal suites for a perfect wedding venue."
                   }
                 }
               ]

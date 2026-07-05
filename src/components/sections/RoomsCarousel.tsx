@@ -195,10 +195,10 @@ export default function RoomsCarousel() {
         <div className="max-w-xl">
           <SectionLabel className="mb-4">Rooms &amp; Stays</SectionLabel>
           <h2 className="font-display text-4xl md:text-[52px] italic text-forest mb-4 leading-tight">
-            Your Private World Awaits
+            Luxury Rooms in Purnea Near Bus Stand
           </h2>
           <p className="font-serif text-xl font-light text-taupe leading-relaxed">
-            Live room options from HotelMate, refreshed directly from current availability.
+            Best hotel rooms in Purnea near Bus Stand. AC rooms, deluxe rooms, family rooms with free WiFi &amp; parking at Hotel Surya Bella Casa Purnea.
           </p>
         </div>
         <Link

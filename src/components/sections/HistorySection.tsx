@@ -62,7 +62,7 @@ export default function HistorySection() {
           <div className="flex flex-col">
             <SectionLabel className="mb-6">Our Legacy</SectionLabel>
             <h2 className="font-display text-4xl md:text-[56px] italic text-forest mb-8 leading-tight" style={{ textWrap: 'balance' }}>
-              A New Standard of Local Hospitality
+              Why Choose Hotel Surya Bella Casa Purnea
             </h2>
             <GoldDivider className="mb-10" />
             

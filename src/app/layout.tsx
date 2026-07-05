@@ -33,12 +33,12 @@ export const metadata: Metadata = {
   metadataBase: new URL('https://hotelsuryabellacasa.com'),
 
   title: {
-    default: 'Hotel Surya Bella Casa Purnia | Best Stay in Purnia',
-    template: '%s | Hotel Surya Bella Casa',
+    default: 'Hotel Surya Bella Casa Purnea | Best Hotel Near Bus Stand Purnea | Luxury Rooms & Rooftop Restaurant',
+    template: '%s | Hotel Surya Bella Casa Purnea',
   },
 
   description:
-    'Book a comfortable, budget-friendly stay at Hotel Surya Bella Casa in Purnia, Bihar. Near Bus Stand & Vikass Market. Perfect for families & business travelers.',
+    'Hotel Surya Bella Casa offers comfortable rooms with free WiFi, parking, rooftop restaurant and banquet hall near Bus Stand Purnea. The best hotel in Purnea, Bihar. Book direct for the best rates.',
 
   icons: {
     icon: [
@@ -286,6 +286,13 @@ export default function RootLayout({
             </div>
           </div>
         </div>
+      {/* Preconnect to external domains */}
+      <link rel="preconnect" href="https://bookonelocal.in" />
+      <link rel="preconnect" href="https://bookone.io" />
+      <link rel="dns-prefetch" href="https://bookonelocal.in" />
+      <link rel="dns-prefetch" href="https://bookone.io" />
+      {/* Preload hero poster image */}
+      <link rel="preload" href="https://bookonelocal.in/cdn/IMG_3815.avif" as="image" fetchPriority="high" />
       </body>
     </html>
   )

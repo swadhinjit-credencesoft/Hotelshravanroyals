@@ -33,7 +33,7 @@ export default function WellnessSection() {
              <div className="relative w-full max-w-lg aspect-[3/4] overflow-hidden border border-gold/10">
                  <Image
                    src='/images/exterior8.jpeg'
-                   alt="Minimalist spa interior"
+                   alt="Hotel Surya Bella Casa Purnea - Comfortable Stay Near Bus Stand"
                    fill
                    sizes="(max-width: 1024px) 100vw, 50vw"
                    className="object-cover hover:scale-105 transition-transform duration-1000"
@@ -47,7 +47,7 @@ export default function WellnessSection() {
              >
                  <Image
                    src='/images/room1.jpeg'
-                   alt="Therapeutic botanicals"
+                   alt="Best Hotel in Purnea - Hotel Surya Bella Casa Near Bus Stand"
                    fill
                    sizes="256px"
                    className="object-cover grayscale"

@@ -120,7 +120,7 @@ export default function RoomDetailClient({ room, otherRooms }: RoomDetailClientP
             >
               <Image
                 src={selectedImage}
-                alt={`${room.name} image ${selectedImageIndex + 1}`}
+                alt={`${room.name} at Hotel Surya Bella Casa Purnea - Best Room Near Bus Stand`}
                 fill
                 className="object-contain"
                 sizes="100vw"
@@ -151,7 +151,7 @@ export default function RoomDetailClient({ room, otherRooms }: RoomDetailClientP
             >
               <Image
                 src={selectedImage}
-                alt={`${room.name} image ${selectedImageIndex + 1}`}
+                alt={`${room.name} at Hotel Surya Bella Casa Purnea - Best Room Near Bus Stand`}
                 fill
                 className="object-cover transition-transform duration-1000 group-hover:scale-105"
                 priority
@@ -184,7 +184,7 @@ export default function RoomDetailClient({ room, otherRooms }: RoomDetailClientP
                   >
                     <Image
                       src={image}
-                      alt={`${room.name} thumbnail ${index + 1}`}
+                      alt={`${room.name} - Hotel Surya Bella Casa Purnea Near Bus Stand`}
                       fill
                       className="object-cover"
                       sizes="144px"

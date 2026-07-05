@@ -1,15 +1,15 @@
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Day Trips & Picnics in Purnia',
-  description: 'Plan your day trips, picnics, and family get-togethers at Hotel Surya Bella Casa in Purnia, Bihar. Enjoy delicious food and pristine settings.',
-  keywords: ['day trips purnia', 'picnic purnia', 'weekend getaway purnia', 'family outing purnia', 'pool day pass purnia', 'one day trip purnia', 'purnia resort day outing', 'pool access purnia hotel', 'purnia weekend plan', 'day picnic purnia bihar', 'purnia family day out', 'swimming pool day pass purnia', 'purnia short getaway', 'purnia staycation', 'purnia relaxation day'],
+  title: 'Day Trips & Picnics in Purnea | Weekend Getaway Near Bus Stand | Hotel Surya Bella Casa',
+  description: 'Plan day trips and picnics in Purnea at Hotel Surya Bella Casa near Bus Stand. Weekend getaway, family outing, pool day pass. Enjoy delicious food and pristine settings for one day trip in Purnea, Bihar.',
+  keywords: ['day trips purnea', 'picnic purnea', 'weekend getaway purnea', 'family outing purnea', 'pool day pass purnea', 'one day trip purnea', 'purnea resort day outing', 'purnea weekend plan', 'day picnic purnea bihar', 'purnea family day out', 'purnea short getaway', 'purnea staycation', 'purnea relaxation day', 'purnea pool access', 'weekend trip near bus stand purnea'],
   alternates: {
     canonical: 'https://hotelsuryabellacasa.com/events/day-trips',
   },
   openGraph: {
-    title: 'Day Trips & Picnics in Purnia | Hotel Surya Bella Casa',
-    description: 'Plan your day trips, picnics, and family get-togethers at Hotel Surya Bella Casa in Purnia, Bihar. Enjoy delicious food and pristine settings.',
+    title: 'Day Trips & Picnics in Purnea | Weekend Getaway Near Bus Stand | Hotel Surya Bella Casa',
+    description: 'Plan day trips and picnics in Purnea at Hotel Surya Bella Casa near Bus Stand. Weekend getaway, family outing, pool day pass in Purnea, Bihar.',
     url: 'https://hotelsuryabellacasa.com/events/day-trips',
     siteName: 'Hotel Surya Bella Casa',
     type: 'website',
@@ -24,9 +24,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Day Trips & Picnics in Purnia | Hotel Surya Bella Casa',
-    description: 'Plan your day trips, picnics, and family get-togethers at Hotel Surya Bella Casa in Purnia, Bihar. Enjoy delicious food and pristine settings.',
-    images: ['https://bookonelocal.in/cdn/IMG_3809.avif'],
+    title: 'Day Trips & Picnics in Purnea | Weekend Getaway Near Bus Stand',
+    description: 'Plan day trips and picnics in Purnea at Hotel Surya Bella Casa near Bus Stand. Family outing, pool day pass.',
   }
 }
 

@@ -99,7 +99,7 @@ export default function CinematicHero({
         style={{ y: textY }}
         className="relative z-10 max-w-[1600px] mx-auto px-6 md:px-10 w-full"
       >
-        <div className="max-w-4xl">
+        <div className="max-w-5xl">
           <SectionLabel light className="mb-6">
             {label}
           </SectionLabel>
@@ -111,7 +111,7 @@ export default function CinematicHero({
               duration: 1.2,
               ease: [0.16, 1, 0.3, 1],
             }}
-            className="font-display text-5xl md:text-7xl lg:text-[80px] italic text-ivory mb-8 leading-[0.95]"
+            className="font-display text-3xl md:text-4xl lg:text-5xl italic text-ivory mb-6 leading-[1.1] text-balance"
           >
             {title}
           </motion.h1>
@@ -123,7 +123,7 @@ export default function CinematicHero({
               duration: 1,
               delay: 0.8,
             }}
-            className="h-px bg-gold mb-8 w-32"
+            className="h-px bg-gold mb-6 w-24"
           />
 
           <motion.p
@@ -133,7 +133,7 @@ export default function CinematicHero({
               duration: 1,
               delay: 0.6,
             }}
-            className="font-serif text-xl md:text-2xl text-ivory/70 max-w-xl italic leading-relaxed"
+            className="font-serif text-base md:text-lg text-ivory/70 max-w-2xl italic leading-relaxed"
           >
             {tagline}
           </motion.p>

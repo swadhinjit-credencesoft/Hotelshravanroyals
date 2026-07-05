@@ -14,8 +14,8 @@ const businessAmenities: AmenityItem[] = [
 ];
 
 export const metadata = {
-  title: 'Business Hotel in Purnia | Hotel Surya Bella Casa',
-  description: 'Searching for a corporate or business hotel in Purnia? Hotel Surya Bella Casa offers high-speed Wi-Fi, desk space, and central access near Purnia Bus Stand.',
+  title: 'Business Hotel in Purnia | Corporate Stay Near Bus Stand | Hotel Surya Bella Casa',
+  description: 'Searching for a business hotel in Purnia? Hotel Surya Bella Casa offers high-speed Wi-Fi, work desk, conference facilities near Bus Stand Purnea. Best corporate hotel for executives with free parking. Book direct.',
   alternates: {
     canonical: 'https://hotelsuryabellacasa.com/business-hotel-in-purnia',
   },
@@ -25,17 +25,17 @@ export const metadata = {
     googleBot: { index: true, follow: true, 'max-image-preview': 'large', 'max-snippet': -1 },
   },
   openGraph: {
-    title: 'Business Hotel in Purnia | Hotel Surya Bella Casa',
-    description: 'Searching for a corporate or business hotel in Purnia? Hotel Surya Bella Casa offers high-speed Wi-Fi, desk space, and central access near Purnia Bus Stand.',
+    title: 'Business Hotel in Purnia | Corporate Accommodation Near Bus Stand Purnea',
+    description: 'Best business hotel near Purnea Bus Stand. High-speed WiFi, work desk, conference hall, free parking. Perfect for corporate travelers and executives.',
     url: 'https://hotelsuryabellacasa.com/business-hotel-in-purnia',
     siteName: 'Hotel Surya Bella Casa',
     type: 'website',
-    images: [{ url: 'https://bookonelocal.in/cdn/IMG_3815.avif', width: 1200, height: 630, alt: 'Business Hotel in Purnia - Hotel Surya Bella Casa' }],
+    images: [{ url: 'https://bookonelocal.in/cdn/IMG_3815.avif', width: 1200, height: 630, alt: 'Business Hotel in Purnia - Corporate Stay Near Bus Stand - Hotel Surya Bella Casa' }],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Business Hotel in Purnia | Hotel Surya Bella Casa',
-    description: 'High-speed Wi-Fi, desk space, and central access near Purnia Bus Stand.',
+    title: 'Business Hotel in Purnia | Corporate Stay Near Bus Stand',
+    description: 'Best business hotel in Purnia near Bus Stand with high-speed WiFi, conference hall, and free parking for corporate travelers.',
     images: ['https://bookonelocal.in/cdn/IMG_3815.avif'],
   },
 };
@@ -45,9 +45,9 @@ export default function BusinessHotelLandingPage() {
     <main className="bg-cream min-h-screen">
       
       <CinematicHero 
-        label="Corporate Stay"
-        title="Business Hotel in Purnia"
-        tagline="Maximize your business trip efficiency. Seamless connectivity, clean workspaces, and absolute peace of mind in central Purnia."
+        label="Best Business Hotel Near Bus Stand Purnea"
+        title="Business Hotel in Purnia - Corporate Stay with WiFi & Conference Hall"
+        tagline="Looking for a business hotel in Purnia? Hotel Surya Bella Casa offers high-speed WiFi, dedicated work desks, conference hall, and free parking near Bus Stand Purnea. Perfect for corporate travelers."
         image='https://bookonelocal.in/cdn/IMG_3709.jpeg'
       />
 

@@ -1,9 +1,9 @@
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Exclusive Offers & Packages',
-  description: 'Discover exclusive deals, seasonal packages, and special offers at Hotel Surya Bella Casa, Purnia. Book direct for the best rates on AC and Non-AC rooms.',
-  keywords: ['hotel deals purnia', 'purnia hotel offers', 'discount hotel purnia', 'seasonal packages purnia', 'budget stay purnia offers', 'purnia hotel discount', 'hotel promotional offers purnia', 'purnia room package deals', 'purnia hotel weekend offer', 'purnia hotel festival offer', 'couple package purnia hotel', 'purnia hotel long stay discount', 'purnia hotel corporate discount', 'purnia hotel advance booking offer', 'best rate purnia hotel'],
+  title: 'Hotel Booking Purnea | Best Deals & Offers | Book Hotel Surya Bella Casa Direct',
+  description: 'Best hotel deals in Purnea at Hotel Surya Bella Casa. Book direct for cheapest rates. Online hotel booking in Purnea near Bus Stand. Reserve deluxe rooms, family rooms at best price. Direct hotel booking Purnea.',
+  keywords: ['hotel booking purnea', 'book hotel in purnea', 'cheap hotel booking purnea', 'best hotel deals purnea', 'hotel offers purnea', 'direct hotel booking purnea', 'online hotel booking purnea', 'hotel reservation purnea', 'book deluxe room purnea', 'best price hotel purnea', 'purnea hotel discount', 'purnea hotel weekend offer', 'purnea room package deals', 'book hotel near bus stand purnea', 'hotel booking online purnea bihar'],
   alternates: {
     canonical: 'https://hotelsuryabellacasa.com/offers',
   },
@@ -18,8 +18,8 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: 'Exclusive Offers & Packages | Hotel Surya Bella Casa Purnia',
-    description: 'Discover exclusive deals, seasonal packages, and special offers at Hotel Surya Bella Casa, Purnia. Book direct for the best rates.',
+    title: 'Hotel Booking Purnea | Best Deals & Offers | Book Hotel Surya Bella Casa Direct',
+    description: 'Best hotel deals in Purnea at Hotel Surya Bella Casa. Book direct for cheapest rates. Online hotel booking in Purnea near Bus Stand. Reserve deluxe rooms at best price.',
     url: 'https://hotelsuryabellacasa.com/offers',
     siteName: 'Hotel Surya Bella Casa',
     type: 'website',
@@ -34,8 +34,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Exclusive Offers & Packages | Hotel Surya Bella Casa Purnia',
-    description: 'Discover exclusive deals, seasonal packages, and special offers at Hotel Surya Bella Casa, Purnia.',
+    title: 'Hotel Booking Purnea | Best Deals & Offers | Hotel Surya Bella Casa',
+    description: 'Book hotel in Purnea at best price. Direct hotel booking near Bus Stand. Deluxe rooms, family rooms available.',
     images: ['https://bookonelocal.in/cdn/IMG_3739.avif'],
   },
 }

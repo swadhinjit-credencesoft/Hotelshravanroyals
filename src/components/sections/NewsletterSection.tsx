@@ -11,7 +11,7 @@ export default function NewsletterSection() {
       <div className="absolute inset-0 z-0">
         <Image
           src='/images/exterior7.jpeg'
-          alt="Inn at twilight"
+          alt="Hotel Surya Bella Casa Purnea - Family Hotel Near Bus Stand Purnea"
           fill
           sizes="100vw"
           className="object-cover"

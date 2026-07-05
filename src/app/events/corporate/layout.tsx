@@ -1,15 +1,15 @@
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Corporate Event Venue & Retreats in Purnia',
-  description: 'Host professional corporate events, offsites, retreats, and team-building workshops at Hotel Surya Bella Casa in Purnia, Bihar.',
-  keywords: ['corporate event venue purnia', 'business retreat purnia', 'conference hall purnia', 'team outing purnia', 'corporate hotel purnia', 'offsites purnia', 'purnia meeting room', 'board meeting venue purnia', 'purnia corporate stay', 'training hall purnia', 'business seminar purnia', 'purnia workshop venue', 'company retreat purnia bihar', 'purnia conference facilities', 'corporate lunch purnia'],
+  title: 'Conference Hall in Purnea | Corporate Event Venue & Business Meeting Near Bus Stand | Hotel Surya Bella Casa',
+  description: 'Best conference hall in Purnea at Hotel Surya Bella Casa near Bus Stand. Corporate event venue, business meeting room, seminar hall, team outing space. Host offsites, retreats & workshops in Purnea, Bihar.',
+  keywords: ['conference hall purnea', 'corporate event venue purnea', 'business meeting room purnea', 'seminar hall purnea', 'team outing purnea', 'corporate hotel purnea', 'offsites purnea', 'meeting room purnea', 'board meeting venue purnea', 'purnea corporate stay', 'training hall purnea', 'business seminar purnea', 'workshop venue purnea', 'company retreat purnea bihar', 'conference hall near bus stand purnea'],
   alternates: {
     canonical: 'https://hotelsuryabellacasa.com/events/corporate',
   },
   openGraph: {
-    title: 'Corporate Event Venue & Retreats in Purnia | Hotel Surya Bella Casa',
-    description: 'Host professional corporate events, offsites, retreats, and team-building workshops at Hotel Surya Bella Casa in Purnia, Bihar.',
+    title: 'Conference Hall in Purnea | Corporate Event Venue Near Bus Stand | Hotel Surya Bella Casa',
+    description: 'Best conference hall in Purnea at Hotel Surya Bella Casa near Bus Stand. Corporate event venue, meeting room, seminar hall for offsites & workshops.',
     url: 'https://hotelsuryabellacasa.com/events/corporate',
     siteName: 'Hotel Surya Bella Casa',
     type: 'website',
@@ -24,9 +24,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Corporate Event Venue & Retreats in Purnia | Hotel Surya Bella Casa',
-    description: 'Host professional corporate events, offsites, retreats, and team-building workshops at Hotel Surya Bella Casa in Purnia, Bihar.',
-    images: ['https://bookonelocal.in/cdn/IMG_3784.avif'],
+    title: 'Conference Hall in Purnea | Corporate Event Venue Near Bus Stand',
+    description: 'Best conference hall in Purnea near Bus Stand. Corporate event venue, meeting room, seminar hall at Hotel Surya Bella Casa.',
   }
 }
 

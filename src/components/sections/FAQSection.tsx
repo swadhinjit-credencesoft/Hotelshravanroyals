@@ -87,11 +87,11 @@ export default function FAQSection() {
         <div className="text-center mb-20">
           <SectionLabel className="justify-center mb-6">Got Questions?</SectionLabel>
           <h2 className="font-display text-4xl md:text-[52px] italic text-forest mb-6">
-            Frequently Asked Questions
+            Hotel Booking & Stay FAQs | Hotel Surya Bella Casa Purnea
           </h2>
           <GoldDivider className="justify-center mb-6" />
           <p className="font-serif text-xl font-light text-taupe max-w-xl mx-auto leading-relaxed">
-            Everything you need to know about your comfortable stay in central Purnia, Bihar.
+            Everything you need to know about booking your stay in Purnea near Bus Stand. Best hotel in Purnea for families and business travelers.
           </p>
         </div>
 

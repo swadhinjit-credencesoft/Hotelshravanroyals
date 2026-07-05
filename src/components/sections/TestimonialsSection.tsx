@@ -107,6 +107,25 @@ export default function TestimonialsSection() {
             ))}
           </div>
         </div>
+
+        {/* Google Reviews CTA */}
+        <div className="text-center mt-16 pt-10 border-t border-gold/10">
+          <p className="font-sans text-[10px] uppercase tracking-[0.25em] text-taupe mb-4">Rated by Guests</p>
+          <div className="flex items-center justify-center gap-2 mb-4">
+            {[...Array(5)].map((_, i) => (
+              <Star key={i} size={16} className={i < 4 ? 'fill-gold text-gold' : 'fill-gold/30 text-gold/30'} />
+            ))}
+          </div>
+          <p className="font-serif text-lg italic text-forest mb-2">4.5 out of 5 stars</p>
+          <a
+            href="https://www.google.com/maps/place/Suryalok+Complex,+Purnia,+Bihar+854301"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 font-sans text-[10px] uppercase tracking-[0.2em] text-gold hover:text-forest transition-colors border border-gold/30 px-6 py-3 rounded-sm mt-2"
+          >
+            Leave a Google Review
+          </a>
+        </div>
       </div>
     </section>
   );

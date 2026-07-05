@@ -7,18 +7,53 @@ import { Sun, Utensils, MapPin, Clock, Calendar } from 'lucide-react';
 import Link from 'next/link';
 
 export default function DayTripsPage() {
-  const jsonLd = {
-    "@context": "https://schema.org",
-    "@type": "TouristInformationCenter",
-    "name": "Hotel Surya Bella Casa Day Outing",
-    "description": "The perfect one-day picnic and resort visit in Purnia with pool access and lunch packages.",
-    "address": {
-      "@type": "PostalAddress",
-      "addressLocality": "Purnia",
-      "addressRegion": "Bihar",
-      "addressCountry": "IN"
+  const jsonLd = [
+    {
+      "@context": "https://schema.org",
+      "@type": "TouristInformationCenter",
+      "name": "Hotel Surya Bella Casa Day Outing & Picnic Purnea",
+      "description": "Plan day trips and picnics in Purnea at Hotel Surya Bella Casa near Bus Stand. Weekend getaway, family outing, pool day pass with lunch.",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Suryalok Complex, Opposite Vikass Market, Near Bus Stand",
+        "addressLocality": "Purnea",
+        "addressRegion": "Bihar",
+        "postalCode": "854301",
+        "addressCountry": "IN"
+      },
+      "telephone": "+91 9835923601"
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Can I plan a day picnic in Purnea near Bus Stand?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, Hotel Surya Bella Casa offers day trips and picnics in Purnea near Bus Stand with lunch packages, lounge access, and city tours from 10 AM to 6 PM."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is the best weekend getaway in Purnea?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Hotel Surya Bella Casa is the best weekend getaway in Purnea near Bus Stand with day outing packages, family-friendly activities, and delicious lunch options."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is there a one day trip available in Purnea?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, Hotel Surya Bella Casa offers one day trip packages in Purnea near Bus Stand including lunch, lounge access, and guided city tours for families and groups."
+          }
+        }
+      ]
     }
-  };
+  ];
 
   return (
     <main className="bg-cream min-h-screen">
@@ -29,9 +64,9 @@ export default function DayTripsPage() {
       />
 
       <CinematicHero 
-        label="Day Picnics & Outings"
-        title="A Day in Paradise"
-        tagline="Short on time? Experience the best of Hotel Surya Bella Casa with our curated day-trip packages for families and groups."
+        label="Day Trips & Picnics in Purnea - Weekend Getaway Near Bus Stand"
+        title="Day Trips & Picnics in Purnea - Weekend Getaway, Family Outing & Pool Day Pass"
+        tagline="Plan day trips and picnics in Purnea at Hotel Surya Bella Casa near Bus Stand. Weekend getaway, family outing, pool day pass with lunch. Best one day trip in Purnea for families and groups."
         image='/images/room2.jpeg'
       />
 
@@ -69,7 +104,7 @@ export default function DayTripsPage() {
               </a>
             </div>
             <div className="relative aspect-square">
-               <Image src='/images/exterior.jpeg' alt="Family enjoying a day picnic at a luxury resort" fill className="object-cover rounded-sm shadow-2xl" />
+               <Image src='/images/exterior.jpeg' alt="Day Trips & Picnics in Purnea - Weekend Getaway Near Bus Stand | Hotel Surya Bella Casa" fill className="object-cover rounded-sm shadow-2xl" />
             </div>
           </div>
 

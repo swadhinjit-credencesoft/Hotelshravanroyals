@@ -1,9 +1,9 @@
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Dining in Purnia | Pure Vegetarian Food',
-  description: 'Enjoy pure vegetarian dining at Hotel Surya Bella Casa, Purnia. Order from top local restaurants via Swiggy & Zomato or explore Vikass Market street food nearby.',
-  keywords: ['dining in purnia', 'pure vegetarian hotel purnia', 'food near vikass market purnia', 'restaurant purnia', 'hotel dining purnia', 'swiggy purnia hotel', 'zomato delivery purnia hotel', 'vegetarian food purnia hotel', 'purnia street food near hotel', 'in room dining purnia', 'purnia restaurant delivery', 'best food purnia hotel', 'purnia lunch hotel', 'purnia dinner options', 'pure veg hotel bihar purnia'],
+  title: 'Best Rooftop Restaurant in Purnea | Family Restaurant Near Bus Stand | Hotel Surya Bella Casa Purnea',
+  description: 'Enjoy the best rooftop restaurant in Purnea at Hotel Surya Bella Casa. Family restaurant near Bus Stand serving Indian, Tandoor, Mughlai, Asian & Continental cuisine. Best dinner restaurant in Purnea. Book now.',
+  keywords: ['rooftop restaurant purnea', 'best restaurant in purnea', 'family restaurant purnea', 'restaurant near bus stand purnea', 'dinner in purnea', 'lunch restaurant purnea', 'breakfast restaurant purnea', 'best rooftop restaurant in purnea', 'veg restaurant purnea', 'non veg restaurant purnea', 'multi cuisine restaurant purnea', 'fine dining restaurant purnea', 'hotel restaurant purnea', 'purnea restaurant food', 'restaurant near vikass market purnea'],
   alternates: {
     canonical: 'https://hotelsuryabellacasa.com/dining',
   },
@@ -18,8 +18,8 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: 'Dining in Purnia | Pure Vegetarian Food | Hotel Surya Bella Casa',
-    description: 'Enjoy pure vegetarian dining at Hotel Surya Bella Casa, Purnia. Order from top local restaurants via Swiggy & Zomato or explore Vikass Market street food nearby.',
+    title: 'Best Rooftop Restaurant in Purnea | Family Restaurant Near Bus Stand | Hotel Surya Bella Casa',
+    description: 'Enjoy the best rooftop restaurant in Purnea at Hotel Surya Bella Casa. Family restaurant near Bus Stand serving Indian, Tandoor, Mughlai, Asian & Continental cuisine. Best dinner restaurant in Purnea.',
     url: 'https://hotelsuryabellacasa.com/dining',
     siteName: 'Hotel Surya Bella Casa',
     type: 'website',
@@ -28,14 +28,14 @@ export const metadata: Metadata = {
         url: 'https://bookonelocal.in/cdn/IMG_3808.avif',
         width: 1200,
         height: 630,
-        alt: 'Dining at Hotel Surya Bella Casa Purnia',
+        alt: 'Best Rooftop Restaurant in Purnea - Family Restaurant Near Bus Stand - Hotel Surya Bella Casa Purnea',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Dining in Purnia | Pure Vegetarian Food | Hotel Surya Bella Casa',
-    description: 'Enjoy pure vegetarian dining at Hotel Surya Bella Casa, Purnia.',
+    title: 'Best Rooftop Restaurant in Purnea | Family Restaurant Near Bus Stand',
+    description: 'Enjoy the best rooftop restaurant in Purnea at Hotel Surya Bella Casa near Bus Stand. Best dinner and lunch restaurant in Purnea.',
     images: ['https://bookonelocal.in/cdn/IMG_3808.avif'],
   },
 }

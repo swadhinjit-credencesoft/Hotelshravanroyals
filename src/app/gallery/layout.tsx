@@ -1,9 +1,9 @@
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Hotel Photo Gallery',
-  description: 'Browse photos of our modern rooms, lobby, banquet halls, and facilities at Hotel Surya Bella Casa, Purnia, Bihar. See what makes us the best hotel in Purnia.',
-  keywords: ['hotel purnia photos', 'hotel surya bella casa gallery', 'purnia hotel pictures', 'hotel rooms purnia images', 'purnia hotel lobby', 'purnia hotel room photos', 'hotel banquet hall purnia images', 'purnia hotel exterior', 'hotel purnia interior photos', 'purnia hotel bathroom images', 'hotel deluxe room purnia', 'super deluxe room purnia photos', 'purnia hotel gallery 2024', 'ac room purnia images', 'purnia hotel facilities photos'],
+  title: 'Hotel Surya Bella Casa Purnea Photos | Deluxe Room, Banquet Hall, Rooftop Restaurant Gallery',
+  description: 'Browse photos of Hotel Surya Bella Casa Purnea near Bus Stand. See deluxe room images, banquet hall, rooftop restaurant, lobby, exterior. Best hotel in Purnea photos and gallery.',
+  keywords: ['hotel surya bella casa purnea photos', 'deluxe room in purnea images', 'banquet hall purnea photos', 'rooftop restaurant purnea images', 'best hotel in purnea gallery', 'hotel near bus stand purnea photos', 'purnea hotel exterior images', 'hotel lobby purnea images', 'purnea hotel room photos gallery', 'ac rooms purnea images', 'family room purnea photos', 'hotel reception purnea pictures', 'hotel opposite vikass market photos', 'purnea hotel facilities gallery', 'hotel surya bella casa images'],
   alternates: {
     canonical: 'https://hotelsuryabellacasa.com/gallery',
   },
@@ -18,8 +18,8 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: 'Hotel Photo Gallery | Hotel Surya Bella Casa Purnia',
-    description: 'Browse photos of our modern rooms, lobby, banquet halls, and facilities at Hotel Surya Bella Casa, Purnia, Bihar.',
+    title: 'Hotel Surya Bella Casa Purnea Photos | Deluxe Room, Banquet Hall, Rooftop Restaurant Gallery',
+    description: 'Browse photos of Hotel Surya Bella Casa Purnea near Bus Stand. Deluxe room, banquet hall, rooftop restaurant, exterior. Best hotel in Purnea gallery.',
     url: 'https://hotelsuryabellacasa.com/gallery',
     siteName: 'Hotel Surya Bella Casa',
     type: 'website',
@@ -34,8 +34,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Hotel Photo Gallery | Hotel Surya Bella Casa Purnia',
-    description: 'Browse photos of our modern rooms, lobby, banquet halls, and facilities at Hotel Surya Bella Casa, Purnia, Bihar.',
+    title: 'Hotel Surya Bella Casa Purnea Photos | Deluxe Room Gallery | Hotel Near Bus Stand',
+    description: 'Browse photos of Hotel Surya Bella Casa Purnea near Bus Stand. Deluxe room, banquet hall, rooftop restaurant gallery.',
     images: ['https://bookonelocal.in/cdn/IMG_3764.avif'],
   },
 }

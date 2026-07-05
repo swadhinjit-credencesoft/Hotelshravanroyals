@@ -8,7 +8,7 @@ export default function ForestSection() {
       <div className="absolute inset-0 opacity-10 pointer-events-none">
          <Image 
             src='/images/exterior3.jpeg' 
-            alt="Forest texture" 
+            alt="Hotel Surya Bella Casa Purnea - Best Hotel in Purnea Near Bus Stand" 
             fill 
              className="object-cover mix-blend-overlay"
              sizes="100vw"

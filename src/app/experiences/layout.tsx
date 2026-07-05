@@ -1,9 +1,9 @@
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Experiences & Activities in Purnia',
-  description: 'Explore unique local experiences from Hotel Surya Bella Casa in Purnia — city tours, local markets, cultural attractions, and more.',
-  keywords: ['things to do in purnia', 'purnia attractions', 'local experiences purnia', 'purnia sightseeing', 'places to visit purnia', 'purnia city tour', 'purnia local market visit', 'purnia cultural attractions', 'purnia temples', 'shopping in purnia', 'purnia historical places', 'purnia bihar tourism', 'purnia weekend activities', 'things to do near purnia', 'purnia travel experiences'],
+  title: 'Places to Visit in Purnea | Nearby Attractions & Things to Do | Hotel Surya Bella Casa',
+  description: 'Explore places to visit in Purnea and nearby attractions near Hotel Surya Bella Casa. Maa Puran Devi Temple, Purnea Court, Polytechnic, shopping markets. Best things to do in Purnea, Bihar.',
+  keywords: ['places to visit in purnea', 'things to do in purnea', 'purnea nearby attractions', 'maa puran devi temple purnea', 'purnea court', 'district hospital purnea', 'polytechnic purnea', 'shopping market purnea', 'bus terminal purnea', 'purnea sightseeing', 'purnea city tour', 'purnea local markets', 'weekend activities purnea', 'purnea bihar tourism', 'hotel near attractions purnea'],
   alternates: {
     canonical: 'https://hotelsuryabellacasa.com/experiences',
   },
@@ -18,8 +18,8 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: 'Experiences & Activities in Purnia | Hotel Surya Bella Casa',
-    description: 'Explore unique local experiences from Hotel Surya Bella Casa in Purnia — city tours, local markets, cultural attractions, and more.',
+    title: 'Places to Visit in Purnea | Nearby Attractions & Things to Do | Hotel Surya Bella Casa',
+    description: 'Explore places to visit in Purnea and nearby attractions near Hotel Surya Bella Casa. Maa Puran Devi Temple, shopping markets, and more. Best things to do in Purnea.',
     url: 'https://hotelsuryabellacasa.com/experiences',
     siteName: 'Hotel Surya Bella Casa',
     type: 'website',
@@ -34,8 +34,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Experiences & Activities in Purnia | Hotel Surya Bella Casa',
-    description: 'Explore unique local experiences from Hotel Surya Bella Casa in Purnia.',
+    title: 'Places to Visit in Purnea | Nearby Attractions | Hotel Surya Bella Casa',
+    description: 'Explore places to visit in Purnea near Hotel Surya Bella Casa. Temples, markets, attractions near Bus Stand.',
     images: ['https://bookonelocal.in/cdn/IMG_3809.avif'],
   },
 }

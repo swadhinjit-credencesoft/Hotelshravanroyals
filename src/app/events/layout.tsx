@@ -1,9 +1,9 @@
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Event & Banquet Hall in Purnia',
-  description: 'Host your corporate events, family functions, weddings, and celebrations at Hotel Surya Bella Casa\'s event spaces in Purnia, Bihar. Contact us for bookings.',
-  keywords: ['event hall purnia', 'banquet hall purnia', 'party venue purnia', 'hotel events purnia', 'celebration hall bihar', 'purnia event venue', 'marriage hall purnia', 'conference venue purnia', 'purnia gathering hall', 'hotel event space purnia', 'purnia family function hall', 'birthday party venue purnia', 'purnia corporate event space', 'wedding reception purnia', 'purnia celebration venue'],
+  title: 'Best Banquet Hall in Purnea | Wedding Hall & Event Venue Near Bus Stand | Hotel Surya Bella Casa',
+  description: 'Best banquet hall in Purnea at Hotel Surya Bella Casa near Bus Stand. Wedding hall, marriage hall, conference hall, birthday party hall near Vikass Market. Host weddings, corporate events & parties. Book now.',
+  keywords: ['banquet hall purnea', 'wedding hall purnea', 'marriage hall purnea', 'event venue purnea', 'party hall purnea', 'conference hall purnea', 'best banquet hall in purnea', 'wedding venue purnea', 'marriage hall near bus stand purnea', 'birthday party hall purnea', 'corporate event venue purnea', 'reception hall purnea', 'seminar hall purnea', 'event hall near vikass market purnea', 'celebration venue purnea'],
   alternates: {
     canonical: 'https://hotelsuryabellacasa.com/events',
   },
@@ -18,8 +18,8 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: 'Event & Banquet Hall in Purnia — Hotel Surya Bella Casa',
-    description: 'Host your corporate events, family functions, weddings, and celebrations at Hotel Surya Bella Casa\'s event spaces in Purnia, Bihar.',
+    title: 'Best Banquet Hall in Purnea | Wedding Hall & Event Venue Near Bus Stand | Hotel Surya Bella Casa',
+    description: 'Best banquet hall in Purnea at Hotel Surya Bella Casa near Bus Stand. Wedding hall, marriage hall, conference hall, birthday party hall. Host weddings, corporate events & parties in Purnea.',
     url: 'https://hotelsuryabellacasa.com/events',
     siteName: 'Hotel Surya Bella Casa',
     type: 'website',
@@ -34,8 +34,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Event & Banquet Hall in Purnia — Hotel Surya Bella Casa',
-    description: 'Host your corporate events, family functions, and celebrations at Hotel Surya Bella Casa, Purnia.',
+    title: 'Best Banquet Hall in Purnea | Wedding Hall Near Bus Stand | Hotel Surya Bella Casa',
+    description: 'Best banquet hall in Purnea at Hotel Surya Bella Casa near Bus Stand. Wedding, marriage, conference & party halls. Book now.',
     images: ['https://bookonelocal.in/cdn/IMG_3809.avif'],
   },
 }

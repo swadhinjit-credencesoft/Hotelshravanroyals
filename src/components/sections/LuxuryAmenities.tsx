@@ -55,6 +55,8 @@ function AmenityIcon({ name }: { name: string }) {
   return <IconComponent size={24} className="text-gold group-hover:text-forest transition-colors duration-500" />
 }
 
+import Link from 'next/link';
+
 export default function LuxuryAmenities({ label = 'Our Standards', heading = 'Comfort Without Compromise', amenities }: LuxuryAmenitiesProps) {
   const items = amenities || defaultAmenities;
   return (
@@ -88,6 +90,15 @@ export default function LuxuryAmenities({ label = 'Our Standards', heading = 'Co
               </p>
             </motion.div>
           ))}
+        </div>
+
+        <div className="text-center mt-16 flex flex-wrap justify-center gap-6">
+          <Link href="/rooms" className="inline-flex items-center gap-2 font-sans text-[10px] uppercase tracking-[0.2em] text-gold border border-gold/30 px-8 py-4 hover:bg-gold hover:text-forest transition-all rounded-sm">
+            Explore Deluxe Rooms in Purnea
+          </Link>
+          <Link href="/offers" className="inline-flex items-center gap-2 font-sans text-[10px] uppercase tracking-[0.2em] text-gold border border-gold/30 px-8 py-4 hover:bg-gold hover:text-forest transition-all rounded-sm">
+            View Hotel Booking Offers
+          </Link>
         </div>
       </div>
     </section>

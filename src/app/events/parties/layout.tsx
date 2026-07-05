@@ -1,15 +1,15 @@
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Celebrations & Birthday Party Hall in Purnia',
-  description: 'Celebrate birthdays, anniversaries, and private parties at our celebration deck and party hall in Purnia. Customized themes and dining options.',
-  keywords: ['birthday party hall purnia', 'party venue purnia', 'celebration deck purnia', 'private party purnia', 'anniversary venue purnia', 'purnia party hall', 'birthday celebration purnia hotel', 'purnia celebration deck', 'party decoration purnia', 'purnia get together venue', 'friends gathering purnia', 'purnia private dining', 'pool party purnia', 'purnia event decoration', 'small party hall purnia'],
+  title: 'Birthday Party Hall in Purnea | Party Venue & Celebration Hall Near Bus Stand | Hotel Surya Bella Casa',
+  description: 'Best birthday party hall in Purnea at Hotel Surya Bella Casa near Bus Stand. Party venue for birthdays, anniversaries, private parties with customized themes, decoration and dining options.',
+  keywords: ['birthday party hall purnea', 'party venue purnea', 'celebration hall purnea', 'private party purnea', 'anniversary venue purnea', 'purnea party hall', 'birthday celebration purnea hotel', 'purnea celebration deck', 'party decoration purnea', 'get together venue purnea', 'friends gathering purnea', 'purnea private dining', 'pool party purnea', 'event decoration purnea', 'party hall near bus stand purnea'],
   alternates: {
     canonical: 'https://hotelsuryabellacasa.com/events/parties',
   },
   openGraph: {
-    title: 'Celebrations & Birthday Party Hall in Purnia | Hotel Surya Bella Casa',
-    description: 'Celebrate birthdays, anniversaries, and private parties at our celebration deck and party hall in Purnia. Customized themes and dining options.',
+    title: 'Birthday Party Hall in Purnea | Party Venue & Celebration Hall Near Bus Stand | Hotel Surya Bella Casa',
+    description: 'Best birthday party hall in Purnea near Bus Stand. Party venue for birthdays, anniversaries, private parties with customized themes & decoration.',
     url: 'https://hotelsuryabellacasa.com/events/parties',
     siteName: 'Hotel Surya Bella Casa',
     type: 'website',
@@ -24,9 +24,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Celebrations & Birthday Party Hall in Purnia | Hotel Surya Bella Casa',
-    description: 'Celebrate birthdays, anniversaries, and private parties at our celebration deck and party hall in Purnia. Customized themes and dining options.',
-    images: ['https://bookonelocal.in/cdn/IMG_3808.avif'],
+    title: 'Birthday Party Hall in Purnea | Party Venue Near Bus Stand',
+    description: 'Best birthday party hall in Purnea near Bus Stand. Party venue for birthdays, anniversaries, private parties at Hotel Surya Bella Casa.',
   }
 }
 

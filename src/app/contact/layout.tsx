@@ -1,9 +1,9 @@
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Contact Us — Purnia, Bihar | +91 9835923601',
-  description: 'Contact Hotel Surya Bella Casa in Purnia, Bihar. Call +91 9835923601 or email bellacasa561@gmail.com. Located at Suryalok Complex, Near Bus Stand, Purnia 854301.',
-  keywords: ['contact hotel surya bella casa', 'purnia hotel phone number', 'hotel near bus stand purnia', 'suryalok complex purnia', 'hotel purnia email', 'purnia hotel address', 'hotel purnia contact number', 'hotel surya bella casa location', 'purnia hotel map', 'hotel reception purnia', 'purnia hotel whatsapp number', 'hotel near vikass market contact', 'purnia hotel directions', 'hotel surya bella casa call'],
+  title: 'Contact Hotel Surya Bella Casa Purnea | Hotel Near Bus Stand | +91 9835923601',
+  description: 'Contact Hotel Surya Bella Casa in Purnea, Bihar. Call +91 9835923601. Located at Suryalok Complex, Opposite Vikass Market, Near Bus Stand, Purnea 854301. Best hotel near Purnea Bus Stand, near Railway Station.',
+  keywords: ['contact hotel surya bella casa purnea', 'hotel near bus stand purnea', 'hotel purnea phone number', 'hotel opp vikass market purnea', 'hotel surya bella casa address', 'purnea hotel contact number', 'hotel near railway station purnea', 'hotel in mariam nagar purnea', 'hotel near gulabbagh purnea', 'hotel near line bazar purnea', 'hotel near purnea junction', 'hotel near airport purnea', 'hotel near nh-31 purnea', 'hotel in bhatta bazar purnea', 'hotel surya bella casa whatsapp number'],
   alternates: {
     canonical: 'https://hotelsuryabellacasa.com/contact',
   },
@@ -18,8 +18,8 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: 'Contact Hotel Surya Bella Casa — Purnia, Bihar | +91 9835923601',
-    description: 'Contact Hotel Surya Bella Casa in Purnia, Bihar. Call +91 9835923601 or email bellacasa561@gmail.com. Located at Suryalok Complex, Near Bus Stand, Purnia 854301.',
+    title: 'Contact Hotel Surya Bella Casa Purnea | Hotel Near Bus Stand Near Railway Station | +91 9835923601',
+    description: 'Contact Hotel Surya Bella Casa in Purnea. Call +91 9835923601. Located at Suryalok Complex, Opposite Vikass Market, Near Bus Stand, Purnea 854301.',
     url: 'https://hotelsuryabellacasa.com/contact',
     siteName: 'Hotel Surya Bella Casa',
     type: 'website',
@@ -28,14 +28,14 @@ export const metadata: Metadata = {
         url: 'https://bookonelocal.in/cdn/IMG_3784.avif',
         width: 1200,
         height: 630,
-        alt: 'Contact Hotel Surya Bella Casa Purnia',
+        alt: 'Contact Hotel Surya Bella Casa Purnea - Hotel Near Bus Stand Near Railway Station',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Contact Hotel Surya Bella Casa — Purnia, Bihar | +91 9835923601',
-    description: 'Contact Hotel Surya Bella Casa in Purnia. Call +91 9835923601.',
+    title: 'Contact Hotel Surya Bella Casa Purnea | +91 9835923601',
+    description: 'Contact Hotel Surya Bella Casa in Purnea near Bus Stand and Railway Station. Call +91 9835923601.',
     images: ['https://bookonelocal.in/cdn/IMG_3784.avif'],
   },
 }

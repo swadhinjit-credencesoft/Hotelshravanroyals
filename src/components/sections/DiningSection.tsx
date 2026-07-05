@@ -124,11 +124,11 @@ export default function DiningSection() {
         <div className="text-center mb-20">
           <SectionLabel className="justify-center mb-5">Dining &amp; Local Flavors</SectionLabel>
           <h2 className="font-display text-4xl md:text-[52px] italic text-forest mb-6 leading-tight">
-            Convenient Dining Options
+            Rooftop Restaurant & Dining in Purnea Near Bus Stand
           </h2>
           <GoldDivider className="justify-center mb-6" />
           <p className="font-serif text-xl font-light text-taupe max-w-xl mx-auto leading-relaxed">
-            Enjoy premium pure vegetarian dining in Purnia. Relish partner deliveries or step out to savor the sweet shops and street delicacies of Vikass Market.
+            Best rooftop restaurant in Purnea near Bus Stand. Family restaurant serving Indian, Tandoor, Mughlai, Asian &amp; Continental cuisine. Enjoy multi cuisine dining at Hotel Surya Bella Casa.
           </p>
         </div>
 

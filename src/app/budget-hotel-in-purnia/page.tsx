@@ -14,8 +14,8 @@ const budgetAmenities: AmenityItem[] = [
 ];
 
 export const metadata = {
-  title: 'Budget Hotel in Purnia | Hotel Surya Bella Casa',
-  description: 'Looking for a budget hotel in Purnia? Hotel Surya Bella Casa offers comfortable AC and Non-AC rooms at affordable prices without compromising quality.',
+  title: 'Budget Hotel in Purnia | Affordable Hotel Near Bus Stand | Hotel Surya Bella Casa',
+  description: 'Looking for a budget hotel in Purnia? Hotel Surya Bella Casa offers affordable AC and Non-AC rooms near Bus Stand Purnea. Free WiFi, parking, room service. Best budget hotel near Vikass Market. Book direct for lowest rates.',
   alternates: {
     canonical: 'https://hotelsuryabellacasa.com/budget-hotel-in-purnia',
   },
@@ -25,17 +25,17 @@ export const metadata = {
     googleBot: { index: true, follow: true, 'max-image-preview': 'large', 'max-snippet': -1 },
   },
   openGraph: {
-    title: 'Budget Hotel in Purnia | Hotel Surya Bella Casa',
-    description: 'Looking for a budget hotel in Purnia? Hotel Surya Bella Casa offers comfortable AC and Non-AC rooms at affordable prices without compromising quality.',
+    title: 'Budget Hotel in Purnia | Affordable Rooms Near Bus Stand Purnea',
+    description: 'Best budget hotel near Bus Stand Purnea. AC/Non-AC rooms with free WiFi, parking, 24/7 service. Located opposite Vikass Market. Book affordable hotel in Purnia now.',
     url: 'https://hotelsuryabellacasa.com/budget-hotel-in-purnia',
     siteName: 'Hotel Surya Bella Casa',
     type: 'website',
-    images: [{ url: 'https://bookonelocal.in/cdn/IMG_3784.avif', width: 1200, height: 630, alt: 'Budget Hotel in Purnia - Hotel Surya Bella Casa' }],
+    images: [{ url: 'https://bookonelocal.in/cdn/IMG_3784.avif', width: 1200, height: 630, alt: 'Budget Hotel in Purnia - Hotel Surya Bella Casa Purnea - Affordable Hotel Near Bus Stand' }],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Budget Hotel in Purnia | Hotel Surya Bella Casa',
-    description: 'Comfortable AC and Non-AC rooms at affordable prices in Purnia.',
+    title: 'Budget Hotel in Purnia | Hotel Surya Bella Casa Purnea',
+    description: 'Affordable hotel rooms in Purnia near Bus Stand with free WiFi and parking. Best budget hotel near Vikass Market.',
     images: ['https://bookonelocal.in/cdn/IMG_3784.avif'],
   },
 };
@@ -45,9 +45,9 @@ export default function BudgetHotelLandingPage() {
     <main className="bg-cream min-h-screen">
       
       <CinematicHero 
-        label="Affordable Comfort"
-        title="Budget Hotel in Purnia"
-        tagline="Exceptional value for your money. Experience cozy beds, modern lift access, and continuous power backup at competitive prices."
+        label="Best Budget Hotel Near Bus Stand Purnea"
+        title="Budget Hotel in Purnia - Affordable Rooms with Free WiFi & Parking"
+        tagline="Looking for an affordable hotel in Purnia? Hotel Surya Bella Casa offers clean AC and Non-AC rooms near Bus Stand Purnea. Free WiFi, parking, lift access, and 24/7 room service at the best prices."
         image='https://bookonelocal.in/cdn/IMG_3784.avif'
       />
 

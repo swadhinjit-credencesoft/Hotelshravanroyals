@@ -1,15 +1,15 @@
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Destination Wedding Lawns & Banquet in Purnia',
-  description: 'Exchange your vows at Purnia\'s premier wedding venue. Exquisite lawns, catering, bridal suites, and banquet facilities at Hotel Surya Bella Casa.',
-  keywords: ['wedding venue purnia', 'destination wedding purnia', 'marriage hall purnia', 'wedding lawns purnia', 'banquet hall wedding purnia', 'purnia wedding planner', 'bridal suite purnia', 'wedding catering purnia', 'purnia marriage lawn', 'engagement venue purnia', 'wedding reception hall purnia', 'purnia wedding decoration', 'purnia wedding packages', 'hotel wedding purnia bihar', 'purnia court marriage venue'],
+  title: 'Best Wedding Venue in Purnea | Marriage Hall & Banquet Hall Near Bus Stand | Hotel Surya Bella Casa',
+  description: 'Best wedding venue in Purnea at Hotel Surya Bella Casa near Bus Stand. Marriage hall, wedding lawns, banquet hall, bridal suites, wedding catering. Destination wedding venue in Purnea, Bihar. Book now.',
+  keywords: ['wedding venue purnea', 'marriage hall purnea', 'wedding hall near bus stand purnea', 'banquet hall wedding purnea', 'destination wedding purnea', 'wedding lawns purnea', 'bridal suite purnea', 'wedding catering purnea', 'engagement venue purnea', 'wedding reception hall purnea', 'purnea marriage lawn', 'purnea wedding packages', 'best wedding venue in purnea', 'marriage hall near vikass market purnea', 'purnea court marriage venue'],
   alternates: {
     canonical: 'https://hotelsuryabellacasa.com/events/weddings',
   },
   openGraph: {
-    title: 'Destination Wedding Lawns & Banquet in Purnia | Hotel Surya Bella Casa',
-    description: 'Exchange your vows at Purnia\'s premier wedding venue. Exquisite lawns, catering, bridal suites, and banquet facilities at Hotel Surya Bella Casa.',
+    title: 'Best Wedding Venue in Purnea | Marriage Hall & Banquet Hall Near Bus Stand | Hotel Surya Bella Casa',
+    description: 'Best wedding venue in Purnea near Bus Stand. Marriage hall, wedding lawns, banquet hall, bridal suites, wedding catering at Hotel Surya Bella Casa.',
     url: 'https://hotelsuryabellacasa.com/events/weddings',
     siteName: 'Hotel Surya Bella Casa',
     type: 'website',
@@ -24,9 +24,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Destination Wedding Lawns & Banquet in Purnia | Hotel Surya Bella Casa',
-    description: 'Exchange your vows at Purnia\'s premier wedding venue. Exquisite lawns, catering, bridal suites, and banquet facilities at Hotel Surya Bella Casa.',
-    images: ['https://bookonelocal.in/cdn/IMG_3764.avif'],
+    title: 'Best Wedding Venue in Purnea | Marriage Hall Near Bus Stand | Hotel Surya Bella Casa',
+    description: 'Best wedding venue in Purnea near Bus Stand. Marriage hall, wedding lawns, bridal suites, banquet hall at Hotel Surya Bella Casa.',
   }
 }
 

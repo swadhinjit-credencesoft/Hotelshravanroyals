@@ -19,7 +19,7 @@ export default function ArtOfStaySection() {
            <div>
               <SectionLabel className="mb-6">Our Standards</SectionLabel>
               <h2 className="font-display text-4xl md:text-6xl italic text-forest mb-8 leading-tight">
-                The Art of <br /> the Stay
+                Best Family Hotel & Stay in Purnea
               </h2>
               <GoldDivider className="mb-10" />
               <p className="font-serif text-xl text-taupe italic mb-12 leading-relaxed">

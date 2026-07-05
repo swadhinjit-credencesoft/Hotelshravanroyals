@@ -14,8 +14,8 @@ const familyAmenities: AmenityItem[] = [
 ];
 
 export const metadata = {
-  title: 'Family Hotel in Purnia | Hotel Surya Bella Casa',
-  description: 'Looking for a safe, comfortable family hotel in Purnia? Hotel Surya Bella Casa offers spacious rooms, lift access, and peaceful environments for family stays.',
+  title: 'Family Hotel in Purnia | Safe Stay Near Bus Stand with Restaurant | Hotel Surya Bella Casa',
+  description: 'Looking for a safe family hotel in Purnia? Hotel Surya Bella Casa offers spacious family rooms, lift access, CCTV security, pure vegetarian environment near Bus Stand. Best family hotel near Vikass Market. Book direct.',
   alternates: {
     canonical: 'https://hotelsuryabellacasa.com/family-hotel-in-purnia',
   },
@@ -25,17 +25,17 @@ export const metadata = {
     googleBot: { index: true, follow: true, 'max-image-preview': 'large', 'max-snippet': -1 },
   },
   openGraph: {
-    title: 'Family Hotel in Purnia | Hotel Surya Bella Casa',
-    description: 'Looking for a safe, comfortable family hotel in Purnia? Hotel Surya Bella Casa offers spacious rooms, lift access, and peaceful environments for family stays.',
+    title: 'Family Hotel in Purnia | Safe Stay Near Bus Stand Purnea',
+    description: 'Best family hotel near Bus Stand Purnea. Spacious rooms, lift access, CCTV security, pure vegetarian. Book your family stay at Hotel Surya Bella Casa now.',
     url: 'https://hotelsuryabellacasa.com/family-hotel-in-purnia',
     siteName: 'Hotel Surya Bella Casa',
     type: 'website',
-    images: [{ url: 'https://bookonelocal.in/cdn/IMG_3815.avif', width: 1200, height: 630, alt: 'Family Hotel in Purnia - Hotel Surya Bella Casa' }],
+    images: [{ url: 'https://bookonelocal.in/cdn/IMG_3815.avif', width: 1200, height: 630, alt: 'Family Hotel in Purnia - Safe Stay Near Bus Stand - Hotel Surya Bella Casa Purnea' }],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Family Hotel in Purnia | Hotel Surya Bella Casa',
-    description: 'Spacious rooms, lift access, and peaceful environments for family stays in Purnia.',
+    title: 'Family Hotel in Purnia | Safe Family Stay Near Vikass Market',
+    description: 'Best family hotel in Purnia with spacious rooms, elevator access, CCTV security, pure vegetarian environment. Near Bus Stand and Vikass Market.',
     images: ['https://bookonelocal.in/cdn/IMG_3815.avif'],
   },
 };
@@ -45,9 +45,9 @@ export default function FamilyHotelLandingPage() {
     <main className="bg-cream min-h-screen">
       
       <CinematicHero 
-        label="Safe Family Travel"
-        title="Family Hotel in Purnia"
-        tagline="Create warm memories in comfort. We offer clean, secure accommodations designed with family safety and convenience in mind."
+        label="Best Family Hotel Near Bus Stand Purnea - Safe & Comfortable Stay"
+        title="Family Hotel in Purnia - Spacious Rooms with Lift & CCTV Security"
+        tagline="Planning a family stay in Purnia? Hotel Surya Bella Casa offers spacious family rooms with lift access, CCTV security, and pure vegetarian environment. Located near Bus Stand and Vikass Market. The safest family hotel in Purnea."
         image='https://bookonelocal.in/cdn/IMG_3764.avif'
       />
 

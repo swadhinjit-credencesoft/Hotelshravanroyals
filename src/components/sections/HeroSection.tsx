@@ -93,10 +93,26 @@ export default function HeroSection() {
       className="relative w-full overflow-hidden"
       style={{ height: '100svh', minHeight: '650px' }}
       role="banner"
-      aria-label="Hero section"
+      aria-label="Hotel Surya Bella Casa Purnea - Best Hotel Near Bus Stand"
+      itemScope
+      itemType="https://schema.org/Hotel"
       onMouseMove={handleMouseMove}
       onMouseLeave={() => { mouseX.set(0); mouseY.set(0) }}
     >
+      {/* Schema.org microdata */}
+      <meta itemProp="name" content="Hotel Surya Bella Casa" />
+      <meta itemProp="alternateName" content="Hotel Surya Bella Casa Purnea" />
+      <meta itemProp="description" content="Best Hotel in Purnea Near Bus Stand. Book direct for comfortable rooms with free WiFi, parking, rooftop restaurant, banquet hall, and conference hall." />
+      <meta itemProp="telephone" content="+919835923601" />
+      <meta itemProp="priceRange" content="₹₹" />
+      <meta itemProp="url" content="https://hotelsuryabellacasa.com" />
+      <div itemProp="address" itemScope itemType="https://schema.org/PostalAddress">
+        <meta itemProp="streetAddress" content="Suryalok Complex, Opposite Vikass Market, Near Bus Stand" />
+        <meta itemProp="addressLocality" content="Purnia" />
+        <meta itemProp="addressRegion" content="Bihar" />
+        <meta itemProp="postalCode" content="854301" />
+        <meta itemProp="addressCountry" content="IN" />
+      </div>
       {/* z-0: Background video (static, never re-mounts) */}
       <motion.div
         className="absolute inset-0"
@@ -229,14 +245,15 @@ export default function HeroSection() {
           </AnimatePresence>
 
           {/* CTA row */}
-          <div className="flex flex-wrap gap-5">
-          <Link href={slide.primaryHref}>
+          <div className="flex flex-wrap gap-3 md:gap-5">
+          <Link href={slide.primaryHref} itemProp="potentialAction" itemScope itemType="https://schema.org/ReserveAction">
   <motion.div
-    className="group inline-flex items-center gap-2 bg-gold text-[#1a1004] font-sans text-[12px] uppercase tracking-[0.16em] px-10 py-4 rounded-sm hover:bg-gold-light transition-all duration-300"
+    className="group inline-flex items-center gap-2 bg-gold text-[#1a1004] font-sans text-[11px] md:text-[12px] uppercase tracking-[0.16em] px-6 md:px-10 py-3 md:py-4 rounded-sm hover:bg-gold-light transition-all duration-300 shadow-lg shadow-gold/20"
     initial={{ opacity: 0, y: 20 }}
     animate={{ opacity: 1, y: 0 }}
     transition={{ duration: 0.6, delay: 1.7 }}
     whileHover={{ y: -2 }}
+    itemProp="name"
   >
     {slide.primaryCta}
     <ArrowRight
@@ -247,7 +264,7 @@ export default function HeroSection() {
 </Link>
            <Link href={slide.secondaryHref}>
   <motion.div
-    className="inline-flex items-center gap-2 border border-gold/50 text-ivory font-sans text-[12px] uppercase tracking-[0.16em] px-10 py-4 rounded-sm hover:bg-gold/10 hover:border-gold transition-all duration-300"
+    className="inline-flex items-center gap-2 border border-gold/50 text-ivory font-sans text-[11px] md:text-[12px] uppercase tracking-[0.16em] px-6 md:px-10 py-3 md:py-4 rounded-sm hover:bg-gold/10 hover:border-gold transition-all duration-300"
     initial={{ opacity: 0, y: 20 }}
     animate={{ opacity: 1, y: 0 }}
     transition={{ duration: 0.6, delay: 1.85 }}
@@ -276,12 +293,14 @@ export default function HeroSection() {
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.8, delay: 2.2 }}
       >
-        <div
-          className="hidden md:block border-t border-gold/15"
-          style={{ background: 'rgba(251,247,240,0.07)', backdropFilter: 'blur(16px)' }}
-        >
-          <div className="max-w-[1600px] mx-auto px-6 md:px-10 py-4">
-            <div className="flex items-center gap-0 md:gap-6">
+        <div className="hidden md:block border-t border-gold/15 bg-[#1a1004]/80 backdrop-blur-md">
+          <div className="max-w-[1600px] mx-auto px-6 md:px-10 py-3">
+            <div className="flex items-center gap-0 md:gap-4">
+              <div className="flex items-center gap-2 pr-4 border-r border-gold/20">
+                <span className="font-sans text-[10px] uppercase tracking-[0.15em] text-gold/80 whitespace-nowrap font-medium">Best Rate Guarantee</span>
+                <span className="font-sans text-[9px] text-ivory/50">|</span>
+                <span className="font-sans text-[9px] text-ivory/60 whitespace-nowrap">Book Direct & Save</span>
+              </div>
               <BookingField label="Check-In" type="date" value={checkIn} onChange={handleCheckInChange} min={todayString()} />
               <div className="hidden md:block w-px h-8 bg-gold/20" />
               <BookingField label="Check-Out" type="date" value={checkOut} onChange={handleCheckOutChange} inputRef={checkoutRef} min={checkIn ? addDays(checkIn, 1) : todayString()} />
@@ -289,10 +308,11 @@ export default function HeroSection() {
               <BookingField label="Guests" type="number" value={guests} onChange={setGuests} options={['1','2','3','4']} />
               <div className="hidden md:block w-px h-8 bg-gold/20" />
               <BookingField label="Rooms" type="number" value={rooms} onChange={setRooms} />
-              <div className="ml-auto pl-6">
+              <div className="ml-auto pl-4">
                 <button
                   onClick={openBooking}
-                  className="bg-gold text-[#1a1004] font-sans text-[12px] uppercase tracking-[0.15em] px-10 py-3.5 rounded-sm hover:bg-gold-light transition-colors whitespace-nowrap inline-block"
+                  className="bg-gold text-[#1a1004] font-sans text-[11px] uppercase tracking-[0.15em] px-8 py-3.5 rounded-sm hover:bg-gold-light transition-colors whitespace-nowrap inline-block font-bold shadow-lg shadow-gold/20 cursor-pointer"
+                  aria-label="Check Availability - Book Hotel in Purnea"
                 >
                   Check Availability
                 </button>
@@ -301,14 +321,15 @@ export default function HeroSection() {
           </div>
         </div>
 
-        {/* Mobile book button */}
-        <div className="md:hidden flex justify-center pb-6">
+        {/* Mobile book now button */}
+        <div className="md:hidden px-4 pb-4">
           <button
             onClick={() => {
               trackBookingEvent('booking_click', { source: 'hero_mobile' })
               openBooking()
             }}
-            className="bg-gold text-[#1a1004] font-sans text-[12px] uppercase tracking-[0.16em] px-10 py-4 rounded-full shadow-warm-lg"
+            className="w-full bg-gold text-[#1a1004] font-sans text-[13px] uppercase tracking-[0.18em] py-4 rounded-sm hover:bg-gold-light transition-all font-bold shadow-lg shadow-gold/30 cursor-pointer active:scale-[0.98]"
+            aria-label="Book Now - Hotel Surya Bella Casa Purnea"
           >
             Book Now
           </button>

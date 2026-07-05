@@ -7,18 +7,53 @@ import { Briefcase, Wifi, Presentation, Coffee, Target, Calendar } from 'lucide-
 import Link from 'next/link';
 
 export default function CorporatePage() {
-  const jsonLd = {
-    "@context": "https://schema.org",
-    "@type": "EventVenue",
-    "name": "Hotel Surya Bella Casa Corporate Hub",
-    "description": "Professional corporate retreat and offsite venue in Purnia with team building and tech facilities.",
-    "address": {
-      "@type": "PostalAddress",
-      "addressLocality": "Purnia",
-      "addressRegion": "Bihar",
-      "addressCountry": "IN"
+  const jsonLd = [
+    {
+      "@context": "https://schema.org",
+      "@type": "EventVenue",
+      "name": "Hotel Surya Bella Casa Conference Hall & Corporate Hub Purnea",
+      "description": "Best conference hall in Purnea near Bus Stand. Corporate event venue, meeting room, seminar hall for offsites, retreats and workshops.",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Suryalok Complex, Opposite Vikass Market, Near Bus Stand",
+        "addressLocality": "Purnea",
+        "addressRegion": "Bihar",
+        "postalCode": "854301",
+        "addressCountry": "IN"
+      },
+      "telephone": "+91 9835923601"
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Is there a conference hall in Purnea near Bus Stand?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, Hotel Surya Bella Casa has a conference hall in Purnea near Bus Stand with high-speed WiFi, projectors, and team-building facilities for up to 60 guests."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is the best corporate event venue in Purnea?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Hotel Surya Bella Casa is the best corporate event venue in Purnea with dedicated meeting rooms, seminar hall, and offsite retreat facilities near Bus Stand."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I host a business meeting in Purnea?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, Hotel Surya Bella Casa offers a professional business meeting room and conference hall in Purnea near Bus Stand for corporate events and workshops."
+          }
+        }
+      ]
     }
-  };
+  ];
 
   return (
     <main className="bg-cream min-h-screen">
@@ -29,9 +64,9 @@ export default function CorporatePage() {
       />
 
       <CinematicHero 
-        label="Corporate Retreats"
-        title="Strategy in Serenity"
-        tagline="Foster innovation and team spirit in a setting that inspires. Our corporate hub blends professional needs with nature."
+        label="Conference Hall in Purnea - Corporate Event Venue Near Bus Stand"
+        title="Conference Hall & Corporate Event Venue in Purnea - Meeting Rooms & Seminar Hall"
+        tagline="Looking for a conference hall in Purnea near Bus Stand? Hotel Surya Bella Casa offers corporate event venue, meeting room, seminar hall for offsites, retreats and business workshops. Best conference hall in Purnea."
         image='/images/exterior8.jpeg'
       />
 
@@ -69,7 +104,7 @@ export default function CorporatePage() {
               </a>
             </div>
             <div className="relative aspect-square">
-               <Image src='/images/room1.jpeg' alt="Corporate team meeting in a luxury nature resort" fill className="object-cover rounded-sm shadow-2xl" />
+               <Image src='/images/room1.jpeg' alt="Conference Hall in Purnea - Corporate Event Venue Near Bus Stand | Hotel Surya Bella Casa" fill className="object-cover rounded-sm shadow-2xl" />
             </div>
           </div>
 

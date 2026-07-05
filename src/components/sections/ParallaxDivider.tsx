@@ -47,7 +47,7 @@ export default function ParallaxDivider() {
       >
         <Image
           src='https://bookonelocal.in/cdn/IMG_3809.avif'
-          alt="Serene estate landscape at dusk"
+          alt="Hotel Surya Bella Casa Purnea - Best Hotel Near Bus Stand Purnea"
           fill
           className="object-cover"
           sizes="100vw"

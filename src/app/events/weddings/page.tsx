@@ -7,18 +7,53 @@ import { Heart, Users, Utensils, Camera, MapPin, Calendar } from 'lucide-react';
 import Link from 'next/link';
 
 export default function WeddingsPage() {
-  const jsonLd = {
-    "@context": "https://schema.org",
-    "@type": "EventVenue",
-    "name": "Hotel Surya Bella Casa Wedding Lawns",
-    "description": "Premium destination wedding venue in Purnia with forest views and bespoke catering.",
-    "address": {
-      "@type": "PostalAddress",
-      "addressLocality": "Purnia",
-      "addressRegion": "Bihar",
-      "addressCountry": "IN"
+  const jsonLd = [
+    {
+      "@context": "https://schema.org",
+      "@type": "EventVenue",
+      "name": "Hotel Surya Bella Casa Wedding Lawns & Banquet Hall Purnea",
+      "description": "Best wedding venue in Purnea near Bus Stand. Marriage hall, wedding lawns, banquet hall, bridal suites at Hotel Surya Bella Casa.",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Suryalok Complex, Opposite Vikass Market, Near Bus Stand",
+        "addressLocality": "Purnea",
+        "addressRegion": "Bihar",
+        "postalCode": "854301",
+        "addressCountry": "IN"
+      },
+      "telephone": "+91 9835923601"
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is the best wedding venue in Purnea?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Hotel Surya Bella Casa is the best wedding venue in Purnea near Bus Stand with wedding lawns, banquet hall, and bridal suites for up to 250 guests."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is there a marriage hall near Purnea Bus Stand?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, Hotel Surya Bella Casa has a marriage hall near Purnea Bus Stand with wedding lawns, banquet facilities, and bespoke catering for your special day."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How many guests can a wedding venue in Purnea accommodate?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Hotel Surya Bella Casa wedding venue in Purnea can accommodate up to 250 guests with customizable menus, decor, and planning services."
+          }
+        }
+      ]
     }
-  };
+  ];
 
   return (
     <main className="bg-cream min-h-screen">
@@ -29,9 +64,9 @@ export default function WeddingsPage() {
       />
 
       <CinematicHero 
-        label="Destination Weddings"
-        title="Begin Your Forever"
-        tagline="A magical setting for your most significant moments. Exchange vows surrounded by our warm hospitality."
+        label="Best Wedding Venue in Purnea - Marriage Hall Near Bus Stand"
+        title="Wedding Venue in Purnea - Banquet & Wedding Lawns"
+        tagline="Best wedding venue in Purnea near Bus Stand. Marriage hall, wedding lawns, banquet hall & bridal suites for your dream celebration."
         image='/images/exterior5.jpeg'
       />
 
@@ -69,7 +104,7 @@ export default function WeddingsPage() {
               </a>
             </div>
             <div className="relative aspect-square">
-               <Image src='/images/exterior6.jpeg' alt="Outdoor wedding setup at sunset" fill className="object-cover rounded-sm shadow-2xl" />
+               <Image src='/images/exterior6.jpeg' alt="Wedding Venue in Purnea - Marriage Hall Near Bus Stand | Hotel Surya Bella Casa" fill className="object-cover rounded-sm shadow-2xl" />
             </div>
           </div>
 

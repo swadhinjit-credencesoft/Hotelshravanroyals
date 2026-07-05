@@ -85,7 +85,7 @@ export default function RoomDetailContent({ room }: RoomDetailContentProps) {
                 <div className="relative aspect-[4/3] overflow-hidden border border-gold/10">
                    <Image 
                      src={roomImages[0]} 
-                     alt={`${room.name} detail 1`} 
+                     alt={`${room.name} at Hotel Surya Bella Casa Purnea - Best Room Near Bus Stand`} 
                      fill 
                      sizes="(max-width: 1024px) 100vw, 50vw"
                      className="object-cover"
@@ -96,7 +96,7 @@ export default function RoomDetailContent({ room }: RoomDetailContentProps) {
                      <div key={image} className="relative h-40 w-56 flex-shrink-0 overflow-hidden border border-gold/10">
                         <Image 
                           src={image} 
-                          alt={`${room.name} detail ${index + 2}`} 
+                          alt={`${room.name} - Hotel Surya Bella Casa Purnea Near Bus Stand`} 
                           fill 
                           sizes="224px"
                           className="object-cover"
@@ -122,7 +122,7 @@ export default function RoomDetailContent({ room }: RoomDetailContentProps) {
          <div className="absolute inset-0 opacity-10 pointer-events-none">
             <Image 
                src='/images/exterior4.jpeg' 
-               alt="Forest texture" 
+               alt="Hotel Surya Bella Casa Purnea - Best Hotel in Purnea Near Bus Stand" 
                fill 
                sizes="100vw"
                className="object-cover mix-blend-overlay"
