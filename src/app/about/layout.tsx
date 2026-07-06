@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'About Hotel Surya Bella Casa Purnea | Best Hotel Near Bus Stand & Vikass Market',
+  title: 'About Hotel Surya Bella Casa Purnea',
   description: 'About Hotel Surya Bella Casa Purnea — best hotel in Purnea near Bus Stand and Vikass Market. Established 2019. Family hotel, business hotel with free WiFi, parking, AC rooms, rooftop restaurant, banquet hall.',
   keywords: ['about hotel surya bella casa purnea', 'best hotel in purnea about', 'hotel near bus stand purnea story', 'purnea family hotel history', 'purnea business hotel', 'hotel opposite vikass market purnea', 'purnea hotel with rooftop restaurant', 'purnea hotel with banquet hall', 'purnea hotel free wifi parking', 'purnea accommodation best hotel', 'why choose hotel surya bella casa purnea', 'hotel purnea established 2019', 'purnea hotel overview about us', 'purnea hotel mission values', 'best hotel in purnea bihar'],
   alternates: {
@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: 'About Hotel Surya Bella Casa Purnea | Best Hotel Near Bus Stand & Vikass Market',
+    title: 'About Hotel Surya Bella Casa Purnea',
     description: 'About Hotel Surya Bella Casa Purnea — best hotel in Purnea near Bus Stand and Vikass Market. Family hotel, business hotel with free WiFi, parking, AC rooms, rooftop restaurant, banquet hall.',
     url: 'https://hotelsuryabellacasa.com/about',
     siteName: 'Hotel Surya Bella Casa',
@@ -34,7 +34,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'About Hotel Surya Bella Casa Purnea | Best Hotel Near Bus Stand',
+    title: 'About Hotel Surya Bella Casa Purnea',
     description: 'Best hotel in Purnea near Bus Stand & Vikass Market. Family hotel, business hotel, rooftop restaurant, banquet hall.',
     images: ['https://bookonelocal.in/cdn/IMG_3784.avif'],
   },

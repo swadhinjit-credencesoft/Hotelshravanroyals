@@ -14,7 +14,7 @@ const busStandAmenities: AmenityItem[] = [
 ];
 
 export const metadata = {
-  title: 'Hotel Near Purnia Bus Stand | Best Stay Opposite Vikass Market | Hotel Surya Bella Casa',
+  title: 'Hotel Near Purnia Bus Stand',
   description: 'Looking for a hotel near Purnia Bus Stand? Hotel Surya Bella Casa is located opposite Vikass Market, just 2 min from Bus Stand Purnea. Clean rooms, free WiFi, parking. Best hotel near Purnea Bus Stand. Book direct.',
   alternates: {
     canonical: 'https://hotelsuryabellacasa.com/hotel-near-purnia-bus-stand',
@@ -25,7 +25,7 @@ export const metadata = {
     googleBot: { index: true, follow: true, 'max-image-preview': 'large', 'max-snippet': -1 },
   },
   openGraph: {
-    title: 'Hotel Near Purnia Bus Stand | Best Hotel Opposite Vikass Market Purnea',
+    title: 'Hotel Near Purnia Bus Stand | Vikass Market Purnea',
     description: 'Best hotel near Purnea Bus Stand. Located opposite Vikass Market, 2 min walk from bus stand. Free WiFi, parking, AC rooms. Perfect for travelers. Book now.',
     url: 'https://hotelsuryabellacasa.com/hotel-near-purnia-bus-stand',
     siteName: 'Hotel Surya Bella Casa',
@@ -44,6 +44,21 @@ export default function PurniaBusStandLandingPage() {
   return (
     <main className="bg-cream min-h-screen">
       
+      {/* BreadcrumbList Schema */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://hotelsuryabellacasa.com" },
+              { "@type": "ListItem", "position": 2, "name": "Hotel Near Purnia Bus Stand", "item": "https://hotelsuryabellacasa.com/hotel-near-purnia-bus-stand" }
+            ]
+          })
+        }}
+      />
+
       <CinematicHero 
         label="Best Hotel Near Purnea Bus Stand & Opposite Vikass Market"
         title="Hotel Near Purnia Bus Stand - 2 Min Walk from Bus Terminal"

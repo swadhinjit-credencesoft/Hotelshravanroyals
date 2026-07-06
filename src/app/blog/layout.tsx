@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Purnea Travel Blog | Best Hotels, Restaurants & Places to Visit in Purnea | Hotel Surya Bella Casa',
+  title: 'Purnea Travel Blog | Hotels & Attractions',
   description: 'Purnea travel blog by Hotel Surya Bella Casa. Best hotels in Purnea, rooftop restaurant guide, wedding venues, places to visit, business travel guide. Tips for staying near Purnea Bus Stand.',
   keywords: ['purnea travel blog', 'best hotels in purnea', 'places to visit in purnea', 'top restaurants in purnea', 'business travel guide to purnea', 'wedding venues in purnea', 'hotels near purnea bus stand', 'weekend trip to purnea', 'tourist attractions near purnea', 'family stay in purnea', 'budget vs luxury hotels in purnea', 'things to do in purnea', 'purnea food guide', 'purnea sightseeing blog', 'purnea bihar travel guide'],
   alternates: {
@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: 'Purnea Travel Blog by Hotel Surya Bella Casa | Best Hotels, Restaurants & Places to Visit',
+    title: 'Purnea Travel Blog | Hotels & Attractions',
     description: 'Purnea travel blog by Hotel Surya Bella Casa. Best hotels in Purnea, rooftop restaurant guide, wedding venues, places to visit. Tips for staying near Purnea Bus Stand.',
     url: 'https://hotelsuryabellacasa.com/blog',
     siteName: 'Hotel Surya Bella Casa',
@@ -34,7 +34,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Purnea Travel Blog by Hotel Surya Bella Casa | Best Hotels & Places',
+    title: 'Purnea Travel Blog | Hotels & Attractions',
     description: 'Purnea travel blog - best hotels, rooftop restaurant guide, places to visit, wedding venues in Purnea.',
     images: ['https://bookonelocal.in/cdn/IMG_3815.avif'],
   },

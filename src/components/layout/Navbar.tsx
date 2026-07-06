@@ -14,11 +14,11 @@ const navLinks = [
   { label: 'Home', href: '/' },
   { label: 'Rooms', href: '/rooms' },
   // { label: 'Experiences', href: '/experiences' },
+  { label: 'Blog', href: '/blog' },
   { label: 'Events', href: '/events' },
   { label: 'Dining', href: '/dining' },
   { label: 'About', href: '/about' },
   { label: 'Contact', href: '/contact' },
-  // { label: 'Blog', href: '/blog' },
 ]
 
 export default function Navbar() {

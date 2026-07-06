@@ -1,6 +1,16 @@
+import type { Metadata } from 'next'
 import GallerySection from '@/components/sections/GallerySection'
 import SectionLabel from '@/components/ui/SectionLabel'
 import Image from 'next/image'
+import { siteConfig } from '@/data/site'
+
+export const metadata: Metadata = {
+  title: 'Photo Gallery & Virtual Tour | Hotel Surya Bella Casa Purnea',
+  description: 'Browse high-resolution photos, guest images, and a video walkthrough of Hotel Surya Bella Casa in Purnea. See our rooms, dining, and facilities near Bus Stand.',
+  alternates: {
+    canonical: 'https://hotelsuryabellacasa.com/gallery',
+  },
+}
 
 export default function GalleryPage() {
   return (
@@ -17,8 +27,8 @@ export default function GalleryPage() {
             "name": "Hotel Surya Bella Casa Photo Collection",
             "description": "High-resolution photos of our clean accommodations, dining options, and hospitable atmosphere in Purnia, Bihar.",
             "image": [
-              '/images/room1.jpeg',
-              '/images/room2.jpeg'
+              "https://hotelsuryabellacasa.com/images/room1.jpeg",
+              "https://hotelsuryabellacasa.com/images/room2.jpeg"
             ]
           })
         }}
@@ -33,20 +43,22 @@ export default function GalleryPage() {
 
       {/* Video Walkthrough Section */}
       <section className="py-24 bg-forest text-ivory text-center border-y border-gold/10">
-        <div className="max-w-[1000px] mx-auto px-6">
+        <div className="max-w-[600px] mx-auto px-6">
           <SectionLabel light className="justify-center mb-6">Virtual Tour</SectionLabel>
-          <h2 className="font-display text-4xl italic mb-12">Experience Hotel Surya Bella Casa</h2>
-          <div className="relative aspect-video w-full border border-gold/20 shadow-warm-lg">
-             <iframe 
-               width="100%" 
-               height="100%" 
-               src="https://www.youtube.com/embed/REDACTED?autoplay=0&controls=1" 
-               title="Hotel Surya Bella Casa Resort Walkthrough" 
-               frameBorder="0" 
-               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-               allowFullScreen
-             ></iframe>
-          </div>
+          <h2 className="font-display text-4xl italic mb-6">Experience Hotel Surya Bella Casa</h2>
+          <p className="font-serif text-ivory/70 mb-10 leading-relaxed">
+            Watch our complete hotel walkthrough on YouTube — from our elegantly appointed rooms
+            to our rooftop dining and banquet spaces.
+          </p>
+          <a
+            href={siteConfig.social.youtube}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-3 bg-red-600 hover:bg-red-700 text-white font-sans text-xs uppercase tracking-[0.2em] px-8 py-4 rounded-sm transition-all shadow-lg group"
+          >
+            <svg className="w-5 h-5 group-hover:scale-110 transition-transform" viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+            Watch on YouTube
+          </a>
         </div>
       </section>
 

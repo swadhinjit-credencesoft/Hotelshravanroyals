@@ -118,7 +118,7 @@ export default function TestimonialsSection() {
           </div>
           <p className="font-serif text-lg italic text-forest mb-2">4.5 out of 5 stars</p>
           <a
-            href="https://www.google.com/maps/place/Suryalok+Complex,+Purnia,+Bihar+854301"
+            href="https://www.google.com/travel/search?q=hotel%20surya%20bella%20casa%20review&g2lb=4965990%2C72471280%2C72560029%2C72573224%2C72647020%2C72686036%2C72803964%2C72882230%2C73064764%2C121529350%2C121747502%2C121762713&hl=en-IN&gl=in&ssta=1&ts=CAEaRwopEicyJTB4MzllZmY5ZGQ0Y2U2YjBhZjoweDdiZmM4YjdkMGVmNTA5ZjISGhIUCgcI6g8QBxgHEgcI6g8QBxgIGAEyAhAA&qs=CAEyE0Nnb0k4cFBVOTlEdm92NTdFQUU4AkIJCfIJ9Q59i_x7QgkJ8gn1Dn2L_Hs&ap=ugEHcmV2aWV3cw&ictx=111&ved=0CAAQ5JsGahcKEwjwtKX11L6VAxUAAAAAHQAAAAAQCw"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 font-sans text-[10px] uppercase tracking-[0.2em] text-gold hover:text-forest transition-colors border border-gold/30 px-6 py-3 rounded-sm mt-2"

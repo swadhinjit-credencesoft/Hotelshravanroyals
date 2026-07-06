@@ -101,6 +101,39 @@ export default function DiningPage() {
         </div>
       </section>
 
+      {/* Restaurant Content */}
+      <section className="py-16 bg-white border-t border-gold/10">
+        <div className="max-w-[1000px] mx-auto px-6 md:px-10">
+          <h2 className="font-display text-3xl md:text-4xl italic text-forest mb-8 text-center">
+            Rooftop Restaurant & Dining in Purnea Near Bus Stand
+          </h2>
+          <div className="font-sans text-base text-taupe/80 space-y-5 leading-loose max-w-3xl mx-auto">
+            <p>
+              <strong>Hotel Surya Bella Casa</strong> offers one of the finest rooftop dining experiences in Purnia, 
+              located just steps from the main <strong>Bus Stand</strong> and opposite <strong>Vikass Market</strong>. 
+              Our multi-cuisine restaurant serves a wide array of Indian, Tandoor, Mughlai, Asian, and Continental 
+              dishes prepared by experienced chefs.
+            </p>
+            <p>
+              Whether you are looking for a family dinner, a business lunch, or a romantic evening, 
+              our rooftop setting provides a relaxed atmosphere with views of the Purnia cityscape. 
+              We take pride in using fresh, locally sourced ingredients to craft every dish.
+            </p>
+            <p>
+              Special <strong>Fish and Mutton</strong> dishes are prepared upon advance request to ensure 
+              maximum freshness and quality. Our chefs are happy to customize spice levels and preparations 
+              according to your preferences. For guests who prefer pure vegetarian meals, we offer an 
+              extensive selection of vegetarian Indian and continental options.
+            </p>
+            <p>
+              <strong>In-room dining</strong> is also available for guests who prefer the comfort of their rooms. 
+              Each room at Hotel Surya Bella Casa is equipped with a hot water kettle, complimentary tea/coffee 
+              supplies, and a mini-fridge for your convenience.
+            </p>
+          </div>
+        </div>
+      </section>
+
       {/* Cuisine Cards */}
       <section className="py-12 bg-cream overflow-hidden">
         <div className="max-w-[1600px] mx-auto px-6 md:px-10">

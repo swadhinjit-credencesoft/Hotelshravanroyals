@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Places to Visit in Purnea | Nearby Attractions & Things to Do | Hotel Surya Bella Casa',
+  title: 'Places to Visit in Purnea | Nearby Attractions',
   description: 'Explore places to visit in Purnea and nearby attractions near Hotel Surya Bella Casa. Maa Puran Devi Temple, Purnea Court, Polytechnic, shopping markets. Best things to do in Purnea, Bihar.',
   keywords: ['places to visit in purnea', 'things to do in purnea', 'purnea nearby attractions', 'maa puran devi temple purnea', 'purnea court', 'district hospital purnea', 'polytechnic purnea', 'shopping market purnea', 'bus terminal purnea', 'purnea sightseeing', 'purnea city tour', 'purnea local markets', 'weekend activities purnea', 'purnea bihar tourism', 'hotel near attractions purnea'],
   alternates: {
@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: 'Places to Visit in Purnea | Nearby Attractions & Things to Do | Hotel Surya Bella Casa',
+    title: 'Places to Visit in Purnea | Nearby Attractions',
     description: 'Explore places to visit in Purnea and nearby attractions near Hotel Surya Bella Casa. Maa Puran Devi Temple, shopping markets, and more. Best things to do in Purnea.',
     url: 'https://hotelsuryabellacasa.com/experiences',
     siteName: 'Hotel Surya Bella Casa',
@@ -34,7 +34,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Places to Visit in Purnea | Nearby Attractions | Hotel Surya Bella Casa',
+    title: 'Places to Visit in Purnea | Nearby Attractions',
     description: 'Explore places to visit in Purnea near Hotel Surya Bella Casa. Temples, markets, attractions near Bus Stand.',
     images: ['https://bookonelocal.in/cdn/IMG_3809.avif'],
   },

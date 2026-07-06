@@ -1,9 +1,17 @@
-'use client';
-
+import type { Metadata } from 'next'
 import SectionLabel from '@/components/ui/SectionLabel';
 import GoldDivider from '@/components/ui/GoldDivider';
 import { siteConfig } from '@/data/site';
 import { MapPin, Phone, Mail, Train, Car, MessageCircle } from 'lucide-react';
+
+export const metadata: Metadata = {
+  title: 'Contact Hotel Surya Bella Casa Purnea',
+  description:
+    'Contact Hotel Surya Bella Casa in Purnea. Call +91 9835923601, WhatsApp, email, or visit us opposite Vikass Market near Bus Stand. Get directions from Patna, Siliguri, and Purnea Junction.',
+  alternates: {
+    canonical: 'https://hotelsuryabellacasa.com/contact',
+  },
+}
 
 export default function ContactPage() {
   return (
@@ -27,7 +35,7 @@ export default function ContactPage() {
             "@context": "https://schema.org",
             "@type": "Hotel",
             "name": "Hotel Surya Bella Casa",
-            "image": '/images/room2.jpeg',
+            "image": "https://hotelsuryabellacasa.com/images/room2.jpeg",
             "address": {
               "@type": "PostalAddress",
               "streetAddress": "Suryalok Complex, Opposite Vikass Market, Near Bus Stand",

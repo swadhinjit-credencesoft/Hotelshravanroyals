@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Best Banquet Hall in Purnea | Wedding Hall & Event Venue Near Bus Stand | Hotel Surya Bella Casa',
+  title: 'Banquet Hall & Events Purnea | Near Bus Stand',
   description: 'Best banquet hall in Purnea at Hotel Surya Bella Casa near Bus Stand. Wedding hall, marriage hall, conference hall, birthday party hall near Vikass Market. Host weddings, corporate events & parties. Book now.',
   keywords: ['banquet hall purnea', 'wedding hall purnea', 'marriage hall purnea', 'event venue purnea', 'party hall purnea', 'conference hall purnea', 'best banquet hall in purnea', 'wedding venue purnea', 'marriage hall near bus stand purnea', 'birthday party hall purnea', 'corporate event venue purnea', 'reception hall purnea', 'seminar hall purnea', 'event hall near vikass market purnea', 'celebration venue purnea'],
   alternates: {
@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: 'Best Banquet Hall in Purnea | Wedding Hall & Event Venue Near Bus Stand | Hotel Surya Bella Casa',
+    title: 'Banquet Hall & Events Purnea | Near Bus Stand',
     description: 'Best banquet hall in Purnea at Hotel Surya Bella Casa near Bus Stand. Wedding hall, marriage hall, conference hall, birthday party hall. Host weddings, corporate events & parties in Purnea.',
     url: 'https://hotelsuryabellacasa.com/events',
     siteName: 'Hotel Surya Bella Casa',
@@ -34,7 +34,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Best Banquet Hall in Purnea | Wedding Hall Near Bus Stand | Hotel Surya Bella Casa',
+    title: 'Banquet Hall & Events Purnea | Near Bus Stand',
     description: 'Best banquet hall in Purnea at Hotel Surya Bella Casa near Bus Stand. Wedding, marriage, conference & party halls. Book now.',
     images: ['https://bookonelocal.in/cdn/IMG_3809.avif'],
   },

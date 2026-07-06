@@ -66,13 +66,72 @@ export default function Home() {
                   { "@type": "LocationFeatureSpecification", "name": "Flat Screen TV", "value": true },
                   { "@type": "LocationFeatureSpecification", "name": "Power Backup", "value": true }
                 ],
-                "hasMap": "https://www.google.com/maps/place/Suryalok+Complex,+Purnia,+Bihar+854301",
+                "hasMap": "https://www.google.com/maps/place/?cid=8931275976043074034",
                 "currenciesAccepted": "INR",
                 "paymentAccepted": "Cash, Credit Card, UPI",
                 "sameAs": [
                   "https://www.instagram.com/hotel.bellacasaa/",
-                  "https://www.facebook.com/hotelsuryabellacasa"
-                ]
+                  "https://www.facebook.com/hotelsuryabellacasa",
+                  "https://www.youtube.com/@hotelsuryabellacasa",
+                  "https://www.google.com/maps/place/?cid=8931275976043074034"
+                ],
+                "aggregateRating": {
+                  "@type": "AggregateRating",
+                  "ratingValue": "4.5",
+                  "bestRating": "5",
+                  "worstRating": "1",
+                  "ratingCount": "120",
+                  "reviewCount": "120"
+                },
+                "contactPoint": {
+                  "@type": "ContactPoint",
+                  "telephone": "+919835923601",
+                  "contactType": "reservations",
+                  "availableLanguage": ["Hindi", "English"],
+                  "areaServed": "IN"
+                },
+                "hasOfferCatalog": {
+                  "@type": "OfferCatalog",
+                  "name": "Room Categories",
+                  "itemListElement": [
+                    {
+                      "@type": "Offer",
+                      "itemOffered": {
+                        "@type": "Product",
+                        "name": "Super Deluxe AC Room",
+                        "description": "Premium spacious room with AC, flat-screen TV, geyser, and modern amenities",
+                        "offers": { "@type": "Offer", "price": "2700", "priceCurrency": "INR" }
+                      }
+                    },
+                    {
+                      "@type": "Offer",
+                      "itemOffered": {
+                        "@type": "Product",
+                        "name": "Deluxe AC Room",
+                        "description": "Air-conditioned room with cozy bedding and essential amenities",
+                        "offers": { "@type": "Offer", "price": "2100", "priceCurrency": "INR" }
+                      }
+                    },
+                    {
+                      "@type": "Offer",
+                      "itemOffered": {
+                        "@type": "Product",
+                        "name": "Deluxe Non-AC Room",
+                        "description": "Budget-friendly room with comfortable bedding and good ventilation",
+                        "offers": { "@type": "Offer", "price": "1500", "priceCurrency": "INR" }
+                      }
+                    },
+                    {
+                      "@type": "Offer",
+                      "itemOffered": {
+                        "@type": "Product",
+                        "name": "Standard Non-AC Room",
+                        "description": "Compact room with essential facilities and natural airflow",
+                        "offers": { "@type": "Offer", "price": "1200", "priceCurrency": "INR" }
+                      }
+                    }
+                  ]
+                }
               },
               {
                 "@type": "LocalBusiness",
@@ -205,6 +264,23 @@ export default function Home() {
                 }
               }
             ]
+          })
+        }}
+      />
+
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "VideoObject",
+            "name": "Hotel Surya Bella Casa Purnea - Virtual Tour",
+            "description": "Video tour of Hotel Surya Bella Casa, best hotel in Purnea near Bus Stand and Vikass Market. See rooms, dining, and facilities.",
+            "thumbnailUrl": "https://bookonelocal.in/cdn/IMG_3815.avif",
+            "contentUrl": "https://bookonelocal.in/cdn/website-home-video.mp4",
+            "embedUrl": "https://hotelsuryabellacasa.com",
+            "uploadDate": "2024-01-01",
+            "duration": "PT30S"
           })
         }}
       />

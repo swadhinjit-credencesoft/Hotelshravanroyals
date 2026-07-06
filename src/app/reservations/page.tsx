@@ -227,6 +227,20 @@ function ReservationsContent() {
 export default function ReservationsPage() {
   return (
     <main className="bg-cream min-h-screen">
+      {/* BreadcrumbList Schema */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://hotelsuryabellacasa.com" },
+              { "@type": "ListItem", "position": 2, "name": "Reservations", "item": "https://hotelsuryabellacasa.com/reservations" }
+            ]
+          })
+        }}
+      />
       <div className="pt-32 pb-32 px-6 md:px-10 max-w-[1600px] mx-auto">
         <Suspense fallback={
           <div className="max-w-5xl mx-auto animate-pulse space-y-8">

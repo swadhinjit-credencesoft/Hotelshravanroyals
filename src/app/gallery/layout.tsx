@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Hotel Surya Bella Casa Purnea Photos | Deluxe Room, Banquet Hall, Rooftop Restaurant Gallery',
+  title: 'Hotel Surya Bella Casa Photo Gallery',
   description: 'Browse photos of Hotel Surya Bella Casa Purnea near Bus Stand. See deluxe room images, banquet hall, rooftop restaurant, lobby, exterior. Best hotel in Purnea photos and gallery.',
   keywords: ['hotel surya bella casa purnea photos', 'deluxe room in purnea images', 'banquet hall purnea photos', 'rooftop restaurant purnea images', 'best hotel in purnea gallery', 'hotel near bus stand purnea photos', 'purnea hotel exterior images', 'hotel lobby purnea images', 'purnea hotel room photos gallery', 'ac rooms purnea images', 'family room purnea photos', 'hotel reception purnea pictures', 'hotel opposite vikass market photos', 'purnea hotel facilities gallery', 'hotel surya bella casa images'],
   alternates: {
@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: 'Hotel Surya Bella Casa Purnea Photos | Deluxe Room, Banquet Hall, Rooftop Restaurant Gallery',
+    title: 'Hotel Surya Bella Casa Photo Gallery',
     description: 'Browse photos of Hotel Surya Bella Casa Purnea near Bus Stand. Deluxe room, banquet hall, rooftop restaurant, exterior. Best hotel in Purnea gallery.',
     url: 'https://hotelsuryabellacasa.com/gallery',
     siteName: 'Hotel Surya Bella Casa',
@@ -34,7 +34,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Hotel Surya Bella Casa Purnea Photos | Deluxe Room Gallery | Hotel Near Bus Stand',
+    title: 'Hotel Surya Bella Casa Photo Gallery',
     description: 'Browse photos of Hotel Surya Bella Casa Purnea near Bus Stand. Deluxe room, banquet hall, rooftop restaurant gallery.',
     images: ['https://bookonelocal.in/cdn/IMG_3764.avif'],
   },

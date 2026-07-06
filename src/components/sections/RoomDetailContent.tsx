@@ -92,7 +92,7 @@ export default function RoomDetailContent({ room }: RoomDetailContentProps) {
                    />
                 </div>
                 <div className="flex gap-4 overflow-x-auto pb-2">
-                   {roomImages.slice(1).map((image, index) => (
+                   {roomImages.slice(1).map((image) => (
                      <div key={image} className="relative h-40 w-56 flex-shrink-0 overflow-hidden border border-gold/10">
                         <Image 
                           src={image} 

@@ -36,10 +36,11 @@ import { siteConfig } from '@/data/site'
 
 const quickLinks = [
   { label: 'Home', href: '/' },
-  { label: 'About', href: '/about' },
   { label: 'Rooms', href: '/rooms' },
+  { label: 'Blog', href: '/blog' },
   { label: 'Dining', href: '/dining' },
   { label: 'Events', href: '/events' },
+  { label: 'About', href: '/about' },
   { label: 'Contact', href: '/contact' },
 ]
 

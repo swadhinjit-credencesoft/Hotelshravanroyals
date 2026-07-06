@@ -33,12 +33,12 @@ export const metadata: Metadata = {
   metadataBase: new URL('https://hotelsuryabellacasa.com'),
 
   title: {
-    default: 'Hotel Surya Bella Casa Purnea | Best Hotel Near Bus Stand Purnea | Luxury Rooms & Rooftop Restaurant',
+    default: 'Hotel Surya Bella Casa Purnea | Best Near Bus Stand & Vikass Market',
     template: '%s | Hotel Surya Bella Casa Purnea',
   },
 
   description:
-    'Hotel Surya Bella Casa offers comfortable rooms with free WiFi, parking, rooftop restaurant and banquet hall near Bus Stand Purnea. The best hotel in Purnea, Bihar. Book direct for the best rates.',
+    'Book Hotel Surya Bella Casa in Purnea near Bus Stand ✓ Free WiFi & Parking ✓ Rooftop Restaurant ✓ Banquet Hall ✓ 4.5★ Guest Rating. Best hotel in Purnia, Bihar. Book Direct & Save!',
 
   icons: {
     icon: [
@@ -195,6 +195,86 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <meta name="theme-color" content="#FBF7F0" />
+        <link rel="preconnect" href="https://bookone.io" />
+        <link rel="preconnect" href="https://bookonelocal.in" />
+        <link rel="dns-prefetch" href="https://bookone.io" />
+        <link rel="dns-prefetch" href="https://bookonelocal.in" />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "WebSite",
+              "@id": "https://hotelsuryabellacasa.com/#website",
+              "url": "https://hotelsuryabellacasa.com",
+              "name": "Hotel Surya Bella Casa Purnea",
+              "description": "Best hotel in Purnea near Bus Stand. Book comfortable rooms with free WiFi, parking, rooftop restaurant. Hotel Surya Bella Casa, Purnia, Bihar.",
+              "potentialAction": {
+                "@type": "SearchAction",
+                "target": {
+                  "@type": "EntryPoint",
+                  "urlTemplate": "https://hotelsuryabellacasa.com/?s={search_term_string}"
+                },
+                "query-input": "required name=search_term_string"
+              }
+            })
+          }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Hotel",
+              "@id": "https://hotelsuryabellacasa.com/#hotel",
+              "name": "Hotel Surya Bella Casa",
+              "description": "Best hotel in Purnea near Bus Stand. Book comfortable rooms with free WiFi, parking, rooftop restaurant. Hotel Surya Bella Casa, Purnia, Bihar.",
+              "url": "https://hotelsuryabellacasa.com",
+              "telephone": "+919835923601",
+              "email": "reservations@hotelsuryabellacasa.com",
+              "image": "https://bookonelocal.in/cdn/IMG_3815.avif",
+              "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "Suryalok Complex, Opposite Vikass Market, Near Bus Stand",
+                "addressLocality": "Purnea",
+                "addressRegion": "Bihar",
+                "postalCode": "854301",
+                "addressCountry": "IN"
+              },
+              "geo": {
+                "@type": "GeoCoordinates",
+                "latitude": 25.7771,
+                "longitude": 87.4753
+              },
+              "hasMap": "https://www.google.com/maps/place/?cid=8931275976043074034",
+              "sameAs": [
+                "https://www.google.com/maps/place/?cid=8931275976043074034"
+              ],
+              "priceRange": "₹1,200 - ₹2,700",
+              "aggregateRating": {
+                "@type": "AggregateRating",
+                "ratingValue": "4.5",
+                "reviewCount": "120",
+                "bestRating": "5"
+              },
+              "contactPoint": {
+                "@type": "ContactPoint",
+                "telephone": "+919835923601",
+                "contactType": "reservations",
+                "availableLanguage": ["Hindi", "English"]
+              },
+              "openingHoursSpecification": [
+                { "@type": "OpeningHoursSpecification", "dayOfWeek": "Monday", "opens": "00:00", "closes": "23:59" },
+                { "@type": "OpeningHoursSpecification", "dayOfWeek": "Tuesday", "opens": "00:00", "closes": "23:59" },
+                { "@type": "OpeningHoursSpecification", "dayOfWeek": "Wednesday", "opens": "00:00", "closes": "23:59" },
+                { "@type": "OpeningHoursSpecification", "dayOfWeek": "Thursday", "opens": "00:00", "closes": "23:59" },
+                { "@type": "OpeningHoursSpecification", "dayOfWeek": "Friday", "opens": "00:00", "closes": "23:59" },
+                { "@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "00:00", "closes": "23:59" },
+                { "@type": "OpeningHoursSpecification", "dayOfWeek": "Sunday", "opens": "00:00", "closes": "23:59" }
+              ]
+            })
+          }}
+        />
         {/* Google tag (gtag.js) */}
         <Script
           async
@@ -286,11 +366,6 @@ export default function RootLayout({
             </div>
           </div>
         </div>
-      {/* Preconnect to external domains */}
-      <link rel="preconnect" href="https://bookonelocal.in" />
-      <link rel="preconnect" href="https://bookone.io" />
-      <link rel="dns-prefetch" href="https://bookonelocal.in" />
-      <link rel="dns-prefetch" href="https://bookone.io" />
       {/* Preload hero poster image */}
       <link rel="preload" href="https://bookonelocal.in/cdn/IMG_3815.avif" as="image" fetchPriority="high" />
       </body>

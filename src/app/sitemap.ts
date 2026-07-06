@@ -28,12 +28,6 @@ const STATIC_ROUTES: MetadataRoute.Sitemap = [
     priority: 0.9,
   },
   {
-    url: `${BASE_URL}/reservations`,
-    lastModified: TODAY,
-    changeFrequency: 'weekly',
-    priority: 0.9,
-  },
-  {
     url: `${BASE_URL}/dining`,
     lastModified: TODAY,
     changeFrequency: 'monthly',
@@ -135,6 +129,60 @@ const STATIC_ROUTES: MetadataRoute.Sitemap = [
     lastModified: TODAY,
     changeFrequency: 'monthly',
     priority: 0.9,
+  },
+  {
+    url: `${BASE_URL}/faq`,
+    lastModified: TODAY,
+    changeFrequency: 'monthly',
+    priority: 0.8,
+  },
+  {
+    url: `${BASE_URL}/reviews`,
+    lastModified: TODAY,
+    changeFrequency: 'monthly',
+    priority: 0.8,
+  },
+  {
+    url: `${BASE_URL}/blog/best-hotels-in-purnea-near-bus-stand`,
+    lastModified: TODAY,
+    changeFrequency: 'monthly',
+    priority: 0.7,
+  },
+  {
+    url: `${BASE_URL}/blog/rooftop-restaurant-in-purnea`,
+    lastModified: TODAY,
+    changeFrequency: 'monthly',
+    priority: 0.7,
+  },
+  {
+    url: `${BASE_URL}/blog/places-to-visit-in-purnea`,
+    lastModified: TODAY,
+    changeFrequency: 'monthly',
+    priority: 0.7,
+  },
+  {
+    url: `${BASE_URL}/blog/banquet-hall-wedding-venue-in-purnea`,
+    lastModified: TODAY,
+    changeFrequency: 'monthly',
+    priority: 0.7,
+  },
+  {
+    url: `${BASE_URL}/blog/business-hotel-in-purnea`,
+    lastModified: TODAY,
+    changeFrequency: 'monthly',
+    priority: 0.7,
+  },
+  {
+    url: `${BASE_URL}/blog/family-hotel-in-purnea`,
+    lastModified: TODAY,
+    changeFrequency: 'monthly',
+    priority: 0.7,
+  },
+  {
+    url: `${BASE_URL}/how-to-reach`,
+    lastModified: TODAY,
+    changeFrequency: 'monthly',
+    priority: 0.8,
   },
   // Legal pages
   {

@@ -14,8 +14,8 @@ const blogPosts = [
     excerpt: 'Looking for the best hotel in Purnea near Bus Stand? Compare deluxe AC rooms, budget stays, family rooms, and luxury options at Hotel Surya Bella Casa.',
     date: 'Mar 15, 2026',
     category: 'Hotel Guide',
-    image: '/blog1.png',
-    link: '/rooms',
+    image: 'https://bookonelocal.in/cdn/IMG_3815.avif',
+    link: '/blog/best-hotels-in-purnea-near-bus-stand',
   },
   {
     id: 'b2',
@@ -23,8 +23,8 @@ const blogPosts = [
     excerpt: 'Discover the best rooftop restaurant in Purnea near Bus Stand. Multi cuisine dining at Hotel Surya Bella Casa — Indian, Tandoor, Mughlai, Asian & Continental.',
     date: 'Feb 20, 2026',
     category: 'Restaurant & Dining',
-    image: '/images/exterior7.jpeg',
-    link: '/dining',
+    image: 'https://bookonelocal.in/cdn/IMG_3739.avif',
+    link: '/blog/rooftop-restaurant-in-purnea',
   },
   {
     id: 'b3',
@@ -32,8 +32,8 @@ const blogPosts = [
     excerpt: 'Plan your wedding at the best banquet hall in Purnea near Bus Stand. Wedding venue, marriage hall, conference hall for events and parties at Hotel Surya Bella Casa.',
     date: 'Jan 10, 2026',
     category: 'Events & Weddings',
-    image: '/images/exterior8.jpeg',
-    link: '/events',
+    image: 'https://bookonelocal.in/cdn/IMG_3766.avif',
+    link: '/blog/banquet-hall-wedding-venue-in-purnea',
   },
   {
     id: 'b4',
@@ -41,8 +41,8 @@ const blogPosts = [
     excerpt: 'Best business hotel in Purnea near Bus Stand with conference hall, meeting room, high-speed WiFi. Ideal for corporate travelers and office visitors.',
     date: 'Dec 5, 2025',
     category: 'Business Travel',
-    image: '/images/exterior.jpeg',
-    link: '/business-hotel-in-purnia',
+    image: 'https://bookonelocal.in/cdn/IMG_3703.avif',
+    link: '/blog/business-hotel-in-purnea',
   },
   {
     id: 'b5',
@@ -50,8 +50,8 @@ const blogPosts = [
     excerpt: 'Best family hotel in Purnea near Bus Stand and Vikass Market. Spacious family rooms, safe environment, elevator access, 24/7 staff assistance.',
     date: 'Nov 18, 2025',
     category: 'Family Stay',
-    image: '/images/exterior3.jpeg',
-    link: '/family-hotel-in-purnia',
+    image: 'https://bookonelocal.in/cdn/IMG_3701.avif',
+    link: '/blog/family-hotel-in-purnea',
   },
   {
     id: 'b6',
@@ -59,8 +59,8 @@ const blogPosts = [
     excerpt: 'Explore places to visit in Purnea near Hotel Surya Bella Casa. Maa Puran Devi Temple, Purnea Court, shopping markets, and local attractions near Bus Stand.',
     date: 'Oct 22, 2025',
     category: 'Travel Guide',
-    image: '/images/exterior5.jpeg',
-    link: '/experiences',
+    image: '/purneacity.jpg',
+    link: '/blog/places-to-visit-in-purnea',
   },
 ];
 
@@ -78,7 +78,7 @@ export default function BlogPage() {
       "headline": post.title,
       "description": post.excerpt,
       "datePublished": post.date,
-      "image": `https://hotelsuryabellacasa.com${post.image}`,
+      "image": post.image.startsWith('http') ? post.image : `https://hotelsuryabellacasa.com${post.image}`,
       "author": {
         "@type": "Organization",
         "name": "Hotel Surya Bella Casa"
@@ -96,7 +96,7 @@ export default function BlogPage() {
         label="Stories & Guides"
         title="The Purnia Journal"
         tagline="Discover the hidden gems, seasonal itineraries, and insider tips for your perfect getaway."
-        image='/bloghero.png'
+        image='https://bookonelocal.in/cdn/IMG_3815.avif'
       />
 
       <section className="py-32">

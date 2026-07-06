@@ -14,7 +14,7 @@ const businessAmenities: AmenityItem[] = [
 ];
 
 export const metadata = {
-  title: 'Business Hotel in Purnia | Corporate Stay Near Bus Stand | Hotel Surya Bella Casa',
+  title: 'Business Hotel in Purnia',
   description: 'Searching for a business hotel in Purnia? Hotel Surya Bella Casa offers high-speed Wi-Fi, work desk, conference facilities near Bus Stand Purnea. Best corporate hotel for executives with free parking. Book direct.',
   alternates: {
     canonical: 'https://hotelsuryabellacasa.com/business-hotel-in-purnia',
@@ -25,7 +25,7 @@ export const metadata = {
     googleBot: { index: true, follow: true, 'max-image-preview': 'large', 'max-snippet': -1 },
   },
   openGraph: {
-    title: 'Business Hotel in Purnia | Corporate Accommodation Near Bus Stand Purnea',
+    title: 'Business Hotel in Purnia | Near Bus Stand Purnea',
     description: 'Best business hotel near Purnea Bus Stand. High-speed WiFi, work desk, conference hall, free parking. Perfect for corporate travelers and executives.',
     url: 'https://hotelsuryabellacasa.com/business-hotel-in-purnia',
     siteName: 'Hotel Surya Bella Casa',
@@ -44,6 +44,21 @@ export default function BusinessHotelLandingPage() {
   return (
     <main className="bg-cream min-h-screen">
       
+      {/* BreadcrumbList Schema */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://hotelsuryabellacasa.com" },
+              { "@type": "ListItem", "position": 2, "name": "Business Hotel in Purnia", "item": "https://hotelsuryabellacasa.com/business-hotel-in-purnia" }
+            ]
+          })
+        }}
+      />
+
       <CinematicHero 
         label="Best Business Hotel Near Bus Stand Purnea"
         title="Business Hotel in Purnia - Corporate Stay with WiFi & Conference Hall"

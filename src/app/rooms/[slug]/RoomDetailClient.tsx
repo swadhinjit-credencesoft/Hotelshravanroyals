@@ -87,7 +87,14 @@ export default function RoomDetailClient({ room, otherRooms }: RoomDetailClientP
       '@type': 'LocationFeatureSpecification',
       'name': a,
       'value': true
-    }))
+    })),
+    'offers': {
+      '@type': 'Offer',
+      'priceCurrency': 'INR',
+      'price': headerPrice,
+      'availability': 'https://schema.org/InStock',
+      'url': typeof window !== 'undefined' ? window.location.href : `https://hotelsuryabellacasa.com/rooms/${room.slug}`
+    }
   }
 
   return (

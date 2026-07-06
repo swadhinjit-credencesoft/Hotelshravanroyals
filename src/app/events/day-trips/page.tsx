@@ -1,5 +1,3 @@
-'use client';
-
 import CinematicHero from '@/components/ui/CinematicHero';
 import SectionLabel from '@/components/ui/SectionLabel';
 import Image from 'next/image';

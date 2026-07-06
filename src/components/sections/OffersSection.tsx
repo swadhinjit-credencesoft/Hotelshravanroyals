@@ -101,7 +101,7 @@ function OfferCard({
           </ul>
         </div>
 
-        <a href="/offers" className="block w-full bg-gold text-[#1a1004] font-sans text-[11px] uppercase tracking-[0.2em] py-5 text-center transition-all duration-300 hover:bg-gold-light">
+        <a href="https://bookone.io/Hotel-Bella-Casa?bookingEngine=true" target="_blank" rel="noopener noreferrer" className="block w-full bg-gold text-[#1a1004] font-sans text-[11px] uppercase tracking-[0.2em] py-5 text-center transition-all duration-300 hover:bg-gold-light">
           Reserve This Package
         </a>
       </div>
