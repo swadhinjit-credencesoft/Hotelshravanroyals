@@ -317,50 +317,41 @@ export default function RootLayout({
           <Footer />
         </LenisProvider>
         {/* Mobile Sticky Booking Bar */}
-        <div className="fixed bottom-0 left-0 right-0 z-50 md:hidden bg-gradient-to-t from-forest/95 via-forest to-forest/95 backdrop-blur-xl border-t border-gold/15 px-4 py-2.5 shadow-2xl" style={{ boxShadow: '0 -4px 30px rgba(0,0,0,0.5)' }}>
-          {/* Gold shimmer accent */}
-          <div className="absolute top-0 left-0 right-0 h-[1.5px] overflow-hidden">
-            <div
-              className="absolute inset-0"
-              style={{
-                backgroundImage: 'linear-gradient(90deg, transparent 0%, #C9A84C 25%, #F5E6A3 50%, #C9A84C 75%, transparent 100%)',
-                backgroundSize: '200% 100%',
-                animation: 'shimmerSweep 2.5s ease-in-out infinite'
-              }}
-            />
-          </div>
-          <div className="flex items-center justify-between gap-2">
-            <div className="flex-shrink-0">
-              <span className="font-sans text-[8px] uppercase tracking-[0.18em] text-gold/70">Best Rate Guarantee</span>
-              <span className="font-serif text-xs text-ivory block leading-tight">Book Direct & Save</span>
+        <div className="fixed bottom-0 left-0 right-0 z-[9999] md:hidden bg-[#1a1004] border-t-2 border-gold/40 px-3 py-2 shadow-[0_-8px_40px_rgba(201,168,76,0.15)]" style={{ boxShadow: '0 -8px 40px rgba(201,168,76,0.15), 0 -2px 10px rgba(0,0,0,0.4)' }}>
+          {/* Top gold glow accent */}
+          <div className="absolute top-0 left-0 right-0 h-[2px] bg-gradient-to-r from-transparent via-gold to-transparent opacity-80" />
+          <div className="flex items-center justify-between gap-1">
+            <div className="flex-shrink-0 min-w-0">
+              <div className="inline-flex items-center gap-1.5 bg-gold/15 border border-gold/25 rounded-sm px-2 py-0.5 mb-0.5">
+                <span className="text-[6px] leading-none text-gold font-sans uppercase tracking-[0.15em] font-bold">★ BEST RATE</span>
+              </div>
+              <span className="font-sans text-[10px] text-ivory block leading-tight font-medium">Book Direct & Save</span>
             </div>
-            <div className="flex items-center gap-1.5">
+            <div className="flex items-center gap-1.5 flex-shrink-0">
               <a
                 href={buildWhatsAppUrl()}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-1.5 border border-green-500/30 text-green-400 px-3 py-2 rounded-sm text-[10px] uppercase tracking-[0.12em] font-sans hover:bg-green-600/10 hover:border-green-400/50 transition-all"
+                className="flex items-center justify-center gap-1 bg-green-600/20 border border-green-500/40 text-green-400 px-2.5 py-2 rounded-sm text-[9px] uppercase tracking-[0.1em] font-sans font-semibold hover:bg-green-600/30 active:scale-95 transition-all"
                 aria-label="Enquire via WhatsApp"
               >
-                <MessageCircle size={14} />
-                <span className="hidden sm:inline">WhatsApp</span>
+                <MessageCircle size={13} />
               </a>
               <a
                 href="tel:+919835923601"
-                className="flex items-center gap-1.5 border border-gold/25 text-gold/80 px-3 py-2 rounded-sm text-[10px] uppercase tracking-[0.12em] font-sans hover:bg-gold/10 hover:border-gold/50 transition-all"
+                className="flex items-center justify-center gap-1 bg-gold/10 border border-gold/30 text-gold px-2.5 py-2 rounded-sm text-[9px] uppercase tracking-[0.1em] font-sans font-semibold hover:bg-gold/20 active:scale-95 transition-all"
                 aria-label="Call hotel"
               >
-                <PhoneCall size={14} />
-                <span className="hidden sm:inline">Call</span>
+                <PhoneCall size={13} />
               </a>
               <a
                 href="https://bookone.io/Hotel-Bella-Casa?bookingEngine=true"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-1.5 bg-gradient-to-r from-gold to-amber-400 text-[#1a1004] px-4 py-2 rounded-sm text-[10px] uppercase tracking-[0.15em] font-sans font-bold hover:from-gold-light hover:to-amber-300 transition-all shadow-lg shadow-gold/20 active:scale-[0.97]"
+                className="flex items-center gap-1.5 bg-gradient-to-r from-gold to-amber-400 text-[#1a1004] px-4 py-2 rounded-sm text-[11px] uppercase tracking-[0.15em] font-sans font-extrabold hover:brightness-110 transition-all active:scale-[0.95] animate-cta-pulse"
                 aria-label="Book your stay now"
               >
-                <Calendar size={13} />
+                <Calendar size={14} />
                 <span>Book</span>
               </a>
             </div>

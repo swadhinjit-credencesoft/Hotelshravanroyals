@@ -375,6 +375,22 @@ html.lenis {
   }
 }
 
+/* Booking bar CTA pulse glow */
+@keyframes ctaPulse {
+  0%, 100% { box-shadow: 0 0 8px rgba(201, 168, 76, 0.3), 0 4px 14px rgba(201, 168, 76, 0.2); transform: scale(1); }
+  50% { box-shadow: 0 0 20px rgba(201, 168, 76, 0.6), 0 4px 20px rgba(201, 168, 76, 0.3); transform: scale(1.02); }
+}
+
+.animate-cta-pulse {
+  animation: ctaPulse 2s ease-in-out infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-cta-pulse {
+    animation: none;
+  }
+}
+
 /* Floating bar shimmer sweep */
 @keyframes shimmerSweep {
   0% { background-position: 200% 0; }

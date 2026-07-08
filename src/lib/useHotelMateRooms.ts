@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from 'react'
 import { addDays, fetchAvailability, todayString } from '@/lib/hotelmate'
-import { mapHotelMateRooms, Room } from '@/lib/rooms'
+import { mapHotelMateRooms, Room, FALLBACK_ROOMS } from '@/lib/rooms'
 
 interface UseHotelMateRoomsParams {
   fromDate?: string
@@ -12,8 +12,9 @@ interface UseHotelMateRoomsParams {
 }
 
 export function useHotelMateRooms(params: UseHotelMateRoomsParams = {}) {
-  const [rooms, setRooms] = useState<Room[]>([])
-  const [loading, setLoading] = useState(true)
+  // Start with FALLBACK_ROOMS immediately — rooms always render, never stuck on loading
+  const [rooms, setRooms] = useState<Room[]>(FALLBACK_ROOMS)
+  const [loading, setLoading] = useState(false) // false because FALLBACK_ROOMS are already shown
   const [error, setError] = useState<string | null>(null)
 
   useEffect(() => {
@@ -34,11 +35,17 @@ export function useHotelMateRooms(params: UseHotelMateRoomsParams = {}) {
         })
 
         if (!active) return
-        setRooms(mapHotelMateRooms(data.roomList))
+        const liveRooms = mapHotelMateRooms(data.roomList)
+        // Only replace fallback rooms if live data returned valid rooms
+        if (liveRooms.length > 0) {
+          setRooms(liveRooms)
+        }
       } catch (err) {
         if (!active) return
-        setRooms([])
-        setError(err instanceof Error ? err.message : 'Unable to load rooms')
+        // Silently keep FALLBACK_ROOMS on display — don't show error to visitor
+        // API may be temporarily down; show static room data instead of broken state
+        setError(err instanceof Error ? err.message : 'Unable to load live room data')
+        // rooms already contain FALLBACK_ROOMS from initial state — leave them
       } finally {
         if (active) setLoading(false)
       }

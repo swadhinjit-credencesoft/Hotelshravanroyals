@@ -127,9 +127,20 @@ export interface AvailabilityParams {
 
 export async function fetchAvailability(params: AvailabilityParams): Promise<HotelProperty> {
   const url = `${HOTELMATE_API_BASE}/checkAvailability/${HOTELMATE_PROPERTY_ID}?fromDate=${params.fromDate}&toDate=${params.toDate}&noOfRooms=${params.noOfRooms}&noOfPersons=${params.noOfPersons}`
-  const res = await fetch(url)
-  if (!res.ok) throw new Error(`HotelMate API error: ${res.status}`)
-  return res.json()
+  const controller = new AbortController()
+  const timeoutId = setTimeout(() => controller.abort(), 8000) // 8-second hard timeout
+  try {
+    const res = await fetch(url, { signal: controller.signal })
+    clearTimeout(timeoutId)
+    if (!res.ok) throw new Error(`HotelMate API error: ${res.status}`)
+    return res.json()
+  } catch (err) {
+    clearTimeout(timeoutId)
+    if ((err as Error)?.name === 'AbortError') {
+      throw new Error('HotelMate API timeout: request took longer than 8s')
+    }
+    throw err
+  }
 }
 
 export function buildBookingUrl(params?: {
