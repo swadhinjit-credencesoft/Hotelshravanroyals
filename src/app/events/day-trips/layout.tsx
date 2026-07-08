@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
   title: 'Day Trips in Purnea | Weekend Getaway',
-  description: 'Plan day trips and picnics in Purnea at Hotel Surya Bella Casa near Bus Stand. Weekend getaway, family outing, pool day pass. Enjoy delicious food and pristine settings for one day trip in Purnea, Bihar.',
+  description: 'Plan day trips and picnics in Purnea at Hotel Surya Bella Casa near Bus Stand. Weekend getaway, family outing, pool day pass. Enjoy delicious food and pristine settings. Book direct for day-pass rates.',
   keywords: ['day trips purnea', 'picnic purnea', 'weekend getaway purnea', 'family outing purnea', 'pool day pass purnea', 'one day trip purnea', 'purnea resort day outing', 'purnea weekend plan', 'day picnic purnea bihar', 'purnea family day out', 'purnea short getaway', 'purnea staycation', 'purnea relaxation day', 'purnea pool access', 'weekend trip near bus stand purnea'],
   alternates: {
     canonical: 'https://hotelsuryabellacasa.com/events/day-trips',

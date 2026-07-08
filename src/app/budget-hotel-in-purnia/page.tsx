@@ -2,7 +2,8 @@ import CinematicHero from '@/components/ui/CinematicHero';
 import SectionLabel from '@/components/ui/SectionLabel';
 import GoldDivider from '@/components/ui/GoldDivider';
 import LuxuryAmenities, { type AmenityItem } from '@/components/sections/LuxuryAmenities';
-import { Star, Calendar, ShieldCheck, DollarSign, Sparkles } from 'lucide-react';
+import Link from 'next/link';
+import { Star, Calendar, ShieldCheck, DollarSign, Sparkles, ArrowRight } from 'lucide-react';
 
 const budgetAmenities: AmenityItem[] = [
   { icon: 'DollarSign', title: 'Best Price Guarantee', description: 'We actively match or beat competitor rates for comparable rooms in Purnia. No hidden charges, no surprises.' },
@@ -80,7 +81,7 @@ export default function BudgetHotelLandingPage() {
                 Who says budget stays can&apos;t feel premium? At <strong>Hotel Surya Bella Casa</strong>, we believe in providing exceptionally high value at affordable rates.
               </p>
               <p>
-                Our room selection includes Standard and Deluxe options (both AC and Non-AC) to cater perfectly to solo budget travelers, medical reps, sales agents, and groups.
+                Our room selection includes <Link href="/rooms" className="text-gold hover:underline">Standard and Deluxe options</Link> (both AC and Non-AC) to cater perfectly to solo budget travelers, medical reps, sales agents, and groups. Check our <Link href="/offers" className="text-gold hover:underline">budget-friendly packages</Link> for the best deals.
               </p>
               <p>
                 Unlike generic budget guest houses, we do not compromise on key elements: we feature a secure property, elevator/lift access, 24/7 power backup, complimentary high-speed Wi-Fi, and sparkling clean washrooms.
@@ -131,6 +132,28 @@ export default function BudgetHotelLandingPage() {
               Book Now Online
             </a>
           </div>
+        </div>
+      </section>
+
+      <section className="py-16 max-w-[1200px] mx-auto px-6 md:px-10">
+        <SectionLabel className="mb-6">Also Explore</SectionLabel>
+        <h2 className="font-display text-3xl md:text-4xl italic text-forest mb-8">More Options in Purnia</h2>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          {[
+            { href: '/hotel-near-purnia-bus-stand', label: 'Hotel Near Bus Stand' },
+            { href: '/hotel-near-vikass-market', label: 'Hotel Near Vikass Market' },
+            { href: '/family-hotel-in-purnia', label: 'Family Hotel in Purnia' },
+            { href: '/business-hotel-in-purnia', label: 'Business Hotel in Purnia' },
+          ].map((item) => (
+            <Link
+              key={item.href}
+              href={item.href}
+              className="group flex items-center gap-3 bg-white p-5 border border-gold/10 rounded-sm hover:border-gold/40 transition-all shadow-sm"
+            >
+              <span className="font-sans text-sm text-forest/80 group-hover:text-gold transition-colors">{item.label}</span>
+              <ArrowRight size={14} className="text-gold ml-auto opacity-0 group-hover:opacity-100 transition-opacity" />
+            </Link>
+          ))}
         </div>
       </section>
 

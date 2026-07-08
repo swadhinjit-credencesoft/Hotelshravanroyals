@@ -115,6 +115,40 @@ export default async function RoomDetailPage({ params }: Props) {
         dangerouslySetInnerHTML={{
           __html: JSON.stringify({
             "@context": "https://schema.org",
+            "@type": "Product",
+            "name": room.name,
+            "description": room.tagline,
+            "image": [room.image, ...room.images],
+            "brand": { "@type": "Brand", "name": "Hotel Surya Bella Casa" },
+            "offers": {
+              "@type": "Offer",
+              "price": room.price,
+              "priceCurrency": "INR",
+              "availability": "https://schema.org/InStock",
+              "url": `https://hotelsuryabellacasa.com/rooms/${room.slug}`
+            }
+          })
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://hotelsuryabellacasa.com" },
+              { "@type": "ListItem", "position": 2, "name": "Rooms", "item": "https://hotelsuryabellacasa.com/rooms" },
+              { "@type": "ListItem", "position": 3, "name": room.name, "item": `https://hotelsuryabellacasa.com/rooms/${room.slug}` }
+            ]
+          })
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
             "@type": "FAQPage",
             "mainEntity": roomFaq
           })

@@ -6,7 +6,7 @@ import { MapPin, Calendar } from 'lucide-react'
 export const metadata: Metadata = {
   title: 'Places to Visit in Purnea',
   description:
-    'Explore the best places to visit in Purnea near Hotel Surya Bella Casa. Maa Puran Devi Temple, Kali Mandir, Jalalgarh Fort, shopping markets, and local attractions near Bus Stand.',
+    'Explore the best places to visit in Purnea near Hotel Surya Bella Casa. Maa Puran Devi Temple, Kali Mandir, Jalalgarh Fort, shopping markets, and local attractions near Bus Stand. Book now.',
   alternates: {
     canonical: 'https://hotelsuryabellacasa.com/blog/places-to-visit-in-purnea',
   },

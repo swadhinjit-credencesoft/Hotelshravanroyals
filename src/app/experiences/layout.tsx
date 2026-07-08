@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
   title: 'Places to Visit in Purnea | Nearby Attractions',
-  description: 'Explore places to visit in Purnea and nearby attractions near Hotel Surya Bella Casa. Maa Puran Devi Temple, Purnea Court, Polytechnic, shopping markets. Best things to do in Purnea, Bihar.',
+  description: 'Explore places to visit in Purnea and nearby attractions near Hotel Surya Bella Casa. Maa Puran Devi Temple, Purnea Court, Polytechnic, shopping markets. Best things to do in Purnea, Bihar. Book your stay now.',
   keywords: ['places to visit in purnea', 'things to do in purnea', 'purnea nearby attractions', 'maa puran devi temple purnea', 'purnea court', 'district hospital purnea', 'polytechnic purnea', 'shopping market purnea', 'bus terminal purnea', 'purnea sightseeing', 'purnea city tour', 'purnea local markets', 'weekend activities purnea', 'purnea bihar tourism', 'hotel near attractions purnea'],
   alternates: {
     canonical: 'https://hotelsuryabellacasa.com/experiences',

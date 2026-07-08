@@ -2,7 +2,8 @@ import CinematicHero from '@/components/ui/CinematicHero';
 import SectionLabel from '@/components/ui/SectionLabel';
 import GoldDivider from '@/components/ui/GoldDivider';
 import LuxuryAmenities, { type AmenityItem } from '@/components/sections/LuxuryAmenities';
-import { MapPin, Star, Calendar } from 'lucide-react';
+import Link from 'next/link';
+import { MapPin, Star, Calendar, ArrowRight } from 'lucide-react';
 
 const busStandAmenities: AmenityItem[] = [
   { icon: 'MapPin', title: '2 Minutes from Bus Stand', description: 'Purnia Bus Stand is less than a 2-minute walk. Step off the bus and check into comfort instantly.' },
@@ -80,7 +81,7 @@ export default function PurniaBusStandLandingPage() {
                 When traveling to Purnia, proximity to the primary transit point is crucial. <strong>Hotel Surya Bella Casa</strong> offers an unmatched geographic advantage, situated just a stone&apos;s throw from the main <strong>Purnia Bus Stand</strong>.
               </p>
               <p>
-                Perfect for transit travelers, corporate executives, and visiting families, our hotel eliminates the stress of long commutes inside Purnia. Located opposite the iconic Vikass Market in Suryalok Complex, you are connected immediately to local dining, sweets, and business centers.
+                Perfect for transit travelers, <Link href="/business-hotel-in-purnia" className="text-gold hover:underline">corporate executives</Link>, and <Link href="/family-hotel-in-purnia" className="text-gold hover:underline">visiting families</Link>, our hotel eliminates the stress of long commutes inside Purnia. Located opposite the iconic <Link href="/hotel-near-vikass-market" className="text-gold hover:underline">Vikass Market</Link> in Suryalok Complex, you are connected immediately to local dining, sweets, and business centers. Explore our <Link href="/rooms" className="text-gold hover:underline">room options</Link> and <Link href="/offers" className="text-gold hover:underline">current offers</Link> for the best rates.
               </p>
               <p>
                 Forget the hassle of haggling for auto-rickshaws with heavy luggage. Our central location means you can check in, freshen up, and prepare for your day in Purnia immediately after your bus journey.
@@ -131,6 +132,28 @@ export default function PurniaBusStandLandingPage() {
               Book Now Online
             </a>
           </div>
+        </div>
+      </section>
+
+      <section className="py-16 max-w-[1200px] mx-auto px-6 md:px-10">
+        <SectionLabel className="mb-6">Also Explore</SectionLabel>
+        <h2 className="font-display text-3xl md:text-4xl italic text-forest mb-8">More Ways to Stay in Purnia</h2>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          {[
+            { href: '/hotel-near-vikass-market', label: 'Hotel Near Vikass Market' },
+            { href: '/family-hotel-in-purnia', label: 'Family Hotel in Purnia' },
+            { href: '/business-hotel-in-purnia', label: 'Business Hotel in Purnia' },
+            { href: '/budget-hotel-in-purnia', label: 'Budget Hotel in Purnia' },
+          ].map((item) => (
+            <Link
+              key={item.href}
+              href={item.href}
+              className="group flex items-center gap-3 bg-white p-5 border border-gold/10 rounded-sm hover:border-gold/40 transition-all shadow-sm"
+            >
+              <span className="font-sans text-sm text-forest/80 group-hover:text-gold transition-colors">{item.label}</span>
+              <ArrowRight size={14} className="text-gold ml-auto opacity-0 group-hover:opacity-100 transition-opacity" />
+            </Link>
+          ))}
         </div>
       </section>
 

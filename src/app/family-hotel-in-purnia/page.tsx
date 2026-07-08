@@ -2,7 +2,8 @@ import CinematicHero from '@/components/ui/CinematicHero';
 import SectionLabel from '@/components/ui/SectionLabel';
 import GoldDivider from '@/components/ui/GoldDivider';
 import LuxuryAmenities, { type AmenityItem } from '@/components/sections/LuxuryAmenities';
-import { Star, Calendar, Shield, Users, Heart } from 'lucide-react';
+import Link from 'next/link';
+import { Star, Calendar, Shield, Users, Heart, ArrowRight } from 'lucide-react';
 
 const familyAmenities: AmenityItem[] = [
   { icon: 'Users', title: 'Spacious Family Rooms', description: 'Room configurations that comfortably accommodate couples with children. Extra bedding available on request.' },
@@ -80,7 +81,7 @@ export default function FamilyHotelLandingPage() {
                 Traveling with family, children, or elderly parents requires a hotel that understands care, safety, and hygiene. <strong>Hotel Surya Bella Casa</strong> prides itself on being Purnia&apos;s premier family-friendly stay.
               </p>
               <p>
-                We focus on offering a peaceful, alcohol-free, and wholesome environment where families can truly relax. Our pure vegetarian guidelines guarantee a respectful atmosphere, and we provide seamless food delivery coordination from top-rated local restaurants.
+                We focus on offering a peaceful, alcohol-free, and wholesome environment where families can truly relax. Our pure vegetarian guidelines guarantee a respectful atmosphere, and we provide seamless <Link href="/dining" className="text-gold hover:underline">food delivery coordination</Link> from top-rated local restaurants. See our <Link href="/rooms" className="text-gold hover:underline">spacious family rooms</Link> and <Link href="/offers" className="text-gold hover:underline">family packages</Link> for the best value.
               </p>
               <p>
                 Equipped with modern amenities including air conditioning, flat screen TVs, geysers, and most importantly—a <strong>modern lift/elevator</strong>, we ensure elder family members face no difficulty during their stay.
@@ -131,6 +132,28 @@ export default function FamilyHotelLandingPage() {
               Book Now Online
             </a>
           </div>
+        </div>
+      </section>
+
+      <section className="py-16 max-w-[1200px] mx-auto px-6 md:px-10">
+        <SectionLabel className="mb-6">Also Explore</SectionLabel>
+        <h2 className="font-display text-3xl md:text-4xl italic text-forest mb-8">More Options for Your Purnia Visit</h2>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          {[
+            { href: '/hotel-near-purnia-bus-stand', label: 'Hotel Near Bus Stand' },
+            { href: '/hotel-near-vikass-market', label: 'Hotel Near Vikass Market' },
+            { href: '/business-hotel-in-purnia', label: 'Business Hotel in Purnia' },
+            { href: '/budget-hotel-in-purnia', label: 'Budget Hotel in Purnia' },
+          ].map((item) => (
+            <Link
+              key={item.href}
+              href={item.href}
+              className="group flex items-center gap-3 bg-white p-5 border border-gold/10 rounded-sm hover:border-gold/40 transition-all shadow-sm"
+            >
+              <span className="font-sans text-sm text-forest/80 group-hover:text-gold transition-colors">{item.label}</span>
+              <ArrowRight size={14} className="text-gold ml-auto opacity-0 group-hover:opacity-100 transition-opacity" />
+            </Link>
+          ))}
         </div>
       </section>
 

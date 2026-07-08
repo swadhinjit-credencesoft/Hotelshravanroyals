@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
   title: 'Birthday Party Hall Purnea | Celebrations',
-  description: 'Best birthday party hall in Purnea at Hotel Surya Bella Casa near Bus Stand. Party venue for birthdays, anniversaries, private parties with customized themes, decoration and dining options.',
+  description: 'Best birthday party hall in Purnea at Hotel Surya Bella Casa near Bus Stand. Party venue for birthdays, anniversaries, private parties with customized themes, decoration and dining options. Book now.',
   keywords: ['birthday party hall purnea', 'party venue purnea', 'celebration hall purnea', 'private party purnea', 'anniversary venue purnea', 'purnea party hall', 'birthday celebration purnea hotel', 'purnea celebration deck', 'party decoration purnea', 'get together venue purnea', 'friends gathering purnea', 'purnea private dining', 'pool party purnea', 'event decoration purnea', 'party hall near bus stand purnea'],
   alternates: {
     canonical: 'https://hotelsuryabellacasa.com/events/parties',

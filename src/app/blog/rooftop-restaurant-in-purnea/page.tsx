@@ -6,7 +6,7 @@ import { Utensils } from 'lucide-react'
 export const metadata: Metadata = {
   title: 'Rooftop Restaurant in Purnea',
   description:
-    'Discover the best rooftop restaurant in Purnea near Bus Stand. Multi-cuisine family dining at Hotel Surya Bella Casa serving Indian, Tandoor, Mughlai, Asian & Continental dishes.',
+    'Discover the best rooftop restaurant in Purnea near Bus Stand. Multi-cuisine family dining at Hotel Surya Bella Casa serving Indian, Tandoor, Mughlai, Asian & Continental dishes. Book now.',
   alternates: {
     canonical: 'https://hotelsuryabellacasa.com/blog/rooftop-restaurant-in-purnea',
   },

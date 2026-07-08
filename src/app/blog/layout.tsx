@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
   title: 'Purnea Travel Blog | Hotels & Attractions',
-  description: 'Purnea travel blog by Hotel Surya Bella Casa. Best hotels in Purnea, rooftop restaurant guide, wedding venues, places to visit, business travel guide. Tips for staying near Purnea Bus Stand.',
+  description: 'Purnea travel blog by Hotel Surya Bella Casa. Best hotels in Purnea, rooftop restaurant guide, wedding venues, places to visit, business travel guide. Tips for staying near Purnea Bus Stand. Book direct.',
   keywords: ['purnea travel blog', 'best hotels in purnea', 'places to visit in purnea', 'top restaurants in purnea', 'business travel guide to purnea', 'wedding venues in purnea', 'hotels near purnea bus stand', 'weekend trip to purnea', 'tourist attractions near purnea', 'family stay in purnea', 'budget vs luxury hotels in purnea', 'things to do in purnea', 'purnea food guide', 'purnea sightseeing blog', 'purnea bihar travel guide'],
   alternates: {
     canonical: 'https://hotelsuryabellacasa.com/blog',

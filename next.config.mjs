@@ -12,6 +12,10 @@ const nextConfig = {
         protocol: 'https',
         hostname: 'bookonelocal.in',
       },
+      {
+        protocol: 'https',
+        hostname: '**.instagram.com',
+      },
     ],
   },
 };

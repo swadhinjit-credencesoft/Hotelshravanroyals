@@ -2,7 +2,8 @@ import CinematicHero from '@/components/ui/CinematicHero';
 import SectionLabel from '@/components/ui/SectionLabel';
 import GoldDivider from '@/components/ui/GoldDivider';
 import LuxuryAmenities, { type AmenityItem } from '@/components/sections/LuxuryAmenities';
-import { MapPin, Star, Calendar } from 'lucide-react';
+import Link from 'next/link';
+import { MapPin, Star, Calendar, ArrowRight } from 'lucide-react';
 
 const marketAmenities: AmenityItem[] = [
   { icon: 'ShoppingBag', title: 'Across from Vikass Market', description: 'Directly opposite Vikass Market. Shop for fabrics, garments, and daily essentials without any commute.' },
@@ -80,7 +81,7 @@ export default function VikassMarketLandingPage() {
                 Vikass Market is one of Purnia&apos;s most active mercantile and consumer corridors. Whether you are visiting Purnia for a business deal, wholesale shopping, or leisure, staying at a <strong>hotel near Vikass Market</strong> puts you right in the center of the action.
               </p>
               <p>
-                <strong>Hotel Surya Bella Casa</strong> is located in Suryalok Complex, directly opposite Vikass Market. This makes it incredibly easy to manage business meetings, retail trips, or family events without having to spend hours traveling back and forth through traffic.
+                <strong>Hotel Surya Bella Casa</strong> is located in Suryalok Complex, directly opposite Vikass Market. This makes it incredibly easy to manage <Link href="/business-hotel-in-purnia" className="text-gold hover:underline">business meetings</Link>, retail trips, or <Link href="/family-hotel-in-purnia" className="text-gold hover:underline">family events</Link> without having to spend hours traveling back and forth through traffic. Browse our <Link href="/rooms" className="text-gold hover:underline">room categories</Link> and <Link href="/offers" className="text-gold hover:underline">special offers</Link>.
               </p>
               <p>
                 Our rooms are peaceful sanctuaries that block out the urban hustle while keeping you connected to Purnia&apos;s finest sweet shops, local businesses, and restaurants.
@@ -131,6 +132,28 @@ export default function VikassMarketLandingPage() {
               Book Now Online
             </a>
           </div>
+        </div>
+      </section>
+
+      <section className="py-16 max-w-[1200px] mx-auto px-6 md:px-10">
+        <SectionLabel className="mb-6">Also Explore</SectionLabel>
+        <h2 className="font-display text-3xl md:text-4xl italic text-forest mb-8">More Places to Stay in Purnia</h2>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          {[
+            { href: '/hotel-near-purnia-bus-stand', label: 'Hotel Near Bus Stand' },
+            { href: '/family-hotel-in-purnia', label: 'Family Hotel in Purnia' },
+            { href: '/business-hotel-in-purnia', label: 'Business Hotel in Purnia' },
+            { href: '/budget-hotel-in-purnia', label: 'Budget Hotel in Purnia' },
+          ].map((item) => (
+            <Link
+              key={item.href}
+              href={item.href}
+              className="group flex items-center gap-3 bg-white p-5 border border-gold/10 rounded-sm hover:border-gold/40 transition-all shadow-sm"
+            >
+              <span className="font-sans text-sm text-forest/80 group-hover:text-gold transition-colors">{item.label}</span>
+              <ArrowRight size={14} className="text-gold ml-auto opacity-0 group-hover:opacity-100 transition-opacity" />
+            </Link>
+          ))}
         </div>
       </section>
 

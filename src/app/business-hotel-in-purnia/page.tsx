@@ -2,7 +2,8 @@ import CinematicHero from '@/components/ui/CinematicHero';
 import SectionLabel from '@/components/ui/SectionLabel';
 import GoldDivider from '@/components/ui/GoldDivider';
 import LuxuryAmenities, { type AmenityItem } from '@/components/sections/LuxuryAmenities';
-import { Star, Calendar, Laptop, Wifi, Shield } from 'lucide-react';
+import Link from 'next/link';
+import { Star, Calendar, Laptop, Wifi, Shield, ArrowRight } from 'lucide-react';
 
 const businessAmenities: AmenityItem[] = [
   { icon: 'Laptop', title: 'Dedicated Work Desk', description: 'Spacious desk with ergonomic chair, task lighting, and convenient power outlets in select premium rooms.' },
@@ -80,7 +81,7 @@ export default function BusinessHotelLandingPage() {
                 A successful business trip requires a quiet environment, reliable amenities, and robust connectivity. <strong>Hotel Surya Bella Casa</strong> is specifically optimized to meet the high standards of Purnia&apos;s executive travelers.
               </p>
               <p>
-                Situated opposite Vikass Market in central Suryalok Complex, we put you minutes away from the administrative, commercial, and banking hubs of Bhatta Bazar and Purnia town.
+                Situated opposite <Link href="/hotel-near-vikass-market" className="text-gold hover:underline">Vikass Market</Link> in central Suryalok Complex, we put you minutes away from the administrative, commercial, and banking hubs of Bhatta Bazar and Purnia town. For extended corporate stays, explore our <Link href="/offers" className="text-gold hover:underline">corporate packages</Link> and <Link href="/rooms" className="text-gold hover:underline">premium room options</Link>.
               </p>
               <p>
                 With continuous power backup, dedicated working desks in our premium rooms, high-speed complimentary Wi-Fi, and quick checkout, we cater to all your corporate workflow requirements.
@@ -131,6 +132,28 @@ export default function BusinessHotelLandingPage() {
               Book Now Online
             </a>
           </div>
+        </div>
+      </section>
+
+      <section className="py-16 max-w-[1200px] mx-auto px-6 md:px-10">
+        <SectionLabel className="mb-6">Also Explore</SectionLabel>
+        <h2 className="font-display text-3xl md:text-4xl italic text-forest mb-8">More Travel Resources</h2>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          {[
+            { href: '/hotel-near-purnia-bus-stand', label: 'Hotel Near Bus Stand' },
+            { href: '/hotel-near-vikass-market', label: 'Hotel Near Vikass Market' },
+            { href: '/family-hotel-in-purnia', label: 'Family Hotel in Purnia' },
+            { href: '/budget-hotel-in-purnia', label: 'Budget Hotel in Purnia' },
+          ].map((item) => (
+            <Link
+              key={item.href}
+              href={item.href}
+              className="group flex items-center gap-3 bg-white p-5 border border-gold/10 rounded-sm hover:border-gold/40 transition-all shadow-sm"
+            >
+              <span className="font-sans text-sm text-forest/80 group-hover:text-gold transition-colors">{item.label}</span>
+              <ArrowRight size={14} className="text-gold ml-auto opacity-0 group-hover:opacity-100 transition-opacity" />
+            </Link>
+          ))}
         </div>
       </section>
 

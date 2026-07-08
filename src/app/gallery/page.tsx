@@ -2,11 +2,11 @@ import type { Metadata } from 'next'
 import GallerySection from '@/components/sections/GallerySection'
 import SectionLabel from '@/components/ui/SectionLabel'
 import Image from 'next/image'
-import { siteConfig } from '@/data/site'
+import Script from 'next/script'
 
 export const metadata: Metadata = {
   title: 'Photo Gallery & Virtual Tour | Hotel Surya Bella Casa Purnea',
-  description: 'Browse high-resolution photos, guest images, and a video walkthrough of Hotel Surya Bella Casa in Purnea. See our rooms, dining, and facilities near Bus Stand.',
+  description: 'Browse high-resolution photos, guest images, and a video walkthrough of Hotel Surya Bella Casa in Purnea. See our rooms, dining, and facilities near Bus Stand. Book direct for the best rates.',
   alternates: {
     canonical: 'https://hotelsuryabellacasa.com/gallery',
   },
@@ -43,7 +43,7 @@ export default function GalleryPage() {
 
       {/* Video Walkthrough Section */}
       <section className="py-24 bg-forest text-ivory text-center border-y border-gold/10">
-        <div className="max-w-[600px] mx-auto px-6">
+        <div className="max-w-[700px] mx-auto px-6">
           <SectionLabel light className="justify-center mb-6">Virtual Tour</SectionLabel>
           <h2 className="font-display text-4xl italic mb-6">Experience Hotel Surya Bella Casa</h2>
           <p className="font-serif text-ivory/70 mb-10 leading-relaxed">
@@ -51,7 +51,26 @@ export default function GalleryPage() {
             to our rooftop dining and banquet spaces.
           </p>
           <a
-            href={siteConfig.social.youtube}
+            href="https://www.youtube.com/watch?v=VOp9WYj2Ddg"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="group block relative aspect-video rounded-lg overflow-hidden border border-gold/20 hover:border-gold/50 transition-all mb-8"
+          >
+            <Image
+              src="https://img.youtube.com/vi/VOp9WYj2Ddg/maxresdefault.jpg"
+              alt="Hotel Surya Bella Casa Purnea - Hotel Tour Video"
+              fill
+              className="object-cover group-hover:scale-105 transition-transform duration-700"
+              sizes="700px"
+            />
+            <div className="absolute inset-0 bg-black/30 flex items-center justify-center group-hover:bg-black/20 transition-all">
+              <div className="w-16 h-16 rounded-full bg-red-600 flex items-center justify-center group-hover:scale-110 transition-transform shadow-xl">
+                <svg className="w-6 h-6 text-white ml-0.5" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+              </div>
+            </div>
+          </a>
+          <a
+            href="https://www.youtube.com/watch?v=VOp9WYj2Ddg"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-3 bg-red-600 hover:bg-red-700 text-white font-sans text-xs uppercase tracking-[0.2em] px-8 py-4 rounded-sm transition-all shadow-lg group"
@@ -67,22 +86,32 @@ export default function GalleryPage() {
         <div className="max-w-[1200px] mx-auto px-6">
           <h2 className="font-display text-4xl md:text-5xl italic text-forest mb-6">Through Your Lens</h2>
           <p className="font-serif text-lg text-taupe mb-12">
-            Share your favorite memories with us. Tag us to be featured. <br />
-            <span className="text-gold font-sans uppercase tracking-widest text-[11px] mt-4 inline-block">Tag us to be featured</span>
+            Follow us on Instagram <a href="https://www.instagram.com/hotel.bellacasaa/" target="_blank" rel="noopener noreferrer" className="text-gold hover:underline">@hotel.bellacasaa</a> and tag us to be featured.
           </p>
           
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-             {/* Simulating IG posts */}
-             {[1, 2, 3, 4].map(num => (
-               <div key={num} className="relative aspect-square overflow-hidden group cursor-pointer border border-gold/10">
-                 <Image src={'/images/exterior.jpeg'} alt="Hotel Surya Bella Casa Purnea Photo Gallery - Best Hotel Near Bus Stand" fill className="object-cover group-hover:scale-105 transition-transform duration-700" />
-                 <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
-                    <span className="text-white font-sans text-xs">View on Instagram</span>
-                 </div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 max-w-[900px] mx-auto">
+             {[
+                { url: 'https://www.instagram.com/reel/DaQCHqszZCo/' },
+                { url: 'https://www.instagram.com/p/DaM8qo_z7IA/' },
+                { url: 'https://www.instagram.com/p/DZhtuSyzazL/' },
+                { url: 'https://www.instagram.com/reel/DZROwfuza8f/' },
+             ].map((post, i) => (
+               <div key={i} className="overflow-hidden rounded-lg border border-gold/10 shadow-sm bg-white">
+                 <blockquote
+                   className="instagram-media"
+                   data-instgrm-permalink={post.url}
+                   data-instgrm-version="14"
+                   style={{ background: '#FFF', border: 0, borderRadius: '3px', margin: '1px auto', maxWidth: '540px', minWidth: '326px', padding: 0, width: 'calc(100% - 2px)' }}
+                 >
+                   <a href={post.url} target="_blank" rel="noopener noreferrer">
+                     View on Instagram
+                   </a>
+                 </blockquote>
                </div>
              ))}
           </div>
         </div>
+        <Script src="//www.instagram.com/embed.js" strategy="lazyOnload" />
       </section>
 
     </main>

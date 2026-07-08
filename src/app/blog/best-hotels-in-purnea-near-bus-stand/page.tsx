@@ -6,7 +6,7 @@ import { Calendar, MapPin } from 'lucide-react'
 export const metadata: Metadata = {
   title: 'Best Hotels Purnea Near Bus Stand',
   description:
-    'Find the best hotel in Purnea near Bus Stand. Compare deluxe AC rooms, budget stays, family rooms, and premium options at Hotel Surya Bella Casa opposite Vikass Market.',
+    'Find the best hotel in Purnea near Bus Stand. Compare deluxe AC rooms, budget stays, family rooms, and premium options at Hotel Surya Bella Casa opposite Vikass Market. Book now.',
   alternates: {
     canonical: 'https://hotelsuryabellacasa.com/blog/best-hotels-in-purnea-near-bus-stand',
   },

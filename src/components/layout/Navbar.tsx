@@ -13,10 +13,11 @@ import { BOOKING_ENGINE_URL } from '@/lib/hotelmate'
 const navLinks = [
   { label: 'Home', href: '/' },
   { label: 'Rooms', href: '/rooms' },
-  // { label: 'Experiences', href: '/experiences' },
-  { label: 'Blog', href: '/blog' },
-  { label: 'Events', href: '/events' },
+  // { label: 'Offers', href: '/offers' },
   { label: 'Dining', href: '/dining' },
+  { label: 'Events', href: '/events' },
+  { label: 'Gallery', href: '/gallery' },
+  { label: 'Blog', href: '/blog' },
   { label: 'About', href: '/about' },
   { label: 'Contact', href: '/contact' },
 ]
@@ -159,7 +160,23 @@ export default function Navbar() {
               <a href={`tel:${siteConfig.phone}`} className="font-serif text-xl text-ivory/80 hover:text-gold transition-colors">
                 {siteConfig.phone}
               </a>
-              <div className="mt-6">
+              <div className="mt-4 flex flex-wrap gap-3">
+                <Link
+                  href="/how-to-reach"
+                  onClick={() => setMobileOpen(false)}
+                  className="font-sans text-[11px] uppercase tracking-[0.16em] text-ivory/60 hover:text-gold transition-colors"
+                >
+                  How to Reach
+                </Link>
+                <Link
+                  href="/reservations"
+                  onClick={() => setMobileOpen(false)}
+                  className="font-sans text-[11px] uppercase tracking-[0.16em] text-ivory/60 hover:text-gold transition-colors"
+                >
+                  My Reservation
+                </Link>
+              </div>
+              <div className="mt-4">
                 <a
                   href={BOOKING_ENGINE_URL}
                   target="_blank"

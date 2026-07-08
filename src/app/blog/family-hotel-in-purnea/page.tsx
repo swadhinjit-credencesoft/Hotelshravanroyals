@@ -6,7 +6,7 @@ import { Users } from 'lucide-react'
 export const metadata: Metadata = {
   title: 'Family Hotel in Purnea',
   description:
-    'Best family hotel in Purnea near Bus Stand and Vikass Market. Spacious family rooms, safe environment, elevator access, and 24/7 staff assistance at Hotel Surya Bella Casa.',
+    'Best family hotel in Purnea near Bus Stand and Vikass Market. Spacious family rooms, safe environment, elevator access, and 24/7 staff assistance at Hotel Surya Bella Casa. Book now.',
   alternates: {
     canonical: 'https://hotelsuryabellacasa.com/blog/family-hotel-in-purnea',
   },

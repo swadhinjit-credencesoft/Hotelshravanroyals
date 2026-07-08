@@ -87,6 +87,7 @@ export default function RoomDetailContent({ room }: RoomDetailContentProps) {
                      src={roomImages[0]} 
                      alt={`${room.name} at Hotel Surya Bella Casa Purnea - Best Room Near Bus Stand`} 
                      fill 
+                     priority
                      sizes="(max-width: 1024px) 100vw, 50vw"
                      className="object-cover"
                    />

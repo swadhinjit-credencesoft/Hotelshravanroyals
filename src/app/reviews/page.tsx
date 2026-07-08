@@ -5,7 +5,7 @@ import { testimonials } from '@/data/testimonials'
 export const metadata: Metadata = {
   title: 'Hotel Surya Bella Casa Reviews | Guest Testimonials & Ratings',
   description:
-    'Read genuine guest reviews of Hotel Surya Bella Casa in Purnea. Rated 4.5★ by guests. See what travelers say about our rooms, rooftop restaurant, and service near Bus Stand Purnea.',
+    'Read genuine guest reviews of Hotel Surya Bella Casa in Purnea. Rated 4.5★ by guests. See what travelers say about our rooms, rooftop restaurant, and service near Bus Stand Purnea. Book direct for best rates.',
   alternates: {
     canonical: 'https://hotelsuryabellacasa.com/reviews',
   },

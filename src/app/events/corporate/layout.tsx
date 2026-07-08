@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
   title: 'Conference Hall Purnea | Corporate Events',
-  description: 'Best conference hall in Purnea at Hotel Surya Bella Casa near Bus Stand. Corporate event venue, business meeting room, seminar hall, team outing space. Host offsites, retreats & workshops in Purnea, Bihar.',
+  description: 'Best conference hall in Purnea at Hotel Surya Bella Casa near Bus Stand. Corporate event venue, business meeting room, seminar hall, team outing space. Host offsites & retreats. Book direct for corporate rates.',
   keywords: ['conference hall purnea', 'corporate event venue purnea', 'business meeting room purnea', 'seminar hall purnea', 'team outing purnea', 'corporate hotel purnea', 'offsites purnea', 'meeting room purnea', 'board meeting venue purnea', 'purnea corporate stay', 'training hall purnea', 'business seminar purnea', 'workshop venue purnea', 'company retreat purnea bihar', 'conference hall near bus stand purnea'],
   alternates: {
     canonical: 'https://hotelsuryabellacasa.com/events/corporate',
