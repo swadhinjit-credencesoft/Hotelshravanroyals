@@ -11,10 +11,11 @@ import {
   useSpring,
   useReducedMotion,
 } from 'framer-motion'
-import { ArrowRight, Calendar } from 'lucide-react'
+import { ArrowRight, Calendar, Users, Bed, ChevronDown } from 'lucide-react'
 import { heroSlides } from '@/data/hero'
 import dynamic from 'next/dynamic'
-import { buildBookingUrl, addDays, todayString, trackBookingEvent } from '@/lib/hotelmate'
+import DatePicker from 'react-datepicker'
+import { buildBookingUrl, trackBookingEvent } from '@/lib/hotelmate'
 
 const ParticleCanvas = dynamic(() => import('@/components/ui/ParticleCanvas'), {
   ssr: false,
@@ -58,26 +59,35 @@ export default function HeroSection() {
     mouseY.set(y)
   }, [reduced, mouseX, mouseY])
 
-  const checkoutRef = useRef<HTMLInputElement>(null)
-  const [checkIn, setCheckIn] = useState(todayString())
-  const [checkOut, setCheckOut] = useState(addDays(todayString(), 1))
+  const today = new Date()
+  const tomorrow = new Date(today)
+  tomorrow.setDate(tomorrow.getDate() + 1)
+  const fmt = (d: Date) => d.toISOString().slice(0, 10)
+
+  const [checkIn, setCheckIn] = useState<Date>(today)
+  const [checkOut, setCheckOut] = useState<Date>(tomorrow)
   const [guests, setGuests] = useState('1')
   const [rooms, setRooms] = useState('1')
 
-  const handleCheckInChange = (date: string) => {
+  const handleCheckInChange = (date: Date | null) => {
+    if (!date) return
     setCheckIn(date)
-    setCheckOut(prev => date && (!prev || prev <= date) ? addDays(date, 1) : prev)
+    if (date >= checkOut) {
+      const next = new Date(date)
+      next.setDate(next.getDate() + 1)
+      setCheckOut(next)
+    }
   }
 
-  const handleCheckOutChange = (date: string) => {
-    setCheckOut(date)
+  const handleCheckOutChange = (date: Date | null) => {
+    if (date) setCheckOut(date)
   }
 
   const openBooking = useCallback(() => {
     trackBookingEvent('booking_click', { source: 'hero_booking_bar' })
     const url = buildBookingUrl({
-      fromDate: checkIn || undefined,
-      toDate: checkOut || undefined,
+      fromDate: fmt(checkIn),
+      toDate: fmt(checkOut),
       noOfPersons: guests || undefined,
       noOfRooms: rooms || undefined,
     })
@@ -287,51 +297,39 @@ export default function HeroSection() {
 
       {/* Booking bar */}
       <motion.div
-        className="absolute bottom-0 left-0 right-0"
-        style={{ zIndex: 10 }}
+        className="hidden md:block absolute bottom-6 left-4 right-4 md:bottom-auto md:top-44 md:right-[6vw] md:left-auto w-auto max-w-[420px]"
+        style={{ zIndex: 20 }}
         initial={{ y: 50, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.8, delay: 2.2 }}
       >
-        <div className="hidden md:block border-t border-gold/15 bg-[#1a1004]/80 backdrop-blur-md">
-          <div className="max-w-[1600px] mx-auto px-6 md:px-10 py-3">
-            <div className="flex items-center gap-0 md:gap-4">
-              <div className="flex items-center gap-2 pr-4 border-r border-gold/20">
-                <span className="font-sans text-[10px] uppercase tracking-[0.15em] text-gold/80 whitespace-nowrap font-medium">Best Rate Guarantee</span>
-                <span className="font-sans text-[9px] text-ivory/50">|</span>
-                <span className="font-sans text-[9px] text-ivory/60 whitespace-nowrap">Book Direct & Save</span>
-              </div>
-              <BookingField label="Check-In" type="date" value={checkIn} onChange={handleCheckInChange} min={todayString()} />
-              <div className="hidden md:block w-px h-8 bg-gold/20" />
-              <BookingField label="Check-Out" type="date" value={checkOut} onChange={handleCheckOutChange} inputRef={checkoutRef} min={checkIn ? addDays(checkIn, 1) : todayString()} />
-              <div className="hidden md:block w-px h-8 bg-gold/20" />
-              <BookingField label="Guests" type="number" value={guests} onChange={setGuests} options={['1','2','3','4']} />
-              <div className="hidden md:block w-px h-8 bg-gold/20" />
-              <BookingField label="Rooms" type="number" value={rooms} onChange={setRooms} />
-              <div className="ml-auto pl-4">
-                <button
-                  onClick={openBooking}
-                  className="bg-gold text-[#1a1004] font-sans text-[11px] uppercase tracking-[0.15em] px-8 py-3.5 rounded-sm hover:bg-gold-light transition-colors whitespace-nowrap inline-block font-bold shadow-lg shadow-gold/20 cursor-pointer"
-                  aria-label="Check Availability - Book Hotel in Purnea"
-                >
-                  Check Availability
-                </button>
-              </div>
+        {/* Desktop Premium Booking Card (Compact, Right-Aligned, Glassy) */}
+        <div className="flex flex-col gap-4 bg-[#121f13]/35 border-2 border-gold/30 rounded-2xl shadow-[0_30px_60px_rgba(26,16,4,0.4)] backdrop-blur-xl p-5 w-[380px]">
+          <div className="flex items-center justify-between border-b border-gold/15 pb-3">
+            <div className="flex items-center gap-2">
+              <span className="inline-block w-2 h-2 rounded-full bg-gold animate-ping" />
+              <span className="font-sans text-[11px] uppercase tracking-[0.18em] text-gold font-bold">Book Your Stay</span>
             </div>
+            <span className="font-sans text-[9px] text-ivory/60 font-medium">Best Rate Guaranteed</span>
           </div>
-        </div>
 
-        {/* Mobile book now button */}
-        <div className="md:hidden px-4 pb-4">
+          <div className="grid grid-cols-2 gap-3">
+            <DatePickerField label="Check-In" selected={checkIn} onChange={handleCheckInChange} minDate={today} icon={Calendar} />
+            <DatePickerField label="Check-Out" selected={checkOut} onChange={handleCheckOutChange} minDate={new Date(checkIn.getTime() + 86400000)} icon={Calendar} />
+          </div>
+
+          <div className="grid grid-cols-2 gap-3">
+            <BookingField label="Guests" type="number" value={guests} onChange={setGuests} options={['1','2','3','4']} icon={Users} />
+            <BookingField label="Rooms" type="number" value={rooms} onChange={setRooms} icon={Bed} />
+          </div>
+
           <button
-            onClick={() => {
-              trackBookingEvent('booking_click', { source: 'hero_mobile' })
-              openBooking()
-            }}
-            className="w-full bg-gold text-[#1a1004] font-sans text-[13px] uppercase tracking-[0.18em] py-4 rounded-sm hover:bg-gold-light transition-all font-bold shadow-lg shadow-gold/30 cursor-pointer active:scale-[0.98]"
-            aria-label="Book Now - Hotel Surya Bella Casa Purnea"
+            onClick={openBooking}
+            className="w-full bg-gold text-[#1a1004] font-sans text-[12px] uppercase tracking-[0.18em] h-[52px] rounded-xl hover:bg-gold-light hover:scale-[1.02] active:scale-[0.98] transition-all duration-300 flex items-center justify-center gap-2 font-bold shadow-xl shadow-gold/25 cursor-pointer relative overflow-hidden group"
+            aria-label="Check Availability - Book Hotel in Purnea"
           >
-            Book Now
+            <span>Check Availability</span>
+            <ArrowRight size={14} className="transition-transform duration-300 group-hover:translate-x-1" />
           </button>
         </div>
       </motion.div>
@@ -349,62 +347,101 @@ export default function HeroSection() {
   )
 }
 
-function BookingField({ label, type = 'text', value, onChange, inputRef: externalRef, min, options }: { label: string; type?: string; value: string; onChange: (v: string) => void; inputRef?: React.RefObject<HTMLInputElement | null>; min?: string; options?: string[] }) {
-  const [isMounted, setIsMounted] = useState(false)
-  const internalRef = useRef<HTMLInputElement>(null)
-  const inputRef = externalRef || internalRef
-
-  useEffect(() => {
-    setIsMounted(true)
-  }, [])
-
-  const handleContainerClick = () => {
-    if (options) return
-    const el = inputRef.current
-    if (type === 'date' && el) {
-      const inputEl = el as HTMLInputElement & { showPicker?: () => void }
-      try {
-        if (inputEl.showPicker) inputEl.showPicker()
-        else inputEl.focus()
-      } catch { inputEl.focus() }
-    }
-  }
-
+function DatePickerField({
+  label,
+  selected,
+  onChange,
+  minDate,
+  icon: Icon,
+}: {
+  label: string
+  selected: Date
+  onChange: (date: Date | null) => void
+  minDate: Date
+  icon?: React.ComponentType<{ className?: string; size?: number }>
+}) {
   return (
-    <div
-      className="flex-1 px-4 py-1 cursor-pointer group"
-      style={{ minWidth: type === 'number' && !options ? '80px' : '140px' }}
-      onClick={handleContainerClick}
-    >
-      <label className="font-sans text-[11px] uppercase tracking-[0.18em] text-gold/70 block mb-1 pointer-events-none">
-        {label}
-      </label>
-      <div className="relative flex items-center">
+    <div className="flex-1 bg-[#121f13]/30 hover:bg-[#121f13]/55 border border-gold/15 hover:border-gold/35 rounded-xl px-4 py-2 cursor-pointer group transition-all duration-300 flex items-center justify-between gap-2 h-[58px] min-w-[130px] backdrop-blur-sm">
+      <div className="flex-1 min-w-0 flex flex-col justify-center">
+        <label className="font-sans text-[9px] uppercase tracking-[0.18em] text-gold/75 block mb-0.5 pointer-events-none font-medium leading-none">
+          {label}
+        </label>
+        <DatePicker
+          selected={selected}
+          onChange={onChange}
+          minDate={minDate}
+          dateFormat="dd MMM yyyy"
+          className="w-full bg-transparent border-0 text-ivory font-sans text-[13px] font-semibold focus:outline-none focus:ring-0 cursor-pointer py-0 m-0 leading-none h-5"
+          wrapperClassName="w-full"
+          popperPlacement="bottom-start"
+          calendarClassName="react-datepicker-custom"
+          aria-label={label}
+        />
+      </div>
+      {Icon && (
+        <div className="text-gold/60 group-hover:text-gold group-hover:scale-105 transition-all duration-300 flex-shrink-0 pointer-events-none">
+          <Icon size={15} />
+        </div>
+      )}
+    </div>
+  )
+}
+
+function BookingField({
+  label,
+  type = 'text',
+  value,
+  onChange,
+  min,
+  options,
+  icon: Icon,
+}: {
+  label: string
+  type?: string
+  value: string
+  onChange: (v: string) => void
+  min?: string
+  options?: string[]
+  icon?: React.ComponentType<{ className?: string; size?: number }>
+}) {
+  return (
+    <div className="flex-1 bg-[#121f13]/30 hover:bg-[#121f13]/55 border border-gold/15 hover:border-gold/35 rounded-xl px-4 py-2 cursor-pointer group transition-all duration-300 flex items-center justify-between gap-2 h-[58px] min-w-[130px] backdrop-blur-sm">
+      <div className="flex-1 min-w-0 flex flex-col justify-center">
+        <label className="font-sans text-[9px] uppercase tracking-[0.18em] text-gold/75 block mb-0.5 pointer-events-none font-medium leading-none">
+          {label}
+        </label>
+        <div className="relative flex items-center h-5">
+          {options ? (
+            <select
+              value={value}
+              onChange={(e) => onChange(e.target.value)}
+              required
+              className="w-full bg-transparent border-0 text-ivory font-sans text-[13px] font-semibold focus:outline-none focus:ring-0 cursor-pointer appearance-none pr-5 py-0 m-0 leading-none h-5"
+              aria-label={label}
+            >
+              {options.map((opt) => (
+                <option key={opt} value={opt} className="text-forest bg-cream">{opt}</option>
+              ))}
+            </select>
+          ) : (
+            <input
+              type={type === 'number' ? 'number' : 'text'}
+              value={value}
+              min={min ?? (type === 'number' ? '1' : undefined)}
+              onChange={(e) => onChange(e.target.value)}
+              required
+              className="booking-input w-full bg-transparent border-0 text-ivory placeholder-gold/50 font-sans text-[13px] font-semibold focus:outline-none focus:ring-0 cursor-pointer py-0 m-0 leading-none h-5"
+              aria-label={label}
+            />
+          )}
+        </div>
+      </div>
+      <div className="text-gold/60 group-hover:text-gold group-hover:scale-105 transition-all duration-300 flex-shrink-0">
         {options ? (
-          <select
-            value={value}
-            onChange={(e) => onChange(e.target.value)}
-            className="w-full bg-transparent border-b border-gold/40 text-ivory font-sans text-[14px] pb-1 focus:outline-none focus:border-gold transition-colors appearance-none cursor-pointer"
-            aria-label={label}
-          >
-            {options.map((opt) => (
-              <option key={opt} value={opt} className="text-forest">{opt}</option>
-            ))}
-          </select>
-        ) : (
-          <input
-            ref={inputRef as React.Ref<HTMLInputElement>}
-            type={isMounted && type === 'date' ? 'date' : type === 'number' ? 'number' : 'text'}
-            value={value}
-            min={min ?? (type === 'number' ? '1' : undefined)}
-            onChange={(e) => onChange(e.target.value)}
-            className={`booking-input w-full bg-transparent border-b border-gold/40 text-ivory placeholder-gold/50 font-sans text-[14px] pb-1 focus:outline-none focus:border-gold transition-colors ${type === 'date' ? 'pr-6' : ''}`}
-            aria-label={label}
-          />
-        )}
-        {type === 'date' && (
-          <Calendar size={12} className="absolute right-0 bottom-2 text-gold/50 group-hover:text-gold transition-colors pointer-events-none" />
-        )}
+          <ChevronDown size={15} />
+        ) : Icon ? (
+          <Icon size={15} />
+        ) : null}
       </div>
     </div>
   )
