@@ -1,6 +1,7 @@
 'use client'
 import Link from 'next/link'
 import { useState, useEffect, useRef, useCallback } from 'react'
+import { createPortal } from 'react-dom'
 // import Image from 'next/image'
 import {
   motion,
@@ -347,6 +348,13 @@ export default function HeroSection() {
   )
 }
 
+function PopperContainer({ children }: { children?: React.ReactNode }) {
+  const [mounted, setMounted] = useState(false)
+  useEffect(() => setMounted(true), [])
+  if (!mounted) return <>{children}</>
+  return createPortal(children, document.body)
+}
+
 function DatePickerField({
   label,
   selected,
@@ -360,6 +368,12 @@ function DatePickerField({
   minDate: Date
   icon?: React.ComponentType<{ className?: string; size?: number }>
 }) {
+  const pickerRef = useRef<React.ComponentRef<typeof DatePicker>>(null)
+
+  const handleIconClick = () => {
+    pickerRef.current?.setOpen(true)
+  }
+
   return (
     <div className="flex-1 bg-[#121f13]/30 hover:bg-[#121f13]/55 border border-gold/15 hover:border-gold/35 rounded-xl px-4 py-2 cursor-pointer group transition-all duration-300 flex items-center justify-between gap-2 h-[58px] min-w-[130px] backdrop-blur-sm">
       <div className="flex-1 min-w-0 flex flex-col justify-center">
@@ -367,25 +381,32 @@ function DatePickerField({
           {label}
         </label>
         <DatePicker
+          ref={pickerRef}
           selected={selected}
           onChange={onChange}
           minDate={minDate}
           dateFormat="dd MMM yyyy"
           className="w-full bg-transparent border-0 text-ivory font-sans text-[13px] font-semibold focus:outline-none focus:ring-0 cursor-pointer py-0 m-0 leading-none h-5"
           wrapperClassName="w-full"
-          popperPlacement="bottom-start"
+          popperPlacement="bottom-end"
+          popperContainer={PopperContainer}
           calendarClassName="react-datepicker-custom"
           aria-label={label}
         />
       </div>
       {Icon && (
-        <div className="text-gold/60 group-hover:text-gold group-hover:scale-105 transition-all duration-300 flex-shrink-0 pointer-events-none">
+        <div
+          className="text-gold/60 group-hover:text-gold group-hover:scale-105 transition-all duration-300 flex-shrink-0 cursor-pointer"
+          onClick={handleIconClick}
+        >
           <Icon size={15} />
         </div>
       )}
     </div>
   )
 }
+
+
 
 function BookingField({
   label,
