@@ -68,6 +68,32 @@ export default function WeddingsPage() {
         image='/images/exterior5.jpeg'
       />
 
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "VideoObject",
+            "name": "Hotel Surya Bella Casa Wedding Venue - Marriage Hall & Banquet",
+            "description": "Video tour of Hotel Surya Bella Casa weddings facility showcasing our marriage hall, wedding lawns, banquet hall, and bridal suites near Purnea Bus Stand. Perfect for your dream wedding in Purnea.",
+            "thumbnailUrl": "https://bookonelocal.in/cdn/IMG_7431.mp4".replace('/images/', '/cdn/').replace('.jpeg', '.mp4').replace('exterior5', '7431'),
+            "contentUrl": "https://bookonelocal.in/cdn/IMG_7431.mp4",
+            "embedUrl": "https://hotelsuryabellacasa.com/events/weddings",
+            "uploadDate": "2024-01-01",
+            "duration": "PT90S",
+            "potentialAction": {
+              "@type": "WatchAction",
+              "target": "https://hotelsuryabellacasa.com/events/weddings"
+            },
+            "interactionStatistic": {
+              "@type": "InteractionCounter",
+              "interactionType": "https://schema.org/WatchAction",
+              "userInteractionCount": 650
+            }
+          })
+        }}
+      />
+
       <section className="py-24">
         <div className="max-w-[1600px] mx-auto px-6 md:px-10">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center mb-32">

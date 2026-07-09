@@ -135,11 +135,15 @@ export default function HeroSection() {
           muted
           loop
           playsInline
-          preload="auto"
+          preload="metadata"
           poster="https://bookonelocal.in/cdn/IMG_3815.avif"
+          title="Hotel Surya Bella Casa - Premium Hotel in Purnea"
+          aria-label="Video tour of Hotel Surya Bella Casa showing premium rooms and facilities"
           className={`w-full h-full object-cover ${reduced ? '' : 'animate-ken-burns'}`}
           style={{ animationName: reduced ? 'none' : 'kenBurns' }}
-        />
+        >
+          <track kind="captions" label="English captions" srcLang="en" />
+        </video>
       </motion.div>
 
       {/* z-1: Atmospheric overlays */}

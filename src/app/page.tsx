@@ -148,7 +148,15 @@ export default function Home() {
             "contentUrl": "https://bookonelocal.in/cdn/website-home-video.mp4",
             "embedUrl": "https://hotelsuryabellacasa.com",
             "uploadDate": "2024-01-01",
-            "duration": "PT30S"
+            "duration": "PT30S",
+            "potentialAction": {
+              "@type": "WatchAction",
+              "target": "https://hotelsuryabellacasa.com"
+            },
+            "interactionStatistic": {
+              "@type": "InteractionCounter",
+              "userInteractionCount": 500
+            }
           })
         }}
       />

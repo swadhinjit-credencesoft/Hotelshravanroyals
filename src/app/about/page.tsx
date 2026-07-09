@@ -46,6 +46,67 @@ export default function AboutPage() {
         }}
       />
 
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "VideoObject",
+            "name": "About Hotel Surya Bella Casa - Purnea Heritage Hotel",
+            "description": "Video tour of Hotel Surya Bella Casa about page showcasing our history, values, and hospitality in Purnea. Learn about our journey from 2019 to becoming Purnea's preferred budget hotel.",
+            "thumbnailUrl": "https://bookonelocal.in/cdn/IMG_7429.avif",
+            "contentUrl": "https://bookonelocal.in/cdn/IMG_7429.mp4",
+            "embedUrl": "https://hotelsuryabellacasa.com/about",
+            "uploadDate": "2024-02-20",
+            "duration": "PT45S",
+            "potentialAction": {
+              "@type": "WatchAction",
+              "target": "https://hotelsuryabellacasa.com/about"
+            },
+            "interactionStatistic": {
+              "@type": "InteractionCounter",
+              "userInteractionCount": 250
+            }
+          })
+        }}
+      />
+
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "Why choose Hotel Surya Bella Casa for your stay in Purnea?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Hotel Surya Bella Casa offers the perfect blend of comfort, convenience, and local heritage. Located just 2 minutes from Purnea Bus Stand and opposite Vikass Market, we provide clean, affordable rooms with essential amenities, 100% power backup, AC, and free high-speed Wi-Fi. Our welcoming Bihari service and vegetarian dining options make it ideal for both business travelers and families visiting Purnea."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "What are the key amenities and services at Hotel Surya Bella Casa?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Hotel Surya Bella Casa provides 100% power backup and AC in all rooms, daily hygiene and sanitization, zero hidden charges, and local Bihari hospitality. Our rooms are equipped with hot water kettles, complimentary tea/coffee supplies, and mini-fridges. We're conveniently located near Bhatta Bazar and bus stand attractions, with 24/7 security and active commercial activity."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "How does Hotel Surya Bella Casa ensure guest comfort and safety?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "We maintain strict hygiene standards with daily sanitization services, 24/7 security in a well-lit area, and transparent pricing with zero hidden charges. All rooms are air-conditioned with power backup, and our staff provides attentive local service. The hotel is in a safe neighborhood with easy access to transportation and amenities."
+                }
+              }
+            ]
+          })
+        }}
+      />
+
       <section className="py-24">
         <div className="max-w-[1600px] mx-auto px-6 md:px-10">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-24 items-center">

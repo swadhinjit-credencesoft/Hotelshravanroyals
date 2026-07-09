@@ -91,6 +91,32 @@ export default function EventsPage() {
         }}
       />
 
+      {/* VideoObject Schema for Google Video Indexing */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "VideoObject",
+            "name": "Hotel Surya Bella Casa Events - Banquet Hall & Wedding Venue",
+            "description": "Best banquet hall in Purnea at Hotel Surya Bella Casa near Bus Stand. Video showcase of wedding venue, conference hall, party hall near Vikass Market.",
+            "thumbnailUrl": "https://bookonelocal.in/cdn/IMG_7431.avif",
+            "contentUrl": "https://bookonelocal.in/cdn/IMG_7431.mp4",
+            "embedUrl": "https://hotelsuryabellacasa.com/events",
+            "uploadDate": "2024-03-15",
+            "duration": "PT60S",
+            "potentialAction": {
+              "@type": "WatchAction",
+              "target": "https://hotelsuryabellacasa.com/events"
+            },
+            "interactionStatistic": {
+              "@type": "InteractionCounter",
+              "userInteractionCount": 300
+            }
+          })
+        }}
+      />
+
       {/* Hero Tabs */}
       <div className="bg-white border-b border-gold/20 sticky top-20 z-40 shadow-sm">
         <div className="max-w-[1200px] mx-auto px-6 flex justify-center overflow-x-auto no-scrollbar">

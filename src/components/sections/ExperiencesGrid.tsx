@@ -69,16 +69,19 @@ function ExperienceCard({
       transition={{ duration: 0.8, delay: index * 0.12, ease: [0.16, 1, 0.3, 1] }}
     >
       <div className="relative h-full w-full min-h-[400px]">
-        {experience.video ? (
-          <video
-            src={experience.video}
-            autoPlay
-            muted
-            loop
-            playsInline
-            className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
-          />
-        ) : (
+{experience.video ? (
+            <video
+              src={experience.video}
+              autoPlay
+              muted
+              loop
+              playsInline
+              preload="metadata"
+              title="Hotel Experience Video"
+              aria-label="Video showcasing hotel experience"
+              className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+            />
+          ) : (
           <Image
             src={experience.image}
             alt={experience.imageAlt}
