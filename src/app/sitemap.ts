@@ -30,6 +30,7 @@ const staticRoutes: MetadataRoute.Sitemap = [
   { url: `${BASE_URL}/reservations`, lastModified: TODAY, changeFrequency: 'weekly', priority: 0.9 },
   { url: `${BASE_URL}/dining`, lastModified: TODAY, changeFrequency: 'monthly', priority: 0.8 },
   { url: `${BASE_URL}/events`, lastModified: TODAY, changeFrequency: 'monthly', priority: 0.8 },
+  { url: `${BASE_URL}/experiences`, lastModified: TODAY, changeFrequency: 'monthly', priority: 0.8 },
   { url: `${BASE_URL}/events/weddings`, lastModified: TODAY, changeFrequency: 'monthly', priority: 0.8 },
   { url: `${BASE_URL}/events/parties`, lastModified: TODAY, changeFrequency: 'monthly', priority: 0.8 },
   { url: `${BASE_URL}/events/corporate`, lastModified: TODAY, changeFrequency: 'monthly', priority: 0.8 },
