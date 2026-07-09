@@ -10,6 +10,25 @@ export const metadata: Metadata = {
   alternates: {
     canonical: 'https://hotelsuryabellacasa.com/blog/family-hotel-in-purnea',
   },
+  openGraph: {
+    title: 'Family Hotel in Purnea | Safe Stay Near Bus Stand',
+    description: 'Best family hotel near Purnea Bus Stand with spacious rooms, elevator access, CCTV security, and pure vegetarian environment. Safe stay for families visiting Purnia.',
+    url: 'https://hotelsuryabellacasa.com/blog/family-hotel-in-purnea',
+    siteName: 'Hotel Surya Bella Casa',
+    type: 'article',
+    images: [{ url: 'https://bookonelocal.in/cdn/IMG_3764.avif', width: 1200, height: 630, alt: 'Family Hotel in Purnea - Safe Stay Near Bus Stand' }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Family Hotel in Purnea | Safe Family Stay',
+    description: 'Best family hotel in Purnea with spacious rooms, lift access, and CCTV security. Safe and comfortable stay near Bus Stand.',
+    images: ['https://bookonelocal.in/cdn/IMG_3764.avif'],
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: { index: true, follow: true, 'max-image-preview': 'large', 'max-snippet': -1 },
+  },
 }
 
 export default function BlogPost() {

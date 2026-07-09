@@ -9,6 +9,25 @@ export const metadata: Metadata = {
   alternates: {
     canonical: 'https://hotelsuryabellacasa.com/how-to-reach',
   },
+  openGraph: {
+    title: 'How to Reach Hotel Surya Bella Casa Purnea | Travel Guide',
+    description: 'Complete travel directions to reach Hotel Surya Bella Casa in Purnea. Guide from railway station, bus stand, and nearby cities. Book your stay now.',
+    url: 'https://hotelsuryabellacasa.com/how-to-reach',
+    siteName: 'Hotel Surya Bella Casa',
+    type: 'website',
+    images: [{ url: 'https://bookonelocal.in/cdn/IMG_3815.avif', width: 1200, height: 630, alt: 'How to Reach Hotel Surya Bella Casa Purnea - Travel Guide' }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'How to Reach Hotel Surya Bella Casa Purnea',
+    description: 'Complete travel guide to reach Hotel Surya Bella Casa in Purnea. Directions from railway station, bus stand, and nearby cities.',
+    images: ['https://bookonelocal.in/cdn/IMG_3815.avif'],
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: { index: true, follow: true, 'max-image-preview': 'large', 'max-snippet': -1 },
+  },
 }
 
 const routes = [

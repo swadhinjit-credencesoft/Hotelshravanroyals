@@ -9,6 +9,25 @@ export const metadata: Metadata = {
   alternates: {
     canonical: 'https://hotelsuryabellacasa.com/reviews',
   },
+  openGraph: {
+    title: 'Hotel Surya Bella Casa Reviews | Guest Testimonials & Ratings',
+    description: 'Read genuine guest reviews of Hotel Surya Bella Casa in Purnea. Rated 4.5★ by 120+ guests. Best hotel near Bus Stand and Vikass Market.',
+    url: 'https://hotelsuryabellacasa.com/reviews',
+    siteName: 'Hotel Surya Bella Casa',
+    type: 'website',
+    images: [{ url: 'https://bookonelocal.in/cdn/IMG_3815.avif', width: 1200, height: 630, alt: 'Hotel Surya Bella Casa Reviews - Guest Testimonials' }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Hotel Surya Bella Casa Reviews | 4.5★ Guest Rating',
+    description: 'Read genuine guest reviews of Hotel Surya Bella Casa in Purnea near Bus Stand. Rated 4.5★ by travelers.',
+    images: ['https://bookonelocal.in/cdn/IMG_3815.avif'],
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: { index: true, follow: true, 'max-image-preview': 'large', 'max-snippet': -1 },
+  },
 }
 
 export default function ReviewsPage() {

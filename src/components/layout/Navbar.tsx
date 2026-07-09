@@ -13,7 +13,7 @@ import { BOOKING_ENGINE_URL } from '@/lib/hotelmate'
 const navLinks = [
   { label: 'Home', href: '/' },
   { label: 'Rooms', href: '/rooms' },
-  // { label: 'Offers', href: '/offers' },
+  { label: 'Offers', href: '/offers' },
   { label: 'Dining', href: '/dining' },
   { label: 'Events', href: '/events' },
   { label: 'Gallery', href: '/gallery' },

@@ -195,10 +195,15 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <meta name="theme-color" content="#FBF7F0" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="preconnect" href="https://bookone.io" />
         <link rel="preconnect" href="https://bookonelocal.in" />
+        <link rel="preconnect" href="https://www.googletagmanager.com" />
         <link rel="dns-prefetch" href="https://bookone.io" />
         <link rel="dns-prefetch" href="https://bookonelocal.in" />
+        <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        <link rel="preload" href="https://bookonelocal.in/cdn/IMG_3815.avif" as="image" fetchPriority="high" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
@@ -228,15 +233,21 @@ export default function RootLayout({
               "@type": "Hotel",
               "@id": "https://hotelsuryabellacasa.com/#hotel",
               "name": "Hotel Surya Bella Casa",
-              "description": "Best hotel in Purnea near Bus Stand. Book comfortable rooms with free WiFi, parking, rooftop restaurant. Hotel Surya Bella Casa, Purnia, Bihar.",
+              "alternateName": "Hotel Surya Bella Casa Purnia",
+              "description": "Hotel Surya Bella Casa is a comfortable and budget-friendly hotel in Purnia, Bihar, located at Suryalok Complex opposite Vikass Market near the main Bus Stand. Offering 4 room categories, free Wi-Fi, air conditioning, elevator, and 24/7 room service for business travelers and families.",
               "url": "https://hotelsuryabellacasa.com",
               "telephone": "+919835923601",
-              "email": "reservations@hotelsuryabellacasa.com",
-              "image": "https://bookonelocal.in/cdn/IMG_3815.avif",
+              "email": "bellacasa561@gmail.com",
+              "image": [
+                "https://bookonelocal.in/cdn/IMG_3815.avif",
+                "https://bookonelocal.in/cdn/IMG_3808.avif",
+                "https://bookonelocal.in/cdn/IMG_3809.avif"
+              ],
+              "logo": "https://hotelsuryabellacasa.com/suryabellacasalogo.png",
               "address": {
                 "@type": "PostalAddress",
                 "streetAddress": "Suryalok Complex, Opposite Vikass Market, Near Bus Stand",
-                "addressLocality": "Purnea",
+                "addressLocality": "Purnia",
                 "addressRegion": "Bihar",
                 "postalCode": "854301",
                 "addressCountry": "IN"
@@ -248,20 +259,42 @@ export default function RootLayout({
               },
               "hasMap": "https://www.google.com/maps/place/?cid=8931275976043074034",
               "sameAs": [
+                "https://www.instagram.com/hotel.bellacasaa/",
+                "https://www.facebook.com/hotelsuryabellacasa",
+                "https://www.youtube.com/@hotelsuryabellacasa",
                 "https://www.google.com/maps/place/?cid=8931275976043074034"
               ],
-              "priceRange": "₹1,200 - ₹2,700",
+              "priceRange": "₹1,500 - ₹3,000",
+              "checkinTime": "12:00",
+              "checkoutTime": "12:00",
+              "starRating": {
+                "@type": "Rating",
+                "ratingValue": "3"
+              },
+              "amenityFeature": [
+                { "@type": "LocationFeatureSpecification", "name": "Free Wi-Fi", "value": true },
+                { "@type": "LocationFeatureSpecification", "name": "Air Conditioning", "value": true },
+                { "@type": "LocationFeatureSpecification", "name": "Elevator", "value": true },
+                { "@type": "LocationFeatureSpecification", "name": "Free Parking", "value": true },
+                { "@type": "LocationFeatureSpecification", "name": "24/7 Room Service", "value": true },
+                { "@type": "LocationFeatureSpecification", "name": "Flat Screen TV", "value": true },
+                { "@type": "LocationFeatureSpecification", "name": "Power Backup", "value": true }
+              ],
+              "currenciesAccepted": "INR",
+              "paymentAccepted": "Cash, Credit Card, UPI",
               "aggregateRating": {
                 "@type": "AggregateRating",
                 "ratingValue": "4.5",
                 "reviewCount": "120",
-                "bestRating": "5"
+                "bestRating": "5",
+                "worstRating": "1"
               },
               "contactPoint": {
                 "@type": "ContactPoint",
                 "telephone": "+919835923601",
                 "contactType": "reservations",
-                "availableLanguage": ["Hindi", "English"]
+                "availableLanguage": ["Hindi", "English"],
+                "areaServed": "IN"
               },
               "openingHoursSpecification": [
                 { "@type": "OpeningHoursSpecification", "dayOfWeek": "Monday", "opens": "00:00", "closes": "23:59" },
@@ -271,7 +304,19 @@ export default function RootLayout({
                 { "@type": "OpeningHoursSpecification", "dayOfWeek": "Friday", "opens": "00:00", "closes": "23:59" },
                 { "@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "00:00", "closes": "23:59" },
                 { "@type": "OpeningHoursSpecification", "dayOfWeek": "Sunday", "opens": "00:00", "closes": "23:59" }
-              ]
+              ],
+              "parentOrganization": {
+                "@type": "Organization",
+                "@id": "https://hotelsuryabellacasa.com/#organization",
+                "name": "Hotel Surya Bella Casa",
+                "logo": "https://hotelsuryabellacasa.com/suryabellacasalogo.png",
+                "url": "https://hotelsuryabellacasa.com",
+                "sameAs": [
+                  "https://www.facebook.com/hotelsuryabellacasa",
+                  "https://www.instagram.com/hotel.bellacasaa/",
+                  "https://www.youtube.com/@hotelsuryabellacasa"
+                ]
+              }
             })
           }}
         />
@@ -357,8 +402,6 @@ export default function RootLayout({
             </div>
           </div>
         </div>
-      {/* Preload hero poster image */}
-      <link rel="preload" href="https://bookonelocal.in/cdn/IMG_3815.avif" as="image" fetchPriority="high" />
       </body>
     </html>
   )

@@ -10,6 +10,25 @@ export const metadata: Metadata = {
   alternates: {
     canonical: 'https://hotelsuryabellacasa.com/blog/banquet-hall-wedding-venue-in-purnea',
   },
+  openGraph: {
+    title: 'Banquet Hall & Wedding Venue Purnea | Marriage Hall Near Bus Stand',
+    description: 'Best banquet hall near Purnea Bus Stand for weddings, receptions, and corporate events. Marble flooring, modern lighting, AC comfort at Hotel Surya Bella Casa.',
+    url: 'https://hotelsuryabellacasa.com/blog/banquet-hall-wedding-venue-in-purnea',
+    siteName: 'Hotel Surya Bella Casa',
+    type: 'article',
+    images: [{ url: 'https://bookonelocal.in/cdn/IMG_3809.avif', width: 1200, height: 630, alt: 'Banquet Hall & Wedding Venue Purnea - Marriage Hall Near Bus Stand' }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Banquet Hall & Wedding Venue Purnea',
+    description: 'Best wedding venue and banquet hall near Purnea Bus Stand. Plan your dream wedding at Hotel Surya Bella Casa.',
+    images: ['https://bookonelocal.in/cdn/IMG_3809.avif'],
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: { index: true, follow: true, 'max-image-preview': 'large', 'max-snippet': -1 },
+  },
 }
 
 export default function BlogPost() {

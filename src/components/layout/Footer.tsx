@@ -37,11 +37,25 @@ import { siteConfig } from '@/data/site'
 const quickLinks = [
   { label: 'Home', href: '/' },
   { label: 'Rooms', href: '/rooms' },
-  { label: 'Blog', href: '/blog' },
+  { label: 'Gallery', href: '/gallery' },
   { label: 'Dining', href: '/dining' },
   { label: 'Events', href: '/events' },
+  { label: 'Offers', href: '/offers' },
+  { label: 'Blog', href: '/blog' },
   { label: 'About', href: '/about' },
   { label: 'Contact', href: '/contact' },
+]
+
+const exploreLinks = [
+  { label: 'FAQ', href: '/faq' },
+  { label: 'Reviews', href: '/reviews' },
+  { label: 'How to Reach', href: '/how-to-reach' },
+  { label: 'Experiences', href: '/experiences' },
+  { label: 'Near Bus Stand', href: '/hotel-near-purnia-bus-stand' },
+  { label: 'Near Vikass Market', href: '/hotel-near-vikass-market' },
+  { label: 'Budget Hotel', href: '/budget-hotel-in-purnia' },
+  { label: 'Family Hotel', href: '/family-hotel-in-purnia' },
+  { label: 'Business Hotel', href: '/business-hotel-in-purnia' },
 ]
 
 const legalLinks = [
@@ -115,6 +129,23 @@ export default function Footer() {
               <h3 className="font-serif text-2xl text-ivory mb-4">Quick Link</h3>
               <ul className="space-y-3">
                 {quickLinks.map((link) => (
+                  <li key={link.label}>
+                    <Link
+                      href={link.href}
+                      className="font-sans text-base text-ivory/60 hover:text-gold transition-colors duration-300"
+                    >
+                      {link.label}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            {/* Explore */}
+            <div className="min-w-[150px]">
+              <h3 className="font-serif text-2xl text-ivory mb-4">Explore</h3>
+              <ul className="space-y-3">
+                {exploreLinks.map((link) => (
                   <li key={link.label}>
                     <Link
                       href={link.href}

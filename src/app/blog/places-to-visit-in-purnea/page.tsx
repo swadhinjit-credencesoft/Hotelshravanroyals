@@ -10,6 +10,25 @@ export const metadata: Metadata = {
   alternates: {
     canonical: 'https://hotelsuryabellacasa.com/blog/places-to-visit-in-purnea',
   },
+  openGraph: {
+    title: 'Places to Visit in Purnea | Tourist Attractions & Local Guide',
+    description: 'Discover the best places to visit in Purnea - Maa Puran Devi Temple, Kali Mandir, Jalalgarh Fort, shopping markets, and more. Complete Purnea travel guide.',
+    url: 'https://hotelsuryabellacasa.com/blog/places-to-visit-in-purnea',
+    siteName: 'Hotel Surya Bella Casa',
+    type: 'article',
+    images: [{ url: 'https://bookonelocal.in/cdn/IMG_3809.avif', width: 1200, height: 630, alt: 'Places to Visit in Purnea - Tourist Attractions Guide' }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Places to Visit in Purnea | Travel Guide',
+    description: 'Explore the best tourist attractions in Purnea - temples, forts, markets, and more near Hotel Surya Bella Casa.',
+    images: ['https://bookonelocal.in/cdn/IMG_3809.avif'],
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: { index: true, follow: true, 'max-image-preview': 'large', 'max-snippet': -1 },
+  },
 }
 
 const attractions = [

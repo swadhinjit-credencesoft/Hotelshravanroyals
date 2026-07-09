@@ -8,6 +8,25 @@ export const metadata: Metadata = {
   alternates: {
     canonical: 'https://hotelsuryabellacasa.com/faq',
   },
+  openGraph: {
+    title: 'Hotel Booking & Stay FAQs | Hotel Surya Bella Casa Purnea',
+    description: 'Find answers to all your questions about Hotel Surya Bella Casa in Purnea - check-in timings, rooms, parking, WiFi, food, booking, and more.',
+    url: 'https://hotelsuryabellacasa.com/faq',
+    siteName: 'Hotel Surya Bella Casa',
+    type: 'website',
+    images: [{ url: 'https://bookonelocal.in/cdn/IMG_3815.avif', width: 1200, height: 630, alt: 'Hotel Surya Bella Casa Purnea - Frequently Asked Questions' }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Hotel Booking & Stay FAQs | Hotel Surya Bella Casa',
+    description: 'FAQ about Hotel Surya Bella Casa in Purnea - check-in, rooms, parking, WiFi, food, and booking information.',
+    images: ['https://bookonelocal.in/cdn/IMG_3815.avif'],
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: { index: true, follow: true, 'max-image-preview': 'large', 'max-snippet': -1 },
+  },
 }
 
 export default function FAQPage() {
