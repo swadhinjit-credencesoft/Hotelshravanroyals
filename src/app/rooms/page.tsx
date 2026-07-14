@@ -10,6 +10,16 @@ export const metadata: Metadata = {
   alternates: {
     canonical: 'https://hotelsuryabellacasa.com/rooms',
   },
+  keywords: [
+    'hotel rooms in purnea',
+    'AC rooms purnea',
+    'deluxe room purnia',
+    'super deluxe room purnea',
+    'non AC room purnea',
+    'budget rooms purnea',
+    'best hotel rooms near bus stand purnea',
+    'room prices purnia hotel',
+  ],
 }
 
 export default function RoomsPage() {

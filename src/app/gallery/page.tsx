@@ -7,6 +7,13 @@ import Script from 'next/script'
 export const metadata: Metadata = {
   title: 'Photo Gallery & Virtual Tour',
   description: 'Browse high-resolution photos, guest images, and a video walkthrough of Hotel Surya Bella Casa in Purnea. See our rooms, dining, and facilities near Bus Stand. Book direct for the best rates.',
+  keywords: [
+    'hotel gallery purnea',
+    'hotel surya bella casa photos',
+    'hotel rooms images purnia',
+    'purnia hotel pictures',
+    'banquet hall photos purnea',
+  ],
   alternates: {
     canonical: 'https://hotelsuryabellacasa.com/gallery',
   },
@@ -15,8 +22,30 @@ export const metadata: Metadata = {
 export default function GalleryPage() {
   return (
     <main className="bg-cream min-h-screen">
-      
-      
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'BreadcrumbList',
+            itemListElement: [
+              {
+                '@type': 'ListItem',
+                position: 1,
+                name: 'Home',
+                item: 'https://hotelsuryabellacasa.com',
+              },
+              {
+                '@type': 'ListItem',
+                position: 2,
+                name: 'Gallery',
+                item: 'https://hotelsuryabellacasa.com/gallery',
+              },
+            ],
+          })
+        }}
+      />
+
       {/* SEO Schema */}
       <script
         type="application/ld+json"

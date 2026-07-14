@@ -169,7 +169,7 @@ keywords: [
     locale: 'en_US',
     images: [
       {
-        url: 'https://bookonelocal.in/cdn/IMG_3815.jpg',
+        url: 'https://bookonelocal.in/cdn/IMG_3815.avif',
         width: 1200,
         height: 630,
         alt: 'Hotel Surya Bella Casa Purnia',
@@ -182,7 +182,7 @@ keywords: [
     title: 'Hotel Surya Bella Casa Purnia | Best Stay in Purnia',
     description:
       'Book a comfortable, budget-friendly stay at Hotel Surya Bella Casa in Purnia, Bihar. Near Bus Stand & Vikass Market. Perfect for families & business travelers.',
-    images: ['https://bookonelocal.in/cdn/IMG_3815.jpg'],
+    images: ['https://bookonelocal.in/cdn/IMG_3815.avif'],
   },
 }
 
@@ -202,8 +202,11 @@ export default function RootLayout({
         <link rel="dns-prefetch" href="https://bookone.io" />
         <link rel="dns-prefetch" href="https://bookonelocal.in" />
         <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
+        <link rel="dns-prefetch" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://maps.googleapis.com" />
+        <link rel="dns-prefetch" href="https://maps.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-        <link rel="preload" href="https://bookonelocal.in/cdn/IMG_3815.avif" as="image" fetchPriority="high" />
+        <link rel="preload" as="image" href="https://bookonelocal.in/cdn/IMG_3815.avif" imageSizes="100vw" imageSrcSet="https://bookonelocal.in/cdn/IMG_3815.avif 1200w" fetchPriority="high" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
@@ -278,8 +281,22 @@ export default function RootLayout({
                 { "@type": "LocationFeatureSpecification", "name": "Free Parking", "value": true },
                 { "@type": "LocationFeatureSpecification", "name": "24/7 Room Service", "value": true },
                 { "@type": "LocationFeatureSpecification", "name": "Flat Screen TV", "value": true },
-                { "@type": "LocationFeatureSpecification", "name": "Power Backup", "value": true }
+                { "@type": "LocationFeatureSpecification", "name": "Power Backup", "value": true },
+                { "@type": "LocationFeatureSpecification", "name": "Hot Water", "value": true },
+                { "@type": "LocationFeatureSpecification", "name": "Tea/Coffee Maker", "value": true },
+                { "@type": "LocationFeatureSpecification", "name": "Housekeeping", "value": true },
+                { "@type": "LocationFeatureSpecification", "name": "Doctor on Call", "value": true },
+                { "@type": "LocationFeatureSpecification", "name": "Luggage Storage", "value": true },
+                { "@type": "LocationFeatureSpecification", "name": "Laundry Service", "value": true }
               ],
+              "touristType": ["Business", "Family", "Couples"],
+              "availableLanguage": ["Hindi", "English"],
+              "numberOfRooms": "19",
+              "floorSize": {
+                "@type": "QuantitativeValue",
+                "value": "4500",
+                "unitCode": "FTK"
+              },
               "currenciesAccepted": "INR",
               "paymentAccepted": "Cash, Credit Card, UPI",
               "aggregateRating": {
@@ -311,6 +328,8 @@ export default function RootLayout({
                 "name": "Hotel Surya Bella Casa",
                 "logo": "https://hotelsuryabellacasa.com/suryabellacasalogo.png",
                 "url": "https://hotelsuryabellacasa.com",
+                "foundingDate": "2024",
+                "description": "Hotel Surya Bella Casa is a premier hospitality establishment in Purnia, Bihar, offering comfortable accommodation, rooftop dining, and event spaces.",
                 "sameAs": [
                   "https://www.facebook.com/hotelsuryabellacasa",
                   "https://www.instagram.com/hotel.bellacasaa/",

@@ -29,6 +29,42 @@ const nextConfig = {
   poweredByHeader: false,
   // Strict mode for React
   reactStrictMode: true,
+  // Security headers
+  headers: async () => [
+    {
+      source: '/(.*)',
+      headers: [
+        {
+          key: 'X-Content-Type-Options',
+          value: 'nosniff',
+        },
+        {
+          key: 'X-Frame-Options',
+          value: 'DENY',
+        },
+        {
+          key: 'X-XSS-Protection',
+          value: '1; mode=block',
+        },
+        {
+          key: 'Referrer-Policy',
+          value: 'strict-origin-when-cross-origin',
+        },
+        {
+          key: 'Permissions-Policy',
+          value: 'camera=(), microphone=(), geolocation=(self)',
+        },
+        // NOTE: Strict-Transport-Security (HSTS) is not effective with
+        // `output: 'export'` since it requires a server to set the header.
+        // Configure HSTS at your hosting provider (e.g. Netlify, Vercel, Cloudflare)
+        // instead: max-age=63072000; includeSubDomains; preload
+        {
+          key: 'Content-Security-Policy',
+          value: "frame-ancestors 'self' https://bookone.io https://*.google.com",
+        },
+      ],
+    },
+  ],
 };
 
 export default nextConfig;

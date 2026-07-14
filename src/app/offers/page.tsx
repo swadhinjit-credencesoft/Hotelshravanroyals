@@ -1,6 +1,18 @@
 import OffersSection from '@/components/sections/OffersSection'
 import SectionLabel from '@/components/ui/SectionLabel'
 import { offers } from '@/data/offers'
+import type { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  keywords: [
+    'hotel offers purnea',
+    'hotel deals purnia',
+    'best hotel rates purnea',
+    'discount hotel booking purnea',
+    'corporate hotel rates purnia',
+    'wedding package purnea hotel',
+  ],
+}
 
 export default function OffersPage() {
   const offerSchema = {
@@ -31,6 +43,30 @@ export default function OffersPage() {
 
   return (
     <main className="bg-cream min-h-screen">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'BreadcrumbList',
+            itemListElement: [
+              {
+                '@type': 'ListItem',
+                position: 1,
+                name: 'Home',
+                item: 'https://hotelsuryabellacasa.com',
+              },
+              {
+                '@type': 'ListItem',
+                position: 2,
+                name: 'Offers',
+                item: 'https://hotelsuryabellacasa.com/offers',
+              },
+            ],
+          })
+        }}
+      />
+
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(offerSchema) }}

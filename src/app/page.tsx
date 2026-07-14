@@ -11,6 +11,20 @@ import HistorySection from '@/components/sections/HistorySection';
 import LuxuryAmenities from '@/components/sections/LuxuryAmenities';
 import ArtOfStaySection from '@/components/sections/ArtOfStaySection';
 import FAQSection from '@/components/sections/FAQSection';
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  keywords: [
+    'hotel in purnea',
+    'best hotel in purnea near bus stand',
+    'hotel surya bella casa',
+    'luxury hotel purnia',
+    'family hotel purnea',
+    'business hotel purnia',
+    'book hotel purnea',
+    'best hotel bihar',
+  ],
+};
 
 export default function Home() {
   return (

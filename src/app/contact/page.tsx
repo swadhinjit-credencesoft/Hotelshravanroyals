@@ -8,6 +8,13 @@ export const metadata: Metadata = {
   title: 'Contact & Directions',
   description:
     'Contact Hotel Surya Bella Casa in Purnea. Call +91 9835923601, WhatsApp, email, or visit us opposite Vikass Market near Bus Stand. Get directions from Patna, Siliguri, and Purnea Junction. Book direct for best rates.',
+  keywords: [
+    'contact hotel surya bella casa purnea',
+    'hotel booking phone number purnia',
+    'hotel near bus stand purnea contact',
+    'hotel reservation purnia',
+    'whatsapp hotel purnea',
+  ],
   alternates: {
     canonical: 'https://hotelsuryabellacasa.com/contact',
   },
@@ -16,8 +23,30 @@ export const metadata: Metadata = {
 export default function ContactPage() {
   return (
     <main className="bg-cream min-h-screen">
-      
-      
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'BreadcrumbList',
+            itemListElement: [
+              {
+                '@type': 'ListItem',
+                position: 1,
+                name: 'Home',
+                item: 'https://hotelsuryabellacasa.com',
+              },
+              {
+                '@type': 'ListItem',
+                position: 2,
+                name: 'Contact',
+                item: 'https://hotelsuryabellacasa.com/contact',
+              },
+            ],
+          })
+        }}
+      />
+
       {/* Hero Header */}
       <div className="pt-40 pb-20 px-6 md:px-10 max-w-[1600px] mx-auto text-center">
         <SectionLabel className="justify-center mb-4">Concierge</SectionLabel>

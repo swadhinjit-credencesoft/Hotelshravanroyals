@@ -5,6 +5,15 @@ export const metadata: Metadata = {
   title: 'Hotel Booking & Stay FAQs',
   description:
     'Find answers to frequently asked questions about Hotel Surya Bella Casa in Purnea. Check-in/check-out timings, room categories, parking, Wi-Fi, food, and booking info. Best hotel near Bus Stand Purnea. Book direct.',
+  keywords: [
+    'hotel faq purnea',
+    'hotel booking questions purnea',
+    'check in check out time purnea hotel',
+    'hotel amenities purnea',
+    'room categories purnea',
+    'hotel near bus stand faq',
+    'purnia hotel frequently asked questions',
+  ],
   alternates: {
     canonical: 'https://hotelsuryabellacasa.com/faq',
   },
@@ -119,6 +128,30 @@ export default function FAQPage() {
 
   return (
     <main className="bg-cream min-h-screen pt-32">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'BreadcrumbList',
+            itemListElement: [
+              {
+                '@type': 'ListItem',
+                position: 1,
+                name: 'Home',
+                item: 'https://hotelsuryabellacasa.com',
+              },
+              {
+                '@type': 'ListItem',
+                position: 2,
+                name: 'FAQ',
+                item: 'https://hotelsuryabellacasa.com/faq',
+              },
+            ],
+          })
+        }}
+      />
+
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}

@@ -4,13 +4,20 @@ import Image from 'next/image';
 import { Heart, Users, Utensils, Camera, MapPin, Calendar } from 'lucide-react';
 import Link from 'next/link';
 
+export const metadata = {
+  title: 'Wedding Venue in Purnea - Marriage Hall & Banquet | Hotel Surya Bella Casa',
+  description: 'Best wedding venue in Purnea near Bus Stand. Hotel Surya Bella Casa offers marriage hall, wedding lawns, banquet hall & bridal suites for up to 250 guests.',
+  keywords: ['wedding venue purnea', 'marriage hall purnia', 'banquet hall wedding purnea', 'best wedding hotel purnea', 'wedding decoration purnia', 'wedding catering purnea'],
+  alternates: { canonical: 'https://hotelsuryabellacasa.com/events/weddings' },
+};
+
 export default function WeddingsPage() {
   const jsonLd = [
     {
       "@context": "https://schema.org",
       "@type": "EventVenue",
-      "name": "Hotel Surya Bella Casa Wedding Lawns & Banquet Hall Purnea",
-      "description": "Best wedding venue in Purnea near Bus Stand. Marriage hall, wedding lawns, banquet hall, bridal suites at Hotel Surya Bella Casa.",
+      "name": "Wedding Venue - Hotel Surya Bella Casa",
+      "description": "Best wedding venue in Purnea near Bus Stand. Hotel Surya Bella Casa offers marriage hall, wedding lawns, banquet hall & bridal suites for up to 250 guests.",
       "address": {
         "@type": "PostalAddress",
         "streetAddress": "Suryalok Complex, Opposite Vikass Market, Near Bus Stand",
@@ -19,6 +26,7 @@ export default function WeddingsPage() {
         "postalCode": "854301",
         "addressCountry": "IN"
       },
+      "maximumAttendeeCapacity": "200",
       "telephone": "+91 9835923601"
     },
     {

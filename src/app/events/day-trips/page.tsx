@@ -1,4 +1,9 @@
+import type { Metadata } from 'next'
 import CinematicHero from '@/components/ui/CinematicHero';
+
+export const metadata: Metadata = {
+  keywords: ['day trips from purnea', 'purnea sightseeing', 'nearby attractions purnia', 'tour packages purnea', 'purnea day tour'],
+};
 import SectionLabel from '@/components/ui/SectionLabel';
 import Image from 'next/image';
 import { Sun, Utensils, MapPin, Clock, Calendar } from 'lucide-react';

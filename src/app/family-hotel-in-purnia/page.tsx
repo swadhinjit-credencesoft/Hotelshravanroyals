@@ -17,6 +17,14 @@ const familyAmenities: AmenityItem[] = [
 export const metadata = {
   title: 'Family Hotel in Purnia',
   description: 'Looking for a safe family hotel in Purnia? Hotel Surya Bella Casa offers spacious family rooms, lift access, CCTV security, pure vegetarian environment near Bus Stand. Best family hotel near Vikass Market. Book direct.',
+  keywords: [
+    'family hotel in purnia', 'family hotel in purnea', 'safe hotel purnea families',
+    'family friendly hotel purnia bihar', 'best family hotel near bus stand purnia',
+    'pure vegetarian hotel purnia', 'hotel with elevator for families purnia',
+    'CCTV secure hotel for families purnia', 'hotel for couples and children purnia',
+    'family stay near vikass market purnia', 'hotel with lift access purnia',
+    'safe hotel for women purnia', 'family accommodation purnia bihar',
+  ],
   alternates: {
     canonical: 'https://hotelsuryabellacasa.com/family-hotel-in-purnia',
   },
@@ -55,6 +63,46 @@ export default function FamilyHotelLandingPage() {
             "itemListElement": [
               { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://hotelsuryabellacasa.com" },
               { "@type": "ListItem", "position": 2, "name": "Family Hotel in Purnia", "item": "https://hotelsuryabellacasa.com/family-hotel-in-purnia" }
+            ]
+          })
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Hotel",
+            "name": "Hotel Surya Bella Casa",
+            "description": "Family hotel in Purnia with spacious rooms, elevator access, CCTV security, and pure vegetarian environment. Safe stay near Bus Stand and Vikass Market.",
+            "url": "https://hotelsuryabellacasa.com",
+            "telephone": "+919835923601",
+            "email": "bellacasa561@gmail.com",
+            "image": "https://bookonelocal.in/cdn/IMG_3815.avif",
+            "logo": "https://hotelsuryabellacasa.com/suryabellacasalogo.png",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "Suryalok Complex, Opposite Vikass Market, Near Bus Stand",
+              "addressLocality": "Purnia",
+              "addressRegion": "Bihar",
+              "postalCode": "854301",
+              "addressCountry": "IN"
+            },
+            "geo": {
+              "@type": "GeoCoordinates",
+              "latitude": 25.7771,
+              "longitude": 87.4753
+            },
+            "hasMap": "https://www.google.com/maps/place/?cid=8931275976043074034",
+            "priceRange": "₹1,500 - ₹3,000",
+            "checkinTime": "12:00",
+            "checkoutTime": "12:00",
+            "amenityFeature": [
+              { "@type": "LocationFeatureSpecification", "name": "Free WiFi", "value": true },
+              { "@type": "LocationFeatureSpecification", "name": "Elevator", "value": true },
+              { "@type": "LocationFeatureSpecification", "name": "CCTV Security", "value": true },
+              { "@type": "LocationFeatureSpecification", "name": "Air Conditioning", "value": true },
+              { "@type": "LocationFeatureSpecification", "name": "Free Parking", "value": true }
             ]
           })
         }}

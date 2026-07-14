@@ -6,6 +6,14 @@ export const metadata: Metadata = {
   title: 'Guest Reviews & Ratings',
   description:
     'Read genuine guest reviews of Hotel Surya Bella Casa in Purnea. Rated 4.5★ by guests. See what travelers say about our rooms, rooftop restaurant, and service near Bus Stand Purnea. Book direct for best rates.',
+  keywords: [
+    'hotel surya bella casa reviews',
+    'purnea hotel guest reviews',
+    'best hotel in purnea ratings',
+    'hotel near bus stand purnea reviews',
+    'family hotel purnea reviews',
+    'business hotel purnea reviews',
+  ],
   alternates: {
     canonical: 'https://hotelsuryabellacasa.com/reviews',
   },
@@ -61,6 +69,30 @@ export default function ReviewsPage() {
 
   return (
     <main className="bg-cream min-h-screen pt-32">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'BreadcrumbList',
+            itemListElement: [
+              {
+                '@type': 'ListItem',
+                position: 1,
+                name: 'Home',
+                item: 'https://hotelsuryabellacasa.com',
+              },
+              {
+                '@type': 'ListItem',
+                position: 2,
+                name: 'Reviews',
+                item: 'https://hotelsuryabellacasa.com/reviews',
+              },
+            ],
+          })
+        }}
+      />
+
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(reviewSchema) }}

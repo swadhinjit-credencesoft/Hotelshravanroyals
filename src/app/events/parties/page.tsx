@@ -4,14 +4,21 @@ import Image from 'next/image';
 import { Gift, Music, Flame, GlassWater, Users, Calendar } from 'lucide-react';
 import Link from 'next/link';
 
+export const metadata = {
+  title: 'Party Hall in Purnea - Birthday Party & Celebration Venue | Hotel Surya Bella Casa',
+  description: 'Best party hall in Purnea near Bus Stand. Hotel Surya Bella Casa offers venue for birthdays, anniversaries, and private celebrations with customized themes.',
+  keywords: ['party hall purnea', 'birthday party venue purnia', 'anniversary celebration purnea', 'private party hotel purnea', 'event venue near bus stand purnea'],
+  alternates: { canonical: 'https://hotelsuryabellacasa.com/events/parties' },
+};
+
 export default function PartiesPage() {
   const jsonLd = [
     {
       "@context": "https://schema.org",
-      "@type": "EventVenue",
-      "name": "Hotel Surya Bella Casa Birthday Party Hall & Celebration Deck Purnea",
+      "@type": "SocialEvent",
+      "name": "Parties & Celebrations - Hotel Surya Bella Casa",
       "description": "Best birthday party hall in Purnea near Bus Stand. Party venue for birthdays, anniversaries, private parties with customized themes and decoration.",
-      "address": {
+      "location": {
         "@type": "PostalAddress",
         "streetAddress": "Suryalok Complex, Opposite Vikass Market, Near Bus Stand",
         "addressLocality": "Purnea",

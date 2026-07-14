@@ -20,7 +20,10 @@ export default function EventsPage() {
 
   return (
     <main className="bg-cream min-h-screen">
-      
+      <head>
+        <meta name="keywords" content="event venue purnea, wedding hall purnia, banquet hall purnea, conference hall purnia, party hall purnea, hotel events purnea near bus stand" />
+      </head>
+
       <CinematicHero
         label="Best Banquet Hall in Purnea - Wedding Hall Near Bus Stand"
         title="Banquet Hall & Wedding Venue in Purnea"

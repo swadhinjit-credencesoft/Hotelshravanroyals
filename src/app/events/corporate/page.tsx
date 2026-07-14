@@ -1,19 +1,24 @@
-'use client';
-
 import CinematicHero from '@/components/ui/CinematicHero';
 import SectionLabel from '@/components/ui/SectionLabel';
 import Image from 'next/image';
 import { Briefcase, Wifi, Presentation, Coffee, Target, Calendar } from 'lucide-react';
 import Link from 'next/link';
 
+export const metadata = {
+  title: 'Corporate Events in Purnea - Conference Hall & Meeting Room | Hotel Surya Bella Casa',
+  description: 'Best conference hall in Purnea near Bus Stand. Hotel Surya Bella Casa offers corporate event venue, meeting room, seminar hall for offsites, retreats and workshops.',
+  keywords: ['conference hall purnea', 'corporate event venue purnia', 'meeting room hotel purnea', 'seminar hall purnea', 'business conference purnia'],
+  alternates: { canonical: 'https://hotelsuryabellacasa.com/events/corporate' },
+};
+
 export default function CorporatePage() {
   const jsonLd = [
     {
       "@context": "https://schema.org",
-      "@type": "EventVenue",
-      "name": "Hotel Surya Bella Casa Conference Hall & Corporate Hub Purnea",
+      "@type": "BusinessEvent",
+      "name": "Corporate Events - Hotel Surya Bella Casa",
       "description": "Best conference hall in Purnea near Bus Stand. Corporate event venue, meeting room, seminar hall for offsites, retreats and workshops.",
-      "address": {
+      "location": {
         "@type": "PostalAddress",
         "streetAddress": "Suryalok Complex, Opposite Vikass Market, Near Bus Stand",
         "addressLocality": "Purnea",

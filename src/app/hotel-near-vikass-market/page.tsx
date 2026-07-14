@@ -17,6 +17,14 @@ const marketAmenities: AmenityItem[] = [
 export const metadata = {
   title: 'Hotel Near Vikass Market Purnia',
   description: 'Looking for a hotel near Vikass Market Purnia? Hotel Surya Bella Casa is located opposite Vikass Market in Suryalok Complex, near Bus Stand. Free WiFi, parking, AC rooms. Best hotel opposite Vikass Market. Book direct.',
+  keywords: [
+    'hotel near vikass market purnea', 'hotel opposite vikass market',
+    'hotel near vikass market bihar', 'best hotel opposite vikass market purnia',
+    'AC rooms near vikass market', 'stay near vikass market purnia',
+    'budget hotel opposite vikass market', 'Suryalok Complex hotel near market',
+    'hotel near shopping area purnia', 'hotel near bhatta bazar purnia',
+    'hotel near bus stand purnea vikass market',
+  ],
   alternates: {
     canonical: 'https://hotelsuryabellacasa.com/hotel-near-vikass-market',
   },
@@ -55,6 +63,45 @@ export default function VikassMarketLandingPage() {
             "itemListElement": [
               { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://hotelsuryabellacasa.com" },
               { "@type": "ListItem", "position": 2, "name": "Hotel Near Vikass Market", "item": "https://hotelsuryabellacasa.com/hotel-near-vikass-market" }
+            ]
+          })
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Hotel",
+            "name": "Hotel Surya Bella Casa",
+            "description": "Hotel opposite Vikass Market in Purnia. Located in Suryalok Complex near Bus Stand with free WiFi, parking, and AC rooms.",
+            "url": "https://hotelsuryabellacasa.com",
+            "telephone": "+919835923601",
+            "email": "bellacasa561@gmail.com",
+            "image": "https://bookonelocal.in/cdn/IMG_3815.avif",
+            "logo": "https://hotelsuryabellacasa.com/suryabellacasalogo.png",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "Suryalok Complex, Opposite Vikass Market, Near Bus Stand",
+              "addressLocality": "Purnia",
+              "addressRegion": "Bihar",
+              "postalCode": "854301",
+              "addressCountry": "IN"
+            },
+            "geo": {
+              "@type": "GeoCoordinates",
+              "latitude": 25.7771,
+              "longitude": 87.4753
+            },
+            "hasMap": "https://www.google.com/maps/place/?cid=8931275976043074034",
+            "priceRange": "₹1,500 - ₹3,000",
+            "checkinTime": "12:00",
+            "checkoutTime": "12:00",
+            "amenityFeature": [
+              { "@type": "LocationFeatureSpecification", "name": "Free WiFi", "value": true },
+              { "@type": "LocationFeatureSpecification", "name": "Free Parking", "value": true },
+              { "@type": "LocationFeatureSpecification", "name": "Air Conditioning", "value": true },
+              { "@type": "LocationFeatureSpecification", "name": "Elevator", "value": true }
             ]
           })
         }}

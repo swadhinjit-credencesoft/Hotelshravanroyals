@@ -3,11 +3,46 @@ import CinematicHero from '@/components/ui/CinematicHero'
 import SectionLabel from '@/components/ui/SectionLabel'
 import Image from 'next/image'
 import { MapPin } from 'lucide-react'
+import type { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  keywords: [
+    'things to do in purnea',
+    'purnea experiences',
+    'purnea tourist attractions',
+    'sightseeing purnia',
+    'local experiences purnea',
+    'nearby places purnia hotel',
+  ],
+}
 
 export default function ExperiencesPage() {
   return (
     <main className="bg-cream min-h-screen">
-      
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'BreadcrumbList',
+            itemListElement: [
+              {
+                '@type': 'ListItem',
+                position: 1,
+                name: 'Home',
+                item: 'https://hotelsuryabellacasa.com',
+              },
+              {
+                '@type': 'ListItem',
+                position: 2,
+                name: 'Experiences',
+                item: 'https://hotelsuryabellacasa.com/experiences',
+              },
+            ],
+          })
+        }}
+      />
+
       <CinematicHero 
         label="Beyond the Room"
         title="Explore Purnia"

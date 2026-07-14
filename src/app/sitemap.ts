@@ -8,11 +8,11 @@ const BASE_URL = 'https://hotelsuryabellacasa.com'
 const TODAY = new Date().toISOString().slice(0, 10)
 
 const localSeoPages = [
-  { url: `${BASE_URL}/hotel-near-purnia-bus-stand`, priority: 0.9 },
-  { url: `${BASE_URL}/hotel-near-vikass-market`, priority: 0.9 },
-  { url: `${BASE_URL}/family-hotel-in-purnia`, priority: 0.9 },
-  { url: `${BASE_URL}/business-hotel-in-purnia`, priority: 0.9 },
-  { url: `${BASE_URL}/budget-hotel-in-purnia`, priority: 0.9 },
+  { url: `${BASE_URL}/hotel-near-purnia-bus-stand`, priority: 0.9, images: ['https://bookonelocal.in/cdn/IMG_3815.avif'] },
+  { url: `${BASE_URL}/hotel-near-vikass-market`, priority: 0.9, images: ['https://bookonelocal.in/cdn/IMG_3808.avif'] },
+  { url: `${BASE_URL}/family-hotel-in-purnia`, priority: 0.9, images: ['https://bookonelocal.in/cdn/IMG_3701.avif'] },
+  { url: `${BASE_URL}/business-hotel-in-purnia`, priority: 0.9, images: ['https://bookonelocal.in/cdn/IMG_3703.avif'] },
+  { url: `${BASE_URL}/budget-hotel-in-purnia`, priority: 0.9, images: ['https://bookonelocal.in/cdn/IMG_3815.avif'] },
 ]
 
 const blogArticles = [
@@ -36,20 +36,31 @@ const staticRoutes: MetadataRoute.Sitemap = [
   { url: `${BASE_URL}/events/corporate`, lastModified: TODAY, changeFrequency: 'monthly', priority: 0.8 },
   { url: `${BASE_URL}/events/day-trips`, lastModified: TODAY, changeFrequency: 'monthly', priority: 0.7 },
   { url: `${BASE_URL}/gallery`, lastModified: TODAY, changeFrequency: 'monthly', priority: 0.8 },
-  { url: `${BASE_URL}/about`, lastModified: TODAY, changeFrequency: 'monthly', priority: 0.7 },
+  { url: `${BASE_URL}/about`, lastModified: TODAY, changeFrequency: 'monthly', priority: 0.7, images: ['https://bookonelocal.in/cdn/IMG_3815.avif', 'https://bookonelocal.in/cdn/IMG_3808.avif'] },
   { url: `${BASE_URL}/contact`, lastModified: TODAY, changeFrequency: 'monthly', priority: 0.7 },
   { url: `${BASE_URL}/blog`, lastModified: TODAY, changeFrequency: 'weekly', priority: 0.7 },
   { url: `${BASE_URL}/offers`, lastModified: TODAY, changeFrequency: 'weekly', priority: 0.7 },
   ...localSeoPages,
-  ...blogArticles.map(slug => ({
-    url: `${BASE_URL}/blog/${slug}`,
-    lastModified: TODAY,
-    changeFrequency: 'monthly' as const,
-    priority: 0.7,
-  })),
-  { url: `${BASE_URL}/faq`, lastModified: TODAY, changeFrequency: 'monthly', priority: 0.8 },
-  { url: `${BASE_URL}/reviews`, lastModified: TODAY, changeFrequency: 'monthly', priority: 0.8 },
-  { url: `${BASE_URL}/how-to-reach`, lastModified: TODAY, changeFrequency: 'monthly', priority: 0.8 },
+  ...blogArticles.map(slug => {
+    const imageMap: Record<string, string[]> = {
+      'best-hotels-in-purnea-near-bus-stand': ['https://bookonelocal.in/cdn/IMG_3815.avif'],
+      'rooftop-restaurant-in-purnea': ['https://bookonelocal.in/cdn/IMG_3739.avif', 'https://bookonelocal.in/cdn/IMG_3808.avif'],
+      'places-to-visit-in-purnea': ['https://bookonelocal.in/cdn/IMG_3809.avif', 'https://hotelsuryabellacasa.com/purneacity.jpg'],
+      'banquet-hall-wedding-venue-in-purnea': ['https://bookonelocal.in/cdn/IMG_3766.avif'],
+      'business-hotel-in-purnea': ['https://bookonelocal.in/cdn/IMG_3709.jpeg', 'https://bookonelocal.in/cdn/IMG_3703.avif'],
+      'family-hotel-in-purnea': ['https://bookonelocal.in/cdn/IMG_3701.avif', 'https://bookonelocal.in/cdn/IMG_3764.avif'],
+    }
+    return {
+      url: `${BASE_URL}/blog/${slug}`,
+      lastModified: TODAY,
+      changeFrequency: 'monthly' as const,
+      priority: 0.7,
+      images: imageMap[slug] || [],
+    }
+  }),
+  { url: `${BASE_URL}/faq`, lastModified: TODAY, changeFrequency: 'monthly', priority: 0.8, images: ['https://bookonelocal.in/cdn/IMG_3815.avif'] },
+  { url: `${BASE_URL}/reviews`, lastModified: TODAY, changeFrequency: 'monthly', priority: 0.8, images: ['https://bookonelocal.in/cdn/IMG_3815.avif'] },
+  { url: `${BASE_URL}/how-to-reach`, lastModified: TODAY, changeFrequency: 'monthly', priority: 0.8, images: ['https://bookonelocal.in/cdn/IMG_3815.avif'] },
   { url: `${BASE_URL}/privacy`, lastModified: TODAY, changeFrequency: 'yearly', priority: 0.3 },
   { url: `${BASE_URL}/cancellation`, lastModified: TODAY, changeFrequency: 'yearly', priority: 0.3 },
   { url: `${BASE_URL}/terms`, lastModified: TODAY, changeFrequency: 'yearly', priority: 0.3 },

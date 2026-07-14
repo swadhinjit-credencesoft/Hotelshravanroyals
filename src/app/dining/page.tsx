@@ -1,15 +1,51 @@
 // import Image from 'next/image';
 import DiningSection from '@/components/sections/DiningSection';
+import type { Metadata } from 'next';
 import CinematicHero from '@/components/ui/CinematicHero';
 import SectionLabel from '@/components/ui/SectionLabel';
 import GoldDivider from '@/components/ui/GoldDivider';
 import { Coffee } from 'lucide-react';
 // import { Coffee, Flame, UtensilsCrossed } from 'lucide-react';
 
+export const metadata: Metadata = {
+  keywords: [
+    'restaurant in purnea',
+    'rooftop restaurant purnea',
+    'best food in purnia',
+    'multi cuisine restaurant purnea',
+    'hotel dining purnia',
+    'pure vegetarian restaurant purnea',
+    'non veg restaurant near bus stand purnea',
+  ],
+}
+
 export default function DiningPage() {
   return (
     <main className="bg-cream min-h-screen">
-      
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'BreadcrumbList',
+            itemListElement: [
+              {
+                '@type': 'ListItem',
+                position: 1,
+                name: 'Home',
+                item: 'https://hotelsuryabellacasa.com',
+              },
+              {
+                '@type': 'ListItem',
+                position: 2,
+                name: 'Dining',
+                item: 'https://hotelsuryabellacasa.com/dining',
+              },
+            ],
+          })
+        }}
+      />
+
       <CinematicHero 
         label="Best Rooftop Restaurant in Purnea - Family Restaurant Near Bus Stand"
         title="Best Restaurant in Purnea - Rooftop Dining & Multi Cuisine"
@@ -21,71 +57,88 @@ export default function DiningPage() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
-          __html: JSON.stringify([
-            {
-              "@context": "https://schema.org",
-              "@type": "Restaurant",
-              "name": "The Rooftop Restaurant at Hotel Surya Bella Casa Purnea",
-              "servesCuisine": ["Indian", "Tandoor", "Mughlai", "Asian", "Continental"],
-              "description": "Best rooftop restaurant in Purnea at Hotel Surya Bella Casa. Family restaurant near Bus Stand serving Indian, Tandoor, Mughlai, Asian & Continental cuisine. Best dinner restaurant in Purnea.",
-              "url": "https://hotelsuryabellacasa.com/dining",
-              "address": {
-                "@type": "PostalAddress",
-                "streetAddress": "Suryalok Complex, Opposite Vikass Market, Near Bus Stand",
-                "addressLocality": "Purnea",
-                "addressRegion": "Bihar",
-                "postalCode": "854301",
-                "addressCountry": "IN"
-              },
-              "telephone": "+91 9835923601",
-              "menu": {
-                "@type": "Menu",
-                "name": "Main Menu",
-                "hasMenuSection": [
-                  { "@type": "MenuSection", "name": "Local Specialties", "description": "Fish and Mutton on request" },
-                  { "@type": "MenuSection", "name": "Global Classics", "description": "Asian and Continental favorites" }
-                ]
-              }
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Restaurant",
+            "name": "Rooftop Restaurant - Hotel Surya Bella Casa",
+            "description": "Multi-cuisine rooftop restaurant at Hotel Surya Bella Casa in Purnea. Serving Indian, Tandoor, Mughlai, Asian, and Continental dishes. Pure vegetarian environment on property.",
+            "url": "https://hotelsuryabellacasa.com/dining",
+            "image": "https://bookonelocal.in/cdn/IMG_3808.avif",
+            "telephone": "+919835923601",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "Suryalok Complex, Opposite Vikass Market, Near Bus Stand",
+              "addressLocality": "Purnia",
+              "addressRegion": "Bihar",
+              "postalCode": "854301",
+              "addressCountry": "IN"
             },
-            {
-              "@context": "https://schema.org",
-              "@type": "FAQPage",
-              "mainEntity": [
-                {
-                  "@type": "Question",
-                  "name": "What is the best rooftop restaurant in Purnea?",
-                  "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Hotel Surya Bella Casa has the best rooftop restaurant in Purnea, located near Bus Stand opposite Vikass Market."
-                  }
-                },
-                {
-                  "@type": "Question",
-                  "name": "Is there a good family restaurant in Purnea near Bus Stand?",
-                  "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Yes, Hotel Surya Bella Casa is a family restaurant in Purnea near Bus Stand offering pure vegetarian food, Indian, Tandoor, Mughlai, Asian and Continental cuisine."
-                  }
-                },
-                {
-                  "@type": "Question",
-                  "name": "What are the best dinner restaurants in Purnea?",
-                  "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Hotel Surya Bella Casa's rooftop restaurant is one of the best dinner restaurants in Purnea, serving multi cuisine options in a family-friendly atmosphere."
-                  }
-                },
-                {
-                  "@type": "Question",
-                  "name": "Do you have a non-veg restaurant in Purnea?",
-                  "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Yes, Hotel Surya Bella Casa serves both veg and non-veg options including special Fish and Mutton dishes prepared upon request at our restaurant in Purnea."
-                  }
-                }
-              ]
+            "geo": {
+              "@type": "GeoCoordinates",
+              "latitude": 25.7771,
+              "longitude": 87.4753
+            },
+            "servesCuisine": ["Indian", "Tandoor", "Mughlai", "Asian", "Continental"],
+            "priceRange": "₹300 - ₹800",
+            "acceptsReservations": "True",
+            "openingHoursSpecification": [
+              { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"], "opens": "07:00", "closes": "23:00" }
+            ],
+            "hasMenu": {
+              "@type": "Menu",
+              "name": "Multi-Cuisine Menu",
+              "description": "Indian, Tandoor, Mughlai, Asian, and Continental dishes"
+            },
+            "starRating": {
+              "@type": "Rating",
+              "ratingValue": "4.5",
+              "bestRating": "5"
             }
-          ])
+          })
+        }}
+      />
+
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "What is the best rooftop restaurant in Purnea?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Hotel Surya Bella Casa has the best rooftop restaurant in Purnea, located near Bus Stand opposite Vikass Market."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Is there a good family restaurant in Purnea near Bus Stand?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Yes, Hotel Surya Bella Casa is a family restaurant in Purnea near Bus Stand offering pure vegetarian food, Indian, Tandoor, Mughlai, Asian and Continental cuisine."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "What are the best dinner restaurants in Purnea?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Hotel Surya Bella Casa's rooftop restaurant is one of the best dinner restaurants in Purnea, serving multi cuisine options in a family-friendly atmosphere."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Do you have a non-veg restaurant in Purnea?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Yes, Hotel Surya Bella Casa serves both veg and non-veg options including special Fish and Mutton dishes prepared upon request at our restaurant in Purnea."
+                }
+              }
+            ]
+          })
         }}
       />
 

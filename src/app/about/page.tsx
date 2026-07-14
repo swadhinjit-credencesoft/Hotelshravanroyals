@@ -5,6 +5,13 @@ export const metadata: Metadata = {
   title: 'About Us | Purnea Hotel History & Legacy',
   description:
     'Learn about Hotel Surya Bella Casa in Purnea. Established in 2019, opposite Vikass Market near Bus Stand, providing clean, comfortable lodging with local Bihari hospitality.',
+  keywords: [
+    'about hotel surya bella casa',
+    'hotel in purnea about',
+    'hotel surya bella casa purnia history',
+    'best hotel in purnea near bus stand',
+    'purnia hotel near vikass market',
+  ],
   alternates: {
     canonical: 'https://hotelsuryabellacasa.com/about',
   },
@@ -34,7 +41,30 @@ export const metadata: Metadata = {
 export default function AboutPage() {
   return (
     <main className="bg-cream min-h-screen">
-      
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'BreadcrumbList',
+            itemListElement: [
+              {
+                '@type': 'ListItem',
+                position: 1,
+                name: 'Home',
+                item: 'https://hotelsuryabellacasa.com',
+              },
+              {
+                '@type': 'ListItem',
+                position: 2,
+                name: 'About',
+                item: 'https://hotelsuryabellacasa.com/about',
+              },
+            ],
+          })
+        }}
+      />
+
       {/* Organization Schema for SEO (E-E-A-T) */}
       <script
         type="application/ld+json"

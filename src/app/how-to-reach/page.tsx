@@ -6,6 +6,7 @@ export const metadata: Metadata = {
   title: 'How to Reach Us & Travel Guide',
   description:
     'Complete travel guide to reach Hotel Surya Bella Casa in Purnea. Directions from Purnea Junction Railway Station, Bus Stand, nearby cities like Patna, Siliguri, and Bhagalpur. Book direct!',
+  keywords: ['how to reach purnea', 'purnea directions', 'purnea railway station', 'purnea bus stand', 'purnea airport distance', 'travel to purnia bihar'],
   alternates: {
     canonical: 'https://hotelsuryabellacasa.com/how-to-reach',
   },
@@ -84,6 +85,30 @@ const routes = [
 export default function HowToReachPage() {
   return (
     <main className="bg-cream min-h-screen pt-32">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'BreadcrumbList',
+            itemListElement: [
+              {
+                '@type': 'ListItem',
+                position: 1,
+                name: 'Home',
+                item: 'https://hotelsuryabellacasa.com',
+              },
+              {
+                '@type': 'ListItem',
+                position: 2,
+                name: 'How to Reach',
+                item: 'https://hotelsuryabellacasa.com/how-to-reach',
+              },
+            ],
+          })
+        }}
+      />
+
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
