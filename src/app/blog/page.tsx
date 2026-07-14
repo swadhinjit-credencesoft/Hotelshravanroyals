@@ -6,6 +6,18 @@ import { blogPosts } from '@/components/sections/blogPosts';
 export const metadata: Metadata = {
   title: 'Purnia Travel Blog',
   description: 'Read the latest travel articles, hotel booking guides, and local attraction tips for Purnia, Bihar, from Hotel Surya Bella Casa.',
+  keywords: [
+    'purnia travel blog',
+    'best hotels in purnea',
+    'places to visit in purnea',
+    'top restaurants in purnea',
+    'business travel guide to purnea',
+    'wedding venues in purnea',
+    'hotels near purnea bus stand',
+    'things to do in purnea',
+    'purnea bihar travel guide',
+    'family stay in purnea',
+  ],
   alternates: {
     canonical: 'https://hotelsuryabellacasa.com/blog',
   },
@@ -30,6 +42,16 @@ export const metadata: Metadata = {
     description: 'Read travel tips, food guides, and destination reviews for Purnia, Bihar.',
     images: ['https://bookonelocal.in/cdn/IMG_3815.avif'],
   },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
+  },
 };
 
 export default function BlogPage() {
@@ -45,7 +67,8 @@ export default function BlogPage() {
       "@id": `https://hotelsuryabellacasa.com/blog/#post-${i + 1}`,
       "headline": post.title,
       "description": post.excerpt,
-      "datePublished": post.date,
+      "datePublished": post.dateISO,
+      "dateModified": post.dateModifiedISO,
       "image": post.image.startsWith('http') ? post.image : `https://hotelsuryabellacasa.com${post.image}`,
       "author": {
         "@type": "Organization",

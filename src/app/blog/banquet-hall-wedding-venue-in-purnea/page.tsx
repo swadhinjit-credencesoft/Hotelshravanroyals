@@ -7,6 +7,17 @@ export const metadata: Metadata = {
   title: 'Banquet Hall & Wedding Venue Purnea',
   description:
     'Plan your wedding at the best banquet hall in Purnea near Bus Stand. Marriage hall, wedding venue, and conference room for events at Hotel Surya Bella Casa opposite Vikass Market. Book now.',
+  keywords: [
+    'banquet hall in purnea',
+    'wedding venue in purnea',
+    'marriage hall near purnea bus stand',
+    'party hall purnea',
+    'corporate event venue purnea',
+    'engagement venue purnea',
+    'birthday party hall purnea',
+    'conference hall purnea',
+    'hotel banquet purnea',
+  ],
   alternates: {
     canonical: 'https://hotelsuryabellacasa.com/blog/banquet-hall-wedding-venue-in-purnea',
   },
@@ -16,6 +27,8 @@ export const metadata: Metadata = {
     url: 'https://hotelsuryabellacasa.com/blog/banquet-hall-wedding-venue-in-purnea',
     siteName: 'Hotel Surya Bella Casa',
     type: 'article',
+    publishedTime: '2026-01-10T00:00:00.000Z',
+    modifiedTime: '2026-07-06T00:00:00.000Z',
     images: [{ url: 'https://bookonelocal.in/cdn/IMG_3809.avif', width: 1200, height: 630, alt: 'Banquet Hall & Wedding Venue Purnea - Marriage Hall Near Bus Stand' }],
   },
   twitter: {

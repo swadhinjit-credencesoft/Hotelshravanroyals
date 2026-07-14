@@ -7,6 +7,16 @@ export const metadata: Metadata = {
   title: 'Rooftop Restaurant in Purnea',
   description:
     'Discover the best rooftop restaurant in Purnea near Bus Stand. Multi-cuisine family dining at Hotel Surya Bella Casa serving Indian, Tandoor, Mughlai, Asian & Continental dishes. Book now.',
+  keywords: [
+    'rooftop restaurant in purnea',
+    'best restaurant near purnea bus stand',
+    'family dining purnea',
+    'multi cuisine restaurant purnea',
+    'hotel restaurant purnea',
+    'tandoor mughlai food purnea',
+    'best food in purnea',
+    'vegetarian restaurant purnea',
+  ],
   alternates: {
     canonical: 'https://hotelsuryabellacasa.com/blog/rooftop-restaurant-in-purnea',
   },
@@ -16,6 +26,8 @@ export const metadata: Metadata = {
     url: 'https://hotelsuryabellacasa.com/blog/rooftop-restaurant-in-purnea',
     siteName: 'Hotel Surya Bella Casa',
     type: 'article',
+    publishedTime: '2026-02-20T00:00:00.000Z',
+    modifiedTime: '2026-07-06T00:00:00.000Z',
     images: [{ url: 'https://bookonelocal.in/cdn/IMG_3808.avif', width: 1200, height: 630, alt: 'Rooftop Restaurant in Purnea - Dining Near Bus Stand' }],
   },
   twitter: {

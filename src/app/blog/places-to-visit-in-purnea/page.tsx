@@ -7,6 +7,17 @@ export const metadata: Metadata = {
   title: 'Places to Visit in Purnea',
   description:
     'Explore the best places to visit in Purnea near Hotel Surya Bella Casa. Maa Puran Devi Temple, Kali Mandir, Jalalgarh Fort, shopping markets, and local attractions near Bus Stand. Book now.',
+  keywords: [
+    'places to visit in purnea',
+    'tourist attractions purnea',
+    'things to do in purnea',
+    'maa puran devi temple',
+    'kali mandir purnea',
+    'jalalgarh fort purnea',
+    'purnea sightseeing',
+    'purnea bihar travel guide',
+    'vikass market purnea',
+  ],
   alternates: {
     canonical: 'https://hotelsuryabellacasa.com/blog/places-to-visit-in-purnea',
   },
@@ -16,6 +27,8 @@ export const metadata: Metadata = {
     url: 'https://hotelsuryabellacasa.com/blog/places-to-visit-in-purnea',
     siteName: 'Hotel Surya Bella Casa',
     type: 'article',
+    publishedTime: '2025-10-22T00:00:00.000Z',
+    modifiedTime: '2026-07-06T00:00:00.000Z',
     images: [{ url: 'https://bookonelocal.in/cdn/IMG_3809.avif', width: 1200, height: 630, alt: 'Places to Visit in Purnea - Tourist Attractions Guide' }],
   },
   twitter: {

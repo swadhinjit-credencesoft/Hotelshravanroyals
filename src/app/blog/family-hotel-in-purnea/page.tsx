@@ -7,6 +7,16 @@ export const metadata: Metadata = {
   title: 'Family Hotel in Purnea',
   description:
     'Best family hotel in Purnea near Bus Stand and Vikass Market. Spacious family rooms, safe environment, elevator access, and 24/7 staff assistance at Hotel Surya Bella Casa. Book now.',
+  keywords: [
+    'family hotel in purnea',
+    'safe hotel for families purnea',
+    'family stay near purnea bus stand',
+    'spacious family rooms purnea',
+    'hotel with elevator purnea',
+    'family friendly hotel purnia',
+    'couple friendly hotel purnea',
+    'senior citizen friendly hotel purnea',
+  ],
   alternates: {
     canonical: 'https://hotelsuryabellacasa.com/blog/family-hotel-in-purnea',
   },
@@ -16,6 +26,8 @@ export const metadata: Metadata = {
     url: 'https://hotelsuryabellacasa.com/blog/family-hotel-in-purnea',
     siteName: 'Hotel Surya Bella Casa',
     type: 'article',
+    publishedTime: '2025-11-18T00:00:00.000Z',
+    modifiedTime: '2026-07-06T00:00:00.000Z',
     images: [{ url: 'https://bookonelocal.in/cdn/IMG_3764.avif', width: 1200, height: 630, alt: 'Family Hotel in Purnea - Safe Stay Near Bus Stand' }],
   },
   twitter: {

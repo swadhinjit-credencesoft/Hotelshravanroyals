@@ -7,6 +7,16 @@ export const metadata: Metadata = {
   title: 'Business Hotel in Purnea',
   description:
     'Best business hotel in Purnea near Bus Stand with conference hall, high-speed WiFi, and meeting room. Ideal corporate stay for professionals visiting Purnia. Book now.',
+  keywords: [
+    'business hotel in purnea',
+    'corporate stay purnea',
+    'hotel with conference hall purnea',
+    'high speed wifi hotel purnea',
+    'business travelers purnia',
+    'meeting room hotel purnea',
+    'corporate hotel near bus stand purnea',
+    'professional stay purnea',
+  ],
   alternates: {
     canonical: 'https://hotelsuryabellacasa.com/blog/business-hotel-in-purnea',
   },
@@ -16,6 +26,8 @@ export const metadata: Metadata = {
     url: 'https://hotelsuryabellacasa.com/blog/business-hotel-in-purnea',
     siteName: 'Hotel Surya Bella Casa',
     type: 'article',
+    publishedTime: '2025-12-05T00:00:00.000Z',
+    modifiedTime: '2026-07-06T00:00:00.000Z',
     images: [{ url: 'https://bookonelocal.in/cdn/IMG_3709.jpeg', width: 1200, height: 630, alt: 'Business Hotel in Purnea - Corporate Stay Near Bus Stand' }],
   },
   twitter: {
@@ -43,8 +55,8 @@ export default function BlogPost() {
             "headline": "Business Hotel in Purnea - Corporate Stay Near Bus Stand",
             "description": "Discover the best business hotel in Purnea near Bus Stand with high-speed WiFi, conference hall, and comfortable workspaces for corporate travelers and professionals visiting Purnia, Bihar.",
             "image": "https://bookonelocal.in/cdn/IMG_3709.jpeg",
-            "datePublished": "2024-01-15",
-            "dateModified": "2024-06-01",
+            "datePublished": "2025-12-05",
+            "dateModified": "2026-07-06",
             "author": {
               "@type": "Organization",
               "name": "Hotel Surya Bella Casa"

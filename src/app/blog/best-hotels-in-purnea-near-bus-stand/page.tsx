@@ -7,6 +7,16 @@ export const metadata: Metadata = {
   title: 'Best Hotels Purnea Near Bus Stand',
   description:
     'Find the best hotel in Purnea near Bus Stand. Compare deluxe AC rooms, budget stays, family rooms, and premium options at Hotel Surya Bella Casa opposite Vikass Market. Book now.',
+  keywords: [
+    'best hotel in purnea near bus stand',
+    'hotels near purnea bus stand',
+    'deluxe AC rooms purnea',
+    'budget hotel purnea',
+    'family hotel purnea near vikass market',
+    'hotel booking purnea',
+    'best accommodation purnia',
+    'hotel near vikass market purnea',
+  ],
   alternates: {
     canonical: 'https://hotelsuryabellacasa.com/blog/best-hotels-in-purnea-near-bus-stand',
   },
@@ -16,6 +26,8 @@ export const metadata: Metadata = {
     url: 'https://hotelsuryabellacasa.com/blog/best-hotels-in-purnea-near-bus-stand',
     siteName: 'Hotel Surya Bella Casa',
     type: 'article',
+    publishedTime: '2026-03-15T00:00:00.000Z',
+    modifiedTime: '2026-07-06T00:00:00.000Z',
     images: [{ url: 'https://bookonelocal.in/cdn/IMG_3815.avif', width: 1200, height: 630, alt: 'Best Hotels in Purnea Near Bus Stand - Hotel Surya Bella Casa' }],
   },
   twitter: {
