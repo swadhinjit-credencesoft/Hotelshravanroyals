@@ -5,7 +5,7 @@ import Image from 'next/image'
 import Script from 'next/script'
 
 export const metadata: Metadata = {
-  title: 'Photo Gallery & Virtual Tour | Hotel Surya Bella Casa Purnea',
+  title: 'Photo Gallery & Virtual Tour',
   description: 'Browse high-resolution photos, guest images, and a video walkthrough of Hotel Surya Bella Casa in Purnea. See our rooms, dining, and facilities near Bus Stand. Book direct for the best rates.',
   alternates: {
     canonical: 'https://hotelsuryabellacasa.com/gallery',

@@ -152,10 +152,6 @@ export default function Home() {
             "potentialAction": {
               "@type": "WatchAction",
               "target": "https://hotelsuryabellacasa.com"
-            },
-            "interactionStatistic": {
-              "@type": "InteractionCounter",
-              "userInteractionCount": 500
             }
           })
         }}

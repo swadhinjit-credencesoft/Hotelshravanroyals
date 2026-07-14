@@ -3,7 +3,7 @@ import SectionLabel from '@/components/ui/SectionLabel'
 import { Train, Bus, Car, Plane, MapPin } from 'lucide-react'
 
 export const metadata: Metadata = {
-  title: 'How to Reach Hotel Surya Bella Casa Purnea | Travel Guide',
+  title: 'How to Reach Us & Travel Guide',
   description:
     'Complete travel guide to reach Hotel Surya Bella Casa in Purnea. Directions from Purnea Junction Railway Station, Bus Stand, nearby cities like Patna, Siliguri, and Bhagalpur. Book direct!',
   alternates: {

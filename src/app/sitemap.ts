@@ -36,7 +36,6 @@ const staticRoutes: MetadataRoute.Sitemap = [
   { url: `${BASE_URL}/events/corporate`, lastModified: TODAY, changeFrequency: 'monthly', priority: 0.8 },
   { url: `${BASE_URL}/events/day-trips`, lastModified: TODAY, changeFrequency: 'monthly', priority: 0.7 },
   { url: `${BASE_URL}/gallery`, lastModified: TODAY, changeFrequency: 'monthly', priority: 0.8 },
-  { url: `${BASE_URL}/experiences`, lastModified: TODAY, changeFrequency: 'monthly', priority: 0.8 },
   { url: `${BASE_URL}/about`, lastModified: TODAY, changeFrequency: 'monthly', priority: 0.7 },
   { url: `${BASE_URL}/contact`, lastModified: TODAY, changeFrequency: 'monthly', priority: 0.7 },
   { url: `${BASE_URL}/blog`, lastModified: TODAY, changeFrequency: 'weekly', priority: 0.7 },

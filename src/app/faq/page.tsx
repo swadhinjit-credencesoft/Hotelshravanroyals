@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import FAQSection from '@/components/sections/FAQSection'
 
 export const metadata: Metadata = {
-  title: 'Hotel Booking & Stay FAQs | Hotel Surya Bella Casa Purnea',
+  title: 'Hotel Booking & Stay FAQs',
   description:
     'Find answers to frequently asked questions about Hotel Surya Bella Casa in Purnea. Check-in/check-out timings, room categories, parking, Wi-Fi, food, and booking info. Best hotel near Bus Stand Purnea. Book direct.',
   alternates: {

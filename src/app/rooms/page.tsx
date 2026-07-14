@@ -26,13 +26,12 @@ export default function RoomsPage() {
             "name": "Hotel Rooms in Purnea at Hotel Surya Bella Casa",
             "description": "Deluxe AC rooms, family rooms, and premium suites near Purnea Bus Stand. Book the best hotel rooms in Purnea with free WiFi, parking and room service.",
             "url": "https://hotelsuryabellacasa.com/rooms",
-            "numberOfItems": 5,
+            "numberOfItems": 4,
             "itemListElement": [
-              { "@type": "ListItem", "position": 1, "item": { "@type": "Product", "name": "Standard Room", "category": "Standard" } },
-              { "@type": "ListItem", "position": 2, "item": { "@type": "Product", "name": "Deluxe Room", "category": "Deluxe" } },
-              { "@type": "ListItem", "position": 3, "item": { "@type": "Product", "name": "Superior Room", "category": "Superior" } },
-              { "@type": "ListItem", "position": 4, "item": { "@type": "Product", "name": "Premium Room", "category": "Premium" } },
-              { "@type": "ListItem", "position": 5, "item": { "@type": "Product", "name": "Suite Room", "category": "Suite" } }
+              { "@type": "ListItem", "position": 1, "item": { "@type": "Product", "name": "Super Deluxe Room", "category": "Super Deluxe" } },
+              { "@type": "ListItem", "position": 2, "item": { "@type": "Product", "name": "Deluxe AC Room", "category": "Deluxe AC" } },
+              { "@type": "ListItem", "position": 3, "item": { "@type": "Product", "name": "Deluxe Non AC Room", "category": "Deluxe Non AC" } },
+              { "@type": "ListItem", "position": 4, "item": { "@type": "Product", "name": "Standard Non AC Room", "category": "Standard Non AC" } }
             ]
           })
         }}

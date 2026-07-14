@@ -41,7 +41,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   if (!room) return {}
 
   const seo = roomSeo[slug]
-  const title = seo ? `${seo.keyword} | Hotel Surya Bella Casa Purnea` : `${room.name} in Purnea | AC Room Near Bus Stand | Hotel Surya Bella Casa Purnea`
+  const title = seo ? seo.keyword : `${room.name} in Purnea | AC Room Near Bus Stand`
   const description = seo ? `${seo.suffix} Book ${room.name} in Purnea today.` : `${room.tagline}. Available for up to ${room.guests} guests. Book ${room.name} in Purnea near Bus Stand today.`
 
   return {
@@ -51,14 +51,14 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       canonical: `https://hotelsuryabellacasa.com/rooms/${room.slug}`,
     },
     openGraph: {
-      title,
+      title: `${title} | Hotel Surya Bella Casa Purnea`,
       description,
       images: [{ url: room.image, alt: `Best ${room.name} in Purnea - Hotel Surya Bella Casa Near Bus Stand` }],
       type: 'website',
     },
     twitter: {
       card: 'summary_large_image',
-      title,
+      title: `${title} | Hotel Surya Bella Casa Purnea`,
       description,
       images: [room.image],
     },

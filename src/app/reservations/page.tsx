@@ -4,7 +4,7 @@ import { Suspense } from 'react'
 import ReservationsClient from './ReservationsClient'
 
 export const metadata: Metadata = {
-  title: 'Book Your Stay Online | Hotel Surya Bella Casa Purnea',
+  title: 'Book Your Stay Online',
   description:
     'Book deluxe AC rooms, family rooms & budget stays at Hotel Surya Bella Casa near Purnea Bus Stand. Free WiFi, parking, 24/7 room service. Best hotel booking in Purnea, Bihar.',
   alternates: {

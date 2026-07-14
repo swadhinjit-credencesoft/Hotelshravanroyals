@@ -5,7 +5,7 @@ import { siteConfig } from '@/data/site';
 import { MapPin, Phone, Mail, Train, Car, MessageCircle } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: 'Contact Hotel Surya Bella Casa Purnea',
+  title: 'Contact & Directions',
   description:
     'Contact Hotel Surya Bella Casa in Purnea. Call +91 9835923601, WhatsApp, email, or visit us opposite Vikass Market near Bus Stand. Get directions from Patna, Siliguri, and Purnea Junction. Book direct for best rates.',
   alternates: {
