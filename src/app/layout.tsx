@@ -7,6 +7,7 @@ import { Barlow, Tangerine } from 'next/font/google'
 import Navbar from '@/components/layout/Navbar'
 import Footer from '@/components/layout/Footer'
 import LenisProvider from '@/components/providers/LenisProvider'
+import ScrollToTop from '@/components/providers/ScrollToTop'
 
 import PageTransition from '@/components/providers/PageTransition'
 import Breadcrumbs from '@/components/ui/Breadcrumbs'
@@ -368,6 +369,7 @@ export default function RootLayout({
         </a>
 
         <LenisProvider>
+          <ScrollToTop />
           <Navbar />
 
           <PageTransition>

@@ -91,7 +91,7 @@ export default function Navbar() {
               className="bg-gold text-[#1a1004] font-sans text-[11px] uppercase tracking-[0.16em] px-6 py-2.5 rounded-sm hover:bg-gold-light transition-colors duration-300 shadow-md"
               aria-label="Book your stay now"
             >
-              Book Now
+              Book a stay
             </MagneticButton>
           </div>
  
@@ -136,7 +136,7 @@ export default function Navbar() {
               </button>
             </div>
 
-            <nav className="flex-1 flex flex-col justify-center px-10 gap-6" aria-label="Mobile navigation">
+            <nav className="flex-1 flex flex-col justify-center px-5 sm:px-8 gap-4 sm:gap-5 overflow-y-auto" aria-label="Mobile navigation">
               {navLinks.map((link, i) => (
                 <motion.div
                   key={link.label}
@@ -147,7 +147,7 @@ export default function Navbar() {
                   <Link
                     href={link.href}
                     onClick={() => setMobileOpen(false)}
-                    className="font-serif text-4xl italic text-ivory/80 hover:text-gold transition-colors duration-300 block"
+                    className="font-serif text-xl sm:text-3xl italic text-ivory/80 hover:text-gold transition-colors duration-300 block"
                   >
                     {link.label}
                   </Link>
@@ -155,9 +155,9 @@ export default function Navbar() {
               ))}
             </nav>
 
-            <div className="px-10 pb-12 border-t border-ivory/10 pt-8">
+            <div className="px-5 sm:px-8 pb-10 sm:pb-12 border-t border-ivory/10 pt-6 sm:pt-8 shrink-0">
               <p className="font-sans text-[11px] uppercase tracking-[0.18em] text-gold mb-2">Concierge</p>
-              <a href={`tel:${siteConfig.phone}`} className="font-serif text-xl text-ivory/80 hover:text-gold transition-colors">
+              <a href={`tel:${siteConfig.phone}`} className="font-serif text-base sm:text-lg text-ivory/80 hover:text-gold transition-colors">
                 {siteConfig.phone}
               </a>
               <div className="mt-4 flex flex-wrap gap-3">
