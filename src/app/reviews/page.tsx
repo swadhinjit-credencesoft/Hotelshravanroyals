@@ -18,8 +18,8 @@ export const metadata: Metadata = {
     canonical: 'https://hotelsuryabellacasa.com/reviews',
   },
   openGraph: {
-    title: 'Hotel Surya Bella Casa Reviews | Guest Testimonials & Ratings',
-    description: 'Read genuine guest reviews of Hotel Surya Bella Casa in Purnea. Rated 4.5★ by 120+ guests. Best hotel near Bus Stand and Vikass Market.',
+    title: 'Hotel Surya Bella Casa Reviews | Guest Testimonials',
+    description: 'Read genuine guest reviews of Hotel Surya Bella Casa in Purnea near Bus Stand. Real testimonials from business and family travelers. Leave your own review.',
     url: 'https://hotelsuryabellacasa.com/reviews',
     siteName: 'Hotel Surya Bella Casa',
     type: 'website',
@@ -45,13 +45,8 @@ export default function ReviewsPage() {
     "name": "Hotel Surya Bella Casa Purnea",
     "description": "Guest reviews and testimonials for Hotel Surya Bella Casa, best hotel in Purnea near Bus Stand",
     "url": "https://www.google.com/maps/place/?cid=8931275976043074034",
-    "aggregateRating": {
-      "@type": "AggregateRating",
-      "ratingValue": "4.5",
-      "bestRating": "5",
-      "worstRating": "1",
-      "ratingCount": "120"
-    },
+    /* aggregateRating removed — add back once real Google review count is verified.
+       Using an unverified ratingCount in structured data risks a Google manual penalty. */
     "review": testimonials.map(t => ({
       "@type": "Review",
       "reviewRating": {

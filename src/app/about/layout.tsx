@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'About Hotel Surya Bella Casa Purnea',
+  title: 'About Us',
   description: 'About Hotel Surya Bella Casa Purnea — best hotel in Purnea near Bus Stand and Vikass Market. Established 2019. Family-friendly, business-ready with free WiFi, parking, AC rooms, rooftop restaurant, banquet hall. Book direct.',
   keywords: ['about hotel surya bella casa purnea', 'best hotel in purnea about', 'hotel near bus stand purnea story', 'purnea family hotel history', 'purnea business hotel', 'hotel opposite vikass market purnea', 'purnea hotel with rooftop restaurant', 'purnea hotel with banquet hall', 'purnea hotel free wifi parking', 'purnea accommodation best hotel', 'why choose hotel surya bella casa purnea', 'hotel purnea established 2019', 'purnea hotel overview about us', 'purnea hotel mission values', 'best hotel in purnea bihar'],
   alternates: {

@@ -1,4 +1,17 @@
+import type { Metadata } from 'next'
 import SectionLabel from '@/components/ui/SectionLabel'
+
+export const metadata: Metadata = {
+  title: 'Privacy Policy | Hotel Surya Bella Casa',
+  description: 'Read the privacy policy of Hotel Surya Bella Casa, Purnea. How we collect, store, and protect your personal data during hotel bookings and website visits.',
+  alternates: {
+    canonical: 'https://hotelsuryabellacasa.com/privacy',
+  },
+  robots: {
+    index: false,
+    follow: true,
+  },
+}
 
 export default function PrivacyPage() {
   return (

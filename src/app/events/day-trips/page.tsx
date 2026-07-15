@@ -1,13 +1,51 @@
 import type { Metadata } from 'next'
 import CinematicHero from '@/components/ui/CinematicHero';
-
-export const metadata: Metadata = {
-  keywords: ['day trips from purnea', 'purnea sightseeing', 'nearby attractions purnia', 'tour packages purnea', 'purnea day tour'],
-};
 import SectionLabel from '@/components/ui/SectionLabel';
 import Image from 'next/image';
 import { Sun, Utensils, MapPin, Clock, Calendar } from 'lucide-react';
 import Link from 'next/link';
+
+export const metadata: Metadata = {
+  title: 'Day Trips & Picnics in Purnea | Weekend Getaway Near Bus Stand',
+  description:
+    'Plan a day trip or picnic in Purnea at Hotel Surya Bella Casa near Bus Stand. Family outing packages include lounge access, buffet lunch, and city tours. Book your day out in Purnea, Bihar.',
+  keywords: [
+    'day trips from purnea',
+    'picnic in purnea',
+    'purnea day outing',
+    'family outing purnea',
+    'weekend getaway purnea',
+    'one day trip purnea',
+    'purnea sightseeing',
+    'nearby attractions purnia',
+    'day package purnea hotel',
+    'lounge day pass purnea',
+  ],
+  alternates: {
+    canonical: 'https://hotelsuryabellacasa.com/events/day-trips',
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: { index: true, follow: true, 'max-image-preview': 'large', 'max-snippet': -1 },
+  },
+  openGraph: {
+    title: 'Day Trips & Picnics in Purnea | Weekend Getaway Near Bus Stand',
+    description:
+      'Plan a family day trip or picnic in Purnea at Hotel Surya Bella Casa near Bus Stand. Lounge access, buffet lunch, city tours. Book your day out in Purnea.',
+    url: 'https://hotelsuryabellacasa.com/events/day-trips',
+    siteName: 'Hotel Surya Bella Casa',
+    type: 'website',
+    images: [{ url: 'https://bookonelocal.in/cdn/IMG_3809.avif', width: 1200, height: 630, alt: 'Day Trips & Picnics in Purnea - Hotel Surya Bella Casa' }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Day Trips & Picnics in Purnea | Weekend Getaway',
+    description: 'Family day trip packages in Purnea near Bus Stand. Lounge access, buffet lunch & city tours at Hotel Surya Bella Casa.',
+    images: ['https://bookonelocal.in/cdn/IMG_3809.avif'],
+  },
+};
+
 
 export default function DayTripsPage() {
   const jsonLd = [

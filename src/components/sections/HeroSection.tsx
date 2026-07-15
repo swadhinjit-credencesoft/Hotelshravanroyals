@@ -165,7 +165,7 @@ export default function HeroSection() {
 
       {/* z-2: Particles */}
       <div className="absolute inset-0" style={{ zIndex: 2 }}>
-        <ParticleCanvas />
+        {!reduced && <ParticleCanvas />}
       </div>
 
       {/* z-3: Grain */}
