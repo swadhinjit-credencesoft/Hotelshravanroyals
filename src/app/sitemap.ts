@@ -35,7 +35,6 @@ const staticRoutes: MetadataRoute.Sitemap = [
   { url: `${BASE_URL}/events/parties`, lastModified: TODAY, changeFrequency: 'monthly', priority: 0.8 },
   { url: `${BASE_URL}/events/corporate`, lastModified: TODAY, changeFrequency: 'monthly', priority: 0.8 },
   { url: `${BASE_URL}/events/day-trips`, lastModified: TODAY, changeFrequency: 'monthly', priority: 0.7 },
-  { url: `${BASE_URL}/gallery`, lastModified: TODAY, changeFrequency: 'monthly', priority: 0.8 },
   { url: `${BASE_URL}/about`, lastModified: TODAY, changeFrequency: 'monthly', priority: 0.7, images: ['https://bookonelocal.in/cdn/IMG_3815.avif', 'https://bookonelocal.in/cdn/IMG_3808.avif'] },
   { url: `${BASE_URL}/contact`, lastModified: TODAY, changeFrequency: 'monthly', priority: 0.7 },
   { url: `${BASE_URL}/blog`, lastModified: TODAY, changeFrequency: 'weekly', priority: 0.7 },
