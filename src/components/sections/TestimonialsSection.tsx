@@ -164,12 +164,20 @@ function TestimonialCard({ testimonial }: { testimonial: (typeof testimonials)[0
             {testimonial.name.split(' ').map(n => n[0]).join('')}
           </span>
         </div>
-        <div>
+        <div className="flex-1 min-w-0">
           <h4 className="font-sans text-[11px] uppercase tracking-widest text-forest font-medium">
             {testimonial.name}
           </h4>
           <p className="font-sans text-[9px] uppercase tracking-widest text-taupe mt-0.5">
             {testimonial.stayType} &bull; {testimonial.country}
+          </p>
+        </div>
+        <div className="flex-shrink-0 text-right">
+          <p className="font-sans text-[9px] uppercase tracking-widest text-gold font-semibold">
+            {testimonial.source}
+          </p>
+          <p className="font-sans text-[9px] text-taupe/60 mt-0.5">
+            {testimonial.date}
           </p>
         </div>
       </div>

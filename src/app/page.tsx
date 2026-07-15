@@ -14,6 +14,12 @@ import FAQSection from '@/components/sections/FAQSection';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
+  title: 'Hotel Surya Bella Casa Purnea | Best Near Bus Stand & Vikass Market',
+  description:
+    'Book Hotel Surya Bella Casa in Purnea near Bus Stand ✓ Free WiFi & Parking ✓ AC & Non-AC Rooms ✓ Banquet Hall ✓ 24/7 Room Service. Best hotel in Purnia, Bihar. Book Direct & Save!',
+  alternates: {
+    canonical: 'https://hotelsuryabellacasa.com/',
+  },
   keywords: [
     'hotel in purnea',
     'best hotel in purnea near bus stand',

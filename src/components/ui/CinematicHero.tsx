@@ -60,8 +60,8 @@ export default function CinematicHero({
             muted
             loop
             playsInline
-            preload="metadata"
-            poster={image.replace('.mp4', '.avif')}
+            preload="none"
+            poster={image.replace(/\.(mp4|webm|ogg)$/i, '.avif')}
             title="Hotel Surya Bella Casa - Cinematic Hero Video"
             aria-label="Cinematic background video showcasing Hotel Surya Bella Casa amenities"
             className={`absolute inset-0 w-full h-full object-cover ${
