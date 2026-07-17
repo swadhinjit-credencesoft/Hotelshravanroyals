@@ -2,13 +2,13 @@ import type { Metadata } from 'next'
 import SectionLabel from '@/components/ui/SectionLabel'
 
 export const metadata: Metadata = {
-  title: 'Terms & Conditions | Hotel Surya Bella Casa',
-  description: 'Read the terms and conditions of Hotel Surya Bella Casa, Purnea. Booking terms, house rules, liability, and guest policy for all reservations at Hotel Surya Bella Casa.',
+  title: 'Terms & Conditions',
+  description: 'Read the terms and conditions of Hotel Surya Bella Casa, Purnea. Booking terms, house rules, liability, and guest policy for all reservations.',
   alternates: {
     canonical: 'https://hotelsuryabellacasa.com/terms',
   },
   robots: {
-    index: false,
+    index: true,
     follow: true,
   },
 }

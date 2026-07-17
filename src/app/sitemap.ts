@@ -8,11 +8,11 @@ const BASE_URL = 'https://hotelsuryabellacasa.com'
 const TODAY = new Date().toISOString().slice(0, 10)
 
 const localSeoPages = [
-  { url: `${BASE_URL}/hotel-near-purnia-bus-stand`, priority: 0.9, images: ['https://bookonelocal.in/cdn/IMG_3815.avif'] },
-  { url: `${BASE_URL}/hotel-near-vikass-market`, priority: 0.9, images: ['https://bookonelocal.in/cdn/IMG_3808.avif'] },
-  { url: `${BASE_URL}/family-hotel-in-purnia`, priority: 0.9, images: ['https://bookonelocal.in/cdn/IMG_3701.avif'] },
-  { url: `${BASE_URL}/business-hotel-in-purnia`, priority: 0.9, images: ['https://bookonelocal.in/cdn/IMG_3703.avif'] },
-  { url: `${BASE_URL}/budget-hotel-in-purnia`, priority: 0.9, images: ['https://bookonelocal.in/cdn/IMG_3815.avif'] },
+  { url: `${BASE_URL}/hotel-near-purnia-bus-stand`, lastModified: TODAY, changeFrequency: 'monthly' as const, priority: 0.8, images: ['https://bookonelocal.in/cdn/IMG_3815.avif'] },
+  { url: `${BASE_URL}/hotel-near-vikass-market`, lastModified: TODAY, changeFrequency: 'monthly' as const, priority: 0.8, images: ['https://bookonelocal.in/cdn/IMG_3808.avif'] },
+  { url: `${BASE_URL}/family-hotel-in-purnia`, lastModified: TODAY, changeFrequency: 'monthly' as const, priority: 0.8, images: ['https://bookonelocal.in/cdn/IMG_3701.avif'] },
+  { url: `${BASE_URL}/business-hotel-in-purnia`, lastModified: TODAY, changeFrequency: 'monthly' as const, priority: 0.8, images: ['https://bookonelocal.in/cdn/IMG_3703.avif'] },
+  { url: `${BASE_URL}/budget-hotel-in-purnia`, lastModified: TODAY, changeFrequency: 'monthly' as const, priority: 0.8, images: ['https://bookonelocal.in/cdn/IMG_3815.avif'] },
 ]
 
 const blogArticles = [
@@ -27,7 +27,7 @@ const blogArticles = [
 const staticRoutes: MetadataRoute.Sitemap = [
   { url: `${BASE_URL}/`, lastModified: TODAY, changeFrequency: 'weekly', priority: 1.0 },
   { url: `${BASE_URL}/rooms`, lastModified: TODAY, changeFrequency: 'weekly', priority: 0.9 },
-  { url: `${BASE_URL}/reservations`, lastModified: TODAY, changeFrequency: 'weekly', priority: 0.9 },
+  { url: `${BASE_URL}/reservations`, lastModified: TODAY, changeFrequency: 'weekly', priority: 0.7 },
   { url: `${BASE_URL}/dining`, lastModified: TODAY, changeFrequency: 'monthly', priority: 0.8 },
   { url: `${BASE_URL}/events`, lastModified: TODAY, changeFrequency: 'monthly', priority: 0.8 },
   { url: `${BASE_URL}/experiences`, lastModified: TODAY, changeFrequency: 'monthly', priority: 0.8 },

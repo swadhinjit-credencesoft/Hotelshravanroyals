@@ -5,7 +5,7 @@ import { Gift, Music, Flame, GlassWater, Users, Calendar } from 'lucide-react';
 import Link from 'next/link';
 
 export const metadata = {
-  title: 'Party Hall in Purnea - Birthday Party & Celebration Venue | Hotel Surya Bella Casa',
+  title: 'Party Hall in Purnea | Birthday Party Venue & Celebrations',
   description: 'Best party hall in Purnea near Bus Stand. Hotel Surya Bella Casa offers venue for birthdays, anniversaries, and private celebrations with customized themes.',
   keywords: ['party hall purnea', 'birthday party venue purnia', 'anniversary celebration purnea', 'private party hotel purnea', 'event venue near bus stand purnea'],
   alternates: { canonical: 'https://hotelsuryabellacasa.com/events/parties' },

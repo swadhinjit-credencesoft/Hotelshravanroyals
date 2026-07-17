@@ -6,6 +6,11 @@ import { MapPin } from 'lucide-react'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
+  title: 'Experiences & Local Attractions',
+  description: 'Explore Purnia attractions near Hotel Surya Bella Casa. Jalalgarh Fort, Puran Devi Temple, Kali Mandir, and local sightseeing guide for guests.',
+  alternates: {
+    canonical: 'https://hotelsuryabellacasa.com/experiences',
+  },
   keywords: [
     'things to do in purnea',
     'purnea experiences',

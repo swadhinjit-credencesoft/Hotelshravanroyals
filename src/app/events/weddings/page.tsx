@@ -5,7 +5,7 @@ import { Heart, Users, Utensils, Camera, MapPin, Calendar } from 'lucide-react';
 import Link from 'next/link';
 
 export const metadata = {
-  title: 'Wedding Venue in Purnea - Marriage Hall & Banquet | Hotel Surya Bella Casa',
+  title: 'Wedding Venue in Purnea | Marriage Hall & Banquet',
   description: 'Best wedding venue in Purnea near Bus Stand. Hotel Surya Bella Casa offers marriage hall, wedding lawns, banquet hall & bridal suites for up to 250 guests.',
   keywords: ['wedding venue purnea', 'marriage hall purnia', 'banquet hall wedding purnea', 'best wedding hotel purnea', 'wedding decoration purnia', 'wedding catering purnea'],
   alternates: { canonical: 'https://hotelsuryabellacasa.com/events/weddings' },

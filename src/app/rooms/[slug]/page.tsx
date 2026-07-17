@@ -51,14 +51,14 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       canonical: `https://hotelsuryabellacasa.com/rooms/${room.slug}`,
     },
     openGraph: {
-      title: `${title} | Hotel Surya Bella Casa Purnea`,
+      title,
       description,
-      images: [{ url: room.image, alt: `Best ${room.name} in Purnea - Hotel Surya Bella Casa Near Bus Stand` }],
+      images: [{ url: room.image, alt: `${room.name} - Hotel Surya Bella Casa Purnea` }],
       type: 'website',
     },
     twitter: {
       card: 'summary_large_image',
-      title: `${title} | Hotel Surya Bella Casa Purnea`,
+      title,
       description,
       images: [room.image],
     },
