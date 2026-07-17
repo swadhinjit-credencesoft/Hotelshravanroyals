@@ -147,7 +147,7 @@ export default function Footer() {
 
             {/* Quick Links */}
             <div className="min-w-[130px]">
-              <h3 className="font-serif text-2xl text-ivory mb-4">Quick Link</h3>
+              <h3 className="font-serif text-2xl text-ivory mb-4">Quick Links</h3>
               <ul className="space-y-3">
                 {quickLinks.map((link) => (
                   <li key={link.label}>

@@ -142,7 +142,6 @@ export default function HeroSection() {
           className={`w-full h-full object-cover ${reduced ? '' : 'animate-ken-burns'}`}
           style={{ animationName: reduced ? 'none' : 'kenBurns' }}
         >
-          <track kind="captions" label="English captions" srcLang="en" />
         </video>
       </motion.div>
 

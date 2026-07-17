@@ -179,6 +179,7 @@ keywords: [
 
   twitter: {
     card: 'summary_large_image',
+    site: '@hotelsuryabellacasa',
     title: 'Hotel Surya Bella Casa Purnia | Best Stay in Purnia',
     description:
       'Book a comfortable, budget-friendly stay at Hotel Surya Bella Casa in Purnia, Bihar. Near Bus Stand & Vikass Market. Perfect for families & business travelers.',
@@ -195,7 +196,6 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <meta name="theme-color" content="#FBF7F0" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="preconnect" href="https://bookone.io" />
         <link rel="preconnect" href="https://bookonelocal.in" />
         <link rel="preconnect" href="https://www.googletagmanager.com" />
@@ -291,10 +291,10 @@ export default function RootLayout({
               ],
               "touristType": ["Business", "Family", "Couples"],
               "availableLanguage": ["Hindi", "English"],
-              "numberOfRooms": "19",
+              "numberOfRooms": 19,
               "floorSize": {
                 "@type": "QuantitativeValue",
-                "value": "4500",
+                "value": 4500,
                 "unitCode": "FTK"
               },
               "currenciesAccepted": "INR",

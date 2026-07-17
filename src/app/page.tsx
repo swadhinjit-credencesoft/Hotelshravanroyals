@@ -36,37 +36,21 @@ export default function Home() {
   return (
     <main className="relative bg-cream min-h-screen" id="main-content">
       
-      {/* Organization + BreadcrumbList for homepage only (Hotel is in layout.tsx) */}
+      {/* Organization for homepage only (Hotel + Breadcrumb are in layout.tsx) */}
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
           __html: JSON.stringify({
             "@context": "https://schema.org",
-            "@graph": [
-              {
-                "@type": "Organization",
-                "@id": "https://hotelsuryabellacasa.com/#organization",
-                "name": "Hotel Surya Bella Casa",
-                "logo": "https://hotelsuryabellacasa.com/suryabellacasalogo.png",
-                "url": "https://hotelsuryabellacasa.com",
-                "sameAs": [
-                  "https://www.facebook.com/hotelsuryabellacasa",
-                  "https://www.instagram.com/hotel.bellacasaa/",
-                  "https://www.youtube.com/@hotelsuryabellacasa"
-                ]
-              },
-              {
-                "@type": "BreadcrumbList",
-                "@id": "https://hotelsuryabellacasa.com/#breadcrumb",
-                "itemListElement": [
-                  {
-                    "@type": "ListItem",
-                    "position": 1,
-                    "name": "Home",
-                    "item": "https://hotelsuryabellacasa.com"
-                  }
-                ]
-              }
+            "@type": "Organization",
+            "@id": "https://hotelsuryabellacasa.com/#organization",
+            "name": "Hotel Surya Bella Casa",
+            "logo": "https://hotelsuryabellacasa.com/suryabellacasalogo.png",
+            "url": "https://hotelsuryabellacasa.com",
+            "sameAs": [
+              "https://www.facebook.com/hotelsuryabellacasa",
+              "https://www.instagram.com/hotel.bellacasaa/",
+              "https://www.youtube.com/@hotelsuryabellacasa"
             ]
           })
         }}

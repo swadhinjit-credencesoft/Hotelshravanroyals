@@ -237,7 +237,7 @@ export default function RoomDetailClient({ room, otherRooms }: RoomDetailClientP
           </div>
 
           {/* Quick Stats */}
-          <div className="grid grid-cols-3 gap-4 md:gap-8 mb-12">
+          <div className={`grid gap-4 md:gap-8 mb-12 ${room.size > 0 ? 'grid-cols-3' : 'grid-cols-2'}`}>
             <div className="flex flex-col md:flex-row items-center md:items-start gap-3 text-center md:text-left">
               <div className="w-12 h-12 rounded-full bg-cream flex items-center justify-center text-gold shadow-sm">
                 <Users size={20} />
@@ -247,15 +247,17 @@ export default function RoomDetailClient({ room, otherRooms }: RoomDetailClientP
                 <p className="font-serif text-forest text-sm md:text-base">Up to {room.guests} Guests</p>
               </div>
             </div>
-            <div className="flex flex-col md:flex-row items-center md:items-start gap-3 text-center md:text-left">
-              <div className="w-12 h-12 rounded-full bg-cream flex items-center justify-center text-gold shadow-sm">
-                <Maximize size={20} />
+            {room.size > 0 && (
+              <div className="flex flex-col md:flex-row items-center md:items-start gap-3 text-center md:text-left">
+                <div className="w-12 h-12 rounded-full bg-cream flex items-center justify-center text-gold shadow-sm">
+                  <Maximize size={20} />
+                </div>
+                <div>
+                  <p className="text-[9px] md:text-[10px] uppercase tracking-widest text-taupe/60 font-sans mb-1">Space</p>
+                  <p className="font-serif text-forest text-sm md:text-base">{room.size} sq.m</p>
+                </div>
               </div>
-              <div>
-                <p className="text-[9px] md:text-[10px] uppercase tracking-widest text-taupe/60 font-sans mb-1">Space</p>
-                <p className="font-serif text-forest text-sm md:text-base">{room.size} sq.m</p>
-              </div>
-            </div>
+            )}
             <div className="flex flex-col md:flex-row items-center md:items-start gap-3 text-center md:text-left">
               <div className="w-12 h-12 rounded-full bg-cream flex items-center justify-center text-gold shadow-sm">
                 <Eye size={20} />
@@ -296,7 +298,7 @@ export default function RoomDetailClient({ room, otherRooms }: RoomDetailClientP
             <h2 className="font-serif text-2xl text-forest mb-8">Policies & Info</h2>
             <div className="space-y-4">
               {[
-                { title: 'Check-in & Check-out', content: 'Check-in: 1:00 PM | Check-out: 11:00 AM' },
+                { title: 'Check-in & Check-out', content: 'Check-in: 12:00 PM | Check-out: 12:00 PM' },
                 { title: 'Extra Bed Policy', content: 'Available on request for an additional charge of ₹1,500 per night.' },
                 { title: 'Cancellation Policy', content: 'Free cancellation up to 48 hours before arrival. 100% charge for late cancellations.' }
               ].map((policy) => (

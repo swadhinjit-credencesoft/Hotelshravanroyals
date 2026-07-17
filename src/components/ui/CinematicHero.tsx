@@ -72,7 +72,6 @@ export default function CinematicHero({
             }}
           >
             <source src={image} type="video/mp4" />
-            <track kind="captions" label="English captions" srcLang="en" />
           </video>
         ) : (
           <Image

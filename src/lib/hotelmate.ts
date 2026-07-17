@@ -230,10 +230,8 @@ const HOTEL_ADDRESS = 'Suryalok Complex, Opposite Vikass Market, Near Bus Stand,
 
 function buildEnquiryMessage(extra?: string): string {
   return (
-    'This is an Enquiry from : The HotelMate Website' +
+    'This is an Enquiry from: ' + HOTEL_NAME + ' Website' +
     '\nHotel Name: ' + HOTEL_NAME +
-    '\nProperty Id: ' + HOTELMATE_PROPERTY_ID +
-    '\nexternalSite: WebSite' +
     '\nAddress: ' + HOTEL_ADDRESS +
     (extra ? '\n' + extra : '')
   )
