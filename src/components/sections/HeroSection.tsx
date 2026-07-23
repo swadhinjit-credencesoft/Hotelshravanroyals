@@ -1,19 +1,18 @@
 'use client'
+
 import Link from 'next/link'
 import { useState, useEffect, useRef, useCallback } from 'react'
 import { createPortal } from 'react-dom'
 import Image from 'next/image'
 import {
   motion,
-  AnimatePresence,
   useScroll,
   useTransform,
   useMotionValue,
   useSpring,
   useReducedMotion,
 } from 'framer-motion'
-import { ArrowRight, Calendar, Users, Bed, ChevronDown } from 'lucide-react'
-import { heroSlides } from '@/data/hero'
+import { ArrowRight, Calendar, Users, Star, ArrowUpRight } from 'lucide-react'
 import dynamic from 'next/dynamic'
 import DatePicker from 'react-datepicker'
 import { buildBookingUrl, trackBookingEvent } from '@/lib/hotelmate'
@@ -25,52 +24,50 @@ const ParticleCanvas = dynamic(() => import('@/components/ui/ParticleCanvas'), {
 })
 
 export default function HeroSection() {
-  const [currentSlide, setCurrentSlide] = useState(0)
   const heroRef = useRef<HTMLElement>(null)
   const reduced = useReducedMotion()
-  const SLIDE_DURATION = 8000
 
-  // Auto-advance slides
-  useEffect(() => {
-    if (reduced) return
-    const timer = setInterval(() => {
-      setCurrentSlide((p) => (p + 1) % heroSlides.length)
-    }, SLIDE_DURATION)
-    return () => clearInterval(timer)
-  }, [reduced])
-
-  // Scroll parallax
+  // Parallax scroll effect
   const { scrollY } = useScroll({ target: heroRef, offset: ['start start', 'end start'] })
-  const imageY = useTransform(scrollY, [0, 700], ['0%', '28%'])
-  const contentY = useTransform(scrollY, [0, 500], ['0%', '-12%'])
-  const contentOpacity = useTransform(scrollY, [0, 400], [1, 0])
+  const imageY = useTransform(scrollY, [0, 700], ['0%', '20%'])
+  const contentY = useTransform(scrollY, [0, 500], ['0%', '-10%'])
+  const contentOpacity = useTransform(scrollY, [0, 450], [1, 0])
 
-  // Mouse parallax
+  // Mouse tilt effect
   const mouseX = useMotionValue(0)
   const mouseY = useMotionValue(0)
-  const springX = useSpring(mouseX, { stiffness: 50, damping: 18 })
-  const springY = useSpring(mouseY, { stiffness: 50, damping: 18 })
-  const imgSpringX = useSpring(mouseX, { stiffness: 30, damping: 18 })
+  const springX = useSpring(mouseX, { stiffness: 40, damping: 20 })
+  const springY = useSpring(mouseY, { stiffness: 40, damping: 20 })
+  const imgSpringX = useSpring(mouseX, { stiffness: 20, damping: 20 })
 
-  const handleMouseMove = useCallback((e: React.MouseEvent<HTMLElement>) => {
-    if (reduced || window.innerWidth < 1024) return
-    const rect = heroRef.current?.getBoundingClientRect()
-    if (!rect) return
-    const x = ((e.clientX - rect.width / 2) / rect.width) * 20
-    const y = ((e.clientY - rect.height / 2) / rect.height) * 20
-    mouseX.set(x)
-    mouseY.set(y)
-  }, [reduced, mouseX, mouseY])
+  const handleMouseMove = useCallback(
+    (e: React.MouseEvent<HTMLElement>) => {
+      if (reduced || window.innerWidth < 1024) return
+      const rect = heroRef.current?.getBoundingClientRect()
+      if (!rect) return
+      const x = ((e.clientX - rect.width / 2) / rect.width) * 16
+      const y = ((e.clientY - rect.height / 2) / rect.height) * 16
+      mouseX.set(x)
+      mouseY.set(y)
+    },
+    [reduced, mouseX, mouseY]
+  )
 
   const today = new Date()
   const tomorrow = new Date(today)
   tomorrow.setDate(tomorrow.getDate() + 1)
-  const fmt = (d: Date) => d.toISOString().slice(0, 10)
+
+  const fmt = (d: Date) => {
+    const day = String(d.getDate()).padStart(2, '0')
+    const month = String(d.getMonth() + 1).padStart(2, '0')
+    const year = d.getFullYear()
+    return `${day}-${month}-${year}`
+  }
+  const fmtIso = (d: Date) => d.toISOString().slice(0, 10)
 
   const [checkIn, setCheckIn] = useState<Date>(today)
   const [checkOut, setCheckOut] = useState<Date>(tomorrow)
-  const [guests, setGuests] = useState('1')
-  const [rooms, setRooms] = useState('1')
+  const [guests, setGuests] = useState('2')
 
   const handleCheckInChange = (date: Date | null) => {
     if (!date) return
@@ -89,269 +86,139 @@ export default function HeroSection() {
   const openBooking = useCallback(() => {
     trackBookingEvent('booking_click', { source: 'hero_booking_bar' })
     trackSearch({
-      checkIn: fmt(checkIn),
-      checkOut: fmt(checkOut),
+      checkIn: fmtIso(checkIn),
+      checkOut: fmtIso(checkOut),
       guests: guests || 1,
-      rooms: rooms || 1,
+      rooms: 1,
       source: 'hero_booking_bar',
     })
     const rawUrl = buildBookingUrl({
-      fromDate: fmt(checkIn),
-      toDate: fmt(checkOut),
+      fromDate: fmtIso(checkIn),
+      toDate: fmtIso(checkOut),
       noOfPersons: guests || undefined,
-      noOfRooms: rooms || undefined,
     })
     const url = appendUTMToURL(rawUrl)
     window.open(url, '_blank', 'noopener,noreferrer')
-  }, [checkIn, checkOut, guests, rooms])
-
-  const slide = heroSlides[currentSlide]
-  const words = slide.headline.split(' ')
+  }, [checkIn, checkOut, guests])
 
   return (
     <section
       ref={heroRef}
-      className="relative w-full overflow-hidden"
-      style={{ height: '100svh', minHeight: '650px' }}
+      className="relative w-full overflow-hidden flex flex-col justify-between pt-36 md:pt-44 pb-8 md:pb-12 bg-forest-dark"
+      style={{ minHeight: '100svh' }}
       role="banner"
-      aria-label="Hotel Surya Bella Casa Purnea - Best Hotel Near Bus Stand"
-      itemScope
-      itemType="https://schema.org/Hotel"
+      aria-label="Hotel Surya Bella Casa Purnea"
       onMouseMove={handleMouseMove}
-      onMouseLeave={() => { mouseX.set(0); mouseY.set(0) }}
+      onMouseLeave={() => {
+        mouseX.set(0)
+        mouseY.set(0)
+      }}
     >
-      {/* Schema.org microdata */}
-      <meta itemProp="name" content="Hotel Surya Bella Casa" />
-      <meta itemProp="alternateName" content="Hotel Surya Bella Casa Purnea" />
-      <meta itemProp="description" content="Best Hotel in Purnea Near Bus Stand. Book direct for comfortable rooms with free WiFi, parking, rooftop restaurant, banquet hall, and conference hall." />
-      <meta itemProp="telephone" content="+919835923601" />
-      <meta itemProp="priceRange" content="₹₹" />
-      <meta itemProp="url" content="https://hotelsuryabellacasa.com" />
-      <div itemProp="address" itemScope itemType="https://schema.org/PostalAddress">
-        <meta itemProp="streetAddress" content="Suryalok Complex, Opposite Vikass Market, Near Bus Stand" />
-        <meta itemProp="addressLocality" content="Purnia" />
-        <meta itemProp="addressRegion" content="Bihar" />
-        <meta itemProp="postalCode" content="854301" />
-        <meta itemProp="addressCountry" content="IN" />
-      </div>
-      {/* z-0: Background image (static, never re-mounts) */}
+      {/* Background Image */}
       <motion.div
-        className="absolute inset-0"
+        className="absolute inset-0 z-0"
         style={{ y: reduced ? 0 : imageY, x: reduced ? 0 : imgSpringX }}
       >
         <Image
           src="https://bookonelocal.in/cdn/IMG_3815.avif"
-          alt="Hotel Surya Bella Casa - Premium Hotel in Purnea"
+          alt="Hotel Surya Bella Casa Purnea"
           fill
           priority
           sizes="100vw"
-          className={`w-full h-full object-cover ${reduced ? '' : 'animate-ken-burns'}`}
-          style={{ animationName: reduced ? 'none' : 'kenBurns' }}
+          className="w-full h-full object-cover"
         />
+        {/* Dark Gradient Overlay for contrast */}
+        <div className="absolute inset-0 bg-gradient-to-b from-forest-dark/85 via-forest-dark/50 to-forest-dark" />
       </motion.div>
 
-      {/* z-1: Atmospheric overlays */}
-      <div
-        className="absolute inset-0 pointer-events-none"
-        style={{
-          zIndex: 1,
-          background:
-            'linear-gradient(to top, rgba(26,16,4,0.88) 0%, rgba(26,16,4,0.35) 45%, rgba(26,16,4,0.08) 100%)',
-        }}
-      />
-      <div
-        className="absolute inset-0 pointer-events-none"
-        style={{
-          zIndex: 1,
-          background: 'linear-gradient(to right, rgba(26,16,4,0.55) 0%, transparent 55%)',
-        }}
-      />
-
-      {/* z-2: Particles */}
-      <div className="absolute inset-0" style={{ zIndex: 2 }}>
+      {/* Particle Canvas */}
+      <div className="absolute inset-0 z-1 pointer-events-none">
         {!reduced && <ParticleCanvas />}
       </div>
 
-      {/* z-3: Grain */}
-      <svg
-        className="absolute inset-0 pointer-events-none"
-        style={{ zIndex: 3, opacity: 0.03, width: '100%', height: '100%' }}
-        aria-hidden="true"
-      >
-        <filter id="grain">
-          <feTurbulence type="fractalNoise" baseFrequency="0.65" numOctaves="3" stitchTiles="stitch" />
-          <feColorMatrix type="saturate" values="0" />
-        </filter>
-        <rect width="100%" height="100%" filter="url(#grain)" />
-      </svg>
-
-      {/* z-10: Main content */}
+      {/* CENTERED HERO CONTENT — STAY-CASA DESIGN */}
       <motion.div
-        className="absolute inset-0 flex flex-col justify-center pb-24 md:pb-32 pt-32 md:pt-40"
-        style={{ zIndex: 10, y: reduced ? 0 : contentY, opacity: contentOpacity }}
+        className="relative z-10 max-w-[1400px] mx-auto px-6 md:px-10 w-full text-center my-auto flex flex-col items-center"
+        style={{ y: reduced ? 0 : contentY, opacity: contentOpacity }}
       >
         <motion.div
-          className="px-6 md:px-[6vw] max-w-[700px]"
+          className="max-w-4xl flex flex-col items-center"
           style={{ x: reduced ? 0 : springX, y: reduced ? 0 : springY }}
         >
-          {/* Tagline */}
-          <motion.div
-            className="flex items-center gap-3 mb-4"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 0.7, delay: 0.6 }}
-          >
-            <motion.span
-              className="inline-block h-px bg-gold"
-              initial={{ width: 0 }}
-              animate={{ width: 40 }}
-              transition={{ duration: 0.5, delay: 0.8 }}
-            />
-            <span className="font-sans text-[11px] uppercase tracking-[0.28em] text-gold">
-              {slide.tagline}
+          {/* Headline — Where Comfort Meets Luxury */}
+          <h1 className="font-sans font-light tracking-tight text-ivory text-5xl sm:text-6xl md:text-7xl lg:text-8xl leading-[1.05] mb-4 text-balance">
+            Where Comfort <br />
+            <span className="text-gold font-serif italic">Meets</span> Luxury
+          </h1>
+
+          {/* Subtitle */}
+          <p className="font-sans text-base sm:text-lg md:text-xl font-light text-ivory/90 max-w-xl mb-5">
+            Warm hospitality, affordable luxury
+          </p>
+
+          {/* Rating Badge — ⭐⭐⭐⭐⭐ Top Rated in Purnea */}
+          <div className="inline-flex items-center gap-2 bg-forest-dark border border-gold/30 px-4 py-1.5 rounded-full mb-8 shadow-md">
+            <div className="flex text-gold gap-0.5">
+              {[...Array(5)].map((_, i) => (
+                <Star key={i} size={13} fill="currentColor" />
+              ))}
+            </div>
+            <span className="text-[11px] font-sans text-ivory font-medium tracking-wide">
+              Top Rated in Purnea
             </span>
-          </motion.div>
-
-          {/* Headline — word-by-word */}
-   <h1
-  className="font-display font-normal italic text-ivory mb-5 leading-[1.08]"
-  style={{ fontSize: 'clamp(28px, 4.5vw, 52px)' }}
->
-  <AnimatePresence mode="wait">
-    <motion.span key={slide.id} className="inline">
-      {words.map((word, i) => (
-        <motion.span
-          key={`${slide.id}-${word}-${i}`}
-          className="inline-block mr-[0.2em]"
-          initial={{ opacity: 0, y: 70, rotateX: -20 }}
-          animate={{ opacity: 1, y: 0, rotateX: 0 }}
-          exit={{ opacity: 0, y: -50 }}
-          transition={{
-            duration: 0.9,
-            delay: 0.8 + i * 0.09,
-            ease: [0.16, 1, 0.3, 1],
-          }}
-          style={{ perspective: 1000, display: 'inline-block' }}
-        >
-          {word}
-        </motion.span>
-      ))}
-    </motion.span>
-  </AnimatePresence>
-</h1>
-
-          {/* Gold rule */}
-          <motion.div
-            className="h-px bg-gold mb-5"
-            initial={{ scaleX: 0, originX: 0 }}
-            animate={{ scaleX: 1 }}
-            transition={{ duration: 0.8, delay: 1.3 }}
-            style={{ width: 80 }}
-          />
-
-          {/* Subheadline */}
-          <AnimatePresence mode="wait">
-            <motion.p
-              key={`sub-${slide.id}`}
-              className="font-serif text-xl md:text-[22px] font-light text-ivory/80 max-w-[550px] mb-8 leading-relaxed"
-              initial={{ opacity: 0, y: 25 }}
-              animate={{ opacity: 1, y: 0 }}
-              exit={{ opacity: 0 }}
-              transition={{ duration: 0.7, delay: 1.4 }}
-            >
-              {slide.subheadline}
-            </motion.p>
-          </AnimatePresence>
-
-          {/* CTA row */}
-          <div className="flex flex-wrap gap-3 md:gap-5">
-          <Link href={slide.primaryHref} itemProp="potentialAction" itemScope itemType="https://schema.org/ReserveAction">
-  <motion.div
-    className="group inline-flex items-center gap-2 bg-gold text-[#1a1004] font-sans text-[11px] md:text-[12px] uppercase tracking-[0.16em] px-6 md:px-10 py-3 md:py-4 rounded-sm hover:bg-gold-light transition-all duration-300 shadow-lg shadow-gold/20"
-    initial={{ opacity: 0, y: 20 }}
-    animate={{ opacity: 1, y: 0 }}
-    transition={{ duration: 0.6, delay: 1.7 }}
-    whileHover={{ y: -2 }}
-    itemProp="name"
-  >
-    {slide.primaryCta}
-    <ArrowRight
-      size={14}
-      className="transition-transform duration-300 group-hover:translate-x-1"
-    />
-  </motion.div>
-</Link>
-           <Link href={slide.secondaryHref}>
-  <motion.div
-    className="inline-flex items-center gap-2 border border-gold/50 text-ivory font-sans text-[11px] md:text-[12px] uppercase tracking-[0.16em] px-6 md:px-10 py-3 md:py-4 rounded-sm hover:bg-gold/10 hover:border-gold transition-all duration-300"
-    initial={{ opacity: 0, y: 20 }}
-    animate={{ opacity: 1, y: 0 }}
-    transition={{ duration: 0.6, delay: 1.85 }}
-  >
-    {slide.secondaryCta}
-  </motion.div>
-</Link>
           </div>
-        </motion.div>
 
-        {/* Stats row */}
-        <motion.div
-          className="mt-10 md:mt-12 px-6 md:px-[6vw]"
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 2.0 }}
-        >
+          {/* Action Pill Buttons */}
+          <div className="flex flex-wrap justify-center gap-4 items-center mb-6">
+            <a
+              href={appendUTMToURL(buildBookingUrl())}
+              target="_blank"
+              rel="noopener noreferrer"
+              onClick={() => trackBookingEvent('booking_click', { source: 'hero_center_cta_primary' })}
+              className="group inline-flex items-center gap-2 bg-gradient-to-r from-gold via-gold-light to-gold hover:brightness-110 text-forest-dark font-sans text-xs font-extrabold tracking-widest uppercase px-8 py-4 rounded-full shadow-2xl shadow-gold/25 hover:scale-105 transition-all duration-300"
+            >
+              <span>BOOK YOUR STAY</span>
+              <ArrowUpRight size={16} className="group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
+            </a>
+
+            <Link
+              href="/rooms"
+              className="inline-flex items-center gap-2 bg-forest-dark hover:bg-forest border border-gold/40 text-ivory font-sans text-xs font-bold tracking-widest uppercase px-8 py-4 rounded-full shadow-lg hover:scale-105 transition-all duration-300"
+            >
+              <span>EXPLORE ROOMS</span>
+            </Link>
+          </div>
         </motion.div>
       </motion.div>
 
-      {/* Booking bar */}
+      {/* HORIZONTAL FLOATING BOOKING BAR AT BOTTOM CENTER — COMPACT SIZE */}
       <motion.div
-        className="hidden md:block absolute bottom-6 left-4 right-4 md:bottom-auto md:top-44 md:right-[6vw] md:left-auto w-auto max-w-[420px]"
-        style={{ zIndex: 20 }}
-        initial={{ y: 50, opacity: 0 }}
-        animate={{ y: 0, opacity: 1 }}
-        transition={{ duration: 0.8, delay: 2.2 }}
+        className="relative z-20 max-w-[920px] mx-auto px-4 w-full mt-3 md:mt-6"
+        initial={{ opacity: 0, y: 30 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.7, delay: 0.2 }}
       >
-        {/* Desktop Premium Booking Card (Compact, Right-Aligned, Glassy) */}
-        <div className="flex flex-col gap-4 bg-[#121f13]/35 border-2 border-gold/30 rounded-2xl shadow-[0_30px_60px_rgba(26,16,4,0.4)] backdrop-blur-xl p-5 w-[380px]">
-          <div className="flex items-center justify-between border-b border-gold/15 pb-3">
-            <div className="flex items-center gap-2">
-              <span className="inline-block w-2 h-2 rounded-full bg-gold animate-ping" />
-              <span className="font-sans text-[11px] uppercase tracking-[0.18em] text-gold font-bold">Book Your Stay</span>
-            </div>
-            <span className="font-sans text-[9px] text-ivory/60 font-medium">Best Rate Guaranteed</span>
-          </div>
+        <div className="bg-cream/95 backdrop-blur-md border border-gold/25 rounded-full overflow-hidden shadow-[0_8px_40px_rgba(26,16,4,0.35)] grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 divide-y md:divide-y-0 md:divide-x divide-gold/20 p-1.5">
+          {/* Check In */}
+          <DatePickerBarField label="CHECK IN" selected={checkIn} onChange={handleCheckInChange} minDate={today} formattedText={fmt(checkIn)} />
 
-          <div className="grid grid-cols-2 gap-3">
-            <DatePickerField label="Check-In" selected={checkIn} onChange={handleCheckInChange} minDate={today} icon={Calendar} />
-            <DatePickerField label="Check-Out" selected={checkOut} onChange={handleCheckOutChange} minDate={new Date(checkIn.getTime() + 86400000)} icon={Calendar} />
-          </div>
+          {/* Check Out */}
+          <DatePickerBarField label="CHECK OUT" selected={checkOut} onChange={handleCheckOutChange} minDate={new Date(checkIn.getTime() + 86400000)} formattedText={fmt(checkOut)} />
 
-          <div className="grid grid-cols-2 gap-3">
-            <BookingField label="Guests" type="number" value={guests} onChange={setGuests} options={['1','2','3','4']} icon={Users} />
-            <BookingField label="Rooms" type="number" value={rooms} onChange={setRooms} icon={Bed} />
-          </div>
+          {/* Guests */}
+          <GuestsBarField label="GUESTS" value={guests} onChange={setGuests} />
 
+          {/* Action Button: CHECK RATES → */}
           <button
             onClick={openBooking}
-            className="w-full bg-gold text-[#1a1004] font-sans text-[12px] uppercase tracking-[0.18em] h-[52px] rounded-xl hover:bg-gold-light hover:scale-[1.02] active:scale-[0.98] transition-all duration-300 flex items-center justify-center gap-2 font-bold shadow-xl shadow-gold/25 cursor-pointer relative overflow-hidden group"
-            aria-label="Check Availability - Book Hotel in Purnea"
+            className="w-full bg-gold hover:bg-gold-light text-[#1a1004] font-sans text-[11px] uppercase tracking-[0.15em] font-extrabold py-3 px-5 rounded-full flex items-center justify-center gap-1.5 transition-all duration-300 cursor-pointer shadow-md hover:scale-105"
+            aria-label="Check Rates"
           >
-            <span>Check Availability</span>
-            <ArrowRight size={14} className="transition-transform duration-300 group-hover:translate-x-1" />
+            <span>CHECK RATES</span>
+            <ArrowRight size={14} />
           </button>
         </div>
       </motion.div>
-
-      {/* Slide dots commented out */}
-
-      {/* Scroll indicator */}
-      {/* <div
-        className="absolute bottom-48 left-1/2 -translate-x-1/2"
-        style={{ zIndex: 20 }}
-      >
-        <ScrollIndicator />
-      </div> */}
     </section>
   )
 }
@@ -363,115 +230,77 @@ function PopperContainer({ children }: { children?: React.ReactNode }) {
   return createPortal(children, document.body)
 }
 
-function DatePickerField({
+function DatePickerBarField({
   label,
   selected,
   onChange,
   minDate,
-  icon: Icon,
+  formattedText,
 }: {
   label: string
   selected: Date
   onChange: (date: Date | null) => void
   minDate: Date
-  icon?: React.ComponentType<{ className?: string; size?: number }>
+  formattedText: string
 }) {
   const pickerRef = useRef<React.ComponentRef<typeof DatePicker>>(null)
 
-  const handleIconClick = () => {
-    pickerRef.current?.setOpen(true)
-  }
-
   return (
-    <div className="flex-1 bg-[#121f13]/30 hover:bg-[#121f13]/55 border border-gold/15 hover:border-gold/35 rounded-xl px-4 py-2 cursor-pointer group transition-all duration-300 flex items-center justify-between gap-2 h-[58px] min-w-[130px] backdrop-blur-sm">
-      <div className="flex-1 min-w-0 flex flex-col justify-center">
-        <label className="font-sans text-[9px] uppercase tracking-[0.18em] text-gold/75 block mb-0.5 pointer-events-none font-medium leading-none">
-          {label}
-        </label>
+    <div
+      onClick={() => pickerRef.current?.setOpen(true)}
+      className="px-5 py-2.5 flex flex-col justify-center cursor-pointer hover:bg-gold/5 transition-colors group rounded-full"
+    >
+      <div className="flex items-center gap-1 text-gold-dark text-[9px] font-bold uppercase tracking-widest leading-none mb-0.5">
+        <Calendar size={11} className="text-gold-dark" />
+        <span>{label}</span>
+      </div>
+      <div className="flex items-center justify-between">
+        <span className="text-forest font-sans text-[13px] font-semibold tracking-wide leading-tight">
+          {formattedText}
+        </span>
         <DatePicker
           ref={pickerRef}
           selected={selected}
           onChange={onChange}
           minDate={minDate}
-          dateFormat="dd MMM yyyy"
-          className="w-full bg-transparent border-0 text-ivory font-sans text-[13px] font-semibold focus:outline-none focus:ring-0 cursor-pointer py-0 m-0 leading-none h-5"
-          wrapperClassName="w-full"
-          popperPlacement="bottom-end"
+          dateFormat="dd-MM-yyyy"
+          className="hidden"
+          popperPlacement="bottom-start"
           popperContainer={PopperContainer}
           calendarClassName="react-datepicker-custom"
           aria-label={label}
         />
       </div>
-      {Icon && (
-        <div
-          className="text-gold/60 group-hover:text-gold group-hover:scale-105 transition-all duration-300 flex-shrink-0 cursor-pointer"
-          onClick={handleIconClick}
-        >
-          <Icon size={15} />
-        </div>
-      )}
     </div>
   )
 }
 
-
-
-function BookingField({
+function GuestsBarField({
   label,
-  type = 'text',
   value,
   onChange,
-  min,
-  options,
-  icon: Icon,
 }: {
   label: string
-  type?: string
   value: string
   onChange: (v: string) => void
-  min?: string
-  options?: string[]
-  icon?: React.ComponentType<{ className?: string; size?: number }>
 }) {
   return (
-    <div className="flex-1 bg-[#121f13]/30 hover:bg-[#121f13]/55 border border-gold/15 hover:border-gold/35 rounded-xl px-4 py-2 cursor-pointer group transition-all duration-300 flex items-center justify-between gap-2 h-[58px] min-w-[130px] backdrop-blur-sm">
-      <div className="flex-1 min-w-0 flex flex-col justify-center">
-        <label className="font-sans text-[9px] uppercase tracking-[0.18em] text-gold/75 block mb-0.5 pointer-events-none font-medium leading-none">
-          {label}
-        </label>
-        <div className="relative flex items-center h-5">
-          {options ? (
-            <select
-              value={value}
-              onChange={(e) => onChange(e.target.value)}
-              required
-              className="w-full bg-transparent border-0 text-ivory font-sans text-[13px] font-semibold focus:outline-none focus:ring-0 cursor-pointer appearance-none pr-5 py-0 m-0 leading-none h-5"
-              aria-label={label}
-            >
-              {options.map((opt) => (
-                <option key={opt} value={opt} className="text-forest bg-cream">{opt}</option>
-              ))}
-            </select>
-          ) : (
-            <input
-              type={type === 'number' ? 'number' : 'text'}
-              value={value}
-              min={min ?? (type === 'number' ? '1' : undefined)}
-              onChange={(e) => onChange(e.target.value)}
-              required
-              className="booking-input w-full bg-transparent border-0 text-ivory placeholder-gold/50 font-sans text-[13px] font-semibold focus:outline-none focus:ring-0 cursor-pointer py-0 m-0 leading-none h-5"
-              aria-label={label}
-            />
-          )}
-        </div>
+    <div className="px-5 py-2.5 flex flex-col justify-center hover:bg-gold/5 transition-colors rounded-full">
+      <div className="flex items-center gap-1 text-gold-dark text-[9px] font-bold uppercase tracking-widest leading-none mb-0.5">
+        <Users size={11} className="text-gold-dark" />
+        <span>{label}</span>
       </div>
-      <div className="text-gold/60 group-hover:text-gold group-hover:scale-105 transition-all duration-300 flex-shrink-0">
-        {options ? (
-          <ChevronDown size={15} />
-        ) : Icon ? (
-          <Icon size={15} />
-        ) : null}
-      </div>
+      <select
+        value={value}
+        onChange={(e) => onChange(e.target.value)}
+        className="bg-transparent text-forest font-sans text-[13px] font-semibold tracking-wide focus:outline-none cursor-pointer border-0 p-0 leading-tight"
+        aria-label={label}
+      >
+        <option value="1" className="text-forest-dark bg-cream">1 Guest</option>
+        <option value="2" className="text-forest-dark bg-cream">2 Guests +</option>
+        <option value="3" className="text-forest-dark bg-cream">3 Guests +</option>
+        <option value="4" className="text-forest-dark bg-cream">4 Guests +</option>
+      </select>
     </div>
   )
 }
