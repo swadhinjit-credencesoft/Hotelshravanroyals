@@ -14,7 +14,7 @@ import { buildBookingUrl } from '@/lib/hotelmate'
 const navLinks = [
   { label: 'HOME', href: '/', title: 'Home — Hotel Surya Bella Casa' },
   { label: 'ROOMS', href: '/rooms', title: 'Luxury Rooms in Purnea' },
-  { label: 'OFFERS', href: '/offers', title: 'Special Hotel Offers' },
+  // { label: 'OFFERS', href: '/offers', title: 'Special Hotel Offers' },
   { label: 'DINING', href: '/dining', title: 'Restaurant & Dining' },
   { label: 'EVENTS', href: '/events', title: 'Events & Banquet Hall' },
   { label: 'GALLERY', href: '/gallery', title: 'Hotel Photo Gallery' },
@@ -140,7 +140,7 @@ export default function Navbar() {
             })}
           </nav>
 
-          {/* Right: Gold BOOK NOW Pill Button + Circle Menu Icon */}
+          {/* Right: Gold BOOK NOW Pill Button */}
           <div className="hidden lg:flex items-center gap-3 shrink-0">
             <a
               href={bookingUrl}
@@ -153,18 +153,6 @@ export default function Navbar() {
               <Calendar size={14} />
               <span>BOOK NOW</span>
             </a>
-
-            <button
-              onClick={() => setMobileOpen(true)}
-              className={`w-9 h-9 rounded-full flex items-center justify-center transition-all cursor-pointer border ${
-                scrolled || !isHome
-                  ? 'bg-forest/10 border-gold/30 text-forest hover:bg-gold/20 hover:text-gold'
-                  : 'bg-white/10 border-white/20 text-ivory hover:bg-gold/20 hover:text-gold'
-              }`}
-              aria-label="Open Menu"
-            >
-              <Menu size={18} />
-            </button>
           </div>
 
           {/* Mobile Right Controls */}

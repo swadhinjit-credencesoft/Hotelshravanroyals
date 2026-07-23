@@ -34,6 +34,7 @@ export default function BlogGrid() {
                        alt={post.title}
                        fill
                        className="object-cover transition-transform duration-1000 group-hover:scale-105"
+                       loading="lazy"
                      />
                   </div>
                   <div className="flex items-center gap-4 mb-4">

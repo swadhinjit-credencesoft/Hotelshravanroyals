@@ -4,7 +4,7 @@ import BlogGrid from '@/components/sections/BlogGrid';
 import { blogPosts } from '@/components/sections/blogPosts';
 
 export const metadata: Metadata = {
-  title: 'Purnia Travel Blog',
+  title: 'Purnia Travel Blog | Hotel Surya Bella Casa',
   description: 'Read the latest travel articles, hotel booking guides, and local attraction tips for Purnia, Bihar, from Hotel Surya Bella Casa.',
   keywords: [
     'purnia travel blog',

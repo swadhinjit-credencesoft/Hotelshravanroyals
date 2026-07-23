@@ -29,6 +29,7 @@ export default function HistorySection() {
                 fill
                 sizes="(max-width: 1024px) 90vw, 40vw"
                 className="object-cover transition-all duration-1000"
+                loading="lazy"
               />
             </div>
             
@@ -42,6 +43,7 @@ export default function HistorySection() {
                 fill
                 sizes="256px"
                 className="object-cover"
+                loading="lazy"
               />
             </motion.div>
 
@@ -55,6 +57,7 @@ export default function HistorySection() {
                 fill
                 sizes="320px"
                 className="object-cover"
+                loading="lazy"
               />
             </motion.div>
           </div>

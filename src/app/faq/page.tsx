@@ -4,7 +4,7 @@ import FAQSection from '@/components/sections/FAQSection'
 export const metadata: Metadata = {
   title: 'Hotel Booking & Stay FAQs',
   description:
-    'Find answers to frequently asked questions about Hotel Surya Bella Casa in Purnea. Check-in/check-out timings, room categories, parking, Wi-Fi, food, and booking info. Best hotel near Bus Stand Purnea. Book direct.',
+    'Find answers to frequently asked questions about Hotel Surya Bella Casa in Purnea. Check-in timings, room categories, parking, Wi-Fi, food, and booking info.',
   keywords: [
     'hotel faq purnea',
     'hotel booking questions purnea',

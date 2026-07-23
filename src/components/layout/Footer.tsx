@@ -103,6 +103,7 @@ export default function Footer() {
                 width={180}
                 height={80}
                 className="object-contain"
+                loading="lazy"
               />
             </Link>
 

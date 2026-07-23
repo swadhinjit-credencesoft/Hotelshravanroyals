@@ -6,7 +6,7 @@ import { Wifi } from 'lucide-react'
 export const metadata: Metadata = {
   title: 'Business Hotel in Purnea',
   description:
-    'Best business hotel in Purnea near Bus Stand with conference hall, high-speed WiFi, and meeting room. Ideal corporate stay for professionals visiting Purnia. Book now.',
+    'Best business hotel in Purnea near Bus Stand with conference hall, high-speed WiFi, and meeting room. Ideal corporate stay for professionals.',
   keywords: [
     'business hotel in purnea',
     'corporate stay purnea',

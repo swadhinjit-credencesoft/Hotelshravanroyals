@@ -15,6 +15,7 @@ import {
 import { ArrowRight, Calendar, Users, Star, ArrowUpRight } from 'lucide-react'
 import dynamic from 'next/dynamic'
 import DatePicker from 'react-datepicker'
+import 'react-datepicker/dist/react-datepicker.css'
 import { buildBookingUrl, trackBookingEvent } from '@/lib/hotelmate'
 import { trackSearch } from '@/lib/analytics'
 import { appendUTMToURL } from '@/lib/utm'
@@ -27,14 +28,29 @@ const heroSlides = [
   {
     src: 'https://bookonelocal.in/cdn/IMG_3815.avif',
     alt: 'Hotel Surya Bella Casa — Premium hotel in Purnea with luxury rooms, rooftop restaurant, and banquet hall',
+    headline1: 'Where Comfort',
+    headline2: 'Meets',
+    headline3: 'Luxury',
+    subtitle: 'Warm hospitality, affordable luxury',
+    badge: 'Top Rated in Purnea',
   },
   {
     src: 'https://bookonelocal.in/cdn/IMG_3808.avif',
     alt: 'Comfortable clean rooms at Hotel Surya Bella Casa Purnea — best hotel near Bus Stand',
+    headline1: 'Your Perfect',
+    headline2: 'Room',
+    headline3: 'Awaits',
+    subtitle: 'Clean, modern & thoughtfully designed',
+    badge: 'AC & Non-AC Options',
   },
   {
     src: 'https://bookonelocal.in/cdn/IMG_3784.avif',
     alt: 'Hotel Surya Bella Casa interiors — modern amenities and warm hospitality in Purnia',
+    headline1: 'Experience',
+    headline2: 'True',
+    headline3: 'Hospitality',
+    subtitle: 'Where every guest becomes family',
+    badge: 'Since 2019 · Purnea',
   },
 ]
 
@@ -223,26 +239,50 @@ export default function HeroSection() {
           className="max-w-4xl flex flex-col items-center"
           style={{ x: reduced ? 0 : springX, y: reduced ? 0 : springY }}
         >
-          {/* Headline — Where Comfort Meets Luxury */}
+          {/* Headline — animated with slides */}
           <h1 className="font-sans font-light tracking-tight text-ivory text-[32px] sm:text-5xl md:text-7xl lg:text-8xl leading-[1.05] mb-3 md:mb-4 text-balance" itemProp="name">
-            Where Comfort <br />
-            <span className="text-gold font-serif italic">Meets</span> Luxury
+            <span className={`transition-opacity duration-700 ease-in-out ${currentSlide === 0 ? 'opacity-100' : 'opacity-0 absolute inset-0 pointer-events-none'}`}>
+              Where Comfort <br />
+              <span className="text-gold font-serif italic">Meets</span> Luxury
+            </span>
+            <span className={`transition-opacity duration-700 ease-in-out ${currentSlide === 1 ? 'opacity-100' : 'opacity-0 absolute inset-0 pointer-events-none'}`}>
+              Your Perfect <br />
+              <span className="text-gold font-serif italic">Room</span> Awaits
+            </span>
+            <span className={`transition-opacity duration-700 ease-in-out ${currentSlide === 2 ? 'opacity-100' : 'opacity-0 absolute inset-0 pointer-events-none'}`}>
+              Experience <br />
+              <span className="text-gold font-serif italic">True</span> Hospitality
+            </span>
           </h1>
 
-          {/* Subtitle */}
-          <p className="font-sans text-sm sm:text-lg md:text-xl font-light text-ivory/90 max-w-xl mb-5 px-2">
-            Warm hospitality, affordable luxury
-          </p>
+          {/* Subtitle — animated with slides */}
+          <div className="relative mb-5 px-2">
+            <p className={`font-sans text-sm sm:text-lg md:text-xl font-light text-ivory/90 max-w-xl transition-opacity duration-700 ease-in-out ${currentSlide === 0 ? 'opacity-100' : 'opacity-0 absolute inset-0 pointer-events-none'}`}>
+              Warm hospitality, affordable luxury
+            </p>
+            <p className={`font-sans text-sm sm:text-lg md:text-xl font-light text-ivory/90 max-w-xl transition-opacity duration-700 ease-in-out ${currentSlide === 1 ? 'opacity-100' : 'opacity-0 absolute inset-0 pointer-events-none'}`}>
+              Clean, modern &amp; thoughtfully designed
+            </p>
+            <p className={`font-sans text-sm sm:text-lg md:text-xl font-light text-ivory/90 max-w-xl transition-opacity duration-700 ease-in-out ${currentSlide === 2 ? 'opacity-100' : 'opacity-0 absolute inset-0 pointer-events-none'}`}>
+              Where every guest becomes family
+            </p>
+          </div>
 
-          {/* Rating Badge — ⭐⭐⭐⭐⭐ Top Rated in Purnea */}
-          <div className="inline-flex items-center gap-2 bg-forest-dark border border-gold/30 px-3.5 sm:px-4 py-1.5 rounded-full mb-6 sm:mb-8 shadow-md">
+          {/* Rating Badge — animated with slides */}
+          <div className="inline-flex items-center gap-2 bg-forest-dark border border-gold/30 px-3.5 sm:px-4 py-1.5 rounded-full mb-6 sm:mb-8 shadow-md relative">
             <div className="flex text-gold gap-0.5">
               {[...Array(5)].map((_, i) => (
                 <Star key={i} size={12} fill="currentColor" />
               ))}
             </div>
-            <span className="text-[10px] sm:text-[11px] font-sans text-ivory font-medium tracking-wide">
+            <span className={`text-[10px] sm:text-[11px] font-sans text-ivory font-medium tracking-wide transition-opacity duration-700 ease-in-out ${currentSlide === 0 ? 'opacity-100' : 'opacity-0 absolute left-0 right-0 flex items-center justify-center pointer-events-none'}`}>
               Top Rated in Purnea
+            </span>
+            <span className={`text-[10px] sm:text-[11px] font-sans text-ivory font-medium tracking-wide transition-opacity duration-700 ease-in-out ${currentSlide === 1 ? 'opacity-100' : 'opacity-0 absolute left-0 right-0 flex items-center justify-center pointer-events-none'}`}>
+              AC &amp; Non-AC Options
+            </span>
+            <span className={`text-[10px] sm:text-[11px] font-sans text-ivory font-medium tracking-wide transition-opacity duration-700 ease-in-out ${currentSlide === 2 ? 'opacity-100' : 'opacity-0 absolute left-0 right-0 flex items-center justify-center pointer-events-none'}`}>
+              Since 2019 · Purnea
             </span>
           </div>
 

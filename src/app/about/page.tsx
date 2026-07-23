@@ -4,7 +4,7 @@ import AboutContent from '@/components/sections/AboutContent';
 export const metadata: Metadata = {
   title: 'About Us | Purnea Hotel History & Legacy',
   description:
-    'Learn about Hotel Surya Bella Casa in Purnea. Established in 2019, opposite Vikass Market near Bus Stand, providing clean, comfortable lodging with local Bihari hospitality.',
+    'Learn about Hotel Surya Bella Casa in Purnea. Established in 2019, opposite Vikass Market near Bus Stand. Clean, comfortable stays with Bihari hospitality.',
   keywords: [
     'about hotel surya bella casa',
     'hotel in purnea about',

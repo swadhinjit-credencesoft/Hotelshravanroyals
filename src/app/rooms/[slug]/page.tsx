@@ -47,6 +47,13 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return {
     title,
     description,
+    keywords: [
+      `${room.name.toLowerCase()} purnea`,
+      'hotel room purnea near bus stand',
+      'AC room purnea',
+      'book room purnea bihar',
+      'best hotel rooms purnea',
+    ],
     alternates: {
       canonical: `https://hotelsuryabellacasa.com/rooms/${room.slug}`,
     },

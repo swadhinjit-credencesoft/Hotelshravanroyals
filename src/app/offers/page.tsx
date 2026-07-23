@@ -5,7 +5,7 @@ import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
   title: 'Offers & Packages',
-  description: 'Exclusive hotel offers, seasonal packages, and best deals at Hotel Surya Bella Casa in Purnea. Corporate rates, wedding packages & family deals. Book direct for lowest prices.',
+  description: 'Exclusive hotel offers, seasonal packages, and best deals at Hotel Surya Bella Casa in Purnea. Corporate rates, wedding packages, and family deals.',
   alternates: {
     canonical: 'https://hotelsuryabellacasa.com/offers',
   },

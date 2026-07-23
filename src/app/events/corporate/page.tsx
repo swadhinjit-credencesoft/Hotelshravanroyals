@@ -6,7 +6,7 @@ import Link from 'next/link';
 
 export const metadata = {
   title: 'Corporate Events in Purnea | Conference Hall & Meeting Room',
-  description: 'Best conference hall in Purnea near Bus Stand. Hotel Surya Bella Casa offers corporate event venue, meeting room, seminar hall for offsites, retreats and workshops.',
+  description: 'Best conference hall in Purnea near Bus Stand. Corporate event venue, meeting room, and seminar hall at Hotel Surya Bella Casa.',
   keywords: ['conference hall purnea', 'corporate event venue purnia', 'meeting room hotel purnea', 'seminar hall purnea', 'business conference purnia'],
   alternates: { canonical: 'https://hotelsuryabellacasa.com/events/corporate' },
 };

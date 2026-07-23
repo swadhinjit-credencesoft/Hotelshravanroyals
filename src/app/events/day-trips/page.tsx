@@ -8,7 +8,7 @@ import Link from 'next/link';
 export const metadata: Metadata = {
   title: 'Day Trips & Picnics in Purnea | Weekend Getaway Near Bus Stand',
   description:
-    'Plan a day trip or picnic in Purnea at Hotel Surya Bella Casa near Bus Stand. Family outing packages include lounge access, buffet lunch, and city tours. Book your day out in Purnea, Bihar.',
+    'Plan a day trip or picnic in Purnea at Hotel Surya Bella Casa near Bus Stand. Family outing packages with lounge access, buffet lunch, and city tours.',
   keywords: [
     'day trips from purnea',
     'picnic in purnea',

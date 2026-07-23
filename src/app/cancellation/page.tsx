@@ -3,7 +3,7 @@ import SectionLabel from '@/components/ui/SectionLabel'
 
 export const metadata: Metadata = {
   title: 'Cancellation & Refund Policy',
-  description: 'Read the cancellation and refund policy of Hotel Surya Bella Casa, Purnea. Learn about booking amendments, refund timelines, and no-show policy for direct reservations.',
+  description: 'Read the cancellation and refund policy of Hotel Surya Bella Casa, Purnea. Booking amendments, refund timelines, and no-show policy.',
   alternates: {
     canonical: 'https://hotelsuryabellacasa.com/cancellation',
   },

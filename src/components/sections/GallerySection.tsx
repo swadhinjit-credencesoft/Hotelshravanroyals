@@ -87,6 +87,7 @@ export default function GallerySection() {
                   width={image.width}
                   height={image.height}
                   className="w-full h-auto transition-transform duration-700 group-hover:scale-105 grayscale-[40%] group-hover:grayscale-0"
+                  loading="lazy"
                 />
                 <div className="absolute inset-0 border-0 group-hover:border-[12px] border-gold/10 transition-all duration-500 pointer-events-none" />
                 <div className="absolute inset-0 bg-forest/0 group-hover:bg-forest/10 transition-colors duration-500" />

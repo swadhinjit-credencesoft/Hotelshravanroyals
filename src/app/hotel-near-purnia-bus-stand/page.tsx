@@ -16,7 +16,7 @@ const busStandAmenities: AmenityItem[] = [
 
 export const metadata = {
   title: 'Hotel Near Purnia Bus Stand',
-  description: 'Looking for a hotel near Purnia Bus Stand? Hotel Surya Bella Casa is located opposite Vikass Market, just 2 min from Bus Stand Purnea. Clean rooms, free WiFi, parking. Best hotel near Purnea Bus Stand. Book direct.',
+  description: 'Looking for a hotel near Purnia Bus Stand? Hotel Surya Bella Casa is opposite Vikass Market, just 2 min from Bus Stand. Clean rooms, free WiFi, parking.',
   keywords: [
     'hotel near purnia bus stand', 'hotel near bus stand purnea', 'hotel near bus stand bihar',
     'lodging near purnia bus stand', 'best hotel near purnea bus terminal',
@@ -62,45 +62,6 @@ export default function PurniaBusStandLandingPage() {
             "itemListElement": [
               { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://hotelsuryabellacasa.com" },
               { "@type": "ListItem", "position": 2, "name": "Hotel Near Purnia Bus Stand", "item": "https://hotelsuryabellacasa.com/hotel-near-purnia-bus-stand" }
-            ]
-          })
-        }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "Hotel",
-            "name": "Hotel Surya Bella Casa",
-            "description": "Hotel near Purnia Bus Stand. Located opposite Vikass Market, just 2 minutes walk from the bus terminal. Clean AC rooms, free WiFi, parking, and 24/7 room service.",
-            "url": "https://hotelsuryabellacasa.com",
-            "telephone": "+919835923601",
-            "email": "bellacasa561@gmail.com",
-            "image": "https://bookonelocal.in/cdn/IMG_3815.avif",
-            "logo": "https://hotelsuryabellacasa.com/suryabellacasalogo.png",
-            "address": {
-              "@type": "PostalAddress",
-              "streetAddress": "Suryalok Complex, Opposite Vikass Market, Near Bus Stand",
-              "addressLocality": "Purnia",
-              "addressRegion": "Bihar",
-              "postalCode": "854301",
-              "addressCountry": "IN"
-            },
-            "geo": {
-              "@type": "GeoCoordinates",
-              "latitude": 25.7771,
-              "longitude": 87.4753
-            },
-            "hasMap": "https://www.google.com/maps/place/?cid=8931275976043074034",
-            "priceRange": "₹1,500 - ₹3,000",
-            "checkinTime": "12:00",
-            "checkoutTime": "12:00",
-            "amenityFeature": [
-              { "@type": "LocationFeatureSpecification", "name": "Free WiFi", "value": true },
-              { "@type": "LocationFeatureSpecification", "name": "Free Parking", "value": true },
-              { "@type": "LocationFeatureSpecification", "name": "Air Conditioning", "value": true },
-              { "@type": "LocationFeatureSpecification", "name": "Elevator", "value": true }
             ]
           })
         }}

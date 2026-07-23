@@ -16,7 +16,7 @@ const budgetAmenities: AmenityItem[] = [
 
 export const metadata = {
   title: 'Budget Hotel in Purnia',
-  description: 'Looking for a budget hotel in Purnia? Hotel Surya Bella Casa offers affordable AC and Non-AC rooms near Bus Stand Purnea. Free WiFi, parking, room service. Best budget hotel near Vikass Market. Book direct for lowest rates.',
+  description: 'Looking for a budget hotel in Purnia? Hotel Surya Bella Casa offers affordable AC and Non-AC rooms near Bus Stand. Free WiFi, parking, room service.',
   keywords: [
     'budget hotel in purnia', 'cheap hotel purnea', 'affordable hotel purnea',
     'budget hotel in purnea bihar', 'low price hotel near bus stand purnia',
@@ -63,46 +63,6 @@ export default function BudgetHotelLandingPage() {
             "itemListElement": [
               { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://hotelsuryabellacasa.com" },
               { "@type": "ListItem", "position": 2, "name": "Budget Hotel in Purnia", "item": "https://hotelsuryabellacasa.com/budget-hotel-in-purnia" }
-            ]
-          })
-        }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "Hotel",
-            "name": "Hotel Surya Bella Casa",
-            "description": "Budget hotel in Purnia offering affordable AC and Non-AC rooms near Bus Stand. Free WiFi, parking, and 24/7 room service with no hidden fees.",
-            "url": "https://hotelsuryabellacasa.com",
-            "telephone": "+919835923601",
-            "email": "bellacasa561@gmail.com",
-            "image": "https://bookonelocal.in/cdn/IMG_3784.avif",
-            "logo": "https://hotelsuryabellacasa.com/suryabellacasalogo.png",
-            "address": {
-              "@type": "PostalAddress",
-              "streetAddress": "Suryalok Complex, Opposite Vikass Market, Near Bus Stand",
-              "addressLocality": "Purnia",
-              "addressRegion": "Bihar",
-              "postalCode": "854301",
-              "addressCountry": "IN"
-            },
-            "geo": {
-              "@type": "GeoCoordinates",
-              "latitude": 25.7771,
-              "longitude": 87.4753
-            },
-            "hasMap": "https://www.google.com/maps/place/?cid=8931275976043074034",
-            "priceRange": "₹1,500 - ₹3,000",
-            "checkinTime": "12:00",
-            "checkoutTime": "12:00",
-            "amenityFeature": [
-              { "@type": "LocationFeatureSpecification", "name": "Free WiFi", "value": true },
-              { "@type": "LocationFeatureSpecification", "name": "Free Parking", "value": true },
-              { "@type": "LocationFeatureSpecification", "name": "Air Conditioning", "value": true },
-              { "@type": "LocationFeatureSpecification", "name": "Elevator", "value": true },
-              { "@type": "LocationFeatureSpecification", "name": "24/7 Room Service", "value": true }
             ]
           })
         }}

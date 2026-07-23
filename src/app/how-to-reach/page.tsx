@@ -5,7 +5,7 @@ import { Train, Bus, Car, Plane, MapPin } from 'lucide-react'
 export const metadata: Metadata = {
   title: 'How to Reach Us & Travel Guide',
   description:
-    'Complete travel guide to reach Hotel Surya Bella Casa in Purnea. Directions from Purnea Junction Railway Station, Bus Stand, nearby cities like Patna, Siliguri, and Bhagalpur. Book direct!',
+    'Travel guide to reach Hotel Surya Bella Casa in Purnea. Directions from Purnea Junction, Bus Stand, and nearby cities like Patna and Siliguri.',
   keywords: ['how to reach purnea', 'purnea directions', 'purnea railway station', 'purnea bus stand', 'purnea airport distance', 'travel to purnia bihar'],
   alternates: {
     canonical: 'https://hotelsuryabellacasa.com/how-to-reach',

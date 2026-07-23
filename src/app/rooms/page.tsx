@@ -6,7 +6,7 @@ import RoomsGrid from '@/components/sections/RoomsGrid'
 export const metadata: Metadata = {
   title: 'AC Rooms & Deluxe Rooms Purnea',
   description:
-    'Book deluxe AC rooms in Purnea at Hotel Surya Bella Casa near Bus Stand. Family rooms, luxury stays, free WiFi, parking & room service. Best hotel rooms in Purnea for comfort and value.',
+    'Book deluxe AC rooms in Purnea at Hotel Surya Bella Casa near Bus Stand. Free WiFi, parking, room service. Best hotel rooms in Purnea for comfort and value.',
   alternates: {
     canonical: 'https://hotelsuryabellacasa.com/rooms',
   },

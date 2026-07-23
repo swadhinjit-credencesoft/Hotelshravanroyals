@@ -6,7 +6,7 @@ import { Calendar, MapPin } from 'lucide-react'
 export const metadata: Metadata = {
   title: 'Banquet Hall & Wedding Venue Purnea',
   description:
-    'Plan your wedding at the best banquet hall in Purnea near Bus Stand. Marriage hall, wedding venue, and conference room for events at Hotel Surya Bella Casa opposite Vikass Market. Book now.',
+    'Plan your wedding at the best banquet hall in Purnea near Bus Stand. Marriage hall and wedding venue at Hotel Surya Bella Casa opposite Vikass Market.',
   keywords: [
     'banquet hall in purnea',
     'wedding venue in purnea',

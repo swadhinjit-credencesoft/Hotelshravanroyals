@@ -6,7 +6,7 @@ import Script from 'next/script'
 
 export const metadata: Metadata = {
   title: 'Photo Gallery & Virtual Tour',
-  description: 'Browse high-resolution photos, guest images, and a video walkthrough of Hotel Surya Bella Casa in Purnea. See our rooms, dining, and facilities near Bus Stand. Book direct for the best rates.',
+  description: 'Browse photos, guest images, and video walkthrough of Hotel Surya Bella Casa in Purnea. See our rooms, dining, and facilities near Bus Stand.',
   keywords: [
     'hotel gallery purnea',
     'hotel surya bella casa photos',
@@ -91,6 +91,7 @@ export default function GalleryPage() {
               fill
               className="object-cover group-hover:scale-105 transition-transform duration-700"
               sizes="700px"
+              loading="lazy"
             />
             <div className="absolute inset-0 bg-black/30 flex items-center justify-center group-hover:bg-black/20 transition-all">
               <div className="w-16 h-16 rounded-full bg-red-600 flex items-center justify-center group-hover:scale-110 transition-transform shadow-xl">

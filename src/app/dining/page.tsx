@@ -9,7 +9,7 @@ import { Coffee } from 'lucide-react';
 
 export const metadata: Metadata = {
   title: 'Rooftop Restaurant & Dining',
-  description: 'Best rooftop restaurant in Purnea at Hotel Surya Bella Casa near Bus Stand. Multi-cuisine dining with Indian, Tandoor, Mughlai, Asian & Continental food. Pure veg & non-veg options.',
+  description: 'Best rooftop restaurant in Purnea at Hotel Surya Bella Casa near Bus Stand. Multi-cuisine dining with Indian, Tandoor, Mughlai, Asian and Continental food.',
   alternates: {
     canonical: 'https://hotelsuryabellacasa.com/dining',
   },

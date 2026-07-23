@@ -60,6 +60,7 @@ export default function AboutContent() {
                 alt="Architectural detail seamlessly blending with nature"
                 fill
                 className="object-cover"
+                loading="lazy"
               />
             </motion.div>
           </div>
