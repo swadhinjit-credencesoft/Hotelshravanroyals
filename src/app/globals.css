@@ -26,17 +26,17 @@
 
 * {
   box-sizing: border-box;
-  font-family: 'Barlow', sans-serif;
+  font-family: var(--font-barlow), sans-serif;
 }
 
 html {
   scroll-behavior: auto;
-  font-family: 'Barlow', sans-serif;
+  font-family: var(--font-barlow), sans-serif;
   overflow-x: hidden;
 }
 
 body {
-  font-family: 'Barlow', sans-serif;
+  font-family: var(--font-barlow), sans-serif;
   font-weight: 400;
   font-style: normal;
   background-color: var(--cream);
@@ -52,12 +52,12 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Barlow', sans-serif;
+  font-family: var(--font-barlow), sans-serif;
   font-weight: 600;
 }
 
 p, span, a, li, label, button, input, textarea, select {
-  font-family: 'Barlow', sans-serif;
+  font-family: var(--font-barlow), sans-serif;
   font-weight: 400;
 }
 
@@ -93,7 +93,7 @@ p, span, a, li, label, button, input, textarea, select {
   color: #1a1004;
   padding: 0.5rem 1rem;
   border-radius: 2px;
-  font-family: 'Barlow', sans-serif;
+  font-family: var(--font-barlow), sans-serif;
   font-size: 13px;
   z-index: 9999;
   transition: top 0.2s;

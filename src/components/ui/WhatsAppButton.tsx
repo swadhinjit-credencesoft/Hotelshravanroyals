@@ -2,22 +2,17 @@
 
 import { MessageCircle, Phone } from 'lucide-react'
 import { buildWhatsAppUrl } from '@/lib/hotelmate'
+import { trackPhoneClick, trackWhatsAppClick } from '@/lib/analytics'
 
 const PHONE = '919835923601'
 
 export default function WhatsAppButton() {
-  const trackClick = (source: string) => {
-    if (typeof window !== 'undefined' && typeof window.gtag === 'function') {
-      window.gtag('event', 'whatsapp_click', { source })
-    }
-  }
-
   return (
     <div className="fixed bottom-28 md:bottom-8 right-6 md:right-8 z-40 flex flex-col items-end gap-3">
       {/* Call Button */}
       <a
         href={`tel:+91${PHONE}`}
-        onClick={() => trackClick('call_button')}
+        onClick={() => trackPhoneClick('floating_button')}
         className="bg-forest text-ivory p-3.5 rounded-full shadow-2xl hover:bg-gold hover:text-forest hover:scale-110 transition-all duration-300 group"
         aria-label="Call Hotel Surya Bella Casa"
       >
@@ -32,7 +27,7 @@ export default function WhatsAppButton() {
         href={buildWhatsAppUrl()}
         target="_blank"
         rel="noopener noreferrer"
-        onClick={() => trackClick('floating_button')}
+        onClick={() => trackWhatsAppClick('floating_button')}
         className="relative bg-green-500 text-white p-4 rounded-full shadow-2xl hover:bg-green-600 hover:scale-110 transition-all duration-300 group animate-pulse-glow"
         aria-label="Chat on WhatsApp for booking enquiry"
       >

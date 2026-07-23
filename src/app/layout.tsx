@@ -1,4 +1,4 @@
-import type { Metadata } from 'next'
+import type { Metadata, Viewport } from 'next'
 import './globals.css'
 import Script from 'next/script'
 
@@ -14,6 +14,13 @@ import Breadcrumbs from '@/components/ui/Breadcrumbs'
 import WhatsAppButton from '@/components/ui/WhatsAppButton'
 import MobileStickyBar from '@/components/layout/MobileStickyBar'
 
+export const viewport: Viewport = {
+  width: 'device-width',
+  initialScale: 1,
+  maximumScale: 5,
+  themeColor: '#FBF7F0',
+}
+
 const barlow = Barlow({
   subsets: ['latin'],
   weight: ['300', '400', '500', '600', '700'],
@@ -25,7 +32,7 @@ const barlow = Barlow({
 const tangerine = Tangerine({
   subsets: ['latin'],
   weight: ['700'],
-  display: 'swap',
+  display: 'optional',
   variable: '--font-tangerine',
 })
 
@@ -195,7 +202,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <meta name="theme-color" content="#FBF7F0" />
+        <meta httpEquiv="x-dns-prefetch-control" content="on" />
         <link rel="preconnect" href="https://bookone.io" />
         <link rel="preconnect" href="https://bookonelocal.in" />
         <link rel="preconnect" href="https://www.googletagmanager.com" />
@@ -324,7 +331,7 @@ export default function RootLayout({
                 "name": "Hotel Surya Bella Casa",
                 "logo": "https://hotelsuryabellacasa.com/suryabellacasalogo.png",
                 "url": "https://hotelsuryabellacasa.com",
-                "foundingDate": "2024",
+                "foundingDate": "2019",
                 "description": "Hotel Surya Bella Casa is a premier hospitality establishment in Purnia, Bihar, offering comfortable accommodation, rooftop dining, and event spaces.",
                 "sameAs": [
                   "https://www.facebook.com/hotelsuryabellacasa",

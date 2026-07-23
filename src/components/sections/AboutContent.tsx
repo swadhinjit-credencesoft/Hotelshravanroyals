@@ -15,7 +15,7 @@ export default function AboutContent() {
         label="Our Story"
         title="Genuine Hospitality"
         tagline="Dedicated to offering clean, comfortable, and affordable accommodation in Purnia for families and business travelers."
-        image='https://bookonelocal.in/cdn/IMG_7429.mp4'
+        image='https://bookonelocal.in/cdn/IMG_3808.avif'
       />
 
       <section className="py-24">

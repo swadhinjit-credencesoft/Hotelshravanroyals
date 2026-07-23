@@ -1,15 +1,14 @@
 'use client'
 
 import { MessageCircle, PhoneCall, Calendar } from 'lucide-react'
-import { buildWhatsAppUrl } from '@/lib/hotelmate'
-
-function trackEvent(eventName: string, source: string) {
-  if (typeof window !== 'undefined' && typeof window.gtag === 'function') {
-    window.gtag('event', eventName, { source, event_category: 'engagement' })
-  }
-}
+import { buildWhatsAppUrl, buildBookingUrl, trackBookingEvent } from '@/lib/hotelmate'
+import { trackPhoneClick, trackWhatsAppClick } from '@/lib/analytics'
+import { appendUTMToURL } from '@/lib/utm'
 
 export default function MobileStickyBar() {
+  const rawBookingUrl = buildBookingUrl()
+  const bookingUrl = appendUTMToURL(rawBookingUrl)
+
   return (
     <div
       className="fixed bottom-0 left-0 right-0 z-[9999] md:hidden bg-[#1a1004] border-t-2 border-gold/40 px-3 py-2 shadow-[0_-8px_40px_rgba(201,168,76,0.15)]"
@@ -30,7 +29,7 @@ export default function MobileStickyBar() {
             href={buildWhatsAppUrl()}
             target="_blank"
             rel="noopener noreferrer"
-            onClick={() => trackEvent('whatsapp_click', 'mobile_sticky_bar')}
+            onClick={() => trackWhatsAppClick('mobile_sticky_bar')}
             className="flex items-center justify-center gap-1 bg-green-600/20 border border-green-500/40 text-green-400 px-2.5 py-2 rounded-sm text-[9px] uppercase tracking-[0.1em] font-sans font-semibold hover:bg-green-600/30 active:scale-95 transition-all"
             aria-label="Enquire via WhatsApp"
           >
@@ -39,7 +38,7 @@ export default function MobileStickyBar() {
           {/* Call Now */}
           <a
             href="tel:+919835923601"
-            onClick={() => trackEvent('call_click', 'mobile_sticky_bar')}
+            onClick={() => trackPhoneClick('mobile_sticky_bar')}
             className="flex items-center justify-center gap-1 bg-gold/10 border border-gold/30 text-gold px-2.5 py-2 rounded-sm text-[9px] uppercase tracking-[0.1em] font-sans font-semibold hover:bg-gold/20 active:scale-95 transition-all"
             aria-label="Call hotel"
           >
@@ -47,10 +46,10 @@ export default function MobileStickyBar() {
           </a>
           {/* Book Now */}
           <a
-            href="https://bookone.io/Hotel-Bella-Casa?bookingEngine=true"
+            href={bookingUrl}
             target="_blank"
             rel="noopener noreferrer"
-            onClick={() => trackEvent('booking_click', 'mobile_sticky_bar')}
+            onClick={() => trackBookingEvent('booking_click', { source: 'mobile_sticky_bar' })}
             className="flex items-center gap-1.5 bg-gradient-to-r from-gold to-amber-400 text-[#1a1004] px-4 py-2 rounded-sm text-[11px] uppercase tracking-[0.15em] font-sans font-extrabold hover:brightness-110 transition-all active:scale-[0.95] animate-cta-pulse"
             aria-label="Book your stay now"
           >

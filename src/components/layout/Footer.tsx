@@ -40,7 +40,7 @@ const quickLinks = [
   { label: 'Gallery', href: '/gallery' },
   { label: 'Dining', href: '/dining' },
   { label: 'Events', href: '/events' },
-  // { label: 'Offers', href: '/offers' },
+  { label: 'Offers', href: '/offers' },
   { label: 'Blog', href: '/blog' },
   { label: 'About', href: '/about' },
   { label: 'Contact', href: '/contact' },

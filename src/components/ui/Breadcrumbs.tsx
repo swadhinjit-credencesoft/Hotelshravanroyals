@@ -22,28 +22,49 @@ export default function Breadcrumbs() {
   const textColorClass = isDarkHero ? 'text-ivory/80' : 'text-forest/60';
   const activeColorClass = isDarkHero ? 'text-gold' : 'text-gold';
 
-  return (
-    <nav className="absolute top-32 left-0 right-0 z-40 flex px-6 md:px-10 py-4 max-w-[1600px] mx-auto pointer-events-none" aria-label="Breadcrumb">
-      <ol className={`flex items-center space-x-2 font-sans text-[10px] uppercase tracking-widest ${textColorClass} pointer-events-auto`}>
-        <li className="flex items-center">
-          <Link href="/" className="hover:text-gold transition-colors flex items-center gap-1">
-            <Home size={12} /> Home
-          </Link>
-        </li>
-        {breadcrumbs.map((crumb, index) => (
-          <li key={crumb.href} className="flex items-center space-x-2">
-            <ChevronRight size={10} className={isDarkHero ? "text-gold/40" : "text-gold/60"} />
-            {index === breadcrumbs.length - 1 ? (
-              <span className={`${activeColorClass} font-bold`}>{crumb.label}</span>
-            ) : (
-              <Link href={crumb.href} className="hover:text-gold transition-colors">
-                {crumb.label}
-              </Link>
-            )}
-          </li>
-        ))}
-      </ol>
+  const schemaList = [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://hotelsuryabellacasa.com' },
+    ...breadcrumbs.map((crumb, idx) => ({
+      '@type': 'ListItem',
+      position: idx + 2,
+      name: crumb.label,
+      item: `https://hotelsuryabellacasa.com${crumb.href}`,
+    })),
+  ]
 
-    </nav>
+  return (
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'BreadcrumbList',
+            itemListElement: schemaList,
+          }),
+        }}
+      />
+      <nav className="absolute top-32 left-0 right-0 z-40 flex px-6 md:px-10 py-4 max-w-[1600px] mx-auto pointer-events-none" aria-label="Breadcrumb">
+        <ol className={`flex items-center space-x-2 font-sans text-[10px] uppercase tracking-widest ${textColorClass} pointer-events-auto`}>
+          <li className="flex items-center">
+            <Link href="/" className="hover:text-gold transition-colors flex items-center gap-1">
+              <Home size={12} /> Home
+            </Link>
+          </li>
+          {breadcrumbs.map((crumb, index) => (
+            <li key={crumb.href} className="flex items-center space-x-2">
+              <ChevronRight size={10} className={isDarkHero ? "text-gold/40" : "text-gold/60"} />
+              {index === breadcrumbs.length - 1 ? (
+                <span className={`${activeColorClass} font-bold`}>{crumb.label}</span>
+              ) : (
+                <Link href={crumb.href} className="hover:text-gold transition-colors">
+                  {crumb.label}
+                </Link>
+              )}
+            </li>
+          ))}
+        </ol>
+      </nav>
+    </>
   );
 }

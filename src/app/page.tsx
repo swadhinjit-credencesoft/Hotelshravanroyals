@@ -36,25 +36,7 @@ export default function Home() {
   return (
     <main className="relative bg-cream min-h-screen" id="main-content">
       
-      {/* Organization for homepage only (Hotel + Breadcrumb are in layout.tsx) */}
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "Organization",
-            "@id": "https://hotelsuryabellacasa.com/#organization",
-            "name": "Hotel Surya Bella Casa",
-            "logo": "https://hotelsuryabellacasa.com/suryabellacasalogo.png",
-            "url": "https://hotelsuryabellacasa.com",
-            "sameAs": [
-              "https://www.facebook.com/hotelsuryabellacasa",
-              "https://www.instagram.com/hotel.bellacasaa/",
-              "https://www.youtube.com/@hotelsuryabellacasa"
-            ]
-          })
-        }}
-      />
+      {/* Organization schema is defined in root layout.tsx */}
 
       <script
         type="application/ld+json"

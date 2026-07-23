@@ -6,6 +6,8 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { ArrowRight, CalendarCheck, Check, Maximize, Users, Zap } from 'lucide-react'
 import { addDays, buildBookingUrl, todayString, trackBookingEvent } from '@/lib/hotelmate'
+import { trackSelectItem, trackBeginCheckout } from '@/lib/analytics'
+import { appendUTMToURL } from '@/lib/utm'
 import { Room } from '@/lib/rooms'
 import { useHotelMateRooms } from '@/lib/useHotelMateRooms'
 
@@ -25,9 +27,11 @@ export default function RoomsGrid() {
 
   const handleBookNow = useCallback((room: Room) => {
     trackBookingEvent('booking_click', { source: 'rooms_grid', roomName: room.name, roomId: room.roomId })
+    trackSelectItem({ roomId: room.roomId, name: room.name, price: room.price, category: room.category, source: 'rooms_grid' })
+    trackBeginCheckout({ roomId: room.roomId, roomName: room.name, price: room.price, category: room.category, source: 'rooms_grid' })
     const today = todayString()
     const tomorrow = addDays(today, 1)
-    const url = buildBookingUrl({
+    const rawUrl = buildBookingUrl({
       fromDate: today,
       toDate: tomorrow,
       noOfRooms: '1',
@@ -35,6 +39,7 @@ export default function RoomsGrid() {
       roomName: room.name,
       roomId: room.roomId,
     })
+    const url = appendUTMToURL(rawUrl)
     window.open(url, '_blank', 'noopener,noreferrer')
   }, [])
 

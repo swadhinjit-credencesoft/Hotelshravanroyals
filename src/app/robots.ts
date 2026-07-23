@@ -11,7 +11,23 @@ export default function robots(): MetadataRoute.Robots {
       {
         userAgent: '*',
         allow: '/',
-        disallow: ['/api/', '/_next/', '/admin/'],
+        disallow: [
+          '/api/',
+          '/_next/',
+          '/admin/',
+          '/search?',
+          '/*.json$',
+          '/404',
+          '/500',
+        ],
+      },
+      {
+        userAgent: 'GPTBot',
+        disallow: '/',
+      },
+      {
+        userAgent: 'CCBot',
+        disallow: '/',
       },
     ],
     sitemap: `${BASE_URL}/sitemap.xml`,

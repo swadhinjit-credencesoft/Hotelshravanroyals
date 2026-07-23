@@ -8,6 +8,8 @@ import { ArrowRight, ChevronLeft, ChevronRight, Maximize, Users, Zap } from 'luc
 import { useRouter } from 'next/navigation'
 import SectionLabel from '@/components/ui/SectionLabel'
 import { buildBookingUrl, addDays, todayString, trackBookingEvent } from '@/lib/hotelmate'
+import { trackSelectItem, trackBeginCheckout } from '@/lib/analytics'
+import { appendUTMToURL } from '@/lib/utm'
 import { Room } from '@/lib/rooms'
 import { useHotelMateRooms } from '@/lib/useHotelMateRooms'
 
@@ -27,9 +29,11 @@ function RoomCard({ room, index }: RoomCardProps) {
     e.stopPropagation()
     e.preventDefault()
     trackBookingEvent('booking_click', { source: 'rooms_carousel', roomName: room.name, roomId: room.roomId })
+    trackSelectItem({ roomId: room.roomId, name: room.name, price: room.price, category: room.category, source: 'rooms_carousel' })
+    trackBeginCheckout({ roomId: room.roomId, roomName: room.name, price: room.price, category: room.category, source: 'rooms_carousel' })
     const today = todayString()
     const tomorrow = addDays(today, 1)
-    const url = buildBookingUrl({
+    const rawUrl = buildBookingUrl({
       fromDate: today,
       toDate: tomorrow,
       noOfRooms: '1',
@@ -37,6 +41,7 @@ function RoomCard({ room, index }: RoomCardProps) {
       roomName: room.name,
       roomId: room.roomId,
     })
+    const url = appendUTMToURL(rawUrl)
     window.open(url, '_blank', 'noopener,noreferrer')
   }
 

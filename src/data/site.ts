@@ -5,7 +5,7 @@ export const siteConfig = {
   phone: '+91 9835923601',
   email: 'bellacasa561@gmail.com',
   address: 'Suryalok Complex, Opposite Vikass Market, Near Bus Stand, Purnia, Bihar 854301',
-  social: { instagram: 'https://www.instagram.com/hotel.bellacasaa/', facebook: 'https://www.facebook.com/hotelsuryabellacasa', twitter: 'https://x.com/', youtube: 'https://www.youtube.com/@hotelsuryabellacasa' },
+  social: { instagram: 'https://www.instagram.com/hotel.bellacasaa/', facebook: 'https://www.facebook.com/hotelsuryabellacasa', twitter: 'https://x.com/hotelsuryabellacasa', youtube: 'https://www.youtube.com/@hotelsuryabellacasa' },
   checkInTime: '12:00 PM',
   checkOutTime: '12:00 PM',
 }

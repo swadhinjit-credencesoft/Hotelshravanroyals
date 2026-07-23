@@ -65,29 +65,33 @@ export default function AboutPage() {
         }}
       />
 
-      {/* Organization Schema for SEO (E-E-A-T) */}
+      {/* Hotel schema is defined in root layout.tsx — using AboutPage for E-E-A-T */}
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
           __html: JSON.stringify({
             "@context": "https://schema.org",
-            "@type": "Hotel",
-            "name": "Hotel Surya Bella Casa",
-            "description": "Premium budget and mid-range hotel in Purnia offering modern rooms, delicious pure veg dining partners, and warm local hospitality.",
-            "url": "https://hotelsuryabellacasa.com",
-            "logo": "https://hotelsuryabellacasa.com/suryabellacasalogo.png",
-            "foundingDate": "2019",
-            "address": {
-              "@type": "PostalAddress",
-              "addressLocality": "Purnia",
-              "addressRegion": "Bihar",
-              "addressCountry": "IN"
-            },
-            "sameAs": [
-              "https://www.facebook.com/hotelsuryabellacasa",
-              "https://www.instagram.com/hotel.bellacasaa/",
-              "https://www.youtube.com/@hotelsuryabellacasa"
-            ]
+            "@type": "AboutPage",
+            "name": "About Hotel Surya Bella Casa Purnea",
+            "description": "Learn about Hotel Surya Bella Casa in Purnea. Established in 2019, opposite Vikass Market near Bus Stand, providing clean, comfortable lodging with local Bihari hospitality.",
+            "url": "https://hotelsuryabellacasa.com/about",
+            "mainEntity": {
+              "@type": "Hotel",
+              "@id": "https://hotelsuryabellacasa.com/#hotel",
+              "name": "Hotel Surya Bella Casa",
+              "foundingDate": "2019",
+              "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Purnia",
+                "addressRegion": "Bihar",
+                "addressCountry": "IN"
+              },
+              "sameAs": [
+                "https://www.facebook.com/hotelsuryabellacasa",
+                "https://www.instagram.com/hotel.bellacasaa/",
+                "https://www.youtube.com/@hotelsuryabellacasa"
+              ]
+            }
           })
         }}
       />
@@ -100,8 +104,8 @@ export default function AboutPage() {
             "@type": "VideoObject",
             "name": "About Hotel Surya Bella Casa - Purnea Heritage Hotel",
             "description": "Video tour of Hotel Surya Bella Casa about page showcasing our history, values, and hospitality in Purnea. Learn about our journey from 2019 to becoming Purnea's preferred budget hotel.",
-            "thumbnailUrl": "https://bookonelocal.in/cdn/IMG_7429.avif",
-            "contentUrl": "https://bookonelocal.in/cdn/IMG_7429.mp4",
+            "thumbnailUrl": "https://bookonelocal.in/cdn/IMG_3808.avif",
+            "contentUrl": "https://bookonelocal.in/cdn/IMG_3808.avif",
             "embedUrl": "https://hotelsuryabellacasa.com/about",
             "uploadDate": "2024-02-20",
             "duration": "PT45S",

@@ -13,7 +13,7 @@ import { BOOKING_ENGINE_URL } from '@/lib/hotelmate'
 const navLinks = [
   { label: 'Home', href: '/' },
   { label: 'Rooms', href: '/rooms' },
-  // { label: 'Offers', href: '/offers' },
+  { label: 'Offers', href: '/offers' },
   { label: 'Dining', href: '/dining' },
   { label: 'Events', href: '/events' },
   { label: 'Gallery', href: '/gallery' },
@@ -43,7 +43,6 @@ export default function Navbar() {
   return (
     <>
       <motion.header
-        role="banner"
         className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
           scrolled || !isHome
             ? 'bg-cream/95 backdrop-blur-md shadow-warm border-b border-gold/10'

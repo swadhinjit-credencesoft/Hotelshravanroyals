@@ -2,7 +2,7 @@
 import Link from 'next/link'
 import { useState, useEffect, useRef, useCallback } from 'react'
 import { createPortal } from 'react-dom'
-// import Image from 'next/image'
+import Image from 'next/image'
 import {
   motion,
   AnimatePresence,
@@ -17,6 +17,8 @@ import { heroSlides } from '@/data/hero'
 import dynamic from 'next/dynamic'
 import DatePicker from 'react-datepicker'
 import { buildBookingUrl, trackBookingEvent } from '@/lib/hotelmate'
+import { trackSearch } from '@/lib/analytics'
+import { appendUTMToURL } from '@/lib/utm'
 
 const ParticleCanvas = dynamic(() => import('@/components/ui/ParticleCanvas'), {
   ssr: false,
@@ -86,12 +88,20 @@ export default function HeroSection() {
 
   const openBooking = useCallback(() => {
     trackBookingEvent('booking_click', { source: 'hero_booking_bar' })
-    const url = buildBookingUrl({
+    trackSearch({
+      checkIn: fmt(checkIn),
+      checkOut: fmt(checkOut),
+      guests: guests || 1,
+      rooms: rooms || 1,
+      source: 'hero_booking_bar',
+    })
+    const rawUrl = buildBookingUrl({
       fromDate: fmt(checkIn),
       toDate: fmt(checkOut),
       noOfPersons: guests || undefined,
       noOfRooms: rooms || undefined,
     })
+    const url = appendUTMToURL(rawUrl)
     window.open(url, '_blank', 'noopener,noreferrer')
   }, [checkIn, checkOut, guests, rooms])
 
@@ -124,25 +134,20 @@ export default function HeroSection() {
         <meta itemProp="postalCode" content="854301" />
         <meta itemProp="addressCountry" content="IN" />
       </div>
-      {/* z-0: Background video (static, never re-mounts) */}
+      {/* z-0: Background image (static, never re-mounts) */}
       <motion.div
         className="absolute inset-0"
         style={{ y: reduced ? 0 : imageY, x: reduced ? 0 : imgSpringX }}
       >
-        <video
-          src="https://bookonelocal.in/cdn/website-home-video.mp4"
-          autoPlay
-          muted
-          loop
-          playsInline
-          preload="metadata"
-          poster="https://bookonelocal.in/cdn/IMG_3815.avif"
-          title="Hotel Surya Bella Casa - Premium Hotel in Purnea"
-          aria-label="Video tour of Hotel Surya Bella Casa showing premium rooms and facilities"
+        <Image
+          src="https://bookonelocal.in/cdn/IMG_3815.avif"
+          alt="Hotel Surya Bella Casa - Premium Hotel in Purnea"
+          fill
+          priority
+          sizes="100vw"
           className={`w-full h-full object-cover ${reduced ? '' : 'animate-ken-burns'}`}
           style={{ animationName: reduced ? 'none' : 'kenBurns' }}
-        >
-        </video>
+        />
       </motion.div>
 
       {/* z-1: Atmospheric overlays */}

@@ -1,11 +1,15 @@
 'use client';
 
+import { useEffect } from 'react';
 import { Room } from '@/lib/rooms';
 import CinematicHero from '@/components/ui/CinematicHero';
 import SectionLabel from '@/components/ui/SectionLabel';
 import GoldDivider from '@/components/ui/GoldDivider';
 import { CheckCircle2, ArrowRight } from 'lucide-react';
 import Image from 'next/image';
+import { trackViewItem, trackBeginCheckout } from '@/lib/analytics';
+import { appendUTMToURL } from '@/lib/utm';
+import { buildBookingUrl, trackBookingEvent } from '@/lib/hotelmate';
 
 interface RoomDetailContentProps {
   room: Room;
@@ -13,6 +17,30 @@ interface RoomDetailContentProps {
 
 export default function RoomDetailContent({ room }: RoomDetailContentProps) {
   const roomImages = room.images.length > 0 ? room.images : [room.image];
+
+  useEffect(() => {
+    trackViewItem({
+      roomId: room.roomId,
+      name: room.name,
+      price: room.price,
+      category: room.category,
+      source: 'room_detail_page',
+    });
+  }, [room]);
+
+  const rawBookingUrl = buildBookingUrl({ roomName: room.name, roomId: room.roomId });
+  const bookingUrl = appendUTMToURL(rawBookingUrl);
+
+  const handleBookClick = () => {
+    trackBookingEvent('booking_start', { source: 'room_detail', roomName: room.name, roomId: room.roomId });
+    trackBeginCheckout({
+      roomId: room.roomId,
+      roomName: room.name,
+      price: room.price,
+      category: room.category,
+      source: 'room_detail_page',
+    });
+  };
 
   return (
     <main className="bg-cream min-h-screen">
@@ -69,8 +97,8 @@ export default function RoomDetailContent({ room }: RoomDetailContentProps) {
                        <span className="font-serif text-4xl text-forest">₹{room.price.toLocaleString()}<span className="text-base text-taupe/60 ml-2">/ night</span></span>
                    </div>
                     <a 
-                      href="https://bookone.io/Hotel-Bella-Casa?bookingEngine=true"
-                      onClick={() => { try { window.gtag?.('event', 'booking_start', { 'event_category': 'booking', 'event_label': room.name }); } catch {} } }
+                      href={bookingUrl}
+                      onClick={handleBookClick}
                       target="_blank"
                       rel="noopener noreferrer"
                       className="bg-gold text-[#1a1004] font-sans text-[11px] uppercase tracking-[0.2em] px-12 py-5 rounded-sm hover:bg-gold-light transition-all flex items-center gap-3 shadow-warm-lg"
@@ -122,7 +150,7 @@ export default function RoomDetailContent({ room }: RoomDetailContentProps) {
          {/* Background Texture */}
          <div className="absolute inset-0 opacity-10 pointer-events-none">
             <Image 
-               src='/images/exterior4.jpeg' 
+               src="https://bookonelocal.in/cdn/IMG_3815.avif" 
                alt="Hotel Surya Bella Casa Purnea - Best Hotel in Purnea Near Bus Stand" 
                fill 
                sizes="100vw"

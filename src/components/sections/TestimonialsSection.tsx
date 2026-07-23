@@ -112,9 +112,15 @@ export default function TestimonialsSection() {
         <div className="text-center mt-16 pt-10 border-t border-gold/10">
           <p className="font-sans text-[10px] uppercase tracking-[0.25em] text-taupe mb-4">Rated by Guests</p>
           <div className="flex items-center justify-center gap-2 mb-4">
-            {[...Array(5)].map((_, i) => (
-              <Star key={i} size={16} className={i < 4 ? 'fill-gold text-gold' : 'fill-gold/30 text-gold/30'} />
+            {[...Array(4)].map((_, i) => (
+              <Star key={i} size={16} className="fill-gold text-gold" />
             ))}
+            <div className="relative">
+              <Star size={16} className="text-gold/30 fill-gold/30" />
+              <div className="absolute inset-0 overflow-hidden w-1/2">
+                <Star size={16} className="fill-gold text-gold" />
+              </div>
+            </div>
           </div>
           <p className="font-serif text-lg italic text-forest mb-2">4.5 out of 5 stars</p>
           <a
@@ -149,7 +155,10 @@ function TestimonialCard({ testimonial }: { testimonial: (typeof testimonials)[0
             viewport={{ once: true }}
             transition={{ delay: 0.1 * i }}
           >
-            <Star size={14} className="fill-gold text-gold" />
+            <Star
+              size={14}
+              className={i < testimonial.rating ? 'fill-gold text-gold' : 'text-gold/30 fill-transparent'}
+            />
           </motion.div>
         ))}
       </div>

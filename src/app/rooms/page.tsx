@@ -51,7 +51,7 @@ export default function RoomsPage() {
         label="Deluxe Room in Purnea - AC Rooms & Family Rooms Near Bus Stand"
         title="Best Rooms in Purnea - Deluxe AC Rooms, Family Rooms & Luxury Stays"
         tagline="Looking for deluxe rooms in Purnea? Hotel Surya Bella Casa offers AC rooms, family rooms, luxury rooms near Bus Stand with free WiFi, parking & room service. Best hotel rooms in Purnea - book now."
-        image='https://bookonelocal.in/cdn/IMG_7420.mp4'
+        image='https://bookonelocal.in/cdn/2026-04-09-070105794-1000080272.jpg'
       />
       <RoomsGrid />
       <LuxuryAmenities />

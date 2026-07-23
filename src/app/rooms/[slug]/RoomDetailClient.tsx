@@ -93,7 +93,7 @@ export default function RoomDetailClient({ room, otherRooms }: RoomDetailClientP
       'priceCurrency': 'INR',
       'price': headerPrice,
       'availability': 'https://schema.org/InStock',
-      'url': typeof window !== 'undefined' ? window.location.href : `https://hotelsuryabellacasa.com/rooms/${room.slug}`
+      'url': `https://hotelsuryabellacasa.com/rooms/${room.slug}`
     }
   }
 
@@ -487,8 +487,7 @@ function BookingSidebar({ room }: { room: Room }) {
           setLivePrice(null)
           setLiveRoomId(null)
         }
-      } catch (err) {
-        console.error("CORS or network error fetching live rate.", err)
+      } catch {
         if (active) {
           setLivePrice(null)
           setIsAvailable(true)

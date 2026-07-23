@@ -56,13 +56,13 @@ export default function ContactPage() {
         </p>
       </div>
 
-      {/* LocalBusiness Schema for SEO */}
+      {/* LocalBusiness Schema for Local SEO */}
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
           __html: JSON.stringify({
             "@context": "https://schema.org",
-            "@type": "Hotel",
+            "@type": "LodgingBusiness",
             "name": "Hotel Surya Bella Casa",
             "image": "https://hotelsuryabellacasa.com/images/room2.jpeg",
             "address": {
@@ -75,11 +75,12 @@ export default function ContactPage() {
             },
             "geo": {
               "@type": "GeoCoordinates",
-              "latitude": 25.76889728,
-              "longitude": 87.47058097
+              "latitude": 25.7771,
+              "longitude": 87.4753
             },
             "url": "https://hotelsuryabellacasa.com/contact",
             "telephone": siteConfig.phone,
+            "email": siteConfig.email,
             "openingHoursSpecification": {
               "@type": "OpeningHoursSpecification",
               "dayOfWeek": [
@@ -107,7 +108,7 @@ export default function ContactPage() {
               <h2 className="font-display text-3xl italic text-forest mb-8">Quick Connect</h2>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 mb-12">
                  <a 
-                  href={`https://wa.me/${siteConfig.phone.replace(/[^0-9]/g, '')}`} 
+                  href={`https://wa.me/919835923601`} 
                   target="_blank" 
                   rel="noopener noreferrer" 
                   className="flex items-center justify-center gap-3 bg-green-600 text-white font-sans text-[11px] uppercase tracking-[0.2em] py-5 rounded-sm hover:bg-green-700 transition-all shadow-md group"
