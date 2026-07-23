@@ -1,7 +1,6 @@
 import type { Metadata } from 'next'
-import Image from 'next/image'
 import Link from 'next/link'
-import { Calendar, MapPin } from 'lucide-react'
+import BlogArticleLayout from '@/components/layout/BlogArticleLayout'
 
 export const metadata: Metadata = {
   title: 'Banquet Hall & Wedding Venue Purnea',
@@ -28,7 +27,7 @@ export const metadata: Metadata = {
     siteName: 'Hotel Surya Bella Casa',
     type: 'article',
     publishedTime: '2026-01-10T00:00:00.000Z',
-    modifiedTime: '2026-07-06T00:00:00.000Z',
+    modifiedTime: '2026-07-23T00:00:00.000Z',
     images: [{ url: 'https://bookonelocal.in/cdn/IMG_3809.avif', width: 1200, height: 630, alt: 'Banquet Hall & Wedding Venue Purnea - Marriage Hall Near Bus Stand' }],
   },
   twitter: {
@@ -45,100 +44,100 @@ export const metadata: Metadata = {
 }
 
 export default function BlogPost() {
+  const schema = {
+    '@context': 'https://schema.org',
+    '@type': 'BlogPosting',
+    headline: 'Banquet Hall & Wedding Venue in Purnea | Marriage Hall Near Bus Stand',
+    description: 'Complete guide to the best banquet hall and wedding venue in Purnea near Bus Stand. Marriage hall, conference room, and party venue at Hotel Surya Bella Casa.',
+    image: 'https://bookonelocal.in/cdn/IMG_3766.avif',
+    datePublished: '2026-01-10',
+    dateModified: '2026-07-23',
+    author: { '@type': 'Organization', name: 'Hotel Surya Bella Casa' },
+    publisher: { '@type': 'Organization', name: 'Hotel Surya Bella Casa' },
+  }
+
   return (
-    <main className="bg-cream min-h-screen pt-32">
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "BlogPosting",
-            "headline": "Banquet Hall & Wedding Venue in Purnea | Marriage Hall Near Bus Stand",
-            "description": "Complete guide to the best banquet hall and wedding venue in Purnea near Bus Stand. Marriage hall, conference room, and party venue at Hotel Surya Bella Casa.",
-            "image": "https://bookonelocal.in/cdn/IMG_3766.avif",
-            "datePublished": "2026-01-10",
-            "dateModified": "2026-07-06",
-            "author": { "@type": "Organization", "name": "Hotel Surya Bella Casa" },
-            "publisher": { "@type": "Organization", "name": "Hotel Surya Bella Casa" }
-          })
-        }}
-      />
+    <BlogArticleLayout
+      metadata={metadata}
+      schema={schema}
+      category="Events & Weddings"
+      date="Jan 10, 2026"
+      heroImage="https://bookonelocal.in/cdn/IMG_3766.avif"
+      heroAlt="Banquet hall and event space at Hotel Surya Bella Casa Purnea"
+      relatedArticles={[
+        { title: 'Wedding Venue in Purnia', link: '/blog/wedding-venue-in-purnia' },
+        { title: 'Birthday Party Venue in Purnia', link: '/blog/birthday-party-venue-in-purnia' },
+        { title: 'Corporate Event Venue in Purnia', link: '/blog/corporate-event-venue-in-purnia' },
+        { title: 'Luxury Hotel in Purnia', link: '/blog/luxury-hotel-in-purnia' },
+        { title: 'Rooftop Restaurant in Purnea', link: '/blog/rooftop-restaurant-in-purnea' },
+      ]}
+      serviceLinks={[
+        { label: 'Banquet Hall', link: '/events' },
+        { label: 'Catering', link: '/dining' },
+        { label: 'Rooms', link: '/rooms' },
+        { label: 'Gallery', link: '/gallery' },
+        { label: 'Contact', link: '/contact' },
+        { label: 'Book Now', link: 'https://bookone.io/Hotel-Bella-Casa?bookingEngine=true' },
+      ]}
+    >
+      <p>
+        Finding the right <strong>banquet hall in Purnea</strong> for a wedding, reception, or corporate
+        event can be challenging. <strong><Link href="/events" className="text-gold hover:underline">Hotel Surya Bella Casa</Link></strong> offers versatile event spaces
+        located opposite Vikass Market, just minutes from Purnia Bus Stand and easily accessible from
+        all parts of the city. Whether you are planning a <Link href="/events/weddings" className="text-gold hover:underline">wedding</Link> or a
+        <Link href="/events/corporate" className="text-gold hover:underline"> corporate event</Link>, we have the perfect space.
+      </p>
 
-      <article className="max-w-[800px] mx-auto px-6 md:px-10 pb-24">
-        <div className="mb-8">
-          <Link href="/blog" className="font-sans text-[10px] uppercase tracking-[0.2em] text-gold hover:text-forest transition-colors">
-            &larr; Back to Blog
-          </Link>
-        </div>
+      <h2 className="font-display text-2xl italic text-forest mt-10 mb-4">Event Spaces & Capacity</h2>
+      <p>
+        Our venue features a beautifully decorated <strong>banquet hall</strong> capable of hosting
+        wedding ceremonies, engagement parties, and social gatherings with a warm and elegant ambiance.
+        The <strong>conference hall</strong> is ideal for <Link href="/events/corporate" className="text-gold hover:underline">business meetings, seminars, and corporate
+        events</Link> with professional seating and audio-visual support.
+      </p>
+      <p>
+        We also offer <strong>party hall facilities</strong> for <Link href="/blog/birthday-party-venue-in-purnia" className="text-gold hover:underline">birthday celebrations</Link>, anniversary
+        parties, and private gatherings. Our dedicated events team coordinates every detail from
+        catering to decor.
+      </p>
 
-        <div className="flex items-center gap-4 mb-6">
-          <span className="font-sans text-[10px] uppercase tracking-[0.2em] text-gold">Events & Weddings</span>
-          <span className="w-1 h-1 rounded-full bg-gold/50" />
-          <span className="font-sans text-[10px] text-taupe/60 tracking-wider">Jan 10, 2026</span>
-        </div>
+      <h2 className="font-display text-2xl italic text-forest mt-10 mb-4">Wedding Services</h2>
+      <p>
+        Planning a <strong>marriage hall in Purnea?</strong> Hotel Surya Bella Casa provides
+        comprehensive <Link href="/events/weddings" className="text-gold hover:underline">wedding services</Link> including catering, decoration, music arrangement, and
+        guest accommodation. Our in-house team handles all arrangements so you can focus on
+        enjoying your special day. Browse our guide to <Link href="/blog/wedding-venue-in-purnia" className="text-gold hover:underline">wedding venues in Purnia</Link> for more inspiration.
+      </p>
 
-        <h1 className="font-display text-4xl md:text-5xl italic text-forest mb-8 leading-tight">
-          Banquet Hall & Wedding Venue in Purnea Near Bus Stand
-        </h1>
+      <h2 className="font-display text-2xl italic text-forest mt-10 mb-4">Why Choose Us for Your Event?</h2>
+      <ul className="space-y-3 list-disc pl-6">
+        <li>Prime location near Purnia Bus Stand and Vikass Market — easy for guests to reach</li>
+        <li>Flexible event spaces for <Link href="/events/weddings" className="text-gold hover:underline">weddings</Link>, <Link href="/blog/birthday-party-venue-in-purnia" className="text-gold hover:underline">parties</Link>, and <Link href="/events/corporate" className="text-gold hover:underline">meetings</Link></li>
+        <li>In-house <Link href="/dining" className="text-gold hover:underline">catering</Link> with multi-cuisine menu options</li>
+        <li><Link href="/rooms" className="text-gold hover:underline">Guest rooms</Link> available for out-of-town attendees</li>
+        <li>Dedicated parking for event guests</li>
+        <li>Experienced event coordination team</li>
+      </ul>
 
-        <div className="relative aspect-[16/9] mb-12 border border-gold/10">
-          <Image
-            src="https://bookonelocal.in/cdn/IMG_3766.avif"
-            alt="Banquet hall and event space at Hotel Surya Bella Casa Purnea"
-            fill
-            className="object-cover"
-          />
-        </div>
+      <h2 className="font-display text-2xl italic text-forest mt-10 mb-4">Accommodation for Guests</h2>
+      <p>
+        Out-of-town guests can stay in our <Link href="/rooms/super-deluxe-room" className="text-gold hover:underline">Super Deluxe AC rooms</Link> or
+        <Link href="/rooms/deluxe-ac-room" className="text-gold hover:underline"> Deluxe AC rooms</Link>. We offer special group rates for wedding and event blocks.
+        Check our <Link href="/offers" className="text-gold hover:underline">special offers</Link> for event-related packages.
+      </p>
 
-        <div className="font-sans text-base text-taupe/80 space-y-5 leading-loose">
-          <p>
-            Finding the right <strong>banquet hall in Purnea</strong> for a wedding, reception, or corporate 
-            event can be challenging. <strong><Link href="/events" className="text-gold hover:underline">Hotel Surya Bella Casa</Link></strong> offers versatile event spaces 
-            located opposite Vikass Market, just minutes from Purnia Bus Stand and easily accessible from 
-            all parts of the city.
-          </p>
-
-          <h2 className="font-display text-2xl italic text-forest mt-10 mb-4">Event Spaces & Capacity</h2>
-          <p>
-            Our venue features a beautifully decorated <strong>banquet hall</strong> capable of hosting 
-            wedding ceremonies, engagement parties, and social gatherings with a warm and elegant ambiance. 
-            The <strong>conference hall</strong> is ideal for business meetings, seminars, and corporate 
-            events with professional seating and audio-visual support.
-          </p>
-          <p>
-            We also offer <strong>party hall facilities</strong> for birthday celebrations, anniversary 
-            parties, and private gatherings. Our dedicated events team coordinates every detail from 
-            catering to decor.
-          </p>
-
-          <h2 className="font-display text-2xl italic text-forest mt-10 mb-4">Wedding Services</h2>
-          <p>
-            Planning a <strong>marriage hall in Purnea?</strong> Hotel Surya Bella Casa provides 
-            comprehensive wedding services including catering, decoration, music arrangement, and 
-            guest accommodation. Our in-house team handles all arrangements so you can focus on 
-            enjoying your special day.
-          </p>
-
-          <h2 className="font-display text-2xl italic text-forest mt-10 mb-4">Why Choose Us for Your Event?</h2>
-          <ul className="space-y-3 list-disc pl-6">
-            <li>Prime location near Purnia Bus Stand and Vikass Market</li>
-            <li>Flexible event spaces for weddings, parties, and meetings</li>
-            <li>In-house catering with multi-cuisine menu options</li>
-            <li>Guest rooms available for out-of-town attendees</li>
-            <li>Dedicated parking for event guests</li>
-            <li>Experienced event coordination team</li>
-          </ul>
-        </div>
-
-        <div className="mt-12 pt-8 border-t border-gold/10 flex flex-wrap gap-3">
-          <Link href="/events" className="inline-flex items-center gap-2 bg-gold text-[#1a1004] font-sans text-[10px] uppercase tracking-[0.2em] px-6 py-3 rounded-sm hover:bg-gold-light transition-all font-bold">
-            <Calendar size={14} /> Explore Event Spaces
-          </Link>
-          <a href="https://www.google.com/maps/dir/?api=1&destination=25.7771,87.4753" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 border border-gold/30 text-forest font-sans text-[10px] uppercase tracking-[0.2em] px-6 py-3 rounded-sm hover:bg-gold/10 transition-all">
-            <MapPin size={14} /> Visit Our Venue
-          </a>
-        </div>
-      </article>
-    </main>
+      <h2 className="font-display text-2xl italic text-forest mt-10 mb-4">Plan Your Event Today</h2>
+      <p>
+        Read our guide to <Link href="/blog/corporate-event-venue-in-purnia" className="text-gold hover:underline">corporate event venues in Purnia</Link> for business event planning.
+        After your event, guests can explore <Link href="/blog/places-to-visit-in-purnea" className="text-gold hover:underline">places to visit in Purnea</Link> or enjoy
+        a meal at our <Link href="/blog/rooftop-restaurant-in-purnea" className="text-gold hover:underline">rooftop restaurant</Link>.
+      </p>
+      <p>
+        Contact us to discuss your event requirements. Reach out via
+        <a href="tel:+919835923601" className="text-gold hover:underline"> +91 9835923601</a> or
+        <Link href="https://bookone.io/Hotel-Bella-Casa?bookingEngine=true" target="_blank" rel="noopener noreferrer" className="text-gold hover:underline"> book online</Link>.
+        You can also visit our <Link href="/contact" className="text-gold hover:underline">contact page</Link> for more details.
+      </p>
+    </BlogArticleLayout>
   )
 }
