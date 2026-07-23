@@ -23,9 +23,28 @@ const ParticleCanvas = dynamic(() => import('@/components/ui/ParticleCanvas'), {
   ssr: false,
 })
 
+const heroSlides = [
+  {
+    src: 'https://bookonelocal.in/cdn/IMG_3815.avif',
+    alt: 'Hotel Surya Bella Casa — Premium hotel in Purnea with luxury rooms, rooftop restaurant, and banquet hall',
+  },
+  {
+    src: 'https://bookonelocal.in/cdn/IMG_3808.avif',
+    alt: 'Comfortable clean rooms at Hotel Surya Bella Casa Purnea — best hotel near Bus Stand',
+  },
+  {
+    src: 'https://bookonelocal.in/cdn/IMG_3784.avif',
+    alt: 'Hotel Surya Bella Casa interiors — modern amenities and warm hospitality in Purnia',
+  },
+]
+
+const SLIDE_INTERVAL = 3000
+
 export default function HeroSection() {
   const heroRef = useRef<HTMLElement>(null)
   const reduced = useReducedMotion()
+  const [currentSlide, setCurrentSlide] = useState(0)
+  const [paused, setPaused] = useState(false)
 
   // Parallax scroll effect
   const { scrollY } = useScroll({ target: heroRef, offset: ['start start', 'end start'] })
@@ -33,12 +52,11 @@ export default function HeroSection() {
   const contentY = useTransform(scrollY, [0, 500], ['0%', '-10%'])
   const contentOpacity = useTransform(scrollY, [0, 450], [1, 0])
 
-  // Mouse tilt effect
+  // Mouse tilt effect (content only — image uses parallax only to avoid blur)
   const mouseX = useMotionValue(0)
   const mouseY = useMotionValue(0)
   const springX = useSpring(mouseX, { stiffness: 40, damping: 20 })
   const springY = useSpring(mouseY, { stiffness: 40, damping: 20 })
-  const imgSpringX = useSpring(mouseX, { stiffness: 20, damping: 20 })
 
   const handleMouseMove = useCallback(
     (e: React.MouseEvent<HTMLElement>) => {
@@ -83,6 +101,15 @@ export default function HeroSection() {
     if (date) setCheckOut(date)
   }
 
+  // Hero image carousel — auto-rotate every 3s
+  useEffect(() => {
+    if (reduced || paused) return
+    const timer = setInterval(() => {
+      setCurrentSlide((prev) => (prev + 1) % heroSlides.length)
+    }, SLIDE_INTERVAL)
+    return () => clearInterval(timer)
+  }, [reduced, paused])
+
   const openBooking = useCallback(() => {
     trackBookingEvent('booking_click', { source: 'hero_booking_bar' })
     trackSearch({
@@ -104,31 +131,82 @@ export default function HeroSection() {
   return (
     <section
       ref={heroRef}
-      className="relative w-full overflow-hidden flex flex-col justify-between pt-36 md:pt-44 pb-8 md:pb-12 bg-forest-dark"
+      className="relative w-full overflow-hidden flex flex-col justify-between pt-28 sm:pt-32 md:pt-44 pb-6 md:pb-12 bg-forest-dark"
       style={{ minHeight: '100svh' }}
       role="banner"
-      aria-label="Hotel Surya Bella Casa Purnea"
+      aria-label="Hotel Surya Bella Casa — Best Hotel in Purnea Near Bus Stand"
+      itemScope
+      itemType="https://schema.org/Hotel"
       onMouseMove={handleMouseMove}
       onMouseLeave={() => {
         mouseX.set(0)
         mouseY.set(0)
       }}
     >
-      {/* Background Image */}
+      {/* SEO microdata */}
+      <meta itemProp="name" content="Hotel Surya Bella Casa" />
+      <meta itemProp="description" content="Best Hotel in Purnea near Bus Stand. Book direct for best rates. Free WiFi, AC rooms, rooftop restaurant." />
+      <meta itemProp="telephone" content="+919835923601" />
+      <meta itemProp="url" content="https://hotelsuryabellacasa.com" />
+      {/* Background Image Carousel — Premium 4K Crossfade */}
       <motion.div
-        className="absolute inset-0 z-0"
-        style={{ y: reduced ? 0 : imageY, x: reduced ? 0 : imgSpringX }}
+        className="absolute inset-0 z-0 will-change-transform"
+        style={{ y: reduced ? 0 : imageY }}
+        onMouseEnter={() => setPaused(true)}
+        onMouseLeave={() => setPaused(false)}
       >
-        <Image
-          src="https://bookonelocal.in/cdn/IMG_3815.avif"
-          alt="Hotel Surya Bella Casa Purnea"
-          fill
-          priority
-          sizes="100vw"
-          className="w-full h-full object-cover"
+        {/* Low-quality blur placeholder — uses current slide */}
+        <div
+          className="absolute inset-0 z-[1] blur-2xl scale-110 transition-opacity duration-1000"
+          style={{
+            backgroundImage: `url(${heroSlides[currentSlide].src})`,
+            backgroundSize: 'cover',
+            backgroundPosition: 'center',
+          }}
         />
-        {/* Dark Gradient Overlay for contrast */}
-        <div className="absolute inset-0 bg-gradient-to-b from-forest-dark/85 via-forest-dark/50 to-forest-dark" />
+
+        {/* Slide images — stacked, crossfade via opacity */}
+        {heroSlides.map((slide, i) => (
+          <Image
+            key={slide.src}
+            src={slide.src}
+            alt={slide.alt}
+            fill
+            priority={i === 0}
+            sizes="100vw"
+            quality={100}
+            className={`absolute inset-0 z-[2] w-full h-full object-cover hero-bg-image transition-opacity duration-[1500ms] ease-in-out ${
+              i === currentSlide ? 'opacity-100' : 'opacity-0'
+            }`}
+            style={{
+              imageRendering: 'auto',
+              WebkitFontSmoothing: 'antialiased',
+            }}
+          />
+        ))}
+
+        {/* Minimal cinematic gradient — text readability only */}
+        <div className="absolute inset-0 z-[3] bg-gradient-to-b from-black/40 via-transparent to-black/50" />
+        {/* Subtle vignette for premium depth */}
+        <div className="absolute inset-0 z-[3] opacity-40" style={{
+          background: 'radial-gradient(ellipse at center, transparent 50%, rgba(0,0,0,0.4) 100%)',
+        }} />
+
+        {/* Slide indicator dots */}
+        <div className="absolute bottom-6 left-1/2 -translate-x-1/2 z-[4] flex items-center gap-2">
+          {heroSlides.map((_, i) => (
+            <button
+              key={i}
+              onClick={() => setCurrentSlide(i)}
+              aria-label={`Go to slide ${i + 1}`}
+              className={`transition-all duration-500 rounded-full ${
+                i === currentSlide
+                  ? 'w-6 h-1.5 bg-gold'
+                  : 'w-1.5 h-1.5 bg-ivory/40 hover:bg-ivory/70'
+              }`}
+            />
+          ))}
+        </div>
       </motion.div>
 
       {/* Particle Canvas */}
@@ -146,44 +224,44 @@ export default function HeroSection() {
           style={{ x: reduced ? 0 : springX, y: reduced ? 0 : springY }}
         >
           {/* Headline — Where Comfort Meets Luxury */}
-          <h1 className="font-sans font-light tracking-tight text-ivory text-5xl sm:text-6xl md:text-7xl lg:text-8xl leading-[1.05] mb-4 text-balance">
+          <h1 className="font-sans font-light tracking-tight text-ivory text-[32px] sm:text-5xl md:text-7xl lg:text-8xl leading-[1.05] mb-3 md:mb-4 text-balance" itemProp="name">
             Where Comfort <br />
             <span className="text-gold font-serif italic">Meets</span> Luxury
           </h1>
 
           {/* Subtitle */}
-          <p className="font-sans text-base sm:text-lg md:text-xl font-light text-ivory/90 max-w-xl mb-5">
+          <p className="font-sans text-sm sm:text-lg md:text-xl font-light text-ivory/90 max-w-xl mb-5 px-2">
             Warm hospitality, affordable luxury
           </p>
 
           {/* Rating Badge — ⭐⭐⭐⭐⭐ Top Rated in Purnea */}
-          <div className="inline-flex items-center gap-2 bg-forest-dark border border-gold/30 px-4 py-1.5 rounded-full mb-8 shadow-md">
+          <div className="inline-flex items-center gap-2 bg-forest-dark border border-gold/30 px-3.5 sm:px-4 py-1.5 rounded-full mb-6 sm:mb-8 shadow-md">
             <div className="flex text-gold gap-0.5">
               {[...Array(5)].map((_, i) => (
-                <Star key={i} size={13} fill="currentColor" />
+                <Star key={i} size={12} fill="currentColor" />
               ))}
             </div>
-            <span className="text-[11px] font-sans text-ivory font-medium tracking-wide">
+            <span className="text-[10px] sm:text-[11px] font-sans text-ivory font-medium tracking-wide">
               Top Rated in Purnea
             </span>
           </div>
 
           {/* Action Pill Buttons */}
-          <div className="flex flex-wrap justify-center gap-4 items-center mb-6">
+          <div className="flex flex-wrap justify-center gap-3 sm:gap-4 items-center mb-6 px-2">
             <a
               href={appendUTMToURL(buildBookingUrl())}
               target="_blank"
               rel="noopener noreferrer"
               onClick={() => trackBookingEvent('booking_click', { source: 'hero_center_cta_primary' })}
-              className="group inline-flex items-center gap-2 bg-gradient-to-r from-gold via-gold-light to-gold hover:brightness-110 text-forest-dark font-sans text-xs font-extrabold tracking-widest uppercase px-8 py-4 rounded-full shadow-2xl shadow-gold/25 hover:scale-105 transition-all duration-300"
+              className="group inline-flex items-center gap-2 bg-gradient-to-r from-gold via-gold-light to-gold hover:brightness-110 text-forest-dark font-sans text-[11px] sm:text-xs font-extrabold tracking-widest uppercase px-6 sm:px-8 py-3 sm:py-4 rounded-full shadow-2xl shadow-gold/25 hover:scale-105 transition-all duration-300"
             >
               <span>BOOK YOUR STAY</span>
-              <ArrowUpRight size={16} className="group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
+              <ArrowUpRight size={15} className="group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
             </a>
 
             <Link
               href="/rooms"
-              className="inline-flex items-center gap-2 bg-forest-dark hover:bg-forest border border-gold/40 text-ivory font-sans text-xs font-bold tracking-widest uppercase px-8 py-4 rounded-full shadow-lg hover:scale-105 transition-all duration-300"
+              className="inline-flex items-center gap-2 bg-forest-dark hover:bg-forest border border-gold/40 text-ivory font-sans text-[11px] sm:text-xs font-bold tracking-widest uppercase px-6 sm:px-8 py-3 sm:py-4 rounded-full shadow-lg hover:scale-105 transition-all duration-300"
             >
               <span>EXPLORE ROOMS</span>
             </Link>
@@ -191,9 +269,9 @@ export default function HeroSection() {
         </motion.div>
       </motion.div>
 
-      {/* HORIZONTAL FLOATING BOOKING BAR AT BOTTOM CENTER — COMPACT SIZE */}
+      {/* HORIZONTAL BOOKING BAR — HIDDEN ON MOBILE, VISIBLE ON MD+ */}
       <motion.div
-        className="relative z-20 max-w-[920px] mx-auto px-4 w-full mt-3 md:mt-6"
+        className="hidden md:block relative z-20 max-w-[920px] mx-auto px-4 w-full mt-3 md:mt-6"
         initial={{ opacity: 0, y: 30 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.7, delay: 0.2 }}

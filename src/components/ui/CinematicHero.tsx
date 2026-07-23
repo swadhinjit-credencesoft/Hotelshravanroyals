@@ -52,7 +52,7 @@ export default function CinematicHero({
           y: reduced ? 0 : y,
           opacity,
         }}
-        className="absolute inset-0 z-0"
+        className="absolute inset-0 z-0 will-change-transform"
       >
         {isVideo ? (
           <video
@@ -64,12 +64,7 @@ export default function CinematicHero({
             poster={image.replace(/\.(mp4|webm|ogg)$/i, '.avif')}
             title="Hotel Surya Bella Casa - Cinematic Hero Video"
             aria-label="Cinematic background video showcasing Hotel Surya Bella Casa amenities"
-            className={`absolute inset-0 w-full h-full object-cover ${
-              reduced ? '' : 'animate-ken-burns'
-            }`}
-            style={{
-              animationName: reduced ? 'none' : 'kenBurns',
-            }}
+            className="absolute inset-0 w-full h-full object-cover"
           >
             <source src={image} type="video/mp4" />
           </video>
@@ -80,21 +75,16 @@ export default function CinematicHero({
             fill
             priority
             sizes="100vw"
-            fetchPriority="high"
-            className={`object-cover ${
-              reduced ? '' : 'animate-ken-burns'
-            }`}
-            style={{
-              animationName: reduced ? 'none' : 'kenBurns',
-            }}
+            quality={100}
+            className="object-cover hero-bg-image"
+            style={{ imageRendering: 'auto' }}
           />
         )}
 
-        {/* Dark Gradient Overlay */}
-        <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent" />
-
-        {/* Cinematic Overlay */}
-        <div className="absolute inset-0 bg-forest/20 mix-blend-overlay" />
+        {/* Cinematic Gradient Overlay — balanced for image clarity */}
+        <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent" />
+        {/* Warm tint for luxury feel */}
+        <div className="absolute inset-0 bg-forest/10 mix-blend-multiply" />
       </motion.div>
 
       {/* Content */}

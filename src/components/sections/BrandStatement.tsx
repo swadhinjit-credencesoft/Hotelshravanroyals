@@ -20,7 +20,7 @@ export default function BrandStatement() {
   return (
     <section
       ref={ref}
-      className="bg-cream-light py-32 text-center relative overflow-hidden"
+      className="bg-cream-light py-20 sm:py-28 lg:py-32 text-center relative overflow-hidden"
       aria-label="Brand statement"
     >
       {/* Subtle background ornament */}

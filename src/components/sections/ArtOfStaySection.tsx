@@ -13,9 +13,9 @@ const serviceDetails = [
 
 export default function ArtOfStaySection() {
   return (
-    <section className="bg-cream py-32 border-t border-gold/10">
+    <section className="bg-cream py-16 sm:py-24 lg:py-32 border-t border-gold/10">
       <div className="max-w-[1600px] mx-auto px-6 md:px-10">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-24 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-24 items-center">
            <div>
               <SectionLabel className="mb-6">Our Standards</SectionLabel>
               <h2 className="font-display text-4xl md:text-6xl italic text-forest mb-8 leading-tight">

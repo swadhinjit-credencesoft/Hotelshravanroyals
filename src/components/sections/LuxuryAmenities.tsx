@@ -60,9 +60,9 @@ import Link from 'next/link';
 export default function LuxuryAmenities({ label = 'Our Standards', heading = 'Comfort Without Compromise', amenities }: LuxuryAmenitiesProps) {
   const items = amenities || defaultAmenities;
   return (
-    <section className="bg-cream-dark py-32 overflow-hidden">
+    <section className="bg-cream-dark py-16 sm:py-24 lg:py-32 overflow-hidden">
       <div className="max-w-[1600px] mx-auto px-6 md:px-10">
-        <div className="text-center mb-20">
+        <div className="text-center mb-12 sm:mb-20">
           <SectionLabel className="justify-center mb-6">{label}</SectionLabel>
           <h2 className="font-display text-4xl md:text-[52px] italic text-forest">
             {heading}
@@ -77,7 +77,7 @@ export default function LuxuryAmenities({ label = 'Our Standards', heading = 'Co
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: i * 0.1 }}
-              className="bg-cream-dark p-12 group hover:bg-forest transition-colors duration-700"
+              className="bg-cream-dark p-8 sm:p-12 group hover:bg-forest transition-colors duration-700"
             >
               <div className="w-12 h-12 bg-gold/10 flex items-center justify-center mb-8 rounded-none group-hover:bg-gold transition-colors duration-500">
                 <AmenityIcon name={amenity.icon} />

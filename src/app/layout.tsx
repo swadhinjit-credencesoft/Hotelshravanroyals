@@ -213,7 +213,9 @@ export default function RootLayout({
         <link rel="preconnect" href="https://maps.googleapis.com" />
         <link rel="dns-prefetch" href="https://maps.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-        <link rel="preload" as="image" href="https://bookonelocal.in/cdn/IMG_3815.avif" imageSizes="100vw" imageSrcSet="https://bookonelocal.in/cdn/IMG_3815.avif 1200w" fetchPriority="high" />
+        <link rel="preload" as="image" href="https://bookonelocal.in/cdn/IMG_3815.avif" imageSizes="100vw" imageSrcSet="https://bookonelocal.in/cdn/IMG_3815.avif 1920w" fetchPriority="high" />
+        <link rel="preload" as="image" href="https://bookonelocal.in/cdn/IMG_3808.avif" imageSizes="100vw" imageSrcSet="https://bookonelocal.in/cdn/IMG_3808.avif 1920w" />
+        <link rel="preload" as="image" href="https://bookonelocal.in/cdn/IMG_3784.avif" imageSizes="100vw" imageSrcSet="https://bookonelocal.in/cdn/IMG_3784.avif 1920w" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{

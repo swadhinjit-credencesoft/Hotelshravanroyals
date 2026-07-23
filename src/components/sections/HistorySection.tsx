@@ -17,9 +17,9 @@ export default function HistorySection() {
   const y2 = useTransform(scrollYProgress, [0, 1], [0, -150]);
 
   return (
-    <section ref={containerRef} className="bg-cream py-32 overflow-hidden">
+    <section ref={containerRef} className="bg-cream py-16 sm:py-24 lg:py-32 overflow-hidden">
       <div className="max-w-[1600px] mx-auto px-6 md:px-10">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-20 items-center">
           
           <div className="relative">
             <div className="relative aspect-[4/5] w-full max-w-md mx-auto z-10 overflow-hidden border border-gold/10">

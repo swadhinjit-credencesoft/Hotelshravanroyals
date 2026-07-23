@@ -82,9 +82,9 @@ export default function FAQSection() {
   };
 
   return (
-    <section className="bg-cream py-32 overflow-hidden border-t border-gold/10" id="faq-section">
+    <section className="bg-cream py-16 sm:py-24 lg:py-32 overflow-hidden border-t border-gold/10" id="faq-section">
       <div className="max-w-[1000px] mx-auto px-6 md:px-10">
-        <div className="text-center mb-20">
+        <div className="text-center mb-12 sm:mb-20">
           <SectionLabel className="justify-center mb-6">Got Questions?</SectionLabel>
           <h2 className="font-display text-4xl md:text-[52px] italic text-forest mb-6">
             Hotel Booking & Stay FAQs | Hotel Surya Bella Casa Purnea
