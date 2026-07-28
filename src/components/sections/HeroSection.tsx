@@ -45,7 +45,7 @@ const heroSlides = [
   },
   {
     src: 'https://bookonelocal.in/cdn/IMG_3784.avif',
-    alt: 'Hotel Surya Bella Casa interiors — modern amenities and warm hospitality in Purnia',
+    alt: 'Hotel Surya Bella Casa interiors — modern amenities and warm hospitality in Purnea',
     headline1: 'Experience',
     headline2: 'True',
     headline3: 'Hospitality',

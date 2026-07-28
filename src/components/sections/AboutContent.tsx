@@ -14,7 +14,7 @@ export default function AboutContent() {
       <CinematicHero 
         label="Our Story"
         title="Genuine Hospitality"
-        tagline="Dedicated to offering clean, comfortable, and affordable accommodation in Purnia for families and business travelers."
+        tagline="Dedicated to offering clean, comfortable, and affordable accommodation in Purnea for families and business travelers."
         image='https://bookonelocal.in/cdn/IMG_3808.avif'
       />
 
@@ -33,14 +33,14 @@ export default function AboutContent() {
               </h2>
               <GoldDivider className="mb-10" />
               <p className="font-serif text-xl text-taupe italic mb-8 leading-relaxed">
-                &ldquo;We wanted to establish a premium budget-friendly stay that matches the vibrant commercial growth of Purnia while treating every guest like family.&rdquo;
+                &ldquo;We wanted to establish a premium budget-friendly stay that matches the vibrant commercial growth of Purnea while treating every guest like family.&rdquo;
               </p>
               <div className="space-y-6 font-sans text-base text-taupe/80 leading-loose">
                 <p>
-                  Hotel Surya Bella Casa was established in 2019 with a vision to bridge the gap in quality budget-friendly lodging in Seemanchal. Over the years, we have grown to become a preferred destination for corporate executives, family travelers, and tourists visiting Purnia.
+                  Hotel Surya Bella Casa was established in 2019 with a vision to bridge the gap in quality budget-friendly lodging in Seemanchal. Over the years, we have grown to become a preferred destination for corporate executives, family travelers, and tourists visiting Purnea.
                 </p>
                 <p>
-                  Our hotel stands opposite Vikass Market, just a short walk from the main Purnia Bus Stand, making it exceptionally easy to navigate the city. Every room has been designed for functionality, cleanliness, and comfort.
+                  Our hotel stands opposite Vikass Market, just a short walk from the main Purnea Bus Stand, making it exceptionally easy to navigate the city. Every room has been designed for functionality, cleanliness, and comfort.
                 </p>
                 <p>
                   Whether you are in town for an overnight business meeting or a multi-day family celebration, our hospitable staff is here to make your visit seamless and memorable.
@@ -118,7 +118,7 @@ export default function AboutContent() {
               <SectionLabel className="mb-6">Find Your Way</SectionLabel>
               <h2 className="font-display text-4xl md:text-6xl italic text-forest mb-8">Getting to Hotel Surya Bella Casa</h2>
               <p className="font-serif text-lg text-taupe leading-relaxed mb-8">
-                Located in the heart of Purnia at Suryalok Complex, we are well-connected by road and rail to Patna, Siliguri, and Bhagalpur. Our hotel offers the perfect balance of accessibility and comfort.
+                Located in the heart of Purnea at Suryalok Complex, we are well-connected by road and rail to Patna, Siliguri, and Bhagalpur. Our hotel offers the perfect balance of accessibility and comfort.
               </p>
               <div className="space-y-4">
                 <p className="font-sans text-[11px] uppercase tracking-widest text-gold font-bold">Address</p>

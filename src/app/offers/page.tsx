@@ -11,10 +11,10 @@ export const metadata: Metadata = {
   },
   keywords: [
     'hotel offers purnea',
-    'hotel deals purnia',
+    'hotel deals Purnea',
     'best hotel rates purnea',
     'discount hotel booking purnea',
-    'corporate hotel rates purnia',
+    'corporate hotel rates Purnea',
     'wedding package purnea hotel',
   ],
 }
@@ -25,7 +25,7 @@ export default function OffersPage() {
     "@type": "ItemList",
     "@id": "https://hotelsuryabellacasa.com/offers/#itemlist",
     "name": "Seasonal Packages & Offers",
-    "description": "Exclusive deals and seasonal packages at Hotel Surya Bella Casa, Purnia.",
+    "description": "Exclusive deals and seasonal packages at Hotel Surya Bella Casa, Purnea.",
     "url": "https://hotelsuryabellacasa.com/offers",
     "itemListElement": offers.map((offer, i) => ({
       "@type": "ListItem",
@@ -87,7 +87,7 @@ export default function OffersPage() {
             "@id": "https://hotelsuryabellacasa.com/offers/#webpage",
             "url": "https://hotelsuryabellacasa.com/offers",
             "name": "Seasonal Packages & Resort Offers | Hotel Surya Bella Casa",
-            "description": "Save on your weekend getaways in Purnia. Check out active lodging promotions, culinary meal plan packages, and adventure tour add-ons.",
+            "description": "Save on your weekend getaways in Purnea. Check out active lodging promotions, culinary meal plan packages, and adventure tour add-ons.",
             "isPartOf": {
               "@type": "WebSite",
               "@id": "https://hotelsuryabellacasa.com/#website",

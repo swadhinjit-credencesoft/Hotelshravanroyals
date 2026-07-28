@@ -6,26 +6,26 @@ import Link from 'next/link';
 import { MapPin, Star, Calendar, ArrowRight } from 'lucide-react';
 
 const busStandAmenities: AmenityItem[] = [
-  { icon: 'MapPin', title: '2 Minutes from Bus Stand', description: 'Purnia Bus Stand is less than a 2-minute walk. Step off the bus and check into comfort instantly.' },
+  { icon: 'MapPin', title: '2 Minutes from Bus Stand', description: 'Purnea Bus Stand is less than a 2-minute walk. Step off the bus and check into comfort instantly.' },
   { icon: 'Luggage', title: 'Luggage Assistance', description: 'Our staff helps with luggage from arrival at the bus stand to your room. Hassle-free transit.' },
-  { icon: 'Car', title: 'Auto & Rickshaw Access', description: 'Easy connectivity to Bhatta Bazar, railway station, and all parts of Purnia via auto-rickshaws right outside.' },
+  { icon: 'Car', title: 'Auto & Rickshaw Access', description: 'Easy connectivity to Bhatta Bazar, railway station, and all parts of Purnea via auto-rickshaws right outside.' },
   { icon: 'Clock', title: 'Early Check-In for Travelers', description: 'Arrived on an early bus? We offer early check-in and luggage hold service at no extra charge.' },
   { icon: 'Calendar', title: 'Same-Day Booking Welcome', description: 'Walk-ins and same-day online bookings are always welcome. Instant room allocation.' },
   { icon: 'Shield', title: 'Safe Neighborhood', description: 'Located in the well-lit Suryalok Complex with 24/7 security and active commercial activity around the clock.' },
 ];
 
 export const metadata = {
-  title: 'Hotel Near Purnia Bus Stand',
-  description: 'Looking for a hotel near Purnia Bus Stand? Hotel Surya Bella Casa is opposite Vikass Market, just 2 min from Bus Stand. Clean rooms, free WiFi, parking.',
+  title: 'Hotel Near Purnea Bus Stand',
+  description: 'Looking for a hotel near Purnea Bus Stand? Hotel Surya Bella Casa is opposite Vikass Market, just 2 min from Bus Stand. Clean rooms, free WiFi, parking.',
   keywords: [
-    'hotel near purnia bus stand', 'hotel near bus stand purnea', 'hotel near bus stand bihar',
-    'lodging near purnia bus stand', 'best hotel near purnea bus terminal',
-    'AC rooms near purnia bus stand', 'hotel opposite vikass market near bus stand',
-    'budget hotel near purnia bus stand', 'stay near purnia bus stand',
-    'hotel walking distance from bus stand purnea', 'Suryalok Complex hotel purnia',
+    'hotel near Purnea bus stand', 'hotel near bus stand purnea', 'hotel near bus stand bihar',
+    'lodging near Purnea bus stand', 'best hotel near purnea bus terminal',
+    'AC rooms near Purnea bus stand', 'hotel opposite vikass market near bus stand',
+    'budget hotel near Purnea bus stand', 'stay near Purnea bus stand',
+    'hotel walking distance from bus stand purnea', 'Suryalok Complex hotel Purnea',
   ],
   alternates: {
-    canonical: 'https://hotelsuryabellacasa.com/hotel-near-purnia-bus-stand',
+    canonical: 'https://hotelsuryabellacasa.com/hotel-near-Purnea-bus-stand',
   },
   robots: {
     index: true,
@@ -33,22 +33,22 @@ export const metadata = {
     googleBot: { index: true, follow: true, 'max-image-preview': 'large', 'max-snippet': -1 },
   },
   openGraph: {
-    title: 'Hotel Near Purnia Bus Stand | Vikass Market Purnea',
+    title: 'Hotel Near Purnea Bus Stand | Vikass Market Purnea',
     description: 'Best hotel near Purnea Bus Stand. Located opposite Vikass Market, 2 min walk from bus stand. Free WiFi, parking, AC rooms. Perfect for travelers. Book now.',
-    url: 'https://hotelsuryabellacasa.com/hotel-near-purnia-bus-stand',
+    url: 'https://hotelsuryabellacasa.com/hotel-near-Purnea-bus-stand',
     siteName: 'Hotel Surya Bella Casa',
     type: 'website',
-    images: [{ url: 'https://bookonelocal.in/cdn/IMG_3815.avif', width: 1200, height: 630, alt: 'Hotel Near Purnia Bus Stand - Best Hotel Opposite Vikass Market - Hotel Surya Bella Casa' }],
+    images: [{ url: 'https://bookonelocal.in/cdn/IMG_3815.avif', width: 1200, height: 630, alt: 'Hotel Near Purnea Bus Stand - Best Hotel Opposite Vikass Market - Hotel Surya Bella Casa' }],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Hotel Near Purnia Bus Stand | Stay Opposite Vikass Market',
+    title: 'Hotel Near Purnea Bus Stand | Stay Opposite Vikass Market',
     description: 'Best hotel near Purnea Bus Stand with free WiFi and parking. Located opposite Vikass Market. Clean, affordable rooms near bus terminal.',
     images: ['https://bookonelocal.in/cdn/IMG_3815.avif'],
   },
 };
 
-export default function PurniaBusStandLandingPage() {
+export default function PurneaBusStandLandingPage() {
   return (
     <main className="bg-cream min-h-screen">
       
@@ -61,7 +61,7 @@ export default function PurniaBusStandLandingPage() {
             "@type": "BreadcrumbList",
             "itemListElement": [
               { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://hotelsuryabellacasa.com" },
-              { "@type": "ListItem", "position": 2, "name": "Hotel Near Purnia Bus Stand", "item": "https://hotelsuryabellacasa.com/hotel-near-purnia-bus-stand" }
+              { "@type": "ListItem", "position": 2, "name": "Hotel Near Purnea Bus Stand", "item": "https://hotelsuryabellacasa.com/hotel-near-Purnea-bus-stand" }
             ]
           })
         }}
@@ -69,7 +69,7 @@ export default function PurniaBusStandLandingPage() {
 
       <CinematicHero 
         label="Best Hotel Near Purnea Bus Stand & Opposite Vikass Market"
-        title="Hotel Near Purnia Bus Stand - 2 Min Walk from Bus Terminal"
+        title="Hotel Near Purnea Bus Stand - 2 Min Walk from Bus Terminal"
         tagline="Looking for a hotel near Purnea Bus Stand? Hotel Surya Bella Casa is located opposite Vikass Market, just 2 minutes from the main Bus Stand. Clean rooms with free WiFi, parking, AC, and 24/7 service. Best stay near Bus Terminal Purnea."
         image='https://bookonelocal.in/cdn/IMG_3791.avif'
       />
@@ -79,19 +79,19 @@ export default function PurniaBusStandLandingPage() {
           <div className="lg:col-span-2">
             <SectionLabel className="mb-6">Local Advantage</SectionLabel>
             <h2 className="font-display text-4xl md:text-5xl italic text-forest mb-8 leading-tight">
-              Comfortable Lodging Just Steps Away From Purnia Bus Stand
+              Comfortable Lodging Just Steps Away From Purnea Bus Stand
             </h2>
             <GoldDivider className="mb-8" />
             
             <div className="font-sans text-base text-taupe/80 space-y-6 leading-loose">
               <p>
-                When traveling to Purnia, proximity to the primary transit point is crucial. <strong>Hotel Surya Bella Casa</strong> offers an unmatched geographic advantage, situated just a stone&apos;s throw from the main <strong>Purnia Bus Stand</strong>.
+                When traveling to Purnea, proximity to the primary transit point is crucial. <strong>Hotel Surya Bella Casa</strong> offers an unmatched geographic advantage, situated just a stone&apos;s throw from the main <strong>Purnea Bus Stand</strong>.
               </p>
               <p>
-                Perfect for transit travelers, <Link href="/business-hotel-in-purnia" className="text-gold hover:underline">corporate executives</Link>, and <Link href="/family-hotel-in-purnia" className="text-gold hover:underline">visiting families</Link>, our hotel eliminates the stress of long commutes inside Purnia. Located opposite the iconic <Link href="/hotel-near-vikass-market" className="text-gold hover:underline">Vikass Market</Link> in Suryalok Complex, you are connected immediately to local dining, sweets, and business centers. Explore our <Link href="/rooms" className="text-gold hover:underline">room options</Link> and <Link href="/offers" className="text-gold hover:underline">current offers</Link> for the best rates.
+                Perfect for transit travelers, <Link href="/business-hotel-in-Purnea" className="text-gold hover:underline">corporate executives</Link>, and <Link href="/family-hotel-in-Purnea" className="text-gold hover:underline">visiting families</Link>, our hotel eliminates the stress of long commutes inside Purnea. Located opposite the iconic <Link href="/hotel-near-vikass-market" className="text-gold hover:underline">Vikass Market</Link> in Suryalok Complex, you are connected immediately to local dining, sweets, and business centers. Explore our <Link href="/rooms" className="text-gold hover:underline">room options</Link> and <Link href="/offers" className="text-gold hover:underline">current offers</Link> for the best rates.
               </p>
               <p>
-                Forget the hassle of haggling for auto-rickshaws with heavy luggage. Our central location means you can check in, freshen up, and prepare for your day in Purnia immediately after your bus journey.
+                Forget the hassle of haggling for auto-rickshaws with heavy luggage. Our central location means you can check in, freshen up, and prepare for your day in Purnea immediately after your bus journey.
               </p>
             </div>
 
@@ -100,7 +100,7 @@ export default function PurniaBusStandLandingPage() {
               <ul className="space-y-4 font-sans text-base text-taupe">
                 <li className="flex items-start gap-3">
                   <MapPin className="text-gold mt-1 flex-shrink-0" size={18} />
-                  <span><strong>Near Bus Stand Purnia:</strong> Less than 2 minutes of walking distance, offering instant transit convenience.</span>
+                  <span><strong>Near Bus Stand Purnea:</strong> Less than 2 minutes of walking distance, offering instant transit convenience.</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <MapPin className="text-gold mt-1 flex-shrink-0" size={18} />
@@ -108,7 +108,7 @@ export default function PurniaBusStandLandingPage() {
                 </li>
                 <li className="flex items-start gap-3">
                   <MapPin className="text-gold mt-1 flex-shrink-0" size={18} />
-                  <span><strong>Bhatta Bazar Area:</strong> Just 5 minutes away, connecting you to Purnia&apos;s oldest commercial district.</span>
+                  <span><strong>Bhatta Bazar Area:</strong> Just 5 minutes away, connecting you to Purnea&apos;s oldest commercial district.</span>
                 </li>
               </ul>
             </div>
@@ -144,13 +144,13 @@ export default function PurniaBusStandLandingPage() {
 
       <section className="py-16 max-w-[1200px] mx-auto px-6 md:px-10">
         <SectionLabel className="mb-6">Also Explore</SectionLabel>
-        <h2 className="font-display text-3xl md:text-4xl italic text-forest mb-8">More Ways to Stay in Purnia</h2>
+        <h2 className="font-display text-3xl md:text-4xl italic text-forest mb-8">More Ways to Stay in Purnea</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {[
             { href: '/hotel-near-vikass-market', label: 'Hotel Near Vikass Market' },
-            { href: '/family-hotel-in-purnia', label: 'Family Hotel in Purnia' },
-            { href: '/business-hotel-in-purnia', label: 'Business Hotel in Purnia' },
-            { href: '/budget-hotel-in-purnia', label: 'Budget Hotel in Purnia' },
+            { href: '/family-hotel-in-Purnea', label: 'Family Hotel in Purnea' },
+            { href: '/business-hotel-in-Purnea', label: 'Business Hotel in Purnea' },
+            { href: '/budget-hotel-in-Purnea', label: 'Budget Hotel in Purnea' },
           ].map((item) => (
             <Link
               key={item.href}

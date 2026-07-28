@@ -17,13 +17,13 @@ export const metadata: Metadata = {
     'affordable wedding venue purnea',
   ],
   alternates: {
-    canonical: 'https://hotelsuryabellacasa.com/blog/wedding-venue-in-purnia',
+    canonical: 'https://hotelsuryabellacasa.com/blog/wedding-venue-in-Purnea',
   },
   openGraph: {
   title: 'Wedding Venue in Purnea | Best Marriage Hall',
     description:
       'Plan your dream wedding at Hotel Surya Bella Casa in Purnea. Elegant banquet hall, catering, decor, and guest rooms near Vikass Market.',
-    url: 'https://hotelsuryabellacasa.com/blog/wedding-venue-in-purnia',
+    url: 'https://hotelsuryabellacasa.com/blog/wedding-venue-in-Purnea',
     siteName: 'Hotel Surya Bella Casa',
     type: 'article',
     publishedTime: '2026-07-05T00:00:00.000Z',
@@ -84,16 +84,16 @@ export default function BlogPost() {
           link: '/blog/banquet-hall-wedding-venue-in-purnea',
         },
         {
-          title: 'Birthday Party Venue in Purnia',
-          link: '/blog/birthday-party-venue-in-purnia',
+          title: 'Birthday Party Venue in Purnea',
+          link: '/blog/birthday-party-venue-in-Purnea',
         },
         {
-          title: 'Corporate Event Venue in Purnia',
-          link: '/blog/corporate-event-venue-in-purnia',
+          title: 'Corporate Event Venue in Purnea',
+          link: '/blog/corporate-event-venue-in-Purnea',
         },
         {
-          title: 'Luxury Hotel in Purnia',
-          link: '/blog/luxury-hotel-in-purnia',
+          title: 'Luxury Hotel in Purnea',
+          link: '/blog/luxury-hotel-in-Purnea',
         },
       ]}
       serviceLinks={[
@@ -112,7 +112,7 @@ export default function BlogPost() {
         <Link href="/" className="text-gold hover:underline">
           Hotel Surya Bella Casa
         </Link>{' '}
-        stands out as the premier choice. Located opposite Vikass Market and just minutes from Purnia
+        stands out as the premier choice. Located opposite Vikass Market and just minutes from Purnea
         Bus Stand, our venue makes it effortless for you and your guests to attend every function
         without the stress of long commutes or parking hassles.
       </p>
@@ -273,7 +273,7 @@ export default function BlogPost() {
       <p>
         Hotel Surya Bella Casa is strategically located opposite Vikass Market in Purnea, making it
         one of the most accessible wedding venues in the city. The hotel is within walking distance
-        of Purnia Bus Stand, and guests arriving by train can reach us easily from Purnea Junction.
+        of Purnea Bus Stand, and guests arriving by train can reach us easily from Purnea Junction.
         For families traveling from nearby towns in Bihar and Jharkhand, the venue is well-connected
         by road with ample parking space for vehicles.
       </p>
@@ -317,17 +317,17 @@ export default function BlogPost() {
 
       <p className="mt-6">
         If you are also considering other event types, we are equally renowned as a{' '}
-        <Link href="/blog/birthday-party-venue-in-purnia" className="text-gold hover:underline">
-          birthday party venue in Purnia
+        <Link href="/blog/birthday-party-venue-in-Purnea" className="text-gold hover:underline">
+          birthday party venue in Purnea
         </Link>{' '}
         and a{' '}
-        <Link href="/blog/corporate-event-venue-in-purnia" className="text-gold hover:underline">
-          corporate event venue in Purnia
+        <Link href="/blog/corporate-event-venue-in-Purnea" className="text-gold hover:underline">
+          corporate event venue in Purnea
         </Link>
         . Our versatile spaces adapt beautifully to any occasion. For couples who want a premium
         experience, our hotel is consistently ranked among the{' '}
-        <Link href="/blog/luxury-hotel-in-purnia" className="text-gold hover:underline">
-          luxury hotels in Purnia
+        <Link href="/blog/luxury-hotel-in-Purnea" className="text-gold hover:underline">
+          luxury hotels in Purnea
         </Link>
         .
       </p>

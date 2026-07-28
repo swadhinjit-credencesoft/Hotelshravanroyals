@@ -8,16 +8,16 @@ export const metadata: Metadata = {
   keywords: [
     'about hotel surya bella casa',
     'hotel in purnea about',
-    'hotel surya bella casa purnia history',
+    'hotel surya bella casa Purnea history',
     'best hotel in purnea near bus stand',
-    'purnia hotel near vikass market',
+    'Purnea hotel near vikass market',
   ],
   alternates: {
     canonical: 'https://hotelsuryabellacasa.com/about',
   },
   openGraph: {
     title: 'About Us | Hotel Surya Bella Casa Purnea',
-    description: 'Learn about our journey from 2019, our commitment to hospitality, and our location near Purnia Bus Stand.',
+    description: 'Learn about our journey from 2019, our commitment to hospitality, and our location near Purnea Bus Stand.',
     url: 'https://hotelsuryabellacasa.com/about',
     siteName: 'Hotel Surya Bella Casa',
     type: 'website',
@@ -33,7 +33,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'About Us | Hotel Surya Bella Casa Purnea',
-    description: 'Discover the history, values, and hospitality standards of Hotel Surya Bella Casa in Purnia.',
+    description: 'Discover the history, values, and hospitality standards of Hotel Surya Bella Casa in Purnea.',
     images: ['https://bookonelocal.in/cdn/IMG_3815.avif'],
   },
 };
@@ -82,7 +82,7 @@ export default function AboutPage() {
               "foundingDate": "2019",
               "address": {
                 "@type": "PostalAddress",
-                "addressLocality": "Purnia",
+                "addressLocality": "Purnea",
                 "addressRegion": "Bihar",
                 "addressCountry": "IN"
               },

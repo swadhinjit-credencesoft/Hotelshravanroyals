@@ -2,8 +2,8 @@ import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
   title: 'Cancellation & Refund Policy',
-  description: 'Read the cancellation and refund policy of Hotel Surya Bella Casa, Purnia. Understand amendment charges, cancellation timelines, and general terms.',
-  keywords: ['hotel cancellation policy', 'purnia hotel refund', 'hotel surya bella casa cancellation', 'booking cancellation purnia', 'hotel amendment charges', 'purnia hotel cancellation refund', 'hotel booking terms purnia', 'cancel hotel reservation purnia', 'purnia hotel refund policy', 'hotel cancellation timeline', 'no show policy purnia hotel', 'hotel surya bella casa refund'],
+  description: 'Read the cancellation and refund policy of Hotel Surya Bella Casa, Purnea. Understand amendment charges, cancellation timelines, and general terms.',
+  keywords: ['hotel cancellation policy', 'Purnea hotel refund', 'hotel surya bella casa cancellation', 'booking cancellation Purnea', 'hotel amendment charges', 'Purnea hotel cancellation refund', 'hotel booking terms Purnea', 'cancel hotel reservation Purnea', 'Purnea hotel refund policy', 'hotel cancellation timeline', 'no show policy Purnea hotel', 'hotel surya bella casa refund'],
   alternates: {
     canonical: 'https://hotelsuryabellacasa.com/cancellation',
   },
@@ -12,8 +12,8 @@ export const metadata: Metadata = {
     follow: true,
   },
   openGraph: {
-    title: 'Cancellation & Refund Policy | Hotel Surya Bella Casa Purnia',
-    description: 'Read the cancellation and refund policy of Hotel Surya Bella Casa, Purnia. Understand amendment charges, cancellation timelines, and general terms.',
+    title: 'Cancellation & Refund Policy | Hotel Surya Bella Casa Purnea',
+    description: 'Read the cancellation and refund policy of Hotel Surya Bella Casa, Purnea. Understand amendment charges, cancellation timelines, and general terms.',
     url: 'https://hotelsuryabellacasa.com/cancellation',
     siteName: 'Hotel Surya Bella Casa',
     type: 'website',
@@ -22,14 +22,14 @@ export const metadata: Metadata = {
         url: 'https://bookonelocal.in/cdn/IMG_3815.avif',
         width: 1200,
         height: 630,
-        alt: 'Hotel Surya Bella Casa Purnia - Cancellation Policy',
+        alt: 'Hotel Surya Bella Casa Purnea - Cancellation Policy',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Cancellation & Refund Policy | Hotel Surya Bella Casa Purnia',
-    description: 'Read the cancellation and refund policy of Hotel Surya Bella Casa, Purnia.',
+    title: 'Cancellation & Refund Policy | Hotel Surya Bella Casa Purnea',
+    description: 'Read the cancellation and refund policy of Hotel Surya Bella Casa, Purnea.',
     images: ['https://bookonelocal.in/cdn/IMG_3815.avif'],
   },
 }

@@ -18,7 +18,7 @@ export const metadata: Metadata = {
         url: 'https://bookonelocal.in/cdn/IMG_3764.avif',
         width: 1200,
         height: 630,
-        alt: 'Destination Wedding Venue at Hotel Surya Bella Casa Purnia',
+        alt: 'Destination Wedding Venue at Hotel Surya Bella Casa Purnea',
       },
     ],
   },

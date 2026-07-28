@@ -92,6 +92,11 @@ export default function ReviewsPage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(reviewSchema) }}
       />
+      <div className="text-center pt-8 pb-4 px-6">
+        <h1 className="font-display text-4xl md:text-5xl lg:text-6xl italic text-forest">
+          Guest Reviews &amp; Ratings
+        </h1>
+      </div>
       <TestimonialsSection />
       <div className="max-w-[800px] mx-auto px-6 md:px-10 pb-24">
         <div className="bg-white border border-gold/10 rounded-sm p-8 md:p-12">

@@ -150,10 +150,10 @@ export default function BlogPost() {
         heroAlt="Best hotel rooms in Purnea - Hotel Surya Bella Casa"
         relatedArticles={[
           { title: 'Best Hotels in Purnea Near Bus Stand', link: '/blog/best-hotels-in-purnea-near-bus-stand' },
-          { title: 'Luxury Hotel in Purnia', link: '/blog/luxury-hotel-in-purnia' },
+          { title: 'Luxury Hotel in Purnea', link: '/blog/luxury-hotel-in-Purnea' },
           { title: 'Family Hotel in Purnea', link: '/blog/family-hotel-in-purnea' },
           { title: 'Business Hotel in Purnea', link: '/blog/business-hotel-in-purnea' },
-          { title: 'Hotels Near Purnia Railway Station', link: '/blog/hotels-near-purnia-railway-station' },
+          { title: 'Hotels Near Purnea Railway Station', link: '/blog/hotels-near-Purnea-railway-station' },
         ]}
         serviceLinks={[
           { label: 'Rooms', link: '/rooms' },
@@ -232,7 +232,7 @@ export default function BlogPost() {
 
         <h3 className="font-display text-xl text-forest mt-8 mb-3">Family Travelers</h3>
         <p>
-          Families visiting Purnea will find Hotel Surya Bella Casa a welcoming choice. <Link href="/blog/family-hotel-in-purnea" className="text-gold hover:underline">Spacious rooms</Link>, a safe environment with CCTV and key-card access, friendly staff, and a <Link href="/blog/family-restaurant-in-purnia" className="text-gold hover:underline">family-friendly rooftop restaurant</Link> ensure a comfortable stay for guests of all ages. The lift provides easy access to all floors, making it convenient for elderly guests and families with young children.
+          Families visiting Purnea will find Hotel Surya Bella Casa a welcoming choice. <Link href="/blog/family-hotel-in-purnea" className="text-gold hover:underline">Spacious rooms</Link>, a safe environment with CCTV and key-card access, friendly staff, and a <Link href="/blog/family-restaurant-in-Purnea" className="text-gold hover:underline">family-friendly rooftop restaurant</Link> ensure a comfortable stay for guests of all ages. The lift provides easy access to all floors, making it convenient for elderly guests and families with young children.
         </p>
 
         <h3 className="font-display text-xl text-forest mt-8 mb-3">Couples</h3>
@@ -264,7 +264,7 @@ export default function BlogPost() {
           <li><strong>Business Areas</strong> — Central location</li>
         </ul>
         <p>
-          This makes the hotel suitable for tourists, corporate guests, and families. For more about the area, check our <Link href="/blog/purnia-travel-guide" className="text-gold hover:underline">Purnia travel guide</Link> or explore <Link href="/blog/places-to-visit-in-purnea" className="text-gold hover:underline">places to visit in Purnea</Link>.
+          This makes the hotel suitable for tourists, corporate guests, and families. For more about the area, check our <Link href="/blog/Purnea-travel-guide" className="text-gold hover:underline">Purnea travel guide</Link> or explore <Link href="/blog/places-to-visit-in-purnea" className="text-gold hover:underline">places to visit in Purnea</Link>.
         </p>
 
         <h2 className="font-display text-2xl italic text-forest mt-10 mb-4">Enjoy Delicious Dining During Your Stay</h2>
@@ -272,7 +272,7 @@ export default function BlogPost() {
           Guests can enjoy meals at <Link href="/blog/rooftop-restaurant-in-purnea" className="text-gold hover:underline">Bella Casa Rooftop Restaurant</Link>, serving a variety of cuisines including North Indian, Mughlai, Chinese, Continental, Tandoori, vegetarian specialties, and non-vegetarian dishes. The rooftop ambiance with city views makes breakfast, lunch, and dinner even more enjoyable.
         </p>
         <p>
-          For more about dining, read our guides on the <Link href="/blog/best-restaurant-in-purnia" className="text-gold hover:underline">best restaurant in Purnia</Link>, <Link href="/blog/fine-dining-restaurant-in-purnia" className="text-gold hover:underline">fine dining options</Link>, and <Link href="/blog/best-dinner-place-in-purnia" className="text-gold hover:underline">best dinner places in Purnia</Link>.
+          For more about dining, read our guides on the <Link href="/blog/best-restaurant-in-Purnea" className="text-gold hover:underline">best restaurant in Purnea</Link>, <Link href="/blog/fine-dining-restaurant-in-Purnea" className="text-gold hover:underline">fine dining options</Link>, and <Link href="/blog/best-dinner-place-in-Purnea" className="text-gold hover:underline">best dinner places in Purnea</Link>.
         </p>
 
         <h2 className="font-display text-2xl italic text-forest mt-10 mb-4">Why Guests Choose Hotel Surya Bella Casa</h2>
@@ -401,7 +401,7 @@ export default function BlogPost() {
 
         <h3 className="font-display text-lg text-forest mt-6 mb-2">How far is the hotel from Purnea Railway Station?</h3>
         <p>
-          Hotel Surya Bella Casa is approximately <strong>6 km from Purnea Junction Railway Station</strong>. Auto-rickshaws are readily available for the ride. For more details, read our <Link href="/blog/hotels-near-purnia-railway-station" className="text-gold hover:underline">hotels near Purnia Railway Station guide</Link>.
+          Hotel Surya Bella Casa is approximately <strong>6 km from Purnea Junction Railway Station</strong>. Auto-rickshaws are readily available for the ride. For more details, read our <Link href="/blog/hotels-near-Purnea-railway-station" className="text-gold hover:underline">hotels near Purnea Railway Station guide</Link>.
         </p>
 
         <h2 className="font-display text-2xl italic text-forest mt-10 mb-4">Explore More on Our Blog</h2>
@@ -410,13 +410,13 @@ export default function BlogPost() {
         </p>
         <ul className="space-y-2 list-disc pl-6">
           <li><Link href="/blog/best-hotels-in-purnea-near-bus-stand" className="text-gold hover:underline">Best Hotels in Purnea Near Bus Stand</Link> — Complete hotel comparison guide</li>
-          <li><Link href="/blog/luxury-hotel-in-purnia" className="text-gold hover:underline">Luxury Hotel in Purnia</Link> — Premium stay options</li>
+          <li><Link href="/blog/luxury-hotel-in-Purnea" className="text-gold hover:underline">Luxury Hotel in Purnea</Link> — Premium stay options</li>
           <li><Link href="/blog/family-hotel-in-purnea" className="text-gold hover:underline">Family Hotel in Purnea</Link> — Family-friendly accommodation</li>
           <li><Link href="/blog/business-hotel-in-purnea" className="text-gold hover:underline">Business Hotel in Purnea</Link> — Corporate stay guide</li>
-          <li><Link href="/blog/hotels-near-purnia-railway-station" className="text-gold hover:underline">Hotels Near Purnia Railway Station</Link> — Station-area accommodation</li>
-          <li><Link href="/blog/purnia-travel-guide" className="text-gold hover:underline">Purnia Travel Guide</Link> — How to reach, where to stay, what to eat</li>
+          <li><Link href="/blog/hotels-near-Purnea-railway-station" className="text-gold hover:underline">Hotels Near Purnea Railway Station</Link> — Station-area accommodation</li>
+          <li><Link href="/blog/Purnea-travel-guide" className="text-gold hover:underline">Purnea Travel Guide</Link> — How to reach, where to stay, what to eat</li>
           <li><Link href="/blog/places-to-visit-in-purnea" className="text-gold hover:underline">Places to Visit in Purnea</Link> — Top attractions and day trips</li>
-          <li><Link href="/blog/shopping-in-purnia" className="text-gold hover:underline">Shopping in Purnea</Link> — Best markets and bazaars</li>
+          <li><Link href="/blog/shopping-in-Purnea" className="text-gold hover:underline">Shopping in Purnea</Link> — Best markets and bazaars</li>
         </ul>
       </BlogArticleLayout>
     </>

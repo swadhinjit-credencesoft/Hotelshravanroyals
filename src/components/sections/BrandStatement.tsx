@@ -14,7 +14,7 @@ export default function BrandStatement() {
   const quoteLines = [
     'Hotel Surya Bella Casa is more than a stay — it is a sanctuary of comfort',
     'warm hospitality, and absolute peace of mind where business travelers',
-    'and families experience Purnia at its very best.',
+    'and families experience Purnea at its very best.',
   ]
 
   return (

@@ -6,11 +6,11 @@ export const metadata: Metadata = {
   title: 'Things to Do in Purnea | Weekend Activities & Experiences',
   description: 'Looking for things to do in Purnea? Explore temples, markets, food streets, and day trips from Hotel Surya Bella Casa near Bus Stand.',
   keywords: ['things to do in purnea', 'purnea activities', 'what to do in purnea', 'weekend in purnea'],
-  alternates: { canonical: 'https://hotelsuryabellacasa.com/blog/things-to-do-in-purnia' },
+  alternates: { canonical: 'https://hotelsuryabellacasa.com/blog/things-to-do-in-Purnea' },
   openGraph: {
     title: 'Things to Do in Purnea | Weekend Activities & Experiences',
     description: 'Looking for things to do in Purnea? Explore temples, markets, food streets, and day trips from Hotel Surya Bella Casa near Bus Stand.',
-    url: 'https://hotelsuryabellacasa.com/blog/things-to-do-in-purnia',
+    url: 'https://hotelsuryabellacasa.com/blog/things-to-do-in-Purnea',
     siteName: 'Hotel Surya Bella Casa',
     type: 'article',
     publishedTime: '2026-06-28T00:00:00.000Z',
@@ -49,9 +49,9 @@ export default function BlogPost() {
       heroAlt="Things to do in Purnea - local experiences"
       relatedArticles={[
         { title: 'Places to Visit in Purnea', link: '/blog/places-to-visit-in-purnea' },
-        { title: 'Purnia Travel Guide', link: '/blog/purnia-travel-guide' },
-        { title: 'Local Food Guide in Purnea', link: '/blog/local-food-guide-in-purnia' },
-        { title: 'Shopping in Purnea', link: '/blog/shopping-in-purnia' },
+        { title: 'Purnea Travel Guide', link: '/blog/Purnea-travel-guide' },
+        { title: 'Local Food Guide in Purnea', link: '/blog/local-food-guide-in-Purnea' },
+        { title: 'Shopping in Purnea', link: '/blog/shopping-in-Purnea' },
       ]}
       serviceLinks={[
         { label: 'Hotel', link: '/' },
@@ -63,7 +63,7 @@ export default function BlogPost() {
       ]}
     >
       <p>
-        Purnia (also known as Purnea) is one of the largest cities in Bihar&apos;s Seemanchal region, and it offers far more than most travelers expect. From ancient temples and vibrant markets to flavorful food trails and scenic day trips, there is no shortage of <strong>things to do in Purnea</strong> for every type of traveler. Whether you are in town for a weekend getaway or a longer stay at <Link href="/" className="text-gold hover:underline">Hotel Surya Bella Casa</Link>, this guide covers the best activities and experiences in and around the city.
+        Purnea (also known as Purnea) is one of the largest cities in Bihar&apos;s Seemanchal region, and it offers far more than most travelers expect. From ancient temples and vibrant markets to flavorful food trails and scenic day trips, there is no shortage of <strong>things to do in Purnea</strong> for every type of traveler. Whether you are in town for a weekend getaway or a longer stay at <Link href="/" className="text-gold hover:underline">Hotel Surya Bella Casa</Link>, this guide covers the best activities and experiences in and around the city.
       </p>
 
       <h2 className="font-display text-2xl italic text-forest mt-10 mb-4">Morning Temple Visits</h2>
@@ -71,15 +71,15 @@ export default function BlogPost() {
         Start your day with a spiritual dip at some of Purnea&apos;s most revered temples. <strong>Maa Puran Devi Temple</strong>, believed to be the origin of the city&apos;s name, is a must-visit landmark. The temple is just a 10-minute drive from <Link href="/rooms" className="text-gold hover:underline">Hotel Surya Bella Casa</Link> and opens early in the morning, making it ideal for a peaceful start to your day. The ancient architecture and the serene courtyard create a calming atmosphere that sets the tone for your entire visit.
       </p>
       <p>
-        Next, head to <strong>Kali Mandir</strong>, one of the most important religious sites in central Purnea. Located about 5 minutes from the hotel, this temple is dedicated to Goddess Kali and draws devotees from across the Seemanchal region. The morning aarti is a beautiful ritual worth experiencing. After your temple visits, grab a quick breakfast at one of the local eateries near <Link href="/blog/shopping-in-purnia" className="text-gold hover:underline">Vikass Market</Link>, where you&apos;ll find fresh pua, jalebi, and chai.
+        Next, head to <strong>Kali Mandir</strong>, one of the most important religious sites in central Purnea. Located about 5 minutes from the hotel, this temple is dedicated to Goddess Kali and draws devotees from across the Seemanchal region. The morning aarti is a beautiful ritual worth experiencing. After your temple visits, grab a quick breakfast at one of the local eateries near <Link href="/blog/shopping-in-Purnea" className="text-gold hover:underline">Vikass Market</Link>, where you&apos;ll find fresh pua, jalebi, and chai.
       </p>
 
       <h2 className="font-display text-2xl italic text-forest mt-10 mb-4">Market Exploration: Vikass Market & Bhatta Bazar</h2>
       <p>
-        Purnea&apos;s markets are a sensory experience. <strong>Vikass Market</strong>, located directly opposite <Link href="/" className="text-gold hover:underline">Hotel Surya Bella Casa</Link>, is the city&apos;s largest commercial hub. You can spend an entire morning browsing through stalls selling fabrics, garments, electronics, and local handicrafts. The market is especially vibrant on weekends and during festival seasons. For a deeper dive into traditional Bihari goods, head to <Link href="/blog/shopping-in-purnia" className="text-gold hover:underline">Bhatta Bazar</Link>, Purnea&apos;s oldest commercial district known for its sweet shops and traditional clothing stores.
+        Purnea&apos;s markets are a sensory experience. <strong>Vikass Market</strong>, located directly opposite <Link href="/" className="text-gold hover:underline">Hotel Surya Bella Casa</Link>, is the city&apos;s largest commercial hub. You can spend an entire morning browsing through stalls selling fabrics, garments, electronics, and local handicrafts. The market is especially vibrant on weekends and during festival seasons. For a deeper dive into traditional Bihari goods, head to <Link href="/blog/shopping-in-Purnea" className="text-gold hover:underline">Bhatta Bazar</Link>, Purnea&apos;s oldest commercial district known for its sweet shops and traditional clothing stores.
       </p>
       <p>
-        Shopping in Purnea is not just about buying things — it&apos;s about experiencing the local culture. The shopkeepers are friendly, bargaining is expected, and you&apos;ll find unique items like Madhubani paintings, handwoven textiles, and local sweets that make perfect souvenirs. Check out our <Link href="/blog/shopping-in-purnia" className="text-gold hover:underline">complete shopping guide</Link> for more details on what to buy and where.
+        Shopping in Purnea is not just about buying things — it&apos;s about experiencing the local culture. The shopkeepers are friendly, bargaining is expected, and you&apos;ll find unique items like Madhubani paintings, handwoven textiles, and local sweets that make perfect souvenirs. Check out our <Link href="/blog/shopping-in-Purnea" className="text-gold hover:underline">complete shopping guide</Link> for more details on what to buy and where.
       </p>
 
       <h2 className="font-display text-2xl italic text-forest mt-10 mb-4">Food Trail: Must-Try Local Dishes</h2>
@@ -87,7 +87,7 @@ export default function BlogPost() {
         No list of things to do in Purnea is complete without a proper food trail. The city is a paradise for food lovers, especially those who enjoy authentic Bihari cuisine. Start with <strong>Litti Chokha</strong>, the iconic dish of Bihar made with roasted wheat balls stuffed with sattu and served with spiced mashed vegetables. You&apos;ll find the best versions at small roadside stalls near the bus stand area.
       </p>
       <p>
-        For those with a sweet tooth, <strong>Thekua</strong> and <strong>Mitha Khana</strong> are absolute must-tries. Thekua is a traditional sweet cookie made during Chhath Puja but available year-round at local sweet shops. Mitha Khana, a sweetened fox nut preparation, is a Purnia specialty you won&apos;t easily find elsewhere. After exploring the streets, head back to <Link href="/dining" className="text-gold hover:underline">Hotel Surya Bella Casa&apos;s rooftop restaurant</Link> for a multi-cuisine dinner with views of the city skyline. Our <Link href="/blog/local-food-guide-in-purnia" className="text-gold hover:underline">local food guide</Link> covers every must-try dish in detail.
+        For those with a sweet tooth, <strong>Thekua</strong> and <strong>Mitha Khana</strong> are absolute must-tries. Thekua is a traditional sweet cookie made during Chhath Puja but available year-round at local sweet shops. Mitha Khana, a sweetened fox nut preparation, is a Purnea specialty you won&apos;t easily find elsewhere. After exploring the streets, head back to <Link href="/dining" className="text-gold hover:underline">Hotel Surya Bella Casa&apos;s rooftop restaurant</Link> for a multi-cuisine dinner with views of the city skyline. Our <Link href="/blog/local-food-guide-in-Purnea" className="text-gold hover:underline">local food guide</Link> covers every must-try dish in detail.
       </p>
 
       <h2 className="font-display text-2xl italic text-forest mt-10 mb-4">Evening Activities & Cultural Experiences</h2>
@@ -115,7 +115,7 @@ export default function BlogPost() {
       </p>
 
       <p>
-        For more travel inspiration, explore our other guides: <Link href="/blog/purnia-travel-guide" className="text-gold hover:underline">Purnia Travel Guide</Link>, <Link href="/blog/best-hotels-in-purnea-near-bus-stand" className="text-gold hover:underline">Best Hotels Near Bus Stand</Link>, and <Link href="/blog/luxury-hotel-in-purnia" className="text-gold hover:underline">Luxury Hotels in Purnia</Link>. Each article is designed to help you make the most of your visit to this charming city in Bihar&apos;s Seemanchal region.
+        For more travel inspiration, explore our other guides: <Link href="/blog/Purnea-travel-guide" className="text-gold hover:underline">Purnea Travel Guide</Link>, <Link href="/blog/best-hotels-in-purnea-near-bus-stand" className="text-gold hover:underline">Best Hotels Near Bus Stand</Link>, and <Link href="/blog/luxury-hotel-in-Purnea" className="text-gold hover:underline">Luxury Hotels in Purnea</Link>. Each article is designed to help you make the most of your visit to this charming city in Bihar&apos;s Seemanchal region.
       </p>
     </BlogArticleLayout>
   )

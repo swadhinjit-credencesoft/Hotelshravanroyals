@@ -17,13 +17,13 @@ export const metadata: Metadata = {
     'birthday celebration venue bihar',
   ],
   alternates: {
-    canonical: 'https://hotelsuryabellacasa.com/blog/birthday-party-venue-in-purnia',
+    canonical: 'https://hotelsuryabellacasa.com/blog/birthday-party-venue-in-Purnea',
   },
   openGraph: {
   title: 'Birthday Party Venue in Purnea | Celebration Hall',
     description:
       'Celebrate your birthday at Hotel Surya Bella Casa. Banquet hall, rooftop dining, decoration packages, and group booking near Bus Stand.',
-    url: 'https://hotelsuryabellacasa.com/blog/birthday-party-venue-in-purnia',
+    url: 'https://hotelsuryabellacasa.com/blog/birthday-party-venue-in-Purnea',
     siteName: 'Hotel Surya Bella Casa',
     type: 'article',
     publishedTime: '2026-07-03T00:00:00.000Z',
@@ -81,16 +81,16 @@ export default function BlogPost() {
       heroAlt="Birthday celebration at Hotel Surya Bella Casa Purnea"
       relatedArticles={[
         {
-          title: 'Wedding Venue in Purnia',
-          link: '/blog/wedding-venue-in-purnia',
+          title: 'Wedding Venue in Purnea',
+          link: '/blog/wedding-venue-in-Purnea',
         },
         {
           title: 'Banquet Hall & Wedding Venue in Purnea',
           link: '/blog/banquet-hall-wedding-venue-in-purnea',
         },
         {
-          title: 'Corporate Event Venue in Purnia',
-          link: '/blog/corporate-event-venue-in-purnia',
+          title: 'Corporate Event Venue in Purnea',
+          link: '/blog/corporate-event-venue-in-Purnea',
         },
         {
           title: 'Rooftop Restaurant in Purnea',
@@ -114,7 +114,7 @@ export default function BlogPost() {
         <Link href="/" className="text-gold hover:underline">
           Hotel Surya Bella Casa
         </Link>{' '}
-        is the ideal destination. Situated opposite Vikass Market and just a short walk from Purnia
+        is the ideal destination. Situated opposite Vikass Market and just a short walk from Purnea
         Bus Stand, our hotel provides a convenient and memorable setting for birthday celebrations of
         all sizes.
       </p>
@@ -197,7 +197,7 @@ export default function BlogPost() {
         backdrops, photo booth setups, and ceiling drapes. We work with the best local decorators in
         Purnea and can incorporate fresh flowers, fairy lights, and themed props to match your vision.
         Many families celebrating{' '}
-        <Link href="/blog/wedding-venue-in-purnia" className="text-gold hover:underline">
+        <Link href="/blog/wedding-venue-in-Purnea" className="text-gold hover:underline">
           weddings at our venue
         </Link>{' '}
         also book us for birthday celebrations because they appreciate the consistent quality of our
@@ -301,7 +301,7 @@ export default function BlogPost() {
       <p>
         Location matters when choosing a party venue, and our hotel&apos;s position opposite Vikass
         Market makes it one of the most accessible birthday party venues in Purnea. Guests arriving
-        from different parts of the city or from neighboring towns can reach us quickly via Purnia
+        from different parts of the city or from neighboring towns can reach us quickly via Purnea
         Bus Stand or Purnea Junction railway station. The central location means your guests spend
         less time traveling and more time celebrating.
       </p>
@@ -343,12 +343,12 @@ export default function BlogPost() {
 
       <p className="mt-6">
         Beyond birthday parties, our venue is also the preferred choice for{' '}
-        <Link href="/blog/wedding-venue-in-purnia" className="text-gold hover:underline">
-          weddings in Purnia
+        <Link href="/blog/wedding-venue-in-Purnea" className="text-gold hover:underline">
+          weddings in Purnea
         </Link>{' '}
         and{' '}
-        <Link href="/blog/corporate-event-venue-in-purnia" className="text-gold hover:underline">
-          corporate events in Purnia
+        <Link href="/blog/corporate-event-venue-in-Purnea" className="text-gold hover:underline">
+          corporate events in Purnea
         </Link>
         . Our versatile spaces adapt to any occasion, and our experienced team brings the same
         dedication to every event. We are proud to be recognized as one of the{' '}

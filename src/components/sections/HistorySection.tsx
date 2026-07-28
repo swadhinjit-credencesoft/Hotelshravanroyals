@@ -39,7 +39,7 @@ export default function HistorySection() {
             >
                <Image
                 src='https://bookonelocal.in/cdn/IMG_3815.avif'
-                alt="Well-appointed budget stay in Purnia"
+                alt="Well-appointed budget stay in Purnea"
                 fill
                 sizes="256px"
                 className="object-cover"
@@ -71,10 +71,10 @@ export default function HistorySection() {
             
             <div className="space-y-6">
               <p className="font-serif text-xl text-taupe leading-relaxed italic">
-                &ldquo;We didn&apos;t just build a hotel; we created a home away from home in Purnia.&rdquo;
+                &ldquo;We didn&apos;t just build a hotel; we created a home away from home in Purnea.&rdquo;
               </p>
               <p className="font-sans text-base text-taupe/80 leading-loose">
-                Established in 2019 to cater to the growing needs of corporate guests and families visiting Seemanchal, Hotel Surya Bella Casa has quickly become the preferred choice for comfortable and affordable accommodation in Purnia, Bihar.
+                Established in 2019 to cater to the growing needs of corporate guests and families visiting Seemanchal, Hotel Surya Bella Casa has quickly become the preferred choice for comfortable and affordable accommodation in Purnea, Bihar.
               </p>
               <p className="font-sans text-base text-taupe/80 leading-loose">
                 Every corner of our hotel is designed to offer a peaceful stay with a focus on hygiene, modern facilities, and courteous service. Situated opposite Vikass Market and near the main Bus Stand, our strategic location provides business travelers and tourists with effortless connectivity to the entire city.
@@ -88,7 +88,7 @@ export default function HistorySection() {
                </div>
                <div>
                   <span className="font-serif text-3xl text-gold">Surya Bella Casa</span>
-                  <p className="font-sans text-[10px] uppercase tracking-widest text-taupe mt-2">Heart of Purnia</p>
+                  <p className="font-sans text-[10px] uppercase tracking-widest text-taupe mt-2">Heart of Purnea</p>
                </div>
             </div>
           </div>

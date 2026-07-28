@@ -28,7 +28,7 @@ export const metadata: Metadata = {
         url: 'https://bookonelocal.in/cdn/IMG_3739.avif',
         width: 1200,
         height: 630,
-        alt: 'Hotel Rooms at Hotel Surya Bella Casa Purnia',
+        alt: 'Hotel Rooms at Hotel Surya Bella Casa Purnea',
       },
     ],
   },

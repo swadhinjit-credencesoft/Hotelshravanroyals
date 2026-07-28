@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     'corporate stay purnea',
     'hotel with conference hall purnea',
     'high speed wifi hotel purnea',
-    'business travelers purnia',
+    'business travelers Purnea',
     'meeting room hotel purnea',
     'corporate hotel near bus stand purnea',
     'professional stay purnea',
@@ -47,7 +47,7 @@ export default function BlogPost() {
     '@context': 'https://schema.org',
     '@type': 'BlogPosting',
     headline: 'Business Hotel in Purnea - Corporate Stay Near Bus Stand',
-    description: 'Discover the best business hotel in Purnea near Bus Stand with high-speed WiFi, conference hall, and comfortable workspaces for corporate travelers and professionals visiting Purnia, Bihar.',
+    description: 'Discover the best business hotel in Purnea near Bus Stand with high-speed WiFi, conference hall, and comfortable workspaces for corporate travelers and professionals visiting Purnea, Bihar.',
     image: 'https://bookonelocal.in/cdn/IMG_3709.jpeg',
     datePublished: '2025-12-05',
     dateModified: '2026-07-23',
@@ -65,10 +65,10 @@ export default function BlogPost() {
       heroAlt="Business Hotel in Purnea - Corporate Stay Near Bus Stand"
       relatedArticles={[
         { title: 'Best Hotels in Purnea Near Bus Stand', link: '/blog/best-hotels-in-purnea-near-bus-stand' },
-        { title: 'Luxury Hotel in Purnia', link: '/blog/luxury-hotel-in-purnia' },
+        { title: 'Luxury Hotel in Purnea', link: '/blog/luxury-hotel-in-Purnea' },
         { title: 'Family Hotel in Purnea', link: '/blog/family-hotel-in-purnea' },
-        { title: 'Corporate Event Venue in Purnia', link: '/blog/corporate-event-venue-in-purnia' },
-        { title: 'Hotels Near Purnia Railway Station', link: '/blog/hotels-near-purnia-railway-station' },
+        { title: 'Corporate Event Venue in Purnea', link: '/blog/corporate-event-venue-in-Purnea' },
+        { title: 'Hotels Near Purnea Railway Station', link: '/blog/hotels-near-Purnea-railway-station' },
       ]}
       serviceLinks={[
         { label: 'Business Rooms', link: '/rooms' },
@@ -99,7 +99,7 @@ export default function BlogPost() {
 
       <h2 className="font-display text-2xl italic text-forest mt-10 mb-4">Prime Location for Business</h2>
       <p>
-        Our location at <strong>Suryalok Complex, opposite Vikass Market</strong>, puts you minutes away from Purnea&apos;s commercial hubs including Bhatta Bazar, Line Bazar, and the main banking district. The <Link href="/how-to-reach" className="text-gold hover:underline">convenient access</Link> to <Link href="/blog/hotels-near-purnia-railway-station" className="text-gold hover:underline">Purnea Junction Railway Station</Link> (6.1 km) and the Bus Stand makes travel seamless.
+        Our location at <strong>Suryalok Complex, opposite Vikass Market</strong>, puts you minutes away from Purnea&apos;s commercial hubs including Bhatta Bazar, Line Bazar, and the main banking district. The <Link href="/how-to-reach" className="text-gold hover:underline">convenient access</Link> to <Link href="/blog/hotels-near-Purnea-railway-station" className="text-gold hover:underline">Purnea Junction Railway Station</Link> (6.1 km) and the Bus Stand makes travel seamless.
       </p>
 
       <h2 className="font-display text-2xl italic text-forest mt-10 mb-4">Room Options for Professionals</h2>
@@ -114,7 +114,7 @@ export default function BlogPost() {
 
       <h2 className="font-display text-2xl italic text-forest mt-10 mb-4">Corporate Events & Conferences</h2>
       <p>
-        Planning a corporate event or conference? Our <Link href="/events/corporate" className="text-gold hover:underline">corporate event venue</Link> is equipped with modern AV systems and flexible seating. Read our guide to <Link href="/blog/corporate-event-venue-in-purnia" className="text-gold hover:underline">corporate event venues in Purnia</Link> for more details. We also host <Link href="/events/weddings" className="text-gold hover:underline">wedding receptions</Link> and <Link href="/blog/birthday-party-venue-in-purnia" className="text-gold hover:underline">birthday celebrations</Link>.
+        Planning a corporate event or conference? Our <Link href="/events/corporate" className="text-gold hover:underline">corporate event venue</Link> is equipped with modern AV systems and flexible seating. Read our guide to <Link href="/blog/corporate-event-venue-in-Purnea" className="text-gold hover:underline">corporate event venues in Purnea</Link> for more details. We also host <Link href="/events/weddings" className="text-gold hover:underline">wedding receptions</Link> and <Link href="/blog/birthday-party-venue-in-Purnea" className="text-gold hover:underline">birthday celebrations</Link>.
       </p>
 
       <h2 className="font-display text-2xl italic text-forest mt-10 mb-4">Book Your Corporate Stay Today</h2>

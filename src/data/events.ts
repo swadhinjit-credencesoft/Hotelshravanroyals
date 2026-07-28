@@ -14,7 +14,7 @@ export const estateEvents: EstateEvent[] = [
     id: 'e1',
     title: 'Family & Marriage Group Stays',
     category: 'Weddings',
-    description: 'Provide a comfortable and hassle-free stay for your wedding guests visiting Purnia.',
+    description: 'Provide a comfortable and hassle-free stay for your wedding guests visiting Purnea.',
     capacity: 'Up to 50 guests',
     image: 'https://bookonelocal.in/cdn/2026-04-09-070002480-1000080267.jpg',
     features: ['Convenient location near markets', 'Vegetarian food delivery options', 'Clean, well-maintained rooms'],

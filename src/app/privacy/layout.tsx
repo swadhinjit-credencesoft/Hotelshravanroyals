@@ -2,8 +2,8 @@ import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
   title: 'Privacy Policy',
-  description: 'Read the privacy policy of Hotel Surya Bella Casa, Purnia, Bihar — guidelines on data collection, storage, and reservation security.',
-  keywords: ['hotel privacy policy', 'purnia hotel privacy', 'hotel surya bella casa privacy', 'data policy purnia hotel', 'guest privacy purnia hotel', 'hotel data protection', 'purnia hotel personal information', 'hotel privacy terms purnia', 'cookie policy purnia hotel', 'purnia hotel booking privacy', 'hotel information security purnia', 'privacy policy bihar hotel'],
+  description: 'Read the privacy policy of Hotel Surya Bella Casa, Purnea, Bihar — guidelines on data collection, storage, and reservation security.',
+  keywords: ['hotel privacy policy', 'Purnea hotel privacy', 'hotel surya bella casa privacy', 'data policy Purnea hotel', 'guest privacy Purnea hotel', 'hotel data protection', 'Purnea hotel personal information', 'hotel privacy terms Purnea', 'cookie policy Purnea hotel', 'Purnea hotel booking privacy', 'hotel information security Purnea', 'privacy policy bihar hotel'],
   alternates: {
     canonical: 'https://hotelsuryabellacasa.com/privacy',
   },
@@ -18,8 +18,8 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: 'Privacy Policy | Hotel Surya Bella Casa Purnia',
-    description: 'Read the privacy policy of Hotel Surya Bella Casa, Purnia, Bihar.',
+    title: 'Privacy Policy | Hotel Surya Bella Casa Purnea',
+    description: 'Read the privacy policy of Hotel Surya Bella Casa, Purnea, Bihar.',
     url: 'https://hotelsuryabellacasa.com/privacy',
     siteName: 'Hotel Surya Bella Casa',
     type: 'website',
@@ -34,8 +34,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Privacy Policy | Hotel Surya Bella Casa Purnia',
-    description: 'Read the privacy policy of Hotel Surya Bella Casa, Purnia.',
+    title: 'Privacy Policy | Hotel Surya Bella Casa Purnea',
+    description: 'Read the privacy policy of Hotel Surya Bella Casa, Purnea.',
     images: ['https://bookonelocal.in/cdn/IMG_3815.avif'],
   },
 }

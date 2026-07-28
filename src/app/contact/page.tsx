@@ -10,9 +10,9 @@ export const metadata: Metadata = {
     'Contact Hotel Surya Bella Casa in Purnea. Call +91 9835923601, WhatsApp, or email us. We are opposite Vikass Market near Bus Stand. Book direct for best rates.',
   keywords: [
     'contact hotel surya bella casa purnea',
-    'hotel booking phone number purnia',
+    'hotel booking phone number Purnea',
     'hotel near bus stand purnea contact',
-    'hotel reservation purnia',
+    'hotel reservation Purnea',
     'whatsapp hotel purnea',
   ],
   alternates: {
@@ -68,7 +68,7 @@ export default function ContactPage() {
             "address": {
               "@type": "PostalAddress",
               "streetAddress": "Suryalok Complex, Opposite Vikass Market, Near Bus Stand",
-              "addressLocality": "Purnia",
+              "addressLocality": "Purnea",
               "addressRegion": "Bihar",
               "postalCode": "854301",
               "addressCountry": "IN"
@@ -161,7 +161,7 @@ export default function ContactPage() {
                     <h3 className="font-sans text-sm uppercase tracking-widest text-forest font-bold">From Patna</h3>
                   </div>
                   <div className="pl-11 space-y-3 font-serif text-base text-taupe leading-relaxed">
-                    <p>Take <strong>NH 31</strong> eastwards towards Purnia via Begusarai, Khagaria, and Katihar.</p>
+                    <p>Take <strong>NH 31</strong> eastwards towards Purnea via Begusarai, Khagaria, and Katihar.</p>
                     <p>The drive is approximately 230 km and takes about 5-6 hours. Hotel Surya Bella Casa is located at Suryalok Complex, opposite Vikass Market, near Bus Stand.</p>
                   </div>
                 </div>
@@ -174,7 +174,7 @@ export default function ContactPage() {
                     <h3 className="font-sans text-sm uppercase tracking-widest text-forest font-bold">From Siliguri</h3>
                   </div>
                   <div className="pl-11 space-y-3 font-serif text-base text-taupe leading-relaxed">
-                    <p>Take <strong>NH 27</strong> south to <strong>NH 31</strong>, then proceed west towards Purnia.</p>
+                    <p>Take <strong>NH 27</strong> south to <strong>NH 31</strong>, then proceed west towards Purnea.</p>
                     <p>The drive is approximately 200 km and takes about 4-5 hours. Hotel Surya Bella Casa is situated in the heart of the city near the main bus stand.</p>
                   </div>
                 </div>
@@ -187,7 +187,7 @@ export default function ContactPage() {
                     <h3 className="font-sans text-sm uppercase tracking-widest text-forest font-bold">By Railway</h3>
                   </div>
                   <div className="pl-11 space-y-3 font-serif text-base text-taupe leading-relaxed">
-                    <p>The nearest major railway station is <strong>Purnia Junction (PRNA)</strong>, well-connected to Patna, Kolkata, and New Jalpaiguri.</p>
+                    <p>The nearest major railway station is <strong>Purnea Junction (PRNA)</strong>, well-connected to Patna, Kolkata, and New Jalpaiguri.</p>
                     <p>From the station, Hotel Surya Bella Casa is approximately 1 km via Bus Stand Road. Auto-rickshaws and cycle-rickshaws are readily available.</p>
                   </div>
                 </div>

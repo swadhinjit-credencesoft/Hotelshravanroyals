@@ -7,7 +7,7 @@ import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
   title: 'Experiences & Local Attractions',
-  description: 'Explore Purnia attractions near Hotel Surya Bella Casa. Jalalgarh Fort, Puran Devi Temple, Kali Mandir, and local sightseeing guide for guests.',
+  description: 'Explore Purnea attractions near Hotel Surya Bella Casa. Jalalgarh Fort, Puran Devi Temple, Kali Mandir, and local sightseeing guide for guests.',
   alternates: {
     canonical: 'https://hotelsuryabellacasa.com/experiences',
   },
@@ -15,9 +15,9 @@ export const metadata: Metadata = {
     'things to do in purnea',
     'purnea experiences',
     'purnea tourist attractions',
-    'sightseeing purnia',
+    'sightseeing Purnea',
     'local experiences purnea',
-    'nearby places purnia hotel',
+    'nearby places Purnea hotel',
   ],
 }
 
@@ -50,8 +50,8 @@ export default function ExperiencesPage() {
 
       <CinematicHero 
         label="Beyond the Room"
-        title="Explore Purnia"
-        tagline="Discover the rich history, spiritual landmarks, and commercial hubs of Purnia, Bihar, during your comfortable stay with us."
+        title="Explore Purnea"
+        tagline="Discover the rich history, spiritual landmarks, and commercial hubs of Purnea, Bihar, during your comfortable stay with us."
         image='https://bookonelocal.in/cdn/IMG_3739.avif'
       />
 
@@ -63,7 +63,7 @@ export default function ExperiencesPage() {
                   Central Stays & <br /> Easy Sightseeing
                </h2>
                 <p className="font-sans text-lg leading-relaxed mb-8">
-                  Hotel Surya Bella Casa stands centrally in Suryalok Complex. Enjoy effortless access to Purnia Bus Stand and regional transport, making it simple to plan visits to the historic Jalalgarh Fort or sacred temples like Puran Devi and Kali Mandir.
+                  Hotel Surya Bella Casa stands centrally in Suryalok Complex. Enjoy effortless access to Purnea Bus Stand and regional transport, making it simple to plan visits to the historic Jalalgarh Fort or sacred temples like Puran Devi and Kali Mandir.
                 </p>
                <a href="/gallery" className="inline-block bg-gold text-[#1a1004] font-sans text-[11px] uppercase tracking-[0.2em] px-12 py-5 hover:bg-gold-light transition-all">
                   View Gallery
@@ -95,7 +95,7 @@ export default function ExperiencesPage() {
                   "@type": "TouristAttraction",
                   "name": "Jalalgarh Fort",
                   "description": "Historic 300-year-old fort displaying a unique blend of Hindu and Islamic architecture.",
-                  "location": { "@type": "Place", "name": "Jalalgarh, Purnia, Bihar" }
+                  "location": { "@type": "Place", "name": "Jalalgarh, Purnea, Bihar" }
                 }
               },
               {
@@ -104,8 +104,8 @@ export default function ExperiencesPage() {
                 "item": {
                   "@type": "TouristAttraction",
                   "name": "Puran Devi Temple",
-                  "description": "Ancient temple dedicated to Goddess Puran Devi, the namesake of Purnia.",
-                  "location": { "@type": "Place", "name": "Purnia, Bihar" }
+                  "description": "Ancient temple dedicated to Goddess Puran Devi, the namesake of Purnea.",
+                  "location": { "@type": "Place", "name": "Purnea, Bihar" }
                 }
               },
               {
@@ -114,8 +114,8 @@ export default function ExperiencesPage() {
                 "item": {
                   "@type": "TouristAttraction",
                   "name": "Kali Mandir Temple",
-                  "description": "Revered historic temple in Purnia dedicated to Goddess Kali.",
-                  "location": { "@type": "Place", "name": "Purnia, Bihar" }
+                  "description": "Revered historic temple in Purnea dedicated to Goddess Kali.",
+                  "location": { "@type": "Place", "name": "Purnea, Bihar" }
                 }
               }
             ]
@@ -128,7 +128,7 @@ export default function ExperiencesPage() {
       {/* Nearby Attractions */}
       <section className="py-32 bg-cream">
          <div className="max-w-[1600px] mx-auto px-6 md:px-10 text-center">
-            <SectionLabel className="justify-center mb-6">Explore Purnia</SectionLabel>
+            <SectionLabel className="justify-center mb-6">Explore Purnea</SectionLabel>
             <h2 className="font-display text-4xl md:text-6xl italic text-forest mb-16">Nearby Attractions</h2>
             
             <div className="grid grid-cols-1 md:grid-cols-3 gap-12 text-left">
@@ -150,7 +150,7 @@ export default function ExperiencesPage() {
                      <MapPin className="text-gold" size={24} />
                   </div>
                   <h3 className="font-display text-3xl italic text-forest mb-4">Puran Devi Temple</h3>
-                  <p className="font-serif text-taupe leading-relaxed mb-6 text-lg">One of the oldest and most important spiritual landmarks in Purnia, believed to be the origin of the city&apos;s name.</p>
+                  <p className="font-serif text-taupe leading-relaxed mb-6 text-lg">One of the oldest and most important spiritual landmarks in Purnea, believed to be the origin of the city&apos;s name.</p>
                   <div className="flex items-center gap-2 pt-6 border-t border-gold/10">
                     <span className="font-sans text-[10px] uppercase tracking-widest text-gold font-bold">10 mins drive</span>
                     <span className="w-1 h-1 rounded-full bg-gold/30" />
@@ -163,7 +163,7 @@ export default function ExperiencesPage() {
                      <MapPin className="text-gold" size={24} />
                   </div>
                   <h3 className="font-display text-3xl italic text-forest mb-4">Kali Mandir Temple</h3>
-                  <p className="font-serif text-taupe leading-relaxed mb-6 text-lg">A highly revered temple in Purnia town dedicated to Goddess Kali, offering a peaceful atmosphere for visitors.</p>
+                  <p className="font-serif text-taupe leading-relaxed mb-6 text-lg">A highly revered temple in Purnea town dedicated to Goddess Kali, offering a peaceful atmosphere for visitors.</p>
                   <div className="flex items-center gap-2 pt-6 border-t border-gold/10">
                     <span className="font-sans text-[10px] uppercase tracking-widest text-gold font-bold">5 mins drive</span>
                     <span className="w-1 h-1 rounded-full bg-gold/30" />

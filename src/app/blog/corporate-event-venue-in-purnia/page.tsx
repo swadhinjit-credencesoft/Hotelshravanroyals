@@ -17,13 +17,13 @@ export const metadata: Metadata = {
     'seminar hall purnea',
   ],
   alternates: {
-    canonical: 'https://hotelsuryabellacasa.com/blog/corporate-event-venue-in-purnia',
+    canonical: 'https://hotelsuryabellacasa.com/blog/corporate-event-venue-in-Purnea',
   },
   openGraph: {
     title: 'Corporate Event Venue in Purnea | Conference & Meeting Hall',
     description:
       'Host your next corporate event at Hotel Surya Bella Casa in Purnea. Conference hall, AV equipment, catering, and team outing packages.',
-    url: 'https://hotelsuryabellacasa.com/blog/corporate-event-venue-in-purnia',
+    url: 'https://hotelsuryabellacasa.com/blog/corporate-event-venue-in-Purnea',
     siteName: 'Hotel Surya Bella Casa',
     type: 'article',
     publishedTime: '2026-07-01T00:00:00.000Z',
@@ -89,12 +89,12 @@ export default function BlogPost() {
           link: '/blog/banquet-hall-wedding-venue-in-purnea',
         },
         {
-          title: 'Wedding Venue in Purnia',
-          link: '/blog/wedding-venue-in-purnia',
+          title: 'Wedding Venue in Purnea',
+          link: '/blog/wedding-venue-in-Purnea',
         },
         {
-          title: 'Luxury Hotel in Purnia',
-          link: '/blog/luxury-hotel-in-purnia',
+          title: 'Luxury Hotel in Purnea',
+          link: '/blog/luxury-hotel-in-Purnea',
         },
       ]}
       serviceLinks={[
@@ -114,7 +114,7 @@ export default function BlogPost() {
         <Link href="/" className="text-gold hover:underline">
           Hotel Surya Bella Casa
         </Link>{' '}
-        is the ideal choice. Located opposite Vikass Market and near Purnia Bus Stand, our hotel
+        is the ideal choice. Located opposite Vikass Market and near Purnea Bus Stand, our hotel
         provides accessible and well-equipped spaces for all types of business events.
       </p>
 
@@ -200,7 +200,7 @@ export default function BlogPost() {
         vegetarian, vegan, Jain, and gluten-free options are always accommodated. Our catering
         team coordinates closely with your event schedule so that meals are served during designated
         breaks without delays. Companies hosting their{' '}
-        <Link href="/blog/corporate-event-venue-in-purnia" className="text-gold hover:underline">
+        <Link href="/blog/corporate-event-venue-in-Purnea" className="text-gold hover:underline">
           regular corporate events
         </Link>{' '}
         at our venue appreciate the consistency and quality of our food service.
@@ -304,7 +304,7 @@ export default function BlogPost() {
 
       <p>
         Hotel Surya Bella Casa is strategically located for maximum accessibility. Situated opposite
-        Vikass Market, the hotel is within walking distance of Purnia Bus Stand. Professionals
+        Vikass Market, the hotel is within walking distance of Purnea Bus Stand. Professionals
         arriving by train can reach us easily from Purnea Junction. For organizations hosting
         attendees from across the region, our central location ensures that everyone can arrive
         without difficulty.
@@ -354,17 +354,17 @@ export default function BlogPost() {
       <p className="mt-6">
         Our versatile venue is not limited to corporate events. We are equally recognized as a
         leading{' '}
-        <Link href="/blog/wedding-venue-in-purnia" className="text-gold hover:underline">
-          wedding venue in Purnia
+        <Link href="/blog/wedding-venue-in-Purnea" className="text-gold hover:underline">
+          wedding venue in Purnea
         </Link>{' '}
         and a popular{' '}
-        <Link href="/blog/birthday-party-venue-in-purnia" className="text-gold hover:underline">
-          birthday party venue in Purnia
+        <Link href="/blog/birthday-party-venue-in-Purnea" className="text-gold hover:underline">
+          birthday party venue in Purnea
         </Link>
         . Whatever the occasion, Hotel Surya Bella Casa delivers an experience that exceeds
         expectations. Our hotel is consistently rated among the{' '}
-        <Link href="/blog/luxury-hotel-in-purnia" className="text-gold hover:underline">
-          luxury hotels in Purnia
+        <Link href="/blog/luxury-hotel-in-Purnea" className="text-gold hover:underline">
+          luxury hotels in Purnea
         </Link>
         , ensuring your guests and colleagues are treated to premium hospitality.
       </p>

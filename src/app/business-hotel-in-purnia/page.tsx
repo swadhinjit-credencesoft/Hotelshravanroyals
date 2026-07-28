@@ -10,23 +10,23 @@ const businessAmenities: AmenityItem[] = [
   { icon: 'Wifi', title: 'Enterprise-Grade Wi-Fi', description: 'High-bandwidth fiber connection with backup link for uninterrupted video conferences and large file transfers.' },
   { icon: 'Printer', title: 'Business Support Services', description: 'Print, scan, and fax assistance available at the front desk for last-minute documentation needs.' },
   { icon: 'Shield', title: 'Express Check-In/Out', description: 'Pre-arranged billing and documentation for corporate travelers. Zero-wait departure process.' },
-  { icon: 'Clock', title: 'Early Arrival Assistance', description: 'Early check-in and luggage hold service for morning train and bus arrivals to Purnia.' },
+  { icon: 'Clock', title: 'Early Arrival Assistance', description: 'Early check-in and luggage hold service for morning train and bus arrivals to Purnea.' },
   { icon: 'Calendar', title: 'Corporate Billing', description: 'Simplified invoicing with GST compliance for corporate travel and reimbursements.' },
 ];
 
 export const metadata = {
-  title: 'Business Hotel in Purnia',
-  description: 'Searching for a business hotel in Purnia? Hotel Surya Bella Casa offers high-speed Wi-Fi, work desk, and conference facilities near Bus Stand.',
+  title: 'Business Hotel in Purnea',
+  description: 'Searching for a business hotel in Purnea? Hotel Surya Bella Casa offers high-speed Wi-Fi, work desk, and conference facilities near Bus Stand.',
   keywords: [
-    'business hotel in purnia', 'corporate hotel purnea', 'business hotel in purnea bihar',
-    'hotel for executives purnia', 'corporate stay near bus stand purnea',
-    'hotel with work desk purnia', 'hotel with high speed wifi purnia',
-    'conference hotel purnia', 'GST invoice hotel purnia',
-    'best business hotel near vikass market purnia', 'corporate accommodation purnia',
-    'hotel for business travelers purnia', 'express check in hotel purnia',
+    'business hotel in Purnea', 'corporate hotel purnea', 'business hotel in purnea bihar',
+    'hotel for executives Purnea', 'corporate stay near bus stand purnea',
+    'hotel with work desk Purnea', 'hotel with high speed wifi Purnea',
+    'conference hotel Purnea', 'GST invoice hotel Purnea',
+    'best business hotel near vikass market Purnea', 'corporate accommodation Purnea',
+    'hotel for business travelers Purnea', 'express check in hotel Purnea',
   ],
   alternates: {
-    canonical: 'https://hotelsuryabellacasa.com/business-hotel-in-purnia',
+    canonical: 'https://hotelsuryabellacasa.com/business-hotel-in-Purnea',
   },
   robots: {
     index: true,
@@ -34,17 +34,17 @@ export const metadata = {
     googleBot: { index: true, follow: true, 'max-image-preview': 'large', 'max-snippet': -1 },
   },
   openGraph: {
-    title: 'Business Hotel in Purnia | Near Bus Stand Purnea',
+    title: 'Business Hotel in Purnea | Near Bus Stand Purnea',
     description: 'Best business hotel near Purnea Bus Stand. High-speed WiFi, work desk, conference hall, free parking. Perfect for corporate travelers and executives.',
-    url: 'https://hotelsuryabellacasa.com/business-hotel-in-purnia',
+    url: 'https://hotelsuryabellacasa.com/business-hotel-in-Purnea',
     siteName: 'Hotel Surya Bella Casa',
     type: 'website',
-    images: [{ url: 'https://bookonelocal.in/cdn/IMG_3815.avif', width: 1200, height: 630, alt: 'Business Hotel in Purnia - Corporate Stay Near Bus Stand - Hotel Surya Bella Casa' }],
+    images: [{ url: 'https://bookonelocal.in/cdn/IMG_3815.avif', width: 1200, height: 630, alt: 'Business Hotel in Purnea - Corporate Stay Near Bus Stand - Hotel Surya Bella Casa' }],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Business Hotel in Purnia | Corporate Stay Near Bus Stand',
-    description: 'Best business hotel in Purnia near Bus Stand with high-speed WiFi, conference hall, and free parking for corporate travelers.',
+    title: 'Business Hotel in Purnea | Corporate Stay Near Bus Stand',
+    description: 'Best business hotel in Purnea near Bus Stand with high-speed WiFi, conference hall, and free parking for corporate travelers.',
     images: ['https://bookonelocal.in/cdn/IMG_3815.avif'],
   },
 };
@@ -62,7 +62,7 @@ export default function BusinessHotelLandingPage() {
             "@type": "BreadcrumbList",
             "itemListElement": [
               { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://hotelsuryabellacasa.com" },
-              { "@type": "ListItem", "position": 2, "name": "Business Hotel in Purnia", "item": "https://hotelsuryabellacasa.com/business-hotel-in-purnia" }
+              { "@type": "ListItem", "position": 2, "name": "Business Hotel in Purnea", "item": "https://hotelsuryabellacasa.com/business-hotel-in-Purnea" }
             ]
           })
         }}
@@ -70,8 +70,8 @@ export default function BusinessHotelLandingPage() {
 
       <CinematicHero 
         label="Best Business Hotel Near Bus Stand Purnea"
-        title="Business Hotel in Purnia - Corporate Stay with WiFi & Conference Hall"
-        tagline="Looking for a business hotel in Purnia? Hotel Surya Bella Casa offers high-speed WiFi, dedicated work desks, conference hall, and free parking near Bus Stand Purnea. Perfect for corporate travelers."
+        title="Business Hotel in Purnea - Corporate Stay with WiFi & Conference Hall"
+        tagline="Looking for a business hotel in Purnea? Hotel Surya Bella Casa offers high-speed WiFi, dedicated work desks, conference hall, and free parking near Bus Stand Purnea. Perfect for corporate travelers."
         image='https://bookonelocal.in/cdn/IMG_3709.jpeg'
       />
 
@@ -86,10 +86,10 @@ export default function BusinessHotelLandingPage() {
             
             <div className="font-sans text-base text-taupe/80 space-y-6 leading-loose">
               <p>
-                A successful business trip requires a quiet environment, reliable amenities, and robust connectivity. <strong>Hotel Surya Bella Casa</strong> is specifically optimized to meet the high standards of Purnia&apos;s executive travelers.
+                A successful business trip requires a quiet environment, reliable amenities, and robust connectivity. <strong>Hotel Surya Bella Casa</strong> is specifically optimized to meet the high standards of Purnea&apos;s executive travelers.
               </p>
               <p>
-                Situated opposite <Link href="/hotel-near-vikass-market" className="text-gold hover:underline">Vikass Market</Link> in central Suryalok Complex, we put you minutes away from the administrative, commercial, and banking hubs of Bhatta Bazar and Purnia town. For extended corporate stays, explore our <Link href="/offers" className="text-gold hover:underline">corporate packages</Link> and <Link href="/rooms" className="text-gold hover:underline">premium room options</Link>.
+                Situated opposite <Link href="/hotel-near-vikass-market" className="text-gold hover:underline">Vikass Market</Link> in central Suryalok Complex, we put you minutes away from the administrative, commercial, and banking hubs of Bhatta Bazar and Purnea town. For extended corporate stays, explore our <Link href="/offers" className="text-gold hover:underline">corporate packages</Link> and <Link href="/rooms" className="text-gold hover:underline">premium room options</Link>.
               </p>
               <p>
                 With continuous power backup, dedicated working desks in our premium rooms, high-speed complimentary Wi-Fi, and quick checkout, we cater to all your corporate workflow requirements.
@@ -148,10 +148,10 @@ export default function BusinessHotelLandingPage() {
         <h2 className="font-display text-3xl md:text-4xl italic text-forest mb-8">More Travel Resources</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {[
-            { href: '/hotel-near-purnia-bus-stand', label: 'Hotel Near Bus Stand' },
+            { href: '/hotel-near-Purnea-bus-stand', label: 'Hotel Near Bus Stand' },
             { href: '/hotel-near-vikass-market', label: 'Hotel Near Vikass Market' },
-            { href: '/family-hotel-in-purnia', label: 'Family Hotel in Purnia' },
-            { href: '/budget-hotel-in-purnia', label: 'Budget Hotel in Purnia' },
+            { href: '/family-hotel-in-Purnea', label: 'Family Hotel in Purnea' },
+            { href: '/budget-hotel-in-Purnea', label: 'Budget Hotel in Purnea' },
           ].map((item) => (
             <Link
               key={item.href}

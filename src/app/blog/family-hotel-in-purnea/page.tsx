@@ -12,7 +12,7 @@ export const metadata: Metadata = {
     'family stay near purnea bus stand',
     'spacious family rooms purnea',
     'hotel with elevator purnea',
-    'family friendly hotel purnia',
+    'family friendly hotel Purnea',
     'couple friendly hotel purnea',
     'senior citizen friendly hotel purnea',
   ],
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: 'Family Hotel in Purnea | Safe Stay Near Bus Stand',
-    description: 'Best family hotel near Purnea Bus Stand with spacious rooms, elevator access, CCTV security, and pure vegetarian environment. Safe stay for families visiting Purnia.',
+    description: 'Best family hotel near Purnea Bus Stand with spacious rooms, elevator access, CCTV security, and pure vegetarian environment. Safe stay for families visiting Purnea.',
     url: 'https://hotelsuryabellacasa.com/blog/family-hotel-in-purnea',
     siteName: 'Hotel Surya Bella Casa',
     type: 'article',
@@ -65,9 +65,9 @@ export default function BlogPost() {
       heroAlt="Family-friendly room at Hotel Surya Bella Casa Purnea"
       relatedArticles={[
         { title: 'Best Hotels in Purnea Near Bus Stand', link: '/blog/best-hotels-in-purnea-near-bus-stand' },
-        { title: 'Luxury Hotel in Purnia', link: '/blog/luxury-hotel-in-purnia' },
+        { title: 'Luxury Hotel in Purnea', link: '/blog/luxury-hotel-in-Purnea' },
         { title: 'Business Hotel in Purnea', link: '/blog/business-hotel-in-purnea' },
-        { title: 'Family Restaurant in Purnia', link: '/blog/family-restaurant-in-purnia' },
+        { title: 'Family Restaurant in Purnea', link: '/blog/family-restaurant-in-Purnea' },
         { title: 'Places to Visit in Purnea', link: '/blog/places-to-visit-in-purnea' },
       ]}
       serviceLinks={[
@@ -118,15 +118,15 @@ export default function BlogPost() {
         Our <Link href="/dining" className="text-gold hover:underline">rooftop restaurant</Link> serves a variety of cuisines including Indian, Tandoor, Mughlai,
         Asian, and Continental. We also coordinate with local restaurants via Swiggy and Zomato
         for doorstep delivery, giving families plenty of dining options. Check our guide to
-        <Link href="/blog/family-restaurant-in-purnia" className="text-gold hover:underline"> family restaurants in Purnia</Link> for more recommendations.
+        <Link href="/blog/family-restaurant-in-Purnea" className="text-gold hover:underline"> family restaurants in Purnea</Link> for more recommendations.
       </p>
 
       <h2 className="font-display text-2xl italic text-forest mt-10 mb-4">Plan Your Family Trip to Purnea</h2>
       <p>
         Our <Link href="/blog/best-hotels-in-purnea-near-bus-stand" className="text-gold hover:underline">best hotels near bus stand</Link> guide helps you choose the perfect accommodation.
-        For a complete trip plan, read our <Link href="/blog/purnia-travel-guide" className="text-gold hover:underline">Purnia travel guide</Link>.
+        For a complete trip plan, read our <Link href="/blog/Purnea-travel-guide" className="text-gold hover:underline">Purnea travel guide</Link>.
         Families can also enjoy our <Link href="/blog/rooftop-restaurant-in-purnea" className="text-gold hover:underline">rooftop restaurant</Link> and explore
-        <Link href="/blog/shopping-in-purnia" className="text-gold hover:underline"> shopping in Purnia</Link>. If you are interested in events, we host
+        <Link href="/blog/shopping-in-Purnea" className="text-gold hover:underline"> shopping in Purnea</Link>. If you are interested in events, we host
         <Link href="/events/weddings" className="text-gold hover:underline"> family weddings</Link> and celebrations.
       </p>
 

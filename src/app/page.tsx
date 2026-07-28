@@ -24,9 +24,9 @@ export const metadata: Metadata = {
     'hotel in purnea',
     'best hotel in purnea near bus stand',
     'hotel surya bella casa',
-    'luxury hotel purnia',
+    'luxury hotel Purnea',
     'family hotel purnea',
-    'business hotel purnia',
+    'business hotel Purnea',
     'book hotel purnea',
     'best hotel bihar',
   ],
@@ -47,10 +47,10 @@ export default function Home() {
             "mainEntity": [
               {
                 "@type": "Question",
-                "name": "Where is Hotel Surya Bella Casa located in Purnia?",
+                "name": "Where is Hotel Surya Bella Casa located in Purnea?",
                 "acceptedAnswer": {
                   "@type": "Answer",
-                  "text": "Hotel Surya Bella Casa is located at Suryalok Complex, Opposite Vikass Market, Near the main Bus Stand, Purnia, Bihar 854301, India."
+                  "text": "Hotel Surya Bella Casa is located at Suryalok Complex, Opposite Vikass Market, Near the main Bus Stand, Purnea, Bihar 854301, India."
                 }
               },
               {

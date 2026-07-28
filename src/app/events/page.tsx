@@ -5,9 +5,9 @@ export const metadata: Metadata = {
   title: 'Banquet Hall & Wedding Venue in Purnea',
   description: 'Best banquet hall in Purnea near Bus Stand. Hotel Surya Bella Casa hosts weddings, corporate events, parties & day trips near Vikass Market. Book venue directly.',
   keywords: [
-    'banquet hall purnea', 'wedding venue purnia', 'party hall purnea',
+    'banquet hall purnea', 'wedding venue Purnea', 'party hall purnea',
     'conference hall purnea', 'event venue near bus stand purnea',
-    'marriage hall purnia', 'corporate event purnea', 'birthday party hall purnia',
+    'marriage hall Purnea', 'corporate event purnea', 'birthday party hall Purnea',
   ],
   alternates: {
     canonical: 'https://hotelsuryabellacasa.com/events',
@@ -46,7 +46,7 @@ export default function EventsPage() {
               "address": {
                 "@type": "PostalAddress",
                 "streetAddress": "Suryalok Complex, Opposite Vikass Market, Near Bus Stand",
-                "addressLocality": "Purnia",
+                "addressLocality": "Purnea",
                 "addressRegion": "Bihar",
                 "postalCode": "854301",
                 "addressCountry": "IN"

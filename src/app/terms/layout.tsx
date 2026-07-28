@@ -2,8 +2,8 @@ import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
   title: 'Terms & Conditions',
-  description: 'Read the terms and conditions of Hotel Surya Bella Casa, Purnia, Bihar. Understand our booking, check-in/check-out, and guest conduct policies.',
-  keywords: ['hotel terms and conditions', 'purnia hotel policies', 'hotel surya bella casa terms', 'booking policy purnia', 'purnia hotel check in time', 'purnia hotel check out time', 'hotel guest conduct purnia', 'purnia hotel tariff terms', 'purnia hotel age policy', 'hotel id proof purnia', 'purnia hotel foreign guest policy', 'purnia hotel pet policy', 'hotel smoking policy purnia', 'purnia hotel group booking terms'],
+  description: 'Read the terms and conditions of Hotel Surya Bella Casa, Purnea, Bihar. Understand our booking, check-in/check-out, and guest conduct policies.',
+  keywords: ['hotel terms and conditions', 'Purnea hotel policies', 'hotel surya bella casa terms', 'booking policy Purnea', 'Purnea hotel check in time', 'Purnea hotel check out time', 'hotel guest conduct Purnea', 'Purnea hotel tariff terms', 'Purnea hotel age policy', 'hotel id proof Purnea', 'Purnea hotel foreign guest policy', 'Purnea hotel pet policy', 'hotel smoking policy Purnea', 'Purnea hotel group booking terms'],
   alternates: {
     canonical: 'https://hotelsuryabellacasa.com/terms',
   },
@@ -18,8 +18,8 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: 'Terms & Conditions | Hotel Surya Bella Casa Purnia',
-    description: 'Read the terms and conditions of Hotel Surya Bella Casa, Purnia, Bihar.',
+    title: 'Terms & Conditions | Hotel Surya Bella Casa Purnea',
+    description: 'Read the terms and conditions of Hotel Surya Bella Casa, Purnea, Bihar.',
     url: 'https://hotelsuryabellacasa.com/terms',
     siteName: 'Hotel Surya Bella Casa',
     type: 'website',
@@ -34,8 +34,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Terms & Conditions | Hotel Surya Bella Casa Purnia',
-    description: 'Read the terms and conditions of Hotel Surya Bella Casa, Purnia.',
+    title: 'Terms & Conditions | Hotel Surya Bella Casa Purnea',
+    description: 'Read the terms and conditions of Hotel Surya Bella Casa, Purnea.',
     images: ['https://bookonelocal.in/cdn/IMG_3815.avif'],
   },
 }

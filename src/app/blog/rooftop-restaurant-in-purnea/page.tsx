@@ -119,11 +119,11 @@ export default function BlogPost() {
         heroImage="https://bookonelocal.in/cdn/IMG_3739.avif"
         heroAlt="Best rooftop restaurant in Purnea - Bella Casa Restaurant"
         relatedArticles={[
-          { title: 'Best Restaurant in Purnia', link: '/blog/best-restaurant-in-purnia' },
-          { title: 'Fine Dining Restaurant in Purnia', link: '/blog/fine-dining-restaurant-in-purnia' },
-          { title: 'Best Dinner Place in Purnia', link: '/blog/best-dinner-place-in-purnia' },
-          { title: 'Family Restaurant in Purnia', link: '/blog/family-restaurant-in-purnia' },
-          { title: 'Luxury Hotel in Purnia', link: '/blog/luxury-hotel-in-purnia' },
+          { title: 'Best Restaurant in Purnea', link: '/blog/best-restaurant-in-Purnea' },
+          { title: 'Fine Dining Restaurant in Purnea', link: '/blog/fine-dining-restaurant-in-Purnea' },
+          { title: 'Best Dinner Place in Purnea', link: '/blog/best-dinner-place-in-Purnea' },
+          { title: 'Family Restaurant in Purnea', link: '/blog/family-restaurant-in-Purnea' },
+          { title: 'Luxury Hotel in Purnea', link: '/blog/luxury-hotel-in-Purnea' },
         ]}
         serviceLinks={[
           { label: 'Restaurant', link: '/dining' },
@@ -149,7 +149,7 @@ export default function BlogPost() {
           One of the highlights of <strong>Bella Casa Restaurant</strong> is its stunning <Link href="/blog/rooftop-restaurant-in-purnea" className="text-gold hover:underline">open-air rooftop dining area</Link>. Situated on the top floor of Hotel Surya Bella Casa, the rooftop offers a refreshing escape from the busy streets of Purnea. Imagine enjoying your favorite meal under a vast open sky, with gentle breezes and soft ambient lighting setting the perfect mood.
         </p>
         <p>
-          The rooftop is designed to offer both <strong>open-air and indoor seating</strong>, so you can choose between dining under the stars or enjoying the comfort of a covered space. The ambiance is elegant yet relaxed, making it ideal for romantic dinners, <Link href="/blog/family-restaurant-in-purnia" className="text-gold hover:underline">family outings</Link>, and group gatherings. As the evening unfolds, the rooftop comes alive with warm lighting and a lively atmosphere that makes every meal feel special.
+          The rooftop is designed to offer both <strong>open-air and indoor seating</strong>, so you can choose between dining under the stars or enjoying the comfort of a covered space. The ambiance is elegant yet relaxed, making it ideal for romantic dinners, <Link href="/blog/family-restaurant-in-Purnea" className="text-gold hover:underline">family outings</Link>, and group gatherings. As the evening unfolds, the rooftop comes alive with warm lighting and a lively atmosphere that makes every meal feel special.
         </p>
         <p>
           The rooftop also features an <strong>Open Sky Stage</strong> for live music and special events, creating a vibrant dining experience that goes beyond just food. Whether it is a weekend outing or a festive celebration, the rooftop at Bella Casa Restaurant adds a touch of magic to every occasion.
@@ -225,7 +225,7 @@ export default function BlogPost() {
           The <Link href="/blog/rooftop-restaurant-in-purnea" className="text-gold hover:underline">rooftop dining experience</Link> at Bella Casa Restaurant is designed to offer more than just a meal — it is an experience. The open-air seating, combined with elegant decor and soft lighting, creates an ambiance that is both relaxing and exciting. Whether you are enjoying a quiet dinner for two or celebrating with a large group, the rooftop setting makes every occasion feel special.
         </p>
         <p>
-          During evenings, the rooftop transforms into a charming space with city views and a gentle breeze. Many guests choose the rooftop for <Link href="/blog/best-dinner-place-in-purnia" className="text-gold hover:underline">romantic dinners</Link>, <Link href="/blog/family-restaurant-in-purnia" className="text-gold hover:underline">family celebrations</Link>, and group outings because of the unique atmosphere it provides. The <strong>Open Sky Stage</strong> adds an extra layer of entertainment, hosting live music events and special performances that make your dining experience truly memorable.
+          During evenings, the rooftop transforms into a charming space with city views and a gentle breeze. Many guests choose the rooftop for <Link href="/blog/best-dinner-place-in-Purnea" className="text-gold hover:underline">romantic dinners</Link>, <Link href="/blog/family-restaurant-in-Purnea" className="text-gold hover:underline">family celebrations</Link>, and group outings because of the unique atmosphere it provides. The <strong>Open Sky Stage</strong> adds an extra layer of entertainment, hosting live music events and special performances that make your dining experience truly memorable.
         </p>
         <p>
           For those who prefer a more intimate setting, our <strong>indoor dining area</strong> offers a comfortable alternative with the same excellent menu and service. Whether you choose the rooftop or the indoor space, Bella Casa Restaurant ensures a delightful dining experience every time.
@@ -328,10 +328,10 @@ export default function BlogPost() {
 
         <h2 className="font-display text-2xl italic text-forest mt-10 mb-4">Final Thoughts</h2>
         <p>
-          If you are looking for the <strong>best rooftop restaurant in Purnea</strong>, <strong>Bella Casa Restaurant</strong> at Hotel Surya Bella Casa is the place to be. With its stunning open-air ambiance, multi-cuisine menu, and warm hospitality, it offers a dining experience that is truly one of a kind. Whether you are <Link href="/blog/purnia-travel-guide" className="text-gold hover:underline">visiting Purnea as a tourist</Link> or you are a local looking for a great place to eat, Bella Casa Restaurant promises an unforgettable experience.
+          If you are looking for the <strong>best rooftop restaurant in Purnea</strong>, <strong>Bella Casa Restaurant</strong> at Hotel Surya Bella Casa is the place to be. With its stunning open-air ambiance, multi-cuisine menu, and warm hospitality, it offers a dining experience that is truly one of a kind. Whether you are <Link href="/blog/Purnea-travel-guide" className="text-gold hover:underline">visiting Purnea as a tourist</Link> or you are a local looking for a great place to eat, Bella Casa Restaurant promises an unforgettable experience.
         </p>
         <p>
-          From <Link href="/blog/best-restaurant-in-purnia" className="text-gold hover:underline">authentic North Indian flavors</Link> to <Link href="/blog/fine-dining-restaurant-in-purnia" className="text-gold hover:underline">elegant fine dining</Link>, every visit to Bella Casa Restaurant is a celebration of food and ambiance. So the next time you are in Purnea, make sure to visit Bella Casa Restaurant and treat yourself to a meal you will remember.
+          From <Link href="/blog/best-restaurant-in-Purnea" className="text-gold hover:underline">authentic North Indian flavors</Link> to <Link href="/blog/fine-dining-restaurant-in-Purnea" className="text-gold hover:underline">elegant fine dining</Link>, every visit to Bella Casa Restaurant is a celebration of food and ambiance. So the next time you are in Purnea, make sure to visit Bella Casa Restaurant and treat yourself to a meal you will remember.
         </p>
       </BlogArticleLayout>
     </>

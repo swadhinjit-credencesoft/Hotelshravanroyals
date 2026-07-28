@@ -12,7 +12,7 @@ export const metadata: Metadata = {
     'hotel amenities purnea',
     'room categories purnea',
     'hotel near bus stand faq',
-    'purnia hotel frequently asked questions',
+    'Purnea hotel frequently asked questions',
   ],
   alternates: {
     canonical: 'https://hotelsuryabellacasa.com/faq',
@@ -45,10 +45,10 @@ export default function FAQPage() {
     "mainEntity": [
       {
         "@type": "Question",
-        "name": "Where is Hotel Surya Bella Casa located in Purnia?",
+        "name": "Where is Hotel Surya Bella Casa located in Purnea?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Hotel Surya Bella Casa is centrally located at Suryalok Complex, Opposite Vikass Market, Near the main Bus Stand, Purnia, Bihar 854301, India."
+          "text": "Hotel Surya Bella Casa is centrally located at Suryalok Complex, Opposite Vikass Market, Near the main Bus Stand, Purnea, Bihar 854301, India."
         }
       },
       {
@@ -72,7 +72,7 @@ export default function FAQPage() {
         "name": "Is pure vegetarian food available at the hotel?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Guests can order vegetarian delicacies from partner restaurants in Purnia via Swiggy and Zomato. Non-vegetarian food is not permitted on the premises."
+          "text": "Guests can order vegetarian delicacies from partner restaurants in Purnea via Swiggy and Zomato. Non-vegetarian food is not permitted on the premises."
         }
       },
       {
@@ -117,10 +117,10 @@ export default function FAQPage() {
       },
       {
         "@type": "Question",
-        "name": "Is the hotel near Purnia Bus Stand?",
+        "name": "Is the hotel near Purnea Bus Stand?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Yes, Hotel Surya Bella Casa is located just a short walk from the main Purnia Bus Stand, opposite Vikass Market."
+          "text": "Yes, Hotel Surya Bella Casa is located just a short walk from the main Purnea Bus Stand, opposite Vikass Market."
         }
       }
     ]
@@ -156,6 +156,11 @@ export default function FAQPage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
+      <div className="text-center pt-8 pb-4 px-6">
+        <h1 className="font-display text-4xl md:text-5xl lg:text-6xl italic text-forest">
+          Frequently Asked Questions
+        </h1>
+      </div>
       <FAQSection />
     </main>
   )

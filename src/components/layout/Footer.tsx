@@ -51,11 +51,11 @@ const exploreLinks = [
   { label: 'Reviews', href: '/reviews' },
   { label: 'How to Reach', href: '/how-to-reach' },
   { label: 'Experiences', href: '/experiences' },
-  { label: 'Near Bus Stand', href: '/hotel-near-purnia-bus-stand' },
+  { label: 'Near Bus Stand', href: '/hotel-near-Purnea-bus-stand' },
   { label: 'Near Vikass Market', href: '/hotel-near-vikass-market' },
-  { label: 'Budget Hotel', href: '/budget-hotel-in-purnia' },
-  { label: 'Family Hotel', href: '/family-hotel-in-purnia' },
-  { label: 'Business Hotel', href: '/business-hotel-in-purnia' },
+  { label: 'Budget Hotel', href: '/budget-hotel-in-Purnea' },
+  { label: 'Family Hotel', href: '/family-hotel-in-Purnea' },
+  { label: 'Business Hotel', href: '/business-hotel-in-Purnea' },
 ]
 
 const legalLinks = [

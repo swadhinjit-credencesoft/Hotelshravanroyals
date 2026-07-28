@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   title: 'How to Reach Us & Travel Guide',
   description:
     'Travel guide to reach Hotel Surya Bella Casa in Purnea. Directions from Purnea Junction, Bus Stand, and nearby cities like Patna and Siliguri.',
-  keywords: ['how to reach purnea', 'purnea directions', 'purnea railway station', 'purnea bus stand', 'purnea airport distance', 'travel to purnia bihar'],
+  keywords: ['how to reach purnea', 'purnea directions', 'purnea railway station', 'purnea bus stand', 'purnea airport distance', 'travel to Purnea bihar'],
   alternates: {
     canonical: 'https://hotelsuryabellacasa.com/how-to-reach',
   },
@@ -47,11 +47,11 @@ const routes = [
   {
     icon: Bus,
     title: 'By Road / Bus',
-    subtitle: 'Purnia Bus Stand (walking distance)',
+    subtitle: 'Purnea Bus Stand (walking distance)',
     details: [
-      'Nearest bus stop: Purnia Main Bus Stand (just 200m walk)',
+      'Nearest bus stop: Purnea Main Bus Stand (just 200m walk)',
       'Regular buses from Patna (6 hrs), Bhagalpur (3 hrs), Siliguri (4 hrs)',
-      'State and private buses operate regularly to Purnia',
+      'State and private buses operate regularly to Purnea',
       'Hotel is opposite Vikass Market, easily visible from Bus Stand',
       'Parking available on-site for private vehicles',
     ],
@@ -65,7 +65,7 @@ const routes = [
       'From Siliguri: ~180 km via NH-27 (4 hrs drive)',
       'From Bhagalpur: ~100 km via NH-31 (2.5 hrs drive)',
       'From Katihar: ~35 km via NH-31 (45 min drive)',
-      'GPS: Suryalok Complex, Opposite Vikass Market, Near Bus Stand, Purnia',
+      'GPS: Suryalok Complex, Opposite Vikass Market, Near Bus Stand, Purnea',
     ],
   },
   {
@@ -116,7 +116,7 @@ export default function HowToReachPage() {
             "@context": "https://schema.org",
             "@type": "Article",
             "headline": "How to Reach Hotel Surya Bella Casa Purnea",
-            "description": "Complete travel directions and transportation options to reach Hotel Surya Bella Casa in Purnia, Bihar.",
+            "description": "Complete travel directions and transportation options to reach Hotel Surya Bella Casa in Purnea, Bihar.",
             "author": { "@type": "Organization", "name": "Hotel Surya Bella Casa" },
             "about": { "@type": "Hotel", "name": "Hotel Surya Bella Casa" }
           })
@@ -131,7 +131,7 @@ export default function HowToReachPage() {
           </h1>
           <p className="font-serif text-xl text-taupe max-w-2xl mx-auto leading-relaxed">
             Located opposite Vikass Market near the main Bus Stand, Hotel Surya Bella Casa is easily accessible 
-            by road, rail, and air. Here is your complete travel guide to reaching the best hotel in Purnia, Bihar.
+            by road, rail, and air. Here is your complete travel guide to reaching the best hotel in Purnea, Bihar.
           </p>
         </div>
 
@@ -198,7 +198,7 @@ export default function HowToReachPage() {
               Opposite Vikass Market, Near Bus Stand
             </p>
             <p className="font-sans text-base text-taupe/80 mb-6">
-              Purnia, Bihar 854301
+              Purnea, Bihar 854301
             </p>
             <a
               href="https://www.google.com/maps/dir/?api=1&destination=25.7771,87.4753"

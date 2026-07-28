@@ -226,7 +226,7 @@ export function buildBookingUrl(params?: {
 }
 
 const HOTEL_NAME = 'Hotel Surya Bella Casa'
-const HOTEL_ADDRESS = 'Suryalok Complex, Opposite Vikass Market, Near Bus Stand, Purnia, Bihar 854301'
+const HOTEL_ADDRESS = 'Suryalok Complex, Opposite Vikass Market, Near Bus Stand, Purnea, Bihar 854301'
 
 function buildEnquiryMessage(extra?: string): string {
   return (

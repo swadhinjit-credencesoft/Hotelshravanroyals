@@ -15,11 +15,11 @@ export const metadata: Metadata = {
     'restaurant near vikass market purnea',
     'pure veg restaurant purnea',
   ],
-  alternates: { canonical: 'https://hotelsuryabellacasa.com/blog/best-restaurant-in-purnia' },
+  alternates: { canonical: 'https://hotelsuryabellacasa.com/blog/best-restaurant-in-Purnea' },
   openGraph: {
     title: 'Best Restaurant in Purnea | Bella Casa Restaurant',
     description: 'Bella Casa Restaurant is the best restaurant in Purnea near Bus Stand. Multi-cuisine dining with rooftop views, pure veg & non-veg options.',
-    url: 'https://hotelsuryabellacasa.com/blog/best-restaurant-in-purnia',
+    url: 'https://hotelsuryabellacasa.com/blog/best-restaurant-in-Purnea',
     siteName: 'Hotel Surya Bella Casa',
     type: 'article',
     publishedTime: '2026-07-15T00:00:00.000Z',
@@ -102,10 +102,10 @@ export default function BlogPost() {
         heroAlt="Best restaurant in Purnea - Bella Casa Restaurant"
         relatedArticles={[
           { title: 'Rooftop Restaurant in Purnea', link: '/blog/rooftop-restaurant-in-purnea' },
-          { title: 'Fine Dining Restaurant in Purnea', link: '/blog/fine-dining-restaurant-in-purnia' },
-          { title: 'Best Dinner Place in Purnia', link: '/blog/best-dinner-place-in-purnia' },
-          { title: 'Family Restaurant in Purnia', link: '/blog/family-restaurant-in-purnia' },
-          { title: 'Luxury Hotel in Purnia', link: '/blog/luxury-hotel-in-purnia' },
+          { title: 'Fine Dining Restaurant in Purnea', link: '/blog/fine-dining-restaurant-in-Purnea' },
+          { title: 'Best Dinner Place in Purnea', link: '/blog/best-dinner-place-in-Purnea' },
+          { title: 'Family Restaurant in Purnea', link: '/blog/family-restaurant-in-Purnea' },
+          { title: 'Luxury Hotel in Purnea', link: '/blog/luxury-hotel-in-Purnea' },
         ]}
         serviceLinks={[
           { label: 'Restaurant', link: '/dining' },
@@ -120,7 +120,7 @@ export default function BlogPost() {
           Finding the <strong>best restaurant in Purnea</strong> can be a challenge, especially when you want a place that serves delicious multi-cuisine food in a clean and welcoming environment. Whether you are a local resident looking for a reliable dining spot or a traveler arriving through <strong>Purnea Bus Stand</strong>, having a go-to restaurant that consistently delivers quality food and great service makes all the difference. <strong><Link href="/" className="text-gold hover:underline">Bella Casa Restaurant</Link></strong>, located inside <strong>Hotel Surya Bella Casa</strong>, has earned its reputation as one of the top-rated dining destinations in the city.
         </p>
         <p>
-          Located <strong>opposite Vikass Market</strong>, just a short walk from the main bus terminal, our restaurant combines convenient location with an impressive menu that spans multiple cuisines. From traditional Indian flavors to international dishes, every plate is prepared with care by our experienced culinary team using fresh, locally sourced ingredients. If you are searching for the <Link href="/blog/best-restaurant-in-purnia" className="text-gold hover:underline">best restaurant in Purnia</Link>, this guide will walk you through everything that makes Bella Casa Restaurant stand out.
+          Located <strong>opposite Vikass Market</strong>, just a short walk from the main bus terminal, our restaurant combines convenient location with an impressive menu that spans multiple cuisines. From traditional Indian flavors to international dishes, every plate is prepared with care by our experienced culinary team using fresh, locally sourced ingredients. If you are searching for the <Link href="/blog/best-restaurant-in-Purnea" className="text-gold hover:underline">best restaurant in Purnea</Link>, this guide will walk you through everything that makes Bella Casa Restaurant stand out.
         </p>
 
         <h2 className="font-display text-2xl italic text-forest mt-10 mb-4">Our Full Restaurant Menu</h2>
@@ -188,7 +188,7 @@ export default function BlogPost() {
           What truly sets <strong>Bella Casa Restaurant</strong> apart from other dining options in Purnea is our <Link href="/blog/rooftop-restaurant-in-purnea" className="text-gold hover:underline">rooftop dining experience</Link>. The open-air setting provides panoramic views of the Purnea cityscape, making every meal feel special. Whether you are enjoying a quiet dinner for two or gathering with a group of friends, the rooftop ambiance adds an extra dimension to your dining experience.
         </p>
         <p>
-          During evenings, the rooftop takes on a warm, inviting glow with soft lighting and a gentle breeze. It is the kind of atmosphere where conversations flow naturally and meals are savored rather than rushed. Many of our guests specifically choose the rooftop for celebrations, <Link href="/blog/best-dinner-place-in-purnia" className="text-gold hover:underline">anniversary dinners</Link>, and <Link href="/blog/family-restaurant-in-purnia" className="text-gold hover:underline">family outings</Link> because of the unique atmosphere it provides.
+          During evenings, the rooftop takes on a warm, inviting glow with soft lighting and a gentle breeze. It is the kind of atmosphere where conversations flow naturally and meals are savored rather than rushed. Many of our guests specifically choose the rooftop for celebrations, <Link href="/blog/best-dinner-place-in-Purnea" className="text-gold hover:underline">anniversary dinners</Link>, and <Link href="/blog/family-restaurant-in-Purnea" className="text-gold hover:underline">family outings</Link> because of the unique atmosphere it provides.
         </p>
         <p>
           The rooftop also features an <strong>Open Sky Stage</strong> for live music events, creating a vibrant dining experience that goes beyond just food.
@@ -274,7 +274,7 @@ export default function BlogPost() {
 
         <h2 className="font-display text-2xl italic text-forest mt-10 mb-4">Explore More About Purnea</h2>
         <p>
-          While visiting us, take some time to explore what Purnea has to offer. Our <Link href="/blog/places-to-visit-in-purnea" className="text-gold hover:underline">guide to places to visit in Purnea</Link> covers popular attractions and local markets. If you are interested in the culinary scene, our related articles on <Link href="/blog/fine-dining-restaurant-in-purnia" className="text-gold hover:underline">fine dining in Purnia</Link> and <Link href="/blog/best-dinner-place-in-purnia" className="text-gold hover:underline">the best dinner places in Purnia</Link> provide more options for food lovers.
+          While visiting us, take some time to explore what Purnea has to offer. Our <Link href="/blog/places-to-visit-in-purnea" className="text-gold hover:underline">guide to places to visit in Purnea</Link> covers popular attractions and local markets. If you are interested in the culinary scene, our related articles on <Link href="/blog/fine-dining-restaurant-in-Purnea" className="text-gold hover:underline">fine dining in Purnea</Link> and <Link href="/blog/best-dinner-place-in-Purnea" className="text-gold hover:underline">the best dinner places in Purnea</Link> provide more options for food lovers.
         </p>
         <p>
           Whether you are a first-time visitor or a long-time resident of Purnea, <strong>Bella Casa Restaurant</strong> invites you to experience what we believe is the finest dining the city has to offer. From our carefully crafted multi-cuisine menu to our distinctive rooftop setting, every element of our restaurant is designed to make your meal memorable. We look forward to welcoming you soon.

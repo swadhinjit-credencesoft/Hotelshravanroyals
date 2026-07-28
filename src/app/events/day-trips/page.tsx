@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     'weekend getaway purnea',
     'one day trip purnea',
     'purnea sightseeing',
-    'nearby attractions purnia',
+    'nearby attractions Purnea',
     'day package purnea hotel',
     'lounge day pass purnea',
   ],
@@ -158,7 +158,7 @@ export default function DayTripsPage() {
             {[
               { icon: Sun, title: 'Comfort & Lounge Access', desc: 'Full access to our premium air-conditioned rooms and guest lounges.' },
               { icon: Utensils, title: 'Lavish Buffet Lunch', desc: 'A wide spread of Indian and global cuisines prepared by our expert chefs.' },
-              { icon: MapPin, title: 'City Tours', desc: 'Guided local sightseeing and shopping excursions around Purnia town.' }
+              { icon: MapPin, title: 'City Tours', desc: 'Guided local sightseeing and shopping excursions around Purnea town.' }
             ].map((feature, i) => (
               <div key={i} className="text-center p-10 bg-white border border-gold/10 hover:shadow-warm-lg transition-all duration-500 group">
                 <feature.icon className="text-gold mx-auto mb-8 group-hover:scale-110 transition-transform" size={40} />

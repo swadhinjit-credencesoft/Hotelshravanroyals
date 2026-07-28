@@ -10,8 +10,8 @@ export const metadata: Metadata = {
   keywords: [
     'hotel gallery purnea',
     'hotel surya bella casa photos',
-    'hotel rooms images purnia',
-    'purnia hotel pictures',
+    'hotel rooms images Purnea',
+    'Purnea hotel pictures',
     'banquet hall photos purnea',
   ],
   alternates: {
@@ -54,7 +54,7 @@ export default function GalleryPage() {
             "@context": "https://schema.org",
             "@type": "ImageGallery",
             "name": "Hotel Surya Bella Casa Photo Collection",
-            "description": "High-resolution photos of our clean accommodations, dining options, and hospitable atmosphere in Purnia, Bihar.",
+            "description": "High-resolution photos of our clean accommodations, dining options, and hospitable atmosphere in Purnea, Bihar.",
             "image": [
               "https://hotelsuryabellacasa.com/images/room1.jpeg",
               "https://hotelsuryabellacasa.com/images/room2.jpeg"

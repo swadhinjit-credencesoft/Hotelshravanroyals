@@ -4,10 +4,10 @@ import BlogGrid from '@/components/sections/BlogGrid';
 import { blogPosts } from '@/components/sections/blogPosts';
 
 export const metadata: Metadata = {
-  title: 'Purnia Travel Blog | Hotel Surya Bella Casa',
-  description: 'Read the latest travel articles, hotel booking guides, and local attraction tips for Purnia, Bihar, from Hotel Surya Bella Casa.',
+  title: 'Purnea Travel Blog | Hotel Surya Bella Casa',
+  description: 'Read the latest travel articles, hotel booking guides, and local attraction tips for Purnea, Bihar, from Hotel Surya Bella Casa.',
   keywords: [
-    'purnia travel blog',
+    'Purnea travel blog',
     'best hotels in purnea',
     'places to visit in purnea',
     'top restaurants in purnea',
@@ -22,8 +22,8 @@ export const metadata: Metadata = {
     canonical: 'https://hotelsuryabellacasa.com/blog',
   },
   openGraph: {
-    title: 'Purnia Travel Blog | Hotel Surya Bella Casa',
-    description: 'Travel guides, local insights, and hotel tips for Purnia, Bihar from Hotel Surya Bella Casa.',
+    title: 'Purnea Travel Blog | Hotel Surya Bella Casa',
+    description: 'Travel guides, local insights, and hotel tips for Purnea, Bihar from Hotel Surya Bella Casa.',
     url: 'https://hotelsuryabellacasa.com/blog',
     siteName: 'Hotel Surya Bella Casa',
     type: 'website',
@@ -38,8 +38,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Purnia Travel Blog | Hotel Surya Bella Casa',
-    description: 'Read travel tips, food guides, and destination reviews for Purnia, Bihar.',
+    title: 'Purnea Travel Blog | Hotel Surya Bella Casa',
+    description: 'Read travel tips, food guides, and destination reviews for Purnea, Bihar.',
     images: ['https://bookonelocal.in/cdn/IMG_3815.avif'],
   },
   robots: {
@@ -59,8 +59,8 @@ export default function BlogPage() {
     "@context": "https://schema.org",
     "@type": "Blog",
     "@id": "https://hotelsuryabellacasa.com/blog/#blog",
-    "name": "Purnia Travel Blog | Hotel Surya Bella Casa",
-    "description": "Travel guides, local insights, and hotel tips for Purnia, Bihar from Hotel Surya Bella Casa.",
+    "name": "Purnea Travel Blog | Hotel Surya Bella Casa",
+    "description": "Travel guides, local insights, and hotel tips for Purnea, Bihar from Hotel Surya Bella Casa.",
     "url": "https://hotelsuryabellacasa.com/blog",
     "blogPost": blogPosts.map((post, i) => ({
       "@type": "BlogPosting",
@@ -85,7 +85,7 @@ export default function BlogPage() {
       />
       <CinematicHero 
         label="Stories & Guides"
-        title="The Purnia Journal"
+        title="The Purnea Journal"
         tagline="Discover the hidden gems, seasonal itineraries, and insider tips for your perfect getaway."
         image='https://bookonelocal.in/cdn/IMG_3815.avif'
       />

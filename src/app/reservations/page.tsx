@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   title: 'Book Your Stay Online',
   description:
     'Book deluxe AC rooms, family rooms, and budget stays at Hotel Surya Bella Casa near Purnea Bus Stand. Free WiFi, parking, 24/7 room service.',
-  keywords: ['hotel reservation purnea', 'book hotel in purnia', 'online hotel booking purnea', 'hotel room booking purnia', 'best hotel deals purnea'],
+  keywords: ['hotel reservation purnea', 'book hotel in Purnea', 'online hotel booking purnea', 'hotel room booking Purnea', 'best hotel deals purnea'],
   alternates: {
     canonical: 'https://hotelsuryabellacasa.com/reservations',
   },

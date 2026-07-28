@@ -16,7 +16,7 @@ export const testimonials: Testimonial[] = [
     name: 'Navin Jaiswal',
     country: 'India',
     rating: 5,
-    text: 'I stayed at the hotel for 2 days and had all my meals in the restaurant. The rooms were clean and comfortable, the staff behavior was excellent, and the food taste was superb. Everyone was very cooperative. Highly recommended for anyone visiting Purnia looking for luxury rooms and a positive experience.',
+    text: 'I stayed at the hotel for 2 days and had all my meals in the restaurant. The rooms were clean and comfortable, the staff behavior was excellent, and the food taste was superb. Everyone was very cooperative. Highly recommended for anyone visiting Purnea looking for luxury rooms and a positive experience.',
     stayType: 'Family Stay',
     avatar: 'https://bookonelocal.in/cdn/IMG_3815.avif',
     source: 'Google Reviews',

@@ -112,7 +112,7 @@ export default function EventsContent() {
             <div className="border border-ivory/10 p-8 hover:bg-ivory/5 transition-colors group">
               <GlassWater className="text-gold mb-6 group-hover:scale-110 transition-transform" size={32} />
               <h3 className="font-display text-2xl italic mb-4">Barbecue & Bonfire</h3>
-              <p className="font-serif text-ivory/70 leading-relaxed text-sm">Our signature live grills under the Purnia sky. Perfect for pre-wedding events, corporate mixers, or family celebrations.</p>
+              <p className="font-serif text-ivory/70 leading-relaxed text-sm">Our signature live grills under the Purnea sky. Perfect for pre-wedding events, corporate mixers, or family celebrations.</p>
             </div>
             <div className="border border-ivory/10 p-8 hover:bg-ivory/5 transition-colors group">
               <Utensils className="text-gold mb-6 group-hover:scale-110 transition-transform" size={32} />

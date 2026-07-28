@@ -13,12 +13,12 @@ export const metadata: Metadata = {
   keywords: [
     'hotel rooms in purnea',
     'AC rooms purnea',
-    'deluxe room purnia',
+    'deluxe room Purnea',
     'super deluxe room purnea',
     'non AC room purnea',
     'budget rooms purnea',
     'best hotel rooms near bus stand purnea',
-    'room prices purnia hotel',
+    'room prices Purnea hotel',
   ],
 }
 

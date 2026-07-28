@@ -13,8 +13,8 @@ interface FAQItem {
 
 const faqs: FAQItem[] = [
   {
-    question: "Where is Hotel Surya Bella Casa located in Purnia?",
-    answer: "Hotel Surya Bella Casa is centrally located at Suryalok Complex, Opposite Vikass Market, Near the main Bus Stand, Purnia, Bihar 854301, India. Our prime location offers quick access to the main transit points and business hubs."
+    question: "Where is Hotel Surya Bella Casa located in Purnea?",
+    answer: "Hotel Surya Bella Casa is centrally located at Suryalok Complex, Opposite Vikass Market, Near the main Bus Stand, Purnea, Bihar 854301, India. Our prime location offers quick access to the main transit points and business hubs."
   },
   {
     question: "How far is the hotel from Purnea Junction Railway Station?",
@@ -22,11 +22,11 @@ const faqs: FAQItem[] = [
   },
   {
     question: "Is Hotel Surya Bella Casa a family-friendly hotel?",
-    answer: "Yes, we are a family-oriented hotel in Purnia. We offer clean, secure, and spacious AC and Non-AC accommodations, and a peaceful environment suitable for guests traveling with children and elder family members."
+    answer: "Yes, we are a family-oriented hotel in Purnea. We offer clean, secure, and spacious AC and Non-AC accommodations, and a peaceful environment suitable for guests traveling with children and elder family members."
   },
   {
     question: "Is pure vegetarian food available at the hotel?",
-    answer: "We focus on a pure vegetarian stay experience. Guests can easily order vegetarian delicacies from popular local partner restaurants in Purnia via Swiggy and Zomato directly to their rooms. Please note that non-vegetarian food is strictly prohibited on our premises to respect the preferences of our guests."
+    answer: "We focus on a pure vegetarian stay experience. Guests can easily order vegetarian delicacies from popular local partner restaurants in Purnea via Swiggy and Zomato directly to their rooms. Please note that non-vegetarian food is strictly prohibited on our premises to respect the preferences of our guests."
   },
   {
     question: "What are the room categories available at Hotel Surya Bella Casa?",
@@ -58,7 +58,7 @@ const faqs: FAQItem[] = [
   },
   {
     question: "Are sweet shops and local markets nearby?",
-    answer: "Yes, being located right opposite Vikass Market and in the central Suryalok Complex, you are steps away from Purnia's famous sweet shops, clothing stores, and daily markets."
+    answer: "Yes, being located right opposite Vikass Market and in the central Suryalok Complex, you are steps away from Purnea's famous sweet shops, clothing stores, and daily markets."
   },
   {
     question: "Do you offer laundry and room service?",
@@ -69,7 +69,7 @@ const faqs: FAQItem[] = [
     answer: "Absolutely. Security is our top priority. The hotel has 24/7 CCTV surveillance, a secure locked facility, and professional staff to ensure a completely safe environment for solo female, business, and family guests."
   },
   {
-    question: "What historical attractions can we visit near Purnia?",
+    question: "What historical attractions can we visit near Purnea?",
     answer: "Guests can visit the revered Kali Mandir (5 mins drive), the historic Puran Devi Temple (10 mins drive), or the ancient Jalalgarh Fort located just 25 minutes away."
   }
 ];

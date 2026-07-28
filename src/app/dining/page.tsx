@@ -16,9 +16,9 @@ export const metadata: Metadata = {
   keywords: [
     'restaurant in purnea',
     'rooftop restaurant purnea',
-    'best food in purnia',
+    'best food in Purnea',
     'multi cuisine restaurant purnea',
-    'hotel dining purnia',
+    'hotel dining Purnea',
     'pure vegetarian restaurant purnea',
     'non veg restaurant near bus stand purnea',
   ],
@@ -73,7 +73,7 @@ export default function DiningPage() {
             "address": {
               "@type": "PostalAddress",
               "streetAddress": "Suryalok Complex, Opposite Vikass Market, Near Bus Stand",
-              "addressLocality": "Purnia",
+              "addressLocality": "Purnea",
               "addressRegion": "Bihar",
               "postalCode": "854301",
               "addressCountry": "IN"
@@ -167,14 +167,14 @@ export default function DiningPage() {
           </h2>
           <div className="font-sans text-base text-taupe/80 space-y-5 leading-loose max-w-3xl mx-auto">
             <p>
-              <strong>Hotel Surya Bella Casa</strong> offers one of the finest rooftop dining experiences in Purnia, 
+              <strong>Hotel Surya Bella Casa</strong> offers one of the finest rooftop dining experiences in Purnea, 
               located just steps from the main <strong>Bus Stand</strong> and opposite <strong>Vikass Market</strong>. 
               Our multi-cuisine restaurant serves a wide array of Indian, Tandoor, Mughlai, Asian, and Continental 
               dishes prepared by experienced chefs.
             </p>
             <p>
               Whether you are looking for a family dinner, a business lunch, or a romantic evening, 
-              our rooftop setting provides a relaxed atmosphere with views of the Purnia cityscape. 
+              our rooftop setting provides a relaxed atmosphere with views of the Purnea cityscape. 
               We take pride in using fresh, locally sourced ingredients to craft every dish.
             </p>
             <p>

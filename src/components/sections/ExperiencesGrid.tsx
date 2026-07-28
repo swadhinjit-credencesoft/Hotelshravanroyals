@@ -17,7 +17,7 @@ export default function ExperiencesGrid() {
             Curated Immersions
           </h2>
           <p className="font-serif text-xl font-light text-ivory/60 max-w-xl leading-relaxed">
-            Ideally located in the heart of Purnia, Hotel Surya Bella Casa connects you to spiritual landmarks, local shopping, and essential business hubs.
+            Ideally located in the heart of Purnea, Hotel Surya Bella Casa connects you to spiritual landmarks, local shopping, and essential business hubs.
           </p>
         </div>
 

@@ -3,31 +3,31 @@ import Link from 'next/link'
 import BlogArticleLayout from '@/components/layout/BlogArticleLayout'
 
 export const metadata: Metadata = {
-  title: 'Hotels Near Purnia Railway Station | Best Stay Near Junction',
-  description: 'Finding hotels near Purnia Railway Station? Hotel Surya Bella Casa is 6 km from Purnea Junction with free pickup, WiFi, and parking. Book direct.',
+  title: 'Hotels Near Purnea Railway Station | Best Stay Near Junction',
+  description: 'Finding hotels near Purnea Railway Station? Hotel Surya Bella Casa is 6 km from Purnea Junction with free pickup, WiFi, and parking. Book direct.',
   keywords: [
-    'hotel near purnia railway station',
-    'hotel near purnia junction',
-    'stay near purnia station',
-    'hotel 6 km from purnia junction',
+    'hotel near Purnea railway station',
+    'hotel near Purnea junction',
+    'stay near Purnea station',
+    'hotel 6 km from Purnea junction',
   ],
   alternates: {
-    canonical: 'https://hotelsuryabellacasa.com/blog/hotels-near-purnia-railway-station',
+    canonical: 'https://hotelsuryabellacasa.com/blog/hotels-near-Purnea-railway-station',
   },
   openGraph: {
-    title: 'Hotels Near Purnia Railway Station | Best Stay Near Junction',
-    description: 'Finding hotels near Purnia Railway Station? Hotel Surya Bella Casa is 6 km from Purnea Junction with free pickup, WiFi, and parking. Book direct.',
-    url: 'https://hotelsuryabellacasa.com/blog/hotels-near-purnia-railway-station',
+    title: 'Hotels Near Purnea Railway Station | Best Stay Near Junction',
+    description: 'Finding hotels near Purnea Railway Station? Hotel Surya Bella Casa is 6 km from Purnea Junction with free pickup, WiFi, and parking. Book direct.',
+    url: 'https://hotelsuryabellacasa.com/blog/hotels-near-Purnea-railway-station',
     siteName: 'Hotel Surya Bella Casa',
     type: 'article',
     publishedTime: '2026-07-18T00:00:00.000Z',
     modifiedTime: '2026-07-23T00:00:00.000Z',
-    images: [{ url: 'https://bookonelocal.in/cdn/IMG_3791.avif', width: 1200, height: 630, alt: 'Hotel near Purnia Railway Station - Hotel Surya Bella Casa' }],
+    images: [{ url: 'https://bookonelocal.in/cdn/IMG_3791.avif', width: 1200, height: 630, alt: 'Hotel near Purnea Railway Station - Hotel Surya Bella Casa' }],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Hotels Near Purnia Railway Station | Best Stay Near Junction',
-    description: 'Finding hotels near Purnia Railway Station? Hotel Surya Bella Casa is 6 km from Purnea Junction with free pickup, WiFi, and parking. Book direct.',
+    title: 'Hotels Near Purnea Railway Station | Best Stay Near Junction',
+    description: 'Finding hotels near Purnea Railway Station? Hotel Surya Bella Casa is 6 km from Purnea Junction with free pickup, WiFi, and parking. Book direct.',
     images: ['https://bookonelocal.in/cdn/IMG_3791.avif'],
   },
   robots: {
@@ -41,8 +41,8 @@ export default function BlogPost() {
   const schema = {
     '@context': 'https://schema.org',
     '@type': 'BlogPosting',
-    headline: 'Hotels Near Purnia Railway Station | Best Stay 6 km from Junction',
-    description: 'Finding hotels near Purnia Railway Station? Hotel Surya Bella Casa is 6 km from Purnea Junction with free pickup, WiFi, and parking.',
+    headline: 'Hotels Near Purnea Railway Station | Best Stay 6 km from Junction',
+    description: 'Finding hotels near Purnea Railway Station? Hotel Surya Bella Casa is 6 km from Purnea Junction with free pickup, WiFi, and parking.',
     image: 'https://bookonelocal.in/cdn/IMG_3791.avif',
     datePublished: '2026-07-18',
     dateModified: '2026-07-23',
@@ -57,10 +57,10 @@ export default function BlogPost() {
       category="Hotel Guide"
       date="Jul 18, 2026"
       heroImage="https://bookonelocal.in/cdn/IMG_3791.avif"
-      heroAlt="Hotel near Purnia Railway Station - Hotel Surya Bella Casa"
+      heroAlt="Hotel near Purnea Railway Station - Hotel Surya Bella Casa"
       relatedArticles={[
         { title: 'Best Hotels in Purnea Near Bus Stand', link: '/blog/best-hotels-in-purnea-near-bus-stand' },
-        { title: 'Luxury Hotel in Purnea', link: '/blog/luxury-hotel-in-purnia' },
+        { title: 'Luxury Hotel in Purnea', link: '/blog/luxury-hotel-in-Purnea' },
         { title: 'Family Hotel in Purnea', link: '/blog/family-hotel-in-purnea' },
         { title: 'How to Reach Hotel Surya Bella Casa', link: '/how-to-reach' },
       ]}
@@ -74,7 +74,7 @@ export default function BlogPost() {
       ]}
     >
       <p>
-        Arriving in Purnia by train? One of the first questions every traveler asks is where to stay near the railway station. <Link href="/" className="text-gold hover:underline">Hotel Surya Bella Casa</Link> is one of the most recommended hotels for travelers arriving via <strong>Purnea Junction Railway Station</strong>, offering comfortable rooms, free parking, and a straightforward commute from the station to the hotel.
+        Arriving in Purnea by train? One of the first questions every traveler asks is where to stay near the railway station. <Link href="/" className="text-gold hover:underline">Hotel Surya Bella Casa</Link> is one of the most recommended hotels for travelers arriving via <strong>Purnea Junction Railway Station</strong>, offering comfortable rooms, free parking, and a straightforward commute from the station to the hotel.
       </p>
 
       <h2 className="font-display text-2xl italic text-forest mt-10 mb-4">Distance from Purnea Junction Railway Station</h2>
@@ -82,7 +82,7 @@ export default function BlogPost() {
         Hotel Surya Bella Casa is located approximately <strong>6.1 kilometers</strong> from Purnea Junction Railway Station. By auto-rickshaw or taxi, the journey takes roughly 15 minutes depending on traffic. The route follows a well-lit main road, making it safe and easy to navigate even during late-night arrivals.
       </p>
       <p>
-        The hotel is situated at <strong>Suryalok Complex, opposite Vikass Market</strong>, in the heart of Purnia&apos;s commercial area and just steps from the Bus Stand. This central location means that once you arrive, everything you need — shopping, dining, banking, and local transport — is within walking distance.
+        The hotel is situated at <strong>Suryalok Complex, opposite Vikass Market</strong>, in the heart of Purnea&apos;s commercial area and just steps from the Bus Stand. This central location means that once you arrive, everything you need — shopping, dining, banking, and local transport — is within walking distance.
       </p>
 
       <h2 className="font-display text-2xl italic text-forest mt-10 mb-4">How to Reach the Hotel from the Station</h2>
@@ -100,13 +100,13 @@ export default function BlogPost() {
 
       <h2 className="font-display text-2xl italic text-forest mt-10 mb-4">Why Stay Near the Bus Stand Instead of the Station Area?</h2>
       <p>
-        While it might seem convenient to pick a hotel closest to the railway station, the area immediately surrounding Purnea Junction is relatively undeveloped for hospitality. Most of the quality hotels, restaurants, and commercial activity in Purnia is concentrated around the <strong>Bus Stand and Vikass Market area</strong> — the exact area where Hotel Surya Bella Casa is located.
+        While it might seem convenient to pick a hotel closest to the railway station, the area immediately surrounding Purnea Junction is relatively undeveloped for hospitality. Most of the quality hotels, restaurants, and commercial activity in Purnea is concentrated around the <strong>Bus Stand and Vikass Market area</strong> — the exact area where Hotel Surya Bella Casa is located.
       </p>
       <p>
         By staying near the Bus Stand, you get access to better dining options (including our own <Link href="/dining" className="text-gold hover:underline">rooftop restaurant</Link>), shopping at Vikass Market, easy connections to other parts of the city by auto, and proximity to key landmarks. The 15-minute auto ride from the station is a small trade-off for significantly better location advantages.
       </p>
       <p>
-        If you want to explore what the city has to offer, check out our <Link href="/blog/places-to-visit-in-purnea" className="text-gold hover:underline">guide to places to visit in Purnea</Link> and <Link href="/blog/purnia-travel-guide" className="text-gold hover:underline">complete Purnia travel guide</Link>.
+        If you want to explore what the city has to offer, check out our <Link href="/blog/places-to-visit-in-purnea" className="text-gold hover:underline">guide to places to visit in Purnea</Link> and <Link href="/blog/Purnea-travel-guide" className="text-gold hover:underline">complete Purnea travel guide</Link>.
       </p>
 
       <h2 className="font-display text-2xl italic text-forest mt-10 mb-4">Room Options and Pricing</h2>
@@ -138,7 +138,7 @@ export default function BlogPost() {
 
       <h2 className="font-display text-2xl italic text-forest mt-10 mb-4">Amenities for Transit Guests</h2>
       <p>
-        If you are just passing through Purnia and need a place to rest before your next connection, Hotel Surya Bella Casa is ideal. Our amenities cater specifically to transit travelers:
+        If you are just passing through Purnea and need a place to rest before your next connection, Hotel Surya Bella Casa is ideal. Our amenities cater specifically to transit travelers:
       </p>
       <ul className="list-disc pl-6 space-y-2">
         <li>Express check-in and check-out for quick arrivals and departures</li>
@@ -151,12 +151,12 @@ export default function BlogPost() {
 
       <h2 className="font-display text-2xl italic text-forest mt-10 mb-4">Perfect for Families Arriving by Train</h2>
       <p>
-        Families traveling to Purnia by train will appreciate the safety and convenience of Hotel Surya Bella Casa. The property has <strong>CCTV security</strong>, key-card room access, and a <strong>lift/elevator</strong> for easy access to upper floors — especially helpful when traveling with elderly parents or young children and carrying luggage. Read more about why we are rated among the <Link href="/blog/family-hotel-in-purnea" className="text-gold hover:underline">best family hotels in Purnea</Link>.
+        Families traveling to Purnea by train will appreciate the safety and convenience of Hotel Surya Bella Casa. The property has <strong>CCTV security</strong>, key-card room access, and a <strong>lift/elevator</strong> for easy access to upper floors — especially helpful when traveling with elderly parents or young children and carrying luggage. Read more about why we are rated among the <Link href="/blog/family-hotel-in-purnea" className="text-gold hover:underline">best family hotels in Purnea</Link>.
       </p>
 
-      <h2 className="font-display text-2xl italic text-forest mt-10 mb-4">Explore Purnia During Your Stay</h2>
+      <h2 className="font-display text-2xl italic text-forest mt-10 mb-4">Explore Purnea During Your Stay</h2>
       <p>
-        If you have time between trains, Purnia has plenty to offer. From the sacred <strong>Maa Puran Devi Temple</strong> to local markets for <Link href="/blog/shopping-in-purnia" className="text-gold hover:underline">shopping</Link>, and from street food tours to a sit-down meal at our <Link href="/blog/best-restaurant-in-purnia" className="text-gold hover:underline">top-rated restaurant</Link>, there is always something to do. For food lovers, our <Link href="/blog/local-food-guide-in-purnia" className="text-gold hover:underline">local food guide in Purnia</Link> covers the best dishes to try in the city.
+        If you have time between trains, Purnea has plenty to offer. From the sacred <strong>Maa Puran Devi Temple</strong> to local markets for <Link href="/blog/shopping-in-Purnea" className="text-gold hover:underline">shopping</Link>, and from street food tours to a sit-down meal at our <Link href="/blog/best-restaurant-in-Purnea" className="text-gold hover:underline">top-rated restaurant</Link>, there is always something to do. For food lovers, our <Link href="/blog/local-food-guide-in-Purnea" className="text-gold hover:underline">local food guide in Purnea</Link> covers the best dishes to try in the city.
       </p>
       <p>
         Hotel Surya Bella Casa also serves as a great base for <Link href="/blog/business-hotel-in-purnea" className="text-gold hover:underline">business travelers</Link> and those attending <Link href="/events" className="text-gold hover:underline">events and celebrations</Link> in the area.
@@ -176,7 +176,7 @@ export default function BlogPost() {
       </p>
 
       <p>
-        Planning your trip to Purnia by train? <Link href="/reservations" className="text-gold hover:underline">Reserve your room now</Link> and enjoy a comfortable, hassle-free stay just 6 km from the railway station. Take a look at our <Link href="/gallery" className="text-gold hover:underline">photo gallery</Link> to see the property before you arrive.
+        Planning your trip to Purnea by train? <Link href="/reservations" className="text-gold hover:underline">Reserve your room now</Link> and enjoy a comfortable, hassle-free stay just 6 km from the railway station. Take a look at our <Link href="/gallery" className="text-gold hover:underline">photo gallery</Link> to see the property before you arrive.
       </p>
     </BlogArticleLayout>
   )

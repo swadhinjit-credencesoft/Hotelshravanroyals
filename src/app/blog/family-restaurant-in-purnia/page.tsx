@@ -15,11 +15,11 @@ export const metadata: Metadata = {
     'group dining purnea',
     'spacious restaurant purnea',
   ],
-  alternates: { canonical: 'https://hotelsuryabellacasa.com/blog/family-restaurant-in-purnia' },
+  alternates: { canonical: 'https://hotelsuryabellacasa.com/blog/family-restaurant-in-Purnea' },
   openGraph: {
     title: 'Family Restaurant in Purnea | Bella Casa Restaurant',
     description: 'Find a family-friendly restaurant in Purnea. Bella Casa Restaurant offers pure veg & non-veg, spacious seating, rooftop dining, and kid-friendly menu.',
-    url: 'https://hotelsuryabellacasa.com/blog/family-restaurant-in-purnia',
+    url: 'https://hotelsuryabellacasa.com/blog/family-restaurant-in-Purnea',
     siteName: 'Hotel Surya Bella Casa',
     type: 'article',
     publishedTime: '2026-07-10T00:00:00.000Z',
@@ -101,10 +101,10 @@ export default function BlogPost() {
         heroImage="https://bookonelocal.in/cdn/IMG_3701.avif"
         heroAlt="Family dining at Bella Casa Restaurant Purnea"
         relatedArticles={[
-          { title: 'Best Restaurant in Purnia', link: '/blog/best-restaurant-in-purnia' },
+          { title: 'Best Restaurant in Purnea', link: '/blog/best-restaurant-in-Purnea' },
           { title: 'Rooftop Restaurant in Purnea', link: '/blog/rooftop-restaurant-in-purnea' },
           { title: 'Family Hotel in Purnea', link: '/blog/family-hotel-in-purnea' },
-          { title: 'Fine Dining Restaurant in Purnia', link: '/blog/fine-dining-restaurant-in-purnia' },
+          { title: 'Fine Dining Restaurant in Purnea', link: '/blog/fine-dining-restaurant-in-Purnea' },
         ]}
         serviceLinks={[
           { label: 'Restaurant', link: '/dining' },
@@ -116,7 +116,7 @@ export default function BlogPost() {
         ]}
       >
         <p>
-          Dining out with family is about more than just food. It is about finding a place where everyone, from young children to grandparents, feels comfortable and well taken care of. If you are looking for a <Link href="/blog/family-restaurant-in-purnia" className="text-gold hover:underline">family restaurant in Purnia</Link> that understands these needs, <strong><Link href="/" className="text-gold hover:underline">Bella Casa Restaurant</Link></strong> at <strong>Hotel Surya Bella Casa</strong> is the answer. Located <strong>opposite Vikass Market</strong>, just steps away from the <strong>Purnea Bus Stand</strong>, our restaurant offers a warm, welcoming environment where families can enjoy a relaxed meal together.
+          Dining out with family is about more than just food. It is about finding a place where everyone, from young children to grandparents, feels comfortable and well taken care of. If you are looking for a <Link href="/blog/family-restaurant-in-Purnea" className="text-gold hover:underline">family restaurant in Purnea</Link> that understands these needs, <strong><Link href="/" className="text-gold hover:underline">Bella Casa Restaurant</Link></strong> at <strong>Hotel Surya Bella Casa</strong> is the answer. Located <strong>opposite Vikass Market</strong>, just steps away from the <strong>Purnea Bus Stand</strong>, our restaurant offers a warm, welcoming environment where families can enjoy a relaxed meal together.
         </p>
         <p>
           We have built our reputation on three core principles that matter most to family diners: a clean and safe environment, a diverse menu that caters to all taste preferences, and spacious seating that accommodates groups of all sizes. Whether you are planning a casual weekend lunch, a birthday celebration, or simply a family outing after shopping at <Link href="/blog/best-hotels-in-purnea-near-bus-stand" className="text-gold hover:underline">Vikass Market nearby</Link>, Bella Casa Restaurant provides everything you need for a pleasant dining experience.
@@ -259,7 +259,7 @@ export default function BlogPost() {
 
         <h2 className="font-display text-2xl italic text-forest mt-10 mb-4">Explore Our Blog for More</h2>
         <p>
-          Planning a family trip to Purnea? Our blog covers everything you need to know. Check out our guides on the <Link href="/blog/best-restaurant-in-purnia" className="text-gold hover:underline">best restaurants in Purnia</Link>, the <Link href="/blog/fine-dining-restaurant-in-purnia" className="text-gold hover:underline">fine dining scene</Link>, and the <Link href="/blog/best-dinner-place-in-purnia" className="text-gold hover:underline">best dinner places in Purnia</Link>. We also have a dedicated guide on <Link href="/blog/family-hotel-in-purnea" className="text-gold hover:underline">choosing a family hotel in Purnea</Link> that covers accommodation tips for parents.
+          Planning a family trip to Purnea? Our blog covers everything you need to know. Check out our guides on the <Link href="/blog/best-restaurant-in-Purnea" className="text-gold hover:underline">best restaurants in Purnea</Link>, the <Link href="/blog/fine-dining-restaurant-in-Purnea" className="text-gold hover:underline">fine dining scene</Link>, and the <Link href="/blog/best-dinner-place-in-Purnea" className="text-gold hover:underline">best dinner places in Purnea</Link>. We also have a dedicated guide on <Link href="/blog/family-hotel-in-purnea" className="text-gold hover:underline">choosing a family hotel in Purnea</Link> that covers accommodation tips for parents.
         </p>
         <p>
           At <strong>Bella Casa Restaurant</strong>, families are not just guests — they are part of our community. We look forward to welcoming your family and creating a dining experience that everyone, from the youngest to the oldest, will enjoy and remember.

@@ -47,12 +47,12 @@ const attractions = [
   {
     name: 'Maa Puran Devi Temple',
     distance: '10 mins drive',
-    description: 'One of the oldest and most significant temples in Purnia, believed to be the origin of the city\'s name. A must-visit spiritual landmark.',
+    description: 'One of the oldest and most significant temples in Purnea, believed to be the origin of the city\'s name. A must-visit spiritual landmark.',
   },
   {
     name: 'Kali Mandir',
     distance: '5 mins drive',
-    description: 'A highly revered temple in central Purnia dedicated to Goddess Kali. Known for its peaceful atmosphere and devotional significance.',
+    description: 'A highly revered temple in central Purnea dedicated to Goddess Kali. Known for its peaceful atmosphere and devotional significance.',
   },
   {
     name: 'Jalalgarh Fort',
@@ -62,17 +62,17 @@ const attractions = [
   {
     name: 'Vikass Market',
     distance: '2 min walk',
-    description: 'The largest commercial market in Purnia, located right opposite the hotel. Shop for fabrics, garments, electronics, and local handicrafts.',
+    description: 'The largest commercial market in Purnea, located right opposite the hotel. Shop for fabrics, garments, electronics, and local handicrafts.',
   },
   {
     name: 'Bhatta Bazar',
     distance: '5 mins drive',
-    description: 'Purnia\'s oldest commercial district known for traditional goods, local eateries, and authentic Bihari snacks.',
+    description: 'Purnea\'s oldest commercial district known for traditional goods, local eateries, and authentic Bihari snacks.',
   },
   {
     name: 'Purnea Junction Railway Station',
     distance: '15 mins drive (6.1 km)',
-    description: 'The main railway station connecting Purnia to Katihar, Bhagalpur, Saharsa, and major cities in Bihar and West Bengal.',
+    description: 'The main railway station connecting Purnea to Katihar, Bhagalpur, Saharsa, and major cities in Bihar and West Bengal.',
   },
 ]
 
@@ -98,10 +98,10 @@ export default function BlogPost() {
       heroImage="/purneacity.jpg"
       heroAlt="Purnea cityscape - Places to visit near Hotel Surya Bella Casa"
       relatedArticles={[
-        { title: 'Things to Do in Purnia', link: '/blog/things-to-do-in-purnia' },
-        { title: 'Purnia Travel Guide', link: '/blog/purnia-travel-guide' },
-        { title: 'Local Food Guide in Purnia', link: '/blog/local-food-guide-in-purnia' },
-        { title: 'Shopping in Purnia', link: '/blog/shopping-in-purnia' },
+        { title: 'Things to Do in Purnea', link: '/blog/things-to-do-in-Purnea' },
+        { title: 'Purnea Travel Guide', link: '/blog/Purnea-travel-guide' },
+        { title: 'Local Food Guide in Purnea', link: '/blog/local-food-guide-in-Purnea' },
+        { title: 'Shopping in Purnea', link: '/blog/shopping-in-Purnea' },
         { title: 'Best Hotels in Purnea Near Bus Stand', link: '/blog/best-hotels-in-purnea-near-bus-stand' },
       ]}
       serviceLinks={[
@@ -114,13 +114,13 @@ export default function BlogPost() {
       ]}
     >
       <p>
-        Purnia (also spelled Purnea) is the largest city in the Seemanchal region of Bihar, rich in
+        Purnea (also spelled Purnea) is the largest city in the Seemanchal region of Bihar, rich in
         history, culture, and spiritual significance. Whether you are visiting for business or leisure,
         there are several attractions near <strong><Link href="/" className="text-gold hover:underline">Hotel Surya Bella Casa</Link></strong> that are worth exploring.
       </p>
       <p>
         Located centrally at Suryalok Complex opposite Vikass Market and near the Bus Stand, our hotel
-        provides easy access to all major attractions in and around Purnia. Book one of our
+        provides easy access to all major attractions in and around Purnea. Book one of our
         <Link href="/rooms" className="text-gold hover:underline"> comfortable rooms</Link> and use our location as your base to explore the city.
       </p>
 
@@ -143,15 +143,15 @@ export default function BlogPost() {
         After a day of exploring, return to Hotel Surya Bella Casa for a delicious meal at our
         <Link href="/dining" className="text-gold hover:underline"> rooftop restaurant</Link>. We serve multi-cuisine dishes including Indian, Tandoor, Mughlai,
         and Continental. For more dining options in the city, check our
-        <Link href="/blog/best-restaurant-in-purnia" className="text-gold hover:underline"> best restaurant in Purnia</Link> guide.
+        <Link href="/blog/best-restaurant-in-Purnea" className="text-gold hover:underline"> best restaurant in Purnea</Link> guide.
       </p>
 
       <h2 className="font-display text-2xl italic text-forest mt-10 mb-4">Plan Your Complete Purnea Trip</h2>
       <p>
-        Our <Link href="/blog/purnia-travel-guide" className="text-gold hover:underline">Purnia travel guide</Link> has everything you need to plan your visit.
-        Discover <Link href="/blog/shopping-in-purnia" className="text-gold hover:underline">shopping in Purnia</Link> for local handicrafts and garments, or explore
-        the <Link href="/blog/things-to-do-in-purnia" className="text-gold hover:underline">things to do in Purnia</Link> for more activity ideas. Food lovers should read our
-        <Link href="/blog/local-food-guide-in-purnia" className="text-gold hover:underline"> local food guide in Purnia</Link> for authentic Bihari cuisine.
+        Our <Link href="/blog/Purnea-travel-guide" className="text-gold hover:underline">Purnea travel guide</Link> has everything you need to plan your visit.
+        Discover <Link href="/blog/shopping-in-Purnea" className="text-gold hover:underline">shopping in Purnea</Link> for local handicrafts and garments, or explore
+        the <Link href="/blog/things-to-do-in-Purnea" className="text-gold hover:underline">things to do in Purnea</Link> for more activity ideas. Food lovers should read our
+        <Link href="/blog/local-food-guide-in-Purnea" className="text-gold hover:underline"> local food guide in Purnea</Link> for authentic Bihari cuisine.
       </p>
 
       <h2 className="font-display text-2xl italic text-forest mt-10 mb-4">Book Your Stay</h2>

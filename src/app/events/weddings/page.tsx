@@ -7,7 +7,7 @@ import Link from 'next/link';
 export const metadata = {
   title: 'Wedding Venue in Purnea | Marriage Hall & Banquet',
   description: 'Best wedding venue in Purnea near Bus Stand. Hotel Surya Bella Casa offers marriage hall, wedding lawns, banquet hall & bridal suites for up to 250 guests.',
-  keywords: ['wedding venue purnea', 'marriage hall purnia', 'banquet hall wedding purnea', 'best wedding hotel purnea', 'wedding decoration purnia', 'wedding catering purnea'],
+  keywords: ['wedding venue purnea', 'marriage hall Purnea', 'banquet hall wedding purnea', 'best wedding hotel purnea', 'wedding decoration Purnea', 'wedding catering purnea'],
   alternates: { canonical: 'https://hotelsuryabellacasa.com/events/weddings' },
 };
 
@@ -107,7 +107,7 @@ export default function WeddingsPage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center mb-32">
             <div>
               <SectionLabel className="mb-6">The Venue</SectionLabel>
-              <h2 className="font-display text-4xl md:text-6xl italic text-forest mb-8">Purnia&apos;s Premier Wedding Destination</h2>
+              <h2 className="font-display text-4xl md:text-6xl italic text-forest mb-8">Purnea&apos;s Premier Wedding Destination</h2>
               <p className="font-serif text-lg text-taupe leading-relaxed mb-10">
                 At Hotel Surya Bella Casa, we transform your dream wedding into a reality. Our expansive lawns can host up to 250 guests, offering a seamless blend of rustic charm and premium luxury.
               </p>

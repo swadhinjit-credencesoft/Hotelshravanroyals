@@ -63,7 +63,7 @@ function ReservationsContent({ fallbackRooms }: Props) {
   }, [fromDate, toDate, noOfRooms, noOfPersons])
 
   const hotelName = property?.name || 'Hotel Surya Bella Casa'
-  const hotelDesc = stripHtml(property?.businessDescription || 'Comfortable and budget-friendly stay in Purnia')
+  const hotelDesc = stripHtml(property?.businessDescription || 'Comfortable and budget-friendly stay in Purnea')
   const hotelImages = property?.imageList || []
   const services: PropertyService[] = property?.propertyServicesList || []
   const addr = property?.address

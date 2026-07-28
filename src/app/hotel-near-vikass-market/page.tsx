@@ -7,22 +7,22 @@ import { MapPin, Star, Calendar, ArrowRight } from 'lucide-react';
 
 const marketAmenities: AmenityItem[] = [
   { icon: 'ShoppingBag', title: 'Across from Vikass Market', description: 'Directly opposite Vikass Market. Shop for fabrics, garments, and daily essentials without any commute.' },
-  { icon: 'Store', title: 'Local Sweets & Dining', description: 'Famous Purnia sweet shops and restaurants are within walking distance from the hotel entrance.' },
+  { icon: 'Store', title: 'Local Sweets & Dining', description: 'Famous Purnea sweet shops and restaurants are within walking distance from the hotel entrance.' },
   { icon: 'Coffee', title: 'Tea & Snack Service', description: 'Complimentary morning tea and packaged snacks available at the front desk throughout the day.' },
-  { icon: 'MapPin', title: 'Bhatta Bazar Connectivity', description: 'Just a quick rickshaw ride to Bhatta Bazar, Purnia&apos;s oldest wholesale and retail commercial district.' },
+  { icon: 'MapPin', title: 'Bhatta Bazar Connectivity', description: 'Just a quick rickshaw ride to Bhatta Bazar, Purnea&apos;s oldest wholesale and retail commercial district.' },
   { icon: 'Calendar', title: 'Business Meeting Access', description: 'Proximity to local businesses and banks makes Vikass Market area a preferred base for commercial travelers.' },
   { icon: 'Star', title: 'Evening Shopping Walks', description: 'The market area comes alive in the evenings. Step out for a relaxed shopping walk right opposite the hotel.' },
 ];
 
 export const metadata = {
-  title: 'Hotel Near Vikass Market Purnia',
-  description: 'Looking for a hotel near Vikass Market Purnia? Hotel Surya Bella Casa is opposite Vikass Market in Suryalok Complex. Free WiFi, parking, AC rooms.',
+  title: 'Hotel Near Vikass Market Purnea',
+  description: 'Looking for a hotel near Vikass Market Purnea? Hotel Surya Bella Casa is opposite Vikass Market in Suryalok Complex. Free WiFi, parking, AC rooms.',
   keywords: [
     'hotel near vikass market purnea', 'hotel opposite vikass market',
-    'hotel near vikass market bihar', 'best hotel opposite vikass market purnia',
-    'AC rooms near vikass market', 'stay near vikass market purnia',
+    'hotel near vikass market bihar', 'best hotel opposite vikass market Purnea',
+    'AC rooms near vikass market', 'stay near vikass market Purnea',
     'budget hotel opposite vikass market', 'Suryalok Complex hotel near market',
-    'hotel near shopping area purnia', 'hotel near bhatta bazar purnia',
+    'hotel near shopping area Purnea', 'hotel near bhatta bazar Purnea',
     'hotel near bus stand purnea vikass market',
   ],
   alternates: {
@@ -34,17 +34,17 @@ export const metadata = {
     googleBot: { index: true, follow: true, 'max-image-preview': 'large', 'max-snippet': -1 },
   },
   openGraph: {
-    title: 'Hotel Near Vikass Market Purnia | Opposite Vikass Market',
-    description: 'Best hotel opposite Vikass Market Purnia. Located near Bus Stand with free WiFi, parking, AC rooms. Perfect for shopping and business visits. Book direct for best rates.',
+    title: 'Hotel Near Vikass Market Purnea | Opposite Vikass Market',
+    description: 'Best hotel opposite Vikass Market Purnea. Located near Bus Stand with free WiFi, parking, AC rooms. Perfect for shopping and business visits. Book direct for best rates.',
     url: 'https://hotelsuryabellacasa.com/hotel-near-vikass-market',
     siteName: 'Hotel Surya Bella Casa',
     type: 'website',
-    images: [{ url: 'https://bookonelocal.in/cdn/IMG_3815.avif', width: 1200, height: 630, alt: 'Hotel Near Vikass Market Purnia - Best Hotel Opposite Vikass Market Near Bus Stand - Hotel Surya Bella Casa' }],
+    images: [{ url: 'https://bookonelocal.in/cdn/IMG_3815.avif', width: 1200, height: 630, alt: 'Hotel Near Vikass Market Purnea - Best Hotel Opposite Vikass Market Near Bus Stand - Hotel Surya Bella Casa' }],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Hotel Near Vikass Market Purnia | Opposite Vikass Market',
-    description: 'Best hotel opposite Vikass Market Purnia near Bus Stand. Free WiFi, parking, AC. Book now for best rates.',
+    title: 'Hotel Near Vikass Market Purnea | Opposite Vikass Market',
+    description: 'Best hotel opposite Vikass Market Purnea near Bus Stand. Free WiFi, parking, AC. Book now for best rates.',
     images: ['https://bookonelocal.in/cdn/IMG_3815.avif'],
   },
 };
@@ -70,8 +70,8 @@ export default function VikassMarketLandingPage() {
 
       <CinematicHero 
         label="Best Hotel Opposite Vikass Market Purnea - Near Bus Stand"
-        title="Hotel Near Vikass Market Purnia - Free WiFi, Parking & AC Rooms"
-        tagline="Looking for a hotel near Vikass Market Purnia? Hotel Surya Bella Casa is located directly opposite Vikass Market in Suryalok Complex, near Bus Stand. Enjoy free WiFi, parking, AC rooms, and 24/7 service at the best hotel opposite Vikass Market."
+        title="Hotel Near Vikass Market Purnea - Free WiFi, Parking & AC Rooms"
+        tagline="Looking for a hotel near Vikass Market Purnea? Hotel Surya Bella Casa is located directly opposite Vikass Market in Suryalok Complex, near Bus Stand. Enjoy free WiFi, parking, AC rooms, and 24/7 service at the best hotel opposite Vikass Market."
         image='https://bookonelocal.in/cdn/IMG_3739.avif'
       />
 
@@ -80,19 +80,19 @@ export default function VikassMarketLandingPage() {
           <div className="lg:col-span-2">
             <SectionLabel className="mb-6">Commercial Access</SectionLabel>
             <h2 className="font-display text-4xl md:text-5xl italic text-forest mb-8 leading-tight">
-              Stay in the Commercial Heart of Purnia Opposite Vikass Market
+              Stay in the Commercial Heart of Purnea Opposite Vikass Market
             </h2>
             <GoldDivider className="mb-8" />
             
             <div className="font-sans text-base text-taupe/80 space-y-6 leading-loose">
               <p>
-                Vikass Market is one of Purnia&apos;s most active mercantile and consumer corridors. Whether you are visiting Purnia for a business deal, wholesale shopping, or leisure, staying at a <strong>hotel near Vikass Market</strong> puts you right in the center of the action.
+                Vikass Market is one of Purnea&apos;s most active mercantile and consumer corridors. Whether you are visiting Purnea for a business deal, wholesale shopping, or leisure, staying at a <strong>hotel near Vikass Market</strong> puts you right in the center of the action.
               </p>
               <p>
-                <strong>Hotel Surya Bella Casa</strong> is located in Suryalok Complex, directly opposite Vikass Market. This makes it incredibly easy to manage <Link href="/business-hotel-in-purnia" className="text-gold hover:underline">business meetings</Link>, retail trips, or <Link href="/family-hotel-in-purnia" className="text-gold hover:underline">family events</Link> without having to spend hours traveling back and forth through traffic. Browse our <Link href="/rooms" className="text-gold hover:underline">room categories</Link> and <Link href="/offers" className="text-gold hover:underline">special offers</Link>.
+                <strong>Hotel Surya Bella Casa</strong> is located in Suryalok Complex, directly opposite Vikass Market. This makes it incredibly easy to manage <Link href="/business-hotel-in-Purnea" className="text-gold hover:underline">business meetings</Link>, retail trips, or <Link href="/family-hotel-in-Purnea" className="text-gold hover:underline">family events</Link> without having to spend hours traveling back and forth through traffic. Browse our <Link href="/rooms" className="text-gold hover:underline">room categories</Link> and <Link href="/offers" className="text-gold hover:underline">special offers</Link>.
               </p>
               <p>
-                Our rooms are peaceful sanctuaries that block out the urban hustle while keeping you connected to Purnia&apos;s finest sweet shops, local businesses, and restaurants.
+                Our rooms are peaceful sanctuaries that block out the urban hustle while keeping you connected to Purnea&apos;s finest sweet shops, local businesses, and restaurants.
               </p>
             </div>
 
@@ -145,13 +145,13 @@ export default function VikassMarketLandingPage() {
 
       <section className="py-16 max-w-[1200px] mx-auto px-6 md:px-10">
         <SectionLabel className="mb-6">Also Explore</SectionLabel>
-        <h2 className="font-display text-3xl md:text-4xl italic text-forest mb-8">More Places to Stay in Purnia</h2>
+        <h2 className="font-display text-3xl md:text-4xl italic text-forest mb-8">More Places to Stay in Purnea</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {[
-            { href: '/hotel-near-purnia-bus-stand', label: 'Hotel Near Bus Stand' },
-            { href: '/family-hotel-in-purnia', label: 'Family Hotel in Purnia' },
-            { href: '/business-hotel-in-purnia', label: 'Business Hotel in Purnia' },
-            { href: '/budget-hotel-in-purnia', label: 'Budget Hotel in Purnia' },
+            { href: '/hotel-near-Purnea-bus-stand', label: 'Hotel Near Bus Stand' },
+            { href: '/family-hotel-in-Purnea', label: 'Family Hotel in Purnea' },
+            { href: '/business-hotel-in-Purnea', label: 'Business Hotel in Purnea' },
+            { href: '/budget-hotel-in-Purnea', label: 'Budget Hotel in Purnea' },
           ].map((item) => (
             <Link
               key={item.href}

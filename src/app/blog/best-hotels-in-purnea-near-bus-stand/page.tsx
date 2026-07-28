@@ -13,7 +13,7 @@ export const metadata: Metadata = {
     'budget hotel purnea',
     'family hotel purnea near vikass market',
     'hotel booking purnea',
-    'best accommodation purnia',
+    'best accommodation Purnea',
     'hotel near vikass market purnea',
   ],
   alternates: {
@@ -64,11 +64,11 @@ export default function BlogPost() {
       heroImage="https://bookonelocal.in/cdn/IMG_3815.avif"
       heroAlt="Hotel Surya Bella Casa exterior - Best hotel in Purnea near Bus Stand"
       relatedArticles={[
-        { title: 'Luxury Hotel in Purnia', link: '/blog/luxury-hotel-in-purnia' },
+        { title: 'Luxury Hotel in Purnea', link: '/blog/luxury-hotel-in-Purnea' },
         { title: 'Business Hotel in Purnea', link: '/blog/business-hotel-in-purnea' },
         { title: 'Family Hotel in Purnea', link: '/blog/family-hotel-in-purnea' },
         { title: 'Places to Visit in Purnea', link: '/blog/places-to-visit-in-purnea' },
-        { title: 'Best Restaurant in Purnia', link: '/blog/best-restaurant-in-purnia' },
+        { title: 'Best Restaurant in Purnea', link: '/blog/best-restaurant-in-Purnea' },
       ]}
       serviceLinks={[
         { label: 'View Rooms', link: '/rooms' },
@@ -80,8 +80,8 @@ export default function BlogPost() {
       ]}
     >
       <p>
-        If you are arriving in Purnia by bus, finding a comfortable and well-connected hotel near
-        the <strong>Purnia Bus Stand</strong> is essential. The main bus stand area, especially around
+        If you are arriving in Purnea by bus, finding a comfortable and well-connected hotel near
+        the <strong>Purnea Bus Stand</strong> is essential. The main bus stand area, especially around
         <strong>Vikass Market</strong> and <strong>Suryalok Complex</strong>, offers several accommodation
         options for travelers. Whether you need a <Link href="/rooms/super-deluxe-room" className="text-gold hover:underline">Super Deluxe AC room</Link> or a
         budget-friendly <Link href="/rooms/deluxe-ac-room" className="text-gold hover:underline">Deluxe AC room</Link>, the area has something for every traveler.
@@ -90,7 +90,7 @@ export default function BlogPost() {
       <h2 className="font-display text-2xl italic text-forest mt-10 mb-4">Hotel Surya Bella Casa: Best Pick Near Bus Stand</h2>
       <p>
         <strong><Link href="/" className="text-gold hover:underline">Hotel Surya Bella Casa</Link></strong> is located opposite Vikass Market, less than a 2-minute walk from
-        Purnia Bus Stand. With 4 room categories, free WiFi, dedicated parking, and 24/7 room service, it is
+        Purnea Bus Stand. With 4 room categories, free WiFi, dedicated parking, and 24/7 room service, it is
         the top choice for both transit travelers and extended stays. Our <Link href="/rooms" className="text-gold hover:underline">room options</Link> are designed
         to suit every type of guest.
       </p>
@@ -105,9 +105,9 @@ export default function BlogPost() {
 
       <h2 className="font-display text-2xl italic text-forest mt-10 mb-4">Why Stay Near Bus Stand Purnea?</h2>
       <p>
-        The area around Purnia Bus Stand is the commercial heart of the city. You have easy access to
+        The area around Purnea Bus Stand is the commercial heart of the city. You have easy access to
         <strong>Vikass Market</strong> for shopping, <strong>Bhatta Bazar</strong> for local goods, and
-        multiple sweet shops and restaurants within walking distance. Auto-rickshaws to <Link href="/blog/hotels-near-purnia-railway-station" className="text-gold hover:underline">Purnea Junction
+        multiple sweet shops and restaurants within walking distance. Auto-rickshaws to <Link href="/blog/hotels-near-Purnea-railway-station" className="text-gold hover:underline">Purnea Junction
         Railway Station</Link> (6.1 km) and other parts of the city are readily available. If you are interested
         in local sightseeing, check our guide to <Link href="/blog/places-to-visit-in-purnea" className="text-gold hover:underline">places to visit in Purnea</Link>.
       </p>
@@ -131,9 +131,9 @@ export default function BlogPost() {
 
       <h2 className="font-display text-2xl italic text-forest mt-10 mb-4">Explore More About Purnea</h2>
       <p>
-        Planning your trip? Our <Link href="/blog/purnia-travel-guide" className="text-gold hover:underline">Purnia travel guide</Link> covers everything
+        Planning your trip? Our <Link href="/blog/Purnea-travel-guide" className="text-gold hover:underline">Purnea travel guide</Link> covers everything
         you need to know about reaching and exploring the city. For food lovers, our
-        <Link href="/blog/best-restaurant-in-purnia" className="text-gold hover:underline"> best restaurant in Purnia</Link> guide will help you
+        <Link href="/blog/best-restaurant-in-Purnea" className="text-gold hover:underline"> best restaurant in Purnea</Link> guide will help you
         discover the finest dining options. Families traveling with kids should read our
         <Link href="/blog/family-hotel-in-purnea" className="text-gold hover:underline"> family hotel in Purnea</Link> guide for tips on
         comfortable family stays.

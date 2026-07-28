@@ -15,11 +15,11 @@ export const metadata: Metadata = {
     'night restaurant purnea',
     'best dinner near bus stand purnea',
   ],
-  alternates: { canonical: 'https://hotelsuryabellacasa.com/blog/best-dinner-place-in-purnia' },
+  alternates: { canonical: 'https://hotelsuryabellacasa.com/blog/best-dinner-place-in-Purnea' },
   openGraph: {
     title: 'Best Dinner Place in Purnea | Bella Casa Restaurant',
     description: 'Searching for the best dinner place in Purnea? Bella Casa Restaurant offers rooftop dinner with city views, multi-cuisine menu, and romantic ambiance near Bus Stand.',
-    url: 'https://hotelsuryabellacasa.com/blog/best-dinner-place-in-purnia',
+    url: 'https://hotelsuryabellacasa.com/blog/best-dinner-place-in-Purnea',
     siteName: 'Hotel Surya Bella Casa',
     type: 'article',
     publishedTime: '2026-07-08T00:00:00.000Z',
@@ -102,9 +102,9 @@ export default function BlogPost() {
         heroAlt="Best dinner place in Purnea - Bella Casa Restaurant"
         relatedArticles={[
           { title: 'Rooftop Restaurant in Purnea', link: '/blog/rooftop-restaurant-in-purnea' },
-          { title: 'Best Restaurant in Purnia', link: '/blog/best-restaurant-in-purnia' },
-          { title: 'Fine Dining Restaurant in Purnia', link: '/blog/fine-dining-restaurant-in-purnia' },
-          { title: 'Luxury Hotel in Purnia', link: '/blog/luxury-hotel-in-purnia' },
+          { title: 'Best Restaurant in Purnea', link: '/blog/best-restaurant-in-Purnea' },
+          { title: 'Fine Dining Restaurant in Purnea', link: '/blog/fine-dining-restaurant-in-Purnea' },
+          { title: 'Luxury Hotel in Purnea', link: '/blog/luxury-hotel-in-Purnea' },
         ]}
         serviceLinks={[
           { label: 'Restaurant', link: '/dining' },
@@ -116,10 +116,10 @@ export default function BlogPost() {
         ]}
       >
         <p>
-          Dinner is often the most memorable meal of the day. It is when you unwind after a long day, share stories over good food, and create moments that stay with you. Finding the <Link href="/blog/best-dinner-place-in-purnia" className="text-gold hover:underline">best dinner place in Purnia</Link> means finding a spot that offers not just great food but also an atmosphere that enhances the entire experience. <strong><Link href="/" className="text-gold hover:underline">Bella Casa Restaurant</Link></strong>, located inside <strong>Hotel Surya Bella Casa</strong>, delivers exactly that with its signature rooftop evening dining experience near <strong>Purnea Bus Stand</strong>.
+          Dinner is often the most memorable meal of the day. It is when you unwind after a long day, share stories over good food, and create moments that stay with you. Finding the <Link href="/blog/best-dinner-place-in-Purnea" className="text-gold hover:underline">best dinner place in Purnea</Link> means finding a spot that offers not just great food but also an atmosphere that enhances the entire experience. <strong><Link href="/" className="text-gold hover:underline">Bella Casa Restaurant</Link></strong>, located inside <strong>Hotel Surya Bella Casa</strong>, delivers exactly that with its signature rooftop evening dining experience near <strong>Purnea Bus Stand</strong>.
         </p>
         <p>
-          Our restaurant has become the preferred dinner destination for locals, couples, <Link href="/blog/family-restaurant-in-purnia" className="text-gold hover:underline">families</Link>, and travelers who want more than a quick meal. From the moment the evening sun begins to set over Purnea to the time the city lights twinkle below, our rooftop transforms into an intimate dining space that makes every dinner feel like an occasion.
+          Our restaurant has become the preferred dinner destination for locals, couples, <Link href="/blog/family-restaurant-in-Purnea" className="text-gold hover:underline">families</Link>, and travelers who want more than a quick meal. From the moment the evening sun begins to set over Purnea to the time the city lights twinkle below, our rooftop transforms into an intimate dining space that makes every dinner feel like an occasion.
         </p>
 
         <h2 className="font-display text-2xl italic text-forest mt-10 mb-4">The Evening Dining Experience</h2>
@@ -127,7 +127,7 @@ export default function BlogPost() {
           There is something special about dining as the day transitions into night. At <strong>Bella Casa Restaurant</strong>, we have designed our evening dining experience to take full advantage of this natural ambiance. Our rooftop area is equipped with comfortable seating, subtle lighting, and an open layout that lets you enjoy the evening breeze while you eat.
         </p>
         <p>
-          Unlike many restaurants that feel hurried during dinner service, we encourage a relaxed pace. Our staff serves each course at a comfortable interval, giving you time to savor each dish and enjoy the conversation at your table. Whether you are out for a romantic dinner with your partner, a <Link href="/blog/family-restaurant-in-purnia" className="text-gold hover:underline">family meal</Link> after a day of sightseeing, or a casual dinner with friends, the rooftop provides a setting that feels both special and unpretentious.
+          Unlike many restaurants that feel hurried during dinner service, we encourage a relaxed pace. Our staff serves each course at a comfortable interval, giving you time to savor each dish and enjoy the conversation at your table. Whether you are out for a romantic dinner with your partner, a <Link href="/blog/family-restaurant-in-Purnea" className="text-gold hover:underline">family meal</Link> after a day of sightseeing, or a casual dinner with friends, the rooftop provides a setting that feels both special and unpretentious.
         </p>
         <p>
           The evening service typically begins at <strong>6:00 PM and continues until 10:30 PM</strong>, with the peak ambiance occurring around sunset when the sky over Purnea takes on shades of orange and gold. We recommend arriving around 6:30 PM if you want to catch the sunset from the rooftop.
@@ -186,7 +186,7 @@ export default function BlogPost() {
 
         <h2 className="font-display text-2xl italic text-forest mt-10 mb-4">Family Dinner Outings</h2>
         <p>
-          While our rooftop is perfect for couples, it is equally welcoming for families. The spacious seating accommodates groups of all sizes, and the open environment gives children room to move without feeling restricted. Our <Link href="/blog/family-restaurant-in-purnia" className="text-gold hover:underline">family-friendly approach</Link> means that parents can enjoy their dinner while knowing that their children are in a safe, welcoming space.
+          While our rooftop is perfect for couples, it is equally welcoming for families. The spacious seating accommodates groups of all sizes, and the open environment gives children room to move without feeling restricted. Our <Link href="/blog/family-restaurant-in-Purnea" className="text-gold hover:underline">family-friendly approach</Link> means that parents can enjoy their dinner while knowing that their children are in a safe, welcoming space.
         </p>
         <p>
           The dinner menu includes options that appeal to all age groups, from mild butter chicken for children to spicy vindaloo for adventurous adult palates. Our staff is accustomed to accommodating families with young children and will happily adjust portion sizes and spice levels.
@@ -267,7 +267,7 @@ export default function BlogPost() {
 
         <h2 className="font-display text-2xl italic text-forest mt-10 mb-4">Discover More on Our Blog</h2>
         <p>
-          Looking for more dining recommendations in Purnea? Our blog features in-depth guides on the <Link href="/blog/best-restaurant-in-purnia" className="text-gold hover:underline">best restaurants in Purnia</Link>, the <Link href="/blog/fine-dining-restaurant-in-purnia" className="text-gold hover:underline">fine dining scene</Link>, and the <Link href="/blog/family-restaurant-in-purnia" className="text-gold hover:underline">best family dining options</Link>. For hotel recommendations, our guide to the <Link href="/blog/luxury-hotel-in-purnia" className="text-gold hover:underline">luxury hotels in Purnia</Link> covers accommodation choices for every budget and preference.
+          Looking for more dining recommendations in Purnea? Our blog features in-depth guides on the <Link href="/blog/best-restaurant-in-Purnea" className="text-gold hover:underline">best restaurants in Purnea</Link>, the <Link href="/blog/fine-dining-restaurant-in-Purnea" className="text-gold hover:underline">fine dining scene</Link>, and the <Link href="/blog/family-restaurant-in-Purnea" className="text-gold hover:underline">best family dining options</Link>. For hotel recommendations, our guide to the <Link href="/blog/luxury-hotel-in-Purnea" className="text-gold hover:underline">luxury hotels in Purnea</Link> covers accommodation choices for every budget and preference.
         </p>
         <p>
           At <strong>Bella Casa Restaurant</strong>, we believe that dinner should be more than just a meal. It should be an experience that brings people together, creates lasting memories, and ends the day on a beautiful note. Our rooftop, our food, and our team are all dedicated to making that happen for every guest who joins us for an evening meal. We look forward to welcoming you to what we believe is the best dinner place in Purnea.

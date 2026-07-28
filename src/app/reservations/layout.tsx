@@ -2,8 +2,8 @@ import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
   title: 'Book Your Stay Online',
-  description: 'Book your hotel room directly at Hotel Surya Bella Casa, Purnia. Choose from AC and Non-AC rooms. Best rates guaranteed on direct bookings.',
-  keywords: ['book hotel purnia', 'hotel reservation purnia', 'purnia room booking', 'hotel surya bella casa reservation', 'online booking purnia', 'purnia hotel booking online', 'purnia ac room booking', 'purnia non ac room booking', 'hotel near bus stand purnia booking', 'purnia hotel best rate', 'purnia hotel direct booking', 'instant booking purnia hotel', 'purnia hotel room availability', 'purnia hotel reservation online', 'secure hotel booking purnia'],
+  description: 'Book your hotel room directly at Hotel Surya Bella Casa, Purnea. Choose from AC and Non-AC rooms. Best rates guaranteed on direct bookings.',
+  keywords: ['book hotel Purnea', 'hotel reservation Purnea', 'Purnea room booking', 'hotel surya bella casa reservation', 'online booking Purnea', 'Purnea hotel booking online', 'Purnea ac room booking', 'Purnea non ac room booking', 'hotel near bus stand Purnea booking', 'Purnea hotel best rate', 'Purnea hotel direct booking', 'instant booking Purnea hotel', 'Purnea hotel room availability', 'Purnea hotel reservation online', 'secure hotel booking Purnea'],
   alternates: {
     canonical: 'https://hotelsuryabellacasa.com/reservations',
   },
@@ -18,8 +18,8 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: 'Book Your Stay Online | Hotel Surya Bella Casa Purnia',
-    description: 'Book your hotel room directly at Hotel Surya Bella Casa, Purnia. Best rates guaranteed on direct bookings.',
+    title: 'Book Your Stay Online | Hotel Surya Bella Casa Purnea',
+    description: 'Book your hotel room directly at Hotel Surya Bella Casa, Purnea. Best rates guaranteed on direct bookings.',
     url: 'https://hotelsuryabellacasa.com/reservations',
     siteName: 'Hotel Surya Bella Casa',
     type: 'website',
@@ -28,14 +28,14 @@ export const metadata: Metadata = {
         url: 'https://bookonelocal.in/cdn/IMG_3815.avif',
         width: 1200,
         height: 630,
-        alt: 'Book your stay at Hotel Surya Bella Casa Purnia',
+        alt: 'Book your stay at Hotel Surya Bella Casa Purnea',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Book Your Stay Online | Hotel Surya Bella Casa Purnia',
-    description: 'Book your hotel room directly at Hotel Surya Bella Casa, Purnia. Best rates guaranteed.',
+    title: 'Book Your Stay Online | Hotel Surya Bella Casa Purnea',
+    description: 'Book your hotel room directly at Hotel Surya Bella Casa, Purnea. Best rates guaranteed.',
     images: ['https://bookonelocal.in/cdn/IMG_3815.avif'],
   },
 }

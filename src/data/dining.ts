@@ -16,7 +16,7 @@ export const venues: Venue[] = [
     name: 'Food Delivery & Local Dining',
     tagline: 'Order from Swiggy & Zomato',
     cuisine: 'Pure Vegetarian Delicacies (Local Partner Restaurants)',
-    description: 'Guests can easily order vegetarian food from popular local restaurants in Purnia via Swiggy and Zomato. Note: Non-vegetarian food is not allowed on the property premises.',
+    description: 'Guests can easily order vegetarian food from popular local restaurants in Purnea via Swiggy and Zomato. Note: Non-vegetarian food is not allowed on the property premises.',
     hours: 'Available throughout the day',
     image: 'https://bookonelocal.in/cdn/IMG_3791.avif',
     imageAlt: 'Pure Vegetarian Dining setup reference',
@@ -25,7 +25,7 @@ export const venues: Venue[] = [
   {
     id: 'd2',
     name: 'Local Markets & Cafes',
-    tagline: 'Explore Purnia City Centre',
+    tagline: 'Explore Purnea City Centre',
     cuisine: 'Street Food & Snacks',
     description: 'Located in Suryalok Complex, the hotel is surrounded by Vikass Market and local sweet shops where you can relish authentic Bihari snacks and delicacies.',
     hours: '9:00 AM – 10:00 PM daily',
