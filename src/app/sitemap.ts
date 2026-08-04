@@ -18,8 +18,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/events/parties',
     '/events/weddings',
     '/gallery',
-    '/offers',
-    '/blog',
     '/contact',
     '/reservations',
     '/privacy',

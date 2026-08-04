@@ -8,7 +8,6 @@ import DiningSection from '@/components/sections/DiningSection';
 import ExperiencesGrid from '@/components/sections/ExperiencesGrid';
 import TestimonialsSection from '@/components/sections/TestimonialsSection';
 import GallerySection from '@/components/sections/GallerySection';
-// import OffersSection from '@/components/sections/OffersSection';
 import AwardsMarquee from '@/components/sections/AwardsMarquee';
 import NewsletterSection from '@/components/sections/NewsletterSection';
 import HistorySection from '@/components/sections/HistorySection';
@@ -120,12 +119,6 @@ export default function Home() {
 
       {/* Gallery Section with Lightbox */}
       <GallerySection />
-
-      {/* Seasonal Offers */}
-      {/* <OffersSection /> */}
-
-      {/* Sustainability & Forest */}
-      {/* <ForestSection /> */}
 
       {/* Newsletter & Contact */}
       <NewsletterSection />

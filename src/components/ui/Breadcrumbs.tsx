@@ -9,7 +9,7 @@ export default function Breadcrumbs() {
   if (pathname === '/') return null;
 
   // Pages with dark CinematicHeroes where we need light text
-  const darkHeroPages = ['/about', '/rooms', '/dining', '/experiences', '/events', '/gallery', '/blog'];
+  const darkHeroPages = ['/about', '/rooms', '/dining', '/experiences', '/events', '/gallery'];
   const isDarkHero = darkHeroPages.some(page => pathname.startsWith(page));
 
   const paths = pathname.split('/').filter((path) => path);

@@ -74,7 +74,7 @@ export default function AboutPage() {
                   Our design language is one of restraint and sustainability. We use local red bricks, reclaimed timber, and the natural movement of light to create spaces like our <Link href="/rooms/red-brick-cottage" className="text-gold hover:underline">Red Brick Cottages</Link> that breathe with the landscape.
                 </p>
                 <p>
-                  Explore our <Link href="/experiences" className="text-gold hover:underline">curated experiences</Link> or our <Link href="/blog" className="text-gold hover:underline">nature blog</Link> to learn more about our philosophy.
+                  Explore our <Link href="/experiences" className="text-gold hover:underline">curated experiences</Link> to learn more about our philosophy.
                 </p>
               </div>
             </motion.div>
