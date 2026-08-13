@@ -12,7 +12,7 @@ export default function LiveMusicalEveningsPage() {
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "EventVenue",
-    "@name": "Unwind Karjat Live Music Venue",
+    "name": "Unwind Karjat Live Music Venue",
     "description": "Soulful acoustic nights, live bands, DJ evenings, and bonfire jam sessions under the Karjat sky.",
     "address": {
       "@type": "PostalAddress",
@@ -23,7 +23,7 @@ export default function LiveMusicalEveningsPage() {
   };
 
   return (
-    <main className="bg-cream min-h-screen">
+    <main className="bg-cream min-h-screen" id="main-content">
       <Navbar />
       <script
         type="application/ld+json"
@@ -71,7 +71,7 @@ export default function LiveMusicalEveningsPage() {
               </a>
             </div>
             <div className="relative aspect-square">
-              <Image src='/images/exterior1.jpeg' alt="Live music performance at Unwind Karjat" fill className="object-cover rounded-sm shadow-2xl" />
+              <Image src='/images/exterior4.jpeg' alt="Live music performance at Unwind Karjat" fill className="object-cover rounded-sm shadow-2xl" />
             </div>
           </div>
 

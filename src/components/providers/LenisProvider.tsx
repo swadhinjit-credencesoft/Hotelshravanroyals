@@ -31,11 +31,23 @@ export default function LenisProvider({ children }: { children: React.ReactNode 
     }
   }, [])
 
-  // Reset Lenis scroll position to top on every route change
+  // On every route change: scroll to top, unless a hash is present (e.g.
+  // /events#enquiry) in which case scroll to that element after mount.
   useEffect(() => {
-    if (lenisRef.current) {
-      lenisRef.current.scrollTo(0, { immediate: true })
+    const lenis = lenisRef.current
+    if (!lenis) return
+
+    const hash = window.location.hash
+    if (hash) {
+      const target = document.querySelector(hash)
+      if (target) {
+        requestAnimationFrame(() => {
+          lenis.scrollTo(target as HTMLElement, { offset: -140, duration: 1.2 })
+        })
+        return
+      }
     }
+    lenis.scrollTo(0, { immediate: true })
   }, [pathname])
 
   return <>{children}</>

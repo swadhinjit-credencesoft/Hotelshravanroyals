@@ -9,7 +9,7 @@ import { Coffee, Flame, UtensilsCrossed } from 'lucide-react';
 
 export default function DiningPage() {
   return (
-    <main className="bg-cream min-h-screen">
+    <main className="bg-cream min-h-screen" id="main-content">
       <Navbar />
       <CinematicHero 
         label="Culinary Experience"
@@ -115,7 +115,7 @@ export default function DiningPage() {
                <Image src='/images/exterior4.jpeg' alt="Gourmet plated dish" fill className="object-cover grayscale hover:grayscale-0 transition-all duration-1000" />
             </div>
             <div className="relative overflow-hidden group row-span-2">
-               <Image src='/bloghero.png' alt="Rustic grill setup" fill className="object-cover grayscale hover:grayscale-0 transition-all duration-1000" />
+               <Image src='/images/exterior5.jpeg' alt="Rustic grill setup" fill className="object-cover grayscale hover:grayscale-0 transition-all duration-1000" />
             </div>
             <div className="relative overflow-hidden group">
                <Image src='/Lawn-Facing-Room.png' alt="Outdoor dining at dusk" fill className="object-cover grayscale hover:grayscale-0 transition-all duration-1000" />

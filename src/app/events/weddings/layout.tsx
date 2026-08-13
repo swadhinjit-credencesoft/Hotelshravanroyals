@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Destination Weddings & Forest Lawns in Karjat | Unwind Karjat',
+  title: 'Destination Weddings & Forest Lawns in Karjat',
   description: 'Exchange vows in a magical forest-side setting. Unwind Karjat offers destination wedding venues, bespoke catering, and luxury stay packages for up to 250 guests.',
   keywords: [
     'destination wedding karjat',

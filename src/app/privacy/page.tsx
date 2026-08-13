@@ -4,7 +4,7 @@ import SectionLabel from '@/components/ui/SectionLabel'
 
 export default function PrivacyPage() {
   return (
-    <main className="bg-cream min-h-screen">
+    <main className="bg-cream min-h-screen" id="main-content">
       <Navbar />
       
       {/* WebPage Schema */}
@@ -16,7 +16,7 @@ export default function PrivacyPage() {
             "@type": "WebPage",
             "@id": "https://unwindkarjat.com/privacy/#webpage",
             "url": "https://unwindkarjat.com/privacy",
-            "name": "Privacy Policy | Unwind Karjat",
+            "name": "Privacy Policy",
             "description": "Read the privacy policy guidelines of Unwind Karjat regarding data collection, storage, and customer reservation security protocols.",
             "isPartOf": {
               "@type": "WebSite",

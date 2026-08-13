@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'About Us | Nature Resort near Mumbai | Unwind Karjat',
+  title: 'About Us | Nature Resort near Mumbai',
   description: 'Discover the philosophy, origins, and eco-friendly commitments of Unwind Karjat, a boutique nature retreat framing the scenic Sahyadri mountains.',
   keywords: [
     'about unwind karjat',

@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Monsoon Treks, Infinity Pool & Activities | Unwind Karjat',
+  title: 'Monsoon Treks, Infinity Pool & Activities',
   description: 'Immerse in unique outdoor experiences near Mumbai, including guided forest treks, winter bonfires, and trips to Kondana Caves and Bhivpuri Falls.',
   keywords: [
     'things to do in karjat',

@@ -51,7 +51,7 @@ export const estateEvents: EstateEvent[] = [
     category: 'Live Musical Evenings',
     description: 'High-energy performances with professional live bands and DJs for weddings, parties, and corporate celebrations.',
     capacity: 'Up to 150 guests',
-    image: '/images/exterior1.jpeg',
+    image: '/images/exterior6.jpeg',
     features: ['Professional sound system', 'Custom playlists', 'Stage lighting'],
   },
   {

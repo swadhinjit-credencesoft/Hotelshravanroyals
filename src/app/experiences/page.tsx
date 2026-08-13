@@ -8,7 +8,7 @@ import { MapPin } from 'lucide-react'
 
 export default function ExperiencesPage() {
   return (
-    <main className="bg-cream min-h-screen">
+    <main className="bg-cream min-h-screen" id="main-content">
       <Navbar />
       <CinematicHero 
         label="Beyond the Room"

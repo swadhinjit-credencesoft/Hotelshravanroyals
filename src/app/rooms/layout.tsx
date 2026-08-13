@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Luxury Cottages & Rooms near Mumbai | Unwind Karjat',
+  title: 'Luxury Cottages & Rooms near Mumbai',
   description: 'Explore our premium accommodations, featuring rustic Red Brick Cottages, Lawn-facing rooms, and Forest suites with deep nature views in Karjat.',
   keywords: [
     'luxury cottages karjat',

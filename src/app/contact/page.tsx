@@ -9,7 +9,7 @@ import { MapPin, Phone, Mail, Clock, Train, Car, MessageCircle } from 'lucide-re
 
 export default function ContactPage() {
   return (
-    <main className="bg-cream min-h-screen">
+    <main className="bg-cream min-h-screen" id="main-content">
       <Navbar />
       
       {/* Hero Header */}
@@ -29,7 +29,7 @@ export default function ContactPage() {
             "@context": "https://schema.org",
             "@type": "Hotel",
             "name": "Unwind Karjat",
-            "image": '/images/room2.jpeg',
+            "image": "https://unwindkarjat.com/images/room2.jpeg",
             "address": {
               "@type": "PostalAddress",
               "streetAddress": "Karjat - Chowk Rd, behind Baba Dairy, Wavarle",

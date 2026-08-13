@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Private Pool Parties & Birthday Venues in Karjat | Unwind Karjat',
+  title: 'Private Pool Parties & Birthday Venues in Karjat',
   description: 'Host vibrant poolside birthdays, private anniversaries, and social gatherings on our celebration deck. Custom event curation at Karjat\'s boutique resort.',
   keywords: [
     'pool party venue karjat',

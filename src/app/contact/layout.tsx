@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Contact & Directions | Resort Location Map | Unwind Karjat',
+  title: 'Contact & Directions | Resort Location Map',
   description: 'Find contact phone numbers, email address, and step-by-step driving directions from Mumbai & Pune to Unwind Karjat. View our resort map location.',
   keywords: [
     'how to reach karjat',

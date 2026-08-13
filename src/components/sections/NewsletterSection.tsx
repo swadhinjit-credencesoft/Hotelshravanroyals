@@ -3,6 +3,8 @@
 import { motion } from 'framer-motion';
 import { siteConfig } from '@/data/site';
 import Image from 'next/image';
+import Link from 'next/link';
+import { MapPin } from 'lucide-react';
 
 export default function NewsletterSection() {
   return (
@@ -46,6 +48,13 @@ export default function NewsletterSection() {
             >
               {siteConfig.phone}
             </a>
+            <Link
+              href="/contact"
+              className="inline-flex items-center gap-2 mt-6 font-sans text-[11px] uppercase tracking-[0.3em] text-gold hover:text-gold-light transition-colors"
+            >
+              <MapPin size={14} />
+              Contact & Directions
+            </Link>
           </div>
         </motion.div>
       </div>

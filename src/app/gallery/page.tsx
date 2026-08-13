@@ -6,7 +6,7 @@ import Image from 'next/image'
 
 export default function GalleryPage() {
   return (
-    <main className="bg-cream min-h-screen">
+    <main className="bg-cream min-h-screen" id="main-content">
       <Navbar />
       
       {/* SEO Schema */}

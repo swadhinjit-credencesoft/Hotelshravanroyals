@@ -6,7 +6,7 @@ import RoomsGrid from '@/components/sections/RoomsGrid'
 
 export default function RoomsPage() {
   return (
-    <main className="bg-cream min-h-screen">
+    <main className="bg-cream min-h-screen" id="main-content">
       <Navbar />
       
       {/* Rooms List Schema */}

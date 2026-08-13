@@ -19,7 +19,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/events/weddings',
     '/gallery',
     '/contact',
-    '/reservations',
     '/privacy',
     '/terms',
     '/cancellation',

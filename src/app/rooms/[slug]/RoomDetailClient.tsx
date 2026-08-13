@@ -61,7 +61,7 @@ export default function RoomDetailClient({ room, otherRooms }: RoomDetailClientP
     '@type': 'HotelRoom',
     'name': room.name,
     'description': room.description,
-    'image': room.image,
+    'image': `https://unwindkarjat.com${room.image}`,
     'occupancy': {
       '@type': 'QuantitativeValue',
       'value': room.guests
@@ -74,13 +74,29 @@ export default function RoomDetailClient({ room, otherRooms }: RoomDetailClientP
   }
 
   return (
-    <main className="bg-[#fdfcf8] min-h-screen pt-20">
+    <main className="bg-[#fdfcf8] min-h-screen pt-20" id="main-content">
       <Navbar />
       
       {/* Schema.org */}
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+
+      {/* Breadcrumb Schema */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'BreadcrumbList',
+            'itemListElement': [
+              { '@type': 'ListItem', 'position': 1, 'name': 'Home', 'item': 'https://unwindkarjat.com' },
+              { '@type': 'ListItem', 'position': 2, 'name': 'Rooms', 'item': 'https://unwindkarjat.com/rooms' },
+              { '@type': 'ListItem', 'position': 3, 'name': room.name, 'item': `https://unwindkarjat.com/rooms/${room.slug}` }
+            ]
+          })
+        }}
       />
 
       {/* Lightbox Overlay */}

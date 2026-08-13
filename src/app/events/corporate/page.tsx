@@ -23,7 +23,7 @@ export default function CorporatePage() {
   };
 
   return (
-    <main className="bg-cream min-h-screen">
+    <main className="bg-cream min-h-screen" id="main-content">
       <Navbar />
       <script
         type="application/ld+json"

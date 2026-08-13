@@ -12,7 +12,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const room = rooms.find(r => r.slug === params.slug)
   if (!room) return {}
 
-  const title = `${room.name} | Luxury Cottages | Unwind Karjat`
+  const title = `${room.name} | Luxury Cottages`
   const description = `${room.tagline}. Spaced at ${room.size} sq.m with a ${room.view} for up to ${room.guests} guests. Book your luxury stay near Mumbai today.`
   
   return {
@@ -24,14 +24,14 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     openGraph: {
       title,
       description,
-      images: [{ url: room.image, alt: room.imageAlt }],
+      images: [{ url: `https://unwindkarjat.com${room.image}`, alt: room.imageAlt }],
       type: 'website',
     },
     twitter: {
       card: 'summary_large_image',
       title,
       description,
-      images: [room.image],
+      images: [`https://unwindkarjat.com${room.image}`],
     }
   }
 }

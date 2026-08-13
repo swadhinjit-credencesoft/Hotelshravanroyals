@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Terms of Service & Booking Conditions | Unwind Karjat',
+  title: 'Terms of Service & Booking Conditions',
   description: 'Review the official terms of service, check-in schedules, lodging policies, and cancellation conditions for resort reservations at Unwind Karjat.',
   keywords: [
     'resort check in rules',

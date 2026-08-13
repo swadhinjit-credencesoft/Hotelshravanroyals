@@ -4,7 +4,7 @@ import SectionLabel from '@/components/ui/SectionLabel'
 
 export default function TermsPage() {
   return (
-    <main className="bg-cream min-h-screen">
+    <main className="bg-cream min-h-screen" id="main-content">
       <Navbar />
       
       {/* WebPage Schema */}
@@ -16,7 +16,7 @@ export default function TermsPage() {
             "@type": "WebPage",
             "@id": "https://unwindkarjat.com/terms/#webpage",
             "url": "https://unwindkarjat.com/terms",
-            "name": "Terms of Service & Booking Conditions | Unwind Karjat",
+            "name": "Terms of Service & Booking Conditions",
             "description": "Review the official terms of service, check-in schedules, lodging policies, and cancellation conditions for resort reservations at Unwind Karjat.",
             "isPartOf": {
               "@type": "WebSite",

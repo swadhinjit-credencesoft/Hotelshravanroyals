@@ -10,6 +10,7 @@ import { estateEvents } from '@/data/events';
 import { motion } from 'framer-motion';
 import Image from 'next/image';
 import { Calendar, ArrowRight, Utensils, GlassWater } from 'lucide-react';
+import FaqSection from '@/components/sections/FaqSection';
 
 const TABS = ['Weddings', 'Corporate', 'Parties', 'Day Trips', 'Live Musical Evenings'];
 
@@ -21,7 +22,7 @@ export default function EventsPage() {
   const displayEvents = filteredEvents.length > 0 ? filteredEvents : estateEvents;
 
   return (
-    <main className="bg-cream min-h-screen">
+    <main className="bg-cream min-h-screen" id="main-content">
       <Navbar />
       <CinematicHero
         label="Events & Celebrations"
@@ -173,6 +174,22 @@ export default function EventsPage() {
           </div>
         </div>
       </section>
+
+      {/* FAQ (answers match on-page FAQPage schema) */}
+      <FaqSection
+        title="Event Planning Questions"
+        label="Planning Help"
+        faqs={[
+          {
+            question: 'What is the wedding capacity at Unwind Karjat?',
+            answer: 'Our outdoor wedding lawns can comfortably host up to 250 guests with bespoke catering and decor.'
+          },
+          {
+            question: 'Do you provide corporate offsite facilities?',
+            answer: 'Yes, we have a dedicated Corporate Hub with high-speed Wi-Fi, projectors, and team-building activities for up to 60 guests.'
+          }
+        ]}
+      />
 
       {/* Dynamic Booking CTA Block */}
       <section className="py-24 bg-cream border-t border-gold/10 text-center" id="enquiry">

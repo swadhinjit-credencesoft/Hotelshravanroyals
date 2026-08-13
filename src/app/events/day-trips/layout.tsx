@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'One Day Picnics & Day Outing Packages in Karjat | Unwind Karjat',
+  title: 'One Day Picnics & Day Outing Packages in Karjat',
   description: 'Plan a perfect one-day picnic near Mumbai and Pune. Enjoy luxury amenities, infinity pool access, and delicious dining options with our day-trip packages.',
   keywords: [
     'day picnic karjat',

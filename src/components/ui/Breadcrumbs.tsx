@@ -6,7 +6,9 @@ import { ChevronRight, Home } from 'lucide-react';
 
 export default function Breadcrumbs() {
   const pathname = usePathname();
-  if (pathname === '/') return null;
+  // Room detail pages render their own breadcrumb nav (RoomDetailClient)
+  const isRoomDetail = pathname.startsWith('/rooms/') && pathname !== '/rooms';
+  if (pathname === '/' || isRoomDetail) return null;
 
   // Pages with dark CinematicHeroes where we need light text
   const darkHeroPages = ['/about', '/rooms', '/dining', '/experiences', '/events', '/gallery'];

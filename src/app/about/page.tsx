@@ -13,7 +13,7 @@ import { siteConfig } from '@/data/site';
 
 export default function AboutPage() {
   return (
-    <main className="bg-cream min-h-screen">
+    <main className="bg-cream min-h-screen" id="main-content">
       <Navbar />
       <CinematicHero 
         label="Our Story"
@@ -32,18 +32,26 @@ export default function AboutPage() {
             "name": "Unwind Karjat",
             "description": "Premium nature resort in Karjat offering rustic luxury cottages and eco-friendly stays.",
             "url": "https://unwindkarjat.com",
-            "logo": "https://unwindkarjat.com/logo.png",
+            "logo": "https://unwindkarjat.com/unwindkarjatlogo.png",
+            "image": "https://unwindkarjat.com/aboutimg.png",
+            "email": "stay@unwindkarjat.com",
+            "telephone": "+91 9619198839",
             "foundingDate": "2019",
             "address": {
               "@type": "PostalAddress",
+              "streetAddress": "Karjat - Chowk Rd, behind Baba Dairy, Wavarle",
               "addressLocality": "Karjat",
               "addressRegion": "Maharashtra",
+              "postalCode": "410206",
               "addressCountry": "IN"
             },
+            "geo": {
+              "@type": "GeoCoordinates",
+              "latitude": 18.922485,
+              "longitude": 73.315053
+            },
             "sameAs": [
-              "https://www.instagram.com/unwindkarjat",
-              "https://www.tripadvisor.com/Hotel_Review-Unwind_Karjat",
-              "https://maps.google.com/?cid=unwind-karjat-id"
+              "https://www.instagram.com/unwind_karjat"
             ]
           })
         }}

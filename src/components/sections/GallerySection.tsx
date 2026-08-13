@@ -2,7 +2,9 @@
 
 import { useState, useMemo } from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 import { motion, AnimatePresence } from 'framer-motion';
+import { ArrowRight } from 'lucide-react';
 import { galleryImages } from '@/data/gallery';
 import SectionLabel from '@/components/ui/SectionLabel';
 import LightboxModal from '@/components/ui/LightboxModal';
@@ -16,7 +18,7 @@ const categories = [
   { id: 'nature', label: 'Nature & Surroundings' }
 ] as const;
 
-export default function GallerySection() {
+export default function GallerySection({ viewAllHref }: { viewAllHref?: string }) {
   const [activeCategory, setActiveCategory] = useState<typeof categories[number]['id']>('all');
   const [lightboxIndex, setLightboxIndex] = useState<number | null>(null);
 
@@ -40,6 +42,14 @@ export default function GallerySection() {
             <h2 className="font-display text-4xl md:text-[52px] italic text-forest">
               Captured Moments
             </h2>
+            {viewAllHref && (
+              <Link
+                href={viewAllHref}
+                className="inline-flex items-center gap-2 mt-6 font-sans text-[10px] uppercase tracking-[0.3em] text-gold hover:text-forest transition-colors"
+              >
+                View Full Gallery <ArrowRight size={14} />
+              </Link>
+            )}
           </div>
 
           <div className="flex gap-6 md:gap-8 border-b border-forest/10 pb-4 overflow-x-auto flex-nowrap md:pb-2 scrollbar-hide">

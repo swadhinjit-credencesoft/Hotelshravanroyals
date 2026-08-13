@@ -4,7 +4,7 @@ import SectionLabel from '@/components/ui/SectionLabel'
 
 export default function CancellationPage() {
   return (
-    <main className="bg-cream min-h-screen">
+    <main className="bg-cream min-h-screen" id="main-content">
       <Navbar />
       
       {/* WebPage Schema */}
@@ -16,7 +16,7 @@ export default function CancellationPage() {
             "@type": "WebPage",
             "@id": "https://unwindkarjat.com/cancellation/#webpage",
             "url": "https://unwindkarjat.com/cancellation",
-            "name": "Cancellation & Refund Policy | Unwind Karjat",
+            "name": "Cancellation & Refund Policy",
             "description": "Read the cancellation and refund policy guidelines of Unwind Karjat regarding direct booking reservation amendments, monsoon policies, and refunds.",
             "isPartOf": {
               "@type": "WebSite",

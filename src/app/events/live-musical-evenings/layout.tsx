@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Live Music & Acoustic Bonfire Nights in Karjat | Unwind Karjat',
+  title: 'Live Music & Acoustic Bonfire Nights in Karjat',
   description: 'Experience magical acoustic evenings, live band performances, and cozy bonfire jam sessions under the stars at Unwind Karjat.',
   keywords: [
     'live music resort karjat',

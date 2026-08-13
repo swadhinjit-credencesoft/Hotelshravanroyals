@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Cancellation & Refund Policy | Unwind Karjat',
+  title: 'Cancellation & Refund Policy',
   description: 'Read the cancellation and refund policy guidelines of Unwind Karjat regarding direct booking reservation amendments, monsoon policies, and refunds.',
   keywords: [
     'unwind karjat cancellation policy',

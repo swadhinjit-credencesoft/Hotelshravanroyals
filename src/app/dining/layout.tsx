@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Bespoke Dining & Local Cuisine | Unwind Karjat',
+  title: 'Bespoke Dining & Local Cuisine',
   description: 'Savour fresh, farm-to-table Maharashtrian delicacies and global cuisines at Unwind Karjat. Explore our all-inclusive meal plans and live BBQ setups.',
   keywords: [
     'karjat local food',

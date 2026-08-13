@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Privacy Policy | Lodge & Resort Stays | Unwind Karjat',
+  title: 'Privacy Policy | Lodge & Resort Stays',
   description: 'Read the privacy policy guidelines of Unwind Karjat regarding data collection, storage, and customer reservation security protocols.',
   keywords: [
     'unwind karjat privacy policy',

@@ -10,6 +10,7 @@ import TestimonialsSection from '@/components/sections/TestimonialsSection';
 import GallerySection from '@/components/sections/GallerySection';
 import AwardsMarquee from '@/components/sections/AwardsMarquee';
 import NewsletterSection from '@/components/sections/NewsletterSection';
+import FaqSection from '@/components/sections/FaqSection';
 import HistorySection from '@/components/sections/HistorySection';
 import LuxuryAmenities from '@/components/sections/LuxuryAmenities';
 // import WellnessSection from '@/components/sections/WellnessSection';
@@ -31,6 +32,12 @@ export default function Home() {
             "name": "Unwind Karjat",
             "description": "A boutique nature retreat in Karjat, Maharashtra offering luxurious yet cozy stays, forest weddings, and corporate offsites.",
             "url": "https://unwindkarjat.com",
+            "logo": "https://unwindkarjat.com/unwindkarjatlogo.png",
+            "image": "https://unwindkarjat.com/images/resort-exterior.png",
+            "email": "stay@unwindkarjat.com",
+            "priceRange": "₹₹",
+            "checkinTime": "13:00",
+            "checkoutTime": "11:00",
             "address": {
               "@type": "PostalAddress",
               "streetAddress": "Karjat - Chowk Rd, behind Baba Dairy, Wavarle",
@@ -48,7 +55,10 @@ export default function Home() {
             "starRating": {
               "@type": "Rating",
               "ratingValue": "4.5"
-            }
+            },
+            "sameAs": [
+              "https://www.instagram.com/unwind_karjat"
+            ]
           })
         }}
       />
@@ -118,7 +128,21 @@ export default function Home() {
       <TestimonialsSection />
 
       {/* Gallery Section with Lightbox */}
-      <GallerySection />
+      <GallerySection viewAllHref="/gallery" />
+
+      {/* FAQ (answers match on-page FAQPage schema) */}
+      <FaqSection
+        faqs={[
+          {
+            question: 'What are the best things to do in Karjat?',
+            answer: 'Karjat offers trekking to Kondana Caves, visiting Bhivpuri Waterfalls, and birdwatching. Unwind Karjat provides guided forest immersions and infinity pool access.'
+          },
+          {
+            question: 'How do I reach Unwind Karjat from Mumbai?',
+            answer: 'Take the Mumbai-Pune Expressway, exit at Chowk/Karjat, and follow the Karjat-Chowk road for 15km. We are located behind Baba Dairy in Wavarle village.'
+          }
+        ]}
+      />
 
       {/* Newsletter & Contact */}
       <NewsletterSection />

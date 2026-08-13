@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Corporate Retreats & Offsite Venues near Mumbai | Unwind Karjat',
+  title: 'Corporate Retreats & Offsite Venues near Mumbai',
   description: 'Host productive corporate retreats, strategy meets, and team-building offsites at Unwind Karjat. Modern conference facilities, premium cottages, and team activities.',
   keywords: [
     'corporate retreat near mumbai',

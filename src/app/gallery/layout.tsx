@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Resort Gallery & Virtual Walkthrough | Unwind Karjat',
+  title: 'Resort Gallery & Virtual Walkthrough',
   description: 'Browse photos of our stunning red brick cottages, infinity pool, and lush forest surroundings. Take a virtual walkthrough tour of our resort.',
   keywords: [
     'unwind karjat photos',
