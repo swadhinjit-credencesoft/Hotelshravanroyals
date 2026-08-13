@@ -33,7 +33,7 @@ export default function ExperiencesPage() {
             </div>
             <div className="relative aspect-[4/3] border border-ivory/10">
                <Image 
-                  src='/LawnsDecks.png' 
+                  src='/campfire.png' 
                   alt="Outdoor campfire and seating area in nature at Unwind Karjat" 
                   fill
                   loading="lazy"
