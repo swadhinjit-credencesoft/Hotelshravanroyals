@@ -14,6 +14,9 @@ export default function WeddingsPage() {
     "@type": "EventVenue",
     "name": "Unwind Karjat Wedding Lawns",
     "description": "Premium destination wedding venue near Mumbai with forest views and bespoke catering.",
+    "url": "https://unwindkarjat.com/events/weddings",
+    "telephone": "+91 9619198839",
+    "image": "https://unwindkarjat.com/images/exterior6.jpeg",
     "address": {
       "@type": "PostalAddress",
       "addressLocality": "Karjat",
@@ -71,7 +74,7 @@ export default function WeddingsPage() {
               </a>
             </div>
             <div className="relative aspect-square">
-               <Image src='/images/exterior6.jpeg' alt="Outdoor wedding setup at sunset" fill className="object-cover rounded-sm shadow-2xl" />
+               <Image src='/images/exterior6.jpeg' alt="Outdoor wedding setup at sunset" fill loading="lazy" className="object-cover rounded-sm shadow-2xl" />
             </div>
           </div>
 

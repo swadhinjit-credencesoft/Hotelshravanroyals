@@ -122,6 +122,7 @@ export default function RoomDetailClient({ room, otherRooms }: RoomDetailClientP
                 src={room.image}
                 alt={room.imageAlt}
                 fill
+                loading="lazy"
                 className="object-contain"
                 sizes="100vw"
               />
@@ -290,6 +291,7 @@ export default function RoomDetailClient({ room, otherRooms }: RoomDetailClientP
                   src={r.image}
                   alt={r.imageAlt}
                   fill
+                  loading="lazy"
                   className="object-cover transition-transform duration-700 group-hover:scale-105"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent flex flex-col justify-end p-8">

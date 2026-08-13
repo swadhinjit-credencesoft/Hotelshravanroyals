@@ -86,6 +86,7 @@ export default function RoomDetailContent({ room }: RoomDetailContentProps) {
                      src={room.image} 
                      alt={`${room.name} detail 1`} 
                      fill 
+                     loading="lazy"
                      className="object-cover"
                    />
                 </div>
@@ -95,6 +96,7 @@ export default function RoomDetailContent({ room }: RoomDetailContentProps) {
                         src='/images/exterior2.jpeg' 
                         alt={`${room.name} detail 2`} 
                         fill 
+                        loading="lazy"
                         className="object-cover"
                       />
                    </div>
@@ -103,6 +105,7 @@ export default function RoomDetailContent({ room }: RoomDetailContentProps) {
                         src='/images/exterior3.jpeg' 
                         alt={`${room.name} detail 3`} 
                         fill 
+                        loading="lazy"
                         className="object-cover"
                       />
                    </div>
@@ -125,8 +128,10 @@ export default function RoomDetailContent({ room }: RoomDetailContentProps) {
          <div className="absolute inset-0 opacity-10 pointer-events-none">
             <Image 
                src='/images/exterior4.jpeg' 
-               alt="Forest texture" 
+               alt="" 
                fill 
+               loading="lazy"
+               aria-hidden="true"
                className="object-cover mix-blend-overlay"
             />
          </div>

@@ -14,6 +14,9 @@ export default function LiveMusicalEveningsPage() {
     "@type": "EventVenue",
     "name": "Unwind Karjat Live Music Venue",
     "description": "Soulful acoustic nights, live bands, DJ evenings, and bonfire jam sessions under the Karjat sky.",
+    "url": "https://unwindkarjat.com/events/live-musical-evenings",
+    "telephone": "+91 9619198839",
+    "image": "https://unwindkarjat.com/images/exterior2.jpeg",
     "address": {
       "@type": "PostalAddress",
       "addressLocality": "Karjat",
@@ -71,7 +74,7 @@ export default function LiveMusicalEveningsPage() {
               </a>
             </div>
             <div className="relative aspect-square">
-              <Image src='/images/exterior4.jpeg' alt="Live music performance at Unwind Karjat" fill className="object-cover rounded-sm shadow-2xl" />
+              <Image src='/images/exterior4.jpeg' alt="Live music performance at Unwind Karjat" fill loading="lazy" className="object-cover rounded-sm shadow-2xl" />
             </div>
           </div>
 

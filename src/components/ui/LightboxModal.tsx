@@ -101,6 +101,7 @@ export default function LightboxModal({
               src={current.src}
               alt={current.alt}
               fill
+              loading="lazy"
               className="object-contain"
               sizes="90vw"
             />

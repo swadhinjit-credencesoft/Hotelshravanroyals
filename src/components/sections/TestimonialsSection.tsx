@@ -104,6 +104,7 @@ function TestimonialCard({ testimonial }: { testimonial: (typeof testimonials)[0
             src={testimonial.avatar}
             alt={testimonial.name}
             fill
+            loading="lazy"
             className="object-cover"
           />
         </div>

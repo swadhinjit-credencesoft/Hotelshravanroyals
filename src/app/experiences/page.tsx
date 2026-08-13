@@ -1,6 +1,6 @@
 import Navbar from '@/components/layout/Navbar'
 import Footer from '@/components/layout/Footer'
-import ExperiencesGrid from '@/components/sections/ExperiencesGrid'
+import KeyStayExperiences from '@/components/sections/KeyStayExperiences'
 import CinematicHero from '@/components/ui/CinematicHero'
 import SectionLabel from '@/components/ui/SectionLabel'
 import Image from 'next/image'
@@ -14,7 +14,7 @@ export default function ExperiencesPage() {
         label="Beyond the Room"
         title="Immerse in Nature"
         tagline="From monsoon treks to cozy winter bonfires, discover activities designed to help you reconnect with the outdoors."
-        image='/images/exterior7.jpeg'
+        image='/experiencehero.png'
       />
 
       <section className="py-32 bg-forest text-ivory/80">
@@ -34,8 +34,9 @@ export default function ExperiencesPage() {
             <div className="relative aspect-[4/3] border border-ivory/10">
                <Image 
                   src='/LawnsDecks.png' 
-                  alt="Outdoor campfire and seating area in nature" 
+                  alt="Outdoor campfire and seating area in nature at Unwind Karjat" 
                   fill
+                  loading="lazy"
                   className="object-cover grayscale hover:grayscale-0 transition-all duration-1000"
                />
             </div>
@@ -85,7 +86,7 @@ export default function ExperiencesPage() {
         }}
       />
 
-      <ExperiencesGrid />
+      <KeyStayExperiences />
 
       {/* Nearby Attractions */}
       <section className="py-32 bg-cream">

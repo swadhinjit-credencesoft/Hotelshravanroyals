@@ -29,6 +29,7 @@ export default function Home() {
           __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "Hotel",
+            "@id": "https://unwindkarjat.com/#organization",
             "name": "Unwind Karjat",
             "description": "A boutique nature retreat in Karjat, Maharashtra offering luxurious yet cozy stays, forest weddings, and corporate offsites.",
             "url": "https://unwindkarjat.com",
@@ -87,6 +88,24 @@ export default function Home() {
                 }
               }
             ]
+          })
+        }}
+      />
+
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "WebSite",
+            "@id": "https://unwindkarjat.com/#website",
+            "name": "Unwind Karjat",
+            "url": "https://unwindkarjat.com",
+            "description": "A boutique nature retreat in Karjat, Maharashtra offering luxurious yet cozy stays.",
+            "inLanguage": "en",
+            "publisher": {
+              "@id": "https://unwindkarjat.com/#organization"
+            }
           })
         }}
       />

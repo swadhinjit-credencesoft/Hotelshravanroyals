@@ -10,8 +10,10 @@ export default function ForestSection() {
       <div className="absolute inset-0 opacity-10 pointer-events-none">
          <Image 
             src='/images/exterior3.jpeg' 
-            alt="Forest texture" 
+            alt="" 
             fill 
+            loading="lazy"
+            aria-hidden="true"
             className="object-cover mix-blend-overlay"
          />
       </div>

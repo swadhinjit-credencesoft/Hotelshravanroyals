@@ -27,6 +27,7 @@ export default function HistorySection() {
                 src='/images/exterior4.jpeg'
                 alt="Modern rustic interior at Unwind Karjat"
                 fill
+                loading="lazy"
                 className="object-cover grayscale hover:grayscale-0 transition-all duration-1000"
               />
             </div>
@@ -39,6 +40,7 @@ export default function HistorySection() {
                 src='/images/exterior5.jpeg'
                 alt="Natural details at the retreat"
                 fill
+                loading="lazy"
                 className="object-cover"
               />
             </motion.div>
@@ -51,6 +53,7 @@ export default function HistorySection() {
                 src='/images/exterior6.jpeg'
                 alt="Architecture sketches of Unwind Karjat"
                 fill
+                loading="lazy"
                 className="object-cover"
               />
             </motion.div>

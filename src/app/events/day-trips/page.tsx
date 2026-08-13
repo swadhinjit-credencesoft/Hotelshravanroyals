@@ -14,6 +14,9 @@ export default function DayTripsPage() {
     "@type": "TouristInformationCenter",
     "name": "Unwind Karjat Day Outing",
     "description": "The perfect one-day picnic and resort visit near Mumbai and Pune with pool access and lunch packages.",
+    "url": "https://unwindkarjat.com/events/day-trips",
+    "telephone": "+91 9619198839",
+    "image": "https://unwindkarjat.com/images/room2.jpeg",
     "address": {
       "@type": "PostalAddress",
       "addressLocality": "Karjat",
@@ -71,7 +74,7 @@ export default function DayTripsPage() {
               </a>
             </div>
             <div className="relative aspect-square">
-               <Image src='/images/exterior.jpeg' alt="Family enjoying a day picnic at a luxury resort" fill className="object-cover rounded-sm shadow-2xl" />
+               <Image src='/images/exterior.jpeg' alt="Family enjoying a day picnic at a luxury resort" fill loading="lazy" className="object-cover rounded-sm shadow-2xl" />
             </div>
           </div>
 

@@ -53,6 +53,7 @@ function VenueRow({ venue, index }: { venue: (typeof venues)[0]; index: number }
           src={venue.image}
           alt={venue.imageAlt}
           fill
+          loading="lazy"
           className="object-cover"
           sizes="(max-width: 768px) 100vw, 50vw"
         />

@@ -62,6 +62,7 @@ export default function ParallaxDivider() {
           src='/images/exterior.jpeg'
           alt="Serene estate landscape at dusk"
           fill
+          loading="lazy"
           className="object-cover"
           sizes="100vw"
         />

@@ -14,6 +14,9 @@ export default function PartiesPage() {
     "@type": "EventVenue",
     "name": "Unwind Karjat Celebration Deck",
     "description": "The perfect resort near Mumbai for birthday parties, pool parties, and private celebrations.",
+    "url": "https://unwindkarjat.com/events/parties",
+    "telephone": "+91 9619198839",
+    "image": "https://unwindkarjat.com/images/exterior3.jpeg",
     "address": {
       "@type": "PostalAddress",
       "addressLocality": "Karjat",
@@ -71,7 +74,7 @@ export default function PartiesPage() {
               </a>
             </div>
             <div className="relative aspect-square">
-               <Image src='/images/exterior4.jpeg' alt="Group of friends celebrating at a luxury resort" fill className="object-cover rounded-sm shadow-2xl" />
+               <Image src='/images/exterior4.jpeg' alt="Group of friends celebrating at a luxury resort" fill loading="lazy" className="object-cover rounded-sm shadow-2xl" />
             </div>
           </div>
 

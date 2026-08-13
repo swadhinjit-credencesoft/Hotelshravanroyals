@@ -73,6 +73,7 @@ function RoomCard({ room, index, liveData, priceLoading }: RoomCardProps) {
           src={room.image}
           alt={room.imageAlt}
           fill
+          loading="lazy"
           className="object-cover"
           sizes="400px"
         />

@@ -75,6 +75,7 @@ function ExperienceCard({
           src={experience.image}
           alt={experience.imageAlt}
           fill
+          loading="lazy"
           className="object-cover transition-transform duration-700 group-hover:scale-110"
           sizes={isTall ? '50vw' : '33vw'}
         />

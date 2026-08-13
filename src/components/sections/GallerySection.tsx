@@ -94,6 +94,7 @@ export default function GallerySection({ viewAllHref }: { viewAllHref?: string }
                   alt={image.alt}
                   width={image.width}
                   height={image.height}
+                  loading="lazy"
                   className="w-full h-auto transition-transform duration-700 group-hover:scale-105 grayscale-[40%] group-hover:grayscale-0"
                 />
                 <div className="absolute inset-0 border-0 group-hover:border-[12px] border-gold/10 transition-all duration-500 pointer-events-none" />

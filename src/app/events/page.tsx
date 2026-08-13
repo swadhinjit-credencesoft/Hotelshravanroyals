@@ -123,7 +123,7 @@ export default function EventsPage() {
                 className={`grid grid-cols-1 lg:grid-cols-2 gap-16 items-center ${i % 2 === 1 ? 'lg:flex-row-reverse' : ''}`}
               >
                 <div className={`relative aspect-[4/3] overflow-hidden border border-gold/10 ${i % 2 === 1 ? 'lg:order-2' : ''}`}>
-                  <Image src={event.image} alt={event.title} fill className="object-cover hover:scale-105 transition-transform duration-1000" />
+                  <Image src={event.image} alt={event.title} fill loading="lazy" className="object-cover hover:scale-105 transition-transform duration-1000" />
                 </div>
                 <div className={i % 2 === 1 ? 'lg:order-1' : ''}>
                   <span className="font-sans text-[10px] uppercase tracking-[0.3em] text-gold mb-4 block">{event.category}</span>

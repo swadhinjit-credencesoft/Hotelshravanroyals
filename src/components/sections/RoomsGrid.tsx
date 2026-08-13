@@ -122,6 +122,7 @@ export default function RoomsGrid() {
                       src={room.image}
                       alt={room.imageAlt}
                       fill
+                      loading="lazy"
                       className="object-cover group-hover:scale-105 transition-transform duration-1000"
                     />
                     <div className="absolute top-4 left-4 z-10 flex flex-col gap-2">

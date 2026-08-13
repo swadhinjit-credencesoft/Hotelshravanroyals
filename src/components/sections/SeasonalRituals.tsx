@@ -49,6 +49,7 @@ export default function SeasonalRituals() {
                      src={ritual.image}
                      alt={ritual.title}
                      fill
+                     loading="lazy"
                      className="object-cover grayscale group-hover:grayscale-0 transition-all duration-1000 group-hover:scale-105"
                    />
                    <div className="absolute inset-0 bg-gradient-to-t from-forest/80 via-transparent to-transparent opacity-60" />

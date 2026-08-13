@@ -69,7 +69,7 @@ export default function GalleryPage() {
              {/* Simulating IG posts */}
              {[1, 2, 3, 4].map(num => (
                <div key={num} className="relative aspect-square overflow-hidden group cursor-pointer border border-gold/10">
-                 <Image src={'/images/exterior.jpeg'} alt="Guest photo" fill className="object-cover group-hover:scale-105 transition-transform duration-700" />
+                 <Image src={'/images/exterior.jpeg'} alt="Guest photo of Unwind Karjat resort shared on Instagram" fill loading="lazy" className="object-cover group-hover:scale-105 transition-transform duration-700" />
                  <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
                     <span className="text-white font-sans text-xs">View on Instagram</span>
                  </div>

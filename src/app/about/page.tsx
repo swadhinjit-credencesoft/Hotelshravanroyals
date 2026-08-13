@@ -96,8 +96,9 @@ export default function AboutPage() {
             >
               <Image
                 src='/aboutimg.png'
-                alt="Architectural detail seamlessly blending with nature"
+                alt="Architectural detail seamlessly blending with nature at Unwind Karjat"
                 fill
+                loading="lazy"
                 className="object-cover"
               />
             </motion.div>

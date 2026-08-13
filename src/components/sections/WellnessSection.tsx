@@ -35,6 +35,7 @@ export default function WellnessSection() {
                   src='/images/exterior8.jpeg'
                   alt="Minimalist spa interior"
                   fill
+                  loading="lazy"
                   className="object-cover hover:scale-105 transition-transform duration-1000"
                 />
              </div>
@@ -48,6 +49,7 @@ export default function WellnessSection() {
                   src='/images/room1.jpeg'
                   alt="Therapeutic botanicals"
                   fill
+                  loading="lazy"
                   className="object-cover grayscale"
                 />
              </motion.div>
