@@ -15,7 +15,7 @@ export default function DayTripsPage() {
     "name": "Unwind Karjat Day Outing",
     "description": "The perfect one-day picnic and resort visit near Mumbai and Pune with pool access and lunch packages.",
     "url": "https://unwindkarjat.com/events/day-trips",
-    "telephone": "+91 9619198839",
+    "telephone": "+91919619198839",
     "image": "https://unwindkarjat.com/images/room2.jpeg",
     "address": {
       "@type": "PostalAddress",

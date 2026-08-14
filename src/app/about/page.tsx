@@ -35,7 +35,7 @@ export default function AboutPage() {
             "logo": "https://unwindkarjat.com/unwindkarjatlogo.png",
             "image": "https://unwindkarjat.com/aboutimg.png",
             "email": "stay@unwindkarjat.com",
-            "telephone": "+91 9619198839",
+            "telephone": "+91919619198839",
             "foundingDate": "2019",
             "address": {
               "@type": "PostalAddress",

@@ -50,7 +50,7 @@ export default function EventsPage() {
                 "postalCode": "410206",
                 "addressCountry": "IN"
               },
-              "telephone": "+91 9619198839"
+              "telephone": "+91919619198839"
             },
             {
               "@context": "https://schema.org",

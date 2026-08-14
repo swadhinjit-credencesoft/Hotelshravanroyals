@@ -15,7 +15,7 @@ export default function WeddingsPage() {
     "name": "Unwind Karjat Wedding Lawns",
     "description": "Premium destination wedding venue near Mumbai with forest views and bespoke catering.",
     "url": "https://unwindkarjat.com/events/weddings",
-    "telephone": "+91 9619198839",
+    "telephone": "+91919619198839",
     "image": "https://unwindkarjat.com/images/exterior6.jpeg",
     "address": {
       "@type": "PostalAddress",

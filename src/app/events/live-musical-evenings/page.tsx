@@ -15,7 +15,7 @@ export default function LiveMusicalEveningsPage() {
     "name": "Unwind Karjat Live Music Venue",
     "description": "Soulful acoustic nights, live bands, DJ evenings, and bonfire jam sessions under the Karjat sky.",
     "url": "https://unwindkarjat.com/events/live-musical-evenings",
-    "telephone": "+91 9619198839",
+    "telephone": "+91919619198839",
     "image": "https://unwindkarjat.com/images/exterior2.jpeg",
     "address": {
       "@type": "PostalAddress",

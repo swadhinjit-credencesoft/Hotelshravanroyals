@@ -55,7 +55,7 @@ export default function Footer() {
                 <Camera size={18} />
               </a> */}
               <a
-                href={`https://wa.me/9619198839`}
+                href={`https://wa.me/919619198839`}
                 aria-label="Chat with us on WhatsApp"
                 className="text-ivory/40 hover:text-[#25D366] transition-colors duration-300"
               >

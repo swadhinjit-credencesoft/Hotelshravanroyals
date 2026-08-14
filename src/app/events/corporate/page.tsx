@@ -15,7 +15,7 @@ export default function CorporatePage() {
     "name": "Unwind Karjat Corporate Hub",
     "description": "Professional corporate retreat and offsite venue in Karjat with team building and tech facilities.",
     "url": "https://unwindkarjat.com/events/corporate",
-    "telephone": "+91 9619198839",
+    "telephone": "+91919619198839",
     "image": "https://unwindkarjat.com/images/exterior8.jpeg",
     "address": {
       "@type": "PostalAddress",

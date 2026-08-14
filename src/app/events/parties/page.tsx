@@ -15,7 +15,7 @@ export default function PartiesPage() {
     "name": "Unwind Karjat Celebration Deck",
     "description": "The perfect resort near Mumbai for birthday parties, pool parties, and private celebrations.",
     "url": "https://unwindkarjat.com/events/parties",
-    "telephone": "+91 9619198839",
+    "telephone": "+91919619198839",
     "image": "https://unwindkarjat.com/images/exterior3.jpeg",
     "address": {
       "@type": "PostalAddress",
