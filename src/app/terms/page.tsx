@@ -36,28 +36,28 @@ export default function TermsPage() {
           <section>
             <h2 className="font-serif text-2xl text-forest mb-4">Reservation Policy</h2>
             <p>
-              All reservations are subject to availability and the specific terms of the package selected. A valid credit card is required to secure your sanctuary.
+              All reservations are subject to availability and the specific terms of the package selected. A booking is confirmed once the reservation details and payment are received.
             </p>
           </section>
 
           <section>
             <h2 className="font-serif text-2xl text-forest mb-4">Cancellation &amp; No-Show</h2>
             <p>
-              To respect the intimacy of the estate, cancellations must be made 14 days prior to arrival for a full refund. Cancellations within the 14-day window will be subject to a 50% sanctuary fee.
+              For full details, please see our <a href="/cancellation" className="text-gold underline">cancellation policy</a>. In short, cancellations made at least 48 hours before check-in receive a full refund, and no-shows forfeit the booking amount.
             </p>
           </section>
 
           <section>
-            <h2 className="font-serif text-2xl text-forest mb-4">Estate Conduct</h2>
+            <h2 className="font-serif text-2xl text-forest mb-4">Guest Conduct</h2>
             <p>
-              Unwind Karjat is a sanctuary of comfort and privacy. We ask all guests to respect the tranquility of the grounds and the privacy of other residents.
+              We ask all guests to respect the property, the grounds and the privacy of other guests, so that everyone can enjoy their stay.
             </p>
           </section>
 
           <section>
             <h2 className="font-serif text-2xl text-forest mb-4">Liability</h2>
             <p>
-              The inn takes every precaution to ensure guest safety; however, we are not liable for the loss of personal property or injuries sustained during self-guided explorations.
+              Unwind Karjat takes every precaution to ensure guest safety; however, we are not liable for the loss of personal property or injuries sustained during activities on the property.
             </p>
           </section>
         </div>

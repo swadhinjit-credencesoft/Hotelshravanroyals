@@ -16,8 +16,8 @@ const keyExperiences = [
   },
   {
     id: 'k2',
-    title: 'Pool & Rain Dance',
-    description: 'Enjoy the large outdoor swimming pool, which doubles as a fun zone with rain dance setups during monsoon.',
+    title: 'Pool & Open Spaces',
+    description: 'Enjoy the large outdoor swimming pool, with lawns and open spaces around it for the whole group.',
     image: '/Pool.png',
     imageAlt: 'Large outdoor swimming pool at Unwind Karjat',
     icon: Waves,

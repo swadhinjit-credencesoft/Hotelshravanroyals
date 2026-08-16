@@ -12,8 +12,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const room = rooms.find(r => r.slug === params.slug)
   if (!room) return {}
 
-  const title = `${room.name} | Luxury Cottages`
-  const description = `${room.tagline}. Spaced at ${room.size} sq.m with a ${room.view} for up to ${room.guests} guests. Book your luxury stay near Mumbai today.`
+  const title = `${room.name} | Unwind Karjat`
+  const description = `${room.tagline}. Up to ${room.guests} guests with a ${room.view}. Book your stay near Mumbai and Pune today.`
   
   return {
     title,

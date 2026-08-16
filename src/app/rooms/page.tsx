@@ -1,7 +1,6 @@
 import Navbar from '@/components/layout/Navbar'
 import Footer from '@/components/layout/Footer'
 import CinematicHero from '@/components/ui/CinematicHero'
-import LuxuryAmenities from '@/components/sections/LuxuryAmenities'
 import RoomsGrid from '@/components/sections/RoomsGrid'
 
 export default function RoomsPage() {
@@ -16,8 +15,8 @@ export default function RoomsPage() {
           __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "ItemList",
-            "name": "Luxury Accommodations at Unwind Karjat",
-            "description": "Explore our rustic Red Brick Cottages, Lawn-facing rooms, and Forest suites with deep nature views in Karjat.",
+            "name": "Rooms & Stays at Unwind Karjat",
+            "description": "Lawn & pool facing rooms, farm facing rooms, our Red Brick Suite and a Family Room for up to 8 guests.",
             "url": "https://unwindkarjat.com/rooms",
             "itemListElement": [
               {
@@ -25,25 +24,10 @@ export default function RoomsPage() {
                 "position": 1,
                 "item": {
                   "@type": "HotelRoom",
-                  "name": "Red Brick Cottage",
-                  "description": "Experience the soul of Karjat in our signature Red Brick Cottages, featuring rustic red bricks, high ceilings, and a private sit-out.",
-                  "image": "https://unwindkarjat.com/images/exterior3.jpeg",
-                  "url": "https://unwindkarjat.com/rooms/red-brick-cottage",
-                  "occupancy": {
-                    "@type": "QuantitativeValue",
-                    "value": 2
-                  }
-                }
-              },
-              {
-                "@type": "ListItem",
-                "position": 2,
-                "item": {
-                  "@type": "HotelRoom",
-                  "name": "Lawn Facing Room",
-                  "description": "Step directly from your room onto our manicured emerald lawns. Wake up to lush green vistas and enjoy morning tea on the lawn.",
+                  "name": "Lawn & Pool Facing Room",
+                  "description": "Bright, comfortable rooms overlooking the pool and lawn. Ideal for couples and small families.",
                   "image": "https://unwindkarjat.com/Lawn-Facing-Room.png",
-                  "url": "https://unwindkarjat.com/rooms/lawn-facing-room",
+                  "url": "https://unwindkarjat.com/rooms/lawn-and-pool-facing-room",
                   "occupancy": {
                     "@type": "QuantitativeValue",
                     "value": 3
@@ -52,16 +36,46 @@ export default function RoomsPage() {
               },
               {
                 "@type": "ListItem",
-                "position": 3,
+                "position": 2,
                 "item": {
                   "@type": "HotelRoom",
-                  "name": "Forest Facing Room",
-                  "description": "An intimate connection with the Karjat forest. Listen to the symphony of birds and rustle of leaves from your private balcony.",
+                  "name": "Farm Facing Room",
+                  "description": "Quiet rooms looking towards the farm and surrounding greenery. Ideal for guests looking for a more peaceful stay.",
                   "image": "https://unwindkarjat.com/Forest-Facing-Room.png",
-                  "url": "https://unwindkarjat.com/rooms/forest-facing-room",
+                  "url": "https://unwindkarjat.com/rooms/farm-facing-room",
                   "occupancy": {
                     "@type": "QuantitativeValue",
                     "value": 2
+                  }
+                }
+              },
+              {
+                "@type": "ListItem",
+                "position": 3,
+                "item": {
+                  "@type": "HotelRoom",
+                  "name": "Red Brick Suite",
+                  "description": "Our signature suite, with a little more space and character. Ideal for couples looking for something special.",
+                  "image": "https://unwindkarjat.com/images/cottage-exterior.png",
+                  "url": "https://unwindkarjat.com/rooms/red-brick-suite",
+                  "occupancy": {
+                    "@type": "QuantitativeValue",
+                    "value": 2
+                  }
+                }
+              },
+              {
+                "@type": "ListItem",
+                "position": 4,
+                "item": {
+                  "@type": "HotelRoom",
+                  "name": "Family Room",
+                  "description": "A large room designed for families and groups, comfortably accommodating up to 8 guests.",
+                  "image": "https://unwindkarjat.com/images/room-interior.jpg",
+                  "url": "https://unwindkarjat.com/rooms/family-room",
+                  "occupancy": {
+                    "@type": "QuantitativeValue",
+                    "value": 8
                   }
                 }
               }
@@ -71,13 +85,23 @@ export default function RoomsPage() {
       />
 
       <CinematicHero 
-        label="Our Accommodations"
-        title="Sanctuaries of Stillness"
-        tagline="From rustic Red Brick Cottages to serene Lawn and Forest facing rooms, discover your perfect nature retreat in Karjat."
+        label="Our Stay"
+        title="Rooms Made for Slowing Down"
+        tagline="Comfortable, spacious rooms designed around the way people actually like to spend a getaway."
         image='/roomhero.png'
       />
       <RoomsGrid />
-      <LuxuryAmenities />
+
+      {/* Good to know */}
+      <section className="py-20 bg-forest text-ivory">
+        <div className="max-w-4xl mx-auto px-6 md:px-10 text-center">
+          <h2 className="font-display text-3xl md:text-4xl italic mb-6">The Simple Things Matter Here.</h2>
+          <p className="font-serif text-ivory/70 leading-relaxed max-w-2xl mx-auto">
+            Every room comes with the essentials taken care of — comfortable beds, air conditioning, hot water, parking and room service. All rooms are within the property, close to the pool, the lawns and the restaurant.
+          </p>
+        </div>
+      </section>
+
       <Footer />
     </main>
   )

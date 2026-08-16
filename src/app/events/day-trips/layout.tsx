@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
   title: 'One Day Picnics & Day Outing Packages in Karjat',
-  description: 'Plan a perfect one-day picnic near Mumbai and Pune. Enjoy luxury amenities, infinity pool access, and delicious dining options with our day-trip packages.',
+  description: 'A relaxed day out near Mumbai and Pune — pool and lawn time, games, music and a generous meal at Unwind Karjat.',
   keywords: [
     'day picnic karjat',
     'one day resort outing mumbai',
@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: 'One Day Picnics & Day Outing Packages in Karjat | Unwind Karjat',
-    description: 'Plan a perfect one-day picnic near Mumbai and Pune. Enjoy luxury amenities, infinity pool access, and delicious dining options with our day-trip packages.',
+    description: 'A relaxed day out near Mumbai and Pune — pool and lawn time, games, music and a generous meal at Unwind Karjat.',
     url: 'https://unwindkarjat.com/events/day-trips',
     type: 'website',
     images: [
@@ -24,14 +24,14 @@ export const metadata: Metadata = {
         url: 'https://unwindkarjat.com/images/room2.jpeg',
         width: 1200,
         height: 630,
-        alt: 'Day Picnic Outing Lounge at Unwind Karjat'
+        alt: 'A relaxed day out at Unwind Karjat'
       }
     ]
   },
   twitter: {
     card: 'summary_large_image',
     title: 'One Day Picnics & Day Outing Packages in Karjat | Unwind Karjat',
-    description: 'Plan a perfect one-day picnic near Mumbai and Pune. Enjoy luxury amenities, infinity pool access, and delicious dining options with our day-trip packages.',
+    description: 'A relaxed day out near Mumbai and Pune — pool and lawn time, games, music and a generous meal at Unwind Karjat.',
     images: ['https://unwindkarjat.com/images/room2.jpeg']
   }
 }

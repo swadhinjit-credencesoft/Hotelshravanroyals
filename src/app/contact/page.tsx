@@ -72,7 +72,7 @@ export default function ContactPage() {
               <h2 className="font-display text-3xl italic text-forest mb-8">Quick Connect</h2>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 mb-12">
                  <a 
-                  href={`https://wa.me/${siteConfig.phone.replace(/[^0-9]/g, '')}`} 
+                  href={siteConfig.whatsapp} 
                   target="_blank" 
                   rel="noreferrer" 
                   className="flex items-center justify-center gap-3 bg-green-600 text-white font-sans text-[11px] uppercase tracking-[0.2em] py-5 rounded-sm hover:bg-green-700 transition-all shadow-md group"

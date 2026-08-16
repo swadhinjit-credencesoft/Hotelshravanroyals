@@ -125,13 +125,13 @@ export default function DiningSection() {
       <div className="max-w-[1600px] mx-auto px-6 md:px-10">
         {/* Header */}
         <div className="text-center mb-20">
-          <SectionLabel className="justify-center mb-5">Dining &amp; Libations</SectionLabel>
+          <SectionLabel className="justify-center mb-5">Dining</SectionLabel>
           <h2 className="font-display text-4xl md:text-[52px] italic text-forest mb-6 leading-tight">
-            Four Venues, One Inn
+            Come Hungry. Leave Happy.
           </h2>
           <GoldDivider className="justify-center mb-6" />
           <p className="font-serif text-xl font-light text-taupe max-w-xl mx-auto leading-relaxed">
-            From forest-to-fork tasting menus to wood-fired coastal feasts — every meal here is a reason to linger.
+            Freshly prepared. Generously served. Best enjoyed together.
           </p>
         </div>
 
@@ -145,7 +145,7 @@ export default function DiningSection() {
             href="/dining" 
             className="inline-flex items-center gap-3 bg-forest text-ivory font-sans text-[11px] uppercase tracking-[0.2em] px-12 py-5 hover:bg-forest/90 transition-all rounded-sm group"
            >
-              Explore Full Dining Experience
+              Explore Our Dining
               <ArrowRight size={14} className="transition-transform group-hover:translate-x-1" />
            </a>
         </div>

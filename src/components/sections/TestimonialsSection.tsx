@@ -32,9 +32,9 @@ export default function TestimonialsSection() {
     <section className="bg-parchment py-24" id="testimonials">
       <div className="max-w-[1600px] mx-auto px-6 md:px-10">
         <div className="text-center mb-16">
-          <SectionLabel className="justify-center mb-4">Guest Stories</SectionLabel>
+          <SectionLabel className="justify-center mb-4">Reviews</SectionLabel>
           <h2 className="font-display text-4xl md:text-[52px] italic text-forest mb-6">
-            In Their Words
+            Our Guests Say It Best.
           </h2>
         </div>
 

@@ -1,14 +1,14 @@
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Destination Weddings & Corporate Offsites',
-  description: 'Host beautiful forest weddings and strategic corporate offsite retreats near Pune and Mumbai. Premium lawns & modern corporate hubs for up to 250 guests.',
+  title: 'Events & Celebrations near Mumbai & Pune',
+  description: 'Birthdays, family get-togethers, corporate offsites and private celebrations at Unwind Karjat — with stay, food and open spaces together in one place.',
   alternates: {
     canonical: 'https://unwindkarjat.com/events',
   },
   openGraph: {
-    title: 'Destination Weddings & Corporate Offsites | Unwind Karjat',
-    description: 'Host beautiful forest weddings and strategic corporate offsite retreats near Pune and Mumbai. Premium lawns & modern corporate hubs for up to 250 guests.',
+    title: 'Events & Celebrations near Mumbai & Pune | Unwind Karjat',
+    description: 'Birthdays, family get-togethers, corporate offsites and private celebrations at Unwind Karjat — with stay, food and open spaces together in one place.',
     url: 'https://unwindkarjat.com/events',
     type: 'website',
     images: [
@@ -22,8 +22,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Destination Weddings & Corporate Offsites | Unwind Karjat',
-    description: 'Host beautiful forest weddings and strategic corporate offsite retreats near Pune and Mumbai. Premium lawns & modern corporate hubs for up to 250 guests.',
+    title: 'Events & Celebrations near Mumbai & Pune | Unwind Karjat',
+    description: 'Birthdays, family get-togethers, corporate offsites and private celebrations at Unwind Karjat — with stay, food and open spaces together in one place.',
     images: ['https://unwindkarjat.com/images/exterior2.jpeg']
   }
 }

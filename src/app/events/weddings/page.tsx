@@ -13,7 +13,7 @@ export default function WeddingsPage() {
     "@context": "https://schema.org",
     "@type": "EventVenue",
     "name": "Unwind Karjat Wedding Lawns",
-    "description": "Premium destination wedding venue near Mumbai with forest views and bespoke catering.",
+    "description": "Intimate weddings and receptions near Mumbai and Pune at Unwind Karjat, with private lawns, stay and catering together in one place.",
     "url": "https://unwindkarjat.com/events/weddings",
     "telephone": "+91919619198839",
     "image": "https://unwindkarjat.com/images/exterior6.jpeg",
@@ -34,9 +34,9 @@ export default function WeddingsPage() {
       />
 
       <CinematicHero 
-        label="Destination Weddings"
-        title="Begin Your Forever"
-        tagline="A magical forest-side setting for your most significant moments. Exchange vows surrounded by the Sahyadris."
+        label="Weddings & Receptions"
+        title="Celebrate Your Day, Your Way"
+        tagline="Intimate weddings and receptions with everything together in one place — accommodation, food, lawns and celebration."
         image='/images/exterior5.jpeg'
       />
 
@@ -44,22 +44,22 @@ export default function WeddingsPage() {
         <div className="max-w-[1600px] mx-auto px-6 md:px-10">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center mb-32">
             <div>
-              <SectionLabel className="mb-6">The Venue</SectionLabel>
-              <h2 className="font-display text-4xl md:text-6xl italic text-forest mb-8">Karjat&apos;s Premier Wedding Destination</h2>
+              <SectionLabel className="mb-6">The Setting</SectionLabel>
+              <h2 className="font-display text-4xl md:text-6xl italic text-forest mb-8">An Intimate Setting for Your Day</h2>
               <p className="font-serif text-lg text-taupe leading-relaxed mb-10">
-                At Unwind Karjat, we transform your dream wedding into a reality. Our expansive lawns can host up to 250 guests, offering a seamless blend of rustic charm and premium luxury.
+                We host weddings and receptions in our private lawns and open spaces, with accommodation, food and celebrations all in one relaxed place.
               </p>
               
               <div className="grid grid-cols-2 gap-8 mb-10">
                 <div className="flex flex-col gap-3">
                   <Users className="text-gold" size={24} />
-                  <p className="font-sans text-[11px] uppercase tracking-widest text-gold">Capacity</p>
-                  <p className="font-serif text-forest text-xl italic">250 Guests</p>
+                  <p className="font-sans text-[11px] uppercase tracking-widest text-gold">Setting</p>
+                  <p className="font-serif text-forest text-xl italic">Private Lawns</p>
                 </div>
                 <div className="flex flex-col gap-3">
                   <MapPin className="text-gold" size={24} />
-                  <p className="font-sans text-[11px] uppercase tracking-widest text-gold">Setting</p>
-                  <p className="font-serif text-forest text-xl italic">Forest-Side Lawns</p>
+                  <p className="font-sans text-[11px] uppercase tracking-widest text-gold">Stay</p>
+                  <p className="font-serif text-forest text-xl italic">Rooms on Site</p>
                 </div>
               </div>
 
@@ -70,24 +70,24 @@ export default function WeddingsPage() {
                 className="inline-flex items-center gap-3 bg-forest text-ivory font-sans text-[11px] uppercase tracking-[0.2em] px-10 py-5 hover:bg-forest/90 transition-all rounded-sm"
               >
                 <Calendar size={18} />
-                Book Direct Online
+                Plan Your Celebration
               </a>
             </div>
             <div className="relative aspect-square">
-               <Image src='/images/exterior6.jpeg' alt="Outdoor wedding setup at sunset" fill loading="lazy" className="object-cover rounded-sm shadow-2xl" />
+               <Image src='/images/exterior6.jpeg' alt="Wedding celebration at Unwind Karjat" fill loading="lazy" className="object-cover rounded-sm shadow-2xl" />
             </div>
           </div>
 
           <div className="text-center mb-16">
             <SectionLabel className="justify-center mb-6">Our Services</SectionLabel>
-            <h2 className="font-display text-4xl italic text-forest">A Seamless Celebration</h2>
+            <h2 className="font-display text-4xl italic text-forest">A Day We Help You Put Together</h2>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
             {[
-              { icon: Utensils, title: 'Bespoke Catering', desc: 'Customizable menus featuring local Maharashtrian flavors and global cuisines.' },
-              { icon: Heart, title: 'Decor & Planning', desc: 'From minimal rustic setups to lavish floral arrangements, we handle it all.' },
-              { icon: Camera, title: 'Memories', desc: 'Exclusive bridal suites and stunning photo locations throughout the resort.' }
+              { icon: Utensils, title: 'Generous Catering', desc: 'Menus designed to be enjoyed together, with live tandoor and special dishes prepared on request.' },
+              { icon: Heart, title: 'Celebration Setup', desc: 'We help you put the day together — from simple setups to the touches that matter to you.' },
+              { icon: Camera, title: 'Space & Stay', desc: 'Rooms for your family and guests, and plenty of spots across the property for photos.' }
             ].map((service, i) => (
               <div key={i} className="text-center p-10 bg-white border border-gold/10 hover:shadow-warm-lg transition-all duration-500 group">
                 <service.icon className="text-gold mx-auto mb-8 group-hover:scale-110 transition-transform" size={40} />
@@ -101,9 +101,9 @@ export default function WeddingsPage() {
 
       <section className="py-24 bg-forest text-ivory text-center">
         <div className="max-w-2xl mx-auto px-6">
-          <h2 className="font-display text-4xl italic mb-8">Start Planning Your Special Day</h2>
+          <h2 className="font-display text-4xl italic mb-8">Tell Us About Your Day</h2>
           <Link href="/events#enquiry" className="inline-block bg-gold text-[#1a1004] font-sans text-[11px] uppercase tracking-[0.2em] px-12 py-5 hover:bg-gold-light transition-all rounded-sm">
-            Request Wedding Proposal
+            Plan Your Celebration
           </Link>
         </div>
       </section>

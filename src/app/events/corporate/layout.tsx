@@ -1,13 +1,13 @@
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Corporate Retreats & Offsite Venues near Mumbai',
-  description: 'Host productive corporate retreats, strategy meets, and team-building offsites at Unwind Karjat. Modern conference facilities, premium cottages, and team activities.',
+  title: 'Corporate Offsites near Mumbai & Pune',
+  description: 'Corporate offsites and team gatherings at Unwind Karjat — stay, meals, pool and open spaces for small corporate groups, just over an hour and a half from Mumbai and Pune.',
   keywords: [
-    'corporate retreat near mumbai',
+    'corporate offsite near mumbai',
     'corporate offsite karjat',
-    'team building resort mumbai',
-    'business conference venue pune',
+    'team offsite resort pune',
+    'small corporate group venue',
     'corporate team outing karjat',
     'resort for corporate outings'
   ],
@@ -15,8 +15,8 @@ export const metadata: Metadata = {
     canonical: 'https://unwindkarjat.com/events/corporate',
   },
   openGraph: {
-    title: 'Corporate Retreats & Offsite Venues near Mumbai | Unwind Karjat',
-    description: 'Host productive corporate retreats, strategy meets, and team-building offsites at Unwind Karjat. Modern conference facilities, premium cottages, and team activities.',
+    title: 'Corporate Offsites near Mumbai & Pune | Unwind Karjat',
+    description: 'Corporate offsites and team gatherings at Unwind Karjat — stay, meals, pool and open spaces for small corporate groups, just over an hour and a half from Mumbai and Pune.',
     url: 'https://unwindkarjat.com/events/corporate',
     type: 'website',
     images: [
@@ -24,14 +24,14 @@ export const metadata: Metadata = {
         url: 'https://unwindkarjat.com/images/exterior8.jpeg',
         width: 1200,
         height: 630,
-        alt: 'Corporate Hub Strategy Meeting Room at Unwind Karjat'
+        alt: 'Corporate offsite at Unwind Karjat'
       }
     ]
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Corporate Retreats & Offsite Venues near Mumbai | Unwind Karjat',
-    description: 'Host productive corporate retreats, strategy meets, and team-building offsites at Unwind Karjat. Modern conference facilities, premium cottages, and team activities.',
+    title: 'Corporate Offsites near Mumbai & Pune | Unwind Karjat',
+    description: 'Corporate offsites and team gatherings at Unwind Karjat — stay, meals, pool and open spaces for small corporate groups, just over an hour and a half from Mumbai and Pune.',
     images: ['https://unwindkarjat.com/images/exterior8.jpeg']
   }
 }

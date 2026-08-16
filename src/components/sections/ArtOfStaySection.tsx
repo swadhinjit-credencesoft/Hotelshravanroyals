@@ -5,10 +5,11 @@ import SectionLabel from '@/components/ui/SectionLabel';
 import GoldDivider from '@/components/ui/GoldDivider';
 
 const serviceDetails = [
-  { title: 'Privacy & Space', description: 'Room to slow down, relax and enjoy your own time, without the feeling of a crowded resort.' },
-  { title: 'Warm Hospitality', description: 'Personal, genuine service that makes you feel welcome from the moment you arrive.' },
-  { title: 'Good Food', description: 'Freshly prepared meals, familiar flavours and a menu that brings people together around the table.' },
-  { title: 'Comfort & Care', description: 'Clean spaces, thoughtful details and the essentials taken care of — so you can focus on simply unwinding.' },
+  { title: 'Private Boutique Setting', description: 'An intimate, private setting that feels personal — not like a crowded resort.' },
+  { title: 'Close to Pune & Mumbai', description: 'Just over an hour and a half from both cities — close enough to come easily.' },
+  { title: 'Stay, Food & Experiences Together', description: 'Rooms, meals, pool, lawn and experiences under one roof — no planning or moving around required.' },
+  { title: 'Made for Groups', description: 'Families and groups of friends fit in beautifully, with spaces designed to bring people together.' },
+  { title: 'Space to Slow Down', description: 'Plenty of open space, greenery and quiet corners to relax, recharge and simply unwind.' },
 ];
 
 export default function ArtOfStaySection() {
@@ -17,13 +18,13 @@ export default function ArtOfStaySection() {
       <div className="max-w-[1600px] mx-auto px-6 md:px-10">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-24 items-center">
            <div>
-              <SectionLabel className="mb-6">Our Standards</SectionLabel>
+              <SectionLabel className="mb-6">Why Unwind</SectionLabel>
               <h2 className="font-display text-4xl md:text-6xl italic text-forest mb-8 leading-tight">
-                The Art of <br /> the Stay
+                Why Unwind <br /> Karjat
               </h2>
               <GoldDivider className="mb-10" />
               <p className="font-serif text-xl text-taupe italic mb-12 leading-relaxed">
-              At Unwind Karjat, we believe a good stay is about more than beautiful surroundings. It is about feeling comfortable, cared for and completely at ease.
+              Unwind is close to Mumbai and Pune, yet feels like another world — and brings everything you need for a good time together in one place.
               </p>
            </div>
            

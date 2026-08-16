@@ -13,7 +13,7 @@ export default function DayTripsPage() {
     "@context": "https://schema.org",
     "@type": "TouristInformationCenter",
     "name": "Unwind Karjat Day Outing",
-    "description": "The perfect one-day picnic and resort visit near Mumbai and Pune with pool access and lunch packages.",
+    "description": "Day picnic and outing packages near Mumbai and Pune at Unwind Karjat, with pool and lawn access and lunch included.",
     "url": "https://unwindkarjat.com/events/day-trips",
     "telephone": "+91919619198839",
     "image": "https://unwindkarjat.com/images/room2.jpeg",
@@ -35,8 +35,8 @@ export default function DayTripsPage() {
 
       <CinematicHero 
         label="Day Picnics & Outings"
-        title="A Day in Paradise"
-        tagline="Short on time? Experience the best of Unwind Karjat with our curated day-trip packages for families and groups."
+        title="One Day. Fully Unwound."
+        tagline="Short on time? Spend a relaxed day at Unwind — pool, lawn, games and a generous meal, all in one place."
         image='/images/room2.jpeg'
       />
 
@@ -44,10 +44,10 @@ export default function DayTripsPage() {
         <div className="max-w-[1600px] mx-auto px-6 md:px-10">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center mb-32">
             <div>
-              <SectionLabel className="mb-6">The Escape</SectionLabel>
-              <h2 className="font-display text-4xl md:text-6xl italic text-forest mb-8">Quick Retreat, Lasting Memories</h2>
+              <SectionLabel className="mb-6">The Day</SectionLabel>
+              <h2 className="font-display text-4xl md:text-6xl italic text-forest mb-8">A Simple Way to Spend the Day</h2>
               <p className="font-serif text-lg text-taupe leading-relaxed mb-10">
-                Our day-out packages are designed for those seeking a quick escape from the city. Enjoy access to our infinity pool, expansive lawns, and a lavish multi-cuisine lunch.
+                Our day packages are a simple way to escape the city for a few hours — pool and lawn time, games, music and a generous meal, all in one place.
               </p>
               
               <div className="grid grid-cols-2 gap-8 mb-10">
@@ -70,11 +70,11 @@ export default function DayTripsPage() {
                 className="inline-flex items-center gap-3 bg-forest text-ivory font-sans text-[11px] uppercase tracking-[0.2em] px-10 py-5 hover:bg-forest/90 transition-all rounded-sm"
               >
                 <Calendar size={18} />
-                Book Direct Online
+                Plan a Day Out
               </a>
             </div>
             <div className="relative aspect-square">
-               <Image src='/images/exterior.jpeg' alt="Family enjoying a day picnic at a luxury resort" fill loading="lazy" className="object-cover rounded-sm shadow-2xl" />
+               <Image src='/images/exterior.jpeg' alt="A relaxed day at Unwind Karjat" fill loading="lazy" className="object-cover rounded-sm shadow-2xl" />
             </div>
           </div>
 
@@ -85,9 +85,9 @@ export default function DayTripsPage() {
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
             {[
-              { icon: Sun, title: 'Pool & Lawn Access', desc: 'Full access to our signature infinity pool and manicured emerald lawns.' },
-              { icon: Utensils, title: 'Lavish Buffet Lunch', desc: 'A wide spread of Indian and global cuisines prepared by our expert chefs.' },
-              { icon: MapPin, title: 'Nature Trails', desc: 'Guided access to our private forest trails for a quick morning exploration.' }
+              { icon: Sun, title: 'Pool & Lawn Access', desc: 'Access to the pool and open lawns for the day.' },
+              { icon: Utensils, title: 'Generous Lunch', desc: 'A relaxed meal prepared fresh, with special dishes on request.' },
+              { icon: MapPin, title: 'Games & Music', desc: 'Lawn games, music and plenty of open space to do your own thing.' }
             ].map((feature, i) => (
               <div key={i} className="text-center p-10 bg-white border border-gold/10 hover:shadow-warm-lg transition-all duration-500 group">
                 <feature.icon className="text-gold mx-auto mb-8 group-hover:scale-110 transition-transform" size={40} />
@@ -101,10 +101,10 @@ export default function DayTripsPage() {
 
       <section className="py-24 bg-forest text-ivory text-center">
         <div className="max-w-2xl mx-auto px-6">
-          <h2 className="font-display text-4xl italic mb-8">Ready for a Day Out?</h2>
+          <h2 className="font-display text-4xl italic mb-8">Plan a Day Out</h2>
           <div className="flex flex-col md:flex-row gap-6 justify-center">
             <Link href="/events#enquiry" className="bg-gold text-[#1a1004] font-sans text-[11px] uppercase tracking-[0.2em] px-12 py-5 hover:bg-gold-light transition-all rounded-sm">
-              Request Day Package
+              Enquire About a Day Package
             </Link>
           </div>
           <p className="mt-8 font-sans text-[10px] uppercase tracking-widest text-ivory/40">*Prior booking mandatory for day-trips.</p>

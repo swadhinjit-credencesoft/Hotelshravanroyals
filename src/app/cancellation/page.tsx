@@ -64,7 +64,7 @@ export default function CancellationPage() {
           <section>
             <h2 className="font-serif text-2xl text-forest mb-4">Monsoon & Force Majeure Policy</h2>
             <p>
-              Unwind Karjat is a deep-nature retreat. In rare circumstances of extreme monsoon weather, natural disasters, or government travel advisories that prevent safe travel to Karjat, guests may request a complimentary reschedule voucher valid for up to 6 months.
+              Unwind Karjat is set in the open countryside of Karjat. In rare circumstances of extreme weather, natural disasters, or government travel advisories that prevent safe travel, guests may request a complimentary reschedule voucher valid for up to 6 months.
             </p>
           </section>
         </div>

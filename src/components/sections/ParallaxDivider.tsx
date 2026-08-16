@@ -97,7 +97,7 @@ export default function ParallaxDivider() {
           </svg>
 
           <blockquote className="font-serif text-2xl md:text-[36px] italic font-light text-ivory leading-[1.55] mb-6">
-            Luxury is not a thing. It is a feeling — the rare sensation that time belongs entirely to you.
+            We wanted to create a place where you could slow down, breathe deeper and simply be.
           </blockquote>
 
           <motion.p

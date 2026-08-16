@@ -51,17 +51,22 @@ export function useLivePrices() {
         const map: LivePriceMap = {}
 
         rooms.forEach((room) => {
-          // Try to match by name substring (bidirectional)
-          const apiRoom = data.roomList?.find((r) => {
-            const apiName = r.name.toLowerCase().trim()
-            const localName = room.name.toLowerCase().trim()
-            return (
-              apiName.includes(localName) ||
-              localName.includes(apiName) ||
-              // also try matching key words (e.g. "lawn", "forest", "cottage")
-              localName.split(' ').some((w) => w.length > 4 && apiName.includes(w))
-            )
+          const apiName = (r: { name: string }) => r.name.toLowerCase().trim()
+          const localName = room.name.toLowerCase().trim()
+
+          // Pass 1: exact bidirectional substring match
+          let apiRoom = data.roomList?.find((r) => {
+            const a = apiName(r)
+            return a.includes(localName) || localName.includes(a)
           })
+
+          // Pass 2: keyword fallback only when no exact match found
+          if (!apiRoom) {
+            apiRoom = data.roomList?.find((r) => {
+              const a = apiName(r)
+              return localName.split(' ').some((w) => w.length > 4 && a.includes(w))
+            })
+          }
 
           if (apiRoom) {
             // Prefer the first rate plan amount, then roomOnlyPrice, then static fallback

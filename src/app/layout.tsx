@@ -3,6 +3,7 @@ import { Playfair_Display, Cormorant_Garamond, Barlow } from 'next/font/google'
 import './globals.css'
 import LenisProvider from '@/components/providers/LenisProvider'
 import CustomCursor from '@/components/ui/CustomCursor'
+import { siteConfig } from '@/data/site'
 import PageTransition from '@/components/providers/PageTransition'
 
 const playfair = Playfair_Display({
@@ -34,19 +35,23 @@ export const metadata: Metadata = {
     icon: '/unwindkarjatlogo.png',
   },
   title: {
-    default: 'Unwind Karjat | Resort & Nature Retreat near Mumbai',
+    default: 'Unwind Karjat | Boutique Resort & Private Getaway Near Pune',
     template: '%s | Unwind Karjat'
   },
   description:
-    'A boutique nature retreat in Karjat, Maharashtra offering luxurious yet cozy stays for leisure travellers, event groups, and corporate teams.',
+    'Unwind Karjat is a private boutique retreat near Pune with comfortable rooms, a large pool, in-house dining, outdoor spaces and experiences for families, groups, celebrations and corporate getaways.',
   keywords: [
-    'resort near Mumbai',
-    'weekend getaway Karjat',
-    'Karjat hotel',
     'Unwind Karjat',
-    'nature resort',
-    'Karjat resort',
-    'luxury cottages Karjat',
+    'resort in Karjat',
+    'boutique resort near Pune',
+    'weekend getaway near Pune',
+    'family resort in Karjat',
+    'private resort Karjat',
+    'corporate offsite Karjat',
+    'group stay Karjat',
+    'resort near Mumbai and Pune',
+    'birthday celebration Karjat',
+    'family getaway near Pune',
   ],
   alternates: {
     canonical: '/',
@@ -63,9 +68,9 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: 'Unwind Karjat | Resort & Nature Retreat near Mumbai',
+    title: 'Unwind Karjat | Boutique Resort & Private Getaway Near Pune',
     description:
-      'A boutique nature retreat in Karjat, Maharashtra offering luxurious yet cozy stays for leisure travellers, event groups, and corporate teams.',
+      'Unwind Karjat is a private boutique retreat near Pune with comfortable rooms, a large pool, in-house dining, outdoor spaces and experiences for families, groups, celebrations and corporate getaways.',
     url: 'https://unwindkarjat.com',
     siteName: 'Unwind Karjat',
     images: [
@@ -81,9 +86,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Unwind Karjat | Resort & Nature Retreat near Mumbai',
+    title: 'Unwind Karjat | Boutique Resort & Private Getaway Near Pune',
     description:
-      'A boutique nature retreat in Karjat, Maharashtra offering luxurious yet cozy stays for leisure travellers, event groups, and corporate teams.',
+      'Unwind Karjat is a private boutique retreat near Pune with comfortable rooms, a large pool, in-house dining, outdoor spaces and experiences for families, groups, celebrations and corporate getaways.',
     images: ['https://unwindkarjat.com/images/resort-exterior.png'],
   },
 }
@@ -117,7 +122,7 @@ export default function RootLayout({
             
             {/* Global Floating WhatsApp Button */}
             <a 
-              href="https://wa.me/919619198839" 
+              href={siteConfig.whatsapp} 
               target="_blank" 
               rel="noreferrer"
               className="fixed bottom-8 right-8 z-[100] bg-green-500 text-white p-4 rounded-full shadow-2xl hover:bg-green-600 hover:scale-110 transition-all duration-300 group"

@@ -35,8 +35,8 @@ export default function LiveMusicalEveningsPage() {
 
       <CinematicHero
         label="Live Musical Evenings"
-        title="Music Under the Stars"
-        tagline="From soulful acoustic sets to high-energy live bands, experience unforgettable evenings beneath the Karjat sky."
+        title="Evenings That Come Alive"
+        tagline="Acoustic nights, live bands and karaoke — music is very much part of the Unwind experience."
         image='/images/exterior2.jpeg'
       />
 
@@ -45,21 +45,21 @@ export default function LiveMusicalEveningsPage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center mb-32">
             <div>
               <SectionLabel className="mb-6">The Experience</SectionLabel>
-              <h2 className="font-display text-4xl md:text-6xl italic text-forest mb-8">Where Music Meets Nature</h2>
+              <h2 className="font-display text-4xl md:text-6xl italic text-forest mb-8">Music Is Part of the Stay</h2>
               <p className="font-serif text-lg text-taupe leading-relaxed mb-10">
-                At Unwind Karjat, evenings come alive with live music. Whether it&apos;s an intimate acoustic set by the bonfire or a full band performance on our lawn stage, our musical evenings create moments that linger long after the last note fades.
+                At Unwind, evenings come alive with music — from an acoustic set to a karaoke night or a DJ evening on the lawn. Some of our best memories are made around music.
               </p>
 
               <div className="grid grid-cols-2 gap-8 mb-10">
                 <div className="flex flex-col gap-3">
                   <Users className="text-gold" size={24} />
                   <p className="font-sans text-[11px] uppercase tracking-widest text-gold">Capacity</p>
-                  <p className="font-serif text-forest text-xl italic">Up to 150 Guests</p>
+                  <p className="font-serif text-forest text-xl italic">Private Groups</p>
                 </div>
                 <div className="flex flex-col gap-3">
                   <Flame className="text-gold" size={24} />
                   <p className="font-sans text-[11px] uppercase tracking-widest text-gold">Setting</p>
-                  <p className="font-serif text-forest text-xl italic">Bonfire & Open Lawn</p>
+                  <p className="font-serif text-forest text-xl italic">Lawn & Open Air</p>
                 </div>
               </div>
 
@@ -70,11 +70,11 @@ export default function LiveMusicalEveningsPage() {
                 className="inline-flex items-center gap-3 bg-forest text-ivory font-sans text-[11px] uppercase tracking-[0.2em] px-10 py-5 hover:bg-forest/90 transition-all rounded-sm"
               >
                 <Calendar size={18} />
-                Book Direct Online
+                Plan a Musical Evening
               </a>
             </div>
             <div className="relative aspect-square">
-              <Image src='/images/exterior4.jpeg' alt="Live music performance at Unwind Karjat" fill loading="lazy" className="object-cover rounded-sm shadow-2xl" />
+              <Image src='/images/exterior4.jpeg' alt="An evening of music at Unwind Karjat" fill loading="lazy" className="object-cover rounded-sm shadow-2xl" />
             </div>
           </div>
 
@@ -85,9 +85,9 @@ export default function LiveMusicalEveningsPage() {
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
             {[
-              { icon: Music, title: 'Acoustic Nights', desc: 'Soulful acoustic performances by talented local artists. Perfect for intimate gatherings and romantic evenings under the stars.' },
-              { icon: Mic, title: 'Live Bands & DJ', desc: 'High-energy performances with professional live bands and DJs for weddings, parties, and corporate celebrations.' },
-              { icon: Flame, title: 'Bonfire Jam Sessions', desc: 'An interactive musical experience where guests join the performance around a warm bonfire — instruments provided.' }
+              { icon: Music, title: 'Acoustic Nights', desc: 'A relaxed acoustic evening with music that fits the mood — perfect for small groups and slow evenings.' },
+              { icon: Mic, title: 'Live Bands & DJ', desc: 'Live bands and DJ evenings for birthdays, celebrations and corporate get-togethers.' },
+              { icon: Flame, title: 'Karaoke & Jams', desc: 'An interactive evening where your group joins in around a bonfire on the lawn.' }
             ].map((format, i) => (
               <div key={i} className="text-center p-10 bg-white border border-gold/10 hover:shadow-warm-lg transition-all duration-500 group">
                 <format.icon className="text-gold mx-auto mb-8 group-hover:scale-110 transition-transform" size={40} />
@@ -105,12 +105,12 @@ export default function LiveMusicalEveningsPage() {
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
               {[
-                'Professional sound system',
-                'Stage lighting & setup',
+                'Sound & music setup',
                 'Bonfire arrangement',
-                'Custom song requests',
-                'Curated food & drinks menu',
-                'Dedicated event coordinator',
+                'Karaoke & song requests',
+                'Food & drinks to go with the music',
+                'Space for your group on the lawn',
+                'Help with planning the evening',
               ].map((feature, i) => (
                 <div key={i} className="flex items-center gap-3 text-taupe font-sans text-sm">
                   <Star size={12} className="text-gold flex-shrink-0" fill="currentColor" />
@@ -124,13 +124,13 @@ export default function LiveMusicalEveningsPage() {
 
       <section className="py-24 bg-forest text-ivory text-center">
         <div className="max-w-2xl mx-auto px-6">
-          <h2 className="font-display text-4xl italic mb-4">Plan Your Musical Evening</h2>
-          <p className="font-serif text-ivory/60 italic mb-10">Let us curate the perfect musical experience for your group</p>
+          <h2 className="font-display text-4xl italic mb-4">Plan a Musical Evening</h2>
+          <p className="font-serif text-ivory/60 italic mb-10">Tell us what you have in mind and we will help put the evening together</p>
           <Link
             href="/events#enquiry"
             className="inline-block bg-gold text-[#1a1004] font-sans text-[11px] uppercase tracking-[0.2em] px-12 py-5 hover:bg-gold-light transition-all rounded-sm"
           >
-            Request Musical Evening
+            Enquire About Music Evenings
           </Link>
         </div>
       </section>

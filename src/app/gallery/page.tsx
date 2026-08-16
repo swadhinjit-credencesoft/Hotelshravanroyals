@@ -2,7 +2,6 @@ import Navbar from '@/components/layout/Navbar'
 import Footer from '@/components/layout/Footer'
 import GallerySection from '@/components/sections/GallerySection'
 import SectionLabel from '@/components/ui/SectionLabel'
-import Image from 'next/image'
 
 export default function GalleryPage() {
   return (
@@ -17,7 +16,7 @@ export default function GalleryPage() {
             "@context": "https://schema.org",
             "@type": "ImageGallery",
             "name": "Unwind Karjat Photo Collection",
-            "description": "High-resolution photos of our Red Brick Cottages, infinity pool, and lush forest surroundings in Karjat.",
+            "description": "Photos of Unwind Karjat — the pool, open lawns, rooms, dining and celebrations in Karjat.",
             "image": [
               'https://unwindkarjat.com/images/room1.jpeg',
               'https://unwindkarjat.com/images/room2.jpeg',
@@ -64,18 +63,6 @@ export default function GalleryPage() {
             Share your favorite memories with us. Tag us to be featured. <br />
             <a href="https://www.instagram.com/unwind_karjat?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" rel="noreferrer" className="text-gold font-sans uppercase tracking-widest text-[11px] hover:text-forest transition-colors mt-4 inline-block">@unwindkarjat</a>
           </p>
-          
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-             {/* Simulating IG posts */}
-             {[1, 2, 3, 4].map(num => (
-               <div key={num} className="relative aspect-square overflow-hidden group cursor-pointer border border-gold/10">
-                 <Image src={'/images/exterior.jpeg'} alt="Guest photo of Unwind Karjat resort shared on Instagram" fill loading="lazy" className="object-cover group-hover:scale-105 transition-transform duration-700" />
-                 <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
-                    <span className="text-white font-sans text-xs">View on Instagram</span>
-                 </div>
-               </div>
-             ))}
-          </div>
         </div>
       </section>
 

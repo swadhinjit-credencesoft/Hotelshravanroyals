@@ -12,9 +12,9 @@ export default function DiningPage() {
     <main className="bg-cream min-h-screen" id="main-content">
       <Navbar />
       <CinematicHero 
-        label="Culinary Experience"
-        title="Flavors of Karjat"
-        tagline="From rustic local delicacies to multi-cuisine feasts, experience dining that satisfies the soul."
+        label="Dining"
+        title="Come Hungry. Leave Happy."
+        tagline="Good food is part of the stay. Relaxed, generous meals made to be enjoyed together."
         image='/TheMainDiningHall.png'
       />
       
@@ -42,12 +42,12 @@ export default function DiningPage() {
 
       <section className="py-24 bg-cream text-center">
         <div className="max-w-4xl mx-auto px-6">
-           <SectionLabel className="justify-center mb-8">The Philosophy</SectionLabel>
+           <SectionLabel className="justify-center mb-8">Good Food Is Part of the Stay</SectionLabel>
            <h2 className="font-serif text-3xl md:text-5xl italic text-forest mb-8">
-             &ldquo;Locally Sourced. Lovingly Crafted.&rdquo;
+             &ldquo;Freshly Prepared. Generously Served. Best Enjoyed Together.&rdquo;
            </h2>
            <p className="font-sans text-lg text-taupe leading-relaxed">
-             Our chefs blend authentic Maharashtrian techniques with global inspirations. Enjoy a diverse range of Indian, Tandoor, Mughlai, Asian, and Continental cuisine. <span className="text-gold font-bold">Special Fish and Mutton dishes are prepared upon request</span> to ensure maximum freshness.
+             Our in-house restaurant is relaxed, generous and designed for the kind of meals that turn into long conversations. From Indian favourites and tandoor specialities to comfort food and chef-led preparations, our menu is made to be enjoyed together. <span className="text-gold font-bold">Special Fish and Mutton dishes are prepared upon request</span> to ensure maximum freshness.
            </p>
         </div>
       </section>

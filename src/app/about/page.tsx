@@ -5,20 +5,39 @@ import Footer from '@/components/layout/Footer';
 import CinematicHero from '@/components/ui/CinematicHero';
 import SectionLabel from '@/components/ui/SectionLabel';
 import GoldDivider from '@/components/ui/GoldDivider';
-import AwardsMarquee from '@/components/sections/AwardsMarquee';
 import { motion } from 'framer-motion';
 import Image from 'next/image';
 import Link from 'next/link';
+import { MapPin, Calendar, MessageCircle } from 'lucide-react';
 import { siteConfig } from '@/data/site';
+
+const values = [
+  {
+    title: 'Personal Attention',
+    description: 'No corporate service standards here — just genuine care from the people who built and run this place, day in and day out.'
+  },
+  {
+    title: 'Home-Style Food',
+    description: 'Freshly prepared, generous and familiar. Meals are made to be shared around the table, and special dishes are prepared on request.'
+  },
+  {
+    title: 'A Private Setting',
+    description: 'An intimate property where the space feels like your own — not a crowded resort. Plenty of open grounds, greenery and quiet corners.'
+  },
+  {
+    title: 'Everything in One Place',
+    description: 'Rooms, pool, lawns, dining and experiences under one roof. For families, groups and celebrations, there is no planning or moving around required.'
+  }
+];
 
 export default function AboutPage() {
   return (
     <main className="bg-cream min-h-screen" id="main-content">
       <Navbar />
       <CinematicHero 
-        label="Our Story"
-        title="Rooted in Nature"
-        tagline="Founded on the belief that true luxury is reconnecting with the wild. Discover the vision behind Unwind Karjat."
+        label="About Us"
+        title="Built With Heart. Run Like Home."
+        tagline="Unwind Karjat is run by the people who built it. A private, comfortable, good-food-and-good-times kind of getaway."
         image='/images/exterior.jpeg'
       />
 
@@ -30,13 +49,12 @@ export default function AboutPage() {
             "@context": "https://schema.org",
             "@type": "Hotel",
             "name": "Unwind Karjat",
-            "description": "Premium nature resort in Karjat offering rustic luxury cottages and eco-friendly stays.",
+            "description": "A private boutique retreat in Karjat with comfortable rooms, a large pool, in-house dining, outdoor spaces and experiences for families, groups, celebrations and corporate getaways.",
             "url": "https://unwindkarjat.com",
             "logo": "https://unwindkarjat.com/unwindkarjatlogo.png",
-            "image": "https://unwindkarjat.com/aboutimg.png",
+            "image": "https://unwindkarjat.com/images/exterior.jpeg",
             "email": "stay@unwindkarjat.com",
             "telephone": "+91919619198839",
-            "foundingDate": "2019",
             "address": {
               "@type": "PostalAddress",
               "streetAddress": "Karjat - Chowk Rd, behind Baba Dairy, Wavarle",
@@ -57,6 +75,7 @@ export default function AboutPage() {
         }}
       />
 
+      {/* The People Behind Unwind */}
       <section className="py-24">
         <div className="max-w-[1600px] mx-auto px-6 md:px-10">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-24 items-center">
@@ -66,23 +85,23 @@ export default function AboutPage() {
               viewport={{ once: true }}
               transition={{ duration: 1 }}
             >
-              <SectionLabel className="mb-6">Ethos & Origins</SectionLabel>
+              <SectionLabel className="mb-6">The People Behind Unwind</SectionLabel>
               <h2 className="font-display text-4xl md:text-6xl italic text-forest mb-8 leading-tight">
-                Where the Wild <br /> Meets the Refined
+                Meet Kapil &amp; Savita
               </h2>
               <GoldDivider className="mb-10" />
               <p className="font-serif text-xl text-taupe italic mb-8 leading-relaxed">
-                &ldquo;We didn&apos;t just want to build a resort. We wanted to build a sanctuary that frames the Sahyadris and respects the earth.&rdquo;
+                &ldquo;From Day 1, we have done everything ourselves — from the construction to the daily running of the property.&rdquo;
               </p>
               <div className="space-y-6 font-sans text-base text-taupe/80 leading-loose">
                 <p>
-                  Unwind Karjat was conceived in 2019 by a family of nature enthusiasts who wanted to create a pristine escape just a short drive from Mumbai and Pune. What started as a small passion project quickly blossomed into Karjat&apos;s premier boutique retreat.
+                  We are Kapil &amp; Savita, and Unwind Karjat is our home and our work. The property is run by the people who built it — not by a management that is a call away, but by us, right here.
                 </p>
                 <p>
-                  Our design language is one of restraint and sustainability. We use local red bricks, reclaimed timber, and the natural movement of light to create spaces like our <Link href="/rooms/red-brick-cottage" className="text-gold hover:underline">Red Brick Cottages</Link> that breathe with the landscape.
+                  From the rooms to the food to the little details across the property, everything is looked after with care and pride. When you stay with us, you are our guest — and we want you to feel it.
                 </p>
                 <p>
-                  Explore our <Link href="/experiences" className="text-gold hover:underline">curated experiences</Link> to learn more about our philosophy.
+                  Explore our <Link href="/rooms" className="text-gold hover:underline">rooms</Link>, our <Link href="/experiences" className="text-gold hover:underline">experiences</Link> and our <Link href="/dining" className="text-gold hover:underline">dining</Link>, and you will see what we mean.
                 </p>
               </div>
             </motion.div>
@@ -95,8 +114,8 @@ export default function AboutPage() {
               className="relative aspect-[4/5] overflow-hidden border border-gold/10"
             >
               <Image
-                src='/aboutimg.png'
-                alt="Architectural detail seamlessly blending with nature at Unwind Karjat"
+                src='/images/room-interior.jpg'
+                alt="The grounds at Unwind Karjat"
                 fill
                 loading="lazy"
                 className="object-cover"
@@ -106,126 +125,102 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* Nature & Sustainability Section */}
+      {/* What Staying With Us Means */}
       <section className="py-24 bg-ivory">
         <div className="max-w-[1600px] mx-auto px-6 md:px-10 text-center">
           <div className="max-w-3xl mx-auto">
-            <SectionLabel className="justify-center mb-8">Eco Commitments</SectionLabel>
-            <h2 className="font-display text-4xl md:text-6xl italic text-forest mb-12">Treading Lightly</h2>
+            <SectionLabel className="justify-center mb-8">What Staying With Us Means</SectionLabel>
+            <h2 className="font-display text-4xl md:text-6xl italic text-forest mb-12">Simple. Honest. Comfortable.</h2>
             <p className="font-serif text-xl italic text-taupe mb-16 leading-relaxed">
-              We are dedicated to preserving the pristine ecosystem of Karjat. From rainwater harvesting to eliminating single-use plastics, our operations are designed to protect the environment that makes our resort so special.
+              Unwind was built on a simple idea: a place to slow down, spend time with your people and simply enjoy the moment — with good food and good times as part of the deal.
             </p>
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
-              <div className="p-8 border border-gold/10">
-                <span className="block font-serif text-4xl text-gold mb-2">100%</span>
-                <span className="font-sans text-[10px] uppercase tracking-widest text-taupe/60">Solar Water Heating</span>
-              </div>
-              <div className="p-8 border border-gold/10">
-                <span className="block font-serif text-4xl text-gold mb-2">400+</span>
-                <span className="font-sans text-[10px] uppercase tracking-widest text-taupe/60">Trees Planted</span>
-              </div>
-              <div className="p-8 border border-gold/10">
-                <span className="block font-serif text-4xl text-gold mb-2">Zero</span>
-                <span className="font-sans text-[10px] uppercase tracking-widest text-taupe/60">Single-Use Plastics</span>
-              </div>
-              <div className="p-8 border border-gold/10">
-                <span className="block font-serif text-4xl text-gold mb-2">Local</span>
-                <span className="font-sans text-[10px] uppercase tracking-widest text-taupe/60">Farm-to-Table</span>
-              </div>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 text-left">
+              {values.map((item, i) => (
+                <motion.div
+                  key={i}
+                  initial={{ opacity: 0, y: 30 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.8, delay: i * 0.1 }}
+                  className="border border-gold/10 bg-cream p-8 hover:bg-forest group transition-colors duration-500"
+                >
+                  <h3 className="font-serif text-2xl italic text-forest mb-4 group-hover:text-ivory transition-colors duration-500">
+                    {item.title}
+                  </h3>
+                  <div className="h-px bg-gold/30 w-12 mb-4 group-hover:w-full transition-all duration-700" />
+                  <p className="font-sans text-sm text-taupe leading-relaxed group-hover:text-ivory/70 transition-colors duration-500">
+                    {item.description}
+                  </p>
+                </motion.div>
+              ))}
             </div>
           </div>
         </div>
       </section>
-
-      {/* The Team / Leadership */}
-      {/* <section className="bg-forest py-24 text-ivory overflow-hidden">
-        <div className="max-w-[1600px] mx-auto px-6 md:px-10">
-          <div className="text-center mb-20">
-            <SectionLabel light className="justify-center mb-6">Hospitality Team</SectionLabel>
-            <h2 className="font-display text-4xl md:text-6xl italic">Faces of Unwind Karjat</h2>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
-            {[
-              { name: 'Rahul Desai', role: 'General Manager', bio: 'With over 15 years in luxury hospitality, Rahul ensures every guest feels the soul of our retreat.', image: '/images/exterior3.jpeg' },
-              { name: 'Priya Sharma', role: 'Head Chef', bio: 'Master of local Maharashtrian flavors, Priya brings forest-to-fork dining to life.', image: '/images/exterior4.jpeg' },
-              { name: 'Vikram Singh', role: 'Guest Experience Lead', bio: 'Expert naturalist and guide, Vikram curates our signature forest immersions.', image: '/images/exterior5.jpeg' },
-            ].map((person, i) => (
-              <motion.div 
-                key={i}
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.8, delay: i * 0.2 }}
-                className="text-center group"
-              >
-                <div className="relative aspect-square mb-8 overflow-hidden rounded-full grayscale group-hover:grayscale-0 transition-all duration-700 max-w-[240px] mx-auto border border-gold/20">
-                  <Image
-                    src={person.image}
-                    alt={person.name}
-                    fill
-                    className="object-cover scale-110 group-hover:scale-100 transition-transform duration-1000"
-                  />
-                </div>
-                <h3 className="font-serif text-2xl italic text-gold mb-2">{person.name}</h3>
-                <p className="font-sans text-[9px] uppercase tracking-[0.2em] opacity-60 mb-4">{person.role}</p>
-                <p className="font-serif text-ivory/60 text-sm leading-relaxed max-w-[200px] mx-auto">{person.bio}</p>
-              </motion.div>
-            ))}
-          </div>
-        </div>
-      </section> */}
 
       {/* Location Section */}
       <section className="py-24 bg-cream">
         <div className="max-w-[1600px] mx-auto px-6 md:px-10">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
-            <div className="order-2 lg:order-1">
-               <div className="relative aspect-video w-full border border-gold/10 grayscale hover:grayscale-0 transition-all duration-1000">
-                  <iframe 
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3774.2123456789!2d73.3!3d18.9!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7fb0000000001%3A0x0!2zMTjCsDU0JzAwLjAiTiA3M8KwMTgnMDAuMCJF!5e0!3m2!1sen!2sin!4v1234567890" 
-                    width="100%" 
-                    height="100%" 
-                    style={{ border: 0 }} 
-                    allowFullScreen 
-                    loading="lazy"
-                  ></iframe>
-               </div>
+            <div className="order-2 lg:order-1 relative aspect-video w-full border border-gold/10 overflow-hidden">
+              <Image
+                src='/images/exterior3.jpeg'
+                alt="The grounds of Unwind Karjat in Karjat"
+                fill
+                loading="lazy"
+                className="object-cover"
+              />
             </div>
             <div className="order-1 lg:order-2">
-              <SectionLabel className="mb-6">Find Your Way</SectionLabel>
-              <h2 className="font-display text-4xl md:text-6xl italic text-forest mb-8">Getting to Sanctuary</h2>
+              <SectionLabel className="mb-6">Location</SectionLabel>
+              <h2 className="font-display text-4xl md:text-6xl italic text-forest mb-8">Close Enough to Come Easily.</h2>
               <p className="font-serif text-lg text-taupe leading-relaxed mb-8">
-                Nestled in the lush hills of Karjat, we are approximately 90 minutes from Mumbai and Pune. Our retreat offers the perfect balance of accessibility and absolute solitude.
+                Unwind Karjat is just over an hour and a half from both Mumbai and Pune — close enough for a quick getaway, far enough to feel like a break. Set on the Karjat-Chowk road in Wavarle, surrounded by open greenery.
               </p>
-              <div className="space-y-4">
+              <div className="space-y-4 mb-10">
                 <p className="font-sans text-[11px] uppercase tracking-widest text-gold font-bold">Address</p>
                 <p className="font-serif text-forest text-xl italic">{siteConfig.address}</p>
+              </div>
+              <div className="flex flex-wrap gap-4">
+                <a
+                  href="https://www.google.com/maps/search/?api=1&query=18.922485,73.315053"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-3 bg-forest text-ivory font-sans text-[11px] uppercase tracking-[0.2em] px-8 py-4 hover:bg-forest/90 transition-all rounded-sm"
+                >
+                  <MapPin size={14} />
+                  Get Directions
+                </a>
+                <Link
+                  href="/contact"
+                  className="inline-flex items-center gap-3 border border-gold/30 text-gold font-sans text-[11px] uppercase tracking-[0.2em] px-8 py-4 hover:bg-gold/5 transition-all rounded-sm"
+                >
+                  Driving Directions
+                </Link>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Awards & Press */}
-      <section className="py-24 border-y border-gold/10">
-        <div className="max-w-[1600px] mx-auto px-6 md:px-10 text-center mb-16">
-          <SectionLabel className="justify-center mb-6">Recognitions</SectionLabel>
-          <h2 className="font-display text-4xl italic text-forest">Award-Winning Hospitality</h2>
-        </div>
-        <AwardsMarquee />
-      </section>
-
       {/* CTA Section */}
-      <section className="py-32 bg-cream text-center">
+      <section className="py-32 bg-champagne text-center border-t border-gold/10">
          <div className="max-w-3xl mx-auto px-6">
-            <h2 className="font-display text-4xl md:text-6xl italic text-forest mb-8">Ready for Tranquility?</h2>
+            <SectionLabel className="justify-center mb-6">Plan Your Visit</SectionLabel>
+            <h2 className="font-display text-4xl md:text-6xl italic text-forest mb-8">Your Weekend Could Be This Simple.</h2>
             <p className="font-serif text-xl italic text-taupe mb-12">
-              Join us for a weekend of unmatched serenity, exceptional food, and raw nature.
+              Book your stay, pack light and let Unwind do the rest.
             </p>
-            <a href="https://bookone.io/Unwind-Karjat?bookingEngine=true" target="_blank" rel="noopener noreferrer" className="inline-block bg-gold text-[#1a1004] font-sans text-[11px] uppercase tracking-[0.2em] px-12 py-5 hover:bg-gold-light transition-all rounded-sm">
-               Come Experience It
-            </a>
+            <div className="flex flex-wrap justify-center gap-4">
+              <a href="https://bookone.io/Unwind-Karjat?bookingEngine=true" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-3 bg-gold text-[#1a1004] font-sans text-xs uppercase tracking-[0.25em] px-12 py-5 hover:bg-gold-light transition-all shadow-xl hover:shadow-gold/20 duration-500 rounded-sm font-bold">
+                 <Calendar size={16} />
+                 Book Your Stay
+              </a>
+              <a href={siteConfig.whatsapp} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-3 bg-forest text-ivory font-sans text-xs uppercase tracking-[0.25em] px-12 py-5 hover:bg-forest/90 transition-all rounded-sm">
+                 <MessageCircle size={16} />
+                 WhatsApp Us
+              </a>
+            </div>
          </div>
       </section>
 

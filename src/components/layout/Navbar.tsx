@@ -11,11 +11,12 @@ import MagneticButton from '@/components/ui/MagneticButton'
 
 const navLinks = [
   { label: 'Home', href: '/' },
-  { label: 'Rooms', href: '/rooms' },
+  { label: 'Stay', href: '/rooms' },
   { label: 'Experiences', href: '/experiences' },
-  { label: 'Events & Weddings', href: '/events' },
   { label: 'Dining', href: '/dining' },
-  { label: 'About', href: '/about' },
+  { label: 'Events & Celebrations', href: '/events' },
+  { label: 'Gallery', href: '/gallery' },
+  { label: 'About Us', href: '/about' },
   { label: 'Contact', href: '/contact' },
 ]
 
@@ -73,7 +74,7 @@ export default function Navbar() {
           </Link>
  
           {/* Desktop Nav */}
-          <nav className="hidden md:flex items-center gap-8" aria-label="Main navigation">
+          <nav className="hidden md:flex items-center gap-5 xl:gap-7" aria-label="Main navigation">
             {navLinks.map((link) => (
               <Link
                 key={link.label}

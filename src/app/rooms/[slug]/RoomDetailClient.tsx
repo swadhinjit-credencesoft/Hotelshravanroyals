@@ -38,6 +38,7 @@ const amenityIcons: Record<string, React.ElementType> = {
   'Private Sit-out': Eye,
   'Balcony': Eye,
   'King Bed': Users,
+  'Double Bed': Users,
   'Mini Fridge': Coffee,
 }
 
@@ -231,7 +232,7 @@ export default function RoomDetailClient({ room, otherRooms }: RoomDetailClientP
 
           {/* Description */}
           <section className="mb-16">
-            <h2 className="font-serif text-2xl text-forest mb-6">About the Room</h2>
+            <h2 className="font-serif text-2xl text-forest mb-6">About the Stay</h2>
             <p className="font-serif text-forest/70 text-lg leading-relaxed mb-8">
               {room.description}
             </p>
@@ -283,7 +284,7 @@ export default function RoomDetailClient({ room, otherRooms }: RoomDetailClientP
       {/* Cross-links */}
       <section className="bg-cream/20 py-24 border-t border-gold/10">
         <div className="max-w-7xl mx-auto px-6">
-          <h2 className="font-serif text-3xl text-forest mb-12 text-center italic">Discover Other Sanctuaries</h2>
+          <h2 className="font-serif text-3xl text-forest mb-12 text-center italic">Explore Other Rooms</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {otherRooms.map(r => (
               <Link key={r.slug} href={`/rooms/${r.slug}`} className="group relative aspect-[16/7] overflow-hidden rounded-sm">
@@ -404,8 +405,8 @@ function BookingSidebar({ room }: { room: Room }) {
   }
 
   return (
-    <div className="bg-forest p-8 rounded-sm shadow-2xl text-ivory">
-      <h3 className="font-display italic text-2xl mb-2 text-gold">Ready to Escape?</h3>
+      <div className="bg-forest p-8 rounded-sm shadow-2xl text-ivory">
+      <h3 className="font-display italic text-2xl mb-2 text-gold">Plan Your Stay</h3>
       <p className="font-sans text-[11px] uppercase tracking-widest text-ivory/60 mb-6 border-b border-ivory/10 pb-4">
         Secure your {room.name} at Unwind Karjat
       </p>

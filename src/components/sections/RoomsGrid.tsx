@@ -80,9 +80,9 @@ export default function RoomsGrid() {
                 onChange={(e) => setFilterView(e.target.value)}
               >
                 <option value="all">All Views</option>
+                <option value="pool">Pool &amp; Lawn</option>
+                <option value="farm">Farm Facing</option>
                 <option value="garden">Garden View</option>
-                <option value="lawn">Lawn View</option>
-                <option value="forest">Forest View</option>
               </select>
             </div>
           </div>

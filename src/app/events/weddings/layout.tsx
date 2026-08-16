@@ -1,22 +1,22 @@
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Destination Weddings & Forest Lawns in Karjat',
-  description: 'Exchange vows in a magical forest-side setting. Unwind Karjat offers destination wedding venues, bespoke catering, and luxury stay packages for up to 250 guests.',
+  title: 'Weddings & Receptions in Karjat',
+  description: 'Intimate weddings and receptions at Unwind Karjat — private lawns, stay for your guests and generous catering together in one relaxed place.',
   keywords: [
-    'destination wedding karjat',
+    'intimate wedding venue karjat',
     'wedding lawns near mumbai',
-    'forest wedding venue maharashtra',
-    'pre wedding shoot resort',
+    'reception venue near pune',
+    'wedding stay karjat',
     'karjat marriage lawn',
-    'luxury wedding lawns pune'
+    'private wedding venue pune'
   ],
   alternates: {
     canonical: 'https://unwindkarjat.com/events/weddings',
   },
   openGraph: {
-    title: 'Destination Weddings & Forest Lawns in Karjat | Unwind Karjat',
-    description: 'Exchange vows in a magical forest-side setting. Unwind Karjat offers destination wedding venues, bespoke catering, and luxury stay packages for up to 250 guests.',
+    title: 'Weddings & Receptions in Karjat | Unwind Karjat',
+    description: 'Intimate weddings and receptions at Unwind Karjat — private lawns, stay for your guests and generous catering together in one relaxed place.',
     url: 'https://unwindkarjat.com/events/weddings',
     type: 'website',
     images: [
@@ -24,14 +24,14 @@ export const metadata: Metadata = {
         url: 'https://unwindkarjat.com/images/exterior6.jpeg',
         width: 1200,
         height: 630,
-        alt: 'Elegant Wedding Setup at Sunset in Unwind Karjat'
+        alt: 'Wedding celebration at Unwind Karjat'
       }
     ]
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Destination Weddings & Forest Lawns in Karjat | Unwind Karjat',
-    description: 'Exchange vows in a magical forest-side setting. Unwind Karjat offers destination wedding venues, bespoke catering, and luxury stay packages for up to 250 guests.',
+    title: 'Weddings & Receptions in Karjat | Unwind Karjat',
+    description: 'Intimate weddings and receptions at Unwind Karjat — private lawns, stay for your guests and generous catering together in one relaxed place.',
     images: ['https://unwindkarjat.com/images/exterior6.jpeg']
   }
 }

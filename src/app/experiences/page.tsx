@@ -11,21 +11,21 @@ export default function ExperiencesPage() {
     <main className="bg-cream min-h-screen" id="main-content">
       <Navbar />
       <CinematicHero 
-        label="Beyond the Room"
-        title="Immerse in Nature"
-        tagline="From monsoon treks to cozy winter bonfires, discover activities designed to help you reconnect with the outdoors."
+        label="Experiences"
+        title="Something to Do. Or Nothing at All."
+        tagline="Take a dip in the pool. Play a game on the lawn. Sit down for a long meal. Or find a quiet corner and do absolutely nothing."
         image='/experiencehero.png'
       />
 
-      <section className="py-32 bg-forest text-ivory/80">
+      <section className="py-24 bg-forest text-ivory/80">
          <div className="max-w-[1600px] mx-auto px-6 md:px-10 grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
             <div>
-               <SectionLabel light className="mb-6">Outdoor Spaces</SectionLabel>
+               <SectionLabel light className="mb-6">Your Day, Your Pace</SectionLabel>
                <h2 className="font-display text-4xl md:text-6xl italic text-ivory mb-8">
-                  Lawns, Decks & <br /> Campfire Areas
+                  Time to Simply Be
                </h2>
                 <p className="font-sans text-lg leading-relaxed mb-8">
-                  Unwind Karjat features expansive outdoor spaces designed for relaxation and gathering. Enjoy morning yoga on our wooden decks, spend the afternoon reading on our manicured lawns, or end the night sharing stories around our dedicated campfire zones.
+                  At Unwind, your day can be as active or as slow as you want it to be. Challenge your friends to karaoke, spend the evening around the music, enjoy a live tandoor dinner, or settle into a quiet corner with a book. There is plenty to do — and no pressure to do any of it.
                 </p>
                <a href="/gallery" className="inline-block bg-gold text-[#1a1004] font-sans text-[11px] uppercase tracking-[0.2em] px-12 py-5 hover:bg-gold-light transition-all">
                   View Gallery
@@ -92,7 +92,10 @@ export default function ExperiencesPage() {
       <section className="py-32 bg-cream">
          <div className="max-w-[1600px] mx-auto px-6 md:px-10 text-center">
             <SectionLabel className="justify-center mb-6">Explore Karjat</SectionLabel>
-            <h2 className="font-display text-4xl md:text-6xl italic text-forest mb-16">Nearby Attractions</h2>
+            <h2 className="font-display text-4xl md:text-6xl italic text-forest mb-8">Things Worth Seeing Around the Property</h2>
+            <p className="font-serif text-lg text-taupe italic max-w-2xl mx-auto mb-16 leading-relaxed">
+              Spend a few hours exploring the famous spots around Karjat — or come back to the pool and do nothing at all.
+            </p>
             
             <div className="grid grid-cols-1 md:grid-cols-3 gap-12 text-left">
                <div className="bg-white p-10 border border-gold/10 hover:border-gold/30 hover:shadow-warm-lg transition-all duration-500 rounded-sm group">

@@ -221,19 +221,19 @@ export default function RoomsCarousel() {
       {/* Header */}
       <div className="max-w-[1600px] mx-auto px-6 md:px-10 mb-12 flex flex-col md:flex-row md:items-end justify-between gap-6">
         <div className="max-w-xl">
-          <SectionLabel className="mb-4">Rooms &amp; Stays</SectionLabel>
+          <SectionLabel className="mb-4">Stay</SectionLabel>
           <h2 className="font-display text-4xl md:text-[52px] italic text-forest mb-4 leading-tight">
-            Your Private World Awaits
+            Rooms Made for Slowing Down
           </h2>
           <p className="font-serif text-xl font-light text-taupe leading-relaxed">
-            Distinctive spaces designed around privacy, comfort and the quiet beauty of nature.
+            Choose a room overlooking the lawn and pool, a quieter room facing the farm, our Red Brick Suite, or the Family Room for larger groups.
           </p>
         </div>
         <Link
           href="/rooms"
           className="inline-flex items-center gap-2 font-sans text-[11px] uppercase tracking-[0.18em] text-forest border border-forest/30 px-7 py-3 rounded-sm hover:border-gold hover:text-gold transition-colors whitespace-nowrap self-start md:self-auto"
         >
-          View All Rooms <ArrowRight size={13} />
+          View Rooms <ArrowRight size={13} />
         </Link>
       </div>
 
@@ -284,6 +284,24 @@ export default function RoomsCarousel() {
       {/* Drag hint */}
       <div className="flex justify-center mt-6 md:hidden">
         <p className="font-sans text-[10px] uppercase tracking-[0.18em] text-taupe/60">Swipe to explore</p>
+      </div>
+
+      {/* Stay Your Way */}
+      <div className="max-w-[1600px] mx-auto px-6 md:px-10 mt-20">
+        <div className="bg-white border border-gold/10 p-10 md:p-16 flex flex-col lg:flex-row items-center justify-between gap-8 shadow-warm rounded-sm">
+          <div className="max-w-2xl">
+            <p className="font-sans text-[11px] uppercase tracking-[0.18em] text-gold mb-3">Stay Your Way</p>
+            <p className="font-serif text-xl md:text-2xl italic text-forest leading-relaxed">
+              Whether you are planning a quiet couple&apos;s weekend, a family gathering or a group celebration, our 10-room property lets you enjoy the place without feeling like you are staying in a crowded hotel.
+            </p>
+          </div>
+          <Link
+            href="/rooms"
+            className="inline-flex items-center gap-2 bg-forest text-ivory font-sans text-[11px] uppercase tracking-[0.18em] px-8 py-4 rounded-sm hover:bg-gold hover:text-[#1a1004] transition-colors whitespace-nowrap"
+          >
+            View Rooms <ArrowRight size={13} />
+          </Link>
+        </div>
       </div>
     </section>
   )

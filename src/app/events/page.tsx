@@ -9,6 +9,7 @@ import GoldDivider from '@/components/ui/GoldDivider';
 import { estateEvents } from '@/data/events';
 import { motion } from 'framer-motion';
 import Image from 'next/image';
+import Link from 'next/link';
 import { Calendar, ArrowRight, Utensils, GlassWater } from 'lucide-react';
 import FaqSection from '@/components/sections/FaqSection';
 
@@ -26,10 +27,28 @@ export default function EventsPage() {
       <Navbar />
       <CinematicHero
         label="Events & Celebrations"
-        title="Unforgettable Gatherings"
-        tagline="From intimate forest weddings to strategic corporate retreats, we provide the perfect backdrop for your significant moments."
+        title="Bring Your People. We'll Take Care of the Rest."
+        tagline="Some occasions deserve more than a restaurant table. Unwind Karjat offers a private and relaxed setting for it all."
         image='/images/exterior2.jpeg'
       />
+
+      {/* What we host */}
+      <section className="py-20 bg-cream">
+        <div className="max-w-[1600px] mx-auto px-6 md:px-10 text-center">
+          <SectionLabel className="justify-center mb-6">What We Host</SectionLabel>
+          <h2 className="font-display text-4xl md:text-5xl italic text-forest mb-10">Your Celebration. Your People. Your Unwind.</h2>
+          <div className="flex flex-wrap justify-center gap-3 md:gap-4 max-w-4xl mx-auto">
+            {['Birthday Celebrations', 'Family Get-Togethers', 'Corporate Offsites', 'Team Retreats', 'Anniversary Celebrations', 'Intimate Parties', 'Day Events', 'Private Group Stays', 'Small Celebrations & Gatherings'].map((item) => (
+              <span key={item} className="font-sans text-[11px] uppercase tracking-[0.14em] text-taupe bg-white border border-gold/20 px-5 py-3 rounded-sm">
+                {item}
+              </span>
+            ))}
+          </div>
+          <p className="font-serif text-lg text-taupe italic max-w-2xl mx-auto mt-10 leading-relaxed">
+            With accommodation, food, open spaces, poolside areas and event facilities all within one property, you can bring the entire experience together in one place.
+          </p>
+        </div>
+      </section>
 
       {/* SEO Schema */}
       <script
@@ -40,7 +59,7 @@ export default function EventsPage() {
               "@context": "https://schema.org",
               "@type": "EventVenue",
               "name": "Unwind Karjat Event Spaces",
-              "description": "Premium outdoor lawns, corporate hub, and poolside venues for weddings, parties, and corporate retreats in Karjat.",
+              "description": "Lawns, poolside areas and open spaces for private celebrations, family gatherings, corporate offsites and group stays in Karjat.",
               "url": "https://unwindkarjat.com/events",
               "address": {
                 "@type": "PostalAddress",
@@ -58,10 +77,10 @@ export default function EventsPage() {
               "mainEntity": [
                 {
                   "@type": "Question",
-                  "name": "What is the wedding capacity at Unwind Karjat?",
+                  "name": "Can we book the property for a private event?",
                   "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "Our outdoor wedding lawns can comfortably host up to 250 guests with bespoke catering and decor."
+                    "text": "Yes. Unwind can host private celebrations, family gatherings, corporate events and group stays, subject to availability."
                   }
                 },
                 {
@@ -69,7 +88,7 @@ export default function EventsPage() {
                   "name": "Do you provide corporate offsite facilities?",
                   "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "Yes, we have a dedicated Corporate Hub with high-speed Wi-Fi, projectors, and team-building activities for up to 60 guests."
+                    "text": "Yes. We regularly accommodate corporate groups and can customise stay, meals and activities according to the group's requirements."
                   }
                 }
               ]
@@ -152,25 +171,77 @@ export default function EventsPage() {
       {/* Catering Overview */}
       <section className="bg-forest py-24 text-ivory">
         <div className="max-w-[1200px] mx-auto px-6 md:px-10 text-center">
-          <SectionLabel light className="justify-center mb-6">Culinary Excellence</SectionLabel>
-          <h2 className="font-display text-4xl md:text-6xl italic mb-12">Bespoke Catering</h2>
+          <SectionLabel light className="justify-center mb-6">Food & Gatherings</SectionLabel>
+          <h2 className="font-display text-4xl md:text-6xl italic mb-12">Good Food. Good Times.</h2>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-12 text-left">
             <div className="border border-ivory/10 p-8 hover:bg-ivory/5 transition-colors group">
               <Utensils className="text-gold mb-6 group-hover:scale-110 transition-transform" size={32} />
-              <h3 className="font-display text-2xl italic mb-4">Multi-Cuisine Feasts</h3>
-              <p className="font-serif text-ivory/70 leading-relaxed text-sm">From authentic Maharashtrian thalis to lavish Continental spreads, our culinary team designs menus tailored precisely to your guests&apos; palates.</p>
+              <h3 className="font-display text-2xl italic mb-4">Generous Spreads</h3>
+              <p className="font-serif text-ivory/70 leading-relaxed text-sm">From Indian favourites and tandoor specialities to comfort food, our menus are designed to be enjoyed together.</p>
             </div>
             <div className="border border-ivory/10 p-8 hover:bg-ivory/5 transition-colors group">
               <GlassWater className="text-gold mb-6 group-hover:scale-110 transition-transform" size={32} />
-              <h3 className="font-display text-2xl italic mb-4">Barbecue & Bonfire</h3>
-              <p className="font-serif text-ivory/70 leading-relaxed text-sm">Our signature live grills under the Karjat sky. Perfect for pre-wedding events, corporate mixers, or intimate birthday celebrations.</p>
+              <h3 className="font-display text-2xl italic mb-4">Live Tandoor & BBQ</h3>
+              <p className="font-serif text-ivory/70 leading-relaxed text-sm">Freshly prepared live tandoor and barbecue setups for events, with special Fish and Mutton dishes on request.</p>
             </div>
             <div className="border border-ivory/10 p-8 hover:bg-ivory/5 transition-colors group">
               <Utensils className="text-gold mb-6 group-hover:scale-110 transition-transform" size={32} />
-              <h3 className="font-display text-2xl italic mb-4">Specialty Menus</h3>
-              <p className="font-serif text-ivory/70 leading-relaxed text-sm">Dedicated Jain menus, vegan setups, and our highly-requested local Fish & Mutton delicacies prepared on special request.</p>
+              <h3 className="font-display text-2xl italic mb-4">Custom Menus</h3>
+              <p className="font-serif text-ivory/70 leading-relaxed text-sm">Tell us what you are planning and we will help you put the food — and the whole day — together.</p>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Corporate */}
+      <section className="py-24 bg-white">
+        <div className="max-w-[1600px] mx-auto px-6 md:px-10 grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
+          <div>
+            <SectionLabel className="mb-6">Corporate</SectionLabel>
+            <h2 className="font-display text-4xl md:text-6xl italic text-forest mb-8">Work Somewhere Different.</h2>
+            <p className="font-serif text-lg text-taupe leading-relaxed mb-8">
+              Step away from the office without stepping too far away from Pune. Unwind Karjat is designed for small corporate groups looking for a change of environment — whether it is a team offsite, leadership meet, annual gathering or simply a day away from the usual routine.
+            </p>
+            <p className="font-sans text-sm uppercase tracking-[0.2em] text-gold font-bold mb-10">Work. Connect. Unwind.</p>
+            <Link
+              href="https://bookone.io/Unwind-Karjat?bookingEngine=true"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block bg-forest text-ivory font-sans text-[11px] uppercase tracking-[0.2em] px-10 py-5 hover:bg-forest/90 transition-all rounded-sm"
+            >
+              Plan a Corporate Stay
+            </Link>
+          </div>
+          <div className="relative aspect-[4/3] overflow-hidden border border-gold/10">
+            <Image src='/images/exterior8.jpeg' alt="Corporate offsite at Unwind Karjat" fill loading="lazy" className="object-cover" />
+          </div>
+        </div>
+      </section>
+
+      {/* Family & Groups */}
+      <section className="py-24 bg-champagne">
+        <div className="max-w-[1600px] mx-auto px-6 md:px-10 grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
+          <div className="order-2 lg:order-1 relative aspect-[4/3] overflow-hidden border border-gold/10">
+            <Image src='/images/room-interior.jpg' alt="Family stay at Unwind Karjat" fill loading="lazy" className="object-cover" />
+          </div>
+          <div className="order-1 lg:order-2">
+            <SectionLabel className="mb-6">Family & Groups</SectionLabel>
+            <h2 className="font-display text-4xl md:text-6xl italic text-forest mb-8">More Time Together. Less Planning.</h2>
+            <p className="font-serif text-lg text-taupe leading-relaxed mb-8">
+              The best family getaways are rarely about doing more — they are about everyone being together. At Unwind, families and groups can stay, eat, swim, play and celebrate without having to move from one venue to another.
+            </p>
+            <p className="font-sans text-sm text-taupe mb-10 max-w-lg leading-relaxed">
+              With our Family Room, multiple room categories, open spaces and group-friendly facilities, the property works particularly well for families and private groups.
+            </p>
+            <Link
+              href="https://bookone.io/Unwind-Karjat?bookingEngine=true"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block bg-forest text-ivory font-sans text-[11px] uppercase tracking-[0.2em] px-10 py-5 hover:bg-forest/90 transition-all rounded-sm"
+            >
+              Plan a Group Stay
+            </Link>
           </div>
         </div>
       </section>
@@ -181,12 +252,16 @@ export default function EventsPage() {
         label="Planning Help"
         faqs={[
           {
-            question: 'What is the wedding capacity at Unwind Karjat?',
-            answer: 'Our outdoor wedding lawns can comfortably host up to 250 guests with bespoke catering and decor.'
+            question: 'Can we book the property for a private event?',
+            answer: 'Yes. Unwind can host private celebrations, family gatherings, corporate events and group stays, subject to availability.'
           },
           {
             question: 'Do you provide corporate offsite facilities?',
-            answer: 'Yes, we have a dedicated Corporate Hub with high-speed Wi-Fi, projectors, and team-building activities for up to 60 guests.'
+            answer: 'Yes. We regularly accommodate corporate groups and can customise stay, meals and activities according to the group\'s requirements.'
+          },
+          {
+            question: 'Is Unwind suitable for families and groups?',
+            answer: 'Yes. The property is designed particularly well for families and private groups, with a large pool, lawn, games, dining and a dedicated Family Room.'
           }
         ]}
       />
@@ -195,9 +270,9 @@ export default function EventsPage() {
       <section className="py-24 bg-cream border-t border-gold/10 text-center" id="enquiry">
         <div className="max-w-3xl mx-auto px-6">
           <SectionLabel className="justify-center mb-6">Let&apos;s Connect</SectionLabel>
-          <h2 className="font-display text-5xl md:text-6xl italic text-forest mb-6">Start Your Journey</h2>
+          <h2 className="font-display text-5xl md:text-6xl italic text-forest mb-6">Tell Us What You Are Planning</h2>
           <p className="font-serif text-taupe text-lg md:text-xl italic max-w-xl mx-auto leading-relaxed mb-12">
-            Whether planning a dream wedding, corporate retreat, or private celebration, let us craft the perfect experience. Secure your dates directly via our booking portal.
+            Whether it is a birthday, family gathering, corporate offsite or private group stay, we will help you put it together. Secure your dates directly via our booking portal.
           </p>
           <a
             href="https://bookone.io/Unwind-Karjat?bookingEngine=true"
@@ -206,7 +281,7 @@ export default function EventsPage() {
             className="inline-flex items-center gap-3 bg-gold text-[#1a1004] font-sans text-xs uppercase tracking-[0.25em] px-12 py-5 hover:bg-gold-light transition-all shadow-xl hover:shadow-gold/20 duration-500 rounded-sm font-bold"
           >
             <Calendar size={16} />
-            Book Now / Request Proposal
+            Plan Your Event
           </a>
         </div>
       </section>
