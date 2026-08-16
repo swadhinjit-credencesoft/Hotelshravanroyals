@@ -52,7 +52,7 @@ export default function AboutPage() {
             "description": "A private boutique retreat in Karjat with comfortable rooms, a large pool, in-house dining, outdoor spaces and experiences for families, groups, celebrations and corporate getaways.",
             "url": "https://unwindkarjat.com",
             "logo": "https://unwindkarjat.com/unwindkarjatlogo.png",
-            "image": "https://unwindkarjat.com/images/exterior.jpeg",
+            "image": "https://unwindkarjat.com/aboutimg.png",
             "email": "stay@unwindkarjat.com",
             "telephone": "+91919619198839",
             "address": {

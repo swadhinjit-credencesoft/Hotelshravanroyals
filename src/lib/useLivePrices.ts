@@ -50,21 +50,31 @@ export function useLivePrices() {
 
         const map: LivePriceMap = {}
 
-        rooms.forEach((room) => {
-          const apiName = (r: { name: string }) => r.name.toLowerCase().trim()
-          const localName = room.name.toLowerCase().trim()
+        // Explicit alias map: local room slug -> API room name substrings.
+        // HotelMate still uses the old room names (Red Brick Cottage, Lawn
+        // Facing Room, Forest Facing Room), so fuzzy matching is unreliable.
+        const API_ROOM_ALIASES: Record<string, string[]> = {
+          'lawn-and-pool-facing-room': ['lawn facing', 'lawn & pool facing', 'pool facing'],
+          'farm-facing-room': ['forest facing', 'farm facing'],
+          'red-brick-suite': ['red brick'],
+          'family-room': [],
+        }
 
-          // Pass 1: exact bidirectional substring match
+        rooms.forEach((room) => {
+          const aliases = [...(API_ROOM_ALIASES[room.slug] ?? []), room.name.toLowerCase()]
+
+          // Pass 1: an alias appears inside the API room name
           let apiRoom = data.roomList?.find((r) => {
-            const a = apiName(r)
-            return a.includes(localName) || localName.includes(a)
+            const a = r.name.toLowerCase()
+            return aliases.some((alias) => a.includes(alias))
           })
 
-          // Pass 2: keyword fallback only when no exact match found
+          // Pass 2: the API room name appears inside an alias
+          // (covers longer API names like "Forest Facing Room (Premium)")
           if (!apiRoom) {
             apiRoom = data.roomList?.find((r) => {
-              const a = apiName(r)
-              return localName.split(' ').some((w) => w.length > 4 && a.includes(w))
+              const a = r.name.toLowerCase()
+              return aliases.some((alias) => alias.includes(a))
             })
           }
 

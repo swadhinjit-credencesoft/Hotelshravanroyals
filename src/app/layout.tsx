@@ -75,10 +75,10 @@ export const metadata: Metadata = {
     siteName: 'Unwind Karjat',
     images: [
       {
-        url: 'https://unwindkarjat.com/images/resort-exterior.png',
+        url: 'https://unwindkarjat.com/og-image.png',
         width: 1200,
         height: 630,
-        alt: 'Unwind Karjat Nature Resort View'
+        alt: 'Unwind Karjat — Stay • Dine • Unwind'
       }
     ],
     type: 'website',
@@ -89,7 +89,7 @@ export const metadata: Metadata = {
     title: 'Unwind Karjat | Boutique Resort & Private Getaway Near Pune',
     description:
       'Unwind Karjat is a private boutique retreat near Pune with comfortable rooms, a large pool, in-house dining, outdoor spaces and experiences for families, groups, celebrations and corporate getaways.',
-    images: ['https://unwindkarjat.com/images/resort-exterior.png'],
+    images: ['https://unwindkarjat.com/og-image.png'],
   },
 }
 

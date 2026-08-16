@@ -175,7 +175,7 @@ export default function HeroSection() {
           {/* Headline — word-by-word */}
             <h1
             className="font-display font-normal italic text-ivory mb-5 leading-[1.08] w-full"
-            style={{ fontSize: 'clamp(44px, 7vw, 80px)' }}
+            style={{ fontSize: 'clamp(40px, 6vw, 64px)' }}
           >
             <AnimatePresence mode="wait">
               <motion.span key={slide.id} className="inline">

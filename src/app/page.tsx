@@ -58,11 +58,17 @@ export default function Home() {
             "description": "A private boutique retreat in Karjat with comfortable rooms, a large pool, in-house dining, outdoor spaces and experiences for families, groups, celebrations and corporate getaways.",
             "url": "https://unwindkarjat.com",
             "logo": "https://unwindkarjat.com/unwindkarjatlogo.png",
-            "image": "https://unwindkarjat.com/images/resort-exterior.png",
+            "image": [
+              "https://unwindkarjat.com/og-image.png",
+              "https://unwindkarjat.com/images/resort-exterior.png"
+            ],
             "email": "stay@unwindkarjat.com",
+            "telephone": "+91919619198839",
             "priceRange": "₹₹",
+            "currenciesAccepted": "INR",
             "checkinTime": "13:00",
             "checkoutTime": "11:00",
+            "numberOfRooms": 10,
             "address": {
               "@type": "PostalAddress",
               "streetAddress": "Karjat - Chowk Rd, behind Baba Dairy, Wavarle",
@@ -76,7 +82,30 @@ export default function Home() {
               "latitude": 18.922485,
               "longitude": 73.315053
             },
-            "telephone": "+91919619198839",
+            "hasMap": "https://www.google.com/maps/search/?api=1&query=Unwind+Karjat+Wavarle+Karjat+Maharashtra",
+            "amenityFeature": [
+              { "@type": "LocationFeatureSpecification", "name": "Swimming Pool", "value": true },
+              { "@type": "LocationFeatureSpecification", "name": "In-house Restaurant", "value": true },
+              { "@type": "LocationFeatureSpecification", "name": "Free Parking", "value": true },
+              { "@type": "LocationFeatureSpecification", "name": "Free WiFi", "value": true },
+              { "@type": "LocationFeatureSpecification", "name": "Room Service", "value": true }
+            ],
+            "potentialAction": {
+              "@type": "ReserveAction",
+              "target": {
+                "@type": "EntryPoint",
+                "urlTemplate": "https://bookone.io/Unwind-Karjat?bookingEngine=true",
+                "inLanguage": "en-IN",
+                "actionPlatform": [
+                  "http://schema.org/DesktopWebPlatform",
+                  "http://schema.org/MobileWebPlatform"
+                ]
+              },
+              "result": {
+                "@type": "LodgingReservation",
+                "name": "Unwind Karjat Room Booking"
+              }
+            },
             "sameAs": [
               "https://www.instagram.com/unwind_karjat"
             ]

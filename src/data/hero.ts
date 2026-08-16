@@ -51,7 +51,7 @@ export const heroSlides: HeroSlide[] = [
   {
     id: 's4',
     tagline: 'Events & Celebrations',
-    headline: 'Bring Your People. We Take Care of the Rest.',
+    headline: "Bring Your People. We'll Handle the Rest.",
     subheadline: 'Birthdays, family get-togethers, corporate offsites and private celebrations — all in one relaxed place.',
     image: '/images/unwindvideo.mp4',
     imageAlt: 'Celebrations and gatherings on the Unwind lawns',

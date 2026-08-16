@@ -17,7 +17,7 @@ export default function ExperiencesGrid() {
         <div className="mb-16">
           <SectionLabel light className="mb-4">Experiences</SectionLabel>
           <h2 className="font-display text-4xl md:text-[52px] italic text-ivory mb-6 leading-tight">
-            There Is Always Something to Do. Or Nothing at All.
+            Something to Do. Or Nothing at All.
           </h2>
           <p className="font-serif text-xl font-light text-ivory/60 max-w-xl leading-relaxed">
             At Unwind, your day can be as active or as slow as you want it to be — a dip in the pool, a game on the lawn, or a quiet corner where you do absolutely nothing.
