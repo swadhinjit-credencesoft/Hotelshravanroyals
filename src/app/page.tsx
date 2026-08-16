@@ -247,7 +247,7 @@ export default function Home() {
             </div>
           </div>
           <div className="relative aspect-[4/3] overflow-hidden border border-gold/10">
-            <Image src='/images/exterior3.jpeg' alt="The grounds of Unwind Karjat in Karjat" fill loading="lazy" className="object-cover" />
+            <Image src='https://bookonelocal.in/cdn/2026-05-18-120147308-p1.jpg' alt="Unwind Karjat location on Karjat-Chowk Road" fill loading="lazy" className="object-cover" />
           </div>
         </div>
       </section>

@@ -1,7 +1,7 @@
 'use client'
 
 import { useState, useEffect } from 'react'
-import { fetchAvailability, todayString, addDays } from '@/lib/hotelmate'
+import { fetchAvailability, todayString, addDays, matchLocalRoomToApi, roomImagesFromApi } from '@/lib/hotelmate'
 import { rooms } from '@/data/rooms'
 
 export interface RoomLivePrice {
@@ -9,6 +9,7 @@ export interface RoomLivePrice {
   roomId: string | null
   isLive: boolean
   available: boolean
+  images: string[]
 }
 
 export type LivePriceMap = Record<string, RoomLivePrice>
@@ -50,33 +51,8 @@ export function useLivePrices() {
 
         const map: LivePriceMap = {}
 
-        // Explicit alias map: local room slug -> API room name substrings.
-        // HotelMate still uses the old room names (Red Brick Cottage, Lawn
-        // Facing Room, Forest Facing Room), so fuzzy matching is unreliable.
-        const API_ROOM_ALIASES: Record<string, string[]> = {
-          'lawn-and-pool-facing-room': ['lawn facing', 'lawn & pool facing', 'pool facing'],
-          'farm-facing-room': ['forest facing', 'farm facing'],
-          'red-brick-suite': ['red brick'],
-          'family-room': [],
-        }
-
         rooms.forEach((room) => {
-          const aliases = [...(API_ROOM_ALIASES[room.slug] ?? []), room.name.toLowerCase()]
-
-          // Pass 1: an alias appears inside the API room name
-          let apiRoom = data.roomList?.find((r) => {
-            const a = r.name.toLowerCase()
-            return aliases.some((alias) => a.includes(alias))
-          })
-
-          // Pass 2: the API room name appears inside an alias
-          // (covers longer API names like "Forest Facing Room (Premium)")
-          if (!apiRoom) {
-            apiRoom = data.roomList?.find((r) => {
-              const a = r.name.toLowerCase()
-              return aliases.some((alias) => alias.includes(a))
-            })
-          }
+          const apiRoom = matchLocalRoomToApi(data.roomList, room.slug, room.name)
 
           if (apiRoom) {
             // Prefer the first rate plan amount, then roomOnlyPrice, then static fallback
@@ -88,14 +64,16 @@ export function useLivePrices() {
               roomId: String(apiRoom.id),
               isLive: true,
               available: noOfAvailable > 0,
+              images: roomImagesFromApi(apiRoom),
             }
           } else {
-            // Room not found in API response — use static price
+            // Room not found in API response — use static price + local image
             map[room.slug] = {
               price: room.price,
               roomId: null,
               isLive: false,
               available: true,
+              images: [],
             }
           }
         })
@@ -111,6 +89,7 @@ export function useLivePrices() {
             roomId: null,
             isLive: false,
             available: true,
+            images: [],
           }
         })
         setPrices(map)

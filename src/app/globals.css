@@ -43,6 +43,19 @@ body {
   position: relative;
 }
 
+/* Hide native cursor on desktop — custom ball cursor replaces it */
+@media (min-width: 1024px) {
+  html,
+  body,
+  a,
+  button,
+  input,
+  select,
+  textarea {
+    cursor: none !important;
+  }
+}
+
 /* Custom scrollbar */
 ::-webkit-scrollbar {
   width: 6px;

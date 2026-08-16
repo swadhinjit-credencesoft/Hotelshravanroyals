@@ -226,3 +226,63 @@ export function addDays(date: string, days: number): string {
   localDate.setDate(localDate.getDate() + days)
   return formatDate(localDate)
 }
+
+// ---------------------------------------------------------------------------
+// Room matching + image helpers (shared between useLivePrices and room pages)
+// ---------------------------------------------------------------------------
+
+/**
+ * HotelMate still lists the property under its old room names, so fuzzy
+ * matching is unreliable. Each local room slug maps to the API room name
+ * substrings that identify it unambiguously.
+ */
+export const API_ROOM_ALIASES: Record<string, string[]> = {
+  'lawn-and-pool-facing-room': ['lawn facing', 'lawn & pool facing', 'pool facing'],
+  'farm-facing-room': ['forest facing', 'farm facing'],
+  'red-brick-suite': ['red brick'],
+  'family-room': [],
+}
+
+export function matchLocalRoomToApi(
+  roomList: HotelRoom[] | null | undefined,
+  slug: string,
+  localName: string
+): HotelRoom | null {
+  if (!roomList || roomList.length === 0) return null
+  const aliases = [...(API_ROOM_ALIASES[slug] ?? []), localName.toLowerCase().trim()]
+
+  // Pass 1: an alias appears inside the API room name
+  let hit = roomList.find((r) => {
+    const a = r.name.toLowerCase()
+    return aliases.some((alias) => a.includes(alias))
+  })
+
+  // Pass 2: the API room name appears inside an alias
+  // (covers longer API names like "Forest Facing Room (Premium)")
+  if (!hit) {
+    hit = roomList.find((r) => {
+      const a = r.name.toLowerCase()
+      return aliases.some((alias) => alias.includes(a))
+    })
+  }
+
+  return hit ?? null
+}
+
+/** Normalise API image URLs (raw ones contain spaces / non-ASCII chars). */
+export function sanitizeApiImageUrl(url: string): string {
+  const clean = url.trim()
+  if (!clean) return ''
+  try {
+    return encodeURI(clean)
+  } catch {
+    return clean
+  }
+}
+
+export function roomImagesFromApi(room: HotelRoom | null): string[] {
+  if (!room?.imageList?.length) return []
+  return room.imageList
+    .map((img) => sanitizeApiImageUrl(img.url))
+    .filter((u): u is string => Boolean(u))
+}

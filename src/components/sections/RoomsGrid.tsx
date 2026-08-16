@@ -106,6 +106,7 @@ export default function RoomsGrid() {
               const displayPrice = liveData?.price ?? room.price;
               const isLive = liveData?.isLive ?? false;
               const isAvailable = liveData?.available ?? true;
+              const roomImage = liveData?.images?.[0] ?? room.image;
 
               return (
                 <motion.div
@@ -119,7 +120,7 @@ export default function RoomsGrid() {
                 >
                   <div className="relative aspect-[4/3] overflow-hidden mb-6 rounded-sm">
                     <Image
-                      src={room.image}
+                      src={roomImage}
                       alt={room.imageAlt}
                       fill
                       loading="lazy"

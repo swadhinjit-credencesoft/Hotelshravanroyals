@@ -6,7 +6,7 @@ import Link from 'next/link'
 import { motion, AnimatePresence } from 'framer-motion'
 import Navbar from '@/components/layout/Navbar'
 import Footer from '@/components/layout/Footer'
-import { todayString, addDays, buildBookingUrl, fetchAvailability } from '@/lib/hotelmate'
+import { todayString, addDays, buildBookingUrl, fetchAvailability, matchLocalRoomToApi } from '@/lib/hotelmate'
 import { useLivePrices } from '@/lib/useLivePrices'
 import { 
   Wifi, 
@@ -49,6 +49,7 @@ interface RoomDetailClientProps {
 
 export default function RoomDetailClient({ room, otherRooms }: RoomDetailClientProps) {
   const [isLightboxOpen, setIsLightboxOpen] = useState(false)
+  const [activeImage, setActiveImage] = useState(0)
 
   // Fetch live price from API for the header "Starting from" display
   const { prices: livePrices, loading: headerPriceLoading } = useLivePrices()
@@ -56,13 +57,21 @@ export default function RoomDetailClient({ room, otherRooms }: RoomDetailClientP
   const headerPrice = headerLiveData?.price ?? room.price
   const isHeaderLive = headerLiveData?.isLive ?? false
 
+  // Gallery: prefer real photos from the HotelMate API, fall back to local
+  const galleryImages = headerLiveData?.images?.length
+    ? headerLiveData.images
+    : [room.image]
+  const heroImage = galleryImages[activeImage] ?? galleryImages[0] ?? room.image
+
   // JSON-LD Schema for SEO
   const jsonLd = {
     '@context': 'https://schema.org',
     '@type': 'HotelRoom',
     'name': room.name,
     'description': room.description,
-    'image': `https://unwindkarjat.com${room.image}`,
+    'image': galleryImages.map((img: string) =>
+      img.startsWith('http') ? img : `https://unwindkarjat.com${img}`
+    ),
     'occupancy': {
       '@type': 'QuantitativeValue',
       'value': room.guests
@@ -120,7 +129,7 @@ export default function RoomDetailClient({ room, otherRooms }: RoomDetailClientP
               className="relative w-full h-full max-w-6xl max-h-[80vh]"
             >
               <Image
-                src={room.image}
+                src={heroImage}
                 alt={room.imageAlt}
                 fill
                 loading="lazy"
@@ -148,11 +157,11 @@ export default function RoomDetailClient({ room, otherRooms }: RoomDetailClientP
         <div className="lg:col-span-8">
           {/* Hero Image / Gallery Trigger */}
           <div 
-            className="relative aspect-[16/9] w-full overflow-hidden rounded-sm mb-12 group cursor-zoom-in shadow-2xl"
+            className="relative aspect-[16/9] w-full overflow-hidden rounded-sm mb-4 group cursor-zoom-in shadow-2xl"
             onClick={() => setIsLightboxOpen(true)}
           >
             <Image
-              src={room.image}
+              src={heroImage}
               alt={room.imageAlt}
               fill
               className="object-cover transition-transform duration-1000 group-hover:scale-105"
@@ -164,6 +173,29 @@ export default function RoomDetailClient({ room, otherRooms }: RoomDetailClientP
               Click to Enlarge
             </div>
           </div>
+
+          {/* Gallery Thumbnails */}
+          {galleryImages.length > 1 && (
+            <div className="flex gap-2 mb-10 overflow-x-auto pb-2">
+              {galleryImages.map((img: string, i: number) => (
+                <button
+                  key={i}
+                  onClick={() => setActiveImage(i)}
+                  className={`relative flex-shrink-0 w-20 h-14 rounded-sm overflow-hidden border-2 transition-colors ${
+                    i === activeImage ? 'border-gold' : 'border-transparent hover:border-gold/40'
+                  }`}
+                >
+                  <Image
+                    src={img}
+                    alt={`${room.name} photo ${i + 1}`}
+                    fill
+                    className="object-cover"
+                    sizes="80px"
+                  />
+                </button>
+              ))}
+            </div>
+          )}
 
           <div className="flex flex-wrap items-center justify-between gap-6 mb-8 border-b border-gold/10 pb-8">
             <motion.div
@@ -289,7 +321,7 @@ export default function RoomDetailClient({ room, otherRooms }: RoomDetailClientP
             {otherRooms.map(r => (
               <Link key={r.slug} href={`/rooms/${r.slug}`} className="group relative aspect-[16/7] overflow-hidden rounded-sm">
                 <Image
-                  src={r.image}
+                  src={livePrices[r.slug]?.images?.[0] ?? r.image}
                   alt={r.imageAlt}
                   fill
                   loading="lazy"
@@ -345,16 +377,7 @@ function BookingSidebar({ room }: { room: Room }) {
         
         if (!active) return
 
-        const matched = data.roomList?.find(r => {
-          const apiName = r.name.toLowerCase().trim()
-          const localName = room.name.toLowerCase().trim()
-          return (
-            apiName.includes(localName) ||
-            localName.includes(apiName) ||
-            // keyword match: e.g. "lawn", "forest", "cottage"
-            localName.split(' ').some(w => w.length > 4 && apiName.includes(w))
-          )
-        })
+        const matched = matchLocalRoomToApi(data.roomList, room.slug, room.name)
 
         if (matched) {
           setLiveRoomId(String(matched.id))

@@ -114,8 +114,8 @@ export default function AboutPage() {
               className="relative aspect-[4/5] overflow-hidden border border-gold/10"
             >
               <Image
-                src='/images/room-interior.jpg'
-                alt="The grounds at Unwind Karjat"
+                src='https://bookonelocal.in/cdn/2026-05-18-120154785-p10.jpg'
+                alt="Kapil & Savita at Unwind Karjat"
                 fill
                 loading="lazy"
                 className="object-cover"

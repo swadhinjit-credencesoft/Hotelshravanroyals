@@ -8,7 +8,7 @@ import { MapPin } from 'lucide-react';
 
 export default function NewsletterSection() {
   return (
-    <section className="relative py-48 overflow-hidden text-center" id="contact">
+    <section className="relative py-24 md:py-32 overflow-hidden text-center" id="contact">
       {/* Cinematic Background */}
       <div className="absolute inset-0 z-0">
         <Image
@@ -29,29 +29,29 @@ export default function NewsletterSection() {
           viewport={{ once: true }}
           transition={{ duration: 1 }}
         >
-          <span className="font-sans text-[11px] uppercase tracking-[0.4em] text-gold mb-8 block">
+          <span className="font-sans text-[11px] uppercase tracking-[0.4em] text-gold mb-6 block">
             Begin Your Journey
           </span>
-          <h2 className="font-display text-5xl md:text-[84px] italic text-ivory mb-8 leading-none">
+          <h2 className="font-display text-5xl md:text-[72px] italic text-ivory mb-6 leading-none">
             The Inn Awaits
           </h2>
-          <p className="font-serif text-xl md:text-2xl font-light text-ivory/60 mb-16 max-w-2xl mx-auto leading-relaxed">
+          <p className="font-serif text-lg md:text-xl font-light text-ivory/60 mb-12 max-w-2xl mx-auto leading-relaxed">
             Exclusive offers, seasonal menus, and stories from the inn — delivered to your inbox with the same discretion we afford our guests.
           </p>
 
-          <div className="mt-24 pt-16 border-t border-ivory/10">
-            <p className="font-sans text-[11px] uppercase tracking-widest text-gold mb-4">
+          <div className="pt-10 border-t border-ivory/10">
+            <p className="font-sans text-[11px] uppercase tracking-widest text-gold mb-3">
               Direct Inquiries
             </p>
             <a
               href={`tel:${siteConfig.phone}`}
-              className="font-serif text-3xl md:text-5xl italic text-ivory hover:text-gold transition-colors duration-500"
+              className="font-serif text-xl md:text-3xl italic text-ivory hover:text-gold transition-colors duration-500 block leading-tight"
             >
               {siteConfig.phone}
             </a>
             <Link
               href="/contact"
-              className="inline-flex items-center gap-2 mt-6 font-sans text-[11px] uppercase tracking-[0.3em] text-gold hover:text-gold-light transition-colors"
+              className="inline-flex items-center gap-2 mt-5 font-sans text-[11px] uppercase tracking-[0.3em] text-gold hover:text-gold-light transition-colors"
             >
               <MapPin size={14} />
               Contact & Directions

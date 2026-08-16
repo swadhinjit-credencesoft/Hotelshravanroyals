@@ -26,6 +26,7 @@ function RoomCard({ room, index, liveData, priceLoading }: RoomCardProps) {
 
   const displayPrice = liveData?.price ?? room.price
   const isLive = liveData?.isLive ?? false
+  const roomImage = liveData?.images?.[0] ?? room.image
 
   const handleBookNow = (e: React.MouseEvent) => {
     e.stopPropagation()
@@ -70,7 +71,7 @@ function RoomCard({ room, index, liveData, priceLoading }: RoomCardProps) {
         transition={{ duration: 0.7, ease: [0.16, 1, 0.3, 1] }}
       >
         <Image
-          src={room.image}
+          src={roomImage}
           alt={room.imageAlt}
           fill
           loading="lazy"
