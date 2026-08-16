@@ -68,19 +68,19 @@ export default function HistorySection() {
             
             <div className="space-y-6">
               <p className="font-serif text-xl text-taupe leading-relaxed italic">
-                &ldquo;We didn&apos;t just build a resort; we framed the Sahyadris.&rdquo;
+               “We wanted to create a place where you could slow down, breathe deeper and simply be.”
               </p>
               <p className="font-sans text-base text-taupe/80 leading-loose">
-                Conceived in 2019 as a sanctuary for those seeking a deeper connection with nature, Unwind Karjat was born from a passion for the rugged beauty of the Sahyadri mountain range. Our retreat is designed to be a quiet observer of the landscape, offering a space where the unhurried grace of the forest meets modern luxury.
+              Unwind Karjat began in August 2024 with a simple idea — to create a peaceful retreat where nature, privacy and warm hospitality come together.
               </p>
               <p className="font-sans text-base text-taupe/80 leading-loose">
-                Every red brick in our cottages and every trail in our forest has been thoughtfully curated to provide an immersive experience that celebrates the soul of Karjat.
+                Surrounded by the beauty of Karjat and the Sahyadri foothills, it is a place to step away from everyday life, reconnect and truly unwind.
               </p>
             </div>
 
             <div className="mt-12 grid grid-cols-2 gap-8 border-t border-gold/10 pt-12">
                <div>
-                  <span className="font-serif text-3xl text-gold">2019</span>
+                  <span className="font-serif text-3xl text-gold">2024</span>
                   <p className="font-sans text-[10px] uppercase tracking-widest text-taupe mt-2">Conceived</p>
                </div>
                <div>

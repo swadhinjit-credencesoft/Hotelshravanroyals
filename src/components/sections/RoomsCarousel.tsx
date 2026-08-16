@@ -226,7 +226,7 @@ export default function RoomsCarousel() {
             Your Private World Awaits
           </h2>
           <p className="font-serif text-xl font-light text-taupe leading-relaxed">
-            Three unique sanctuaries, each one curated around solitude, beauty, and quiet intention.
+            Distinctive spaces designed around privacy, comfort and the quiet beauty of nature.
           </p>
         </div>
         <Link

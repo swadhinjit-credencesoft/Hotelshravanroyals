@@ -5,10 +5,10 @@ import SectionLabel from '@/components/ui/SectionLabel';
 import GoldDivider from '@/components/ui/GoldDivider';
 
 const serviceDetails = [
-  { title: 'The Pillow Menu', description: 'Choose from five organic options, from Sahyadri buckwheat to hypoallergenic goose down.' },
-  { title: 'Forest Guide', description: 'Discover the native flora and birdlife with our resident expert on a private morning trail.' },
-  { title: 'Fireside Lounge', description: 'Gather around the communal bonfire for acoustic music and locally-inspired appetizers.' },
-  { title: 'Custom Dining', description: 'Specialty Fish and Mutton preparations available on request, curated by our head chef.' },
+  { title: 'Privacy & Space', description: 'Room to slow down, relax and enjoy your own time, without the feeling of a crowded resort.' },
+  { title: 'Warm Hospitality', description: 'Personal, genuine service that makes you feel welcome from the moment you arrive.' },
+  { title: 'Good Food', description: 'Freshly prepared meals, familiar flavours and a menu that brings people together around the table.' },
+  { title: 'Comfort & Care', description: 'Clean spaces, thoughtful details and the essentials taken care of — so you can focus on simply unwinding.' },
 ];
 
 export default function ArtOfStaySection() {
@@ -23,7 +23,7 @@ export default function ArtOfStaySection() {
               </h2>
               <GoldDivider className="mb-10" />
               <p className="font-serif text-xl text-taupe italic mb-12 leading-relaxed">
-                True luxury is found in the details that you never have to ask for. It is the silent adjustment of the room temperature, the unprompted tea at twilight, and the perfect pillow before you even know you need it.
+              At Unwind Karjat, we believe a good stay is about more than beautiful surroundings. It is about feeling comfortable, cared for and completely at ease.
               </p>
            </div>
            

@@ -12,8 +12,8 @@ export default function BrandStatement() {
   const isInView = useInView(ref, { once: true, margin: '-80px' })
 
   const quoteLines = [
-    'Unwind Karjat is more than a stay — it is a world of refined luxury',
-    'peaceful escapes, and unforgettable experiences where comfort, beauty',
+    'Unwind Karjat is more than a stay — it is a world of quiet luxury',
+    'peaceful escapes  and unforgettable experiences where comfort, beauty',
     'and hospitality exist in perfect harmony.',
   ]
 
@@ -112,8 +112,8 @@ export default function BrandStatement() {
           transition={{ duration: 0.8, delay: 2.2 }}
         >
          At Unwind Karjat, luxury is not just experienced — it is remembered. 
-Surrounded by breathtaking landscapes, timeless architecture, and curated hospitality, 
-every stay is designed to awaken serenity, indulgence, and unforgettable moments.
+It is found in the privacy of your own space, the quiet of nature,
+the comfort of thoughtful hospitality and the freedom to truly unwind - creating moments that stay with you long after you leave.
         </motion.p>
       </div>
     </section>

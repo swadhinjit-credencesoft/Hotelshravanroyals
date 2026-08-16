@@ -64,6 +64,6 @@ export const heroSlides: HeroSlide[] = [
 
 export const heroStats = [
   { value: '1.5', label: 'Hours from Mumbai' },
-  { value: '3', label: 'Room Categories' },
-  { value: '5+', label: 'Years Open' },
+  { value: '4', label: 'Room Categories' },
+  { value: '2+', label: 'Years Open' },
 ]
