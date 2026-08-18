@@ -38,7 +38,7 @@ export default function AboutPage() {
         label="About Us"
         title="Built With Heart. Run Like Home."
         tagline="Unwind Karjat is run by the people who built it. A private, comfortable, good-food-and-good-times kind of getaway."
-        image='/images/exterior.jpeg'
+        image='/blog1.png'
       />
 
       {/* Organization Schema for SEO (E-E-A-T) */}
@@ -95,10 +95,13 @@ export default function AboutPage() {
               </p>
               <div className="space-y-6 font-sans text-base text-taupe/80 leading-loose">
                 <p>
-                  We are Kapil &amp; Savita, and Unwind Karjat is our home and our work. The property is run by the people who built it — not by a management that is a call away, but by us, right here.
+                  We are Kapil &amp; Savita, a husband-and-wife team who have always believed that hospitality is about much more than rooms and service. It is about how a place makes people feel.
                 </p>
                 <p>
-                  From the rooms to the food to the little details across the property, everything is looked after with care and pride. When you stay with us, you are our guest — and we want you to feel it.
+                  When we started Unwind, we wanted to create somewhere that felt different from a typical hotel. A place where people could arrive without a schedule, sit down for a good meal, spend an afternoon by the pool, laugh over a game, stay up a little late and simply enjoy being together.
+                </p>
+                <p>
+                  In other words, a place where people could truly unwind.
                 </p>
                 <p>
                   Explore our <Link href="/rooms" className="text-gold hover:underline">rooms</Link>, our <Link href="/experiences" className="text-gold hover:underline">experiences</Link> and our <Link href="/dining" className="text-gold hover:underline">dining</Link>, and you will see what we mean.
@@ -114,7 +117,7 @@ export default function AboutPage() {
               className="relative aspect-[4/5] overflow-hidden border border-gold/10"
             >
               <Image
-                src='https://bookonelocal.in/cdn/2026-05-18-120154785-p10.jpg'
+                src='https://bookonelocal.in/cdn/2026-05-18-120147308-p1.jpg'
                 alt="Kapil & Savita at Unwind Karjat"
                 fill
                 loading="lazy"
@@ -125,13 +128,81 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* What Staying With Us Means */}
+      {/* More Than a Business */}
       <section className="py-24 bg-ivory">
+        <div className="max-w-[1200px] mx-auto px-6 md:px-10">
+          <div className="max-w-3xl mx-auto text-center">
+            <SectionLabel className="justify-center mb-6">More Than a Business</SectionLabel>
+            <h2 className="font-display text-4xl md:text-5xl italic text-forest mb-12">It Became Personal</h2>
+            <GoldDivider className="justify-center mb-12" />
+            <div className="space-y-8 font-serif text-lg text-taupe leading-relaxed italic">
+              <p>
+                Over time, Unwind has become a very personal part of our lives. We have watched families return year after year. We have celebrated birthdays, anniversaries, reunions and corporate milestones with our guests. We have seen first-time visitors arrive as strangers and leave feeling like they have discovered a place they want to come back to.
+              </p>
+              <p>
+                And somewhere along the way, the people who make Unwind what it is became just as important to us.
+              </p>
+              <p>
+                Many members of our team have been with us since Day One. They have seen the property evolve, been part of its challenges and its celebrations, and grown alongside us. That shared journey has created something we are particularly proud of — a genuine bond between the people who run Unwind and the people who look after our guests every day.
+              </p>
+              <p className="text-forest font-bold not-italic">
+                For us, that matters. Because genuine hospitality cannot simply be taught through a manual. It comes from people who care about the place they work in and the guests they welcome.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Our Way of Hospitality */}
+      <section className="py-24 bg-cream">
+        <div className="max-w-[1600px] mx-auto px-6 md:px-10">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
+            <div>
+              <SectionLabel className="mb-6">Our Way of Hospitality</SectionLabel>
+              <h2 className="font-display text-4xl md:text-6xl italic text-forest mb-8 leading-tight">
+                Comfort Over Formality
+              </h2>
+              <GoldDivider className="mb-10" />
+              <div className="space-y-6 font-sans text-base text-taupe/80 leading-loose">
+                <p>
+                  We don&apos;t want Unwind to feel formal. We want you to feel comfortable. We want our food to feel generous, our service to feel genuine and our team to feel approachable.
+                </p>
+                <p>
+                  We want families to feel at ease, children to have fun, friends to spend time together and couples to find a little space of their own.
+                </p>
+                <p>
+                  There will always be things we can improve — and we are constantly working on them. But the one thing we will never lose sight of is why we started.
+                </p>
+                <p className="text-forest font-bold not-italic">
+                  To create a place where people can stay well, eat well and spend time well.
+                </p>
+              </div>
+            </div>
+            <div className="grid grid-cols-2 gap-4">
+              <div className="relative aspect-square overflow-hidden border border-gold/10">
+                <Image src='/inhouse.png' alt="Dining at Unwind Karjat" fill loading="lazy" className="object-cover" />
+              </div>
+              <div className="relative aspect-square overflow-hidden border border-gold/10">
+                <Image src='/Pool.png' alt="Pool at Unwind Karjat" fill loading="lazy" className="object-cover" />
+              </div>
+              <div className="relative aspect-square overflow-hidden border border-gold/10">
+                <Image src='/bbq.jpeg' alt="BBQ at Unwind Karjat" fill loading="lazy" className="object-cover" />
+              </div>
+              <div className="relative aspect-square overflow-hidden border border-gold/10">
+                <Image src='/outdoorspaces.jpeg' alt="Outdoor spaces at Unwind Karjat" fill loading="lazy" className="object-cover" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* What Staying With Us Means */}
+      <section className="py-24 bg-forest text-ivory">
         <div className="max-w-[1600px] mx-auto px-6 md:px-10 text-center">
           <div className="max-w-3xl mx-auto">
-            <SectionLabel className="justify-center mb-8">What Staying With Us Means</SectionLabel>
-            <h2 className="font-display text-4xl md:text-6xl italic text-forest mb-12">Simple. Honest. Comfortable.</h2>
-            <p className="font-serif text-xl italic text-taupe mb-16 leading-relaxed">
+            <SectionLabel light className="justify-center mb-8">What Staying With Us Means</SectionLabel>
+            <h2 className="font-display text-4xl md:text-6xl italic mb-12">Simple. Honest. Comfortable.</h2>
+            <p className="font-serif text-xl italic text-ivory/70 mb-16 leading-relaxed">
               Unwind was built on a simple idea: a place to slow down, spend time with your people and simply enjoy the moment — with good food and good times as part of the deal.
             </p>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 text-left">
@@ -142,17 +213,41 @@ export default function AboutPage() {
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
                   transition={{ duration: 0.8, delay: i * 0.1 }}
-                  className="border border-gold/10 bg-cream p-8 hover:bg-forest group transition-colors duration-500"
+                  className="border border-ivory/20 bg-forest/50 p-8 hover:bg-ivory/10 transition-colors duration-500"
                 >
-                  <h3 className="font-serif text-2xl italic text-forest mb-4 group-hover:text-ivory transition-colors duration-500">
+                  <h3 className="font-serif text-2xl italic text-gold mb-4">
                     {item.title}
                   </h3>
-                  <div className="h-px bg-gold/30 w-12 mb-4 group-hover:w-full transition-all duration-700" />
-                  <p className="font-sans text-sm text-taupe leading-relaxed group-hover:text-ivory/70 transition-colors duration-500">
+                  <div className="h-px bg-gold/30 w-12 mb-4" />
+                  <p className="font-sans text-sm text-ivory/70 leading-relaxed">
                     {item.description}
                   </p>
                 </motion.div>
               ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* From Our Family to Yours */}
+      <section className="py-24 bg-champagne">
+        <div className="max-w-[1200px] mx-auto px-6 md:px-10 text-center">
+          <SectionLabel className="justify-center mb-6">From Our Family to Yours</SectionLabel>
+          <h2 className="font-display text-4xl md:text-5xl italic text-forest mb-12">Why Guests Come Back</h2>
+          <GoldDivider className="justify-center mb-12" />
+          <div className="space-y-8 font-serif text-xl text-taupe leading-relaxed italic max-w-3xl mx-auto">
+            <p>
+              Perhaps that is why many of our guests come back. Not just for the rooms or the pool or the food.
+            </p>
+            <p className="text-forest font-bold not-italic">
+              They come back for the feeling.
+            </p>
+            <p>
+              And that, more than anything else, is what we hope Unwind continues to be — a place that feels familiar even when it is your first visit.
+            </p>
+            <div className="pt-8 border-t border-gold/20">
+              <p className="font-display text-3xl italic text-forest">Come as guests.</p>
+              <p className="font-display text-3xl italic text-gold mt-2">Leave feeling like you have been somewhere.</p>
             </div>
           </div>
         </div>
@@ -204,11 +299,11 @@ export default function AboutPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-32 bg-champagne text-center border-t border-gold/10">
+      <section className="py-32 bg-forest text-center text-ivory border-t border-gold/10">
          <div className="max-w-3xl mx-auto px-6">
-            <SectionLabel className="justify-center mb-6">Plan Your Visit</SectionLabel>
-            <h2 className="font-display text-4xl md:text-6xl italic text-forest mb-8">Your Weekend Could Be This Simple.</h2>
-            <p className="font-serif text-xl italic text-taupe mb-12">
+            <SectionLabel light className="justify-center mb-6">Plan Your Visit</SectionLabel>
+            <h2 className="font-display text-4xl md:text-6xl italic mb-8">Your Weekend Could Be This Simple.</h2>
+            <p className="font-serif text-xl italic text-ivory/70 mb-12">
               Book your stay, pack light and let Unwind do the rest.
             </p>
             <div className="flex flex-wrap justify-center gap-4">
@@ -216,7 +311,7 @@ export default function AboutPage() {
                  <Calendar size={16} />
                  Book Your Stay
               </a>
-              <a href={siteConfig.whatsapp} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-3 bg-forest text-ivory font-sans text-xs uppercase tracking-[0.25em] px-12 py-5 hover:bg-forest/90 transition-all rounded-sm">
+              <a href={siteConfig.whatsapp} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-3 border border-ivory/30 text-ivory font-sans text-xs uppercase tracking-[0.25em] px-12 py-5 hover:bg-ivory/10 transition-all rounded-sm">
                  <MessageCircle size={16} />
                  WhatsApp Us
               </a>
