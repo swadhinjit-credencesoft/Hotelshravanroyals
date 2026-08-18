@@ -29,7 +29,7 @@ export default function EventsPage() {
         label="Events & Celebrations"
         title="Bring Your People. We'll Take Care of the Rest."
         tagline="Some occasions deserve more than a restaurant table. Unwind Karjat offers a private and relaxed setting for it all."
-        image='/images/exterior2.jpeg'
+        image='/celebrationsevenet.png'
       />
 
       {/* What we host */}
@@ -142,7 +142,18 @@ export default function EventsPage() {
                 className={`grid grid-cols-1 lg:grid-cols-2 gap-16 items-center ${i % 2 === 1 ? 'lg:flex-row-reverse' : ''}`}
               >
                 <div className={`relative aspect-[4/3] overflow-hidden border border-gold/10 ${i % 2 === 1 ? 'lg:order-2' : ''}`}>
-                  <Image src={event.image} alt={event.title} fill loading="lazy" className="object-cover hover:scale-105 transition-transform duration-1000" />
+                  {event.video ? (
+                    <video
+                      src={event.video}
+                      autoPlay
+                      loop
+                      muted
+                      playsInline
+                      className="absolute inset-0 w-full h-full object-cover"
+                    />
+                  ) : (
+                    <Image src={event.image} alt={event.title} fill loading="lazy" className="object-cover hover:scale-105 transition-transform duration-1000" />
+                  )}
                 </div>
                 <div className={i % 2 === 1 ? 'lg:order-1' : ''}>
                   <span className="font-sans text-[10px] uppercase tracking-[0.3em] text-gold mb-4 block">{event.category}</span>
@@ -214,7 +225,7 @@ export default function EventsPage() {
             </Link>
           </div>
           <div className="relative aspect-[4/3] overflow-hidden border border-gold/10">
-            <Image src='/images/exterior8.jpeg' alt="Corporate offsite at Unwind Karjat" fill loading="lazy" className="object-cover" />
+            <Image src='/corporate111.jpeg' alt="Corporate offsite at Unwind Karjat" fill loading="lazy" className="object-cover" />
           </div>
         </div>
       </section>
@@ -223,7 +234,7 @@ export default function EventsPage() {
       <section className="py-24 bg-champagne">
         <div className="max-w-[1600px] mx-auto px-6 md:px-10 grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
           <div className="order-2 lg:order-1 relative aspect-[4/3] overflow-hidden border border-gold/10">
-            <Image src='/images/room-interior.jpg' alt="Family stay at Unwind Karjat" fill loading="lazy" className="object-cover" />
+            <Image src='/parties.jpeg' alt="Family stay at Unwind Karjat" fill loading="lazy" className="object-cover" />
           </div>
           <div className="order-1 lg:order-2">
             <SectionLabel className="mb-6">Family & Groups</SectionLabel>

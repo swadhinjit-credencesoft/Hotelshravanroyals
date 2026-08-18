@@ -18,4 +18,5 @@ export const galleryImages: GalleryImage[] = [
   { id: 'g8', src: '/images/room2.jpeg', alt: 'The countryside around Unwind Karjat', category: 'nature', width: 1200, height: 800 },
   { id: 'g9', src: '/images/exterior.jpeg', alt: 'Lawn and pool facing room at Unwind Karjat', category: 'rooms', width: 1200, height: 800 },
   { id: 'g10', src: '/images/exterior2.jpeg', alt: 'Farm facing room at Unwind Karjat', category: 'rooms', width: 1200, height: 800 },
+  { id: 'g11', src: '/outdoorspaces.jpeg', alt: 'Lawn and outdoor spaces at Unwind Karjat', category: 'outdoors', width: 1200, height: 800 },
 ]

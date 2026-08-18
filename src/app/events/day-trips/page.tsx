@@ -16,7 +16,7 @@ export default function DayTripsPage() {
     "description": "Day picnic and outing packages near Mumbai and Pune at Unwind Karjat, with pool and lawn access and lunch included.",
     "url": "https://unwindkarjat.com/events/day-trips",
     "telephone": "+91919619198839",
-    "image": "https://unwindkarjat.com/images/room2.jpeg",
+    "image": "https://unwindkarjat.com/daypicnic.jpeg",
     "address": {
       "@type": "PostalAddress",
       "addressLocality": "Karjat",
@@ -37,7 +37,7 @@ export default function DayTripsPage() {
         label="Day Picnics & Outings"
         title="One Day. Fully Unwound."
         tagline="Short on time? Spend a relaxed day at Unwind — pool, lawn, games and a generous meal, all in one place."
-        image='/images/room2.jpeg'
+        image='/daypicnic.jpeg'
       />
 
       <section className="py-24">
@@ -74,7 +74,7 @@ export default function DayTripsPage() {
               </a>
             </div>
             <div className="relative aspect-square">
-               <Image src='/images/exterior.jpeg' alt="A relaxed day at Unwind Karjat" fill loading="lazy" className="object-cover rounded-sm shadow-2xl" />
+               <Image src='/daypicnic.jpeg' alt="A relaxed day at Unwind Karjat" fill loading="lazy" className="object-cover rounded-sm shadow-2xl" />
             </div>
           </div>
 

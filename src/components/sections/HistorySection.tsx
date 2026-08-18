@@ -24,8 +24,8 @@ export default function HistorySection() {
           <div className="relative">
             <div className="relative aspect-[4/5] w-full max-w-md mx-auto z-10 overflow-hidden border border-gold/10">
               <Image
-                src='/images/exterior4.jpeg'
-                alt="Modern rustic interior at Unwind Karjat"
+                src='/Pool.png'
+                alt="The swimming pool at Unwind Karjat"
                 fill
                 loading="lazy"
                 className="object-cover grayscale hover:grayscale-0 transition-all duration-1000"
@@ -37,7 +37,7 @@ export default function HistorySection() {
               className="absolute -top-12 -right-8 w-64 aspect-square hidden lg:block z-20 border border-gold/20 overflow-hidden"
             >
                <Image
-                src='/images/exterior5.jpeg'
+                src='https://bookonelocal.in/cdn/2026-05-18-120147308-p1.jpg'
                 alt="Natural details at the retreat"
                 fill
                 loading="lazy"
@@ -50,7 +50,7 @@ export default function HistorySection() {
               className="absolute -bottom-16 -left-12 w-80 aspect-[3/2] hidden lg:block z-0 opacity-40 grayscale"
             >
                <Image
-                src='/images/exterior6.jpeg'
+                src='https://bookonelocal.in/cdn/2026-05-18-120147308-p1.jpg'
                 alt="Architecture sketches of Unwind Karjat"
                 fill
                 loading="lazy"
@@ -60,28 +60,25 @@ export default function HistorySection() {
           </div>
 
           <div className="flex flex-col">
-            <SectionLabel className="mb-6">About Us</SectionLabel>
+            <SectionLabel className="mb-6">A Vision of Natural Stillness</SectionLabel>
             <h2 className="font-display text-4xl md:text-[56px] italic text-forest mb-8 leading-tight">
-              Built With Heart. <br /> Run Like Home.
+              We wanted to create a place where you could slow down, breathe deeper and simply be
             </h2>
             <GoldDivider className="mb-10" />
             
             <div className="space-y-6">
               <p className="font-serif text-xl text-taupe leading-relaxed italic">
-               “Unwind Karjat is run by the people who built it.”
+              Unwind Karjat began in August 2024 with a simple idea — to create a peaceful retreat where nature, privacy and warm hospitality come together.
               </p>
               <p className="font-sans text-base text-taupe/80 leading-loose">
-              From Day 1, we have done everything ourselves — from the construction to the daily running of the property. We are Kapil &amp; Savita, and this is our home and our work.
-              </p>
-              <p className="font-sans text-base text-taupe/80 leading-loose">
-                From the rooms to the food to the little details across the property, everything here is looked after with care and pride. When you stay with us, you are our guest.
+             Surrounded by the beauty of Karjat and the Sahyadri foothills, it is a place to step away from everyday life, reconnect and truly unwind.
               </p>
             </div>
 
             <div className="mt-12 grid grid-cols-2 gap-8 border-t border-gold/10 pt-12">
                <div>
-                  <span className="font-serif text-3xl text-gold">10</span>
-                  <p className="font-sans text-[10px] uppercase tracking-widest text-taupe mt-2">Rooms</p>
+                  <span className="font-serif text-3xl text-gold">4</span>
+                  <p className="font-sans text-[10px] uppercase tracking-widest text-taupe mt-2">Room category </p>
                </div>
                <div>
                   <span className="font-serif text-3xl text-gold">1.5 hrs</span>

@@ -11,11 +11,11 @@ export default function BrandStatement() {
   const ref = useRef<HTMLElement>(null)
   const isInView = useInView(ref, { once: true, margin: '-80px' })
 
-  const quoteLines = [
-    'Unwind Karjat is the kind of place',
-    'where you can do as much as you want —',
-    'or absolutely nothing at all.',
-  ]
+const quoteLines = [
+  'Unwind Karjat is more than a stay — it is a world of quiet luxury,',
+  'peaceful escapes, and unforgettable experiences where comfort, beauty',
+  'and hospitality exist in perfect harmony.',
+]
 
   return (
     <section
@@ -111,9 +111,8 @@ export default function BrandStatement() {
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.8, delay: 2.2 }}
         >
-         At Unwind Karjat, we do not try to be everything. We are a private, comfortable, good-food-and-good-times
-kind of getaway — tucked into Karjat&apos;s calm and greenery, a place to slow down, spend time with
-your people and simply enjoy the moment.
+        At Unwind Karjat, luxury is not just experienced — it is remembered. It is found in the privacy of your own space, the quiet of nature,
+the comfort of thoughtful hospitality and the freedom to truly unwind - creating moments that stay with you long after you leave.
         </motion.p>
       </div>
     </section>

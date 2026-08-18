@@ -16,7 +16,7 @@ export default function CorporatePage() {
     "description": "Corporate offsite venue near Mumbai and Pune for small groups, with stay, meals, pool, lawns and activities together in one place.",
     "url": "https://unwindkarjat.com/events/corporate",
     "telephone": "+91919619198839",
-    "image": "https://unwindkarjat.com/images/exterior8.jpeg",
+    "image": "https://unwindkarjat.com/corporate.jpeg",
     "address": {
       "@type": "PostalAddress",
       "addressLocality": "Karjat",
@@ -37,7 +37,7 @@ export default function CorporatePage() {
         label="Corporate Offsites"
         title="Work Somewhere Different."
         tagline="Step away from the office without stepping too far away from Pune. A relaxed setting designed for small corporate groups."
-        image='/images/exterior8.jpeg'
+        image='/corporate.jpeg'
       />
 
       <section className="py-24">
@@ -74,7 +74,7 @@ export default function CorporatePage() {
               </a>
             </div>
             <div className="relative aspect-square">
-                <Image src='/images/room1.jpeg' alt="Corporate offsite at Unwind Karjat" fill loading="lazy" className="object-cover rounded-sm shadow-2xl" />
+                <Image src='/corporate.jpeg' alt="Corporate offsite at Unwind Karjat" fill loading="lazy" className="object-cover rounded-sm shadow-2xl" />
             </div>
           </div>
 

@@ -15,7 +15,7 @@ export default function DiningPage() {
         label="Dining"
         title="Come Hungry. Leave Happy."
         tagline="Good food is part of the stay. Relaxed, generous meals made to be enjoyed together."
-        image='/TheMainDiningHall.png'
+        image='/Pool.png'
       />
       
       {/* SEO Schema */}

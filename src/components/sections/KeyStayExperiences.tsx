@@ -26,7 +26,7 @@ const keyExperiences = [
     id: 'k3',
     title: 'Good Food & BBQs',
     description: 'Savor fresh, delicious meals at the in-house dining area, with options for evening barbecues on the lawn.',
-    image: '/images/exterior4.jpeg',
+    image: '/bbq.jpeg',
     imageAlt: 'Fresh delicious meals served at the in-house dining area of Unwind Karjat',
     icon: UtensilsCrossed,
   },

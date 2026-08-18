@@ -167,35 +167,6 @@ export default function Home() {
       {/* Parallax Quote Divider */}
       <ParallaxDivider />
 
-      {/* Events */}
-      <section className="relative py-28 overflow-hidden bg-forest">
-        <Image
-          src='/images/exterior8.jpeg'
-          alt="Celebrations on the lawns at Unwind Karjat"
-          fill
-          loading="lazy"
-          className="object-cover opacity-25"
-          sizes="100vw"
-        />
-        <div className="absolute inset-0 bg-gradient-to-b from-forest/80 via-transparent to-forest/80" aria-hidden="true" />
-        <div className="relative z-10 max-w-4xl mx-auto px-6 md:px-10 text-center">
-          <SectionLabel light className="justify-center mb-6">Events & Celebrations</SectionLabel>
-          <h2 className="font-display text-4xl md:text-6xl italic text-ivory mb-8">
-            Bring Your People. We&apos;ll Take Care of the Rest.
-          </h2>
-          <p className="font-serif text-lg md:text-xl text-ivory/80 italic leading-relaxed mb-12 max-w-2xl mx-auto">
-            Birthdays, family get-togethers, corporate offsites and private celebrations — all in one relaxed place, with accommodation, food and open spaces together.
-          </p>
-          <Link
-            href="/events"
-            className="inline-flex items-center gap-3 bg-gold text-[#1a1004] font-sans text-xs uppercase tracking-[0.25em] px-10 py-5 hover:bg-gold-light transition-all shadow-xl hover:shadow-gold/20 duration-500 rounded-sm font-bold"
-          >
-            <Calendar size={16} />
-            Explore Events
-          </Link>
-        </div>
-      </section>
-
       {/* Why Unwind */}
       <ArtOfStaySection />
 

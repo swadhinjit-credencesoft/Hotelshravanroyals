@@ -27,8 +27,8 @@ export const experiences: Experience[] = [
     category: 'Outdoors',
     description: 'Open spaces for games, conversations, celebrations and simply enjoying the outdoors.',
     duration: 'All day',
-    image: '/LawnsDecks.png',
-    imageAlt: 'Lawns and outdoor decks at Unwind Karjat',
+    image: '/outdoorspacess.jpeg',
+    imageAlt: 'Lawn and outdoor spaces at Unwind Karjat',
     season: 'Year-round',
   },
   {
@@ -37,7 +37,7 @@ export const experiences: Experience[] = [
     category: 'Activities',
     description: 'Indoor and outdoor games, poolside activities and plenty of opportunities for some friendly competition.',
     duration: 'Through the day',
-    image: '/images/lounge.png',
+    image: '/sportsactivities.jpeg',
     imageAlt: 'Games and activities at Unwind Karjat',
     season: 'Year-round',
   },
@@ -57,7 +57,7 @@ export const experiences: Experience[] = [
     category: 'Dining',
     description: 'Enjoy freshly prepared food and live tandoor preparations as part of the Unwind dining experience.',
     duration: 'Meal times',
-    image: '/images/dining.png',
+    image: '/bbq.jpeg',
     imageAlt: 'Live tandoor and freshly prepared food at Unwind Karjat',
     season: 'Year-round',
     priceInfo: 'Included in meal plans'

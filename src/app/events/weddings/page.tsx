@@ -4,7 +4,6 @@ import Navbar from '@/components/layout/Navbar';
 import Footer from '@/components/layout/Footer';
 import CinematicHero from '@/components/ui/CinematicHero';
 import SectionLabel from '@/components/ui/SectionLabel';
-import Image from 'next/image';
 import { Heart, Users, Utensils, Camera, MapPin, Calendar } from 'lucide-react';
 import Link from 'next/link';
 
@@ -37,7 +36,7 @@ export default function WeddingsPage() {
         label="Weddings & Receptions"
         title="Celebrate Your Day, Your Way"
         tagline="Intimate weddings and receptions with everything together in one place — accommodation, food, lawns and celebration."
-        image='/images/exterior5.jpeg'
+        image='/weddingvideo.mp4'
       />
 
       <section className="py-24">
@@ -73,8 +72,15 @@ export default function WeddingsPage() {
                 Plan Your Celebration
               </a>
             </div>
-            <div className="relative aspect-square">
-               <Image src='/images/exterior6.jpeg' alt="Wedding celebration at Unwind Karjat" fill loading="lazy" className="object-cover rounded-sm shadow-2xl" />
+            <div className="relative aspect-square overflow-hidden rounded-sm shadow-2xl">
+               <video
+                 src="/weddingvideo.mp4"
+                 autoPlay
+                 loop
+                 muted
+                 playsInline
+                 className="absolute inset-0 w-full h-full object-cover"
+               />
             </div>
           </div>
 

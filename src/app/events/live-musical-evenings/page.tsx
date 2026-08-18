@@ -16,7 +16,7 @@ export default function LiveMusicalEveningsPage() {
     "description": "Soulful acoustic nights, live bands, DJ evenings, and bonfire jam sessions under the Karjat sky.",
     "url": "https://unwindkarjat.com/events/live-musical-evenings",
     "telephone": "+91919619198839",
-    "image": "https://unwindkarjat.com/images/exterior2.jpeg",
+    "image": "https://unwindkarjat.com/music.jpeg",
     "address": {
       "@type": "PostalAddress",
       "addressLocality": "Karjat",
@@ -37,7 +37,7 @@ export default function LiveMusicalEveningsPage() {
         label="Live Musical Evenings"
         title="Evenings That Come Alive"
         tagline="Acoustic nights, live bands and karaoke — music is very much part of the Unwind experience."
-        image='/images/exterior2.jpeg'
+        image='/music.jpeg'
       />
 
       <section className="py-24">
@@ -74,7 +74,7 @@ export default function LiveMusicalEveningsPage() {
               </a>
             </div>
             <div className="relative aspect-square">
-              <Image src='/images/exterior4.jpeg' alt="An evening of music at Unwind Karjat" fill loading="lazy" className="object-cover rounded-sm shadow-2xl" />
+              <Image src='/celebrationsevenet.png' alt="An evening of music at Unwind Karjat" fill loading="lazy" className="object-cover rounded-sm shadow-2xl" />
             </div>
           </div>
 

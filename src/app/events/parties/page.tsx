@@ -16,7 +16,7 @@ export default function PartiesPage() {
     "description": "Birthdays, pool parties and private celebrations near Mumbai and Pune at Unwind Karjat.",
     "url": "https://unwindkarjat.com/events/parties",
     "telephone": "+91919619198839",
-    "image": "https://unwindkarjat.com/images/exterior3.jpeg",
+    "image": "https://unwindkarjat.com/birthdaycelebration.jpeg",
     "address": {
       "@type": "PostalAddress",
       "addressLocality": "Karjat",
@@ -37,7 +37,7 @@ export default function PartiesPage() {
         label="Birthdays & Pool Parties"
         title="Celebrate With Your People"
         tagline="Birthday, anniversary or just a reason to get everyone together — our lawns, pool and evenings are made for it."
-        image='/images/exterior3.jpeg'
+        image='/birthdaycelebration.jpeg'
       />
 
       <section className="py-24">
@@ -74,7 +74,7 @@ export default function PartiesPage() {
               </a>
             </div>
             <div className="relative aspect-square">
-               <Image src='/images/exterior4.jpeg' alt="A group celebrating at Unwind Karjat" fill loading="lazy" className="object-cover rounded-sm shadow-2xl" />
+               <Image src='/parties.jpeg' alt="A group celebrating at Unwind Karjat" fill loading="lazy" className="object-cover rounded-sm shadow-2xl" />
             </div>
           </div>
 

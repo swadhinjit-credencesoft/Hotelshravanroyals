@@ -5,6 +5,7 @@ export interface EstateEvent {
   description: string;
   capacity: string;
   image: string;
+  video?: string;
   features: string[];
 }
 
@@ -16,6 +17,7 @@ export const estateEvents: EstateEvent[] = [
     description: 'A relaxed open-air setting surrounded by greenery, perfect for your special day and the people closest to you.',
     capacity: 'Intimate celebrations',
     image: '/images/exterior3.jpeg',
+    video: '/weddingvideo.mp4',
     features: ['Customised catering', 'Celebration setup', 'Stay for your guests'],
   },
   {
@@ -24,7 +26,7 @@ export const estateEvents: EstateEvent[] = [
     category: 'Corporate',
     description: 'Step away from the office without stepping too far away from Pune. Combine meetings with good food, open spaces and time for the team to connect.',
     capacity: 'Small groups',
-    image: '/images/exterior4.jpeg',
+    image: '/corporate.jpeg',
     features: ['Wi-Fi', 'Projector & sound system', 'Pool, games & lawn between sessions'],
   },
   {
@@ -33,7 +35,7 @@ export const estateEvents: EstateEvent[] = [
     category: 'Parties',
     description: 'Poolside birthdays, intimate parties and private get-togethers — with the whole experience under one roof.',
     capacity: 'Private groups',
-    image: '/images/exterior5.jpeg',
+    image: '/birthdaycelebration.jpeg',
     features: ['Live tandoor & BBQ setup', 'Pool access', 'Music & karaoke option'],
   },
   {
@@ -42,7 +44,7 @@ export const estateEvents: EstateEvent[] = [
     category: 'Parties',
     description: 'Milestones deserve more than a restaurant table. Celebrate anniversaries and family moments with the people who matter.',
     capacity: 'Private dining',
-    image: '/images/celebrationsevenet.png',
+    image: '/anneversaryimg.jpeg',
     features: ['Private dining', 'Celebration setup', 'Help planning the day'],
   },
   {
@@ -51,7 +53,7 @@ export const estateEvents: EstateEvent[] = [
     category: 'Parties',
     description: 'More time together, less planning. Stay, eat, swim and celebrate without moving from one venue to another.',
     capacity: 'Groups & families',
-    image: '/images/exterior6.jpeg',
+    image: '/parties.jpeg',
     features: ['Family Room available', 'Open lawns & pool', 'Group meal plans'],
   },
   {
@@ -60,7 +62,7 @@ export const estateEvents: EstateEvent[] = [
     category: 'Live Musical Evenings',
     description: 'A relaxed acoustic evening with music to match the mood — perfect for small groups and slow evenings.',
     capacity: 'Small gatherings',
-    image: '/images/exterior2.jpeg',
+    image: '/music.jpeg',
     features: ['Live acoustic set', 'Bonfire setup', 'Song requests'],
   },
   {
@@ -69,7 +71,7 @@ export const estateEvents: EstateEvent[] = [
     category: 'Live Musical Evenings',
     description: 'Live bands, DJs and karaoke evenings for birthdays, celebrations and corporate get-togethers.',
     capacity: 'Private events',
-    image: '/images/exterior8.jpeg',
+    image: '/celebrationsevenet.png',
     features: ['Sound system', 'Playlists & karaoke', 'Lawn setup'],
   },
   {
@@ -78,7 +80,7 @@ export const estateEvents: EstateEvent[] = [
     category: 'Day Trips',
     description: 'A simple day out — pool and lawn time, games, music and a generous meal, all in one place.',
     capacity: 'By arrangement',
-    image: '/images/exterior.jpeg',
+    image: '/daypicnic.jpeg',
     features: ['Pool & lawn access', 'Generous lunch', 'Games & music'],
   },
   {
@@ -87,7 +89,7 @@ export const estateEvents: EstateEvent[] = [
     category: 'Day Trips',
     description: 'Group day-outings for teams, families and friends — with space, activities and catering in one place.',
     capacity: 'Groups of any size',
-    image: '/images/exterior3.jpeg',
+    image: '/groupday.jpeg',
     features: ['Group space & activities', 'BBQ & bonfire option', 'Prior booking required'],
   },
 ];

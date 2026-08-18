@@ -14,7 +14,7 @@ export default function ExperiencesPage() {
         label="Experiences"
         title="Something to Do. Or Nothing at All."
         tagline="Take a dip in the pool. Play a game on the lawn. Sit down for a long meal. Or find a quiet corner and do absolutely nothing."
-        image='/experiencehero.png'
+        image='/eventpage.jpeg'
       />
 
       <section className="py-24 bg-forest text-ivory/80">
