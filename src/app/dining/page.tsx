@@ -106,22 +106,22 @@ export default function DiningPage() {
           </div>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 h-auto md:h-[600px]">
             <div className="relative overflow-hidden group">
-               <Image src='/images/exterior2.jpeg' alt="Warm ambient dining atmosphere" fill loading="lazy" className="object-cover grayscale hover:grayscale-0 transition-all duration-1000" />
+               <Image src='/inhouse.png' alt="Warm ambient dining atmosphere" fill loading="lazy" className="object-cover grayscale hover:grayscale-0 transition-all duration-1000" />
             </div>
             <div className="relative overflow-hidden group row-span-2">
-               <Image src='/images/exterior3.jpeg' alt="Chef preparing local delicacies" fill loading="lazy" className="object-cover grayscale hover:grayscale-0 transition-all duration-1000" />
+               <Image src='/bbq.jpeg' alt="Live tandoor and grill" fill loading="lazy" className="object-cover grayscale hover:grayscale-0 transition-all duration-1000" />
             </div>
             <div className="relative overflow-hidden group">
-               <Image src='/images/exterior4.jpeg' alt="Gourmet plated dish" fill loading="lazy" className="object-cover grayscale hover:grayscale-0 transition-all duration-1000" />
+               <Image src='/Pool.png' alt="Poolside dining" fill loading="lazy" className="object-cover grayscale hover:grayscale-0 transition-all duration-1000" />
             </div>
             <div className="relative overflow-hidden group row-span-2">
-               <Image src='/images/exterior5.jpeg' alt="Rustic grill setup" fill loading="lazy" className="object-cover grayscale hover:grayscale-0 transition-all duration-1000" />
+               <Image src='/inhouse.png' alt="In-house restaurant setup" fill loading="lazy" className="object-cover grayscale hover:grayscale-0 transition-all duration-1000" />
             </div>
             <div className="relative overflow-hidden group">
-               <Image src='/Lawn-Facing-Room.png' alt="Outdoor dining at dusk" fill loading="lazy" className="object-cover grayscale hover:grayscale-0 transition-all duration-1000" />
+               <Image src='/bbq.jpeg' alt="Evening barbecue on the lawn" fill loading="lazy" className="object-cover grayscale hover:grayscale-0 transition-all duration-1000" />
             </div>
             <div className="relative overflow-hidden group">
-               <Image src='/TheMainDiningHall.png' alt="Refreshing cocktails and drinks" fill loading="lazy" className="object-cover grayscale hover:grayscale-0 transition-all duration-1000" />
+               <Image src='/Pool.png' alt="Breakfast by the pool" fill loading="lazy" className="object-cover grayscale hover:grayscale-0 transition-all duration-1000" />
             </div>
           </div>
         </div>

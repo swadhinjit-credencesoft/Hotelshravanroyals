@@ -50,8 +50,8 @@ export default function HistorySection() {
               className="absolute -bottom-16 -left-12 w-80 aspect-[3/2] hidden lg:block z-0 opacity-40 grayscale"
             >
                <Image
-                src='https://bookonelocal.in/cdn/2026-05-18-120147308-p1.jpg'
-                alt="Architecture sketches of Unwind Karjat"
+                src='/carromimg.jpeg'
+                alt="Games and activities at Unwind Karjat"
                 fill
                 loading="lazy"
                 className="object-cover"
