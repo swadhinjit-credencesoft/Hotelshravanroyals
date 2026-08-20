@@ -98,7 +98,7 @@ export default function HeroSection() {
         style={{ y: reduced ? 0 : imageY, x: reduced ? 0 : imgSpringX }}
       >
         <video
-          src="/images/unwindvideo.mp4"
+          src="https://bookonelocal.in/cdn/unwindhomeherovideo.mp4"
           autoPlay
           muted
           loop
