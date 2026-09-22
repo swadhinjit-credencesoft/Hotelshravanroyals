@@ -12,14 +12,14 @@ import { appendUTMToURL } from '@/lib/utm'
 import { buildBookingUrl } from '@/lib/hotelmate'
 
 const navLinks = [
-  { label: 'HOME', href: '/', title: 'Home — Hotel Surya Bella Casa' },
-  { label: 'ROOMS', href: '/rooms', title: 'Luxury Rooms in Purnea' },
-  // { label: 'OFFERS', href: '/offers', title: 'Special Hotel Offers' },
-  { label: 'DINING', href: '/dining', title: 'Restaurant & Dining' },
-  { label: 'EVENTS', href: '/events', title: 'Events & Banquet Hall' },
-  { label: 'GALLERY', href: '/gallery', title: 'Hotel Photo Gallery' },
-  { label: 'BLOG', href: '/blog', title: 'Hotel Blog & Travel Tips' },
-  { label: 'ABOUT', href: '/about', title: 'About Hotel Surya Bella Casa' },
+  { label: 'HOME', href: '/', title: 'Home — The Divine Oasis' },
+  { label: 'ROOMS', href: '/rooms', title: 'Cottages & Suites at Ajodhya Hill' },
+  // { label: 'OFFERS', href: '/offers', title: 'Special Resort Offers' },
+  { label: 'DINING', href: '/dining', title: 'Organic Farm Dining' },
+  { label: 'EVENTS', href: '/events', title: 'Events & Celebrations' },
+  { label: 'GALLERY', href: '/gallery', title: 'Resort Photo Gallery' },
+  { label: 'BLOG', href: '/blog', title: 'Resort Blog & Travel Tips' },
+  { label: 'ABOUT', href: '/about', title: 'About The Divine Oasis' },
   { label: 'CONTACT', href: '/contact', title: 'Contact Us' },
 ]
 
@@ -57,15 +57,15 @@ export default function Navbar() {
             </span>
             <span className="w-1 h-1 rounded-full bg-gold/40 flex-shrink-0" />
             <span className="flex items-center gap-1.5 text-ivory/90 whitespace-nowrap px-6">
-              📍 OPPOSITE VIKASS MARKET, NEAR BUS STAND, PURNEA
+              📍 HILLTOP, AJODHYA · PURULIA · WEST BENGAL
             </span>
             <span className="w-1 h-1 rounded-full bg-gold/40 flex-shrink-0" />
             <span className="flex items-center gap-1.5 text-gold-light whitespace-nowrap px-6">
-              📶 FREE HIGH-SPEED WI-FI &amp; PARKING INCLUDED
+              📶 FREE WI-FI · ORGANIC FARM DINING
             </span>
             <span className="w-1 h-1 rounded-full bg-gold/40 flex-shrink-0" />
             <span className="flex items-center gap-1.5 text-ivory/90 whitespace-nowrap px-6">
-              🏨 DELUXE AC ROOMS FROM ₹1,500/NIGHT
+              🛖 MUD COTTAGES FROM ₹4,000/NIGHT
             </span>
             <span className="w-1 h-1 rounded-full bg-gold/40 flex-shrink-0" />
             {/* Duplicate set for seamless loop */}
@@ -74,15 +74,15 @@ export default function Navbar() {
             </span>
             <span className="w-1 h-1 rounded-full bg-gold/40 flex-shrink-0" />
             <span className="flex items-center gap-1.5 text-ivory/90 whitespace-nowrap px-6">
-              📍 OPPOSITE VIKASS MARKET, NEAR BUS STAND, PURNEA
+              📍 HILLTOP, AJODHYA · PURULIA · WEST BENGAL
             </span>
             <span className="w-1 h-1 rounded-full bg-gold/40 flex-shrink-0" />
             <span className="flex items-center gap-1.5 text-gold-light whitespace-nowrap px-6">
-              📶 FREE HIGH-SPEED WI-FI &amp; PARKING INCLUDED
+              📶 FREE WI-FI · ORGANIC FARM DINING
             </span>
             <span className="w-1 h-1 rounded-full bg-gold/40 flex-shrink-0" />
             <span className="flex items-center gap-1.5 text-ivory/90 whitespace-nowrap px-6">
-              🏨 DELUXE AC ROOMS FROM ₹1,500/NIGHT
+              🛖 MUD COTTAGES FROM ₹4,000/NIGHT
             </span>
           </div>
         </div>
@@ -103,8 +103,8 @@ export default function Navbar() {
           {/* Left: Brand Logo */}
           <Link href="/" className="flex items-center gap-3 focus:outline-none shrink-0">
             <Image
-              src="/suryabellacasalogo.png"
-              alt="Hotel Surya Bella Casa"
+              src="/devinelogo.png"
+              alt="The Divine Oasis"
               width={180}
               height={106}
               className="h-12 md:h-14 w-auto object-contain transition-transform duration-300 hover:scale-105"
@@ -194,8 +194,8 @@ export default function Navbar() {
             <div className="flex items-center justify-between px-5 sm:px-6 py-4 sm:py-5 border-b border-gold/20">
               <Link href="/" onClick={() => setMobileOpen(false)} className="flex items-center gap-3">
                 <Image
-                  src="/suryabellacasalogo.png"
-                  alt="Hotel Surya Bella Casa"
+                  src="/devinelogo.png"
+                  alt="The Divine Oasis"
                   width={150}
                   height={88}
                   className="h-9 sm:h-10 w-auto object-contain"
@@ -234,11 +234,11 @@ export default function Navbar() {
             <div className="px-6 sm:px-8 pb-8 sm:pb-10 border-t border-gold/20 pt-6 shrink-0 bg-forest-dark">
               <p className="text-[10px] font-semibold tracking-[0.3em] uppercase text-gold mb-2">Direct Contact</p>
               <a
-                href="tel:+919835923601"
+                href="tel:+91990398950"
                 onClick={() => trackPhoneClick('mobile_drawer')}
                 className="font-serif text-lg text-ivory hover:text-gold transition-colors block mb-4"
               >
-                +91 9835923601
+                +91 99039 89950
               </a>
 
               <a

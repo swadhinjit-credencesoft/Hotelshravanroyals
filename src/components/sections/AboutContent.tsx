@@ -14,8 +14,8 @@ export default function AboutContent() {
       <CinematicHero 
         label="Our Story"
         title="Genuine Hospitality"
-        tagline="Dedicated to offering clean, comfortable, and affordable accommodation in Purnea for families and business travelers."
-        image='https://bookonelocal.in/cdn/IMG_3808.avif'
+        tagline="A serene forest resort atop Ajodhya Hill in Purulia, offering premium mud cottages, organic farm dining, and unforgettable hilltop moments for families and travelers alike."
+        image='https://bookonelocal.in/cdn/2026-05-13-064432393-WhatsApp Image 2026-05-11 at 15.42.15.jpg'
       />
 
       <section className="py-24">
@@ -33,17 +33,17 @@ export default function AboutContent() {
               </h2>
               <GoldDivider className="mb-10" />
               <p className="font-serif text-xl text-taupe italic mb-8 leading-relaxed">
-                &ldquo;We wanted to establish a premium budget-friendly stay that matches the vibrant commercial growth of Purnea while treating every guest like family.&rdquo;
+                &ldquo;We wanted to build a forest sanctuary that matches the quiet majesty of Ajodhya Hill while treating every guest like family.&rdquo;
               </p>
               <div className="space-y-6 font-sans text-base text-taupe/80 leading-loose">
                 <p>
-                  Hotel Surya Bella Casa was established in 2019 with a vision to bridge the gap in quality budget-friendly lodging in Seemanchal. Over the years, we have grown to become a preferred destination for corporate executives, family travelers, and tourists visiting Purnea.
+                  The Divine Oasis was created with a vision to offer a soulful escape amidst the forests of Ajodhya Hill in Purulia, West Bengal. Over the years, we have grown to become a preferred destination for families, couples, and nature lovers seeking true calm.
                 </p>
                 <p>
-                  Our hotel stands opposite Vikass Market, just a short walk from the main Purnea Bus Stand, making it exceptionally easy to navigate the city. Every room has been designed for functionality, cleanliness, and comfort.
+                  Our cottages sit atop Ajodhya Hill, just 0.4 km from the Ajodhya Hills &amp; Forest Reserve, surrounded by dense woodland and fresh mountain air. Every cottage has been designed for comfort, privacy, and harmony with nature.
                 </p>
                 <p>
-                  Whether you are in town for an overnight business meeting or a multi-day family celebration, our hospitable staff is here to make your visit seamless and memorable.
+                  Whether you are in town for a weekend getaway or a multi-day family celebration, our hospitable staff is here to make your visit seamless and memorable.
                 </p>
               </div>
             </motion.div>
@@ -56,8 +56,8 @@ export default function AboutContent() {
               className="relative aspect-[4/5] overflow-hidden border border-gold/10"
             >
               <Image
-                src='https://bookonelocal.in/cdn/IMG_3815.avif'
-                alt="Architectural detail seamlessly blending with nature"
+                src='https://bookonelocal.in/cdn/2026-05-13-064442350-WhatsApp Image 2026-05-11 at 15.42.12 (1).jpg'
+                alt="Cottages of The Divine Oasis nestled in the Ajodhya Hill forest"
                 fill
                 className="object-cover"
                 loading="lazy"
@@ -79,11 +79,11 @@ export default function AboutContent() {
             <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
               <div className="p-8 border border-gold/10">
                 <span className="block font-serif text-4xl text-gold mb-2">100%</span>
-                <span className="font-sans text-[10px] uppercase tracking-widest text-taupe/60">Power Backup & AC</span>
+                <span className="font-sans text-[10px] uppercase tracking-widest text-taupe/60">Free Wi-Fi &amp; Geyser</span>
               </div>
               <div className="p-8 border border-gold/10">
                 <span className="block font-serif text-4xl text-gold mb-2">Daily</span>
-                <span className="font-sans text-[10px] uppercase tracking-widest text-taupe/60">Hygiene & Sanitization</span>
+                <span className="font-sans text-[10px] uppercase tracking-widest text-taupe/60">Hygiene &amp; Sanitization</span>
               </div>
               <div className="p-8 border border-gold/10">
                 <span className="block font-serif text-4xl text-gold mb-2">Zero</span>
@@ -91,7 +91,7 @@ export default function AboutContent() {
               </div>
               <div className="p-8 border border-gold/10">
                 <span className="block font-serif text-4xl text-gold mb-2">Local</span>
-                <span className="font-sans text-[10px] uppercase tracking-widest text-taupe/60">Warm Bihari Service</span>
+                <span className="font-sans text-[10px] uppercase tracking-widest text-taupe/60">Warm Bengali Hospitality</span>
               </div>
             </div>
           </div>
@@ -105,7 +105,7 @@ export default function AboutContent() {
             <div className="order-2 lg:order-1">
                <div className="relative aspect-video w-full border border-gold/10 grayscale hover:grayscale-0 transition-all duration-1000">
                   <iframe 
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3595.8!2d87.4706!3d25.7689!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f2efc24c4a7af%3A0x0!2sHotel+Bella+Casa!5e0!3m2!1sen!2sin!4v1!5m2!1sen!2sin" 
+                    src="https://www.google.com/maps?q=23.2028654,86.1268909&hl=en&z=15&output=embed" 
                     width="100%" 
                     height="100%" 
                     style={{ border: 0 }} 
@@ -116,9 +116,9 @@ export default function AboutContent() {
             </div>
             <div className="order-1 lg:order-2">
               <SectionLabel className="mb-6">Find Your Way</SectionLabel>
-              <h2 className="font-display text-4xl md:text-6xl italic text-forest mb-8">Getting to Hotel Surya Bella Casa</h2>
+              <h2 className="font-display text-4xl md:text-6xl italic text-forest mb-8">Getting to The Divine Oasis</h2>
               <p className="font-serif text-lg text-taupe leading-relaxed mb-8">
-                Located in the heart of Purnea at Suryalok Complex, we are well-connected by road and rail to Patna, Siliguri, and Bhagalpur. Our hotel offers the perfect balance of accessibility and comfort.
+                Perched atop Ajodhya Hill at Hilltop, Ajodhya, we are just 0.4 km from the Ajodhya Hills &amp; Forest Reserve and reachable by road from Purulia Junction (42.6 km) and Barabhum (38.5 km). The resort offers the perfect balance of accessibility and serenity.
               </p>
               <div className="space-y-4">
                 <p className="font-sans text-[11px] uppercase tracking-widest text-gold font-bold">Address</p>
@@ -145,7 +145,7 @@ export default function AboutContent() {
              <p className="font-serif text-xl italic text-taupe mb-12">
                 Join us for an experience of unmatched comfort, exceptional food, and warm hospitality.
              </p>
-            <a href="https://bookone.io/Hotel-Bella-Casa?bookingEngine=true" target="_blank" rel="noopener noreferrer" className="inline-block bg-gold text-[#1a1004] font-sans text-[11px] uppercase tracking-[0.2em] px-12 py-5 hover:bg-gold-light transition-all rounded-sm">
+            <a href="https://bookone.io/The-Divine-Oasis?bookingEngine=true" target="_blank" rel="noopener noreferrer" className="inline-block bg-gold text-[#1a1004] font-sans text-[11px] uppercase tracking-[0.2em] px-12 py-5 hover:bg-gold-light transition-all rounded-sm">
                Come Experience It
             </a>
          </div>

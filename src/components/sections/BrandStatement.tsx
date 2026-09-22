@@ -12,9 +12,9 @@ export default function BrandStatement() {
   const isInView = useInView(ref, { once: true, margin: '-80px' })
 
   const quoteLines = [
-    'Hotel Surya Bella Casa is more than a stay — it is a sanctuary of comfort',
-    'warm hospitality, and absolute peace of mind where business travelers',
-    'and families experience Purnea at its very best.',
+    'The Divine Oasis is more than a resort — it is a sanctuary of stillness,',
+    'warm hospitality, and absolute peace of mind where families and',
+    'nature lovers experience Ajodhya Hill at its very best.',
   ]
 
   return (
@@ -111,7 +111,7 @@ export default function BrandStatement() {
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.8, delay: 2.2 }}
         >
-         At Hotel Surya Bella Casa, comfort is not just provided — it is delivered with genuine warmth. Located centrally opposite Vikass Market, our rooms offer modern amenities, a quiet environment, and unparalleled local accessibility, ensuring that your business trip or family stay is completely hassle-free.
+         At The Divine Oasis, comfort is not just provided — it is delivered with genuine warmth. Perched atop Ajodhya Hill, our cottages offer modern amenities, a quiet forest ambiance, and effortless access to Purulia&apos;s natural wonders, ensuring that your stay is completely hassle-free.
         </motion.p>
       </div>
     </section>

@@ -17,7 +17,7 @@ export default function ExperiencesGrid() {
             Curated Immersions
           </h2>
           <p className="font-serif text-xl font-light text-ivory/60 max-w-xl leading-relaxed">
-            Ideally located in the heart of Purnea, Hotel Surya Bella Casa connects you to spiritual landmarks, local shopping, and essential business hubs.
+            Perched atop Ajodhya Hill, The Divine Oasis connects you to forest trails, hilltop vistas, and cultural heritage sites in Purulia.
           </p>
         </div>
 
@@ -33,7 +33,7 @@ export default function ExperiencesGrid() {
 
         <div className="text-center mt-16">
           <Link href="/experiences" className="inline-flex items-center gap-2 font-sans text-[10px] uppercase tracking-[0.2em] text-gold border border-gold/30 px-8 py-4 hover:bg-gold hover:text-forest transition-all rounded-sm">
-            Explore All Places to Visit in Purnea <ArrowRight size={12} />
+            Explore All Experiences at Ajodhya Hill <ArrowRight size={12} />
           </Link>
         </div>
       </div>
@@ -129,7 +129,7 @@ function ExperienceCard({
             <p className="font-sans text-sm text-ivory/70 mb-6 leading-relaxed">
               {experience.description}
             </p>
-            <a href="https://bookone.io/Hotel-Bella-Casa?bookingEngine=true" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 font-sans text-[10px] uppercase tracking-[0.2em] text-[#1a1004] bg-gold px-6 py-3 hover:bg-gold-light transition-all rounded-sm">
+            <a href="https://bookone.io/The-Divine-Oasis?bookingEngine=true" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 font-sans text-[10px] uppercase tracking-[0.2em] text-[#1a1004] bg-gold px-6 py-3 hover:bg-gold-light transition-all rounded-sm">
               Add to Stay <ArrowRight size={12} />
             </a>
           </div>

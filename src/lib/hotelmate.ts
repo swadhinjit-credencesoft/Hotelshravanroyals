@@ -1,6 +1,6 @@
-export const HOTELMATE_PROPERTY_ID = 3525
+export const HOTELMATE_PROPERTY_ID = 3558
 export const HOTELMATE_API_BASE = 'https://api.thehotelmate.co/api/thm'
-export const BOOKING_ENGINE_URL = 'https://bookone.io/Hotel-Bella-Casa?bookingEngine=true'
+export const BOOKING_ENGINE_URL = 'https://bookone.io/The-Divine-Oasis?bookingEngine=true'
 
 export interface HotelAddress {
   country: string
@@ -151,7 +151,7 @@ export function buildBookingUrl(params?: {
   roomName?: string
   roomId?: string
 }): string {
-  const baseUrl = 'https://bookone.io/Hotel-Bella-Casa'
+  const baseUrl = 'https://bookone.io/The-Divine-Oasis'
   
   const fromStr = params?.fromDate || todayString()
   const toStr = params?.toDate || addDays(todayString(), 1)
@@ -225,8 +225,8 @@ export function buildBookingUrl(params?: {
   return `${baseUrl}?${query.toString()}`
 }
 
-const HOTEL_NAME = 'Hotel Surya Bella Casa'
-const HOTEL_ADDRESS = 'Suryalok Complex, Opposite Vikass Market, Near Bus Stand, Purnea, Bihar 854301'
+const HOTEL_NAME = 'The Divine Oasis'
+const HOTEL_ADDRESS = 'Ajodhya Hill, Hilltop, Ajodhya, Purulia, West Bengal 723152'
 
 function buildEnquiryMessage(extra?: string): string {
   return (
@@ -238,7 +238,7 @@ function buildEnquiryMessage(extra?: string): string {
 }
 
 export function buildWhatsAppUrl(extra?: string): string {
-  const phoneNumber = '919835923601'
+  const phoneNumber = '91990398950'
   const message = buildEnquiryMessage(extra)
   return 'https://api.whatsapp.com/send?phone=' + phoneNumber + '&text=' + encodeURIComponent(message)
 }

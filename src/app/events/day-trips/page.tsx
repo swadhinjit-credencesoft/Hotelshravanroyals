@@ -6,23 +6,23 @@ import { Sun, Utensils, MapPin, Clock, Calendar } from 'lucide-react';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'Day Trips & Picnics in Purnea | Weekend Getaway Near Bus Stand',
+  title: 'Day Trips & Weekend Getaways at Ajodhya Hill | The Divine Oasis, Purulia',
   description:
-    'Plan a day trip or picnic in Purnea at Hotel Surya Bella Casa near Bus Stand. Family outing packages with lounge access, buffet lunch, and city tours.',
+    'Plan a day trip or weekend getaway at The Divine Oasis atop Ajodhya Hill, Purulia. Family outing packages with hilltop lounge access, organic farm lunch, and forest trails.',
   keywords: [
-    'day trips from purnea',
-    'picnic in purnea',
-    'purnea day outing',
-    'family outing purnea',
-    'weekend getaway purnea',
-    'one day trip purnea',
-    'purnea sightseeing',
-    'nearby attractions Purnea',
-    'day package purnea hotel',
-    'lounge day pass purnea',
+    'day trips from Purulia',
+    'picnic at Ajodhya Hill',
+    'Purulia day outing',
+    'family outing Purulia',
+    'weekend getaway Purulia',
+    'one day trip Purulia',
+    'Purulia sightseeing',
+    'nearby attractions Ajodhya Hill',
+    'day package resort Purulia',
+    'lounge day pass Purulia',
   ],
   alternates: {
-    canonical: 'https://hotelsuryabellacasa.com/events/day-trips',
+    canonical: 'https://thedivineoasisresort.com/events/day-trips',
   },
   robots: {
     index: true,
@@ -30,19 +30,19 @@ export const metadata: Metadata = {
     googleBot: { index: true, follow: true, 'max-image-preview': 'large', 'max-snippet': -1 },
   },
   openGraph: {
-    title: 'Day Trips & Picnics in Purnea | Weekend Getaway Near Bus Stand',
+    title: 'Day Trips & Weekend Getaways at Ajodhya Hill | The Divine Oasis, Purulia',
     description:
-      'Plan a family day trip or picnic in Purnea at Hotel Surya Bella Casa near Bus Stand. Lounge access, buffet lunch, city tours. Book your day out in Purnea.',
-    url: 'https://hotelsuryabellacasa.com/events/day-trips',
-    siteName: 'Hotel Surya Bella Casa',
+      'Plan a family day trip or weekend getaway at The Divine Oasis atop Ajodhya Hill, Purulia. Hilltop lounge access, organic farm lunch, forest trails. Book your day out in Purulia.',
+    url: 'https://thedivineoasisresort.com/events/day-trips',
+    siteName: 'The Divine Oasis',
     type: 'website',
-    images: [{ url: 'https://bookonelocal.in/cdn/IMG_3809.avif', width: 1200, height: 630, alt: 'Day Trips & Picnics in Purnea - Hotel Surya Bella Casa' }],
+    images: [{ url: 'https://bookonelocal.in/cdn/2026-05-13-064437235-WhatsApp Image 2026-05-11 at 15.42.11 (1).jpg', width: 1200, height: 630, alt: 'Day Trips & Weekend Getaways at The Divine Oasis Ajodhya Hill' }],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Day Trips & Picnics in Purnea | Weekend Getaway',
-    description: 'Family day trip packages in Purnea near Bus Stand. Lounge access, buffet lunch & city tours at Hotel Surya Bella Casa.',
-    images: ['https://bookonelocal.in/cdn/IMG_3809.avif'],
+    title: 'Day Trips & Weekend Getaways at Ajodhya Hill | The Divine Oasis',
+    description: 'Family day trip packages in Purulia at Ajodhya Hill. Hilltop lounge access, organic farm lunch & forest trails at The Divine Oasis.',
+    images: ['https://bookonelocal.in/cdn/2026-05-13-064437235-WhatsApp Image 2026-05-11 at 15.42.11 (1).jpg'],
   },
 };
 
@@ -52,17 +52,17 @@ export default function DayTripsPage() {
     {
       "@context": "https://schema.org",
       "@type": "TouristInformationCenter",
-      "name": "Hotel Surya Bella Casa Day Outing & Picnic Purnea",
-      "description": "Plan day trips and picnics in Purnea at Hotel Surya Bella Casa near Bus Stand. Weekend getaway, family outing, pool day pass with lunch.",
+      "name": "The Divine Oasis Day Outing & Picnic Ajodhya Hill",
+      "description": "Plan day trips and weekend getaways at The Divine Oasis atop Ajodhya Hill, Purulia. Family outing packages with organic farm lunch, hilltop lounge access, and forest trails.",
       "address": {
         "@type": "PostalAddress",
-        "streetAddress": "Suryalok Complex, Opposite Vikass Market, Near Bus Stand",
-        "addressLocality": "Purnea",
-        "addressRegion": "Bihar",
-        "postalCode": "854301",
+        "streetAddress": "643G+4Q, Hilltop",
+        "addressLocality": "Ajodhya",
+        "addressRegion": "West Bengal",
+        "postalCode": "723152",
         "addressCountry": "IN"
       },
-      "telephone": "+91 9835923601"
+      "telephone": "+91 99039 89950"
     },
     {
       "@context": "https://schema.org",
@@ -70,31 +70,32 @@ export default function DayTripsPage() {
       "mainEntity": [
         {
           "@type": "Question",
-          "name": "Can I plan a day picnic in Purnea near Bus Stand?",
+          "name": "Can I plan a day picnic at Ajodhya Hill, Purulia?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Yes, Hotel Surya Bella Casa offers day trips and picnics in Purnea near Bus Stand with lunch packages, lounge access, and city tours from 10 AM to 6 PM."
+            "text": "Yes, The Divine Oasis offers day trips and picnics at Ajodhya Hill, Purulia with organic farm lunch packages, hilltop lounge access, and forest trails from 10 AM to 6 PM."
           }
         },
         {
           "@type": "Question",
-          "name": "What is the best weekend getaway in Purnea?",
+          "name": "What is the best weekend getaway in Purulia?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Hotel Surya Bella Casa is the best weekend getaway in Purnea near Bus Stand with day outing packages, family-friendly activities, and delicious lunch options."
+            "text": "The Divine Oasis is the best weekend getaway in Purulia at Ajodhya Hill with day outing packages, family-friendly activities, forest trails, and delicious organic farm lunch options."
           }
         },
         {
           "@type": "Question",
-          "name": "Is there a one day trip available in Purnea?",
+          "name": "Is there a one day trip available at Ajodhya Hill?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Yes, Hotel Surya Bella Casa offers one day trip packages in Purnea near Bus Stand including lunch, lounge access, and guided city tours for families and groups."
+            "text": "Yes, The Divine Oasis offers one day trip packages at Ajodhya Hill, Purulia including organic farm lunch, hilltop lounge access, and guided forest trails for families and groups."
           }
         }
       ]
     }
   ];
+
 
   return (
     <main className="bg-cream min-h-screen">
@@ -105,10 +106,10 @@ export default function DayTripsPage() {
       />
 
       <CinematicHero 
-        label="Day Trips & Picnics in Purnea - Weekend Getaway Near Bus Stand"
-        title="Day Trips & Picnics in Purnea - Weekend Getaway, Family Outing & Pool Day Pass"
-        tagline="Plan day trips and picnics in Purnea at Hotel Surya Bella Casa near Bus Stand. Weekend getaway, family outing, pool day pass with lunch. Best one day trip in Purnea for families and groups."
-        image='/images/room2.jpeg'
+        label="Day Trips & Weekend Getaways at Ajodhya Hill - The Divine Oasis, Purulia"
+        title="Day Trips & Weekend Getaways at Ajodhya Hill - The Divine Oasis, Purulia"
+        tagline="Plan day trips and weekend getaways at The Divine Oasis atop Ajodhya Hill, Purulia. Hilltop lounge access, organic farm lunch, forest trails. Best one day trip in Purulia for families and groups."
+        image='https://bookonelocal.in/cdn/2026-05-13-064437235-WhatsApp Image 2026-05-11 at 15.42.11 (1).jpg'
       />
 
       <section className="py-24">
@@ -118,7 +119,7 @@ export default function DayTripsPage() {
               <SectionLabel className="mb-6">The Escape</SectionLabel>
               <h2 className="font-display text-4xl md:text-6xl italic text-forest mb-8">Quick Retreat, Lasting Memories</h2>
               <p className="font-serif text-lg text-taupe leading-relaxed mb-10">
-                Our day-out packages are designed for those seeking a quick escape from their busy schedules. Enjoy access to our comfortable lounges, local dining options, and customized event support.
+                Our day-out packages are designed for those seeking a quick escape from their busy schedules. Enjoy access to our hilltop lounge, organic farm dining, and customized event support at Ajodhya Hill.
               </p>
               
               <div className="grid grid-cols-2 gap-8 mb-10">
@@ -130,12 +131,12 @@ export default function DayTripsPage() {
                 <div className="flex flex-col gap-3">
                   <Utensils className="text-gold" size={24} />
                   <p className="font-sans text-[11px] uppercase tracking-widest text-gold">Includes</p>
-                  <p className="font-serif text-forest text-xl italic">Lunch & Tea</p>
+                  <p className="font-serif text-forest text-xl italic">Organic Farm Lunch & Tea</p>
                 </div>
               </div>
 
               <a 
-                href="https://bookone.io/Hotel-Bella-Casa?bookingEngine=true" 
+                href="https://bookone.io/The-Divine-Oasis?bookingEngine=true" 
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-3 bg-forest text-ivory font-sans text-[11px] uppercase tracking-[0.2em] px-10 py-5 hover:bg-forest/90 transition-all rounded-sm"
@@ -145,7 +146,7 @@ export default function DayTripsPage() {
               </a>
             </div>
             <div className="relative aspect-square">
-               <Image src='/images/exterior.jpeg' alt="Day Trips & Picnics in Purnea - Weekend Getaway Near Bus Stand | Hotel Surya Bella Casa" fill className="object-cover rounded-sm shadow-2xl" />
+               <Image src='https://bookonelocal.in/cdn/2026-05-13-064437235-WhatsApp Image 2026-05-11 at 15.42.11 (1).jpg' alt="Day Trips & Weekend Getaways at The Divine Oasis Ajodhya Hill" fill className="object-cover rounded-sm shadow-2xl" />
             </div>
           </div>
 
@@ -156,9 +157,9 @@ export default function DayTripsPage() {
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
             {[
-              { icon: Sun, title: 'Comfort & Lounge Access', desc: 'Full access to our premium air-conditioned rooms and guest lounges.' },
-              { icon: Utensils, title: 'Lavish Buffet Lunch', desc: 'A wide spread of Indian and global cuisines prepared by our expert chefs.' },
-              { icon: MapPin, title: 'City Tours', desc: 'Guided local sightseeing and shopping excursions around Purnea town.' }
+              { icon: Sun, title: 'Hilltop Lounge Access', desc: 'Full access to our scenic hilltop seating area with forest views.' },
+              { icon: Utensils, title: 'Organic Farm Lunch', desc: 'A delicious spread of vegetarian thali prepared from our own organic farm.' },
+              { icon: MapPin, title: 'Forest Trails', desc: 'Guided nature walks and trails to Ajodhya Hills & Forest Reserve (0.4 km).' }
             ].map((feature, i) => (
               <div key={i} className="text-center p-10 bg-white border border-gold/10 hover:shadow-warm-lg transition-all duration-500 group">
                 <feature.icon className="text-gold mx-auto mb-8 group-hover:scale-110 transition-transform" size={40} />

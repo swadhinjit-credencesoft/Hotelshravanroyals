@@ -1,4 +1,4 @@
-import ExperiencesGrid from '@/components/sections/ExperiencesGrid'
+﻿import ExperiencesGrid from '@/components/sections/ExperiencesGrid'
 import CinematicHero from '@/components/ui/CinematicHero'
 import SectionLabel from '@/components/ui/SectionLabel'
 import Image from 'next/image'
@@ -6,18 +6,20 @@ import { MapPin } from 'lucide-react'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Experiences & Local Attractions',
-  description: 'Explore Purnea attractions near Hotel Surya Bella Casa. Jalalgarh Fort, Puran Devi Temple, Kali Mandir, and local sightseeing guide for guests.',
+  title: 'Forest Experiences at Ajodhya Hill | The Divine Oasis, Purulia',
+  description: 'Explore forest trekking, heritage temples, dam picnics, and organic farm walks at The Divine Oasis atop Ajodhya Hill, Purulia. Curated nature & cultural experiences.',
   alternates: {
-    canonical: 'https://hotelsuryabellacasa.com/experiences',
+    canonical: 'https://thedivineoasisresort.com/experiences',
   },
   keywords: [
-    'things to do in purnea',
-    'purnea experiences',
-    'purnea tourist attractions',
-    'sightseeing Purnea',
-    'local experiences purnea',
-    'nearby places Purnea hotel',
+    'things to do in Purulia',
+    'Ajodhya Hill experiences',
+    'Purulia tourist attractions',
+    'sightseeing Ajodhya Hill',
+    'local experiences Purulia',
+    'forest trekking Purulia',
+    'Thurga Dam day trip',
+    'Deulghata temples Purulia',
   ],
 }
 
@@ -35,13 +37,13 @@ export default function ExperiencesPage() {
                 '@type': 'ListItem',
                 position: 1,
                 name: 'Home',
-                item: 'https://hotelsuryabellacasa.com',
+                item: 'https://thedivineoasisresort.com',
               },
               {
                 '@type': 'ListItem',
                 position: 2,
                 name: 'Experiences',
-                item: 'https://hotelsuryabellacasa.com/experiences',
+                item: 'https://thedivineoasisresort.com/experiences',
               },
             ],
           })
@@ -49,10 +51,10 @@ export default function ExperiencesPage() {
       />
 
       <CinematicHero 
-        label="Beyond the Room"
-        title="Explore Purnea"
-        tagline="Discover the rich history, spiritual landmarks, and commercial hubs of Purnea, Bihar, during your comfortable stay with us."
-        image='https://bookonelocal.in/cdn/IMG_3739.avif'
+        label="Beyond the Cottage"
+        title="Experiences at Ajodhya Hill"
+        tagline="Discover forest trekking, heritage temples, dam picnics, and organic farm walks at The Divine Oasis atop Ajodhya Hill, Purulia."
+        image='https://bookonelocal.in/cdn/2026-05-13-064432393-WhatsApp Image 2026-05-11 at 15.42.15.jpg'
       />
 
       <section className="py-32 bg-forest text-ivory/80">
@@ -60,19 +62,19 @@ export default function ExperiencesPage() {
             <div>
                <SectionLabel light className="mb-6">Local Accessibility</SectionLabel>
                <h2 className="font-display text-4xl md:text-6xl italic text-ivory mb-8">
-                  Central Stays & <br /> Easy Sightseeing
+                  Forest Stays & <br /> Nature Sightseeing
                </h2>
                 <p className="font-sans text-lg leading-relaxed mb-8">
-                  Hotel Surya Bella Casa stands centrally in Suryalok Complex. Enjoy effortless access to Purnea Bus Stand and regional transport, making it simple to plan visits to the historic Jalalgarh Fort or sacred temples like Puran Devi and Kali Mandir.
+                  The Divine Oasis sits atop Ajodhya Hill, just 0.4 km from the Ajodhya Hills & Forest Reserve. Enjoy effortless access to Thurga Dam, Deulghata Temples, and organic farm walks, making it simple to plan your Purulia nature escape.
                 </p>
                <a href="/gallery" className="inline-block bg-gold text-[#1a1004] font-sans text-[11px] uppercase tracking-[0.2em] px-12 py-5 hover:bg-gold-light transition-all">
-                  View Gallery
+                 View Gallery
                </a>
             </div>
             <div className="relative aspect-[4/3] border border-ivory/10">
                <Image 
-                  src='https://bookonelocal.in/cdn/IMG_3764.avif' 
-                  alt="Comfortable lounge and lobby space at Surya Bella Casa" 
+                  src='https://bookonelocal.in/cdn/2026-05-13-064432393-WhatsApp Image 2026-05-11 at 15.42.15.jpg' 
+                  alt="The Divine Oasis Ajodhya Hill - forest resort exterior" 
                   fill
                   className="object-cover transition-all duration-1000"
                />
@@ -93,9 +95,9 @@ export default function ExperiencesPage() {
                 "position": 1,
                 "item": {
                   "@type": "TouristAttraction",
-                  "name": "Jalalgarh Fort",
-                  "description": "Historic 300-year-old fort displaying a unique blend of Hindu and Islamic architecture.",
-                  "location": { "@type": "Place", "name": "Jalalgarh, Purnea, Bihar" }
+                  "name": "Ajodhya Hills & Forest Reserve",
+                  "description": "Protected forest reserve with trekking trails, wildlife spotting, and hilltop views, 0.4 km from The Divine Oasis.",
+                  "location": { "@type": "Place", "name": "Ajodhya Hill, Purulia, West Bengal" }
                 }
               },
               {
@@ -103,9 +105,9 @@ export default function ExperiencesPage() {
                 "position": 2,
                 "item": {
                   "@type": "TouristAttraction",
-                  "name": "Puran Devi Temple",
-                  "description": "Ancient temple dedicated to Goddess Puran Devi, the namesake of Purnea.",
-                  "location": { "@type": "Place", "name": "Purnea, Bihar" }
+                  "name": "Thurga Dam",
+                  "description": "Scenic dam and reservoir surrounded by hills, ideal for picnics and photography, 13.8 km from The Divine Oasis.",
+                  "location": { "@type": "Place", "name": "Thurga Dam, Purulia, West Bengal" }
                 }
               },
               {
@@ -113,9 +115,9 @@ export default function ExperiencesPage() {
                 "position": 3,
                 "item": {
                   "@type": "TouristAttraction",
-                  "name": "Kali Mandir Temple",
-                  "description": "Revered historic temple in Purnea dedicated to Goddess Kali.",
-                  "location": { "@type": "Place", "name": "Purnea, Bihar" }
+                  "name": "Deulghata Temples",
+                  "description": "Ancient stone temples of eastern India, UNESCO heritage candidate, 33.7 km from The Divine Oasis.",
+                  "location": { "@type": "Place", "name": "Deulghata, Purulia, West Bengal" }
                 }
               }
             ]
@@ -128,7 +130,7 @@ export default function ExperiencesPage() {
       {/* Nearby Attractions */}
       <section className="py-32 bg-cream">
          <div className="max-w-[1600px] mx-auto px-6 md:px-10 text-center">
-            <SectionLabel className="justify-center mb-6">Explore Purnea</SectionLabel>
+            <SectionLabel className="justify-center mb-6">Explore Purulia</SectionLabel>
             <h2 className="font-display text-4xl md:text-6xl italic text-forest mb-16">Nearby Attractions</h2>
             
             <div className="grid grid-cols-1 md:grid-cols-3 gap-12 text-left">
@@ -136,12 +138,12 @@ export default function ExperiencesPage() {
                   <div className="w-14 h-14 bg-gold/5 rounded-full flex items-center justify-center mb-8 group-hover:bg-gold/10 transition-colors">
                      <MapPin className="text-gold" size={24} />
                   </div>
-                  <h3 className="font-display text-3xl italic text-forest mb-4">Jalalgarh Fort</h3>
-                  <p className="font-serif text-taupe leading-relaxed mb-6 text-lg">A 300-year-old historic fort exhibiting a mix of Hindu and Islamic styles, built to protect the region from invaders.</p>
+                  <h3 className="font-display text-3xl italic text-forest mb-4">Ajodhya Hills & Forest Reserve</h3>
+                  <p className="font-serif text-taupe leading-relaxed mb-6 text-lg">Protected forest reserve with trekking trails, wildlife spotting, and panoramic hilltop views â€” just 0.4 km from The Divine Oasis.</p>
                   <div className="flex items-center gap-2 pt-6 border-t border-gold/10">
-                    <span className="font-sans text-[10px] uppercase tracking-widest text-gold font-bold">25 mins drive</span>
+                    <span className="font-sans text-[10px] uppercase tracking-widest text-gold font-bold">0.4 km away</span>
                     <span className="w-1 h-1 rounded-full bg-gold/30" />
-                    <span className="font-sans text-[10px] uppercase tracking-widest text-taupe/60">History & Heritage</span>
+                    <span className="font-sans text-[10px] uppercase tracking-widest text-taupe/60">Nature & Trekking</span>
                   </div>
                </div>
 
@@ -149,12 +151,12 @@ export default function ExperiencesPage() {
                   <div className="w-14 h-14 bg-gold/5 rounded-full flex items-center justify-center mb-8 group-hover:bg-gold/10 transition-colors">
                      <MapPin className="text-gold" size={24} />
                   </div>
-                  <h3 className="font-display text-3xl italic text-forest mb-4">Puran Devi Temple</h3>
-                  <p className="font-serif text-taupe leading-relaxed mb-6 text-lg">One of the oldest and most important spiritual landmarks in Purnea, believed to be the origin of the city&apos;s name.</p>
+                  <h3 className="font-display text-3xl italic text-forest mb-4">Thurga Dam</h3>
+                  <p className="font-serif text-taupe leading-relaxed mb-6 text-lg">Scenic reservoir surrounded by Purulia hills, perfect for picnics, photography, and peaceful evening walks â€” 13.8 km away.</p>
                   <div className="flex items-center gap-2 pt-6 border-t border-gold/10">
-                    <span className="font-sans text-[10px] uppercase tracking-widest text-gold font-bold">10 mins drive</span>
+                    <span className="font-sans text-[10px] uppercase tracking-widest text-gold font-bold">13.8 km</span>
                     <span className="w-1 h-1 rounded-full bg-gold/30" />
-                    <span className="font-sans text-[10px] uppercase tracking-widest text-taupe/60">Spiritual & Historic</span>
+                    <span className="font-sans text-[10px] uppercase tracking-widest text-taupe/60">Water & Leisure</span>
                   </div>
                </div>
 
@@ -162,12 +164,12 @@ export default function ExperiencesPage() {
                   <div className="w-14 h-14 bg-gold/5 rounded-full flex items-center justify-center mb-8 group-hover:bg-gold/10 transition-colors">
                      <MapPin className="text-gold" size={24} />
                   </div>
-                  <h3 className="font-display text-3xl italic text-forest mb-4">Kali Mandir Temple</h3>
-                  <p className="font-serif text-taupe leading-relaxed mb-6 text-lg">A highly revered temple in Purnea town dedicated to Goddess Kali, offering a peaceful atmosphere for visitors.</p>
+                  <h3 className="font-display text-3xl italic text-forest mb-4">Deulghata Temples</h3>
+                  <p className="font-serif text-taupe leading-relaxed mb-6 text-lg">Ancient stone temples of eastern India, UNESCO heritage candidate, showcasing unique brick architecture â€” 33.7 km away.</p>
                   <div className="flex items-center gap-2 pt-6 border-t border-gold/10">
-                    <span className="font-sans text-[10px] uppercase tracking-widest text-gold font-bold">5 mins drive</span>
+                    <span className="font-sans text-[10px] uppercase tracking-widest text-gold font-bold">33.7 km</span>
                     <span className="w-1 h-1 rounded-full bg-gold/30" />
-                    <span className="font-sans text-[10px] uppercase tracking-widest text-taupe/60">Heritage & Devotion</span>
+                    <span className="font-sans text-[10px] uppercase tracking-widest text-taupe/60">Heritage & Culture</span>
                   </div>
                </div>
             </div>

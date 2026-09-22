@@ -1,22 +1,23 @@
-import type { Metadata } from 'next'
+﻿import type { Metadata } from 'next'
 import SectionLabel from '@/components/ui/SectionLabel';
 import GoldDivider from '@/components/ui/GoldDivider';
 import { siteConfig } from '@/data/site';
-import { MapPin, Phone, Mail, Train, Car, MessageCircle } from 'lucide-react';
+import { MapPin, Phone, Mail, Train, Car, MessageCircle, Clock } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: 'Contact & Directions',
+  title: 'Contact & Directions | The Divine Oasis, Ajodhya Hill, Purulia',
   description:
-    'Contact Hotel Surya Bella Casa in Purnea. Call +91 9835923601, WhatsApp, or email us. We are opposite Vikass Market near Bus Stand. Book direct for best rates.',
+    'Contact The Divine Oasis at Ajodhya Hill, Purulia. Call +91 99039 89950, WhatsApp, or email thedivineoasisresort@gmail.com. Located at 643G+4Q, Hilltop, Ajodhya, Purulia 723152.',
   keywords: [
-    'contact hotel surya bella casa purnea',
-    'hotel booking phone number Purnea',
-    'hotel near bus stand purnea contact',
-    'hotel reservation Purnea',
-    'whatsapp hotel purnea',
+    'contact The Divine Oasis Purulia',
+    'resort booking phone number Purulia',
+    'resort near Ajodhya Hill Purulia contact',
+    'resort reservation Purulia',
+    'whatsapp resort Purulia',
+    'directions Ajodhya Hill resort',
   ],
   alternates: {
-    canonical: 'https://hotelsuryabellacasa.com/contact',
+    canonical: 'https://thedivineoasisresort.com/contact',
   },
 }
 
@@ -34,13 +35,13 @@ export default function ContactPage() {
                 '@type': 'ListItem',
                 position: 1,
                 name: 'Home',
-                item: 'https://hotelsuryabellacasa.com',
+                item: 'https://thedivineoasisresort.com',
               },
               {
                 '@type': 'ListItem',
                 position: 2,
                 name: 'Contact',
-                item: 'https://hotelsuryabellacasa.com/contact',
+                item: 'https://thedivineoasisresort.com/contact',
               },
             ],
           })
@@ -63,24 +64,24 @@ export default function ContactPage() {
           __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "LodgingBusiness",
-            "name": "Hotel Surya Bella Casa",
-            "image": "https://hotelsuryabellacasa.com/images/room2.jpeg",
+            "name": "The Divine Oasis",
+            "image": "https://bookonelocal.in/cdn/2026-05-13-064432393-WhatsApp Image 2026-05-11 at 15.42.15.jpg",
             "address": {
               "@type": "PostalAddress",
-              "streetAddress": "Suryalok Complex, Opposite Vikass Market, Near Bus Stand",
-              "addressLocality": "Purnea",
-              "addressRegion": "Bihar",
-              "postalCode": "854301",
+              "streetAddress": "643G+4Q, Hilltop",
+              "addressLocality": "Ajodhya",
+              "addressRegion": "West Bengal",
+              "postalCode": "723152",
               "addressCountry": "IN"
             },
             "geo": {
               "@type": "GeoCoordinates",
-              "latitude": 25.7771,
-              "longitude": 87.4753
+              "latitude": 23.2028654,
+              "longitude": 86.1268909
             },
-            "url": "https://hotelsuryabellacasa.com/contact",
-            "telephone": siteConfig.phone,
-            "email": siteConfig.email,
+            "url": "https://thedivineoasisresort.com/contact",
+            "telephone": "+91 99039 89950",
+            "email": "thedivineoasisresort@gmail.com",
             "openingHoursSpecification": {
               "@type": "OpeningHoursSpecification",
               "dayOfWeek": [
@@ -108,7 +109,7 @@ export default function ContactPage() {
               <h2 className="font-display text-3xl italic text-forest mb-8">Quick Connect</h2>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 mb-12">
                  <a 
-                  href={`https://wa.me/919835923601`} 
+                  href="https://wa.me/91990398950" 
                   target="_blank" 
                   rel="noopener noreferrer" 
                   className="flex items-center justify-center gap-3 bg-green-600 text-white font-sans text-[11px] uppercase tracking-[0.2em] py-5 rounded-sm hover:bg-green-700 transition-all shadow-md group"
@@ -117,113 +118,117 @@ export default function ContactPage() {
                     WhatsApp Us Now
                  </a>
                  <a 
-                  href={`tel:${siteConfig.phone}`} 
+                  href="tel:+91990398950" 
                   className="flex items-center justify-center gap-3 bg-forest text-ivory font-sans text-[11px] uppercase tracking-[0.2em] py-5 rounded-sm hover:bg-forest/90 transition-all shadow-md group"
                  >
                     <Phone size={18} className="group-hover:scale-110 transition-transform" />
                     Call Concierge
                  </a>
-              </div>
+               </div>
 
-              <div className="space-y-8">
-                <div className="flex items-start gap-4">
-                  <Mail className="text-gold mt-1" size={20} />
-                  <div>
-                    <p className="font-sans text-[11px] uppercase tracking-widest text-taupe/60 mb-1">Email Enquiry</p>
-                    <a href={`mailto:${siteConfig.email}`} className="font-serif text-lg text-forest hover:text-gold transition-colors underline underline-offset-4 decoration-gold/30">{siteConfig.email}</a>
-                    <p className="font-sans text-[9px] text-taupe/60 mt-1 uppercase tracking-tighter">Response time: &lt; 2 Hours</p>
-                  </div>
-                </div>
-
-                <div className="flex items-start gap-4">
-                  <MapPin className="text-gold mt-1" size={20} />
-                  <div>
-                    <p className="font-sans text-[11px] uppercase tracking-widest text-taupe/60 mb-1">Location</p>
-                    <p className="font-serif text-lg text-forest leading-relaxed">
-                      {siteConfig.address}
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <GoldDivider className="mb-16" />
-
-            <div>
-              <h2 className="font-display text-3xl italic text-forest mb-8">Detailed Directions</h2>
-              
-              <div className="space-y-10">
-                <div className="group">
-                  <div className="flex items-center gap-3 mb-4">
-                    <div className="w-8 h-8 rounded-full bg-gold/10 flex items-center justify-center text-gold group-hover:bg-gold group-hover:text-white transition-colors">
-                      <Car size={16} />
+               <div className="space-y-8">
+                 <div className="flex items-start gap-4">
+                   <Mail className="text-gold mt-1" size={20} />
+                   <div>
+                     <p className="font-sans text-[11px] uppercase tracking-widest text-taupe/60 mb-1">Email Enquiry</p>
+                     <a href="mailto:thedivineoasisresort@gmail.com" className="font-serif text-lg text-forest hover:text-gold transition-colors underline underline-offset-4 decoration-gold/30">thedivineoasisresort@gmail.com</a>
+<p className="font-sans text-[9px] text-taupe/60 mt-1 uppercase tracking-tighter">Response time: &lt; 2 Hours</p>
                     </div>
-                    <h3 className="font-sans text-sm uppercase tracking-widest text-forest font-bold">From Patna</h3>
-                  </div>
-                  <div className="pl-11 space-y-3 font-serif text-base text-taupe leading-relaxed">
-                    <p>Take <strong>NH 31</strong> eastwards towards Purnea via Begusarai, Khagaria, and Katihar.</p>
-                    <p>The drive is approximately 230 km and takes about 5-6 hours. Hotel Surya Bella Casa is located at Suryalok Complex, opposite Vikass Market, near Bus Stand.</p>
-                  </div>
-                </div>
+                 </div>
 
-                <div className="group">
-                  <div className="flex items-center gap-3 mb-4">
-                    <div className="w-8 h-8 rounded-full bg-gold/10 flex items-center justify-center text-gold group-hover:bg-gold group-hover:text-white transition-colors">
-                      <Car size={16} />
-                    </div>
-                    <h3 className="font-sans text-sm uppercase tracking-widest text-forest font-bold">From Siliguri</h3>
-                  </div>
-                  <div className="pl-11 space-y-3 font-serif text-base text-taupe leading-relaxed">
-                    <p>Take <strong>NH 27</strong> south to <strong>NH 31</strong>, then proceed west towards Purnea.</p>
-                    <p>The drive is approximately 200 km and takes about 4-5 hours. Hotel Surya Bella Casa is situated in the heart of the city near the main bus stand.</p>
-                  </div>
-                </div>
+                 <div className="flex items-start gap-4">
+                   <MapPin className="text-gold mt-1" size={20} />
+                   <div>
+                     <p className="font-sans text-[11px] uppercase tracking-widest text-taupe/60 mb-1">Location</p>
+                     <p className="font-serif text-lg text-forest leading-relaxed">
+                       {siteConfig.address}
+                     </p>
+                   </div>
+                 </div>
+               </div>
+             </div>
 
-                <div className="group">
-                  <div className="flex items-center gap-3 mb-4">
-                    <div className="w-8 h-8 rounded-full bg-gold/10 flex items-center justify-center text-gold group-hover:bg-gold group-hover:text-white transition-colors">
-                      <Train size={16} />
-                    </div>
-                    <h3 className="font-sans text-sm uppercase tracking-widest text-forest font-bold">By Railway</h3>
-                  </div>
-                  <div className="pl-11 space-y-3 font-serif text-base text-taupe leading-relaxed">
-                    <p>The nearest major railway station is <strong>Purnea Junction (PRNA)</strong>, well-connected to Patna, Kolkata, and New Jalpaiguri.</p>
-                    <p>From the station, Hotel Surya Bella Casa is approximately 1 km via Bus Stand Road. Auto-rickshaws and cycle-rickshaws are readily available.</p>
-                  </div>
-                </div>
+             <GoldDivider className="mb-16" />
 
-                {/* <div className="bg-[#fdfcf8] p-8 border border-gold/20 rounded-sm shadow-sm">
-                  <h4 className="font-sans text-[11px] uppercase tracking-widest text-gold mb-4 flex items-center gap-2"><Clock size={14} /> Arrival Essentials</h4>
-                  <ul className="font-serif text-sm text-taupe space-y-3">
-                    <li className="flex gap-3"><span className="text-gold">âœ”</span> Secure Valet Parking (Complimentary)</li>
-                    <li className="flex gap-3"><span className="text-gold">âœ”</span> Electric Vehicle Charging Points</li>
-                    <li className="flex gap-3"><span className="text-gold">âœ”</span> 24/7 Concierge for Route Guidance</li>
-                  </ul>
-                </div> */}
-              </div>
-            </div>
-          </div>
+             <div>
+               <h2 className="font-display text-3xl italic text-forest mb-8">Detailed Directions</h2>
+               
+               <div className="space-y-10">
+                 <div className="group">
+                   <div className="flex items-center gap-3 mb-4">
+                     <div className="w-8 h-8 rounded-full bg-gold/10 flex items-center justify-center text-gold group-hover:bg-gold group-hover:text-white transition-colors">
+                       <Car size={16} />
+                     </div>
+                     <h3 className="font-sans text-sm uppercase tracking-widest text-forest font-bold">From Kolkata</h3>
+                   </div>
+                   <div className="pl-11 space-y-3 font-serif text-base text-taupe leading-relaxed">
+                     <p>Take <strong>NH 19 (Old NH 2)</strong> west towards Asansol, then take NH 14 towards Purulia.</p>
+                     <p>The drive is approximately 280 km and takes about 5.5-6.5 hours. The Divine Oasis is located at Hilltop, Ajodhya, Purulia 723152.</p>
+                   </div>
+                 </div>
 
-          {/* Right Column: Contact Form & Map */}
-          <div>
-            {/* Embedded Map - Full width on mobile by removing parent padding/margin if needed */}
-            <div className="w-full aspect-[4/3] md:aspect-video lg:aspect-square relative overflow-hidden border-y md:border border-gold/20 md:rounded-sm grayscale hover:grayscale-0 transition-all duration-1000 shadow-inner">
-              <iframe 
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3595.8!2d87.4706!3d25.7689!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f2efc24c4a7af%3A0x0!2sHotel+Bella+Casa!5e0!3m2!1sen!2sin!4v1!5m2!1sen!2sin" 
-                width="100%" 
-                height="100%" 
-                style={{ border: 0 }} 
-                allowFullScreen={false} 
-                loading="lazy" 
-                referrerPolicy="no-referrer-when-downgrade"
-                title="Hotel Surya Bella Casa Map Location"
-              ></iframe>
-            </div>
-          </div>
+                 <div className="group">
+                   <div className="flex items-center gap-3 mb-4">
+                     <div className="w-8 h-8 rounded-full bg-gold/10 flex items-center justify-center text-gold group-hover:bg-gold group-hover:text-white transition-colors">
+                       <Car size={16} />
+                     </div>
+                     <h3 className="font-sans text-sm uppercase tracking-widest text-forest font-bold">From Ranchi</h3>
+                   </div>
+                   <div className="pl-11 space-y-3 font-serif text-base text-taupe leading-relaxed">
+                     <p>Take <strong>NH 20</strong> towards Purulia via Bundu and Tamar.</p>
+                     <p>The drive is approximately 110 km and takes about 2.5-3 hours. The Divine Oasis is situated at Ajodhya Hill, Purulia.</p>
+                   </div>
+                 </div>
 
-        </div>
-      </section>
+                 <div className="group">
+                   <div className="flex items-center gap-3 mb-4">
+                     <div className="w-8 h-8 rounded-full bg-gold/10 flex items-center justify-center text-gold group-hover:bg-gold group-hover:text-white transition-colors">
+                       <Train size={16} />
+                     </div>
+                     <h3 className="font-sans text-sm uppercase tracking-widest text-forest font-bold">By Railway</h3>
+                   </div>
+                   <div className="pl-11 space-y-3 font-serif text-base text-taupe leading-relaxed">
+                     <p>The nearest major railway station is <strong>Purulia Junction (PRR)</strong>, well-connected to Kolkata, Tatanagar, and Ranchi.</p>
+                     <p>From the station, The Divine Oasis is approximately 42.6 km via Purulia-Ajodhya Road. Taxis and auto-rickshaws are readily available.</p>
+                   </div>
+                 </div>
+
+                 <div className="group">
+                   <div className="flex items-center gap-3 mb-4">
+                     <div className="w-8 h-8 rounded-full bg-gold/10 flex items-center justify-center text-gold group-hover:bg-gold group-hover:text-white transition-colors">
+                       <Clock size={16} />
+                     </div>
+                     <h3 className="font-sans text-sm uppercase tracking-widest text-forest font-bold">By Air</h3>
+                   </div>
+                   <div className="pl-11 space-y-3 font-serif text-base text-taupe leading-relaxed">
+                     <p>The nearest airport is <strong>Netaji Subhas Chandra Bose International Airport (Kolkata)</strong>, approximately 280 km away.</p>
+                     <p>From the airport, take NH 19 towards Purulia (5.5-6.5 hours drive). Alternatively, fly to Birsa Munda Airport (Ranchi) - 110 km away (2.5-3 hours drive).</p>
+                   </div>
+                 </div>
+               </div>
+             </div>
+           </div>
+
+           {/* Right Column: Embedded Map */}
+           <div>
+             <div className="w-full aspect-[4/3] md:aspect-video lg:aspect-square relative overflow-hidden border-y md:border border-gold/20 md:rounded-sm grayscale hover:grayscale-0 transition-all duration-1000 shadow-inner">
+               <iframe 
+                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3642.5!2d86.1268!3d23.2028!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjMsMTIgwzAubG8gOCYsMTEgwzAubG8gNDQ!5e0!3m2!1sen!2sin!4v1!5m2!1sen!2sin" 
+                 width="100%" 
+                 height="100%" 
+                 style={{ border: 0 }} 
+                 allowFullScreen={false} 
+                 loading="lazy" 
+                 referrerPolicy="no-referrer-when-downgrade"
+                 title="The Divine Oasis Map Location"
+               ></iframe>
+             </div>
+           </div>
+
+         </div>
+       </section>
 
     </main>
   );
 }
+

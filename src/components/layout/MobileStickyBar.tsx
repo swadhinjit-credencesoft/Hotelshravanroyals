@@ -37,7 +37,7 @@ export default function MobileStickyBar() {
           </a>
           {/* Call Now */}
           <a
-            href="tel:+919835923601"
+            href="tel:+91990398950"
             onClick={() => trackPhoneClick('mobile_sticky_bar')}
             className="flex items-center justify-center gap-1 bg-gold/10 border border-gold/30 text-gold px-2.5 py-2 rounded-sm text-[9px] uppercase tracking-[0.1em] font-sans font-semibold hover:bg-gold/20 active:scale-95 transition-all"
             aria-label="Call hotel"

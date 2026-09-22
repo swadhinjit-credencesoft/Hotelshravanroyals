@@ -3,7 +3,7 @@ import { MetadataRoute } from 'next'
 // Required for Next.js static export (output: 'export')
 export const dynamic = 'force-static'
 
-const BASE_URL = 'https://hotelsuryabellacasa.com'
+const BASE_URL = 'https://thedivineoasisresort.com'
 
 export default function robots(): MetadataRoute.Robots {
   return {

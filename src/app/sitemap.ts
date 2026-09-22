@@ -4,38 +4,48 @@ import { galleryImages } from '@/data/gallery'
 
 export const dynamic = 'force-static'
 
-const BASE_URL = 'https://hotelsuryabellacasa.com'
+const BASE_URL = 'https://thedivineoasisresort.com'
 const TODAY = new Date().toISOString().slice(0, 10)
 
+const P1 = 'https://bookonelocal.in/cdn/2026-05-13-064432393-WhatsApp Image 2026-05-11 at 15.42.15.jpg'
+const P2 = 'https://bookonelocal.in/cdn/2026-05-13-064437235-WhatsApp Image 2026-05-11 at 15.42.11 (1).jpg'
+const P4 = 'https://bookonelocal.in/cdn/2026-05-13-064448375-WhatsApp Image 2026-05-11 at 15.42.13.jpg'
+const P7 = 'https://bookonelocal.in/cdn/2026-05-13-064459381-WhatsApp Image 2026-05-11 at 15.42.11.jpg'
+const P8 = 'https://bookonelocal.in/cdn/2026-05-13-064504242-WhatsApp Image 2026-05-11 at 15.42.12.jpg'
+const R3 = 'https://bookonelocal.in/cdn/2026-05-13-063550245-WhatsApp Image 2026-05-11 at 15.54.31 (1).jpg'
+const R4 = 'https://bookonelocal.in/cdn/2026-05-13-063648495-WhatsApp Image 2026-05-11 at 15.52.45 (1).jpg'
+const LUX = 'https://bookonelocal.in/cdn/2026-05-13-063018320-WhatsApp Image 2026-05-11 at 15.53.21.jpg'
+const MUD = 'https://bookonelocal.in/cdn/2026-05-13-063246599-WhatsApp Image 2026-05-11 at 15.52.07 (1).jpg'
+
 const localSeoPages = [
-  { url: `${BASE_URL}/hotel-near-Purnea-bus-stand`, lastModified: TODAY, changeFrequency: 'monthly' as const, priority: 0.8, images: ['https://bookonelocal.in/cdn/IMG_3815.avif'] },
-  { url: `${BASE_URL}/hotel-near-vikass-market`, lastModified: TODAY, changeFrequency: 'monthly' as const, priority: 0.8, images: ['https://bookonelocal.in/cdn/IMG_3808.avif'] },
-  { url: `${BASE_URL}/family-hotel-in-Purnea`, lastModified: TODAY, changeFrequency: 'monthly' as const, priority: 0.8, images: ['https://bookonelocal.in/cdn/IMG_3701.avif'] },
-  { url: `${BASE_URL}/business-hotel-in-Purnea`, lastModified: TODAY, changeFrequency: 'monthly' as const, priority: 0.8, images: ['https://bookonelocal.in/cdn/IMG_3703.avif'] },
-  { url: `${BASE_URL}/budget-hotel-in-Purnea`, lastModified: TODAY, changeFrequency: 'monthly' as const, priority: 0.8, images: ['https://bookonelocal.in/cdn/IMG_3815.avif'] },
+  { url: `${BASE_URL}/resort-near-ajodhya-hill`, lastModified: TODAY, changeFrequency: 'monthly' as const, priority: 0.8, images: [P1] },
+  { url: `${BASE_URL}/resort-near-baghmundi`, lastModified: TODAY, changeFrequency: 'monthly' as const, priority: 0.8, images: [P2] },
+  { url: `${BASE_URL}/family-resort-near-ajodhya-hill`, lastModified: TODAY, changeFrequency: 'monthly' as const, priority: 0.8, images: [MUD] },
+  { url: `${BASE_URL}/corporate-resort-in-purulia`, lastModified: TODAY, changeFrequency: 'monthly' as const, priority: 0.8, images: [LUX] },
+  { url: `${BASE_URL}/budget-cottage-resort-in-purulia`, lastModified: TODAY, changeFrequency: 'monthly' as const, priority: 0.8, images: [R4] },
 ]
 
 const blogArticles = [
-  'best-hotels-in-purnea-near-bus-stand',
-  'rooftop-restaurant-in-purnea',
-  'places-to-visit-in-purnea',
-  'banquet-hall-wedding-venue-in-purnea',
-  'business-hotel-in-purnea',
-  'family-hotel-in-purnea',
-  'luxury-hotel-in-Purnea',
-  'hotels-near-Purnea-railway-station',
-  'best-restaurant-in-Purnea',
-  'fine-dining-restaurant-in-Purnea',
-  'family-restaurant-in-Purnea',
-  'best-dinner-place-in-Purnea',
-  'wedding-venue-in-Purnea',
-  'birthday-party-venue-in-Purnea',
-  'corporate-event-venue-in-Purnea',
-  'things-to-do-in-Purnea',
-  'Purnea-travel-guide',
-  'local-food-guide-in-Purnea',
-  'shopping-in-Purnea',
-  'best-hotel-rooms-in-purnea',
+  'best-resorts-near-ajodhya-hill',
+  'organic-farm-dining-in-purulia',
+  'places-to-visit-in-ajodhya-hill',
+  'wedding-venue-in-purulia',
+  'corporate-offsite-resort-in-purulia',
+  'family-resort-in-ajodhya-hill',
+  'luxury-cottage-resort-in-purulia',
+  'resorts-near-purulia-railway-station',
+  'best-dining-near-ajodhya-hill',
+  'fine-dining-in-purulia',
+  'family-dining-in-purulia',
+  'best-dinner-place-in-purulia',
+  'outdoor-wedding-venue-in-purulia',
+  'birthday-party-resort-in-purulia',
+  'corporate-event-venue-in-purulia',
+  'things-to-do-in-purulia',
+  'purulia-travel-guide',
+  'local-food-guide-in-purulia',
+  'shopping-in-purulia',
+  'best-cottages-in-ajodhya-hill',
 ]
 
 const staticRoutes: MetadataRoute.Sitemap = [
@@ -49,33 +59,33 @@ const staticRoutes: MetadataRoute.Sitemap = [
   { url: `${BASE_URL}/events/parties`, lastModified: TODAY, changeFrequency: 'monthly', priority: 0.8 },
   { url: `${BASE_URL}/events/corporate`, lastModified: TODAY, changeFrequency: 'monthly', priority: 0.8 },
   { url: `${BASE_URL}/events/day-trips`, lastModified: TODAY, changeFrequency: 'monthly', priority: 0.7 },
-  { url: `${BASE_URL}/about`, lastModified: TODAY, changeFrequency: 'monthly', priority: 0.7, images: ['https://bookonelocal.in/cdn/IMG_3815.avif', 'https://bookonelocal.in/cdn/IMG_3808.avif'] },
+  { url: `${BASE_URL}/about`, lastModified: TODAY, changeFrequency: 'monthly', priority: 0.7, images: [P1, P2] },
   { url: `${BASE_URL}/contact`, lastModified: TODAY, changeFrequency: 'monthly', priority: 0.7 },
   { url: `${BASE_URL}/blog`, lastModified: TODAY, changeFrequency: 'weekly', priority: 0.7 },
   { url: `${BASE_URL}/offers`, lastModified: TODAY, changeFrequency: 'weekly', priority: 0.7 },
   ...localSeoPages,
   ...blogArticles.map(slug => {
     const imageMap: Record<string, string[]> = {
-      'best-hotels-in-purnea-near-bus-stand': ['https://bookonelocal.in/cdn/IMG_3815.avif'],
-      'rooftop-restaurant-in-purnea': ['https://bookonelocal.in/cdn/IMG_3739.avif', 'https://bookonelocal.in/cdn/IMG_3808.avif'],
-      'places-to-visit-in-purnea': ['https://bookonelocal.in/cdn/IMG_3809.avif', 'https://hotelsuryabellacasa.com/purneacity.jpg'],
-      'banquet-hall-wedding-venue-in-purnea': ['https://bookonelocal.in/cdn/IMG_3766.avif'],
-      'business-hotel-in-purnea': ['https://bookonelocal.in/cdn/IMG_3709.jpeg', 'https://bookonelocal.in/cdn/IMG_3703.avif'],
-      'family-hotel-in-purnea': ['https://bookonelocal.in/cdn/IMG_3701.avif', 'https://bookonelocal.in/cdn/IMG_3764.avif'],
-      'luxury-hotel-in-Purnea': ['https://bookonelocal.in/cdn/IMG_3808.avif'],
-      'hotels-near-Purnea-railway-station': ['https://bookonelocal.in/cdn/IMG_3791.avif'],
-      'best-restaurant-in-Purnea': ['https://bookonelocal.in/cdn/IMG_3808.avif'],
-      'fine-dining-restaurant-in-Purnea': ['https://bookonelocal.in/cdn/IMG_3784.avif'],
-      'family-restaurant-in-Purnea': ['https://bookonelocal.in/cdn/IMG_3701.avif'],
-      'best-dinner-place-in-Purnea': ['https://bookonelocal.in/cdn/IMG_3766.avif'],
-      'wedding-venue-in-Purnea': ['https://bookonelocal.in/cdn/IMG_3764.avif'],
-      'birthday-party-venue-in-Purnea': ['https://bookonelocal.in/cdn/IMG_3709.jpeg'],
-      'corporate-event-venue-in-Purnea': ['https://bookonelocal.in/cdn/IMG_3703.avif'],
-      'things-to-do-in-Purnea': ['https://bookonelocal.in/cdn/IMG_3809.avif'],
-      'Purnea-travel-guide': ['https://bookonelocal.in/cdn/IMG_3815.avif'],
-      'local-food-guide-in-Purnea': ['https://bookonelocal.in/cdn/IMG_3739.avif'],
-      'shopping-in-Purnea': ['https://bookonelocal.in/cdn/IMG_3809.avif'],
-      'best-hotel-rooms-in-purnea': ['https://bookonelocal.in/cdn/IMG_3815.avif'],
+      'best-resorts-near-ajodhya-hill': [P1],
+      'organic-farm-dining-in-purulia': [P4],
+      'places-to-visit-in-ajodhya-hill': [P7],
+      'wedding-venue-in-purulia': [P4],
+      'corporate-offsite-resort-in-purulia': [LUX],
+      'family-resort-in-ajodhya-hill': [MUD],
+      'luxury-cottage-resort-in-purulia': [LUX],
+      'resorts-near-purulia-railway-station': [P1],
+      'best-dining-near-ajodhya-hill': [P8],
+      'fine-dining-in-purulia': [P2],
+      'family-dining-in-purulia': [MUD],
+      'best-dinner-place-in-purulia': [P4],
+      'outdoor-wedding-venue-in-purulia': [P4],
+      'birthday-party-resort-in-purulia': [P7],
+      'corporate-event-venue-in-purulia': [LUX],
+      'things-to-do-in-purulia': [P7],
+      'purulia-travel-guide': [P1],
+      'local-food-guide-in-purulia': [P4],
+      'shopping-in-purulia': [P7],
+      'best-cottages-in-ajodhya-hill': [R3],
     }
     return {
       url: `${BASE_URL}/blog/${slug}`,
@@ -85,9 +95,9 @@ const staticRoutes: MetadataRoute.Sitemap = [
       images: imageMap[slug] || [],
     }
   }),
-  { url: `${BASE_URL}/faq`, lastModified: TODAY, changeFrequency: 'monthly', priority: 0.8, images: ['https://bookonelocal.in/cdn/IMG_3815.avif'] },
-  { url: `${BASE_URL}/reviews`, lastModified: TODAY, changeFrequency: 'monthly', priority: 0.8, images: ['https://bookonelocal.in/cdn/IMG_3815.avif'] },
-  { url: `${BASE_URL}/how-to-reach`, lastModified: TODAY, changeFrequency: 'monthly', priority: 0.8, images: ['https://bookonelocal.in/cdn/IMG_3815.avif'] },
+  { url: `${BASE_URL}/faq`, lastModified: TODAY, changeFrequency: 'monthly', priority: 0.8, images: [P1] },
+  { url: `${BASE_URL}/reviews`, lastModified: TODAY, changeFrequency: 'monthly', priority: 0.8, images: [P1] },
+  { url: `${BASE_URL}/how-to-reach`, lastModified: TODAY, changeFrequency: 'monthly', priority: 0.8, images: [P1] },
   { url: `${BASE_URL}/privacy`, lastModified: TODAY, changeFrequency: 'yearly', priority: 0.3 },
   { url: `${BASE_URL}/cancellation`, lastModified: TODAY, changeFrequency: 'yearly', priority: 0.3 },
   { url: `${BASE_URL}/terms`, lastModified: TODAY, changeFrequency: 'yearly', priority: 0.3 },

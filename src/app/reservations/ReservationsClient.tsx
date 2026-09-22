@@ -62,8 +62,8 @@ function ReservationsContent({ fallbackRooms }: Props) {
     window.location.href = url
   }, [fromDate, toDate, noOfRooms, noOfPersons])
 
-  const hotelName = property?.name || 'Hotel Surya Bella Casa'
-  const hotelDesc = stripHtml(property?.businessDescription || 'Comfortable and budget-friendly stay in Purnea')
+  const hotelName = property?.name || 'The Divine Oasis'
+  const hotelDesc = stripHtml(property?.businessDescription || 'Comfortable and budget-friendly stay in Purulia')
   const hotelImages = property?.imageList || []
   const services: PropertyService[] = property?.propertyServicesList || []
   const addr = property?.address

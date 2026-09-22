@@ -5,10 +5,10 @@ import SectionLabel from '@/components/ui/SectionLabel';
 import GoldDivider from '@/components/ui/GoldDivider';
 
 const serviceDetails = [
-  { title: 'Cozy Bedding', description: 'Enjoy clean, soft linens and premium pillows in every room, ensuring a perfect night of sleep.' },
-  { title: 'Local Sightseeing', description: 'Our desk helps coordinate local transport and routes to Kali Mandir, Puran Devi, and historic monuments.' },
-  { title: 'Quiet Safe Stays', description: 'Enjoy a peaceful and secure environment opposite Vikass Market, ideal for business travelers.' },
-  { title: 'Pure Veg Ordering', description: 'Easily order vegetarian delicacies from top local restaurants directly to your room via partner apps.' },
+  { title: 'Cozy Bedding', description: 'Enjoy clean, soft linens and premium pillows in every cottage, ensuring a perfect night of sleep.' },
+  { title: 'Local Sightseeing', description: 'Our team helps plan trails to the Ajodhya Hills & Forest Reserve, Thurga Dam, and Deulghata Temples.' },
+  { title: 'Quiet Forest Stays', description: 'Enjoy a peaceful, secure setting in the heart of the forest atop Ajodhya Hill, ideal for families and nature lovers.' },
+  { title: 'Farm-to-Table Dining', description: 'Savour fresh veg thalis from our organic farm, plus barbeque evenings and drinks at our hilltop seating area.' },
 ];
 
 export default function ArtOfStaySection() {
@@ -19,7 +19,7 @@ export default function ArtOfStaySection() {
            <div>
               <SectionLabel className="mb-6">Our Standards</SectionLabel>
               <h2 className="font-display text-4xl md:text-6xl italic text-forest mb-8 leading-tight">
-                Best Family Hotel & Stay in Purnea
+                A Family Forest Stay Above Ajodhya Hill
               </h2>
               <GoldDivider className="mb-10" />
               <p className="font-serif text-xl text-taupe italic mb-12 leading-relaxed">

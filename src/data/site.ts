@@ -1,11 +1,16 @@
 export const siteConfig = {
-  name: 'Hotel Surya Bella Casa',
-  tagline: 'Comfortable and budget-friendly stay in Purnea',
-  description: 'Hotel Surya Bella Casa offers well-maintained rooms with essential amenities, making it ideal for both business and leisure travelers in Purnea, Bihar.',
-  phone: '+91 9835923601',
-  email: 'bellacasa561@gmail.com',
-  address: 'Suryalok Complex, Opposite Vikass Market, Near Bus Stand, Purnea, Bihar 854301',
-  social: { instagram: 'https://www.instagram.com/hotel.bellacasaa/', facebook: 'https://www.facebook.com/hotelsuryabellacasa', twitter: 'https://x.com/hotelsuryabellacasa', youtube: 'https://www.youtube.com/@hotelsuryabellacasa' },
+  name: 'The Divine Oasis',
+  tagline: 'A serene forest retreat atop Ajodhya Hill',
+  description: 'The Divine Oasis is a tranquil forest resort nestled atop Ajodhya Hill in Purulia, West Bengal. Stay in premium mud cottages and luxury suites surrounded by nature, with organic farm dining, barbeque evenings, and serene hilltop views.',
+  phone: '+91 99039 89950',
+  email: 'thedivineoasisresort@gmail.com',
+  address: 'Ajodhya Hill, Hilltop, Ajodhya, Purulia, West Bengal 723152',
+  social: {
+    instagram: '',
+    facebook: '',
+    twitter: '',
+    youtube: '',
+  } as { instagram?: string; facebook?: string; twitter?: string; youtube?: string },
   checkInTime: '12:00 PM',
   checkOutTime: '12:00 PM',
 }

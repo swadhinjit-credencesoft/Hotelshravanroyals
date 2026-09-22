@@ -4,21 +4,21 @@ import LuxuryAmenities from '@/components/sections/LuxuryAmenities'
 import RoomsGrid from '@/components/sections/RoomsGrid'
 
 export const metadata: Metadata = {
-  title: 'AC Rooms & Deluxe Rooms Purnea',
+  title: 'Premium Cottages & Luxury Suites at The Divine Oasis, Ajodhya Hill',
   description:
-    'Book deluxe AC rooms in Purnea at Hotel Surya Bella Casa near Bus Stand. Free WiFi, parking, room service. Best hotel rooms in Purnea for comfort and value.',
+    'Book premium mud cottages, luxury suite cottage, Vista Four Beds, and Vista Pod Cottage at The Divine Oasis atop Ajodhya Hill, Purulia. Free Wi-Fi, geyser, room service, organic farm dining. Best forest resort cottages in Purulia.',
   alternates: {
-    canonical: 'https://hotelsuryabellacasa.com/rooms',
+    canonical: 'https://thedivineoasisresort.com/rooms',
   },
   keywords: [
-    'hotel rooms in purnea',
-    'AC rooms purnea',
-    'deluxe room Purnea',
-    'super deluxe room purnea',
-    'non AC room purnea',
-    'budget rooms purnea',
-    'best hotel rooms near bus stand purnea',
-    'room prices Purnea hotel',
+    'cottage rooms in Purulia',
+    'mud cottage resort Purulia',
+    'luxury suite cottage Ajodhya Hill',
+    'family rooms Purulia',
+    'Vista Four Beds Purulia',
+    'Vista Pod Cottage Purulia',
+    'best resort rooms near Ajodhya Hill Purulia',
+    'cottage prices The Divine Oasis',
   ],
 }
 
@@ -33,25 +33,25 @@ export default function RoomsPage() {
           __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "ItemList",
-            "name": "Hotel Rooms in Purnea at Hotel Surya Bella Casa",
-            "description": "Deluxe AC rooms, family rooms, and premium suites near Purnea Bus Stand. Book the best hotel rooms in Purnea with free WiFi, parking and room service.",
-            "url": "https://hotelsuryabellacasa.com/rooms",
+            "name": "Resort Cottages at The Divine Oasis, Ajodhya Hill",
+            "description": "Premium mud cottages, luxury suite, Vista Four Beds, and Vista Pod cottages near Ajodhya Hills & Forest Reserve. Book forest resort cottages in Purulia with free Wi-Fi, geyser, and organic farm dining.",
+            "url": "https://thedivineoasisresort.com/rooms",
             "numberOfItems": 4,
             "itemListElement": [
-              { "@type": "ListItem", "position": 1, "item": { "@type": "Product", "name": "Super Deluxe Room", "category": "Super Deluxe" } },
-              { "@type": "ListItem", "position": 2, "item": { "@type": "Product", "name": "Deluxe AC Room", "category": "Deluxe AC" } },
-              { "@type": "ListItem", "position": 3, "item": { "@type": "Product", "name": "Deluxe Non AC Room", "category": "Deluxe Non AC" } },
-              { "@type": "ListItem", "position": 4, "item": { "@type": "Product", "name": "Standard Non AC Room", "category": "Standard Non AC" } }
+              { "@type": "ListItem", "position": 1, "item": { "@type": "Product", "name": "Premium Deluxe Mud Cottages", "category": "Mud Cottage" } },
+              { "@type": "ListItem", "position": 2, "item": { "@type": "Product", "name": "Luxury Suite Cottage", "category": "Suite" } },
+              { "@type": "ListItem", "position": 3, "item": { "@type": "Product", "name": "Vista Four Beds", "category": "Family Cottage" } },
+              { "@type": "ListItem", "position": 4, "item": { "@type": "Product", "name": "Vista Pod Cottage", "category": "Pod Cottage" } }
             ]
           })
         }}
       />
 
       <CinematicHero 
-        label="Deluxe Room in Purnea - AC Rooms & Family Rooms Near Bus Stand"
-        title="Best Rooms in Purnea - Deluxe AC Rooms, Family Rooms & Luxury Stays"
-        tagline="Looking for deluxe rooms in Purnea? Hotel Surya Bella Casa offers AC rooms, family rooms, luxury rooms near Bus Stand with free WiFi, parking & room service. Best hotel rooms in Purnea - book now."
-        image='https://bookonelocal.in/cdn/2026-04-09-070105794-1000080272.jpg'
+        label="Premium Cottages at Ajodhya Hill - Mud Cottages, Luxury Suites & Family Rooms"
+        title="Best Resort Cottages in Purulia - The Divine Oasis, Ajodhya Hill"
+        tagline="Looking for forest resort cottages in Purulia? The Divine Oasis offers premium mud cottages, luxury suite, Vista Four Beds & Vista Pod cottages near Ajodhya Hills & Forest Reserve. Free Wi-Fi, geyser, organic farm dining - book now."
+        image='https://bookonelocal.in/cdn/2026-05-13-063018320-WhatsApp Image 2026-05-11 at 15.53.21.jpg'
       />
       <RoomsGrid />
       <LuxuryAmenities />

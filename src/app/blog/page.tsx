@@ -4,43 +4,43 @@ import BlogGrid from '@/components/sections/BlogGrid';
 import { blogPosts } from '@/components/sections/blogPosts';
 
 export const metadata: Metadata = {
-  title: 'Purnea Travel Blog | Hotel Surya Bella Casa',
-  description: 'Read the latest travel articles, hotel booking guides, and local attraction tips for Purnea, Bihar, from Hotel Surya Bella Casa.',
+  title: 'Purulia Travel Blog | The Divine Oasis – Ajodhya Hill Resort',
+  description: 'Read the latest travel articles, forest resort guides, and local attraction tips for Ajodhya Hill, Purulia, West Bengal, from The Divine Oasis.',
   keywords: [
-    'Purnea travel blog',
-    'best hotels in purnea',
-    'places to visit in purnea',
-    'top restaurants in purnea',
-    'business travel guide to purnea',
-    'wedding venues in purnea',
-    'hotels near purnea bus stand',
-    'things to do in purnea',
-    'purnea bihar travel guide',
-    'family stay in purnea',
+    'Purulia travel blog',
+    'best resorts near ajodhya hill',
+    'places to visit in ajodhya hill',
+    'top dining in purulia',
+    'corporate offsite resort in purulia',
+    'wedding venues in purulia',
+    'resorts near purulia railway station',
+    'things to do in purulia',
+    'purulia west bengal travel guide',
+    'forest resort in ajodhya hill',
   ],
   alternates: {
-    canonical: 'https://hotelsuryabellacasa.com/blog',
+    canonical: 'https://thedivineoasisresort.com/blog',
   },
   openGraph: {
-    title: 'Purnea Travel Blog | Hotel Surya Bella Casa',
-    description: 'Travel guides, local insights, and hotel tips for Purnea, Bihar from Hotel Surya Bella Casa.',
-    url: 'https://hotelsuryabellacasa.com/blog',
-    siteName: 'Hotel Surya Bella Casa',
+    title: 'Purulia Travel Blog | The Divine Oasis',
+    description: 'Travel guides, local insights, and forest resort tips for Ajodhya Hill, Purulia from The Divine Oasis.',
+    url: 'https://thedivineoasisresort.com/blog',
+    siteName: 'The Divine Oasis',
     type: 'website',
     images: [
       {
-        url: 'https://bookonelocal.in/cdn/IMG_3815.avif',
+        url: 'https://bookonelocal.in/cdn/2026-05-13-064432393-WhatsApp Image 2026-05-11 at 15.42.15.jpg',
         width: 1200,
         height: 630,
-        alt: 'Hotel Surya Bella Casa Purnea Blog',
+        alt: 'The Divine Oasis Purulia Blog',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Purnea Travel Blog | Hotel Surya Bella Casa',
-    description: 'Read travel tips, food guides, and destination reviews for Purnea, Bihar.',
-    images: ['https://bookonelocal.in/cdn/IMG_3815.avif'],
+    title: 'Purulia Travel Blog | The Divine Oasis',
+    description: 'Read travel tips, food guides, and destination reviews for Ajodhya Hill and Purulia, West Bengal.',
+    images: ['https://bookonelocal.in/cdn/2026-05-13-064432393-WhatsApp Image 2026-05-11 at 15.42.15.jpg'],
   },
   robots: {
     index: true,
@@ -58,21 +58,21 @@ export default function BlogPage() {
   const articleSchema = {
     "@context": "https://schema.org",
     "@type": "Blog",
-    "@id": "https://hotelsuryabellacasa.com/blog/#blog",
-    "name": "Purnea Travel Blog | Hotel Surya Bella Casa",
-    "description": "Travel guides, local insights, and hotel tips for Purnea, Bihar from Hotel Surya Bella Casa.",
-    "url": "https://hotelsuryabellacasa.com/blog",
+    "@id": "https://thedivineoasisresort.com/blog/#blog",
+    "name": "Purulia Travel Blog | The Divine Oasis",
+    "description": "Travel guides, local insights, and forest resort tips for Ajodhya Hill, Purulia from The Divine Oasis.",
+    "url": "https://thedivineoasisresort.com/blog",
     "blogPost": blogPosts.map((post, i) => ({
       "@type": "BlogPosting",
-      "@id": `https://hotelsuryabellacasa.com/blog/#post-${i + 1}`,
+      "@id": `https://thedivineoasisresort.com/blog/#post-${i + 1}`,
       "headline": post.title,
       "description": post.excerpt,
       "datePublished": post.dateISO,
       "dateModified": post.dateModifiedISO,
-      "image": post.image.startsWith('http') ? post.image : `https://hotelsuryabellacasa.com${post.image}`,
+      "image": post.image.startsWith('http') ? post.image : `https://thedivineoasisresort.com${post.image}`,
       "author": {
         "@type": "Organization",
-        "name": "Hotel Surya Bella Casa"
+        "name": "The Divine Oasis"
       }
     }))
   };
@@ -85,9 +85,9 @@ export default function BlogPage() {
       />
       <CinematicHero 
         label="Stories & Guides"
-        title="The Purnea Journal"
-        tagline="Discover the hidden gems, seasonal itineraries, and insider tips for your perfect getaway."
-        image='https://bookonelocal.in/cdn/IMG_3815.avif'
+        title="The Purulia Journal"
+        tagline="Discover the hidden gems, seasonal itineraries, and insider tips for your perfect forest getaway in Ajodhya."
+        image='https://bookonelocal.in/cdn/2026-05-13-064432393-WhatsApp Image 2026-05-11 at 15.42.15.jpg'
       />
       <BlogGrid />
     </main>

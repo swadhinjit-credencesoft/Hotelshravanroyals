@@ -2,10 +2,10 @@ import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
   title: 'Terms & Conditions',
-  description: 'Read the terms and conditions of Hotel Surya Bella Casa, Purnea, Bihar. Understand our booking, check-in/check-out, and guest conduct policies.',
-  keywords: ['hotel terms and conditions', 'Purnea hotel policies', 'hotel surya bella casa terms', 'booking policy Purnea', 'Purnea hotel check in time', 'Purnea hotel check out time', 'hotel guest conduct Purnea', 'Purnea hotel tariff terms', 'Purnea hotel age policy', 'hotel id proof Purnea', 'Purnea hotel foreign guest policy', 'Purnea hotel pet policy', 'hotel smoking policy Purnea', 'Purnea hotel group booking terms'],
+  description: 'Read the terms and conditions of The Divine Oasis, Purulia, West Bengal. Understand our booking, check-in/check-out, and guest conduct policies.',
+  keywords: ['hotel terms and conditions', 'Purulia hotel policies', 'The Divine Oasis terms', 'booking policy Purulia', 'Purulia hotel check in time', 'Purulia hotel check out time', 'hotel guest conduct Purulia', 'Purulia hotel tariff terms', 'Purulia hotel age policy', 'hotel id proof Purulia', 'Purulia hotel foreign guest policy', 'Purulia hotel pet policy', 'hotel smoking policy Purulia', 'Purulia hotel group booking terms'],
   alternates: {
-    canonical: 'https://hotelsuryabellacasa.com/terms',
+    canonical: 'https://thedivineoasisresort.com/terms',
   },
   robots: {
     index: true,
@@ -18,25 +18,25 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: 'Terms & Conditions | Hotel Surya Bella Casa Purnea',
-    description: 'Read the terms and conditions of Hotel Surya Bella Casa, Purnea, Bihar.',
-    url: 'https://hotelsuryabellacasa.com/terms',
-    siteName: 'Hotel Surya Bella Casa',
+    title: 'Terms & Conditions | The Divine Oasis Purulia',
+    description: 'Read the terms and conditions of The Divine Oasis, Purulia, West Bengal.',
+    url: 'https://thedivineoasisresort.com/terms',
+    siteName: 'The Divine Oasis',
     type: 'website',
     images: [
       {
-        url: 'https://bookonelocal.in/cdn/IMG_3815.avif',
+        url: 'https://bookonelocal.in/cdn/2026-05-13-064432393-WhatsApp Image 2026-05-11 at 15.42.15.jpg',
         width: 1200,
         height: 630,
-        alt: 'Hotel Surya Bella Casa Terms and Conditions',
+        alt: 'The Divine Oasis Terms and Conditions',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Terms & Conditions | Hotel Surya Bella Casa Purnea',
-    description: 'Read the terms and conditions of Hotel Surya Bella Casa, Purnea.',
-    images: ['https://bookonelocal.in/cdn/IMG_3815.avif'],
+    title: 'Terms & Conditions | The Divine Oasis Purulia',
+    description: 'Read the terms and conditions of The Divine Oasis, Purulia.',
+    images: ['https://bookonelocal.in/cdn/2026-05-13-064432393-WhatsApp Image 2026-05-11 at 15.42.15.jpg'],
   },
 }
 
@@ -54,13 +54,13 @@ export default function TermsLayout({ children }: { children: React.ReactNode })
                 '@type': 'ListItem',
                 position: 1,
                 name: 'Home',
-                item: 'https://hotelsuryabellacasa.com',
+                item: 'https://thedivineoasisresort.com',
               },
               {
                 '@type': 'ListItem',
                 position: 2,
                 name: 'Terms & Conditions',
-                item: 'https://hotelsuryabellacasa.com/terms',
+                item: 'https://thedivineoasisresort.com/terms',
               },
             ],
           }),

@@ -23,12 +23,12 @@ export default function Breadcrumbs() {
   const activeColorClass = isDarkHero ? 'text-gold' : 'text-gold';
 
   const schemaList = [
-    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://hotelsuryabellacasa.com' },
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://thedivineoasisresort.com' },
     ...breadcrumbs.map((crumb, idx) => ({
       '@type': 'ListItem',
       position: idx + 2,
       name: crumb.label,
-      item: `https://hotelsuryabellacasa.com${crumb.href}`,
+      item: `https://thedivineoasisresort.com${crumb.href}`,
     })),
   ]
 

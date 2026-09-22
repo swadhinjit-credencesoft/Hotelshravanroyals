@@ -51,11 +51,11 @@ const exploreLinks = [
   { label: 'Reviews', href: '/reviews' },
   { label: 'How to Reach', href: '/how-to-reach' },
   { label: 'Experiences', href: '/experiences' },
-  { label: 'Near Bus Stand', href: '/hotel-near-Purnea-bus-stand' },
-  { label: 'Near Vikass Market', href: '/hotel-near-vikass-market' },
-  { label: 'Budget Hotel', href: '/budget-hotel-in-Purnea' },
-  { label: 'Family Hotel', href: '/family-hotel-in-Purnea' },
-  { label: 'Business Hotel', href: '/business-hotel-in-Purnea' },
+  { label: 'Resort near Ajodhya Hill', href: '/resort-near-ajodhya-hill' },
+  { label: 'Resort near Baghmundi', href: '/resort-near-baghmundi' },
+  { label: 'Budget Cottage Stays', href: '/budget-cottage-resort-in-purulia' },
+  { label: 'Family Resort', href: '/family-resort-near-ajodhya-hill' },
+  { label: 'Corporate Resort', href: '/corporate-resort-in-purulia' },
 ]
 
 const legalLinks = [
@@ -98,8 +98,8 @@ export default function Footer() {
           <div className="flex-shrink-0 max-w-[280px]">
             <Link href="/" className="inline-block mb-4">
               <Image
-                src="/suryabellacasalogo.png"
-                alt="Hotel Surya Bella Casa Logo"
+                src="/devinelogo.png"
+                alt="The Divine Oasis Logo"
                 width={180}
                 height={80}
                 className="object-contain"
@@ -219,7 +219,7 @@ export default function Footer() {
                 </div>
 
                 <a
-                  href="https://www.google.com/maps/dir/?api=1&destination=25.7771,87.4753"
+                  href="https://www.google.com/maps/dir/?api=1&destination=23.2028654,86.1268909"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 mt-2 border border-gold/30 px-4 py-2 text-[11px] uppercase tracking-[0.16em] text-gold hover:bg-gold/10 hover:border-gold transition-all duration-300 rounded-sm"
@@ -237,7 +237,7 @@ export default function Footer() {
                   href={siteConfig.social.facebook}
                   target="_blank"
                   rel="noopener noreferrer"
-                  aria-label="Hotel Surya Bella Casa on Facebook"
+                  aria-label="The Divine Oasis on Facebook"
                   className="text-ivory/60 hover:text-gold transition-colors duration-300 w-fit"
                 >
                   <FacebookIcon size={24} />
@@ -247,7 +247,7 @@ export default function Footer() {
                   href={siteConfig.social.instagram}
                   target="_blank"
                   rel="noopener noreferrer"
-                  aria-label="Hotel Surya Bella Casa on Instagram"
+                  aria-label="The Divine Oasis on Instagram"
                   className="text-ivory/60 hover:text-gold transition-colors duration-300 w-fit"
                 >
                   <InstagramIcon size={24} />
@@ -257,7 +257,7 @@ export default function Footer() {
                   href={siteConfig.social.youtube}
                   target="_blank"
                   rel="noopener noreferrer"
-                  aria-label="Hotel Surya Bella Casa on YouTube"
+                  aria-label="The Divine Oasis on YouTube"
                   className="text-ivory/60 hover:text-gold transition-colors duration-300 w-fit"
                 >
                   <YouTubeIcon size={24} />

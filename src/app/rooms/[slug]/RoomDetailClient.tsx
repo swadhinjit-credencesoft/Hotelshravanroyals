@@ -93,7 +93,7 @@ export default function RoomDetailClient({ room, otherRooms }: RoomDetailClientP
       'priceCurrency': 'INR',
       'price': headerPrice,
       'availability': 'https://schema.org/InStock',
-      'url': `https://hotelsuryabellacasa.com/rooms/${room.slug}`
+      'url': `https://thedivineoasisresort.com/rooms/${room.slug}`
     }
   }
 
@@ -127,7 +127,7 @@ export default function RoomDetailClient({ room, otherRooms }: RoomDetailClientP
             >
               <Image
                 src={selectedImage}
-                alt={`${room.name} at Hotel Surya Bella Casa Purnea - Best Room Near Bus Stand`}
+                alt={`${room.name} at The Divine Oasis, Ajodhya Hill, Purulia`}
                 fill
                 className="object-contain"
                 sizes="100vw"
@@ -158,7 +158,7 @@ export default function RoomDetailClient({ room, otherRooms }: RoomDetailClientP
             >
               <Image
                 src={selectedImage}
-                alt={`${room.name} at Hotel Surya Bella Casa Purnea - Best Room Near Bus Stand`}
+                alt={`${room.name} at The Divine Oasis, Ajodhya Hill - Purulia`}
                 fill
                 className="object-cover transition-transform duration-1000 group-hover:scale-105"
                 priority
@@ -191,7 +191,7 @@ export default function RoomDetailClient({ room, otherRooms }: RoomDetailClientP
                   >
                     <Image
                       src={image}
-                      alt={`${room.name} - Hotel Surya Bella Casa Purnea Near Bus Stand`}
+                      alt={`${room.name} - The Divine Oasis, Ajodhya Hill, Purulia`}
                       fill
                       className="object-cover"
                       sizes="144px"
@@ -373,7 +373,7 @@ export default function RoomDetailClient({ room, otherRooms }: RoomDetailClientP
           <div className="flex items-center gap-5">
             <div>
               <p className="text-ivory font-serif text-lg leading-tight">{room.name}</p>
-              <p className="text-gold/80 font-sans text-[9px] uppercase tracking-[0.15em]">Hotel Surya Bella Casa</p>
+              <p className="text-gold/80 font-sans text-[9px] uppercase tracking-[0.15em]">The Divine Oasis</p>
             </div>
             <div className="h-9 w-px bg-gradient-to-b from-transparent via-ivory/15 to-transparent" />
             <div>
@@ -413,7 +413,7 @@ export default function RoomDetailClient({ room, otherRooms }: RoomDetailClientP
             <motion.a
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              href="tel:+919835923601"
+              href="tel:+91990398950"
               className="flex items-center gap-2.5 border border-ivory/15 text-ivory/70 hover:text-ivory px-5 py-2.5 rounded-sm font-sans text-[10px] uppercase tracking-[0.15em] hover:bg-ivory/5 hover:border-ivory/30 transition-all"
             >
               <PhoneCall size={16} />
@@ -534,7 +534,7 @@ function BookingSidebar({ room }: { room: Room }) {
     <div className="bg-forest p-8 rounded-sm shadow-2xl text-ivory">
       <h3 className="font-display italic text-2xl mb-2 text-gold">Ready to Escape?</h3>
       <p className="font-sans text-[11px] uppercase tracking-widest text-ivory/60 mb-6 border-b border-ivory/10 pb-4">
-        Secure your {room.name} at Hotel Surya Bella Casa
+        Secure your {room.name} at The Divine Oasis
       </p>
 
       {/* Date Fields */}

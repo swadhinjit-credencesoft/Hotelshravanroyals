@@ -3,9 +3,9 @@ import SectionLabel from '@/components/ui/SectionLabel'
 
 export const metadata: Metadata = {
   title: 'Privacy Policy',
-  description: 'Read the privacy policy of Hotel Surya Bella Casa, Purnea. How we collect, store, and protect your personal data during hotel bookings and website visits.',
+  description: 'Read the privacy policy of The Divine Oasis, Purulia. How we collect, store, and protect your personal data during hotel bookings and website visits.',
   alternates: {
-    canonical: 'https://hotelsuryabellacasa.com/privacy',
+    canonical: 'https://thedivineoasisresort.com/privacy',
   },
   robots: {
     index: true,
@@ -25,15 +25,15 @@ export default function PrivacyPage() {
           __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "WebPage",
-            "@id": "https://hotelsuryabellacasa.com/privacy/#webpage",
-            "url": "https://hotelsuryabellacasa.com/privacy",
-            "name": "Privacy Policy | Hotel Surya Bella Casa",
-            "description": "Read the privacy policy guidelines of Hotel Surya Bella Casa regarding data collection, storage, and customer reservation security protocols.",
+            "@id": "https://thedivineoasisresort.com/privacy/#webpage",
+            "url": "https://thedivineoasisresort.com/privacy",
+            "name": "Privacy Policy | The Divine Oasis",
+            "description": "Read the privacy policy guidelines of The Divine Oasis regarding data collection, storage, and customer reservation security protocols.",
             "isPartOf": {
               "@type": "WebSite",
-              "@id": "https://hotelsuryabellacasa.com/#website",
-              "name": "Hotel Surya Bella Casa",
-              "url": "https://hotelsuryabellacasa.com"
+              "@id": "https://thedivineoasisresort.com/#website",
+              "name": "The Divine Oasis",
+              "url": "https://thedivineoasisresort.com"
             }
           })
         }}
@@ -47,14 +47,14 @@ export default function PrivacyPage() {
           <section>
             <h2 className="font-serif text-2xl text-forest mb-4">Introduction</h2>
             <p>
-             This Privacy Policy governs the manner in which Hotel Surya Bella Casa collects, uses, maintains, and discloses information collected from users (each, a “User”) of the Hotel Surya Bella Casa website (“Site”). This Privacy Policy applies to the Site and all products and services offered by Hotel Surya Bella Casa.
+             This Privacy Policy governs the manner in which The Divine Oasis collects, uses, maintains, and discloses information collected from users (each, a “User”) of the The Divine Oasis website (“Site”). This Privacy Policy applies to the Site and all products and services offered by The Divine Oasis.
             </p>
           </section>
 
           <section>
             <h2 className="font-serif text-2xl text-forest mb-4">Personal Identification Information (PII)</h2>
             <p>
-              Hotel Surya Bella Casa may collect personal identification information from Users in various ways, including when Users visit our website, make a reservation, submit an inquiry, subscribe to updates, fill out forms, respond to surveys, or engage with services and features available on our Site.
+              The Divine Oasis may collect personal identification information from Users in various ways, including when Users visit our website, make a reservation, submit an inquiry, subscribe to updates, fill out forms, respond to surveys, or engage with services and features available on our Site.
 
              Depending on the nature of the interaction, Users may be asked to provide details such as: Name Email address Phone number Mailing address Payment or billing information
              Identification details required for hotel bookings or check-ins
@@ -65,7 +65,7 @@ export default function PrivacyPage() {
           <section>
             <h2 className="font-serif text-2xl text-forest mb-4">Non-personal identification information(NPII)</h2>
             <p>
-              Hotel Surya Bella Casa may collect non-personal identification information whenever Users interact with our Site. This information may include the browser type, device information, operating system, Internet service provider, IP address, and other technical details related to a User’s connection with our website.
+              The Divine Oasis may collect non-personal identification information whenever Users interact with our Site. This information may include the browser type, device information, operating system, Internet service provider, IP address, and other technical details related to a User’s connection with our website.
               Such information is collected to help us analyze website usage, improve functionality, enhance user experience, and maintain the security and performance of our digital platforms.
             </p>
           </section>
@@ -80,7 +80,7 @@ export default function PrivacyPage() {
     <div className="flex items-start gap-3">
       <span className="mt-2 text-forest">•</span>
       <p>
-        Hotel Surya Bella Casa may collect and use Users’ personal information for the following purposes:
+        The Divine Oasis may collect and use Users’ personal information for the following purposes:
       </p>
     </div>
 
@@ -136,7 +136,7 @@ export default function PrivacyPage() {
     <div className="flex items-start gap-3">
       <span className="mt-2 text-forest">•</span>
       <p>
-        Hotel Surya Bella Casa does not sell Users’ personal information to third-party marketers. Information may only be shared with trusted partners or service providers where necessary to operate our services, process transactions, comply with legal obligations, or improve guest experience.
+        The Divine Oasis does not sell Users’ personal information to third-party marketers. Information may only be shared with trusted partners or service providers where necessary to operate our services, process transactions, comply with legal obligations, or improve guest experience.
       </p>
     </div>
 

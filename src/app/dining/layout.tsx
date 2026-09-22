@@ -1,11 +1,11 @@
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Rooftop Dining Purnea | Restaurant Near Bus Stand',
-  description: 'Enjoy the best rooftop restaurant in Purnea at Hotel Surya Bella Casa. Family restaurant near Bus Stand serving Indian, Tandoor, Mughlai, Asian & Continental cuisine. Best dinner restaurant in Purnea. Book now.',
-  keywords: ['rooftop restaurant purnea', 'best restaurant in purnea', 'family restaurant purnea', 'restaurant near bus stand purnea', 'dinner in purnea', 'lunch restaurant purnea', 'breakfast restaurant purnea', 'best rooftop restaurant in purnea', 'veg restaurant purnea', 'non veg restaurant purnea', 'multi cuisine restaurant purnea', 'fine dining restaurant purnea', 'hotel restaurant purnea', 'purnea restaurant food', 'restaurant near vikass market purnea'],
+  title: 'Rooftop Dining Purulia | Restaurant Near Ajodhya Hill',
+  description: 'Enjoy the best rooftop restaurant in Purulia at The Divine Oasis. Family restaurant near Ajodhya Hill serving Indian, Tandoor, Mughlai, Asian & Continental cuisine. Best dinner restaurant in Purulia. Book now.',
+  keywords: ['rooftop restaurant Purulia', 'best restaurant in Purulia', 'family restaurant Purulia', 'restaurant near Ajodhya Hill Purulia', 'dinner in Purulia', 'lunch restaurant Purulia', 'breakfast restaurant Purulia', 'best rooftop restaurant in Purulia', 'veg restaurant Purulia', 'non veg restaurant Purulia', 'multi cuisine restaurant Purulia', 'fine dining restaurant Purulia', 'hotel restaurant Purulia', 'Purulia restaurant food', 'restaurant near Ajodhya Hill Purulia'],
   alternates: {
-    canonical: 'https://hotelsuryabellacasa.com/dining',
+    canonical: 'https://thedivineoasisresort.com/dining',
   },
   robots: {
     index: true,
@@ -18,25 +18,25 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: 'Rooftop Dining Purnea | Restaurant Near Bus Stand',
-    description: 'Enjoy the best rooftop restaurant in Purnea at Hotel Surya Bella Casa. Family restaurant near Bus Stand serving Indian, Tandoor, Mughlai, Asian & Continental cuisine. Best dinner restaurant in Purnea.',
-    url: 'https://hotelsuryabellacasa.com/dining',
-    siteName: 'Hotel Surya Bella Casa',
+    title: 'Rooftop Dining Purulia | Restaurant Near Ajodhya Hill',
+    description: 'Enjoy the best rooftop restaurant in Purulia at The Divine Oasis. Family restaurant near Ajodhya Hill serving Indian, Tandoor, Mughlai, Asian & Continental cuisine. Best dinner restaurant in Purulia.',
+    url: 'https://thedivineoasisresort.com/dining',
+    siteName: 'The Divine Oasis',
     type: 'website',
     images: [
       {
-        url: 'https://bookonelocal.in/cdn/IMG_3808.avif',
+        url: 'https://bookonelocal.in/cdn/2026-05-13-064432393-WhatsApp Image 2026-05-11 at 15.42.15.jpg',
         width: 1200,
         height: 630,
-        alt: 'Best Rooftop Restaurant in Purnea - Family Restaurant Near Bus Stand - Hotel Surya Bella Casa Purnea',
+        alt: 'Best Rooftop Restaurant in Purulia - Family Restaurant Near Ajodhya Hill - The Divine Oasis Purulia',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Rooftop Dining Purnea | Restaurant Near Bus Stand',
-    description: 'Enjoy the best rooftop restaurant in Purnea at Hotel Surya Bella Casa near Bus Stand. Best dinner and lunch restaurant in Purnea.',
-    images: ['https://bookonelocal.in/cdn/IMG_3808.avif'],
+    title: 'Rooftop Dining Purulia | Restaurant Near Ajodhya Hill',
+    description: 'Enjoy the best rooftop restaurant in Purulia at The Divine Oasis near Ajodhya Hill. Best dinner and lunch restaurant in Purulia.',
+    images: ['https://bookonelocal.in/cdn/2026-05-13-064432393-WhatsApp Image 2026-05-11 at 15.42.15.jpg'],
   },
 }
 
@@ -54,13 +54,13 @@ export default function DiningLayout({ children }: { children: React.ReactNode }
                 '@type': 'ListItem',
                 position: 1,
                 name: 'Home',
-                item: 'https://hotelsuryabellacasa.com',
+                item: 'https://thedivineoasisresort.com',
               },
               {
                 '@type': 'ListItem',
                 position: 2,
                 name: 'Dining',
-                item: 'https://hotelsuryabellacasa.com/dining',
+                item: 'https://thedivineoasisresort.com/dining',
               },
             ],
           }),

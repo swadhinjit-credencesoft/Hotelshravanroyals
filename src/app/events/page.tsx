@@ -1,30 +1,35 @@
-import type { Metadata } from 'next'
+﻿import type { Metadata } from 'next'
 import EventsContent from './EventsContent'
 
 export const metadata: Metadata = {
-  title: 'Banquet Hall & Wedding Venue in Purnea',
-  description: 'Best banquet hall in Purnea near Bus Stand. Hotel Surya Bella Casa hosts weddings, corporate events, parties & day trips near Vikass Market. Book venue directly.',
+  title: 'Outdoor Wedding & Event Venue at Ajodhya Hill | The Divine Oasis, Purulia',
+  description: 'Host weddings, corporate retreats, parties & day trips at The Divine Oasis atop Ajodhya Hill, Purulia. Hilltop forest resort with organic farm dining, barbeque & family rooms.',
   keywords: [
-    'banquet hall purnea', 'wedding venue Purnea', 'party hall purnea',
-    'conference hall purnea', 'event venue near bus stand purnea',
-    'marriage hall Purnea', 'corporate event purnea', 'birthday party hall Purnea',
+    'wedding venue Purulia',
+    'outdoor wedding Ajodhya Hill',
+    'corporate retreat Purulia',
+    'event venue Ajodhya Hill',
+    'party venue Purulia',
+    'marriage hall Purulia',
+    'birthday party venue Purulia',
+    'day trip venue Purulia',
   ],
   alternates: {
-    canonical: 'https://hotelsuryabellacasa.com/events',
+    canonical: 'https://thedivineoasisresort.com/events',
   },
   openGraph: {
-    title: 'Banquet Hall & Wedding Venue in Purnea',
-    description: 'Best banquet hall in Purnea near Bus Stand at Hotel Surya Bella Casa. Weddings, corporate events, parties & celebrations near Vikass Market.',
-    url: 'https://hotelsuryabellacasa.com/events',
-    siteName: 'Hotel Surya Bella Casa',
+    title: 'Outdoor Wedding & Event Venue at Ajodhya Hill | The Divine Oasis',
+    description: 'Host weddings, corporate retreats, parties & day trips at The Divine Oasis atop Ajodhya Hill, Purulia. Hilltop forest resort with organic farm dining & barbeque.',
+    url: 'https://thedivineoasisresort.com/events',
+    siteName: 'The Divine Oasis',
     type: 'website',
-    images: [{ url: 'https://bookonelocal.in/cdn/IMG_7431.avif', width: 1200, height: 630, alt: 'Banquet Hall & Wedding Venue in Purnea - Hotel Surya Bella Casa' }],
+    images: [{ url: 'https://bookonelocal.in/cdn/2026-05-13-064448375-WhatsApp Image 2026-05-11 at 15.42.13.jpg', width: 1200, height: 630, alt: 'Wedding & Event Venue at The Divine Oasis Ajodhya Hill' }],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Banquet Hall & Wedding Venue in Purnea',
-    description: 'Best banquet hall in Purnea near Bus Stand. Weddings, corporate events & parties at Hotel Surya Bella Casa.',
-    images: ['https://bookonelocal.in/cdn/IMG_7431.avif'],
+    title: 'Outdoor Wedding & Event Venue at Ajodhya Hill | The Divine Oasis',
+    description: 'Host weddings, corporate retreats, parties & day trips at The Divine Oasis atop Ajodhya Hill, Purulia.',
+    images: ['https://bookonelocal.in/cdn/2026-05-13-064448375-WhatsApp Image 2026-05-11 at 15.42.13.jpg'],
   },
 }
 
@@ -40,18 +45,18 @@ export default function EventsPage() {
             {
               "@context": "https://schema.org",
               "@type": "EventVenue",
-              "name": "Hotel Surya Bella Casa Banquet Hall & Wedding Venue Purnea",
-              "description": "Best banquet hall in Purnea at Hotel Surya Bella Casa near Bus Stand. Wedding hall, marriage hall, conference hall, party hall near Vikass Market. Perfect for weddings, corporate events, and family celebrations.",
-              "url": "https://hotelsuryabellacasa.com/events",
+              "name": "The Divine Oasis Event Venue Ajodhya Hill",
+              "description": "Outdoor wedding & event venue at The Divine Oasis atop Ajodhya Hill, Purulia. Hilltop forest resort hosting weddings, corporate retreats, parties, and day trips near Ajodhya Hills & Forest Reserve.",
+              "url": "https://thedivineoasisresort.com/events",
               "address": {
                 "@type": "PostalAddress",
-                "streetAddress": "Suryalok Complex, Opposite Vikass Market, Near Bus Stand",
-                "addressLocality": "Purnea",
-                "addressRegion": "Bihar",
-                "postalCode": "854301",
+                "streetAddress": "643G+4Q, Hilltop",
+                "addressLocality": "Ajodhya",
+                "addressRegion": "West Bengal",
+                "postalCode": "723152",
                 "addressCountry": "IN"
               },
-              "telephone": "+919835923601"
+              "telephone": "+91990398950"
             },
             {
               "@context": "https://schema.org",
@@ -59,34 +64,34 @@ export default function EventsPage() {
               "mainEntity": [
                 {
                   "@type": "Question",
-                  "name": "What is the best banquet hall in Purnea?",
+                  "name": "What is the best outdoor wedding venue in Purulia?",
                   "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "Hotel Surya Bella Casa is the best banquet hall in Purnea, located near Bus Stand opposite Vikass Market. We host weddings, corporate events, and birthday parties."
+                    "text": "The Divine Oasis is the best outdoor wedding venue in Purulia, located atop Ajodhya Hill with forest views. We host weddings, receptions, and multi-day celebrations with organic farm catering and barbeque."
                   }
                 },
                 {
                   "@type": "Question",
-                  "name": "What is the wedding capacity at Hotel Surya Bella Casa?",
+                  "name": "What is the wedding capacity at The Divine Oasis?",
                   "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "Our wedding banquet hall and lawns in Purnea can comfortably host up to 250 guests with bespoke catering and decor."
+                    "text": "Our hilltop event spaces at The Divine Oasis can comfortably host up to 100 guests for weddings and celebrations with bespoke organic farm catering, barbeque evenings, and forest backdrop."
                   }
                 },
                 {
                   "@type": "Question",
-                  "name": "Do you provide conference hall facilities in Purnea?",
+                  "name": "Do you host corporate retreats at The Divine Oasis?",
                   "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "Yes, we have a dedicated conference hall in Purnea with high-speed Wi-Fi, projectors, and team-building activities for up to 60 guests."
+                    "text": "Yes, The Divine Oasis is a premier corporate retreat venue in Purulia. We offer high-speed Wi-Fi, peaceful hilltop environment for strategy sessions, group accommodation in premium cottages, and team-building activities near Ajodhya Hills & Forest Reserve."
                   }
                 },
                 {
                   "@type": "Question",
-                  "name": "Is there a marriage hall near Purnea Bus Stand?",
+                  "name": "Can we host birthday parties at The Divine Oasis?",
                   "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "Yes, Hotel Surya Bella Casa is a marriage hall near Purnea Bus Stand with wedding lawns, banquet facilities, and bridal suites for a perfect wedding venue."
+                    "text": "Absolutely! The Divine Oasis is perfect for birthday parties and private celebrations. Our family rooms, barbeque stand, and hilltop seating area create a memorable setting for your special day near Ajodhya Hill."
                   }
                 }
               ]
@@ -102,16 +107,16 @@ export default function EventsPage() {
           __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "VideoObject",
-            "name": "Hotel Surya Bella Casa Events - Banquet Hall & Wedding Venue",
-            "description": "Best banquet hall in Purnea at Hotel Surya Bella Casa near Bus Stand. Video showcase of wedding venue, conference hall, party hall near Vikass Market.",
-            "thumbnailUrl": "https://bookonelocal.in/cdn/IMG_7431.avif",
-            "contentUrl": "https://bookonelocal.in/cdn/IMG_7431.mp4",
-            "embedUrl": "https://hotelsuryabellacasa.com/events",
-            "uploadDate": "2024-03-15",
+            "name": "The Divine Oasis Events - Hilltop Wedding & Retreat Venue",
+            "description": "Outdoor wedding & event venue at The Divine Oasis atop Ajodhya Hill, Purulia. Video showcase of hilltop wedding venue, corporate retreat spaces, party areas near Ajodhya Hills & Forest Reserve.",
+            "thumbnailUrl": "https://bookonelocal.in/cdn/2026-05-13-064448375-WhatsApp Image 2026-05-11 at 15.42.13.jpg",
+            "contentUrl": "https://bookonelocal.in/cdn/2026-05-13-064448375-WhatsApp Image 2026-05-11 at 15.42.13.jpg",
+            "embedUrl": "https://thedivineoasisresort.com/events",
+            "uploadDate": "2026-05-13",
             "duration": "PT60S",
             "potentialAction": {
               "@type": "WatchAction",
-              "target": "https://hotelsuryabellacasa.com/events"
+              "target": "https://thedivineoasisresort.com/events"
             },
             "interactionStatistic": {
               "@type": "InteractionCounter",

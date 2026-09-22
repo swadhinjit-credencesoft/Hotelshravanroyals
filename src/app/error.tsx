@@ -16,7 +16,7 @@ export default function Error({
           We apologize for the inconvenience. Please try again or contact us directly.
         </p>
         <p className="font-sans text-taupe/60 text-sm mb-10">
-          Need help? Call <a href="tel:+919835923601" className="text-gold hover:underline">+91 9835923601</a>
+          Need help? Call <a href="tel:+91990398950" className="text-gold hover:underline">+91 9903989950</a>
         </p>
         <div className="flex justify-center gap-4">
           <button

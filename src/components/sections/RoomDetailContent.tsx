@@ -113,7 +113,7 @@ export default function RoomDetailContent({ room }: RoomDetailContentProps) {
                 <div className="relative aspect-[4/3] overflow-hidden border border-gold/10">
                    <Image 
                      src={roomImages[0]} 
-                     alt={`${room.name} at Hotel Surya Bella Casa Purnea - Best Room Near Bus Stand`} 
+                     alt={`${room.name} at The Divine Oasis, Ajodhya Hill, Purulia`} 
                      fill 
                      priority
                      sizes="(max-width: 1024px) 100vw, 50vw"
@@ -125,7 +125,7 @@ export default function RoomDetailContent({ room }: RoomDetailContentProps) {
                      <div key={image} className="relative h-40 w-56 flex-shrink-0 overflow-hidden border border-gold/10">
                         <Image 
                           src={image} 
-                          alt={`${room.name} - Hotel Surya Bella Casa Purnea Near Bus Stand`} 
+                          alt={`${room.name} - The Divine Oasis, Ajodhya Hill, Purulia`} 
                           fill 
                           sizes="224px"
                           className="object-cover"
@@ -140,23 +140,23 @@ export default function RoomDetailContent({ room }: RoomDetailContentProps) {
 
       {/* Philosophy Section */}
       <section className="bg-forest py-48 relative overflow-hidden">
-         <div className="max-w-[1600px] mx-auto px-6 md:px-10 text-center relative z-10">
-            <SectionLabel light className="justify-center mb-8">The Philosophy</SectionLabel>
-            <h2 className="font-display text-5xl md:text-8xl italic text-ivory mb-12">Architecture <br /> of Silence</h2>
-            <p className="font-serif text-xl md:text-2xl italic text-ivory/70 max-w-3xl mx-auto leading-relaxed">
-               &ldquo;We don&apos;t just provide a room; we provide a frame for the horizon. Our architecture is designed to disappear, leaving you alone with the forest and the sea.&rdquo;
-            </p>
-         </div>
+<div className="max-w-[1600px] mx-auto px-6 md:px-10 text-center relative z-10">
+             <SectionLabel light className="justify-center mb-8">The Philosophy</SectionLabel>
+             <h2 className="font-display text-5xl md:text-8xl italic text-ivory mb-12">Architecture <br /> of Serenity</h2>
+             <p className="font-serif text-xl md:text-2xl italic text-ivory/70 max-w-3xl mx-auto leading-relaxed">
+                &ldquo;We don&apos;t just provide a cottage; we provide a frame for the forest. Our architecture is designed to disappear, leaving you alone with the hills and the sky.&rdquo;
+             </p>
+          </div>
          {/* Background Texture */}
-         <div className="absolute inset-0 opacity-10 pointer-events-none">
-            <Image 
-               src="https://bookonelocal.in/cdn/IMG_3815.avif" 
-               alt="Hotel Surya Bella Casa Purnea - Best Hotel in Purnea Near Bus Stand" 
-               fill 
-               sizes="100vw"
-               className="object-cover mix-blend-overlay"
-            />
-         </div>
+<div className="absolute inset-0 opacity-10 pointer-events-none">
+             <Image 
+                src="https://bookonelocal.in/cdn/2026-05-13-064432393-WhatsApp Image 2026-05-11 at 15.42.15.jpg" 
+                alt="The Divine Oasis Ajodhya Hill Purulia - Forest Resort" 
+                fill 
+                sizes="100vw"
+                className="object-cover mix-blend-overlay"
+             />
+          </div>
       </section>
 
     </main>

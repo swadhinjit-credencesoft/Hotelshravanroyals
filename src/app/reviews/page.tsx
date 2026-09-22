@@ -1,35 +1,35 @@
-import type { Metadata } from 'next'
+﻿import type { Metadata } from 'next'
 import TestimonialsSection from '@/components/sections/TestimonialsSection'
 import { testimonials } from '@/data/testimonials'
 
 export const metadata: Metadata = {
-  title: 'Guest Reviews & Ratings',
+  title: 'Guest Reviews & Ratings | The Divine Oasis Ajodhya Hill, Purulia',
   description:
-    'Read genuine guest reviews of Hotel Surya Bella Casa in Purnea. Rated 4.5 stars by guests. See what travelers say about our rooms, dining, and service.',
+    'Read genuine guest reviews of The Divine Oasis at Ajodhya Hill, Purulia. Rated 5 stars by guests for forest resort experience, organic farm dining, and barbeque evenings.',
   keywords: [
-    'hotel surya bella casa reviews',
-    'purnea hotel guest reviews',
-    'best hotel in purnea ratings',
-    'hotel near bus stand purnea reviews',
-    'family hotel purnea reviews',
-    'business hotel purnea reviews',
+    'The Divine Oasis reviews',
+    'Purulia resort guest reviews',
+    'best resort in Purulia ratings',
+    'resort near Ajodhya Hill Purulia reviews',
+    'family resort Purulia reviews',
+    'corporate retreat Purulia reviews',
   ],
   alternates: {
-    canonical: 'https://hotelsuryabellacasa.com/reviews',
+    canonical: 'https://thedivineoasisresort.com/reviews',
   },
   openGraph: {
-    title: 'Hotel Surya Bella Casa Reviews | Guest Testimonials',
-    description: 'Read genuine guest reviews of Hotel Surya Bella Casa in Purnea near Bus Stand. Real testimonials from business and family travelers. Leave your own review.',
-    url: 'https://hotelsuryabellacasa.com/reviews',
-    siteName: 'Hotel Surya Bella Casa',
+    title: 'The Divine Oasis Reviews | Guest Testimonials',
+    description: 'Read genuine guest reviews of The Divine Oasis at Ajodhya Hill, Purulia. Real testimonials from nature lovers, families, and corporate travelers.',
+    url: 'https://thedivineoasisresort.com/reviews',
+    siteName: 'The Divine Oasis',
     type: 'website',
-    images: [{ url: 'https://bookonelocal.in/cdn/IMG_3815.avif', width: 1200, height: 630, alt: 'Hotel Surya Bella Casa Reviews - Guest Testimonials' }],
+    images: [{ url: 'https://bookonelocal.in/cdn/2026-05-13-064432393-WhatsApp Image 2026-05-11 at 15.42.15.jpg', width: 1200, height: 630, alt: 'The Divine Oasis Reviews - Guest Testimonials' }],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Hotel Surya Bella Casa Reviews | 4.5★ Guest Rating',
-    description: 'Read genuine guest reviews of Hotel Surya Bella Casa in Purnea near Bus Stand. Rated 4.5★ by travelers.',
-    images: ['https://bookonelocal.in/cdn/IMG_3815.avif'],
+    title: 'The Divine Oasis Reviews | 5â˜… Guest Rating',
+    description: 'Read genuine guest reviews of The Divine Oasis at Ajodhya Hill, Purulia. Rated 5â˜… by travelers.',
+    images: ['https://bookonelocal.in/cdn/2026-05-13-064432393-WhatsApp Image 2026-05-11 at 15.42.15.jpg'],
   },
   robots: {
     index: true,
@@ -38,30 +38,28 @@ export const metadata: Metadata = {
   },
 }
 
-export default function ReviewsPage() {
-  const reviewSchema = {
-    "@context": "https://schema.org",
-    "@type": "Product",
-    "name": "Hotel Surya Bella Casa Purnea",
-    "description": "Guest reviews and testimonials for Hotel Surya Bella Casa, best hotel in Purnea near Bus Stand",
-    "url": "https://www.google.com/maps/place/?cid=8931275976043074034",
-    /* aggregateRating removed — add back once real Google review count is verified.
-       Using an unverified ratingCount in structured data risks a Google manual penalty. */
-    "review": testimonials.map(t => ({
-      "@type": "Review",
-      "reviewRating": {
-        "@type": "Rating",
-        "ratingValue": t.rating,
-        "bestRating": "5"
-      },
-      "author": {
-        "@type": "Person",
-        "name": t.name
-      },
-      "reviewBody": t.text
-    }))
-  }
+const reviewSchema = {
+  "@context": "https://schema.org",
+  "@type": "Product",
+  "name": "The Divine Oasis Ajodhya Hill",
+  "description": "Guest reviews and testimonials for The Divine Oasis, forest resort at Ajodhya Hill, Purulia",
+  "url": "https://www.google.com/maps/place/?api=1&query=The+Divine+Oasis+Ajodhya+Hill+Purulia",
+  "review": testimonials.map(t => ({
+    "@type": "Review",
+    "reviewRating": {
+      "@type": "Rating",
+      "ratingValue": t.rating,
+      "bestRating": "5"
+    },
+    "author": {
+      "@type": "Person",
+      "name": t.name
+    },
+    "reviewBody": t.text
+  }))
+}
 
+export default function ReviewsPage() {
   return (
     <main className="bg-cream min-h-screen pt-32">
       <script
@@ -75,13 +73,13 @@ export default function ReviewsPage() {
                 '@type': 'ListItem',
                 position: 1,
                 name: 'Home',
-                item: 'https://hotelsuryabellacasa.com',
+                item: 'https://thedivineoasisresort.com',
               },
               {
                 '@type': 'ListItem',
                 position: 2,
                 name: 'Reviews',
-                item: 'https://hotelsuryabellacasa.com/reviews',
+                item: 'https://thedivineoasisresort.com/reviews',
               },
             ],
           })
@@ -94,7 +92,7 @@ export default function ReviewsPage() {
       />
       <div className="text-center pt-8 pb-4 px-6">
         <h1 className="font-display text-4xl md:text-5xl lg:text-6xl italic text-forest">
-          Guest Reviews &amp; Ratings
+          Guest Reviews & Ratings
         </h1>
       </div>
       <TestimonialsSection />
@@ -118,14 +116,14 @@ export default function ReviewsPage() {
                   &ldquo;{t.text}&rdquo;
                 </p>
                 <p className="font-sans text-xs uppercase tracking-wider text-taupe font-medium">
-                  — {t.name}
+                  â€” {t.name}
                 </p>
               </div>
             ))}
           </div>
           <div className="text-center mt-10">
             <a
-              href="https://www.google.com/travel/search?q=hotel%20surya%20bella%20casa%20review&g2lb=4965990%2C72471280%2C72560029%2C72573224%2C72647020%2C72686036%2C72803964%2C72882230%2C73064764%2C121529350%2C121747502%2C121762713&hl=en-IN&gl=in&ssta=1&ts=CAEaRwopEicyJTB4MzllZmY5ZGQ0Y2U2YjBhZjoweDdiZmM4YjdkMGVmNTA5ZjISGhIUCgcI6g8QBxgHEgcI6g8QBxgIGAEyAhAA&qs=CAEyE0Nnb0k4cFBVOTlEdm92NTdFQUU4AkIJCfIJ9Q59i_x7QgkJ8gn1Dn2L_Hs&ap=ugEHcmV2aWV3cw&ictx=111&ved=0CAAQ5JsGahcKEwjwtKX11L6VAxUAAAAAHQAAAAAQCw"
+              href="https://www.google.com/maps/search/?api=1&query=The+Divine+Oasis+Ajodhya+Hill+Purulia"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 bg-gold text-[#1a1004] font-sans text-[11px] uppercase tracking-[0.2em] px-8 py-4 rounded-sm hover:bg-gold-light transition-all font-bold"

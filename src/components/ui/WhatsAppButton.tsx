@@ -6,8 +6,8 @@ import { Calendar, MessageCircle, Phone, Mail, X, ArrowUpRight, Shield } from 'l
 import { buildWhatsAppUrl, trackBookingEvent } from '@/lib/hotelmate'
 import { trackPhoneClick, trackWhatsAppClick } from '@/lib/analytics'
 
-const BOOKING_URL = 'https://bookone.io/Hotel-Bella-Casa?bookingEngine=true'
-const EMAIL = 'bellacasa561@gmail.com'
+const BOOKING_URL = 'https://bookone.io/The-Divine-Oasis?bookingEngine=true'
+const EMAIL = 'thedivineoasisresort@gmail.com'
 
 export default function WhatsAppButton() {
   const [open, setOpen] = useState(false)
@@ -46,7 +46,7 @@ export default function WhatsAppButton() {
             {/* Header */}
             <div className="px-4 pt-3.5 pb-2.5 flex items-center justify-between">
               <div>
-                <p className="font-sans text-[8px] uppercase tracking-[0.25em] text-gold/40">Hotel Surya Bella Casa</p>
+                <p className="font-sans text-[8px] uppercase tracking-[0.25em] text-gold/40">The Divine Oasis</p>
                 <h3 className="font-display text-[15px] italic text-ivory leading-tight mt-0.5">How would you like to book?</h3>
               </div>
               <button
@@ -99,7 +99,7 @@ export default function WhatsAppButton() {
 
               {/* Call */}
               <a
-                href="tel:+919835923601"
+                href="tel:+91990398950"
                 onClick={() => { trackPhoneClick('floating_panel'); setOpen(false) }}
                 className="group flex items-center gap-3 w-full px-3.5 py-3 rounded-xl bg-white/[0.03] hover:bg-white/[0.06] border border-white/[0.06] hover:border-gold/20 transition-all duration-200"
               >
@@ -108,14 +108,14 @@ export default function WhatsAppButton() {
                 </div>
                 <div className="flex-1 min-w-0">
                   <span className="font-sans text-[11px] font-bold uppercase tracking-wider text-ivory/60 block">Call Now</span>
-                  <span className="font-sans text-[9px] text-ivory/30">+91 98359 23601</span>
+                  <span className="font-sans text-[9px] text-ivory/30">+91 99039 89950</span>
                 </div>
                 <ArrowUpRight size={13} className="text-ivory/15 group-hover:text-gold group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-all flex-shrink-0" />
               </a>
 
               {/* Email */}
               <a
-                href={`mailto:${EMAIL}?subject=Room%20Booking%20Enquiry&body=Hi%2C%20I%20would%20like%20to%20book%20a%20room%20at%20Hotel%20Surya%20Bella%20Casa.`}
+                href={`mailto:${EMAIL}?subject=Room%20Booking%20Enquiry&body=Hi%2C%20I%20would%20like%20to%20book%20a%20stay%20at%20The%20Divine%20Oasis.`}
                 onClick={() => setOpen(false)}
                 className="group flex items-center gap-3 w-full px-3.5 py-3 rounded-xl bg-white/[0.03] hover:bg-white/[0.06] border border-white/[0.06] hover:border-white/12 transition-all duration-200"
               >

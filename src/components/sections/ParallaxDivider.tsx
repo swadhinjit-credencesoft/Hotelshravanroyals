@@ -46,8 +46,8 @@ export default function ParallaxDivider() {
         style={{ height: '130%', top: '-15%' }}
       >
         <Image
-          src='https://bookonelocal.in/cdn/IMG_3809.avif'
-          alt="Hotel Surya Bella Casa Purnea - Best Hotel Near Bus Stand Purnea"
+          src='https://bookonelocal.in/cdn/2026-05-13-064523804-WhatsApp Image 2026-05-11 at 15.42.14.jpg'
+          alt="Mist over the Ajodhya Hills forest reserve at The Divine Oasis"
           fill
           className="object-cover"
           sizes="100vw"
@@ -92,7 +92,7 @@ export default function ParallaxDivider() {
             animate={isInView ? { opacity: 1 } : {}}
             transition={{ duration: 0.7, delay: 0.5 }}
           >
-            — Hotel Surya Bella Casa
+            — The Divine Oasis
           </motion.p>
         </motion.div>
       </div>

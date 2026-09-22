@@ -3,9 +3,9 @@ import SectionLabel from '@/components/ui/SectionLabel'
 
 export const metadata: Metadata = {
   title: 'Cancellation & Refund Policy',
-  description: 'Read the cancellation and refund policy of Hotel Surya Bella Casa, Purnea. Booking amendments, refund timelines, and no-show policy.',
+  description: 'Read the cancellation and refund policy of The Divine Oasis, Purulia. Booking amendments, refund timelines, and no-show policy.',
   alternates: {
-    canonical: 'https://hotelsuryabellacasa.com/cancellation',
+    canonical: 'https://thedivineoasisresort.com/cancellation',
   },
   robots: {
     index: true,
@@ -25,15 +25,15 @@ export default function CancellationPage() {
           __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "WebPage",
-            "@id": "https://hotelsuryabellacasa.com/cancellation/#webpage",
-            "url": "https://hotelsuryabellacasa.com/cancellation",
-            "name": "Cancellation & Refund Policy | Hotel Surya Bella Casa",
-            "description": "Read the cancellation and refund policy guidelines of Hotel Surya Bella Casa regarding direct booking reservation amendments, monsoon policies, and refunds.",
+            "@id": "https://thedivineoasisresort.com/cancellation/#webpage",
+            "url": "https://thedivineoasisresort.com/cancellation",
+            "name": "Cancellation & Refund Policy | The Divine Oasis",
+            "description": "Read the cancellation and refund policy guidelines of The Divine Oasis regarding direct booking reservation amendments, monsoon policies, and refunds.",
             "isPartOf": {
               "@type": "WebSite",
-              "@id": "https://hotelsuryabellacasa.com/#website",
-              "name": "Hotel Surya Bella Casa",
-              "url": "https://hotelsuryabellacasa.com"
+              "@id": "https://thedivineoasisresort.com/#website",
+              "name": "The Divine Oasis",
+              "url": "https://thedivineoasisresort.com"
             }
           })
         }}
@@ -126,7 +126,7 @@ export default function CancellationPage() {
     <div className="flex gap-3">
       <span className="text-forest leading-8">•</span>
       <p className="flex-1">
-        Standard Check-In Time is 1:00 PM and Check-Out Time is 12:00 Noon.
+        Standard Check-In Time is 12:00 PM and Check-Out Time is 12:00 PM.
       </p>
     </div>
 
@@ -154,7 +154,7 @@ export default function CancellationPage() {
     <div className="flex gap-3">
       <span className="text-forest leading-8">•</span>
       <p className="flex-1">
-        Advance booking rates and rates during the stay may differ. The tariff applicable at the time of billing at Hotel Surya Bella Casa shall be considered final.
+        Advance booking rates and rates during the stay may differ. The tariff applicable at the time of billing at The Divine Oasis shall be considered final.
       </p>
     </div>
 
@@ -168,7 +168,7 @@ export default function CancellationPage() {
     <div className="flex gap-3">
       <span className="text-forest leading-8">•</span>
       <p className="flex-1">
-        Hotel Surya Bella Casa reserves the right to cancel or modify reservations if fraudulent, inappropriate, or suspicious activities are identified, or if the reservation appears to contain errors or incorrect information.
+        The Divine Oasis reserves the right to cancel or modify reservations if fraudulent, inappropriate, or suspicious activities are identified, or if the reservation appears to contain errors or incorrect information.
       </p>
     </div>
 
@@ -182,7 +182,7 @@ export default function CancellationPage() {
     <div className="flex gap-3">
       <span className="text-forest leading-8">•</span>
       <p className="flex-1">
-        Hotel Surya Bella Casa reserves the right to deny accommodation in accordance with hotel policies and applicable regulations.
+        The Divine Oasis reserves the right to deny accommodation in accordance with hotel policies and applicable regulations.
       </p>
     </div>
 
@@ -196,7 +196,7 @@ export default function CancellationPage() {
     <div className="flex gap-3">
       <span className="text-forest leading-8">•</span>
       <p className="flex-1">
-        For any queries related to reservations, cancellations, amendments, or booking assistance, guests are requested to contact Hotel Surya Bella Casa through the official contact details provided on the website.
+        For any queries related to reservations, cancellations, amendments, or booking assistance, guests are requested to contact The Divine Oasis through the official contact details provided on the website.
       </p>
     </div>
 

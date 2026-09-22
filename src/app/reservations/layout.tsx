@@ -2,10 +2,10 @@ import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
   title: 'Book Your Stay Online',
-  description: 'Book your hotel room directly at Hotel Surya Bella Casa, Purnea. Choose from AC and Non-AC rooms. Best rates guaranteed on direct bookings.',
-  keywords: ['book hotel Purnea', 'hotel reservation Purnea', 'Purnea room booking', 'hotel surya bella casa reservation', 'online booking Purnea', 'Purnea hotel booking online', 'Purnea ac room booking', 'Purnea non ac room booking', 'hotel near bus stand Purnea booking', 'Purnea hotel best rate', 'Purnea hotel direct booking', 'instant booking Purnea hotel', 'Purnea hotel room availability', 'Purnea hotel reservation online', 'secure hotel booking Purnea'],
+  description: 'Book your hotel room directly at The Divine Oasis, Purulia. Choose from AC and Non-AC rooms. Best rates guaranteed on direct bookings.',
+  keywords: ['book hotel Purulia', 'hotel reservation Purulia', 'Purulia room booking', 'The Divine Oasis reservation', 'online booking Purulia', 'Purulia hotel booking online', 'Purulia ac room booking', 'Purulia non ac room booking', 'hotel near Ajodhya Hill Purulia booking', 'Purulia hotel best rate', 'Purulia hotel direct booking', 'instant booking Purulia hotel', 'Purulia hotel room availability', 'Purulia hotel reservation online', 'secure hotel booking Purulia'],
   alternates: {
-    canonical: 'https://hotelsuryabellacasa.com/reservations',
+    canonical: 'https://thedivineoasisresort.com/reservations',
   },
   robots: {
     index: true,
@@ -18,25 +18,25 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: 'Book Your Stay Online | Hotel Surya Bella Casa Purnea',
-    description: 'Book your hotel room directly at Hotel Surya Bella Casa, Purnea. Best rates guaranteed on direct bookings.',
-    url: 'https://hotelsuryabellacasa.com/reservations',
-    siteName: 'Hotel Surya Bella Casa',
+    title: 'Book Your Stay Online | The Divine Oasis Purulia',
+    description: 'Book your hotel room directly at The Divine Oasis, Purulia. Best rates guaranteed on direct bookings.',
+    url: 'https://thedivineoasisresort.com/reservations',
+    siteName: 'The Divine Oasis',
     type: 'website',
     images: [
       {
-        url: 'https://bookonelocal.in/cdn/IMG_3815.avif',
+        url: 'https://bookonelocal.in/cdn/2026-05-13-064432393-WhatsApp Image 2026-05-11 at 15.42.15.jpg',
         width: 1200,
         height: 630,
-        alt: 'Book your stay at Hotel Surya Bella Casa Purnea',
+        alt: 'Book your stay at The Divine Oasis Purulia',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Book Your Stay Online | Hotel Surya Bella Casa Purnea',
-    description: 'Book your hotel room directly at Hotel Surya Bella Casa, Purnea. Best rates guaranteed.',
-    images: ['https://bookonelocal.in/cdn/IMG_3815.avif'],
+    title: 'Book Your Stay Online | The Divine Oasis Purulia',
+    description: 'Book your hotel room directly at The Divine Oasis, Purulia. Best rates guaranteed.',
+    images: ['https://bookonelocal.in/cdn/2026-05-13-064432393-WhatsApp Image 2026-05-11 at 15.42.15.jpg'],
   },
 }
 
@@ -54,13 +54,13 @@ export default function ReservationsLayout({ children }: { children: React.React
                 '@type': 'ListItem',
                 position: 1,
                 name: 'Home',
-                item: 'https://hotelsuryabellacasa.com',
+                item: 'https://thedivineoasisresort.com',
               },
               {
                 '@type': 'ListItem',
                 position: 2,
                 name: 'Reservations',
-                item: 'https://hotelsuryabellacasa.com/reservations',
+                item: 'https://thedivineoasisresort.com/reservations',
               },
             ],
           }),

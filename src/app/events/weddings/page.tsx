@@ -5,10 +5,10 @@ import { Heart, Users, Utensils, Camera, MapPin, Calendar } from 'lucide-react';
 import Link from 'next/link';
 
 export const metadata = {
-  title: 'Wedding Venue in Purnea | Marriage Hall & Banquet',
-  description: 'Best wedding venue in Purnea near Bus Stand. Hotel Surya Bella Casa offers marriage hall, wedding lawns, banquet hall & bridal suites for up to 250 guests.',
-  keywords: ['wedding venue purnea', 'marriage hall Purnea', 'banquet hall wedding purnea', 'best wedding hotel purnea', 'wedding decoration Purnea', 'wedding catering purnea'],
-  alternates: { canonical: 'https://hotelsuryabellacasa.com/events/weddings' },
+  title: 'Outdoor Wedding Venue at Ajodhya Hill | The Divine Oasis, Purulia',
+  description: 'Dream outdoor weddings at The Divine Oasis atop Ajodhya Hill, Purulia. Hilltop forest resort with organic farm catering, barbeque evenings & family cottages for up to 100 guests.',
+  keywords: ['wedding venue Purulia', 'outdoor wedding Ajodhya Hill', 'marriage hall Purulia', 'banquet hall wedding Purulia', 'best wedding resort Purulia', 'wedding catering Purulia'],
+  alternates: { canonical: 'https://thedivineoasisresort.com/events/weddings' },
 };
 
 export default function WeddingsPage() {
@@ -16,18 +16,18 @@ export default function WeddingsPage() {
     {
       "@context": "https://schema.org",
       "@type": "EventVenue",
-      "name": "Wedding Venue - Hotel Surya Bella Casa",
-      "description": "Best wedding venue in Purnea near Bus Stand. Hotel Surya Bella Casa offers marriage hall, wedding lawns, banquet hall & bridal suites for up to 250 guests.",
+      "name": "Wedding Venue - The Divine Oasis Ajodhya Hill",
+      "description": "Outdoor wedding venue at The Divine Oasis atop Ajodhya Hill, Purulia. Forest resort with hilltop ceremony spaces, organic farm catering, barbeque evenings & family cottages.",
       "address": {
         "@type": "PostalAddress",
-        "streetAddress": "Suryalok Complex, Opposite Vikass Market, Near Bus Stand",
-        "addressLocality": "Purnea",
-        "addressRegion": "Bihar",
-        "postalCode": "854301",
+        "streetAddress": "643G+4Q, Hilltop",
+        "addressLocality": "Ajodhya",
+        "addressRegion": "West Bengal",
+        "postalCode": "723152",
         "addressCountry": "IN"
       },
-      "maximumAttendeeCapacity": "200",
-      "telephone": "+91 9835923601"
+      "maximumAttendeeCapacity": "100",
+      "telephone": "+91 99039 89950"
     },
     {
       "@context": "https://schema.org",
@@ -35,26 +35,26 @@ export default function WeddingsPage() {
       "mainEntity": [
         {
           "@type": "Question",
-          "name": "What is the best wedding venue in Purnea?",
+          "name": "What is the best outdoor wedding venue in Purulia?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Hotel Surya Bella Casa is the best wedding venue in Purnea near Bus Stand with wedding lawns, banquet hall, and bridal suites for up to 250 guests."
+            "text": "The Divine Oasis is the best outdoor wedding venue in Purulia, located atop Ajodhya Hill with forest views. We host weddings, receptions, and multi-day celebrations with organic farm catering and barbeque evenings."
           }
         },
         {
           "@type": "Question",
-          "name": "Is there a marriage hall near Purnea Bus Stand?",
+          "name": "Is there a wedding venue near Ajodhya Hill, Purulia?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Yes, Hotel Surya Bella Casa has a marriage hall near Purnea Bus Stand with wedding lawns, banquet facilities, and bespoke catering for your special day."
+            "text": "Yes, The Divine Oasis is a wedding venue at Ajodhya Hill, Purulia with hilltop ceremony spaces, organic farm catering, and family cottages for guests."
           }
         },
         {
           "@type": "Question",
-          "name": "How many guests can a wedding venue in Purnea accommodate?",
+          "name": "How many guests can a wedding venue in Purulia accommodate?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Hotel Surya Bella Casa wedding venue in Purnea can accommodate up to 250 guests with customizable menus, decor, and planning services."
+            "text": "The Divine Oasis wedding venue at Ajodhya Hill can accommodate up to 100 guests with customizable organic farm menus, decor, and planning services."
           }
         }
       ]
@@ -70,36 +70,10 @@ export default function WeddingsPage() {
       />
 
       <CinematicHero 
-        label="Best Wedding Venue in Purnea - Marriage Hall Near Bus Stand"
-        title="Wedding Venue in Purnea - Banquet & Wedding Lawns"
-        tagline="Best wedding venue in Purnea near Bus Stand. Marriage hall, wedding lawns, banquet hall & bridal suites for your dream celebration."
-        image='/images/exterior5.jpeg'
-      />
-
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "VideoObject",
-            "name": "Hotel Surya Bella Casa Wedding Venue - Marriage Hall & Banquet",
-            "description": "Video tour of Hotel Surya Bella Casa weddings facility showcasing our marriage hall, wedding lawns, banquet hall, and bridal suites near Purnea Bus Stand. Perfect for your dream wedding in Purnea.",
-            "thumbnailUrl": "https://bookonelocal.in/cdn/IMG_7431.mp4".replace('/images/', '/cdn/').replace('.jpeg', '.mp4').replace('exterior5', '7431'),
-            "contentUrl": "https://bookonelocal.in/cdn/IMG_7431.mp4",
-            "embedUrl": "https://hotelsuryabellacasa.com/events/weddings",
-            "uploadDate": "2024-01-01",
-            "duration": "PT90S",
-            "potentialAction": {
-              "@type": "WatchAction",
-              "target": "https://hotelsuryabellacasa.com/events/weddings"
-            },
-            "interactionStatistic": {
-              "@type": "InteractionCounter",
-              "interactionType": "https://schema.org/WatchAction",
-              "userInteractionCount": 650
-            }
-          })
-        }}
+        label="Outdoor Wedding Venue at Ajodhya Hill - The Divine Oasis, Purulia"
+        title="Wedding Venue at Ajodhya Hill - Hilltop Forest Resort"
+        tagline="Dream outdoor weddings at The Divine Oasis atop Ajodhya Hill, Purulia. Hilltop ceremony spaces, organic farm catering, barbeque evenings & family cottages for up to 100 guests."
+        image='https://bookonelocal.in/cdn/2026-05-13-064448375-WhatsApp Image 2026-05-11 at 15.42.13.jpg'
       />
 
       <section className="py-24">
@@ -107,26 +81,26 @@ export default function WeddingsPage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center mb-32">
             <div>
               <SectionLabel className="mb-6">The Venue</SectionLabel>
-              <h2 className="font-display text-4xl md:text-6xl italic text-forest mb-8">Purnea&apos;s Premier Wedding Destination</h2>
+              <h2 className="font-display text-4xl md:text-6xl italic text-forest mb-8">Ajodhya Hill&apos;s Premier Wedding Destination</h2>
               <p className="font-serif text-lg text-taupe leading-relaxed mb-10">
-                At Hotel Surya Bella Casa, we transform your dream wedding into a reality. Our expansive lawns can host up to 250 guests, offering a seamless blend of rustic charm and premium luxury.
+                At The Divine Oasis, we transform your dream wedding into a reality. Our hilltop ceremony spaces can host up to 100 guests, offering a seamless blend of forest serenity and premium comfort.
               </p>
               
               <div className="grid grid-cols-2 gap-8 mb-10">
                 <div className="flex flex-col gap-3">
                   <Users className="text-gold" size={24} />
                   <p className="font-sans text-[11px] uppercase tracking-widest text-gold">Capacity</p>
-                  <p className="font-serif text-forest text-xl italic">250 Guests</p>
+                  <p className="font-serif text-forest text-xl italic">100 Guests</p>
                 </div>
                 <div className="flex flex-col gap-3">
                   <MapPin className="text-gold" size={24} />
                   <p className="font-sans text-[11px] uppercase tracking-widest text-gold">Setting</p>
-                  <p className="font-serif text-forest text-xl italic">Banquets & Lawns</p>
+                  <p className="font-serif text-forest text-xl italic">Hilltop Forest</p>
                 </div>
               </div>
 
               <a 
-                href="https://bookone.io/Hotel-Bella-Casa?bookingEngine=true" 
+                href="https://bookone.io/The-Divine-Oasis?bookingEngine=true" 
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-3 bg-forest text-ivory font-sans text-[11px] uppercase tracking-[0.2em] px-10 py-5 hover:bg-forest/90 transition-all rounded-sm"
@@ -136,7 +110,7 @@ export default function WeddingsPage() {
               </a>
             </div>
             <div className="relative aspect-square">
-               <Image src='/images/exterior6.jpeg' alt="Wedding Venue in Purnea - Marriage Hall Near Bus Stand | Hotel Surya Bella Casa" fill className="object-cover rounded-sm shadow-2xl" />
+               <Image src='https://bookonelocal.in/cdn/2026-05-13-064448375-WhatsApp Image 2026-05-11 at 15.42.13.jpg' alt="Outdoor Wedding Venue at The Divine Oasis Ajodhya Hill" fill className="object-cover rounded-sm shadow-2xl" />
             </div>
           </div>
 
@@ -147,9 +121,9 @@ export default function WeddingsPage() {
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
             {[
-              { icon: Utensils, title: 'Bespoke Catering', desc: 'Customizable menus featuring regional vegetarian specialties and global cuisines.' },
+              { icon: Utensils, title: 'Organic Farm Catering', desc: 'Customizable veg thali menus featuring seasonal farm vegetables and traditional Bengali flavours.' },
               { icon: Heart, title: 'Decor & Planning', desc: 'From minimal rustic setups to lavish floral arrangements, we handle it all.' },
-              { icon: Camera, title: 'Memories', desc: 'Exclusive bridal suites and stunning photo locations throughout the resort.' }
+              { icon: Camera, title: 'Memories', desc: 'Exclusive bridal suites and stunning photo locations throughout the hilltop forest.' }
             ].map((service, i) => (
               <div key={i} className="text-center p-10 bg-white border border-gold/10 hover:shadow-warm-lg transition-all duration-500 group">
                 <service.icon className="text-gold mx-auto mb-8 group-hover:scale-110 transition-transform" size={40} />

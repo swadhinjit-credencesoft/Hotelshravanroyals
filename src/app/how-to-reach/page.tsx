@@ -1,28 +1,36 @@
-import type { Metadata } from 'next'
+﻿import type { Metadata } from 'next'
 import SectionLabel from '@/components/ui/SectionLabel'
 import { Train, Bus, Car, Plane, MapPin } from 'lucide-react'
 
 export const metadata: Metadata = {
-  title: 'How to Reach Us & Travel Guide',
+  title: 'How to Reach The Divine Oasis | Ajodhya Hill, Purulia Travel Guide',
   description:
-    'Travel guide to reach Hotel Surya Bella Casa in Purnea. Directions from Purnea Junction, Bus Stand, and nearby cities like Patna and Siliguri.',
-  keywords: ['how to reach purnea', 'purnea directions', 'purnea railway station', 'purnea bus stand', 'purnea airport distance', 'travel to Purnea bihar'],
+    'Complete travel guide to reach The Divine Oasis at Ajodhya Hill, Purulia. Directions from Purulia Junction (42.6 km), Ranchi (110 km), Kolkata (280 km), and by air/rail/road.',
+  keywords: [
+    'how to reach Ajodhya Hill',
+    'Purulia directions',
+    'Purulia Junction railway station',
+    'Ajodhya Hill resort',
+    'Purulia airport distance',
+    'travel to Purulia West Bengal',
+    'reach The Divine Oasis',
+  ],
   alternates: {
-    canonical: 'https://hotelsuryabellacasa.com/how-to-reach',
+    canonical: 'https://thedivineoasisresort.com/how-to-reach',
   },
   openGraph: {
-    title: 'How to Reach Hotel Surya Bella Casa Purnea | Travel Guide',
-    description: 'Complete travel directions to reach Hotel Surya Bella Casa in Purnea. Guide from railway station, bus stand, and nearby cities. Book your stay now.',
-    url: 'https://hotelsuryabellacasa.com/how-to-reach',
-    siteName: 'Hotel Surya Bella Casa',
+    title: 'How to Reach The Divine Oasis | Ajodhya Hill, Purulia Travel Guide',
+    description: 'Complete travel directions to reach The Divine Oasis at Ajodhya Hill, Purulia. Guide from Purulia Junction, Ranchi, Kolkata, and nearby cities. Book your stay now.',
+    url: 'https://thedivineoasisresort.com/how-to-reach',
+    siteName: 'The Divine Oasis',
     type: 'website',
-    images: [{ url: 'https://bookonelocal.in/cdn/IMG_3815.avif', width: 1200, height: 630, alt: 'How to Reach Hotel Surya Bella Casa Purnea - Travel Guide' }],
+    images: [{ url: 'https://bookonelocal.in/cdn/2026-05-13-064432393-WhatsApp Image 2026-05-11 at 15.42.15.jpg', width: 1200, height: 630, alt: 'How to Reach The Divine Oasis Ajodhya Hill - Travel Guide' }],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'How to Reach Hotel Surya Bella Casa Purnea',
-    description: 'Complete travel guide to reach Hotel Surya Bella Casa in Purnea. Directions from railway station, bus stand, and nearby cities.',
-    images: ['https://bookonelocal.in/cdn/IMG_3815.avif'],
+    title: 'How to Reach The Divine Oasis | Ajodhya Hill, Purulia',
+    description: 'Complete travel guide to reach The Divine Oasis at Ajodhya Hill, Purulia. Directions from Purulia Junction, Ranchi, Kolkata, and nearby cities.',
+    images: ['https://bookonelocal.in/cdn/2026-05-13-064432393-WhatsApp Image 2026-05-11 at 15.42.15.jpg'],
   },
   robots: {
     index: true,
@@ -35,37 +43,37 @@ const routes = [
   {
     icon: Train,
     title: 'By Railway',
-    subtitle: 'Purnea Junction (6.1 km)',
+    subtitle: 'Purulia Junction (42.6 km)',
     details: [
-      'Nearest station: Purnea Junction Railway Station',
-      'Distance from hotel: 6.1 km (15 min drive)',
-      'Auto-rickshaw and e-rickshaw readily available outside station',
-      'Fare from station: ₹150-200 by auto-rickshaw',
-      'Major connections: Katihar, Bhagalpur, Saharsa, Barsoi',
+      'Nearest station: Purulia Junction (PRR)',
+      'Distance from resort: 42.6 km (~60-70 min drive)',
+      'Taxis and auto-rickshaws readily available outside station',
+      'Fare from station: â‚¹1,200-1,500 by taxi',
+      'Major connections: Kolkata, Tatanagar, Ranchi, Adra, Bokaro',
     ],
   },
   {
     icon: Bus,
     title: 'By Road / Bus',
-    subtitle: 'Purnea Bus Stand (walking distance)',
+    subtitle: 'Ajodhya Hills & Forest Reserve (0.4 km)',
     details: [
-      'Nearest bus stop: Purnea Main Bus Stand (just 200m walk)',
-      'Regular buses from Patna (6 hrs), Bhagalpur (3 hrs), Siliguri (4 hrs)',
-      'State and private buses operate regularly to Purnea',
-      'Hotel is opposite Vikass Market, easily visible from Bus Stand',
+      'Regular buses from Ranchi (2.5 hrs), Kolkata (5.5-6.5 hrs), Tatanagar (2 hrs)',
+      'State and private buses operate regularly to Purulia town',
+      'From Purulia, take local taxi to Ajodhya Hill (38.5 km via Baghmundi)',
+      'Resort is 0.4 km from Ajodhya Hills & Forest Reserve entrance',
       'Parking available on-site for private vehicles',
     ],
   },
   {
     icon: Car,
     title: 'By Car / Taxi',
-    subtitle: 'Well-connected by NH-31 and NH-27',
+    subtitle: 'Well-connected by NH 19, NH 20, NH 14',
     details: [
-      'From Patna: ~260 km via NH-31 (6 hrs drive)',
-      'From Siliguri: ~180 km via NH-27 (4 hrs drive)',
-      'From Bhagalpur: ~100 km via NH-31 (2.5 hrs drive)',
-      'From Katihar: ~35 km via NH-31 (45 min drive)',
-      'GPS: Suryalok Complex, Opposite Vikass Market, Near Bus Stand, Purnea',
+      'From Kolkata: ~280 km via NH 19 & NH 14 (5.5-6.5 hrs drive)',
+      'From Ranchi: ~110 km via NH 20 (2.5-3 hrs drive)',
+      'From Tatanagar/Jamshedpur: ~90 km via NH 18 (2 hrs drive)',
+      'From Asansol: ~80 km via NH 14 (2 hrs drive)',
+      'GPS: 643G+4Q, Hilltop, Ajodhya, Purulia 723152',
     ],
   },
   {
@@ -73,11 +81,11 @@ const routes = [
     title: 'By Air',
     subtitle: 'Nearest airports',
     details: [
-      'Bagdogra Airport (IXB): ~180 km, 4 hrs drive',
-      'Patna Airport (PAT): ~260 km, 6 hrs drive',
-      'Darbhanga Airport (DBR): ~120 km, 3 hrs drive (upcoming flights)',
+      'Birsa Munda Airport, Ranchi (IXR): ~110 km, 2.5-3 hrs drive',
+      'Netaji Subhas Chandra Bose Airport, Kolkata (CCU): ~280 km, 5.5-6.5 hrs drive',
+      'Sonari Airport, Jamshedpur (IXW): ~90 km, 2 hrs drive (limited flights)',
       'Taxi services available from all airports',
-      'Hotel can arrange pickup on request',
+      'Resort can arrange pickup on prior request',
     ],
   },
 ]
@@ -96,13 +104,13 @@ export default function HowToReachPage() {
                 '@type': 'ListItem',
                 position: 1,
                 name: 'Home',
-                item: 'https://hotelsuryabellacasa.com',
+                item: 'https://thedivineoasisresort.com',
               },
               {
                 '@type': 'ListItem',
                 position: 2,
                 name: 'How to Reach',
-                item: 'https://hotelsuryabellacasa.com/how-to-reach',
+                item: 'https://thedivineoasisresort.com/how-to-reach',
               },
             ],
           })
@@ -115,10 +123,10 @@ export default function HowToReachPage() {
           __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "Article",
-            "headline": "How to Reach Hotel Surya Bella Casa Purnea",
-            "description": "Complete travel directions and transportation options to reach Hotel Surya Bella Casa in Purnea, Bihar.",
-            "author": { "@type": "Organization", "name": "Hotel Surya Bella Casa" },
-            "about": { "@type": "Hotel", "name": "Hotel Surya Bella Casa" }
+            "headline": "How to Reach The Divine Oasis Ajodhya Hill",
+            "description": "Complete travel directions and transportation options to reach The Divine Oasis at Ajodhya Hill, Purulia, West Bengal.",
+            "author": { "@type": "Organization", "name": "The Divine Oasis" },
+            "about": { "@type": "Hotel", "name": "The Divine Oasis" }
           })
         }}
       />
@@ -127,11 +135,11 @@ export default function HowToReachPage() {
         <div className="text-center mb-16">
           <SectionLabel className="justify-center mb-4">Travel Guide</SectionLabel>
           <h1 className="font-display text-4xl md:text-6xl italic text-forest mb-6">
-            How to Reach Hotel Surya Bella Casa Purnea
+            How to Reach The Divine Oasis Ajodhya Hill
           </h1>
           <p className="font-serif text-xl text-taupe max-w-2xl mx-auto leading-relaxed">
-            Located opposite Vikass Market near the main Bus Stand, Hotel Surya Bella Casa is easily accessible 
-            by road, rail, and air. Here is your complete travel guide to reaching the best hotel in Purnea, Bihar.
+            Perched atop Ajodhya Hill in Purulia, The Divine Oasis is accessible by rail, road, and air. 
+            Here is your complete travel guide to reaching our forest resort in Purulia, West Bengal.
           </p>
         </div>
 
@@ -165,18 +173,18 @@ export default function HowToReachPage() {
           </h2>
           <p className="font-serif text-lg leading-relaxed mb-8 max-w-2xl">
             Our front desk team can assist you with local transport arrangements, 
-            pickup from the railway station or bus stand, and provide detailed 
-            directions. Call us or message on WhatsApp for personalized assistance.
+            pickup from Purulia Junction, and provide detailed directions. 
+            Call us or message on WhatsApp for personalized assistance.
           </p>
           <div className="flex flex-wrap gap-4">
             <a
-              href="tel:+919835923601"
+              href="tel:+91990398950"
               className="inline-flex items-center gap-2 bg-gold text-[#1a1004] font-sans text-[11px] uppercase tracking-[0.2em] px-8 py-4 rounded-sm hover:bg-gold-light transition-all font-bold"
             >
-              Call +91 9835923601
+              Call +91 99039 89950
             </a>
             <a
-              href="https://api.whatsapp.com/send?phone=919835923601&text=Hi! I need help with directions to Hotel Surya Bella Casa Purnea"
+              href="https://api.whatsapp.com/send?phone=91990398950&text=Hi! I need help with directions to The Divine Oasis Ajodhya Hill"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 border border-gold/50 text-ivory font-sans text-[11px] uppercase tracking-[0.2em] px-8 py-4 rounded-sm hover:bg-gold/10 transition-all"
@@ -192,16 +200,16 @@ export default function HowToReachPage() {
           </h2>
           <div className="bg-white border border-gold/10 rounded-sm p-8 text-center max-w-lg mx-auto">
             <p className="font-serif text-xl text-forest font-medium mb-2">
-              Suryalok Complex
+              The Divine Oasis
             </p>
             <p className="font-sans text-base text-taupe/80 mb-2">
-              Opposite Vikass Market, Near Bus Stand
+              643G+4Q, Hilltop
             </p>
-            <p className="font-sans text-base text-taupe/80 mb-6">
-              Purnea, Bihar 854301
+            <p className="font-sans text-base text-taupe/80 mb-2">
+              Ajodhya, Purulia, West Bengal 723152
             </p>
             <a
-              href="https://www.google.com/maps/dir/?api=1&destination=25.7771,87.4753"
+              href="https://www.google.com/maps/dir/?api=1&destination=23.2028654,86.1268909"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 bg-gold text-[#1a1004] font-sans text-[11px] uppercase tracking-[0.2em] px-8 py-4 rounded-sm hover:bg-gold-light transition-all font-bold"

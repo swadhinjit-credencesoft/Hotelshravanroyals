@@ -1,26 +1,26 @@
-// import Image from 'next/image';
+﻿// import Image from 'next/image';
 import DiningSection from '@/components/sections/DiningSection';
 import type { Metadata } from 'next';
 import CinematicHero from '@/components/ui/CinematicHero';
 import SectionLabel from '@/components/ui/SectionLabel';
 import GoldDivider from '@/components/ui/GoldDivider';
 import { Coffee } from 'lucide-react';
-// import { Coffee, Flame, UtensilsCrossed } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: 'Rooftop Restaurant & Dining',
-  description: 'Best rooftop restaurant in Purnea at Hotel Surya Bella Casa near Bus Stand. Multi-cuisine dining with Indian, Tandoor, Mughlai, Asian and Continental food.',
+  title: 'Organic Farm Dining & Barbeque Evenings | The Divine Oasis, Ajodhya Hill',
+  description: 'Experience farm-to-table organic veg thali, barbeque under the open sky, and drinks with hors d\'oeuvres at The Divine Oasis resort atop Ajodhya Hill, Purulia.',
   alternates: {
-    canonical: 'https://hotelsuryabellacasa.com/dining',
+    canonical: 'https://thedivineoasisresort.com/dining',
   },
   keywords: [
-    'restaurant in purnea',
-    'rooftop restaurant purnea',
-    'best food in Purnea',
-    'multi cuisine restaurant purnea',
-    'hotel dining Purnea',
-    'pure vegetarian restaurant purnea',
-    'non veg restaurant near bus stand purnea',
+    'organic farm dining Purulia',
+    'farm to table restaurant Purulia',
+    'vegetarian restaurant Ajodhya Hill',
+    'barbeque resort Purulia',
+    'best dinner place Purulia',
+    'family dining Purulia',
+    'hilltop restaurant West Bengal',
+    'vegetarian thali Purulia',
   ],
 }
 
@@ -38,13 +38,13 @@ export default function DiningPage() {
                 '@type': 'ListItem',
                 position: 1,
                 name: 'Home',
-                item: 'https://hotelsuryabellacasa.com',
+                item: 'https://thedivineoasisresort.com',
               },
               {
                 '@type': 'ListItem',
                 position: 2,
                 name: 'Dining',
-                item: 'https://hotelsuryabellacasa.com/dining',
+                item: 'https://thedivineoasisresort.com/dining',
               },
             ],
           })
@@ -52,10 +52,10 @@ export default function DiningPage() {
       />
 
       <CinematicHero 
-        label="Best Rooftop Restaurant in Purnea - Family Restaurant Near Bus Stand"
-        title="Best Restaurant in Purnea - Rooftop Dining & Multi Cuisine"
-        tagline="Looking for the best restaurant in Purnea? Enjoy rooftop dining, family restaurant near Bus Stand serving Indian, Tandoor, Mughlai, Asian & Continental cuisine. Best dinner restaurant in Purnea - Hotel Surya Bella Casa."
-        image='https://bookonelocal.in/cdn/IMG_3791.avif'
+        label="Organic Farm Dining & Barbeque Evenings at Ajodhya Hill"
+        title="Farm-to-Table Dining at The Divine Oasis, Purulia"
+        tagline="Experience organic farm-to-table veg thali, barbeque under the open sky, and drinks with hors d&apos;oeuvres at our hilltop seating area. Pure vegetarian resort dining in Purulia."
+        image='https://bookonelocal.in/cdn/2026-05-13-064448375-WhatsApp Image 2026-05-11 at 15.42.13.jpg'
       />
       
       {/* SEO Schema */}
@@ -65,34 +65,34 @@ export default function DiningPage() {
           __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "Restaurant",
-            "name": "Rooftop Restaurant - Hotel Surya Bella Casa",
-            "description": "Multi-cuisine rooftop restaurant at Hotel Surya Bella Casa in Purnea. Serving Indian, Tandoor, Mughlai, Asian, and Continental dishes. Pure vegetarian environment on property.",
-            "url": "https://hotelsuryabellacasa.com/dining",
-            "image": "https://bookonelocal.in/cdn/IMG_3808.avif",
-            "telephone": "+919835923601",
+            "name": "The Divine Oasis - Farm-to-Table Dining",
+            "description": "Organic farm-to-table vegetarian thali, barbeque evenings, and drinks at the hilltop seating area. Pure vegetarian resort dining at The Divine Oasis, Ajodhya Hill, Purulia.",
+            "url": "https://thedivineoasisresort.com/dining",
+            "image": "https://bookonelocal.in/cdn/2026-05-13-064448375-WhatsApp Image 2026-05-11 at 15.42.13.jpg",
+            "telephone": "+91990398950",
             "address": {
               "@type": "PostalAddress",
-              "streetAddress": "Suryalok Complex, Opposite Vikass Market, Near Bus Stand",
-              "addressLocality": "Purnea",
-              "addressRegion": "Bihar",
-              "postalCode": "854301",
+              "streetAddress": "643G+4Q, Hilltop",
+              "addressLocality": "Ajodhya",
+              "addressRegion": "West Bengal",
+              "postalCode": "723152",
               "addressCountry": "IN"
             },
             "geo": {
               "@type": "GeoCoordinates",
-              "latitude": 25.7771,
-              "longitude": 87.4753
+              "latitude": 23.2028654,
+              "longitude": 86.1268909
             },
-            "servesCuisine": ["Indian", "Tandoor", "Mughlai", "Asian", "Continental"],
-            "priceRange": "₹300 - ₹800",
+            "servesCuisine": ["Vegetarian Thali", "Organic Farm-to-Table", "Barbeque", "Indian"],
+            "priceRange": "â‚¹300 - â‚¹800",
             "acceptsReservations": "True",
             "openingHoursSpecification": [
-              { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"], "opens": "07:00", "closes": "23:00" }
+              { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"], "opens": "08:00", "closes": "22:00" }
             ],
             "hasMenu": {
               "@type": "Menu",
-              "name": "Multi-Cuisine Menu",
-              "description": "Indian, Tandoor, Mughlai, Asian, and Continental dishes"
+              "name": "Farm-to-Table Vegetarian Menu",
+              "description": "Organic veg thali, seasonal farm vegetables, local rice, Bengali flavours"
             },
             "starRating": {
               "@type": "Rating",
@@ -112,34 +112,34 @@ export default function DiningPage() {
             "mainEntity": [
               {
                 "@type": "Question",
-                "name": "What is the best rooftop restaurant in Purnea?",
+                "name": "What dining options are available at The Divine Oasis?",
                 "acceptedAnswer": {
                   "@type": "Answer",
-                  "text": "Hotel Surya Bella Casa has the best rooftop restaurant in Purnea, located near Bus Stand opposite Vikass Market."
+                  "text": "The Divine Oasis offers organic farm-to-table vegetarian thali, barbeque evenings at our barbeque stand, and drinks with hors d&apos;oeuvres at our scenic hilltop seating area. All meals are pure vegetarian."
                 }
               },
               {
                 "@type": "Question",
-                "name": "Is there a good family restaurant in Purnea near Bus Stand?",
+                "name": "Is there a restaurant at The Divine Oasis Ajodhya Hill?",
                 "acceptedAnswer": {
                   "@type": "Answer",
-                  "text": "Yes, Hotel Surya Bella Casa is a family restaurant in Purnea near Bus Stand offering pure vegetarian food, Indian, Tandoor, Mughlai, Asian and Continental cuisine."
+                  "text": "Yes, The Divine Oasis features farm-to-table dining with fresh organic vegetables from our own farm, served in our hilltop dining area with forest views."
                 }
               },
               {
                 "@type": "Question",
-                "name": "What are the best dinner restaurants in Purnea?",
+                "name": "Do you serve non-vegetarian food at The Divine Oasis?",
                 "acceptedAnswer": {
                   "@type": "Answer",
-                  "text": "Hotel Surya Bella Casa's rooftop restaurant is one of the best dinner restaurants in Purnea, serving multi cuisine options in a family-friendly atmosphere."
+                  "text": "No, The Divine Oasis is a pure vegetarian resort. We serve fresh organic veg thali and vegetarian barbeque options. Non-vegetarian food is not permitted on the property."
                 }
               },
               {
                 "@type": "Question",
-                "name": "Do you have a non-veg restaurant in Purnea?",
+                "name": "What are the dining hours at The Divine Oasis?",
                 "acceptedAnswer": {
                   "@type": "Answer",
-                  "text": "Yes, Hotel Surya Bella Casa serves both veg and non-veg options including special Fish and Mutton dishes prepared upon request at our restaurant in Purnea."
+                  "text": "Breakfast 8:00 â€“ 11:00 AM, Lunch 12:30 â€“ 3:30 PM, Dinner 7:30 â€“ 10:30 PM. Barbeque evenings 6:30 PM â€“ 10:00 PM (weather permitting)."
                 }
               }
             ]
@@ -151,10 +151,10 @@ export default function DiningPage() {
         <div className="max-w-4xl mx-auto px-6">
            <SectionLabel className="justify-center mb-8">The Philosophy</SectionLabel>
            <h2 className="font-serif text-3xl md:text-5xl italic text-forest mb-8">
-             &ldquo;Locally Sourced. Lovingly Crafted.&rdquo;
+             &ldquo;From Our Farm, To Your Table.&rdquo;
            </h2>
            <p className="font-sans text-lg text-taupe leading-relaxed">
-             Our chefs blend authentic Bihari techniques with global inspirations. Enjoy a diverse range of Indian, Tandoor, Mughlai, Asian, and Continental cuisine. <span className="text-gold font-bold">Special Fish and Mutton dishes are prepared upon request</span> to ensure maximum freshness.
+             Our kitchen crafts every meal using organic vegetables grown right here at The Divine Oasis. Savour seasonal farm produce, local rice, and traditional Bengali flavours in our beloved veg thali, served fresh daily in our hilltop dining area with forest views.
            </p>
         </div>
       </section>
@@ -163,30 +163,22 @@ export default function DiningPage() {
       <section className="py-16 bg-white border-t border-gold/10">
         <div className="max-w-[1000px] mx-auto px-6 md:px-10">
           <h2 className="font-display text-3xl md:text-4xl italic text-forest mb-8 text-center">
-            Rooftop Restaurant & Dining in Purnea Near Bus Stand
+            Farm-to-Table Dining & Barbeque Evenings at Ajodhya Hill
           </h2>
           <div className="font-sans text-base text-taupe/80 space-y-5 leading-loose max-w-3xl mx-auto">
             <p>
-              <strong>Hotel Surya Bella Casa</strong> offers one of the finest rooftop dining experiences in Purnea, 
-              located just steps from the main <strong>Bus Stand</strong> and opposite <strong>Vikass Market</strong>. 
-              Our multi-cuisine restaurant serves a wide array of Indian, Tandoor, Mughlai, Asian, and Continental 
-              dishes prepared by experienced chefs.
+              <strong>The Divine Oasis</strong> offers a unique dining experience atop Ajodhya Hill, 
+              where the forest meets the farm. Our organic farm produces the vegetables that grace your plate daily â€” 
+              fresh, seasonal, and completely vegetarian.
             </p>
             <p>
-              Whether you are looking for a family dinner, a business lunch, or a romantic evening, 
-              our rooftop setting provides a relaxed atmosphere with views of the Purnea cityscape. 
-              We take pride in using fresh, locally sourced ingredients to craft every dish.
+              Enjoy our signature veg thali with locally sourced ingredients, or gather around the barbeque stand 
+              for memorable evenings under the starlit sky. Our scenic seating area offers drinks and hors d&apos;oeuvres 
+              with panoramic views of the Ajodhya Hills & Forest Reserve.
             </p>
             <p>
-              Special <strong>Fish and Mutton</strong> dishes are prepared upon advance request to ensure 
-              maximum freshness and quality. Our chefs are happy to customize spice levels and preparations 
-              according to your preferences. For guests who prefer pure vegetarian meals, we offer an 
-              extensive selection of vegetarian Indian and continental options.
-            </p>
-            <p>
-              <strong>In-room dining</strong> is also available for guests who prefer the comfort of their rooms. 
-              Each room at Hotel Surya Bella Casa is equipped with a hot water kettle, complimentary tea/coffee 
-              supplies, and a mini-fridge for your convenience.
+              <strong>In-cottage dining</strong> is also available for guests who prefer the comfort of their cottages. 
+              Each cottage at The Divine Oasis comes with complimentary tea/coffee supplies and a mini-fridge for your convenience.
             </p>
           </div>
         </div>
@@ -195,8 +187,8 @@ export default function DiningPage() {
       {/* Cuisine Cards */}
       <section className="py-12 bg-cream overflow-hidden">
         <div className="max-w-[1600px] mx-auto px-6 md:px-10">
-          <div className="grid grid-cols-2 md:grid-cols-5 gap-4">
-            {['Indian', 'Tandoor', 'Mughlai', 'Asian', 'Continental'].map((item) => (
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+            {['Organic Veg Thali', 'Barbeque Evenings', 'Drinks & Hors d\'oeuvres', 'Farm-to-Table'].map((item) => (
               <div key={item} className="bg-white p-8 border border-gold/10 text-center hover:bg-gold/5 transition-all group">
                 <p className="font-sans text-[10px] uppercase tracking-[0.2em] text-taupe group-hover:text-gold transition-colors">{item}</p>
               </div>
@@ -205,47 +197,15 @@ export default function DiningPage() {
         </div>
       </section>
 
-      {/* Meal Plans */}
-      {/* <section className="py-24 bg-white border-y border-gold/10">
-        <div className="max-w-[1200px] mx-auto px-6 md:px-10">
-          <div className="text-center mb-16">
-            <SectionLabel className="justify-center mb-6">Dining Packages</SectionLabel>
-            <h2 className="font-display text-4xl italic text-forest">Meal Plans & Add-ons</h2>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
-            <div className="p-10 border border-gold/20 shadow-sm rounded-sm hover:shadow-warm-lg transition-all bg-[#fdfcf8] group">
-              <UtensilsCrossed className="text-gold mb-8 group-hover:scale-110 transition-transform" size={40} />
-              <h3 className="font-display text-3xl italic text-forest mb-4">All-Inclusive Meal Plan</h3>
-              <p className="font-sans text-[11px] uppercase tracking-[0.2em] text-gold mb-8">Breakfast, Lunch, High Tea & Dinner</p>
-              <p className="font-serif text-taupe mb-10 leading-relaxed text-lg">
-                Enjoy a hassle-free stay with our comprehensive meal plan covering all major meals and evening snacks. Choose from our extensive buffet or ÃƒÂ  la carte menu.
-              </p>
-              <div className="text-forest font-serif text-4xl">₹2,000 <span className="text-sm font-sans uppercase tracking-[0.15em] opacity-50">/ person / day</span></div>
-            </div>
-
-            <div className="p-10 border border-gold/20 shadow-sm rounded-sm hover:shadow-warm-lg transition-all bg-[#fdfcf8] group">
-              <Flame className="text-red-500/80 mb-8 group-hover:scale-110 transition-transform" size={40} />
-              <h3 className="font-display text-3xl italic text-forest mb-4">BBQ & Bonfire Package</h3>
-              <p className="font-sans text-[11px] uppercase tracking-[0.2em] text-gold mb-8">Evening Add-on Experience</p>
-              <p className="font-serif text-taupe mb-10 leading-relaxed text-lg">
-                Elevate your evening with a private bonfire setup and a live BBQ grill featuring marinated vegetables, paneer, and meats (<span className="italic">Fish/Mutton on request</span>).
-              </p>
-              <div className="text-forest font-serif text-4xl">₹1,500 <span className="text-sm font-sans uppercase tracking-[0.15em] opacity-50">/ couple</span></div>
-            </div>
-          </div>
-        </div>
-      </section> */}
-
       <DiningSection />
 
-      {/* In-Room Amenities Callout */}
+      {/* In-Cottage Amenities Callout */}
       <section className="py-20 bg-forest text-center text-ivory">
         <div className="max-w-2xl mx-auto px-6">
           <Coffee className="text-gold mx-auto mb-8" size={40} />
-          <h2 className="font-display text-4xl italic mb-6">In-Room Convenience</h2>
+          <h2 className="font-display text-4xl italic mb-6">In-Cottage Convenience</h2>
           <p className="font-serif text-ivory/80 leading-[1.8] mb-10 text-lg italic">
-            For your absolute comfort, every room at Hotel Surya Bella Casa is equipped with a hot water kettle, complimentary tea/coffee supplies, and a mini-fridge for your personal use.
+            For your absolute comfort, every cottage at The Divine Oasis is equipped with a hot water kettle, complimentary tea/coffee supplies, and a mini-fridge for your personal use.
           </p>
           <GoldDivider className="justify-center" />
         </div>
@@ -254,3 +214,5 @@ export default function DiningPage() {
     </main>
   );
 }
+
+

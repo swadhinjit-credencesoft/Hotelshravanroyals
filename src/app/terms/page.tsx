@@ -3,9 +3,9 @@ import SectionLabel from '@/components/ui/SectionLabel'
 
 export const metadata: Metadata = {
   title: 'Terms & Conditions',
-  description: 'Read the terms and conditions of Hotel Surya Bella Casa, Purnea. Booking terms, house rules, liability, and guest policy for all reservations.',
+  description: 'Read the terms and conditions of The Divine Oasis, Purulia. Booking terms, house rules, liability, and guest policy for all reservations.',
   alternates: {
-    canonical: 'https://hotelsuryabellacasa.com/terms',
+    canonical: 'https://thedivineoasisresort.com/terms',
   },
   robots: {
     index: true,
@@ -25,15 +25,15 @@ export default function TermsPage() {
           __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "WebPage",
-            "@id": "https://hotelsuryabellacasa.com/terms/#webpage",
-            "url": "https://hotelsuryabellacasa.com/terms",
-            "name": "Terms of Service & Booking Conditions | Hotel Surya Bella Casa",
-            "description": "Review the official terms of service, check-in schedules, lodging policies, and cancellation conditions for resort reservations at Hotel Surya Bella Casa.",
+            "@id": "https://thedivineoasisresort.com/terms/#webpage",
+            "url": "https://thedivineoasisresort.com/terms",
+            "name": "Terms of Service & Booking Conditions | The Divine Oasis",
+            "description": "Review the official terms of service, check-in schedules, lodging policies, and cancellation conditions for resort reservations at The Divine Oasis.",
             "isPartOf": {
               "@type": "WebSite",
-              "@id": "https://hotelsuryabellacasa.com/#website",
-              "name": "Hotel Surya Bella Casa",
-              "url": "https://hotelsuryabellacasa.com"
+              "@id": "https://thedivineoasisresort.com/#website",
+              "name": "The Divine Oasis",
+              "url": "https://thedivineoasisresort.com"
             }
           })
         }}
@@ -106,7 +106,7 @@ export default function TermsPage() {
     <div className="flex items-start gap-3">
       <span className="mt-2 text-forest">•</span>
       <p>
-        Hotel Surya Bella Casa reserves the right to cancel any confirmed booking or reservation in situations involving emergencies, operational issues, or legal violations.
+        The Divine Oasis reserves the right to cancel any confirmed booking or reservation in situations involving emergencies, operational issues, or legal violations.
       </p>
     </div>
 
@@ -129,21 +129,21 @@ export default function TermsPage() {
     <div className="flex items-start gap-3">
       <span className="mt-2 text-forest">•</span>
       <p>
-        All bookings and reservations at Hotel Surya Bella Casa are confirmed from 12:00 Noon or from the official check-in time on the reservation date.
+        All bookings and reservations at The Divine Oasis are confirmed from 12:00 Noon or from the official check-in time on the reservation date.
       </p>
     </div>
 
     <div className="flex items-start gap-3">
       <span className="mt-2 text-forest">•</span>
       <p>
-        Standard Check-In Time: 1:00 PM
+        Standard Check-In Time: 12:00 PM
       </p>
     </div>
 
     <div className="flex items-start gap-3">
       <span className="mt-2 text-forest">•</span>
       <p>
-        Standard Check-Out Time: 12:00 Noon
+        Standard Check-Out Time: 12:00 PM
       </p>
     </div>
 
@@ -164,7 +164,7 @@ export default function TermsPage() {
     <div className="flex items-start gap-3">
       <span className="mt-2 text-forest">•</span>
       <p>
-        Approval for early check-in or late check-out is solely at the discretion of Hotel Surya Bella Casa management.
+        Approval for early check-in or late check-out is solely at the discretion of The Divine Oasis management.
       </p>
     </div>
 
@@ -188,7 +188,7 @@ export default function TermsPage() {
     <div className="flex items-start gap-3">
       <span className="mt-2 text-forest">•</span>
       <p>
-        Guests are personally responsible and liable for all charges incurred during their stay at Hotel Surya Bella Casa.
+        Guests are personally responsible and liable for all charges incurred during their stay at The Divine Oasis.
       </p>
     </div>
 

@@ -1,11 +1,11 @@
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Places to Visit in Purnea | Nearby Attractions',
-  description: 'Explore places to visit in Purnea and nearby attractions near Hotel Surya Bella Casa. Maa Puran Devi Temple, Purnea Court, Polytechnic, shopping markets. Best things to do in Purnea, Bihar. Book your stay now.',
-  keywords: ['places to visit in purnea', 'things to do in purnea', 'purnea nearby attractions', 'maa puran devi temple purnea', 'purnea court', 'district hospital purnea', 'polytechnic purnea', 'shopping market purnea', 'bus terminal purnea', 'purnea sightseeing', 'purnea city tour', 'purnea local markets', 'weekend activities purnea', 'purnea bihar tourism', 'hotel near attractions purnea'],
+  title: 'Places to Visit in Purulia | Nearby Attractions',
+  description: 'Explore places to visit in Purulia and nearby attractions near The Divine Oasis. Maa Puran Devi Temple, Purulia Court, Polytechnic, shopping markets. Best things to do in Purulia, West Bengal. Book your stay now.',
+  keywords: ['places to visit in Purulia', 'things to do in Purulia', 'Purulia nearby attractions', 'maa puran devi temple Purulia', 'Purulia court', 'district hospital Purulia', 'polytechnic Purulia', 'shopping market Purulia', 'bus terminal Purulia', 'Purulia sightseeing', 'Purulia city tour', 'Purulia local markets', 'weekend activities Purulia', 'Purulia West Bengal tourism', 'hotel near attractions Purulia'],
   alternates: {
-    canonical: 'https://hotelsuryabellacasa.com/experiences',
+    canonical: 'https://thedivineoasisresort.com/experiences',
   },
   robots: {
     index: true,
@@ -18,25 +18,25 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: 'Places to Visit in Purnea | Nearby Attractions',
-    description: 'Explore places to visit in Purnea and nearby attractions near Hotel Surya Bella Casa. Maa Puran Devi Temple, shopping markets, and more. Best things to do in Purnea.',
-    url: 'https://hotelsuryabellacasa.com/experiences',
-    siteName: 'Hotel Surya Bella Casa',
+    title: 'Places to Visit in Purulia | Nearby Attractions',
+    description: 'Explore places to visit in Purulia and nearby attractions near The Divine Oasis. Maa Puran Devi Temple, shopping markets, and more. Best things to do in Purulia.',
+    url: 'https://thedivineoasisresort.com/experiences',
+    siteName: 'The Divine Oasis',
     type: 'website',
     images: [
       {
-        url: 'https://bookonelocal.in/cdn/IMG_3809.avif',
+        url: 'https://bookonelocal.in/cdn/2026-05-13-064432393-WhatsApp Image 2026-05-11 at 15.42.15.jpg',
         width: 1200,
         height: 630,
-        alt: 'Experiences at Hotel Surya Bella Casa Purnea',
+        alt: 'Experiences at The Divine Oasis Purulia',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Places to Visit in Purnea | Nearby Attractions',
-    description: 'Explore places to visit in Purnea near Hotel Surya Bella Casa. Temples, markets, attractions near Bus Stand.',
-    images: ['https://bookonelocal.in/cdn/IMG_3809.avif'],
+    title: 'Places to Visit in Purulia | Nearby Attractions',
+    description: 'Explore places to visit in Purulia near The Divine Oasis. Temples, markets, attractions near Ajodhya Hill.',
+    images: ['https://bookonelocal.in/cdn/2026-05-13-064432393-WhatsApp Image 2026-05-11 at 15.42.15.jpg'],
   },
 }
 
@@ -54,13 +54,13 @@ export default function ExperiencesLayout({ children }: { children: React.ReactN
                 '@type': 'ListItem',
                 position: 1,
                 name: 'Home',
-                item: 'https://hotelsuryabellacasa.com',
+                item: 'https://thedivineoasisresort.com',
               },
               {
                 '@type': 'ListItem',
                 position: 2,
                 name: 'Experiences',
-                item: 'https://hotelsuryabellacasa.com/experiences',
+                item: 'https://thedivineoasisresort.com/experiences',
               },
             ],
           }),

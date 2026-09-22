@@ -51,8 +51,8 @@ export default function BlogArticleLayout({
             '@context': 'https://schema.org',
             '@type': 'BreadcrumbList',
             itemListElement: [
-              { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://hotelsuryabellacasa.com' },
-              { '@type': 'ListItem', position: 2, name: 'Blog', item: 'https://hotelsuryabellacasa.com/blog' },
+              { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://thedivineoasisresort.com' },
+              { '@type': 'ListItem', position: 2, name: 'Blog', item: 'https://thedivineoasisresort.com/blog' },
               { '@type': 'ListItem', position: 3, name: metadata.title as string, item: metadata.alternates?.canonical },
             ],
           }),
@@ -86,7 +86,7 @@ export default function BlogArticleLayout({
 
         <div className="mt-12 pt-8 border-t border-gold/10">
           <div className="flex flex-wrap gap-3 mb-8">
-            <Link href="https://bookone.io/Hotel-Bella-Casa?bookingEngine=true" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 bg-gold text-[#1a1004] font-sans text-[10px] uppercase tracking-[0.2em] px-6 py-3 rounded-sm hover:bg-gold-light transition-all font-bold">
+            <Link href="https://bookone.io/The-Divine-Oasis?bookingEngine=true" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 bg-gold text-[#1a1004] font-sans text-[10px] uppercase tracking-[0.2em] px-6 py-3 rounded-sm hover:bg-gold-light transition-all font-bold">
               <Calendar size={14} /> Book Now
             </Link>
             <Link href="/contact" className="inline-flex items-center gap-2 border border-gold/30 text-forest font-sans text-[10px] uppercase tracking-[0.2em] px-6 py-3 rounded-sm hover:bg-gold/10 transition-all">

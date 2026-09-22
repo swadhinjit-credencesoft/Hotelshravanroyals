@@ -18,34 +18,34 @@ interface LuxuryAmenitiesProps {
 
 const defaultAmenities: AmenityItem[] = [
   {
-    icon: 'Wind',
-    title: 'Air Conditioned Rooms',
-    description: 'Fully air-conditioned spaces with individual climate controls to keep you comfortable year-round.'
-  },
-  {
     icon: 'Wifi',
     title: 'Free High-Speed Wi-Fi',
     description: 'Stay connected with complimentary high-speed internet available throughout the property.'
   },
   {
-    icon: 'ArrowUpCircle',
-    title: 'Elevator & Lift Access',
-    description: 'Convenient modern lift access ensuring comfort and hassle-free movement for all guests and elder family members.'
-  },
-  {
-    icon: 'ParkingCircle',
-    title: 'Secure Dedicated Parking',
-    description: 'Rest easy with secure, complimentary on-site parking facilities for your private vehicles.'
-  },
-  {
-    icon: 'ShieldCheck',
-    title: '24/7 Safety & Care',
-    description: 'Continuous room service, backup power generators, and secure lock systems for complete peace of mind.'
-  },
-  {
     icon: 'Tv',
-    title: 'Modern Flat Screen TVs',
-    description: 'Entertainment at your fingertips with multi-channel LED TVs equipped in every room.'
+    title: 'Flat Screen TV',
+    description: 'Entertainment at your fingertips with multi-channel LED TVs equipped in every cottage.'
+  },
+  {
+    icon: 'Bell',
+    title: 'Room Service',
+    description: '24-hour room service delivering farm-to-table meals and beverages to your cottage.'
+  },
+  {
+    icon: 'ShowerHead',
+    title: 'Geyser / Hot Water',
+    description: 'Instant hot water in every cottage, even on chilly hilltop mornings.'
+  },
+  {
+    icon: 'Clock',
+    title: '24 Hours Room Service',
+    description: 'Round-the-clock assistance for anything you need during your stay.'
+  },
+  {
+    icon: 'Shield',
+    title: 'Hand Sanitizer & Hygiene',
+    description: 'Sanitizer stations and enhanced hygiene protocols across the resort.'
   }
 ];
 
@@ -57,7 +57,7 @@ function AmenityIcon({ name }: { name: string }) {
 
 import Link from 'next/link';
 
-export default function LuxuryAmenities({ label = 'Our Standards', heading = 'Comfort Without Compromise', amenities }: LuxuryAmenitiesProps) {
+export default function LuxuryAmenities({ label = 'Our Standards', heading = 'Resort Amenities', amenities }: LuxuryAmenitiesProps) {
   const items = amenities || defaultAmenities;
   return (
     <section className="bg-cream-dark py-16 sm:py-24 lg:py-32 overflow-hidden">
@@ -94,10 +94,10 @@ export default function LuxuryAmenities({ label = 'Our Standards', heading = 'Co
 
         <div className="text-center mt-16 flex flex-wrap justify-center gap-6">
           <Link href="/rooms" className="inline-flex items-center gap-2 font-sans text-[10px] uppercase tracking-[0.2em] text-gold border border-gold/30 px-8 py-4 hover:bg-gold hover:text-forest transition-all rounded-sm">
-            Explore Deluxe Rooms in Purnea
+            Explore Premium Cottages
           </Link>
           <Link href="/offers" className="inline-flex items-center gap-2 font-sans text-[10px] uppercase tracking-[0.2em] text-gold border border-gold/30 px-8 py-4 hover:bg-gold hover:text-forest transition-all rounded-sm">
-            View Hotel Booking Offers
+            View Resort Offers
           </Link>
         </div>
       </div>

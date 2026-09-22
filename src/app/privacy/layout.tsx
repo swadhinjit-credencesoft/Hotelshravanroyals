@@ -2,10 +2,10 @@ import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
   title: 'Privacy Policy',
-  description: 'Read the privacy policy of Hotel Surya Bella Casa, Purnea, Bihar — guidelines on data collection, storage, and reservation security.',
-  keywords: ['hotel privacy policy', 'Purnea hotel privacy', 'hotel surya bella casa privacy', 'data policy Purnea hotel', 'guest privacy Purnea hotel', 'hotel data protection', 'Purnea hotel personal information', 'hotel privacy terms Purnea', 'cookie policy Purnea hotel', 'Purnea hotel booking privacy', 'hotel information security Purnea', 'privacy policy bihar hotel'],
+  description: 'Read the privacy policy of The Divine Oasis, Purulia, West Bengal — guidelines on data collection, storage, and reservation security.',
+  keywords: ['hotel privacy policy', 'Purulia hotel privacy', 'The Divine Oasis privacy', 'data policy Purulia hotel', 'guest privacy Purulia hotel', 'hotel data protection', 'Purulia hotel personal information', 'hotel privacy terms Purulia', 'cookie policy Purulia hotel', 'Purulia hotel booking privacy', 'hotel information security Purulia', 'privacy policy West Bengal hotel'],
   alternates: {
-    canonical: 'https://hotelsuryabellacasa.com/privacy',
+    canonical: 'https://thedivineoasisresort.com/privacy',
   },
   robots: {
     index: true,
@@ -18,25 +18,25 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: 'Privacy Policy | Hotel Surya Bella Casa Purnea',
-    description: 'Read the privacy policy of Hotel Surya Bella Casa, Purnea, Bihar.',
-    url: 'https://hotelsuryabellacasa.com/privacy',
-    siteName: 'Hotel Surya Bella Casa',
+    title: 'Privacy Policy | The Divine Oasis Purulia',
+    description: 'Read the privacy policy of The Divine Oasis, Purulia, West Bengal.',
+    url: 'https://thedivineoasisresort.com/privacy',
+    siteName: 'The Divine Oasis',
     type: 'website',
     images: [
       {
-        url: 'https://bookonelocal.in/cdn/IMG_3815.avif',
+        url: 'https://bookonelocal.in/cdn/2026-05-13-064432393-WhatsApp Image 2026-05-11 at 15.42.15.jpg',
         width: 1200,
         height: 630,
-        alt: 'Hotel Surya Bella Casa Privacy Policy',
+        alt: 'The Divine Oasis Privacy Policy',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Privacy Policy | Hotel Surya Bella Casa Purnea',
-    description: 'Read the privacy policy of Hotel Surya Bella Casa, Purnea.',
-    images: ['https://bookonelocal.in/cdn/IMG_3815.avif'],
+    title: 'Privacy Policy | The Divine Oasis Purulia',
+    description: 'Read the privacy policy of The Divine Oasis, Purulia.',
+    images: ['https://bookonelocal.in/cdn/2026-05-13-064432393-WhatsApp Image 2026-05-11 at 15.42.15.jpg'],
   },
 }
 
@@ -54,13 +54,13 @@ export default function PrivacyLayout({ children }: { children: React.ReactNode 
                 '@type': 'ListItem',
                 position: 1,
                 name: 'Home',
-                item: 'https://hotelsuryabellacasa.com',
+                item: 'https://thedivineoasisresort.com',
               },
               {
                 '@type': 'ListItem',
                 position: 2,
                 name: 'Privacy Policy',
-                item: 'https://hotelsuryabellacasa.com/privacy',
+                item: 'https://thedivineoasisresort.com/privacy',
               },
             ],
           }),

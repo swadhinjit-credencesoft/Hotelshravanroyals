@@ -62,8 +62,8 @@ export default function CinematicHero({
             playsInline
             preload="none"
             poster={image.replace(/\.(mp4|webm|ogg)$/i, '.avif')}
-            title="Hotel Surya Bella Casa - Cinematic Hero Video"
-            aria-label="Cinematic background video showcasing Hotel Surya Bella Casa amenities"
+            title="The Divine Oasis - Cinematic Hero Video"
+            aria-label="Cinematic background video showcasing The Divine Oasis amenities"
             className="absolute inset-0 w-full h-full object-cover"
           >
             <source src={image} type="video/mp4" />

@@ -2,8 +2,8 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: 'Page Not Found | Hotel Surya Bella Casa',
-  description: 'The page you are looking for does not exist. Return to Hotel Surya Bella Casa homepage.',
+  title: 'Page Not Found | The Divine Oasis',
+  description: 'The page you are looking for does not exist. Return to The Divine Oasis homepage.',
   robots: {
     index: false,
     follow: true,
@@ -30,7 +30,7 @@ export default function NotFound() {
           The page you are looking for might have been removed, had its name changed, or is temporarily unavailable.
         </p>
         <p className="font-sans text-taupe/60 text-sm mb-10">
-          Need help? Call us at <a href="tel:+919835923601" className="text-gold hover:underline">+91 9835923601</a>
+          Need help? Call us at <a href="tel:+91990398950" className="text-gold hover:underline">+91 9903989950</a>
         </p>
 
         <div className="flex flex-wrap justify-center gap-3 mb-10">

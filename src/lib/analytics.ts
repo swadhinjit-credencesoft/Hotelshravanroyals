@@ -1,5 +1,5 @@
 /**
- * Centralized GA4 analytics helpers for Hotel Surya Bella Casa
+ * Centralized GA4 analytics helpers for The Divine Oasis
  * Implements the full e-commerce funnel:
  *   view_search_results → view_item_list → select_item → view_item → begin_checkout → purchase
  */
@@ -175,7 +175,7 @@ export function trackPhoneClick(source: string) {
   push('phone_click', {
     source,
     event_category: 'engagement',
-    phone_number: '+919835923601',
+    phone_number: '+91990398950',
   })
 }
 
@@ -186,7 +186,7 @@ export function trackWhatsAppClick(source: string) {
   push('whatsapp_click', {
     source,
     event_category: 'engagement',
-    phone_number: '+919835923601',
+    phone_number: '+91990398950',
   })
 }
 

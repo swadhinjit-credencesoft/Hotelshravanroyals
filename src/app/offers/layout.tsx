@@ -1,11 +1,11 @@
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Hotel Deals & Offers | Book Direct Purnea',
-  description: 'Best hotel deals in Purnea at Hotel Surya Bella Casa. Book direct for cheapest rates. Online hotel booking in Purnea near Bus Stand. Reserve deluxe rooms, family rooms at best price. Direct hotel booking Purnea.',
-  keywords: ['hotel booking purnea', 'book hotel in purnea', 'cheap hotel booking purnea', 'best hotel deals purnea', 'hotel offers purnea', 'direct hotel booking purnea', 'online hotel booking purnea', 'hotel reservation purnea', 'book deluxe room purnea', 'best price hotel purnea', 'purnea hotel discount', 'purnea hotel weekend offer', 'purnea room package deals', 'book hotel near bus stand purnea', 'hotel booking online purnea bihar'],
+  title: 'Hotel Deals & Offers | Book Direct Purulia',
+  description: 'Best hotel deals in Purulia at The Divine Oasis. Book direct for cheapest rates. Online hotel booking in Purulia near Ajodhya Hill. Reserve deluxe rooms, family rooms at best price. Direct hotel booking Purulia.',
+  keywords: ['hotel booking Purulia', 'book hotel in Purulia', 'cheap hotel booking Purulia', 'best hotel deals Purulia', 'hotel offers Purulia', 'direct hotel booking Purulia', 'online hotel booking Purulia', 'hotel reservation Purulia', 'book deluxe room Purulia', 'best price hotel Purulia', 'Purulia hotel discount', 'Purulia hotel weekend offer', 'Purulia room package deals', 'book hotel near Ajodhya Hill Purulia', 'hotel booking online Purulia West Bengal'],
   alternates: {
-    canonical: 'https://hotelsuryabellacasa.com/offers',
+    canonical: 'https://thedivineoasisresort.com/offers',
   },
   robots: {
     index: true,
@@ -18,25 +18,25 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: 'Hotel Deals & Offers | Book Direct Purnea',
-    description: 'Best hotel deals in Purnea at Hotel Surya Bella Casa. Book direct for cheapest rates. Online hotel booking in Purnea near Bus Stand. Reserve deluxe rooms at best price.',
-    url: 'https://hotelsuryabellacasa.com/offers',
-    siteName: 'Hotel Surya Bella Casa',
+    title: 'Hotel Deals & Offers | Book Direct Purulia',
+    description: 'Best hotel deals in Purulia at The Divine Oasis. Book direct for cheapest rates. Online hotel booking in Purulia near Ajodhya Hill. Reserve deluxe rooms at best price.',
+    url: 'https://thedivineoasisresort.com/offers',
+    siteName: 'The Divine Oasis',
     type: 'website',
     images: [
       {
-        url: 'https://bookonelocal.in/cdn/IMG_3739.avif',
+        url: 'https://bookonelocal.in/cdn/2026-05-13-064432393-WhatsApp Image 2026-05-11 at 15.42.15.jpg',
         width: 1200,
         height: 630,
-        alt: 'Hotel Surya Bella Casa Purnea Offers',
+        alt: 'The Divine Oasis Purulia Offers',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Hotel Deals & Offers | Book Direct Purnea',
-    description: 'Book hotel in Purnea at best price. Direct hotel booking near Bus Stand. Deluxe rooms, family rooms available.',
-    images: ['https://bookonelocal.in/cdn/IMG_3739.avif'],
+    title: 'Hotel Deals & Offers | Book Direct Purulia',
+    description: 'Book hotel in Purulia at best price. Direct hotel booking near Ajodhya Hill. Deluxe rooms, family rooms available.',
+    images: ['https://bookonelocal.in/cdn/2026-05-13-064432393-WhatsApp Image 2026-05-11 at 15.42.15.jpg'],
   },
 }
 
@@ -54,13 +54,13 @@ export default function OffersLayout({ children }: { children: React.ReactNode }
                 '@type': 'ListItem',
                 position: 1,
                 name: 'Home',
-                item: 'https://hotelsuryabellacasa.com',
+                item: 'https://thedivineoasisresort.com',
               },
               {
                 '@type': 'ListItem',
                 position: 2,
                 name: 'Offers',
-                item: 'https://hotelsuryabellacasa.com/offers',
+                item: 'https://thedivineoasisresort.com/offers',
               },
             ],
           }),

@@ -1,21 +1,21 @@
-import type { Metadata } from 'next'
+﻿import type { Metadata } from 'next'
 import GallerySection from '@/components/sections/GallerySection'
 import SectionLabel from '@/components/ui/SectionLabel'
 import Image from 'next/image'
-import Script from 'next/script'
 
 export const metadata: Metadata = {
-  title: 'Photo Gallery & Virtual Tour',
-  description: 'Browse photos, guest images, and video walkthrough of Hotel Surya Bella Casa in Purnea. See our rooms, dining, and facilities near Bus Stand.',
+  title: 'Photo Gallery & Virtual Tour | The Divine Oasis Ajodhya Hill, Purulia',
+  description: 'Browse photos, guest images, and video walkthrough of The Divine Oasis at Ajodhya Hill, Purulia. See our cottages, organic farm dining, and hilltop views.',
   keywords: [
-    'hotel gallery purnea',
-    'hotel surya bella casa photos',
-    'hotel rooms images Purnea',
-    'Purnea hotel pictures',
-    'banquet hall photos purnea',
+    'resort gallery Purulia',
+    'The Divine Oasis photos',
+    'resort cottage images Purulia',
+    'Ajodhya Hill resort pictures',
+    'organic farm dining photos Purulia',
+    'barbeque resort photos Purulia',
   ],
   alternates: {
-    canonical: 'https://hotelsuryabellacasa.com/gallery',
+    canonical: 'https://thedivineoasisresort.com/gallery',
   },
 }
 
@@ -33,13 +33,13 @@ export default function GalleryPage() {
                 '@type': 'ListItem',
                 position: 1,
                 name: 'Home',
-                item: 'https://hotelsuryabellacasa.com',
+                item: 'https://thedivineoasisresort.com',
               },
               {
                 '@type': 'ListItem',
                 position: 2,
                 name: 'Gallery',
-                item: 'https://hotelsuryabellacasa.com/gallery',
+                item: 'https://thedivineoasisresort.com/gallery',
               },
             ],
           })
@@ -53,11 +53,11 @@ export default function GalleryPage() {
           __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "ImageGallery",
-            "name": "Hotel Surya Bella Casa Photo Collection",
-            "description": "High-resolution photos of our clean accommodations, dining options, and hospitable atmosphere in Purnea, Bihar.",
+            "name": "The Divine Oasis Photo Collection",
+            "description": "High-resolution photos of our premium mud cottages, luxury suites, organic farm dining, and hilltop forest views in Purulia, West Bengal.",
             "image": [
-              "https://hotelsuryabellacasa.com/images/room1.jpeg",
-              "https://hotelsuryabellacasa.com/images/room2.jpeg"
+              "https://bookonelocal.in/cdn/2026-05-13-064432393-WhatsApp Image 2026-05-11 at 15.42.15.jpg",
+              "https://bookonelocal.in/cdn/2026-05-13-063018320-WhatsApp Image 2026-05-11 at 15.53.21.jpg"
             ]
           })
         }}
@@ -74,20 +74,20 @@ export default function GalleryPage() {
       <section className="py-24 bg-forest text-ivory text-center border-y border-gold/10">
         <div className="max-w-[700px] mx-auto px-6">
           <SectionLabel light className="justify-center mb-6">Virtual Tour</SectionLabel>
-          <h2 className="font-display text-4xl italic mb-6">Experience Hotel Surya Bella Casa</h2>
+          <h2 className="font-display text-4xl italic mb-6">Experience The Divine Oasis</h2>
           <p className="font-serif text-ivory/70 mb-10 leading-relaxed">
-            Watch our complete hotel walkthrough on YouTube — from our elegantly appointed rooms
-            to our rooftop dining and banquet spaces.
+            Watch our complete resort walkthrough â€” from our premium mud cottages and luxury suites
+            to our organic farm dining and hilltop barbeque evenings.
           </p>
           <a
-            href="https://www.youtube.com/watch?v=VOp9WYj2Ddg"
+            href="https://www.youtube.com/@thedivineoasisresort"
             target="_blank"
             rel="noopener noreferrer"
             className="group block relative aspect-video rounded-lg overflow-hidden border border-gold/20 hover:border-gold/50 transition-all mb-8"
           >
             <Image
-              src="https://img.youtube.com/vi/VOp9WYj2Ddg/maxresdefault.jpg"
-              alt="Hotel Surya Bella Casa Purnea - Hotel Tour Video"
+              src="https://bookonelocal.in/cdn/2026-05-13-064432393-WhatsApp Image 2026-05-11 at 15.42.15.jpg"
+              alt="The Divine Oasis Ajodhya Hill - Resort Tour"
               fill
               className="object-cover group-hover:scale-105 transition-transform duration-700"
               sizes="700px"
@@ -100,7 +100,7 @@ export default function GalleryPage() {
             </div>
           </a>
           <a
-            href="https://www.youtube.com/watch?v=VOp9WYj2Ddg"
+            href="https://www.youtube.com/@thedivineoasisresort"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-3 bg-red-600 hover:bg-red-700 text-white font-sans text-xs uppercase tracking-[0.2em] px-8 py-4 rounded-sm transition-all shadow-lg group"
@@ -116,32 +116,31 @@ export default function GalleryPage() {
         <div className="max-w-[1200px] mx-auto px-6">
           <h2 className="font-display text-4xl md:text-5xl italic text-forest mb-6">Through Your Lens</h2>
           <p className="font-serif text-lg text-taupe mb-12">
-            Follow us on Instagram <a href="https://www.instagram.com/hotel.bellacasaa/" target="_blank" rel="noopener noreferrer" className="text-gold hover:underline">@hotel.bellacasaa</a> and tag us to be featured.
+            Follow us on Instagram <a href="https://www.instagram.com/thedivineoasisresort" target="_blank" rel="noopener noreferrer" className="text-gold hover:underline">@thedivineoasisresort</a> and tag us to be featured.
           </p>
           
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 max-w-[900px] mx-auto">
-             {[
-                { url: 'https://www.instagram.com/reel/DaQCHqszZCo/' },
-                { url: 'https://www.instagram.com/p/DaM8qo_z7IA/' },
-                { url: 'https://www.instagram.com/p/DZhtuSyzazL/' },
-                { url: 'https://www.instagram.com/reel/DZROwfuza8f/' },
-             ].map((post, i) => (
-               <div key={i} className="overflow-hidden rounded-lg border border-gold/10 shadow-sm bg-white">
-                 <blockquote
-                   className="instagram-media"
-                   data-instgrm-permalink={post.url}
-                   data-instgrm-version="14"
-                   style={{ background: '#FFF', border: 0, borderRadius: '3px', margin: '1px auto', maxWidth: '540px', minWidth: '326px', padding: 0, width: 'calc(100% - 2px)' }}
-                 >
-                   <a href={post.url} target="_blank" rel="noopener noreferrer">
-                     View on Instagram
-                   </a>
-                 </blockquote>
-               </div>
-             ))}
+            {[
+              { url: 'https://www.instagram.com/thedivineoasisresort' },
+              { url: 'https://www.instagram.com/thedivineoasisresort' },
+              { url: 'https://www.instagram.com/thedivineoasisresort' },
+              { url: 'https://www.instagram.com/thedivineoasisresort' },
+            ].map((post, i) => (
+              <div key={i} className="overflow-hidden rounded-lg border border-gold/10 shadow-sm bg-white">
+                <blockquote
+                  className="instagram-media"
+                  data-instgrm-permalink={post.url}
+                  data-instgrm-version="14"
+                  style={{ background: '#FFF', border: 0, borderRadius: '3px', margin: '1px auto', maxWidth: '540px', minWidth: '326px', padding: 0, width: 'calc(100% - 2px)' }}
+                >
+                  <a href={post.url} target="_blank" rel="noopener noreferrer">
+                    View on Instagram
+                  </a>
+                </blockquote>
+              </div>
+            ))}
           </div>
         </div>
-        <Script src="//www.instagram.com/embed.js" strategy="lazyOnload" />
       </section>
 
     </main>

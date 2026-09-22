@@ -2,10 +2,10 @@ import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
   title: 'Contact Us',
-  description: 'Contact Hotel Surya Bella Casa in Purnea, Bihar. Call +91 9835923601. Located at Suryalok Complex, Opposite Vikass Market, Near Bus Stand, Purnea 854301. Best hotel near Purnea Bus Stand, near Railway Station.',
-  keywords: ['contact hotel surya bella casa purnea', 'hotel near bus stand purnea', 'hotel purnea phone number', 'hotel opp vikass market purnea', 'hotel surya bella casa address', 'purnea hotel contact number', 'hotel near railway station purnea', 'hotel in mariam nagar purnea', 'hotel near gulabbagh purnea', 'hotel near line bazar purnea', 'hotel near purnea junction', 'hotel near airport purnea', 'hotel near nh-31 purnea', 'hotel in bhatta bazar purnea', 'hotel surya bella casa whatsapp number'],
+  description: 'Contact The Divine Oasis in Purulia, West Bengal. Call +91 9903989950. Located at Ajodhya Hill, Opposite Ajodhya Hill, Near Ajodhya Hill, Purulia 854301. Best hotel near Purulia Ajodhya Hill, near Railway Station.',
+  keywords: ['contact The Divine Oasis Purulia', 'hotel near Ajodhya Hill Purulia', 'hotel Purulia phone number', 'hotel opp Ajodhya Hill Purulia', 'The Divine Oasis address', 'Purulia hotel contact number', 'hotel near railway station Purulia', 'hotel in mariam nagar Purulia', 'hotel near gulabbagh Purulia', 'hotel near line bazar Purulia', 'hotel near Purulia junction', 'hotel near airport Purulia', 'hotel near nh-31 Purulia', 'hotel in bhatta bazar Purulia', 'The Divine Oasis whatsapp number'],
   alternates: {
-    canonical: 'https://hotelsuryabellacasa.com/contact',
+    canonical: 'https://thedivineoasisresort.com/contact',
   },
   robots: {
     index: true,
@@ -18,25 +18,25 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: 'Contact Hotel Surya Bella Casa | +91 9835923601',
-    description: 'Contact Hotel Surya Bella Casa in Purnea. Call +91 9835923601. Located at Suryalok Complex, Opposite Vikass Market, Near Bus Stand, Purnea 854301.',
-    url: 'https://hotelsuryabellacasa.com/contact',
-    siteName: 'Hotel Surya Bella Casa',
+    title: 'Contact The Divine Oasis | +91 9903989950',
+    description: 'Contact The Divine Oasis in Purulia. Call +91 9903989950. Located at Ajodhya Hill, Opposite Ajodhya Hill, Near Ajodhya Hill, Purulia 854301.',
+    url: 'https://thedivineoasisresort.com/contact',
+    siteName: 'The Divine Oasis',
     type: 'website',
     images: [
       {
-        url: 'https://bookonelocal.in/cdn/IMG_3784.avif',
+        url: 'https://bookonelocal.in/cdn/2026-05-13-064432393-WhatsApp Image 2026-05-11 at 15.42.15.jpg',
         width: 1200,
         height: 630,
-        alt: 'Contact Hotel Surya Bella Casa Purnea - Hotel Near Bus Stand Near Railway Station',
+        alt: 'Contact The Divine Oasis Purulia - Hotel Near Ajodhya Hill Near Railway Station',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Contact Hotel Surya Bella Casa | +91 9835923601',
-    description: 'Contact Hotel Surya Bella Casa in Purnea near Bus Stand and Railway Station. Call +91 9835923601.',
-    images: ['https://bookonelocal.in/cdn/IMG_3784.avif'],
+    title: 'Contact The Divine Oasis | +91 9903989950',
+    description: 'Contact The Divine Oasis in Purulia near Ajodhya Hill and Railway Station. Call +91 9903989950.',
+    images: ['https://bookonelocal.in/cdn/2026-05-13-064432393-WhatsApp Image 2026-05-11 at 15.42.15.jpg'],
   },
 }
 
@@ -54,13 +54,13 @@ export default function ContactLayout({ children }: { children: React.ReactNode 
                 '@type': 'ListItem',
                 position: 1,
                 name: 'Home',
-                item: 'https://hotelsuryabellacasa.com',
+                item: 'https://thedivineoasisresort.com',
               },
               {
                 '@type': 'ListItem',
                 position: 2,
                 name: 'Contact',
-                item: 'https://hotelsuryabellacasa.com/contact',
+                item: 'https://thedivineoasisresort.com/contact',
               },
             ],
           }),

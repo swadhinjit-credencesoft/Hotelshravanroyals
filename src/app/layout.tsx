@@ -1,6 +1,5 @@
 import type { Metadata, Viewport } from 'next'
 import './globals.css'
-import Script from 'next/script'
 
 import { Barlow, Tangerine } from 'next/font/google'
 
@@ -37,15 +36,15 @@ const tangerine = Tangerine({
 })
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://hotelsuryabellacasa.com'),
+  metadataBase: new URL('https://thedivineoasisresort.com'),
 
   title: {
-    default: 'Hotel Surya Bella Casa Purnea | Best Near Bus Stand',
-    template: '%s | Hotel Surya Bella Casa Purnea',
+    default: 'The Divine Oasis | Forest Resort at Ajodhya Hill, Purulia',
+    template: '%s | The Divine Oasis',
   },
 
   description:
-    'Book Hotel Surya Bella Casa in Purnea near Bus Stand. Free WiFi, parking, rooftop restaurant, banquet hall. Best hotel in Purnea, Bihar. Book direct and save!',
+    'The Divine Oasis is a forest resort atop Ajodhya Hill in Purulia, West Bengal. Mud cottages, luxury suites, organic farm dining, and hilltop serenity. Book direct and save!',
 
   icons: {
     icon: [
@@ -58,100 +57,81 @@ export const metadata: Metadata = {
 
 keywords: [
   // Brand Keywords
-  'hotel surya bella casa',
-  'surya bella casa Purnea',
-  'bella casa Purnea',
-  'hotel surya bella casa Purnea',
-  'surya bella casa hotel',
+  'the divine oasis',
+  'The Divine Oasis resort',
+  'the divine oasis Ajodhya Hill',
+  'The Divine Oasis Purulia',
+  'divine oasis resort',
 
-  // Core Hotel Keywords
-  'hotel in Purnea',
-  'best hotel in Purnea',
-  'top hotel in Purnea',
-  'luxury hotel in Purnea',
-  'premium hotel in Purnea',
-  'budget hotel in Purnea',
-  'affordable hotel in Purnea',
-  'family hotel in Purnea',
-  'business hotel in Purnea',
-  'hotel rooms in Purnea',
-  'best accommodation in Purnea',
-  'accommodation in Purnea',
-  'stay in Purnea',
-  'best place to stay in Purnea',
+  // Core Resort Keywords
+  'resort in Purulia',
+  'best resort in Purulia',
+  'top resort in Purulia',
+  'forest resort in Ajodhya Hill',
+  'hill resort in West Bengal',
+  'stay in Purulia',
+  'weekend getaway Purulia',
+  'nature resort Purulia',
+  'cottage stay near Ajodhya Hill',
+  'best place to stay in Purulia',
 
   // Booking Intent Keywords
-  'book hotel in Purnea',
-  'hotel booking in Purnea',
-  'online hotel booking Purnea',
-  'hotel reservation Purnea',
-  'best hotel deals in Purnea',
-  'hotel near me in Purnea',
-  'rooms available in Purnea',
-  'hotel room booking Purnea',
+  'book resort in Purulia',
+  'resort booking in Purulia',
+  'online resort booking Purulia',
+  'resort reservation Purulia',
+  'mud cottage booking Purulia',
+  'resort near me in Purulia',
+  'cottages available in Purulia',
+  'resort room booking Purulia',
 
   // Location Keywords
-  'hotel near Purnea railway station',
-  'best hotel near Purnea railway station',
-  'hotel near Purnea bus stand',
-  'hotel near bus stand Purnea',
-  'hotel near vikas market Purnea',
-  'hotel in bhatta bazar Purnea',
-  'hotel near bhatta bazar Purnea',
-  'hotel near line bazar Purnea',
-  'hotel near gulabbagh Purnea',
-  'hotel in central Purnea',
+  'Ajodhya Hill resort',
+  'resort near Ajodhya Hill',
+  'resort near Thurga Dam',
+  'resort near Deulghata',
+  'Deulghata temple stay',
+  'resort near Barabhum',
+  'resort in Baghmundi',
+  'Ajodhya Hills and Forest Reserve cottages',
 
-  // Business Travel Keywords
-  'corporate hotel in Purnea',
-  'hotel for business travelers in Purnea',
-  'business stay in Purnea',
-  'executive rooms in Purnea',
-  'corporate accommodation in Purnea',
-  'conference hotel in Purnea',
+  // Experience Keywords
+  'organic farm resort Purulia',
+  'barbeque resort Purulia',
+  'mud cottage resort',
+  'eco resort Ajodhya Hill purulia',
+  'nature experience purulia',
+  'hillside cottage stay west bengal',
 
-  // Family Stay Keywords
-  'family stay in Purnea',
-  'safe hotel in Purnea',
-  'hotel for family stay in Purnea',
-  'comfortable stay in Purnea',
-  'weekend stay in Purnea',
-
-  // Banquet & Event Keywords
-  'banquet hall in Purnea',
-  'best banquet hall in Purnea',
-  'marriage hall in Purnea',
-  'wedding venue in Purnea',
-  'engagement venue in Purnea',
-  'birthday party hall in Purnea',
-  'event venue in Purnea',
-  'conference hall in Purnea',
-  'corporate event venue in Purnea',
-  'party hall in Purnea',
+  // Family & Group Keywords
+  'family resort in Purulia',
+  'group stay Ajodhya Hill',
+  'couple cottage Purulia',
+  'birthday party resort Purulia',
+  'corporate offsite resort Purulia',
+  'social event venue Purulia',
 
   // Amenities Keywords
-  'hotel with restaurant in Purnea',
-  'hotel with parking in Purnea',
-  'hotel with banquet hall in Purnea',
-  'hotel with conference hall in Purnea',
-  'modern hotel in Purnea',
-  'comfortable hotel rooms in Purnea',
+  'resort with wifi Purulia',
+  'resort with organic food',
+  'resort with barbeque Purulia',
+  'peaceful resort West Bengal',
+  'hilltop resort Ajodhya',
 
   // Long Tail High Conversion Keywords
-  'best hotel near Purnea railway station',
-  'best family hotel in Purnea',
-  'best business hotel in Purnea',
-  'affordable hotel near Purnea bus stand',
-  'hotel with banquet hall in Purnea',
-  'premium stay in Purnea',
-  'top rated hotel in Purnea',
-  'luxury stay in Purnea',
-  'hotel for wedding guests in Purnea',
-  'hotel for corporate stays in Purnea'
+  'best resort near Purulia Junction',
+  'resort near Ajodhya Hill for family',
+  'luxury cottage Ajodhya Hill',
+  'budget cottage stay Purulia',
+  'weekend cottage resort Purulia',
+  'top rated resort in Purulia',
+  'eco friendly resort West Bengal',
+  'resort with forest view',
+  'mud cottage stay in Ajodhya Hills'
 ],
 
   alternates: {
-    canonical: 'https://hotelsuryabellacasa.com/',
+    canonical: 'https://thedivineoasisresort.com/',
   },
 
   robots: {
@@ -167,30 +147,29 @@ keywords: [
   },
 
   openGraph: {
-    title: 'Hotel Surya Bella Casa Purnea | Best Stay in Purnea',
+    title: 'The Divine Oasis | Forest Resort at Ajodhya Hill, Purulia',
     description:
-      'Book a comfortable, budget-friendly stay at Hotel Surya Bella Casa in Purnea, Bihar. Near Bus Stand & Vikass Market. Perfect for families & business travelers.',
-    url: 'https://hotelsuryabellacasa.com',
-    siteName: 'Hotel Surya Bella Casa',
+      'Book a serene forest retreat at The Divine Oasis on Ajodhya Hill, Purulia, West Bengal. Premium mud cottages, luxury suites, organic farm dining, and barbeque evenings.',
+    url: 'https://thedivineoasisresort.com',
+    siteName: 'The Divine Oasis',
     type: 'website',
     locale: 'en_US',
     images: [
       {
-        url: 'https://bookonelocal.in/cdn/IMG_3815.avif',
+        url: 'https://bookonelocal.in/cdn/2026-05-13-064432393-WhatsApp Image 2026-05-11 at 15.42.15.jpg',
         width: 1200,
         height: 630,
-        alt: 'Hotel Surya Bella Casa Purnea',
+        alt: 'The Divine Oasis - Ajodhya Hill Forest Resort',
       },
     ],
   },
 
   twitter: {
     card: 'summary_large_image',
-    site: '@hotelsuryabellacasa',
-    title: 'Hotel Surya Bella Casa Purnea | Best Stay in Purnea',
+    title: 'The Divine Oasis | Forest Resort at Ajodhya Hill, Purulia',
     description:
-      'Book a comfortable, budget-friendly stay at Hotel Surya Bella Casa in Purnea, Bihar. Near Bus Stand & Vikass Market. Perfect for families & business travelers.',
-    images: ['https://bookonelocal.in/cdn/IMG_3815.avif'],
+      'Book a serene forest retreat at The Divine Oasis on Ajodhya Hill, Purulia, West Bengal. Premium mud cottages, luxury suites, organic farm dining, and barbeque evenings.',
+    images: ['https://bookonelocal.in/cdn/2026-05-13-064432393-WhatsApp Image 2026-05-11 at 15.42.15.jpg'],
   },
 }
 
@@ -205,32 +184,30 @@ export default function RootLayout({
         <meta httpEquiv="x-dns-prefetch-control" content="on" />
         <link rel="preconnect" href="https://bookone.io" />
         <link rel="preconnect" href="https://bookonelocal.in" />
-        <link rel="preconnect" href="https://www.googletagmanager.com" />
         <link rel="dns-prefetch" href="https://bookone.io" />
         <link rel="dns-prefetch" href="https://bookonelocal.in" />
-        <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
         <link rel="dns-prefetch" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://maps.googleapis.com" />
         <link rel="dns-prefetch" href="https://maps.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-        <link rel="preload" as="image" href="https://bookonelocal.in/cdn/IMG_3815.avif" imageSizes="100vw" imageSrcSet="https://bookonelocal.in/cdn/IMG_3815.avif 1920w" fetchPriority="high" />
-        <link rel="preload" as="image" href="https://bookonelocal.in/cdn/IMG_3808.avif" imageSizes="100vw" imageSrcSet="https://bookonelocal.in/cdn/IMG_3808.avif 1920w" />
-        <link rel="preload" as="image" href="https://bookonelocal.in/cdn/IMG_3784.avif" imageSizes="100vw" imageSrcSet="https://bookonelocal.in/cdn/IMG_3784.avif 1920w" />
+        <link rel="preload" as="image" href="https://bookonelocal.in/cdn/2026-05-13-064432393-WhatsApp Image 2026-05-11 at 15.42.15.jpg" imageSizes="100vw" imageSrcSet="https://bookonelocal.in/cdn/2026-05-13-064432393-WhatsApp Image 2026-05-11 at 15.42.15.jpg 1920w" fetchPriority="high" />
+        <link rel="preload" as="image" href="https://bookonelocal.in/cdn/2026-05-13-064437235-WhatsApp Image 2026-05-11 at 15.42.11 (1).jpg" imageSizes="100vw" imageSrcSet="https://bookonelocal.in/cdn/2026-05-13-064437235-WhatsApp Image 2026-05-11 at 15.42.11 (1).jpg 1920w" />
+        <link rel="preload" as="image" href="https://bookonelocal.in/cdn/2026-05-13-063018320-WhatsApp Image 2026-05-11 at 15.53.21.jpg" imageSizes="100vw" imageSrcSet="https://bookonelocal.in/cdn/2026-05-13-063018320-WhatsApp Image 2026-05-11 at 15.53.21.jpg 1920w" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "WebSite",
-              "@id": "https://hotelsuryabellacasa.com/#website",
-              "url": "https://hotelsuryabellacasa.com",
-              "name": "Hotel Surya Bella Casa Purnea",
-              "description": "Best hotel in Purnea near Bus Stand. Book comfortable rooms with free WiFi, parking, rooftop restaurant. Hotel Surya Bella Casa, Purnea, Bihar.",
+              "@id": "https://thedivineoasisresort.com/#website",
+              "url": "https://thedivineoasisresort.com",
+              "name": "The Divine Oasis",
+              "description": "Forest resort atop Ajodhya Hill in Purulia, West Bengal. Premium mud cottages, luxury suite cottages, organic farm dining, and hilltop serenity.",
               "potentialAction": {
                 "@type": "SearchAction",
                 "target": {
                   "@type": "EntryPoint",
-                  "urlTemplate": "https://hotelsuryabellacasa.com/?s={search_term_string}"
+                  "urlTemplate": "https://thedivineoasisresort.com/?s={search_term_string}"
                 },
                 "query-input": "required name=search_term_string"
               }
@@ -243,79 +220,62 @@ export default function RootLayout({
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "Hotel",
-              "@id": "https://hotelsuryabellacasa.com/#hotel",
-              "name": "Hotel Surya Bella Casa",
-              "alternateName": "Hotel Surya Bella Casa Purnea",
-              "description": "Hotel Surya Bella Casa is a comfortable and budget-friendly hotel in Purnea, Bihar, located at Suryalok Complex opposite Vikass Market near the main Bus Stand. Offering 4 room categories, free Wi-Fi, air conditioning, elevator, and 24/7 room service for business travelers and families.",
-              "url": "https://hotelsuryabellacasa.com",
-              "telephone": "+919835923601",
-              "email": "bellacasa561@gmail.com",
+              "@id": "https://thedivineoasisresort.com/#hotel",
+              "name": "The Divine Oasis",
+              "alternateName": "The Divine Oasis Resort",
+              "description": "The Divine Oasis is a tranquil forest resort nestled atop Ajodhya Hill in Purulia, West Bengal. Stay in premium mud cottages and luxury suite cottages surrounded by nature, with organic farm dining, barbeque evenings, and serene hilltop views.",
+              "url": "https://thedivineoasisresort.com",
+              "telephone": "+91990398950",
+              "email": "thedivineoasisresort@gmail.com",
               "image": [
-                "https://bookonelocal.in/cdn/IMG_3815.avif",
-                "https://bookonelocal.in/cdn/IMG_3808.avif",
-                "https://bookonelocal.in/cdn/IMG_3809.avif"
+                "https://bookonelocal.in/cdn/2026-05-13-064432393-WhatsApp Image 2026-05-11 at 15.42.15.jpg",
+                "https://bookonelocal.in/cdn/2026-05-13-064437235-WhatsApp Image 2026-05-11 at 15.42.11 (1).jpg",
+                "https://bookonelocal.in/cdn/2026-05-13-063018320-WhatsApp Image 2026-05-11 at 15.53.21.jpg"
               ],
-              "logo": "https://hotelsuryabellacasa.com/suryabellacasalogo.png",
+              "logo": "https://thedivineoasisresort.com/devinelogo.png",
               "address": {
                 "@type": "PostalAddress",
-                "streetAddress": "Suryalok Complex, Opposite Vikass Market, Near Bus Stand",
-                "addressLocality": "Purnea",
-                "addressRegion": "Bihar",
-                "postalCode": "854301",
+                "streetAddress": "643G+4Q, Hilltop",
+                "addressLocality": "Ajodhya",
+                "addressRegion": "West Bengal",
+                "postalCode": "723152",
                 "addressCountry": "IN"
               },
               "geo": {
                 "@type": "GeoCoordinates",
-                "latitude": 25.7771,
-                "longitude": 87.4753
+                "latitude": 23.2028654,
+                "longitude": 86.1268909
               },
-              "hasMap": "https://www.google.com/maps/place/?cid=8931275976043074034",
-              "sameAs": [
-                "https://www.instagram.com/hotel.bellacasaa/",
-                "https://www.facebook.com/hotelsuryabellacasa",
-                "https://www.youtube.com/@hotelsuryabellacasa",
-                "https://www.google.com/maps/place/?cid=8931275976043074034"
-              ],
-              "priceRange": "₹1,500 - ₹3,000",
+              "hasMap": "https://www.google.com/maps/search/?api=1&query=The+Divine+Oasis+Ajodhya+Hill+Purulia",
+              "sameAs": [],
+              "priceRange": "₹4,000 - ₹7,225",
               "checkinTime": "12:00",
               "checkoutTime": "12:00",
               "starRating": {
                 "@type": "Rating",
-                "ratingValue": "3"
+                "ratingValue": "4"
               },
               "amenityFeature": [
                 { "@type": "LocationFeatureSpecification", "name": "Free Wi-Fi", "value": true },
-                { "@type": "LocationFeatureSpecification", "name": "Air Conditioning", "value": true },
-                { "@type": "LocationFeatureSpecification", "name": "Elevator", "value": true },
-                { "@type": "LocationFeatureSpecification", "name": "Free Parking", "value": true },
-                { "@type": "LocationFeatureSpecification", "name": "24/7 Room Service", "value": true },
                 { "@type": "LocationFeatureSpecification", "name": "Flat Screen TV", "value": true },
-                { "@type": "LocationFeatureSpecification", "name": "Power Backup", "value": true },
-                { "@type": "LocationFeatureSpecification", "name": "Hot Water", "value": true },
-                { "@type": "LocationFeatureSpecification", "name": "Tea/Coffee Maker", "value": true },
-                { "@type": "LocationFeatureSpecification", "name": "Housekeeping", "value": true },
-                { "@type": "LocationFeatureSpecification", "name": "Doctor on Call", "value": true },
+                { "@type": "LocationFeatureSpecification", "name": "Room Service", "value": true },
+                { "@type": "LocationFeatureSpecification", "name": "Geyser / Hot Water", "value": true },
+                { "@type": "LocationFeatureSpecification", "name": "Organic Farm Dining", "value": true },
+                { "@type": "LocationFeatureSpecification", "name": "Barbeque Evenings", "value": true },
+                { "@type": "LocationFeatureSpecification", "name": "Seating Area / Lounge", "value": true },
                 { "@type": "LocationFeatureSpecification", "name": "Luggage Storage", "value": true },
-                { "@type": "LocationFeatureSpecification", "name": "Laundry Service", "value": true }
+                { "@type": "LocationFeatureSpecification", "name": "Family Rooms", "value": true }
               ],
-              "touristType": ["Business", "Family", "Couples"],
-              "availableLanguage": ["Hindi", "English"],
-              "numberOfRooms": 19,
-              "floorSize": {
-                "@type": "QuantitativeValue",
-                "value": 4500,
-                "unitCode": "FTK"
-              },
+              "touristType": ["Family", "Couples", "Groups", "Corporate"],
+              "availableLanguage": ["Hindi", "English", "Bengali"],
+              "numberOfRooms": 12,
               "currenciesAccepted": "INR",
               "paymentAccepted": "Cash, Credit Card, UPI",
-              /* aggregateRating removed — add back once real review count
-                 is verified from Google Business Profile. Using unverified
-                 reviewCount values can trigger a Google structured data penalty. */
               "contactPoint": {
                 "@type": "ContactPoint",
-                "telephone": "+919835923601",
+                "telephone": "+91990398950",
                 "contactType": "reservations",
-                "availableLanguage": ["Hindi", "English"],
+                "availableLanguage": ["Hindi", "English", "Bengali"],
                 "areaServed": "IN"
               },
               "openingHoursSpecification": [
@@ -329,37 +289,13 @@ export default function RootLayout({
               ],
               "parentOrganization": {
                 "@type": "Organization",
-                "@id": "https://hotelsuryabellacasa.com/#organization",
-                "name": "Hotel Surya Bella Casa",
-                "logo": "https://hotelsuryabellacasa.com/suryabellacasalogo.png",
-                "url": "https://hotelsuryabellacasa.com",
-                "foundingDate": "2019",
-                "description": "Hotel Surya Bella Casa is a premier hospitality establishment in Purnea, Bihar, offering comfortable accommodation, rooftop dining, and event spaces.",
-                "sameAs": [
-                  "https://www.facebook.com/hotelsuryabellacasa",
-                  "https://www.instagram.com/hotel.bellacasaa/",
-                  "https://www.youtube.com/@hotelsuryabellacasa"
-                ]
+                "@id": "https://thedivineoasisresort.com/#organization",
+                "name": "The Divine Oasis",
+                "logo": "https://thedivineoasisresort.com/devinelogo.png",
+                "url": "https://thedivineoasisresort.com",
+                "description": "The Divine Oasis is a forest resort atop Ajodhya Hill in Purulia, West Bengal, offering premium mud cottages, luxury suite cottages, organic farm dining, and immersive nature experiences."
               }
             })
-          }}
-        />
-        {/* Google tag (gtag.js) */}
-        <Script
-          async
-          src="https://www.googletagmanager.com/gtag/js?id=G-G1ZTFH35ZB"
-          strategy="afterInteractive"
-        />
-        <Script
-          id="gtag-config"
-          strategy="afterInteractive"
-          dangerouslySetInnerHTML={{
-            __html: `
-              window.dataLayer = window.dataLayer || [];
-              function gtag(){dataLayer.push(arguments);}
-              gtag('js', new Date());
-              gtag('config', 'G-G1ZTFH35ZB');
-            `,
           }}
         />
 

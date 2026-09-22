@@ -2,10 +2,10 @@ import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
   title: 'Photo Gallery',
-  description: 'Browse photos of Hotel Surya Bella Casa Purnea near Bus Stand. See deluxe room images, banquet hall, rooftop restaurant, lobby, exterior. Best hotel in Purnea photos and gallery.',
-  keywords: ['hotel surya bella casa purnea photos', 'deluxe room in purnea images', 'banquet hall purnea photos', 'rooftop restaurant purnea images', 'best hotel in purnea gallery', 'hotel near bus stand purnea photos', 'purnea hotel exterior images', 'hotel lobby purnea images', 'purnea hotel room photos gallery', 'ac rooms purnea images', 'family room purnea photos', 'hotel reception purnea pictures', 'hotel opposite vikass market photos', 'purnea hotel facilities gallery', 'hotel surya bella casa images'],
+  description: 'Browse photos of The Divine Oasis Purulia near Ajodhya Hill. See deluxe room images, banquet hall, rooftop restaurant, lobby, exterior. Best hotel in Purulia photos and gallery.',
+  keywords: ['The Divine Oasis Purulia photos', 'deluxe room in Purulia images', 'banquet hall Purulia photos', 'rooftop restaurant Purulia images', 'best hotel in Purulia gallery', 'hotel near Ajodhya Hill Purulia photos', 'Purulia hotel exterior images', 'hotel lobby Purulia images', 'Purulia hotel room photos gallery', 'ac rooms Purulia images', 'family room Purulia photos', 'hotel reception Purulia pictures', 'hotel opposite Ajodhya Hill photos', 'Purulia hotel facilities gallery', 'The Divine Oasis images'],
   alternates: {
-    canonical: 'https://hotelsuryabellacasa.com/gallery',
+    canonical: 'https://thedivineoasisresort.com/gallery',
   },
   robots: {
     index: true,
@@ -18,25 +18,25 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: 'Hotel Surya Bella Casa Photo Gallery',
-    description: 'Browse photos of Hotel Surya Bella Casa Purnea near Bus Stand. Deluxe room, banquet hall, rooftop restaurant, exterior. Best hotel in Purnea gallery.',
-    url: 'https://hotelsuryabellacasa.com/gallery',
-    siteName: 'Hotel Surya Bella Casa',
+    title: 'The Divine Oasis Photo Gallery',
+    description: 'Browse photos of The Divine Oasis Purulia near Ajodhya Hill. Deluxe room, banquet hall, rooftop restaurant, exterior. Best hotel in Purulia gallery.',
+    url: 'https://thedivineoasisresort.com/gallery',
+    siteName: 'The Divine Oasis',
     type: 'website',
     images: [
       {
-        url: 'https://bookonelocal.in/cdn/IMG_3764.avif',
+        url: 'https://bookonelocal.in/cdn/2026-05-13-064432393-WhatsApp Image 2026-05-11 at 15.42.15.jpg',
         width: 1200,
         height: 630,
-        alt: 'Hotel Surya Bella Casa Purnea Gallery',
+        alt: 'The Divine Oasis Purulia Gallery',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Hotel Surya Bella Casa Photo Gallery',
-    description: 'Browse photos of Hotel Surya Bella Casa Purnea near Bus Stand. Deluxe room, banquet hall, rooftop restaurant gallery.',
-    images: ['https://bookonelocal.in/cdn/IMG_3764.avif'],
+    title: 'The Divine Oasis Photo Gallery',
+    description: 'Browse photos of The Divine Oasis Purulia near Ajodhya Hill. Deluxe room, banquet hall, rooftop restaurant gallery.',
+    images: ['https://bookonelocal.in/cdn/2026-05-13-064432393-WhatsApp Image 2026-05-11 at 15.42.15.jpg'],
   },
 }
 
@@ -54,13 +54,13 @@ export default function GalleryLayout({ children }: { children: React.ReactNode 
                 '@type': 'ListItem',
                 position: 1,
                 name: 'Home',
-                item: 'https://hotelsuryabellacasa.com',
+                item: 'https://thedivineoasisresort.com',
               },
               {
                 '@type': 'ListItem',
                 position: 2,
                 name: 'Gallery',
-                item: 'https://hotelsuryabellacasa.com/gallery',
+                item: 'https://thedivineoasisresort.com/gallery',
               },
             ],
           }),

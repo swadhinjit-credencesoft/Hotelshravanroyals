@@ -1,4 +1,4 @@
-'use client'
+﻿'use client'
 
 import Link from 'next/link'
 import { useState, useEffect, useRef, useCallback } from 'react'
@@ -26,31 +26,31 @@ const ParticleCanvas = dynamic(() => import('@/components/ui/ParticleCanvas'), {
 
 const heroSlides = [
   {
-    src: 'https://bookonelocal.in/cdn/IMG_3815.avif',
-    alt: 'Hotel Surya Bella Casa — Premium hotel in Purnea with luxury rooms, rooftop restaurant, and banquet hall',
-    headline1: 'Where Comfort',
+    src: 'https://bookonelocal.in/cdn/2026-05-13-064432393-WhatsApp Image 2026-05-11 at 15.42.15.jpg',
+    alt: 'The Divine Oasis — Forest resort atop Ajodhya Hill in Purulia with premium mud cottages and luxury suites',
+    headline1: 'Where Forest',
     headline2: 'Meets',
     headline3: 'Luxury',
-    subtitle: 'Warm hospitality, affordable luxury',
-    badge: 'Top Rated in Purnea',
+    subtitle: 'A serene hilltop sanctuary in Purulia',
+    badge: 'Ajodhya Hills & Forest Reserve · 0.4 km',
   },
   {
-    src: 'https://bookonelocal.in/cdn/IMG_3808.avif',
-    alt: 'Comfortable clean rooms at Hotel Surya Bella Casa Purnea — best hotel near Bus Stand',
+    src: 'https://bookonelocal.in/cdn/2026-05-13-063018320-WhatsApp Image 2026-05-11 at 15.53.21.jpg',
+    alt: 'Luxury Suite Cottage at The Divine Oasis Ajodhya Hill — premium hilltop accommodation',
     headline1: 'Your Perfect',
-    headline2: 'Room',
+    headline2: 'Cottage',
     headline3: 'Awaits',
-    subtitle: 'Clean, modern & thoughtfully designed',
-    badge: 'AC & Non-AC Options',
+    subtitle: 'Mud cottages, luxury suites & family rooms',
+    badge: 'From ₹4,000/night · Farm-to-table dining',
   },
   {
-    src: 'https://bookonelocal.in/cdn/IMG_3784.avif',
-    alt: 'Hotel Surya Bella Casa interiors — modern amenities and warm hospitality in Purnea',
+    src: 'https://bookonelocal.in/cdn/2026-05-13-064437235-WhatsApp Image 2026-05-11 at 15.42.11 (1).jpg',
+    alt: 'The Divine Oasis hilltop views — organic farm dining and barbeque evenings in Purulia',
     headline1: 'Experience',
     headline2: 'True',
-    headline3: 'Hospitality',
-    subtitle: 'Where every guest becomes family',
-    badge: 'Since 2019 · Purnea',
+    headline3: 'Serenity',
+    subtitle: 'Where nature and comfort become one',
+    badge: 'Barbeque · Organic Farm · Family Rooms',
   },
 ]
 
@@ -150,7 +150,7 @@ export default function HeroSection() {
       className="relative w-full overflow-hidden flex flex-col justify-between pt-28 sm:pt-32 md:pt-44 pb-6 md:pb-12 bg-forest-dark"
       style={{ minHeight: '100svh' }}
       role="banner"
-      aria-label="Hotel Surya Bella Casa — Best Hotel in Purnea Near Bus Stand"
+      aria-label="The Divine Oasis — Forest Resort at Ajodhya Hill, Purulia"
       itemScope
       itemType="https://schema.org/Hotel"
       onMouseMove={handleMouseMove}
@@ -160,10 +160,10 @@ export default function HeroSection() {
       }}
     >
       {/* SEO microdata */}
-      <meta itemProp="name" content="Hotel Surya Bella Casa" />
-      <meta itemProp="description" content="Best Hotel in Purnea near Bus Stand. Book direct for best rates. Free WiFi, AC rooms, rooftop restaurant." />
-      <meta itemProp="telephone" content="+919835923601" />
-      <meta itemProp="url" content="https://hotelsuryabellacasa.com" />
+      <meta itemProp="name" content="The Divine Oasis" />
+      <meta itemProp="description" content="Forest resort atop Ajodhya Hill in Purulia, West Bengal. Premium mud cottages, luxury suites, organic farm dining, and hilltop serenity. Book direct for best rates." />
+      <meta itemProp="telephone" content="+91990398950" />
+      <meta itemProp="url" content="https://thedivineoasisresort.com" />
       {/* Background Image Carousel — Premium 4K Crossfade */}
       <motion.div
         className="absolute inset-0 z-0 will-change-transform"
@@ -242,29 +242,29 @@ export default function HeroSection() {
           {/* Headline — animated with slides */}
           <h1 className="font-sans font-light tracking-tight text-ivory text-[32px] sm:text-5xl md:text-7xl lg:text-8xl leading-[1.05] mb-3 md:mb-4 text-balance" itemProp="name">
             <span className={`transition-opacity duration-700 ease-in-out ${currentSlide === 0 ? 'opacity-100' : 'opacity-0 absolute inset-0 pointer-events-none'}`}>
-              Where Comfort <br />
+              Where Forest <br />
               <span className="text-gold font-serif italic">Meets</span> Luxury
             </span>
             <span className={`transition-opacity duration-700 ease-in-out ${currentSlide === 1 ? 'opacity-100' : 'opacity-0 absolute inset-0 pointer-events-none'}`}>
               Your Perfect <br />
-              <span className="text-gold font-serif italic">Room</span> Awaits
+              <span className="text-gold font-serif italic">Cottage</span> Awaits
             </span>
             <span className={`transition-opacity duration-700 ease-in-out ${currentSlide === 2 ? 'opacity-100' : 'opacity-0 absolute inset-0 pointer-events-none'}`}>
               Experience <br />
-              <span className="text-gold font-serif italic">True</span> Hospitality
+              <span className="text-gold font-serif italic">True</span> Serenity
             </span>
           </h1>
 
           {/* Subtitle — animated with slides */}
           <div className="relative mb-5 px-2">
             <p className={`font-sans text-sm sm:text-lg md:text-xl font-light text-ivory/90 max-w-xl transition-opacity duration-700 ease-in-out ${currentSlide === 0 ? 'opacity-100' : 'opacity-0 absolute inset-0 pointer-events-none'}`}>
-              Warm hospitality, affordable luxury
+              A serene hilltop sanctuary in Purulia
             </p>
             <p className={`font-sans text-sm sm:text-lg md:text-xl font-light text-ivory/90 max-w-xl transition-opacity duration-700 ease-in-out ${currentSlide === 1 ? 'opacity-100' : 'opacity-0 absolute inset-0 pointer-events-none'}`}>
-              Clean, modern &amp; thoughtfully designed
+              Mud cottages, luxury suites & family rooms
             </p>
             <p className={`font-sans text-sm sm:text-lg md:text-xl font-light text-ivory/90 max-w-xl transition-opacity duration-700 ease-in-out ${currentSlide === 2 ? 'opacity-100' : 'opacity-0 absolute inset-0 pointer-events-none'}`}>
-              Where every guest becomes family
+              Where nature and comfort become one
             </p>
           </div>
 
@@ -276,13 +276,13 @@ export default function HeroSection() {
               ))}
             </div>
             <span className={`text-[10px] sm:text-[11px] font-sans text-ivory font-medium tracking-wide transition-opacity duration-700 ease-in-out ${currentSlide === 0 ? 'opacity-100' : 'opacity-0 absolute left-0 right-0 flex items-center justify-center pointer-events-none'}`}>
-              Top Rated in Purnea
+              Ajodhya Hills & Forest Reserve · 0.4 km
             </span>
             <span className={`text-[10px] sm:text-[11px] font-sans text-ivory font-medium tracking-wide transition-opacity duration-700 ease-in-out ${currentSlide === 1 ? 'opacity-100' : 'opacity-0 absolute left-0 right-0 flex items-center justify-center pointer-events-none'}`}>
-              AC &amp; Non-AC Options
+              From ₹4,000/night · Farm-to-table dining
             </span>
             <span className={`text-[10px] sm:text-[11px] font-sans text-ivory font-medium tracking-wide transition-opacity duration-700 ease-in-out ${currentSlide === 2 ? 'opacity-100' : 'opacity-0 absolute left-0 right-0 flex items-center justify-center pointer-events-none'}`}>
-              Since 2019 · Purnea
+              Barbeque · Organic Farm · Family Rooms
             </span>
           </div>
 

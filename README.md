@@ -1,36 +1,38 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# The Divine Oasis
+
+Website for **The Divine Oasis** — a hilltop forest resort at Ajodhya Hill, Purulia, West Bengal.
+
+Production domain: https://thedivineoasisresort.com
+
+Built with **Next.js 15** (App Router) and exported as a fully static site (`output: 'export'`), deployed to Apache shared hosting via the `.htaccess` in `public/`.
 
 ## Getting Started
 
-First, run the development server:
-
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+npm install
+npm run dev     # development server at http://localhost:3000
+npm run lint    # ESLint checks
+npm run build   # production build + static export (writes to ./out)
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+The exported site is written to `./out` and is ready to upload to the web root, alongside `public/.htaccess`.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Project Structure
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- `src/app/` — Pages and routes (home, rooms, dining, events, experiences, blog, offers, contact, about, faq, reviews, gallery, reservations, legal pages, SEO landing pages)
+- `src/components/` — Layout, UI, and section components
+- `src/data/` — Central content/dataset files (gallery, dining, events, experiences, offers, testimonials, awards, hero)
+- `src/lib/` — Data layer (`hotelmate.ts` property 3558), room catalogue, analytics, GSAP setup
 
-## Learn More
+## Key configuration
 
-To learn more about Next.js, take a look at the following resources:
+- All booking links point to the HotelMate engine: `https://bookone.io/The-Divine-Oasis?bookingEngine=true`
+- Room slugs, names, and rates are defined in `src/lib/rooms.ts`
+- Brand/contact details (phone, email, geolocation) live in `src/data/site.ts` and `src/lib/hotelmate.ts`
+- Image assets are served from `bookonelocal.in` CDN (remote pattern registered in `next.config.mjs`)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Deploying
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+1. `npm run build`
+2. Upload the contents of `./out` to the host's web root
+3. Ensure `public/.htaccess` is uploaded too (canonical https + room-slug redirects)

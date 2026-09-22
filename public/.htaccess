@@ -13,11 +13,15 @@ RewriteBase /
 # 1. Enforce HTTPS and Non-WWW (Canonical Domain)
 RewriteCond %{HTTPS} off [OR]
 RewriteCond %{HTTP_HOST} ^www\. [NC]
-RewriteRule ^(.*)$ https://hotelsuryabellacasa.com/$1 [R=301,L]
+RewriteRule ^(.*)$ https://thedivineoasisresort.com/$1 [R=301,L]
 
 # 2. Redirect obsolete room slugs to prevent 404 errors
-RewriteRule ^rooms/lawn-facing-room/?$ /rooms/super-deluxe-room [R=301,L]
-RewriteRule ^rooms/forest-facing-room/?$ /rooms/deluxe-ac-room [R=301,L]
+RewriteRule ^rooms/super-deluxe-room/?$ /rooms/premium-deluxe-mud-cottages [R=301,L]
+RewriteRule ^rooms/deluxe-ac-room/?$ /rooms/luxury-suite-cottage [R=301,L]
+RewriteRule ^rooms/deluxe-non-ac-room/?$ /rooms/vista-pod-cottage [R=301,L]
+RewriteRule ^rooms/standard-non-ac-room/?$ /rooms/vista-four-beds [R=301,L]
+RewriteRule ^rooms/lawn-facing-room/?$ /rooms/premium-deluxe-mud-cottages [R=301,L]
+RewriteRule ^rooms/forest-facing-room/?$ /rooms/luxury-suite-cottage [R=301,L]
 
 # 3. Redirect index.html to clean URL (/)
 RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /index\.html\ HTTP/

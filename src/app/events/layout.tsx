@@ -1,11 +1,11 @@
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Banquet Hall & Events Purnea | Near Bus Stand',
-  description: 'Best banquet hall in Purnea at Hotel Surya Bella Casa near Bus Stand. Wedding hall, marriage hall, conference hall, birthday party hall near Vikass Market. Host weddings, corporate events & parties. Book now.',
-  keywords: ['banquet hall purnea', 'wedding hall purnea', 'marriage hall purnea', 'event venue purnea', 'party hall purnea', 'conference hall purnea', 'best banquet hall in purnea', 'wedding venue purnea', 'marriage hall near bus stand purnea', 'birthday party hall purnea', 'corporate event venue purnea', 'reception hall purnea', 'seminar hall purnea', 'event hall near vikass market purnea', 'celebration venue purnea'],
+  title: 'Banquet Hall & Events Purulia | Near Ajodhya Hill',
+  description: 'Best banquet hall in Purulia at The Divine Oasis near Ajodhya Hill. Wedding hall, marriage hall, conference hall, birthday party hall near Ajodhya Hill. Host weddings, corporate events & parties. Book now.',
+  keywords: ['banquet hall Purulia', 'wedding hall Purulia', 'marriage hall Purulia', 'event venue Purulia', 'party hall Purulia', 'conference hall Purulia', 'best banquet hall in Purulia', 'wedding venue Purulia', 'marriage hall near Ajodhya Hill Purulia', 'birthday party hall Purulia', 'corporate event venue Purulia', 'reception hall Purulia', 'seminar hall Purulia', 'event hall near Ajodhya Hill Purulia', 'celebration venue Purulia'],
   alternates: {
-    canonical: 'https://hotelsuryabellacasa.com/events',
+    canonical: 'https://thedivineoasisresort.com/events',
   },
   robots: {
     index: true,
@@ -18,25 +18,25 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: 'Banquet Hall & Events Purnea | Near Bus Stand',
-    description: 'Best banquet hall in Purnea at Hotel Surya Bella Casa near Bus Stand. Wedding hall, marriage hall, conference hall, birthday party hall. Host weddings, corporate events & parties in Purnea.',
-    url: 'https://hotelsuryabellacasa.com/events',
-    siteName: 'Hotel Surya Bella Casa',
+    title: 'Banquet Hall & Events Purulia | Near Ajodhya Hill',
+    description: 'Best banquet hall in Purulia at The Divine Oasis near Ajodhya Hill. Wedding hall, marriage hall, conference hall, birthday party hall. Host weddings, corporate events & parties in Purulia.',
+    url: 'https://thedivineoasisresort.com/events',
+    siteName: 'The Divine Oasis',
     type: 'website',
     images: [
       {
-        url: 'https://bookonelocal.in/cdn/IMG_3809.avif',
+        url: 'https://bookonelocal.in/cdn/2026-05-13-064432393-WhatsApp Image 2026-05-11 at 15.42.15.jpg',
         width: 1200,
         height: 630,
-        alt: 'Events & Banquet Hall at Hotel Surya Bella Casa Purnea',
+        alt: 'Events & Banquet Hall at The Divine Oasis Purulia',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Banquet Hall & Events Purnea | Near Bus Stand',
-    description: 'Best banquet hall in Purnea at Hotel Surya Bella Casa near Bus Stand. Wedding, marriage, conference & party halls. Book now.',
-    images: ['https://bookonelocal.in/cdn/IMG_3809.avif'],
+    title: 'Banquet Hall & Events Purulia | Near Ajodhya Hill',
+    description: 'Best banquet hall in Purulia at The Divine Oasis near Ajodhya Hill. Wedding, marriage, conference & party halls. Book now.',
+    images: ['https://bookonelocal.in/cdn/2026-05-13-064432393-WhatsApp Image 2026-05-11 at 15.42.15.jpg'],
   },
 }
 
@@ -54,13 +54,13 @@ export default function EventsLayout({ children }: { children: React.ReactNode }
                 '@type': 'ListItem',
                 position: 1,
                 name: 'Home',
-                item: 'https://hotelsuryabellacasa.com',
+                item: 'https://thedivineoasisresort.com',
               },
               {
                 '@type': 'ListItem',
                 position: 2,
                 name: 'Events',
-                item: 'https://hotelsuryabellacasa.com/events',
+                item: 'https://thedivineoasisresort.com/events',
               },
             ],
           }),

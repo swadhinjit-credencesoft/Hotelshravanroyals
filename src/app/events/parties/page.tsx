@@ -5,10 +5,10 @@ import { Gift, Music, Flame, GlassWater, Users, Calendar } from 'lucide-react';
 import Link from 'next/link';
 
 export const metadata = {
-  title: 'Party Hall in Purnea | Birthday Party Venue & Celebrations',
-  description: 'Best party hall in Purnea near Bus Stand. Hotel Surya Bella Casa offers venue for birthdays, anniversaries, and private celebrations with customized themes.',
-  keywords: ['party hall purnea', 'birthday party venue Purnea', 'anniversary celebration purnea', 'private party hotel purnea', 'event venue near bus stand purnea'],
-  alternates: { canonical: 'https://hotelsuryabellacasa.com/events/parties' },
+  title: 'Birthday Party & Celebration Venue at Ajodhya Hill | The Divine Oasis, Purulia',
+  description: 'Host birthdays, anniversaries & private parties at The Divine Oasis atop Ajodhya Hill, Purulia. Hilltop forest resort with barbeque, family cottages & scenic seating for up to 40 guests.',
+  keywords: ['party venue Purulia', 'birthday party venue Ajodhya Hill', 'anniversary celebration Purulia', 'private party resort Purulia', 'event venue near Ajodhya Hill Purulia', 'family celebration Purulia'],
+  alternates: { canonical: 'https://thedivineoasisresort.com/events/parties' },
 };
 
 export default function PartiesPage() {
@@ -16,17 +16,17 @@ export default function PartiesPage() {
     {
       "@context": "https://schema.org",
       "@type": "SocialEvent",
-      "name": "Parties & Celebrations - Hotel Surya Bella Casa",
-      "description": "Best birthday party hall in Purnea near Bus Stand. Party venue for birthdays, anniversaries, private parties with customized themes and decoration.",
+      "name": "Parties & Celebrations - The Divine Oasis Ajodhya Hill",
+      "description": "Birthday party & celebration venue at The Divine Oasis atop Ajodhya Hill, Purulia. Hilltop forest resort with barbeque stand, seating area, and family cottages for up to 40 guests.",
       "location": {
         "@type": "PostalAddress",
-        "streetAddress": "Suryalok Complex, Opposite Vikass Market, Near Bus Stand",
-        "addressLocality": "Purnea",
-        "addressRegion": "Bihar",
-        "postalCode": "854301",
+        "streetAddress": "643G+4Q, Hilltop",
+        "addressLocality": "Ajodhya",
+        "addressRegion": "West Bengal",
+        "postalCode": "723152",
         "addressCountry": "IN"
       },
-      "telephone": "+91 9835923601"
+      "telephone": "+91 99039 89950"
     },
     {
       "@context": "https://schema.org",
@@ -34,26 +34,26 @@ export default function PartiesPage() {
       "mainEntity": [
         {
           "@type": "Question",
-          "name": "What is the best birthday party hall in Purnea?",
+          "name": "What is the best birthday party venue in Purulia?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Hotel Surya Bella Casa is the best birthday party hall in Purnea near Bus Stand with celebration deck, customized themes, decoration, and dining options for up to 40 guests."
+            "text": "The Divine Oasis is the best birthday party venue in Purulia, located atop Ajodhya Hill with forest views. We host birthdays, anniversaries, and private celebrations with barbeque, customized themes, and family cottages for up to 40 guests."
           }
         },
         {
           "@type": "Question",
-          "name": "Is there a party venue in Purnea near Bus Stand?",
+          "name": "Is there a party venue near Ajodhya Hill, Purulia?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Yes, Hotel Surya Bella Casa has a party venue in Purnea near Bus Stand for birthday parties, anniversaries, and private celebrations with live BBQ and music setup."
+            "text": "Yes, The Divine Oasis is a party venue at Ajodhya Hill, Purulia for birthdays, anniversaries, and private celebrations with live BBQ, music setup, and scenic hilltop seating."
           }
         },
         {
           "@type": "Question",
-          "name": "Can I host a private party in Purnea?",
+          "name": "Can I host a private party at Ajodhya Hill?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Yes, Hotel Surya Bella Casa offers a private party venue in Purnea near Bus Stand with customizable themes, decor, sound systems, and catering for all occasions."
+            "text": "Yes, The Divine Oasis offers a private party venue at Ajodhya Hill, Purulia with customizable themes, decor, sound systems, and organic farm catering for all occasions."
           }
         }
       ]
@@ -69,10 +69,10 @@ export default function PartiesPage() {
       />
 
       <CinematicHero 
-        label="Birthday Party Hall in Purnea - Party Venue Near Bus Stand"
-        title="Party Hall in Purnea - Birthday Party Venue, Celebration Deck & Private Parties"
-        tagline="Looking for a birthday party hall in Purnea near Bus Stand? Hotel Surya Bella Casa offers party venue for birthdays, anniversaries, and private celebrations with customized themes. Best party hall in Purnea."
-        image='/images/exterior3.jpeg'
+        label="Birthday Party Venue at Ajodhya Hill - The Divine Oasis, Purulia"
+        title="Party Venue at Ajodhya Hill - Birthday Celebrations & Private Parties"
+        tagline="Host birthdays, anniversaries & private parties at The Divine Oasis atop Ajodhya Hill, Purulia. Hilltop forest resort with barbeque, family cottages & scenic seating for up to 40 guests."
+        image='https://bookonelocal.in/cdn/2026-05-13-064459381-WhatsApp Image 2026-05-11 at 15.42.11.jpg'
       />
 
       <section className="py-24">
@@ -82,7 +82,7 @@ export default function PartiesPage() {
               <SectionLabel className="mb-6">The Deck</SectionLabel>
               <h2 className="font-display text-4xl md:text-6xl italic text-forest mb-8">Host the Ultimate Celebration</h2>
               <p className="font-serif text-lg text-taupe leading-relaxed mb-10">
-                Whether it&apos;s a milestone birthday or a long-awaited reunion, our celebration deck and modern banquet space offer the perfect vibe for every party.
+                Whether it&apos;s a milestone birthday or a long-awaited reunion, our hilltop seating area and family cottages offer the perfect vibe for every party.
               </p>
               
               <div className="grid grid-cols-2 gap-8 mb-10">
@@ -99,7 +99,7 @@ export default function PartiesPage() {
               </div>
 
               <a 
-                href="https://bookone.io/Hotel-Bella-Casa?bookingEngine=true" 
+                href="https://bookone.io/The-Divine-Oasis?bookingEngine=true" 
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-3 bg-forest text-ivory font-sans text-[11px] uppercase tracking-[0.2em] px-10 py-5 hover:bg-forest/90 transition-all rounded-sm"
@@ -109,7 +109,7 @@ export default function PartiesPage() {
               </a>
             </div>
             <div className="relative aspect-square">
-               <Image src='/images/exterior4.jpeg' alt="Birthday Party Hall in Purnea - Party Venue Near Bus Stand | Hotel Surya Bella Casa" fill className="object-cover rounded-sm shadow-2xl" />
+               <Image src='https://bookonelocal.in/cdn/2026-05-13-064459381-WhatsApp Image 2026-05-11 at 15.42.11.jpg' alt="Birthday Party Venue at The Divine Oasis Ajodhya Hill" fill className="object-cover rounded-sm shadow-2xl" />
             </div>
           </div>
 
@@ -120,9 +120,9 @@ export default function PartiesPage() {
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
             {[
-              { icon: GlassWater, title: 'Celebration Vibe', desc: 'Host a vibrant afternoon or evening celebration with refreshing drinks and vegetarian delights.' },
-              { icon: Music, title: 'Music & Setup', desc: 'Dedicated sound systems and customizable lighting to set the perfect mood.' },
-              { icon: Gift, title: 'Theme Decor', desc: 'Our event team can help bring your specific birthday or celebration theme to life.' }
+              { icon: GlassWater, title: 'Celebration Vibe', desc: 'Host a vibrant afternoon or evening celebration with refreshing drinks and vegetarian delights at our hilltop seating.' },
+              { icon: Music, title: 'Music & Setup', desc: 'Dedicated sound systems and customizable lighting to set the perfect mood at Ajodhya Hill.' },
+              { icon: Gift, title: 'Theme Decor', desc: 'Our event team can help bring your specific birthday or celebration theme to life amidst the forest.' }
             ].map((element, i) => (
               <div key={i} className="text-center p-10 bg-white border border-gold/10 hover:shadow-warm-lg transition-all duration-500 group">
                 <element.icon className="text-gold mx-auto mb-8 group-hover:scale-110 transition-transform" size={40} />

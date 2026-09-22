@@ -14,21 +14,22 @@ import FAQSection from '@/components/sections/FAQSection';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Hotel Surya Bella Casa Purnea | Best Near Bus Stand',
+  title: 'The Divine Oasis | Forest Resort at Ajodhya Hill, Purulia',
   description:
-    'Book Hotel Surya Bella Casa in Purnea near Bus Stand. Free WiFi, parking, AC rooms, banquet hall, 24/7 room service. Best hotel in Purnea, Bihar. Book direct and save!',
+    'The Divine Oasis is a tranquil forest resort nestled atop Ajodhya Hill in Purulia, West Bengal. Stay in premium mud cottages and luxury suites surrounded by nature, with organic farm dining, barbeque evenings, and serene hilltop views. Book direct and save!',
   alternates: {
-    canonical: 'https://hotelsuryabellacasa.com/',
+    canonical: 'https://thedivineoasisresort.com/',
   },
   keywords: [
-    'hotel in purnea',
-    'best hotel in purnea near bus stand',
-    'hotel surya bella casa',
-    'luxury hotel Purnea',
-    'family hotel purnea',
-    'business hotel Purnea',
-    'book hotel purnea',
-    'best hotel bihar',
+    'resort in Purulia',
+    'best resort in Purulia near Ajodhya Hill',
+    'The Divine Oasis',
+    'forest resort Ajodhya Hill',
+    'mud cottage resort Purulia',
+    'family resort Purulia',
+    'corporate resort Purulia',
+    'book resort Purulia',
+    'best resort West Bengal',
   ],
 };
 
@@ -47,42 +48,42 @@ export default function Home() {
             "mainEntity": [
               {
                 "@type": "Question",
-                "name": "Where is Hotel Surya Bella Casa located in Purnea?",
+                "name": "Where is The Divine Oasis located in Purulia?",
                 "acceptedAnswer": {
                   "@type": "Answer",
-                  "text": "Hotel Surya Bella Casa is located at Suryalok Complex, Opposite Vikass Market, Near the main Bus Stand, Purnea, Bihar 854301, India."
+                  "text": "The Divine Oasis is located at 643G+4Q, Hilltop, Ajodhya, Purulia, West Bengal 723152, India, perched atop Ajodhya Hill within the Ajodhya Hills & Forest Reserve."
                 }
               },
               {
                 "@type": "Question",
-                "name": "How far is the hotel from Purnea Junction Railway Station?",
+                "name": "How far is the resort from Purulia Junction Railway Station?",
                 "acceptedAnswer": {
                   "@type": "Answer",
-                  "text": "Hotel Surya Bella Casa is approximately 6.1 km from Purnea Junction Railway Station, around a 15-minute drive."
+                  "text": "The Divine Oasis is approximately 42.6 km from Purulia Junction Railway Station, around a 60-70 minute drive through the scenic Purulia hills."
                 }
               },
               {
                 "@type": "Question",
-                "name": "Is Hotel Surya Bella Casa a family-friendly hotel?",
+                "name": "Is The Divine Oasis a family-friendly resort?",
                 "acceptedAnswer": {
                   "@type": "Answer",
-                  "text": "Yes, Hotel Surya Bella Casa is fully family-friendly with spacious rooms, a safe environment, elevator access, and 24/7 staff assistance."
+                  "text": "Yes, The Divine Oasis is fully family-friendly with spacious family rooms (VISTA Four Beds), a safe hilltop environment, and 24/7 staff assistance."
                 }
               },
               {
                 "@type": "Question",
-                "name": "Is pure vegetarian food available at the hotel?",
+                "name": "Is pure vegetarian food available at the resort?",
                 "acceptedAnswer": {
                   "@type": "Answer",
-                  "text": "Yes, pure vegetarian food is available via partner restaurant deliveries through Swiggy and Zomato. Non-vegetarian food is not permitted on the property premises."
+                  "text": "Yes, The Divine Oasis serves fresh organic vegetarian meals (veg thali) from our own farm-to-table kitchen. Non-vegetarian food is not permitted on the property premises."
                 }
               },
               {
                 "@type": "Question",
-                "name": "What are the room categories available at Hotel Surya Bella Casa?",
+                "name": "What are the cottage categories available at The Divine Oasis?",
                 "acceptedAnswer": {
                   "@type": "Answer",
-                  "text": "Hotel Surya Bella Casa offers 4 room categories: Super Deluxe AC Room, Deluxe AC Room, Deluxe Non-AC Room, and Standard Non-AC Room."
+                  "text": "The Divine Oasis offers 4 cottage categories: Premium Deluxe Mud Cottages (₹4,255/night), Luxury Suite Cottage (₹7,225/night), VISTA Four Beds (₹6,500/night), and Vista Pod Cottage (₹4,000/night)."
                 }
               },
               {
@@ -95,7 +96,7 @@ export default function Home() {
               },
               {
                 "@type": "Question",
-                "name": "Is there free high-speed Wi-Fi at the hotel?",
+                "name": "Is there free high-speed Wi-Fi at the resort?",
                 "acceptedAnswer": {
                   "@type": "Answer",
                   "text": "Yes, complimentary high-speed Wi-Fi is available throughout the property for all guests."
@@ -111,10 +112,10 @@ export default function Home() {
               },
               {
                 "@type": "Question",
-                "name": "How can I book a room at Hotel Surya Bella Casa?",
+                "name": "How can I book a stay at The Divine Oasis?",
                 "acceptedAnswer": {
                   "@type": "Answer",
-                  "text": "You can book directly at https://hotelsuryabellacasa.com or call +91 9835923601. Rooms are also available on Booking.com, MakeMyTrip, Goibibo, and Agoda."
+                  "text": "You can book directly at https://bookone.io/The-Divine-Oasis?bookingEngine=true or call +91 99039 89950. Direct booking guarantees the best rate."
                 }
               }
             ]
@@ -128,16 +129,16 @@ export default function Home() {
           __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "VideoObject",
-            "name": "Hotel Surya Bella Casa Purnea - Virtual Tour",
-            "description": "Video tour of Hotel Surya Bella Casa, best hotel in Purnea near Bus Stand and Vikass Market. See rooms, dining, and facilities.",
-            "thumbnailUrl": "https://bookonelocal.in/cdn/IMG_3815.avif",
-            "contentUrl": "https://bookonelocal.in/cdn/website-home-video.mp4",
-            "embedUrl": "https://hotelsuryabellacasa.com",
-            "uploadDate": "2024-01-01",
+            "name": "The Divine Oasis Ajodhya Hill - Virtual Tour",
+            "description": "Video tour of The Divine Oasis, forest resort atop Ajodhya Hill in Purulia, West Bengal. See premium mud cottages, luxury suites, organic farm dining, and hilltop views.",
+            "thumbnailUrl": "https://bookonelocal.in/cdn/2026-05-13-064432393-WhatsApp Image 2026-05-11 at 15.42.15.jpg",
+            "contentUrl": "https://bookonelocal.in/cdn/2026-05-13-064432393-WhatsApp Image 2026-05-11 at 15.42.15.jpg",
+            "embedUrl": "https://thedivineoasisresort.com",
+            "uploadDate": "2026-05-13",
             "duration": "PT30S",
             "potentialAction": {
               "@type": "WatchAction",
-              "target": "https://hotelsuryabellacasa.com"
+              "target": "https://thedivineoasisresort.com"
             }
           })
         }}

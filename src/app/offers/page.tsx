@@ -1,21 +1,22 @@
-import OffersSection from '@/components/sections/OffersSection'
+﻿import OffersSection from '@/components/sections/OffersSection'
 import SectionLabel from '@/components/ui/SectionLabel'
 import { offers } from '@/data/offers'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Offers & Packages',
-  description: 'Exclusive hotel offers, seasonal packages, and best deals at Hotel Surya Bella Casa in Purnea. Corporate rates, wedding packages, and family deals.',
+  title: 'Resort Offers & Packages | The Divine Oasis Ajodhya Hill, Purulia',
+  description: 'Exclusive resort offers, seasonal packages, and best deals at The Divine Oasis at Ajodhya Hill, Purulia. Corporate retreat packages, wedding offers, family getaways.',
   alternates: {
-    canonical: 'https://hotelsuryabellacasa.com/offers',
+    canonical: 'https://thedivineoasisresort.com/offers',
   },
   keywords: [
-    'hotel offers purnea',
-    'hotel deals Purnea',
-    'best hotel rates purnea',
-    'discount hotel booking purnea',
-    'corporate hotel rates Purnea',
-    'wedding package purnea hotel',
+    'resort offers Purulia',
+    'resort deals Ajodhya Hill',
+    'best resort rates Purulia',
+    'cottage booking offers Purulia',
+    'corporate retreat rates Purulia',
+    'wedding package resort Purulia',
+    'family getaway offers Purulia',
   ],
 }
 
@@ -23,17 +24,17 @@ export default function OffersPage() {
   const offerSchema = {
     "@context": "https://schema.org",
     "@type": "ItemList",
-    "@id": "https://hotelsuryabellacasa.com/offers/#itemlist",
+    "@id": "https://thedivineoasisresort.com/offers/#itemlist",
     "name": "Seasonal Packages & Offers",
-    "description": "Exclusive deals and seasonal packages at Hotel Surya Bella Casa, Purnea.",
-    "url": "https://hotelsuryabellacasa.com/offers",
+    "description": "Exclusive deals and seasonal packages at The Divine Oasis, Ajodhya Hill, Purulia.",
+    "url": "https://thedivineoasisresort.com/offers",
     "itemListElement": offers.map((offer, i) => ({
       "@type": "ListItem",
       "position": i + 1,
       "item": {
         "@type": "Product",
         "name": offer.name,
-        "description": `${offer.nights} nights package with ${offer.includes.length} amenities. Price: ₹${offer.price.toLocaleString()}.`,
+        "description": `${offer.nights} nights package with ${offer.includes.length} amenities. Price: â‚¹${offer.price.toLocaleString()}.`,
         "offers": {
           "@type": "Offer",
           "price": offer.price,
@@ -59,13 +60,13 @@ export default function OffersPage() {
                 '@type': 'ListItem',
                 position: 1,
                 name: 'Home',
-                item: 'https://hotelsuryabellacasa.com',
+                item: 'https://thedivineoasisresort.com',
               },
               {
                 '@type': 'ListItem',
                 position: 2,
                 name: 'Offers',
-                item: 'https://hotelsuryabellacasa.com/offers',
+                item: 'https://thedivineoasisresort.com/offers',
               },
             ],
           })
@@ -84,15 +85,15 @@ export default function OffersPage() {
           __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "WebPage",
-            "@id": "https://hotelsuryabellacasa.com/offers/#webpage",
-            "url": "https://hotelsuryabellacasa.com/offers",
-            "name": "Seasonal Packages & Resort Offers | Hotel Surya Bella Casa",
-            "description": "Save on your weekend getaways in Purnea. Check out active lodging promotions, culinary meal plan packages, and adventure tour add-ons.",
+            "@id": "https://thedivineoasisresort.com/offers/#webpage",
+            "url": "https://thedivineoasisresort.com/offers",
+            "name": "Seasonal Packages & Resort Offers | The Divine Oasis",
+            "description": "Save on your forest getaway at Ajodhya Hill. Check out active cottage promotions, organic farm meal plan packages, and adventure tour add-ons.",
             "isPartOf": {
               "@type": "WebSite",
-              "@id": "https://hotelsuryabellacasa.com/#website",
-              "name": "Hotel Surya Bella Casa",
-              "url": "https://hotelsuryabellacasa.com"
+              "@id": "https://thedivineoasisresort.com/#website",
+              "name": "The Divine Oasis",
+              "url": "https://thedivineoasisresort.com"
             }
           })
         }}

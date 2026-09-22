@@ -4,12 +4,20 @@ import { Suspense } from 'react'
 import ReservationsClient from './ReservationsClient'
 
 export const metadata: Metadata = {
-  title: 'Book Your Stay Online',
+  title: 'Book Your Cottage Stay | The Divine Oasis, Ajodhya Hill',
   description:
-    'Book deluxe AC rooms, family rooms, and budget stays at Hotel Surya Bella Casa near Purnea Bus Stand. Free WiFi, parking, 24/7 room service.',
-  keywords: ['hotel reservation purnea', 'book hotel in Purnea', 'online hotel booking purnea', 'hotel room booking Purnea', 'best hotel deals purnea'],
+    'Book premium mud cottages, luxury suite cottage, Vista Four Beds, and Vista Pod Cottage at The Divine Oasis atop Ajodhya Hill, Purulia. Free Wi-Fi, geyser, room service, organic farm dining. Best forest resort cottages in Purulia.',
+  keywords: [
+    'resort booking Purulia',
+    'book cottage Ajodhya Hill',
+    'online cottage reservation Purulia',
+    'cottage room booking Purulia',
+    'best resort deals Purulia',
+    'mud cottage booking Purulia',
+    'luxury suite cottage Purulia',
+  ],
   alternates: {
-    canonical: 'https://hotelsuryabellacasa.com/reservations',
+    canonical: 'https://thedivineoasisresort.com/reservations',
   },
 }
 
@@ -24,8 +32,8 @@ export default function ReservationsPage() {
             "@context": "https://schema.org",
             "@type": "BreadcrumbList",
             "itemListElement": [
-              { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://hotelsuryabellacasa.com" },
-              { "@type": "ListItem", "position": 2, "name": "Reservations", "item": "https://hotelsuryabellacasa.com/reservations" }
+              { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://thedivineoasisresort.com" },
+              { "@type": "ListItem", "position": 2, "name": "Reservations", "item": "https://thedivineoasisresort.com/reservations" }
             ]
           })
         }}
@@ -36,7 +44,7 @@ export default function ReservationsPage() {
             <div className="relative h-56 md:h-72 rounded-sm overflow-hidden bg-forest/10 flex items-center justify-center">
               <div className="text-center">
                 <div className="inline-block w-8 h-8 border-2 border-gold/30 border-t-gold rounded-full animate-spin mb-4" />
-                <p className="font-serif text-taupe">Loading available rooms...</p>
+                <p className="font-serif text-taupe">Loading available cottages...</p>
               </div>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">

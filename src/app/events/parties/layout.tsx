@@ -1,31 +1,31 @@
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Birthday Party Hall Purnea | Celebrations',
-  description: 'Best birthday party hall in Purnea at Hotel Surya Bella Casa near Bus Stand. Party venue for birthdays, anniversaries, private parties with customized themes, decoration and dining options. Book now.',
-  keywords: ['birthday party hall purnea', 'party venue purnea', 'celebration hall purnea', 'private party purnea', 'anniversary venue purnea', 'purnea party hall', 'birthday celebration purnea hotel', 'purnea celebration deck', 'party decoration purnea', 'get together venue purnea', 'friends gathering purnea', 'purnea private dining', 'pool party purnea', 'event decoration purnea', 'party hall near bus stand purnea'],
+  title: 'Birthday Party Hall Purulia | Celebrations',
+  description: 'Best birthday party hall in Purulia at The Divine Oasis near Ajodhya Hill. Party venue for birthdays, anniversaries, private parties with customized themes, decoration and dining options. Book now.',
+  keywords: ['birthday party hall Purulia', 'party venue Purulia', 'celebration hall Purulia', 'private party Purulia', 'anniversary venue Purulia', 'Purulia party hall', 'birthday celebration Purulia hotel', 'Purulia celebration deck', 'party decoration Purulia', 'get together venue Purulia', 'friends gathering Purulia', 'Purulia private dining', 'pool party Purulia', 'event decoration Purulia', 'party hall near Ajodhya Hill Purulia'],
   alternates: {
-    canonical: 'https://hotelsuryabellacasa.com/events/parties',
+    canonical: 'https://thedivineoasisresort.com/events/parties',
   },
   openGraph: {
-    title: 'Birthday Party Hall Purnea | Celebrations',
-    description: 'Best birthday party hall in Purnea near Bus Stand. Party venue for birthdays, anniversaries, private parties with customized themes & decoration.',
-    url: 'https://hotelsuryabellacasa.com/events/parties',
-    siteName: 'Hotel Surya Bella Casa',
+    title: 'Birthday Party Hall Purulia | Celebrations',
+    description: 'Best birthday party hall in Purulia near Ajodhya Hill. Party venue for birthdays, anniversaries, private parties with customized themes & decoration.',
+    url: 'https://thedivineoasisresort.com/events/parties',
+    siteName: 'The Divine Oasis',
     type: 'website',
     images: [
       {
-        url: 'https://bookonelocal.in/cdn/IMG_3808.avif',
+        url: 'https://bookonelocal.in/cdn/2026-05-13-064432393-WhatsApp Image 2026-05-11 at 15.42.15.jpg',
         width: 1200,
         height: 630,
-        alt: 'Party and Celebration Hall at Hotel Surya Bella Casa Purnea',
+        alt: 'Party and Celebration Hall at The Divine Oasis Purulia',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Birthday Party Hall Purnea | Celebrations',
-    description: 'Best birthday party hall in Purnea near Bus Stand. Party venue for birthdays, anniversaries, private parties at Hotel Surya Bella Casa.',
+    title: 'Birthday Party Hall Purulia | Celebrations',
+    description: 'Best birthday party hall in Purulia near Ajodhya Hill. Party venue for birthdays, anniversaries, private parties at The Divine Oasis.',
   }
 }
 
@@ -43,19 +43,19 @@ export default function PartiesLayout({ children }: { children: React.ReactNode 
                 "@type": "ListItem",
                 "position": 1,
                 "name": "Home",
-                "item": "https://hotelsuryabellacasa.com"
+                "item": "https://thedivineoasisresort.com"
               },
               {
                 "@type": "ListItem",
                 "position": 2,
                 "name": "Events",
-                "item": "https://hotelsuryabellacasa.com/events"
+                "item": "https://thedivineoasisresort.com/events"
               },
               {
                 "@type": "ListItem",
                 "position": 3,
                 "name": "Parties",
-                "item": "https://hotelsuryabellacasa.com/events/parties"
+                "item": "https://thedivineoasisresort.com/events/parties"
               }
             ]
           })

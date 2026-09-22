@@ -200,10 +200,10 @@ export default function RoomsCarousel() {
         <div className="max-w-xl">
           <SectionLabel className="mb-4">Rooms &amp; Stays</SectionLabel>
           <h2 className="font-display text-4xl md:text-[52px] italic text-forest mb-4 leading-tight">
-            Luxury Rooms in Purnea Near Bus Stand
+Premium Cottages at Ajodhya Hill, Purulia
           </h2>
           <p className="font-serif text-xl font-light text-taupe leading-relaxed">
-            Best hotel rooms in Purnea near Bus Stand. AC rooms, deluxe rooms, family rooms with free WiFi &amp; parking at Hotel Surya Bella Casa Purnea.
+            Forest resort cottages near Ajodhya Hills & Forest Reserve. Mud cottages, luxury suites, and family rooms with free Wi-Fi, geyser, and organic farm dining at The Divine Oasis.
           </p>
         </div>
         <Link

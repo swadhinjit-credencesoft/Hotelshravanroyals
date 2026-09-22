@@ -125,11 +125,11 @@ export default function DiningSection() {
         <div className="text-center mb-20">
           <SectionLabel className="justify-center mb-5">Dining &amp; Local Flavors</SectionLabel>
           <h2 className="font-display text-4xl md:text-[52px] italic text-forest mb-6 leading-tight">
-            Rooftop Restaurant & Dining in Purnea Near Bus Stand
+Farm-to-Table Dining & Barbeque Evenings at Ajodhya Hill
           </h2>
           <GoldDivider className="justify-center mb-6" />
           <p className="font-serif text-xl font-light text-taupe max-w-xl mx-auto leading-relaxed">
-            Best rooftop restaurant in Purnea near Bus Stand. Family restaurant serving Indian, Tandoor, Mughlai, Asian &amp; Continental cuisine. Enjoy multi cuisine dining at Hotel Surya Bella Casa.
+            Organic farm-to-table veg thali, barbeque under the open sky, and drinks with hors d&apos;oeuvres at our hilltop seating area. Experience authentic forest dining at The Divine Oasis, Ajodhya Hill, Purulia.
           </p>
         </div>
 

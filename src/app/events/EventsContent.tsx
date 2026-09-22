@@ -20,9 +20,9 @@ export default function EventsContent() {
   return (
     <>
       <CinematicHero
-        label="Best Banquet Hall in Purnea - Wedding Hall Near Bus Stand"
-        title="Banquet Hall & Wedding Venue in Purnea"
-        tagline="Best banquet hall in Purnea near Bus Stand. Host weddings, corporate events & parties. Perfect venue near Vikass Market for your special celebrations."
+        label="Best Banquet Hall in Purulia - Wedding Hall Near Ajodhya Hill"
+        title="Banquet Hall & Wedding Venue in Purulia"
+        tagline="Best banquet hall in Purulia near Ajodhya Hill. Host weddings, corporate events & parties. Perfect venue near Ajodhya Hill for your special celebrations."
         image='https://bookonelocal.in/cdn/IMG_7431.mp4'
       />
 
@@ -112,7 +112,7 @@ export default function EventsContent() {
             <div className="border border-ivory/10 p-8 hover:bg-ivory/5 transition-colors group">
               <GlassWater className="text-gold mb-6 group-hover:scale-110 transition-transform" size={32} />
               <h3 className="font-display text-2xl italic mb-4">Barbecue & Bonfire</h3>
-              <p className="font-serif text-ivory/70 leading-relaxed text-sm">Our signature live grills under the Purnea sky. Perfect for pre-wedding events, corporate mixers, or family celebrations.</p>
+              <p className="font-serif text-ivory/70 leading-relaxed text-sm">Our signature live grills under the Purulia sky. Perfect for pre-wedding events, corporate mixers, or family celebrations.</p>
             </div>
             <div className="border border-ivory/10 p-8 hover:bg-ivory/5 transition-colors group">
               <Utensils className="text-gold mb-6 group-hover:scale-110 transition-transform" size={32} />
@@ -132,7 +132,7 @@ export default function EventsContent() {
             Whether planning a dream wedding, corporate retreat, or private celebration, let us craft the perfect experience. Secure your dates directly via our booking portal.
           </p>
           <a
-            href="https://bookone.io/Hotel-Bella-Casa?bookingEngine=true"
+            href="https://bookone.io/The-Divine-Oasis?bookingEngine=true"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-3 bg-gold text-[#1a1004] font-sans text-xs uppercase tracking-[0.25em] px-12 py-5 hover:bg-gold-light transition-all shadow-xl hover:shadow-gold/20 duration-500 rounded-sm font-bold"
