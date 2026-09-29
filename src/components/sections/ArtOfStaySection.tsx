@@ -6,7 +6,7 @@ import GoldDivider from '@/components/ui/GoldDivider';
 
 const serviceDetails = [
   { title: 'Cozy Bedding', description: 'Enjoy clean, soft linens and premium pillows in every cottage, ensuring a perfect night of sleep.' },
-  { title: 'Local Sightseeing', description: 'Our team helps plan trails to the Ajodhya Hills & Forest Reserve, Thurga Dam, and Deulghata Temples.' },
+  { title: 'Local Sightseeing', description: 'Pakhi Pahar, Matha Forest, Lower Dam & Upper Dam, Marble Lake, Mayur Pahar, Bamni Falls, Turga Falls, Charida Mukhoshgram, Khairabera Muruguma Dam' },
   { title: 'Quiet Forest Stays', description: 'Enjoy a peaceful, secure setting in the heart of the forest atop Ajodhya Hill, ideal for families and nature lovers.' },
   { title: 'Farm-to-Table Dining', description: 'Savour fresh veg thalis from our organic farm, plus barbeque evenings and drinks at our hilltop seating area.' },
 ];

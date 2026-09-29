@@ -1,4 +1,4 @@
-﻿// import Image from 'next/image';
+﻿import Image from 'next/image';
 import DiningSection from '@/components/sections/DiningSection';
 import type { Metadata } from 'next';
 import CinematicHero from '@/components/ui/CinematicHero';
@@ -184,13 +184,29 @@ export default function DiningPage() {
         </div>
       </section>
 
-      {/* Cuisine Cards */}
+{/* Cuisine Cards */}
       <section className="py-12 bg-cream overflow-hidden">
         <div className="max-w-[1600px] mx-auto px-6 md:px-10">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-            {['Organic Veg Thali', 'Barbeque Evenings', 'Drinks & Hors d\'oeuvres', 'Farm-to-Table'].map((item) => (
-              <div key={item} className="bg-white p-8 border border-gold/10 text-center hover:bg-gold/5 transition-all group">
-                <p className="font-sans text-[10px] uppercase tracking-[0.2em] text-taupe group-hover:text-gold transition-colors">{item}</p>
+            {[
+              { name: 'Organic Veg Thali', image: 'https://bookonelocal.in/cdn/2026-05-13-064448375-WhatsApp Image 2026-05-11 at 15.42.13.jpg' },
+              { name: 'Barbeque Evenings', image: 'https://bookonelocal.in/cdn/2026-05-13-064516081-WhatsApp Image 2026-05-11 at 15.42.12.jpg' },
+              { name: 'Drinks & Hors d\'oeuvres', image: 'https://bookonelocal.in/cdn/2026-05-13-064459381-WhatsApp Image 2026-05-11 at 15.42.11.jpg' },
+              { name: 'Farm-to-Table', image: 'https://bookonelocal.in/cdn/2026-05-13-064504242-WhatsApp Image 2026-05-11 at 15.42.13 (1).jpg' },
+            ].map((item) => (
+              <div key={item.name} className="bg-white border border-gold/10 overflow-hidden group">
+                <div className="relative aspect-[4/3] overflow-hidden">
+                  <Image
+                    src={item.image}
+                    alt={`${item.name} at The Divine Oasis — Ajodhya Hill, Purulia`}
+                    fill
+                    className="object-cover group-hover:scale-105 transition-transform duration-700"
+                    sizes="(max-width: 768px) 50vw, 25vw"
+                  />
+                </div>
+                <p className="p-6 font-sans text-[10px] uppercase tracking-[0.2em] text-center text-taupe group-hover:text-gold transition-colors">
+                  {item.name}
+                </p>
               </div>
             ))}
           </div>

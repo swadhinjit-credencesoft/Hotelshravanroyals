@@ -82,7 +82,7 @@ export default function BlogPost() {
         name: "What amenities are included in every cottage?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Free Wi-Fi, flat screen TV, geyser/hot water, 24-hour room service, luggage storage, and access to all resort facilities including the organic farm.",
+          text: "Free Wi-Fi, smart TV, geyser/hot water, 24-hour room service, luggage storage, and access to all resort facilities including the organic farm.",
         },
       },
     ],
@@ -123,7 +123,7 @@ export default function BlogPost() {
           down price, occupancy, and the right fit for couples, families, and groups.
         </p>
         <p>
-          Every unit carries the same baseline comfort: <strong>free Wi-Fi, flat screen TV, geyser/hot water, 24-hour room service</strong>, and
+          Every unit carries the same baseline comfort: <strong>free Wi-Fi, smart TV, geyser/hot water, 24-hour room service</strong>, and
           <strong>hand sanitizer</strong>, plus access to the <strong>organic farm, lawn seating areas, and barbeque stand</strong>.
         </p>
 
@@ -193,7 +193,7 @@ export default function BlogPost() {
 
         <h3 className="font-display text-lg text-forest mt-6 mb-2">What amenities are included in every cottage?</h3>
         <p>
-          <strong>Free Wi-Fi, flat screen TV, geyser/hot water, 24-hour room service, luggage storage</strong>, and access to all resort facilities
+          <strong>Free Wi-Fi, smart TV, geyser/hot water, 24-hour room service, luggage storage</strong>, and access to all resort facilities
           including the <strong>organic farm</strong>.
         </p>
 

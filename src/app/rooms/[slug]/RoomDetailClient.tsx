@@ -299,7 +299,7 @@ export default function RoomDetailClient({ room, otherRooms }: RoomDetailClientP
             <h2 className="font-serif text-2xl text-forest mb-8">Policies & Info</h2>
             <div className="space-y-4">
               {[
-                { title: 'Check-in & Check-out', content: 'Check-in: 12:00 PM | Check-out: 12:00 PM' },
+                { title: 'Check-in & Check-out', content: 'Check-in: 1:00 PM | Check-out: 11:00 AM' },
                 { title: 'Extra Bed Policy', content: 'Available on request for an additional charge of ₹1,500 per night.' },
                 { title: 'Cancellation Policy', content: 'Free cancellation up to 48 hours before arrival. 100% charge for late cancellations.' }
               ].map((policy) => (

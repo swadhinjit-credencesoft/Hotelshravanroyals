@@ -9,7 +9,7 @@ const budgetAmenities: AmenityItem[] = [
   { icon: 'DollarSign', title: 'Cottages From ₹4,000 a Night', description: 'The Vista Pod Cottage starts at ₹4,000/night — a real forest cottage with geyser, TV, and Wi-Fi, not a roadside room.' },
   { icon: 'Sparkles', title: 'Immaculate Housekeeping', description: 'Daily professional cleaning, fresh linens, sanitized bathrooms, and spotless common areas across every budget category.' },
   { icon: 'ShieldCheck', title: 'No Hidden Charges', description: 'What you see is what you pay. Transparent pricing with no surprise resort fees or add-ons at check-in.' },
-  { icon: 'BadgePercent', title: 'Value With the Essentials', description: 'Free Wi-Fi, flat-screen TV, geyser, and 24-hour room service included on even the lowest-priced cottage.' },
+  { icon: 'BadgePercent', title: 'Value With the Essentials', description: 'Free Wi-Fi, smart TV, geyser, and 24-hour room service included on even the lowest-priced cottage.' },
   { icon: 'Headphones', title: '24/7 Room Service', description: 'Round-the-clock assistance for late arrivals, tea at dawn, and anything the forest evening requires.' },
   { icon: 'Calendar', title: 'Flexible Booking Options', description: 'Easy online booking with instant confirmation via the booking engine, or direct booking over the phone.' },
 ];
@@ -21,7 +21,7 @@ const budgetFaq = [
   },
   {
     q: 'Are there any hidden charges at check-in?',
-    a: 'No. Our pricing is transparent — the rate you book is the rate you pay, with no resort fees or surprise add-ons. Free Wi-Fi, geyser, flat-screen TV, and room service are included in every cottage.'
+    a: 'No. Our pricing is transparent — the rate you book is the rate you pay, with no resort fees or surprise add-ons. Free Wi-Fi, geyser, smart TV, and room service are included in every cottage.'
   },
   {
     q: 'Is a budget forest stay better than a budget hotel in town?',
@@ -29,7 +29,7 @@ const budgetFaq = [
   },
   {
     q: 'What does the price include?',
-    a: 'Every cottage includes free Wi-Fi, hand sanitizer, geyser, flat-screen TV, and 24-hour room service. The barbeque stand, seating areas, and lawns are available for relaxed evenings, and veg thalis are served fresh on request.'
+    a: 'Every cottage includes free Wi-Fi, hand sanitizer, geyser, smart TV, and 24-hour room service. The barbeque stand, seating areas, and lawns are available for relaxed evenings, and veg thalis are served fresh on request.'
   },
   {
     q: 'How far is the resort from Purulia Junction?',
@@ -153,10 +153,10 @@ export default function BudgetCottageResortLandingPage() {
             
             <div className="font-sans text-base text-taupe/80 space-y-6 leading-loose">
               <p>
-                &ldquo;Budget&rdquo; usually means a boxy room beside a highway. At a <strong>budget cottage resort in Purulia</strong>, it should mean the opposite: a wooden-and-mud cottage under the trees, a geyser after a cold hill evening, a flat-screen TV, and honest pricing. That is the whole idea behind <strong>The Divine Oasis</strong>.
+                &ldquo;Budget&rdquo; usually means a boxy room beside a highway. At a <strong>budget cottage resort in Purulia</strong>, it should mean the opposite: a wooden-and-mud cottage under the trees, a geyser after a cold hill evening, a smart TV, and honest pricing. That is the whole idea behind <strong>The Divine Oasis</strong>.
               </p>
               <p>
-                Our cheapest category, the <Link href="/rooms/vista-pod-cottage" className="text-gold hover:underline">Vista Pod Cottage</Link>, starts at <strong>₹4,000 a night</strong> (2–3 guests). A step up, the <Link href="/rooms/premium-deluxe-mud-cottages" className="text-gold hover:underline">Premium Deluxe Mud Cottages</Link> run <strong>₹4,255 a night</strong> (2–3 guests). Larger parties stretch the same budget across the <Link href="/rooms/vista-four-beds" className="text-gold hover:underline">VISTA Four Beds</Link> at <strong>₹6,500</strong> (4–6 guests) or fold into the <Link href="/rooms/luxury-suite-cottage" className="text-gold hover:underline">Luxury Suite Cottage</Link> at <strong>₹7,225</strong> (2–5 guests). Every option includes free Wi-Fi, geyser, hand sanitizer, flat-screen TV, and 24-hour room service — see all of them on the <Link href="/rooms" className="text-gold hover:underline">rooms page</Link>.
+                Our cheapest category, the <Link href="/rooms/vista-pod-cottage" className="text-gold hover:underline">Vista Pod Cottage</Link>, starts at <strong>₹4,000 a night</strong> (2–3 guests). A step up, the <Link href="/rooms/premium-deluxe-mud-cottages" className="text-gold hover:underline">Premium Deluxe Mud Cottages</Link> run <strong>₹4,255 a night</strong> (2–3 guests). Larger parties stretch the same budget across the <Link href="/rooms/vista-four-beds" className="text-gold hover:underline">VISTA Four Beds</Link> at <strong>₹6,500</strong> (4–6 guests) or fold into the <Link href="/rooms/luxury-suite-cottage" className="text-gold hover:underline">Luxury Suite Cottage</Link> at <strong>₹7,225</strong> (2–5 guests). Every option includes free Wi-Fi, geyser, hand sanitizer, smart TV, and 24-hour room service — see all of them on the <Link href="/rooms" className="text-gold hover:underline">rooms page</Link>.
               </p>
               <p>
                 We keep the structure honest: <strong>no hidden charges</strong>, no resort fees appearing at the desk, and no surprises on check-out. What you book online is what you pay, and housekeeping is done to the same standard across every category. For groups travelling together, clustered cottages often work out cheaper per head than a bus ride plus a mid-range hotel — check the <Link href="/offers" className="text-gold hover:underline">current offers</Link> before you decide.

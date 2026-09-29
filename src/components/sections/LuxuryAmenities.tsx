@@ -24,7 +24,7 @@ const defaultAmenities: AmenityItem[] = [
   },
   {
     icon: 'Tv',
-    title: 'Flat Screen TV',
+    title: 'Smart TV',
     description: 'Entertainment at your fingertips with multi-channel LED TVs equipped in every cottage.'
   },
   {

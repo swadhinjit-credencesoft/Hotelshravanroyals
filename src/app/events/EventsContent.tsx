@@ -9,10 +9,10 @@ import { motion } from 'framer-motion';
 import Image from 'next/image';
 import { Calendar, ArrowRight, Utensils, GlassWater } from 'lucide-react';
 
-const TABS = ['Weddings', 'Corporate', 'Parties', 'Day Trips'];
+const TABS = ['Parties', 'Corporate', 'Day Trips'];
 
 export default function EventsContent() {
-  const [activeTab, setActiveTab] = useState('Weddings');
+  const [activeTab, setActiveTab] = useState('Parties');
 
   const filteredEvents = estateEvents.filter(e => e.category === activeTab);
   const displayEvents = filteredEvents.length > 0 ? filteredEvents : estateEvents;
@@ -20,10 +20,10 @@ export default function EventsContent() {
   return (
     <>
       <CinematicHero
-        label="Best Banquet Hall in Purulia - Wedding Hall Near Ajodhya Hill"
-        title="Banquet Hall & Wedding Venue in Purulia"
-        tagline="Best banquet hall in Purulia near Ajodhya Hill. Host weddings, corporate events & parties. Perfect venue near Ajodhya Hill for your special celebrations."
-        image='https://bookonelocal.in/cdn/IMG_7431.mp4'
+        label="Best Banquet Hall in Purulia - Party Venue Near Ajodhya Hill"
+        title="Banquet Hall & Party Venue in Purulia"
+        tagline="Host birthday parties, anniversary parties, corporate events & private celebrations at the best banquet hall in Purulia near Ajodhya Hill — The Divine Oasis."
+        image='https://bookonelocal.in/cdn/2026-05-13-064455582-WhatsApp Image 2026-05-11 at 15.42.15 (1).jpg'
       />
 
       {/* Hero Tabs */}
@@ -112,7 +112,7 @@ export default function EventsContent() {
             <div className="border border-ivory/10 p-8 hover:bg-ivory/5 transition-colors group">
               <GlassWater className="text-gold mb-6 group-hover:scale-110 transition-transform" size={32} />
               <h3 className="font-display text-2xl italic mb-4">Barbecue & Bonfire</h3>
-              <p className="font-serif text-ivory/70 leading-relaxed text-sm">Our signature live grills under the Purulia sky. Perfect for pre-wedding events, corporate mixers, or family celebrations.</p>
+              <p className="font-serif text-ivory/70 leading-relaxed text-sm">Our signature live grills under the Purulia sky. Perfect for birthday parties, anniversary celebrations, corporate mixers, or family celebrations.</p>
             </div>
             <div className="border border-ivory/10 p-8 hover:bg-ivory/5 transition-colors group">
               <Utensils className="text-gold mb-6 group-hover:scale-110 transition-transform" size={32} />
@@ -129,7 +129,7 @@ export default function EventsContent() {
           <SectionLabel className="justify-center mb-6">Let&apos;s Connect</SectionLabel>
           <h2 className="font-display text-5xl md:text-6xl italic text-forest mb-6">Start Your Journey</h2>
           <p className="font-serif text-taupe text-lg md:text-xl italic max-w-xl mx-auto leading-relaxed mb-12">
-            Whether planning a dream wedding, corporate retreat, or private celebration, let us craft the perfect experience. Secure your dates directly via our booking portal.
+            Whether planning a birthday party, anniversary celebration, corporate retreat, or private gathering, let us craft the perfect experience. Secure your dates directly via our booking portal.
           </p>
           <a
             href="https://bookone.io/The-Divine-Oasis?bookingEngine=true"

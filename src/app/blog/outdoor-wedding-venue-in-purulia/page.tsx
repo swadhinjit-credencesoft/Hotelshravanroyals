@@ -162,7 +162,7 @@ export default function BlogPost() {
           The wedding party stays on-site, which transforms the event into a two-day celebration. The couple gets the <strong>Luxury Suite
           Cottage (₹7,225/night)</strong>; families fill the <strong>5 Premium Deluxe Mud Cottages</strong> (₹4,255/night), the
           <strong>4 VISTA Four Beds</strong> rooms (₹6,500/night), and the <strong>2 Vista Pod Cottages</strong> (₹4,000/night). Each unit comes
-          with <strong>free Wi-Fi, flat screen TV, geyser/hot water, and 24-hour room service</strong>.
+          with <strong>free Wi-Fi, smart TV, geyser/hot water, and 24-hour room service</strong>.
         </p>
         <p>
           The night before, families gather for a <strong>mehndi or sangeet-style social event</strong> on the lawn; the morning after, guests

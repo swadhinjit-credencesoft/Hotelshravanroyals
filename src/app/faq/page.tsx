@@ -1,4 +1,4 @@
-﻿import type { Metadata } from 'next'
+import type { Metadata } from 'next'
 import FAQSection from '@/components/sections/FAQSection'
 
 export const metadata: Metadata = {
@@ -87,7 +87,7 @@ const faqSchema = {
       "name": "What are the check-in and check-out timings?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Check-in time is 12:00 PM and check-out time is 12:00 PM."
+        "text": "Check-in time is 1:00 PM and check-out time is 11:00 AM."
       }
     },
     {

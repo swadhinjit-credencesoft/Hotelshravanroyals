@@ -29,7 +29,7 @@ const ajodhyaHillFaq = [
   },
   {
     q: 'Which cottages are available for couples?',
-    a: 'Couples typically choose the Premium Deluxe Mud Cottages (₹4,255/night, 2–3 guests) or the Vista Pod Cottage (₹4,000/night, 2–3 guests). Both include free Wi-Fi, geyser, flat-screen TV and 24-hour room service.'
+    a: 'Couples typically choose the Premium Deluxe Mud Cottages (₹4,255/night, 2–3 guests) or the Vista Pod Cottage (₹4,000/night, 2–3 guests). Both include free Wi-Fi, geyser, smart TV and 24-hour room service.'
   },
   {
     q: 'How do I book a cottage near Ajodhya Hill?',
@@ -162,7 +162,7 @@ export default function ResortNearAjodhyaHillLandingPage() {
                 Staying in town means a long daily drive up the hill, city noise at night, and a room with a view of the street. Staying at the hilltop means cool pine air, birdsong instead of traffic, sunrise over the valley, and your own <Link href="/rooms/premium-deluxe-mud-cottages" className="text-gold hover:underline">Premium Deluxe Mud Cottage</Link> or <Link href="/rooms/vista-pod-cottage" className="text-gold hover:underline">Vista Pod Cottage</Link> tucked into the greenery — at prices that start from <strong>₹4,000 a night</strong>.
               </p>
               <p>
-                Every cottage comes with free Wi-Fi, a flat-screen TV, geyser, hand sanitizer, and 24-hour room service, so you can disconnect from the world without giving up the essentials. After exploring, unwind on your private seating area with drinks and hors d&apos;oeuvres, or gather around the barbeque stand under the stars.
+                Every cottage comes with free Wi-Fi, a smart TV, geyser, hand sanitizer, and 24-hour room service, so you can disconnect from the world without giving up the essentials. After exploring, unwind on your private seating area with drinks and hors d&apos;oeuvres, or gather around the barbeque stand under the stars.
               </p>
             </div>
 

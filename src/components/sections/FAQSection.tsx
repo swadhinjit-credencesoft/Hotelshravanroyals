@@ -38,7 +38,7 @@ const faqs: FAQItem[] = [
   },
   {
     question: "What amenities do the cottages come with?",
-    answer: "Every cottage includes free Wi-Fi, flat screen TV, room service, geyser/hot water, 24-hour room service, and hand sanitizer. The resort also offers social events, family rooms, luggage storage, and a seating area."
+    answer: "Every cottage includes free Wi-Fi, smart TV, room service, geyser/hot water, 24-hour room service, and hand sanitizer. The resort also offers social events, family rooms, luggage storage, and a seating area."
   },
   {
     question: "Is there free Wi-Fi at the resort?",
@@ -46,7 +46,7 @@ const faqs: FAQItem[] = [
   },
   {
     question: "What are the check-in and check-out timings?",
-    answer: "Our standard check-in time is 12:00 PM, and check-out time is 12:00 PM. Early check-in or late check-out requests can be accommodated based on availability and prior coordination."
+    answer: "Our standard check-in time is 1:00 PM, and check-out time is 11:00 AM. Early check-in or late check-out requests can be accommodated based on availability and prior coordination."
   },
   {
     question: "How can I book a stay at The Divine Oasis?",

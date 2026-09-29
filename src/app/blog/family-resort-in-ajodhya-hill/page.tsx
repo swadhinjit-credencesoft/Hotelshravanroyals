@@ -141,7 +141,7 @@ export default function BlogPost() {
           all modern comforts, and the <strong>Vista Pod Cottages</strong> (₹4,000/night, 2-3 guests) add a budget-friendly option.
         </p>
         <p>
-          Every room carries what parents actually need after a day out: <strong>geyser/hot water</strong>, a <strong>flat screen TV</strong>,
+          Every room carries what parents actually need after a day out: <strong>geyser/hot water</strong>, a <strong>smart TV</strong>,
           <strong>free Wi-Fi</strong>, <strong>24-hour room service</strong>, and <strong>hand sanitizer</strong> in each unit. Detailed
           comparisons are in our <Link href="/blog/best-cottages-in-ajodhya-hill" className="text-gold hover:underline">cottage guide</Link>.
         </p>

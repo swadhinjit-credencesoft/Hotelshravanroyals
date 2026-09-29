@@ -91,7 +91,7 @@ export default function Home() {
                 "name": "What are the check-in and check-out timings?",
                 "acceptedAnswer": {
                   "@type": "Answer",
-                  "text": "Check-in time is 12:00 PM and check-out time is 12:00 PM."
+                  "text": "Check-in time is 1:00 PM and check-out time is 11:00 AM."
                 }
               },
               {

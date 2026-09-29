@@ -1,7 +1,7 @@
 export interface EstateEvent {
   id: string;
   title: string;
-  category: 'Weddings' | 'Corporate' | 'Parties' | 'Day Trips';
+  category: 'Corporate' | 'Parties' | 'Day Trips';
   description: string;
   capacity: string;
   image: string;
@@ -12,15 +12,6 @@ export interface EstateEvent {
 export const estateEvents: EstateEvent[] = [
   {
     id: 'e1',
-    title: 'Hilltop Weddings & Family Celebrations',
-    category: 'Weddings',
-    description: 'Host a dream outdoor wedding or family celebration surrounded by the forest of Ajodhya Hills. A storybook setting for ceremonies, receptions, and multi-day festivities.',
-    capacity: 'Up to 100 guests',
-    image: 'https://bookonelocal.in/cdn/2026-05-13-064448375-WhatsApp Image 2026-05-11 at 15.42.13.jpg',
-    features: ['Scenic outdoor celebration spaces', 'Family & group room blocks', 'Organic farm dining & barbeque'],
-  },
-  {
-    id: 'e2',
     title: 'Corporate Retreats & Team Offsites',
     category: 'Corporate',
     description: 'Take the team away from the boardroom and into the calm of Ajodhya Hills. Focused offsites, strategy sessions, and team-bonding retreats with reliable Wi-Fi and attentive service.',
@@ -29,13 +20,22 @@ export const estateEvents: EstateEvent[] = [
     features: ['Free high-speed Wi-Fi', 'Peaceful, focused environment', 'Group accommodation options'],
   },
   {
-    id: 'e3',
-    title: 'Birthday & Private Group Parties',
+    id: 'e2',
+    title: 'Birthday Parties at The Divine Oasis',
     category: 'Parties',
-    description: 'Celebrate birthdays, anniversaries, and private milestones in the open air of a forest resort. Block a clutch of cottages and let the hills do the decorating.',
+    description: 'Celebrate birthdays under the open forest sky. Block a clutch of cottages, fire up the barbeque, and let the Ajodhya Hills do the decorating for your special day.',
     capacity: 'Up to 40 guests',
     image: 'https://bookonelocal.in/cdn/2026-05-13-064459381-WhatsApp Image 2026-05-11 at 15.42.11.jpg',
-    features: ['Barbeque & bonfire evenings', 'Vista cottages for the group', 'Friendly, attentive hosts'],
+    features: ['Barbeque & bonfire evenings', 'Birthday theme décor on request', 'Vista cottages for the group'],
+  },
+  {
+    id: 'e3',
+    title: 'Anniversary Parties & Private Celebrations',
+    category: 'Parties',
+    description: 'Mark anniversaries and intimate milestones in the hilltop seating area with forest views, organic farm dining, and attentive hosts who make the day truly special.',
+    capacity: 'Up to 40 guests',
+    image: 'https://bookonelocal.in/cdn/2026-05-13-064452634-WhatsApp Image 2026-05-11 at 15.42.14 (2).jpg',
+    features: ['Hilltop seating with forest views', 'Organic farm-to-table dining', 'Friendly, attentive hosts'],
   },
   {
     id: 'e4',

@@ -129,21 +129,21 @@ export default function TermsPage() {
     <div className="flex items-start gap-3">
       <span className="mt-2 text-forest">•</span>
       <p>
-        All bookings and reservations at The Divine Oasis are confirmed from 12:00 Noon or from the official check-in time on the reservation date.
+        All bookings and reservations at The Divine Oasis are confirmed from 1:00 PM or from the official check-in time on the reservation date.
       </p>
     </div>
 
     <div className="flex items-start gap-3">
       <span className="mt-2 text-forest">•</span>
       <p>
-        Standard Check-In Time: 12:00 PM
+        Standard Check-In Time: 1:00 PM
       </p>
     </div>
 
     <div className="flex items-start gap-3">
       <span className="mt-2 text-forest">•</span>
       <p>
-        Standard Check-Out Time: 12:00 PM
+        Standard Check-Out Time: 11:00 AM
       </p>
     </div>
 
@@ -157,7 +157,7 @@ export default function TermsPage() {
     <div className="flex items-start gap-3">
       <span className="mt-2 text-forest">•</span>
       <p>
-        Late check-out after 12:00 Noon is subject to availability and additional charges may apply.
+        Late check-out after 11:00 AM is subject to availability and additional charges may apply.
       </p>
     </div>
 

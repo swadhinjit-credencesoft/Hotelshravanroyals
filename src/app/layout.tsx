@@ -191,8 +191,8 @@ export default function RootLayout({
         <link rel="dns-prefetch" href="https://maps.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link rel="preload" as="image" href="https://bookonelocal.in/cdn/2026-05-13-064432393-WhatsApp Image 2026-05-11 at 15.42.15.jpg" imageSizes="100vw" imageSrcSet="https://bookonelocal.in/cdn/2026-05-13-064432393-WhatsApp Image 2026-05-11 at 15.42.15.jpg 1920w" fetchPriority="high" />
-        <link rel="preload" as="image" href="https://bookonelocal.in/cdn/2026-05-13-064437235-WhatsApp Image 2026-05-11 at 15.42.11 (1).jpg" imageSizes="100vw" imageSrcSet="https://bookonelocal.in/cdn/2026-05-13-064437235-WhatsApp Image 2026-05-11 at 15.42.11 (1).jpg 1920w" />
-        <link rel="preload" as="image" href="https://bookonelocal.in/cdn/2026-05-13-063018320-WhatsApp Image 2026-05-11 at 15.53.21.jpg" imageSizes="100vw" imageSrcSet="https://bookonelocal.in/cdn/2026-05-13-063018320-WhatsApp Image 2026-05-11 at 15.53.21.jpg 1920w" />
+        <link rel="preload" as="image" href="/homehero/homehero2.jpg" imageSizes="100vw" imageSrcSet="/homehero/homehero2.jpg 1920w" />
+        <link rel="preload" as="image" href="/homehero/homehero3.jpg" imageSizes="100vw" imageSrcSet="/homehero/homehero3.jpg 1920w" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
@@ -229,8 +229,8 @@ export default function RootLayout({
               "email": "thedivineoasisresort@gmail.com",
               "image": [
                 "https://bookonelocal.in/cdn/2026-05-13-064432393-WhatsApp Image 2026-05-11 at 15.42.15.jpg",
-                "https://bookonelocal.in/cdn/2026-05-13-064437235-WhatsApp Image 2026-05-11 at 15.42.11 (1).jpg",
-                "https://bookonelocal.in/cdn/2026-05-13-063018320-WhatsApp Image 2026-05-11 at 15.53.21.jpg"
+                "https://thedivineoasisresort.com/homehero/homehero2.jpg",
+                "https://thedivineoasisresort.com/homehero/homehero3.jpg"
               ],
               "logo": "https://thedivineoasisresort.com/devinelogo.png",
               "address": {
@@ -249,15 +249,15 @@ export default function RootLayout({
               "hasMap": "https://www.google.com/maps/search/?api=1&query=The+Divine+Oasis+Ajodhya+Hill+Purulia",
               "sameAs": [],
               "priceRange": "₹4,000 - ₹7,225",
-              "checkinTime": "12:00",
-              "checkoutTime": "12:00",
+              "checkinTime": "13:00",
+              "checkoutTime": "11:00",
               "starRating": {
                 "@type": "Rating",
                 "ratingValue": "4"
               },
               "amenityFeature": [
                 { "@type": "LocationFeatureSpecification", "name": "Free Wi-Fi", "value": true },
-                { "@type": "LocationFeatureSpecification", "name": "Flat Screen TV", "value": true },
+                { "@type": "LocationFeatureSpecification", "name": "Smart TV", "value": true },
                 { "@type": "LocationFeatureSpecification", "name": "Room Service", "value": true },
                 { "@type": "LocationFeatureSpecification", "name": "Geyser / Hot Water", "value": true },
                 { "@type": "LocationFeatureSpecification", "name": "Organic Farm Dining", "value": true },

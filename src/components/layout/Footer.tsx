@@ -115,12 +115,22 @@ export default function Footer() {
 
               <div className="flex items-start gap-3">
                 <Phone size={16} className="text-gold mt-1 flex-shrink-0" />
-                <a
-                  href={`tel:${siteConfig.phone}`}
-                  className="font-sans text-sm text-ivory/60 hover:text-gold transition-colors"
-                >
-                  {siteConfig.phone}
-                </a>
+                <div className="space-y-1">
+                  <a
+                    href={`tel:${siteConfig.phone}`}
+                    className="block font-sans text-sm text-ivory/60 hover:text-gold transition-colors"
+                  >
+                    {siteConfig.phone}
+                  </a>
+                  {siteConfig.phone2 && (
+                    <a
+                      href={`tel:${siteConfig.phone2}`}
+                      className="block font-sans text-sm text-ivory/60 hover:text-gold transition-colors"
+                    >
+                      {siteConfig.phone2}
+                    </a>
+                  )}
+                </div>
               </div>
 
               <div className="flex items-start gap-3">

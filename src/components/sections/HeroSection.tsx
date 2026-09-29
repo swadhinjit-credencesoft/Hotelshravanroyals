@@ -35,22 +35,22 @@ const heroSlides = [
     badge: 'Ajodhya Hills & Forest Reserve · 0.4 km',
   },
   {
-    src: 'https://bookonelocal.in/cdn/2026-05-13-063018320-WhatsApp Image 2026-05-11 at 15.53.21.jpg',
-    alt: 'Luxury Suite Cottage at The Divine Oasis Ajodhya Hill — premium hilltop accommodation',
-    headline1: 'Your Perfect',
-    headline2: 'Cottage',
-    headline3: 'Awaits',
-    subtitle: 'Mud cottages, luxury suites & family rooms',
-    badge: 'From ₹4,000/night · Farm-to-table dining',
-  },
-  {
-    src: 'https://bookonelocal.in/cdn/2026-05-13-064437235-WhatsApp Image 2026-05-11 at 15.42.11 (1).jpg',
+    src: '/homehero/homehero2.jpg',
     alt: 'The Divine Oasis hilltop views — organic farm dining and barbeque evenings in Purulia',
     headline1: 'Experience',
     headline2: 'True',
     headline3: 'Serenity',
     subtitle: 'Where nature and comfort become one',
     badge: 'Barbeque · Organic Farm · Family Rooms',
+  },
+  {
+    src: '/homehero/homehero3.jpg',
+    alt: 'The Divine Oasis evening view from the hilltop seating area — Ajodhya Hill, Purulia',
+    headline1: 'Evenings Under',
+    headline2: 'Starlit',
+    headline3: 'Skies',
+    subtitle: 'Barbeque & organic farm-to-table dining',
+    badge: 'From ₹4,000/night · Farm-to-table dining',
   },
 ]
 

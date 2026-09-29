@@ -77,18 +77,18 @@ export default function HistorySection() {
                 The Divine Oasis was born from a vision to create an authentic forest retreat atop Ajodhya Hill in Purulia, West Bengal. What began as a family dream to share the serenity of the Ajodhya Hills & Forest Reserve has grown into a destination where nature lovers, families, and corporate travelers find their perfect hilltop escape.
               </p>
               <p className="font-sans text-base text-taupe/80 leading-loose">
-                Perched at 0.4 km from the forest reserve, our cottages are crafted with natural materials and modern amenities — geyser, flat-screen TV, room service, and complimentary Wi-Fi. Here, the forest isn&apos;t a backdrop; it&apos;s your living room. Wake to mist over the hills, dine on organic farm-to-table vegetarian thalis, and gather around barbeque evenings under starlit skies.
+                Perched at 0.4 km from the forest reserve, our cottages are crafted with natural materials and modern amenities — geyser, smart TV, room service, and complimentary Wi-Fi. Here, the forest isn&apos;t a backdrop; it&apos;s your living room. Wake to mist over the hills, dine on organic farm-to-table vegetarian thalis, and gather around barbeque evenings under starlit skies.
               </p>
             </div>
 
             <div className="mt-12 grid grid-cols-2 gap-8 border-t border-gold/10 pt-12">
                <div>
-                  <span className="font-serif text-3xl text-gold">2026</span>
+                  <span className="font-serif text-3xl text-gold">2023</span>
                   <p className="font-sans text-[10px] uppercase tracking-widest text-taupe mt-2">Established</p>
                </div>
                <div>
                   <span className="font-serif text-3xl text-gold">The Divine Oasis</span>
-                  <p className="font-sans text-[10px] uppercase tracking-widest text-taupe mt-2">Atop Ajodhya Hill, Purulia</p>
+                  <p className="font-sans text-[10px] uppercase tracking-widest text-taupe mt-2">Ajodhya Hill Top, Purulia</p>
                </div>
             </div>
           </div>

@@ -156,7 +156,7 @@ export default function BlogPost() {
           pick for the senior leadership or a lead director.
         </p>
         <p>
-          Every unit comes with <strong>geyser/hot water, flat screen TV, room service, and free Wi-Fi</strong>. For weekly offsites, the
+          Every unit comes with <strong>geyser/hot water, smart TV, room service, and free Wi-Fi</strong>. For weekly offsites, the
           resort also offers <strong>luggage storage</strong> and comfortable common <strong>seating areas</strong> for late-evening
           debriefs. Compare the options in our <Link href="/blog/best-cottages-in-ajodhya-hill" className="text-gold hover:underline">cottage guide</Link>.
         </p>

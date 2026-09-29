@@ -166,7 +166,7 @@ export default function BlogPost() {
         <p>
           With 5 mud cottages, 4 VISTA four-bed rooms, 2 pod cottages, and 1 luxury suite, the resort comfortably hosts a small wedding
           party on-site. Additional guests can be accommodated with nearby homestay tie-ups we arrange. Each cottage includes
-          <strong>free Wi-Fi, flat screen TV, geyser/hot water, 24-hour room service</strong>, and <strong>hand sanitizer</strong> —
+          <strong>free Wi-Fi, smart TV, geyser/hot water, 24-hour room service</strong>, and <strong>hand sanitizer</strong> —
           everything a guest needs for a comfortable stay.
         </p>
         <p>

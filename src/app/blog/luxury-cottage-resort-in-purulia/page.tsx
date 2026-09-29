@@ -80,7 +80,7 @@ export default function BlogPost() {
         name: 'What amenities come with the luxury cottage?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'The luxury suite includes free Wi-Fi, flat screen TV, geyser/hot water, 24-hour room service, plush interiors, and access to all resort facilities.',
+          text: 'The luxury suite includes free Wi-Fi, smart TV, geyser/hot water, 24-hour room service, plush interiors, and access to all resort facilities.',
         },
       },
       {
@@ -138,7 +138,7 @@ export default function BlogPost() {
         <p>
           The Luxury Suite Cottage is designed for guests who want the best of the hill. Interiors are warm and finished to a higher
           standard, with comfortable furnishing for both lounging and hosting. Practical luxury is covered too: <strong>free high-speed
-          Wi-Fi</strong>, a <strong>flat screen TV</strong>, <strong>geyser/hot water</strong>, and <strong>24-hour room service</strong>.
+          Wi-Fi</strong>, a <strong>smart TV</strong>, <strong>geyser/hot water</strong>, and <strong>24-hour room service</strong>.
         </p>
         <p>
           Being just <strong>0.4 km from the Ajodhya Hills &amp; Forest Reserve</strong>, the suite puts you in the heart of the landscape.
@@ -154,7 +154,7 @@ export default function BlogPost() {
           <strong>Vista Pod Cottages</strong> (₹4,000/night, 2-3 guests) are the compact, fresh option.
         </p>
         <p>
-          All categories include <strong>flat screen TV, geyser, free Wi-Fi, room service, and hand sanitizer</strong>. For a detailed
+          All categories include <strong>smart TV, geyser, free Wi-Fi, room service, and hand sanitizer</strong>. For a detailed
           comparison of every unit, read our <Link href="/blog/best-cottages-in-ajodhya-hill" className="text-gold hover:underline">cottage guide</Link>.
         </p>
 
@@ -200,7 +200,7 @@ export default function BlogPost() {
 
         <h3 className="font-display text-lg text-forest mt-6 mb-2">What amenities come with the luxury cottage?</h3>
         <p>
-          The luxury suite includes <strong>free Wi-Fi, flat screen TV, geyser/hot water, 24-hour room service</strong>, plush interiors,
+          The luxury suite includes <strong>free Wi-Fi, smart TV, geyser/hot water, 24-hour room service</strong>, plush interiors,
           and access to all resort facilities.
         </p>
 

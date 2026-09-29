@@ -5,11 +5,12 @@ import { motion, AnimatePresence, useScroll } from 'framer-motion'
 import Link from 'next/link'
 import Image from 'next/image'
 import { usePathname } from 'next/navigation'
-import { Menu, X, Calendar, Sparkles } from 'lucide-react'
+import { Menu, X, Calendar, Sparkles, Phone } from 'lucide-react'
 import { trackBookingEvent } from '@/lib/hotelmate'
 import { trackPhoneClick } from '@/lib/analytics'
 import { appendUTMToURL } from '@/lib/utm'
 import { buildBookingUrl } from '@/lib/hotelmate'
+import { siteConfig } from '@/data/site'
 
 const navLinks = [
   { label: 'HOME', href: '/', title: 'Home — The Divine Oasis' },
@@ -65,7 +66,7 @@ export default function Navbar() {
             </span>
             <span className="w-1 h-1 rounded-full bg-gold/40 flex-shrink-0" />
             <span className="flex items-center gap-1.5 text-ivory/90 whitespace-nowrap px-6">
-              🛖 MUD COTTAGES FROM ₹4,000/NIGHT
+              🛖 COTTAGES FROM ₹4,000/NIGHT
             </span>
             <span className="w-1 h-1 rounded-full bg-gold/40 flex-shrink-0" />
             {/* Duplicate set for seamless loop */}
@@ -82,7 +83,7 @@ export default function Navbar() {
             </span>
             <span className="w-1 h-1 rounded-full bg-gold/40 flex-shrink-0" />
             <span className="flex items-center gap-1.5 text-ivory/90 whitespace-nowrap px-6">
-              🛖 MUD COTTAGES FROM ₹4,000/NIGHT
+              🛖 COTTAGES FROM ₹4,000/NIGHT
             </span>
           </div>
         </div>
@@ -143,6 +144,18 @@ export default function Navbar() {
           {/* Right: Gold BOOK NOW Pill Button */}
           <div className="hidden lg:flex items-center gap-3 shrink-0">
             <a
+              href={`tel:${siteConfig.phone}`}
+              onClick={() => trackPhoneClick('navbar_phone')}
+              aria-label="Call The Divine Oasis"
+              className={`flex items-center gap-2 font-sans text-xs font-bold tracking-wide transition-colors duration-300 ${
+                scrolled || !isHome ? 'text-forest hover:text-gold' : 'text-ivory hover:text-gold'
+              }`}
+            >
+              <Phone size={15} className="text-gold" />
+              <span className="whitespace-nowrap">+91 99039 89950 / 7811996900</span>
+            </a>
+
+            <a
               href={bookingUrl}
               target="_blank"
               rel="noopener noreferrer"
@@ -157,6 +170,17 @@ export default function Navbar() {
 
           {/* Mobile Right Controls */}
           <div className="flex items-center gap-2.5 lg:hidden">
+            <a
+              href={`tel:${siteConfig.phone}`}
+              onClick={() => trackPhoneClick('navbar_phone_mobile')}
+              aria-label="Call +91 99039 89950"
+              className={`p-2 rounded-full transition-colors min-w-[40px] min-h-[36px] flex items-center justify-center ${
+                scrolled || !isHome ? 'text-forest hover:text-gold' : 'text-ivory hover:text-gold'
+              }`}
+            >
+              <Phone size={18} />
+            </a>
+
             <a
               href={bookingUrl}
               target="_blank"

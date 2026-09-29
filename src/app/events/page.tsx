@@ -2,33 +2,33 @@
 import EventsContent from './EventsContent'
 
 export const metadata: Metadata = {
-  title: 'Outdoor Wedding & Event Venue at Ajodhya Hill | The Divine Oasis, Purulia',
-  description: 'Host weddings, corporate retreats, parties & day trips at The Divine Oasis atop Ajodhya Hill, Purulia. Hilltop forest resort with organic farm dining, barbeque & family rooms.',
+  title: 'Banquet Hall & Party Venue at Ajodhya Hill | The Divine Oasis, Purulia',
+  description: 'Host birthday parties, anniversary parties, corporate retreats, private events & day trips at The Divine Oasis atop Ajodhya Hill, Purulia. Hilltop forest resort with organic farm dining, barbeque & family rooms.',
   keywords: [
-    'wedding venue Purulia',
-    'outdoor wedding Ajodhya Hill',
+    'banquet hall Purulia',
+    'birthday party venue Purulia',
+    'anniversary party venue Purulia',
+    'party venue Ajodhya Hill',
     'corporate retreat Purulia',
     'event venue Ajodhya Hill',
-    'party venue Purulia',
-    'marriage hall Purulia',
-    'birthday party venue Purulia',
+    'celebration venue Purulia',
     'day trip venue Purulia',
   ],
   alternates: {
     canonical: 'https://thedivineoasisresort.com/events',
   },
   openGraph: {
-    title: 'Outdoor Wedding & Event Venue at Ajodhya Hill | The Divine Oasis',
-    description: 'Host weddings, corporate retreats, parties & day trips at The Divine Oasis atop Ajodhya Hill, Purulia. Hilltop forest resort with organic farm dining & barbeque.',
+    title: 'Banquet Hall & Party Venue at Ajodhya Hill | The Divine Oasis',
+    description: 'Host birthday parties, anniversary parties, corporate retreats, private events & day trips at The Divine Oasis atop Ajodhya Hill, Purulia. Hilltop forest resort with organic farm dining & barbeque.',
     url: 'https://thedivineoasisresort.com/events',
     siteName: 'The Divine Oasis',
     type: 'website',
-    images: [{ url: 'https://bookonelocal.in/cdn/2026-05-13-064448375-WhatsApp Image 2026-05-11 at 15.42.13.jpg', width: 1200, height: 630, alt: 'Wedding & Event Venue at The Divine Oasis Ajodhya Hill' }],
+    images: [{ url: 'https://bookonelocal.in/cdn/2026-05-13-064448375-WhatsApp Image 2026-05-11 at 15.42.13.jpg', width: 1200, height: 630, alt: 'Party & Event Venue at The Divine Oasis Ajodhya Hill' }],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Outdoor Wedding & Event Venue at Ajodhya Hill | The Divine Oasis',
-    description: 'Host weddings, corporate retreats, parties & day trips at The Divine Oasis atop Ajodhya Hill, Purulia.',
+    title: 'Banquet Hall & Party Venue at Ajodhya Hill | The Divine Oasis',
+    description: 'Host birthday parties, anniversary parties, corporate retreats & day trips at The Divine Oasis atop Ajodhya Hill, Purulia.',
     images: ['https://bookonelocal.in/cdn/2026-05-13-064448375-WhatsApp Image 2026-05-11 at 15.42.13.jpg'],
   },
 }
@@ -45,8 +45,8 @@ export default function EventsPage() {
             {
               "@context": "https://schema.org",
               "@type": "EventVenue",
-              "name": "The Divine Oasis Event Venue Ajodhya Hill",
-              "description": "Outdoor wedding & event venue at The Divine Oasis atop Ajodhya Hill, Purulia. Hilltop forest resort hosting weddings, corporate retreats, parties, and day trips near Ajodhya Hills & Forest Reserve.",
+"name": "The Divine Oasis Event Venue Ajodhya Hill",
+              "description": "Party & event venue at The Divine Oasis atop Ajodhya Hill, Purulia. Hilltop forest resort hosting birthday parties, anniversary parties, corporate retreats, private events, and day trips near Ajodhya Hills & Forest Reserve.",
               "url": "https://thedivineoasisresort.com/events",
               "address": {
                 "@type": "PostalAddress",
@@ -62,20 +62,20 @@ export default function EventsPage() {
               "@context": "https://schema.org",
               "@type": "FAQPage",
               "mainEntity": [
-                {
+{
                   "@type": "Question",
-                  "name": "What is the best outdoor wedding venue in Purulia?",
+                  "name": "What is the best venue for birthday and anniversary parties in Purulia?",
                   "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "The Divine Oasis is the best outdoor wedding venue in Purulia, located atop Ajodhya Hill with forest views. We host weddings, receptions, and multi-day celebrations with organic farm catering and barbeque."
+                    "text": "The Divine Oasis is the best party venue in Purulia, located atop Ajodhya Hill with forest views. We host birthday parties, anniversary parties, receptions, and private celebrations with organic farm catering and barbeque."
                   }
                 },
                 {
                   "@type": "Question",
-                  "name": "What is the wedding capacity at The Divine Oasis?",
+                  "name": "What is the party capacity at The Divine Oasis?",
                   "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "Our hilltop event spaces at The Divine Oasis can comfortably host up to 100 guests for weddings and celebrations with bespoke organic farm catering, barbeque evenings, and forest backdrop."
+                    "text": "Our hilltop event spaces at The Divine Oasis can comfortably host up to 100 guests for birthday parties, anniversary parties, and celebrations with bespoke organic farm catering, barbeque evenings, and forest backdrop."
                   }
                 },
                 {
@@ -107,8 +107,8 @@ export default function EventsPage() {
           __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "VideoObject",
-            "name": "The Divine Oasis Events - Hilltop Wedding & Retreat Venue",
-            "description": "Outdoor wedding & event venue at The Divine Oasis atop Ajodhya Hill, Purulia. Video showcase of hilltop wedding venue, corporate retreat spaces, party areas near Ajodhya Hills & Forest Reserve.",
+"name": "The Divine Oasis Events - Hilltop Party & Retreat Venue",
+            "description": "Party & event venue at The Divine Oasis atop Ajodhya Hill, Purulia. Video showcase of hilltop banquet hall, birthday & anniversary party spaces, corporate retreat areas near Ajodhya Hills & Forest Reserve.",
             "thumbnailUrl": "https://bookonelocal.in/cdn/2026-05-13-064448375-WhatsApp Image 2026-05-11 at 15.42.13.jpg",
             "contentUrl": "https://bookonelocal.in/cdn/2026-05-13-064448375-WhatsApp Image 2026-05-11 at 15.42.13.jpg",
             "embedUrl": "https://thedivineoasisresort.com/events",

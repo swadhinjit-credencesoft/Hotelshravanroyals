@@ -126,7 +126,7 @@ export default function CancellationPage() {
     <div className="flex gap-3">
       <span className="text-forest leading-8">•</span>
       <p className="flex-1">
-        Standard Check-In Time is 12:00 PM and Check-Out Time is 12:00 PM.
+        Standard Check-In Time is 1:00 PM and Check-Out Time is 11:00 AM.
       </p>
     </div>
 

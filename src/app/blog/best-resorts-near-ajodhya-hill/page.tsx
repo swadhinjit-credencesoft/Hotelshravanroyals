@@ -88,7 +88,7 @@ export default function BlogPost() {
         name: 'What amenities come with the cottages at Ajodhya Hill?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'Cottages include free Wi-Fi, flat screen TV, geyser/hot water, room service, hand sanitizer, seating areas, luggage storage, and access to the organic farm.',
+          text: 'Cottages include free Wi-Fi, smart TV, geyser/hot water, room service, hand sanitizer, seating areas, luggage storage, and access to the organic farm.',
         },
       },
     ],
@@ -158,7 +158,7 @@ export default function BlogPost() {
           and budget:
         </p>
         <ul className="space-y-3 list-disc pl-6">
-          <li><strong>Premium Deluxe Mud Cottages</strong> — ₹4,255/night, for 2-3 guests, 5 cottages. Rustic mud walls, modern interiors, and a flat screen TV. <Link href="/rooms" className="text-gold hover:underline">View details</Link></li>
+          <li><strong>Premium Deluxe Mud Cottages</strong> — ₹4,255/night, for 2-3 guests, 5 cottages. Rustic mud walls, modern interiors, and a smart TV. <Link href="/rooms" className="text-gold hover:underline">View details</Link></li>
           <li><strong>Luxury Suite Cottage</strong> — ₹7,225/night, for 2-5 guests, 1 suite. The premium choice for anniversaries and honeymoons.</li>
           <li><strong>VISTA Four Beds</strong> — ₹6,500/night, for 4-6 guests, 4 rooms. The best value for families and friend groups.</li>
           <li><strong>Vista Pod Cottage</strong> — ₹4,000/night, for 2-3 guests, 2 pods. Compact, cozy, and close to the forest edge.</li>
@@ -216,7 +216,7 @@ export default function BlogPost() {
 
         <h3 className="font-display text-lg text-forest mt-6 mb-2">What amenities come with the cottages at Ajodhya Hill?</h3>
         <p>
-          Cottages include <strong>free Wi-Fi, flat screen TV, geyser/hot water, 24-hour room service, hand sanitizer, seating areas,
+          Cottages include <strong>free Wi-Fi, smart TV, geyser/hot water, 24-hour room service, hand sanitizer, seating areas,
           luggage storage</strong>, and access to the <strong>organic farm</strong>.
         </p>
 

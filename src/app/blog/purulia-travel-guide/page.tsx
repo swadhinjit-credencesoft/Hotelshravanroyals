@@ -145,7 +145,7 @@ export default function BlogPost() {
         <p>
           The best base is on the hill itself. <strong>The Divine Oasis</strong> blends cottage stays with the forest: <strong>Premium Deluxe Mud
           Cottages</strong> (₹4,255/night), the single <strong>Luxury Suite Cottage</strong> (₹7,225/night), <strong>VISTA Four Beds</strong>
-          (₹6,500/night), and <strong>Vista Pod Cottages</strong> (₹4,000/night). All units have <strong>free Wi-Fi, flat screen TV,
+          (₹6,500/night), and <strong>Vista Pod Cottages</strong> (₹4,000/night). All units have <strong>free Wi-Fi, smart TV,
           geyser/hot water, room service, and hand sanitizer</strong>.
         </p>
         <p>

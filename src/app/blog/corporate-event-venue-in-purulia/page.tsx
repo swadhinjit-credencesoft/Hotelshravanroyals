@@ -162,7 +162,7 @@ export default function BlogPost() {
         <p>
           Multi-day events work best as overnight stays. Teams spread across the <strong>VISTA Four Beds</strong> rooms (₹6,500/night, 4-6 guests),
           <strong>Premium Deluxe Mud Cottages</strong> (₹4,255/night), and <strong>Vista Pod Cottages</strong> (₹4,000/night). The single
-          <strong>Luxury Suite Cottage</strong> (₹7,225/night) is reserved for leadership. Every unit has <strong>geyser/hot water, flat screen TV,
+          <strong>Luxury Suite Cottage</strong> (₹7,225/night) is reserved for leadership. Every unit has <strong>geyser/hot water, smart TV,
           free Wi-Fi, room service, and hand sanitizer</strong> — see the
           <Link href="/blog/best-cottages-in-ajodhya-hill" className="text-gold hover:underline"> cottage guide</Link> for full details.
         </p>

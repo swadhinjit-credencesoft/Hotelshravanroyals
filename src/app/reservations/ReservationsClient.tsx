@@ -108,7 +108,7 @@ function ReservationsContent({ fallbackRooms }: Props) {
           {(checkInTime || true) && (
             <span className="inline-flex items-center gap-1.5 bg-cream-dark px-3 py-2 rounded-full border border-gold/20">
               <Clock size={12} className="text-gold shrink-0" />
-              Check-in 12:00 PM · Check-out 12:00 PM
+              Check-in 1:00 PM · Check-out 11:00 AM
             </span>
           )}
         </div>

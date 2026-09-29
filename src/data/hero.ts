@@ -28,7 +28,7 @@ export const heroSlides: HeroSlide[] = [
     id: 's2',
     tagline: 'Mud Cottages, Luxury Suites & Family Rooms at Ajodhya',
     headline: 'Premium Cottages with Forest Views',
-    subheadline: 'Choose from Premium Deluxe Mud Cottages, a Luxury Suite Cottage, Vista Four Beds, and Vista Pod Cottages. Every stay comes with geyser, flat-screen TV, room service, and complimentary Wi-Fi — all wrapped in forest serenity.',
+    subheadline: 'Choose from Premium Deluxe Mud Cottages, a Luxury Suite Cottage, Vista Four Beds, and Vista Pod Cottages. Every stay comes with geyser, smart TV, room service, and complimentary Wi-Fi — all wrapped in forest serenity.',
     image: 'https://bookonelocal.in/cdn/2026-05-13-063018320-WhatsApp Image 2026-05-11 at 15.53.21.jpg',
     imageAlt: 'Luxury Suite Cottage at The Divine Oasis Ajodhya Hill',
     primaryCta: 'Explore Cottages',

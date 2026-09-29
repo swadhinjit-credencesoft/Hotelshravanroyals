@@ -166,7 +166,7 @@ export default function BlogPost() {
           <strong>Deulghata (33.7 km)</strong> drive — the party simply continues into the next day.
         </p>
         <p>
-          Each unit carries <strong>free Wi-Fi, flat screen TV, geyser/hot water, 24-hour room service, and hand sanitizer</strong>, plus we hold
+          Each unit carries <strong>free Wi-Fi, smart TV, geyser/hot water, 24-hour room service, and hand sanitizer</strong>, plus we hold
           <strong>luggage storage</strong> for the group&apos;s bags during check-in and checkout hours.
         </p>
 

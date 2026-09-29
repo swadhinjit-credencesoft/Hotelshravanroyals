@@ -155,7 +155,7 @@ export default function BlogPost() {
         </p>
         <p>
           All rooms — from the <strong>Premium Deluxe Mud Cottages</strong> to the <strong>Luxury Suite Cottage</strong> — come with
-          <strong>geyser/hot water, flat screen TV, free Wi-Fi, and hand sanitizer</strong>, so you can freshen up from the journey quickly
+          <strong>geyser/hot water, smart TV, free Wi-Fi, and hand sanitizer</strong>, so you can freshen up from the journey quickly
           and still have energy for a sunset walk.
         </p>
 
