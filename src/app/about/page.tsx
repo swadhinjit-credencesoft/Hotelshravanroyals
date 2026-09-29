@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     type: 'website',
     images: [
       {
-        url: 'https://bookonelocal.in/cdn/2026-05-13-064432393-WhatsApp Image 2026-05-11 at 15.42.15.jpg',
+        url: 'https://thedivineoasisresort.com/homehero/homehero1.jpg',
         width: 1200,
         height: 630,
         alt: 'The Divine Oasis About Us - Ajodhya Hill Forest Resort',
@@ -35,7 +35,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'About The Divine Oasis | Forest Resort at Ajodhya Hill, Purulia',
     description: 'Discover the history, values, and hospitality standards of The Divine Oasis at Ajodhya Hill, Purulia.',
-    images: ['https://bookonelocal.in/cdn/2026-05-13-064432393-WhatsApp Image 2026-05-11 at 15.42.15.jpg'],
+    images: ['https://thedivineoasisresort.com/homehero/homehero1.jpg'],
   },
 };
 
@@ -105,8 +105,8 @@ export default function AboutPage() {
             "@type": "VideoObject",
             "name": "About The Divine Oasis - Ajodhya Hill Forest Resort",
             "description": "Video tour of The Divine Oasis about page showcasing our history, values, and hospitality at Ajodhya Hill, Purulia. Learn about our journey as a family-run forest resort.",
-            "thumbnailUrl": "https://bookonelocal.in/cdn/2026-05-13-064432393-WhatsApp Image 2026-05-11 at 15.42.15.jpg",
-            "contentUrl": "https://bookonelocal.in/cdn/2026-05-13-064432393-WhatsApp Image 2026-05-11 at 15.42.15.jpg",
+            "thumbnailUrl": "https://thedivineoasisresort.com/homehero/homehero1.jpg",
+            "contentUrl": "https://thedivineoasisresort.com/homehero/homehero1.jpg",
             "embedUrl": "https://thedivineoasisresort.com/about",
             "uploadDate": "2026-05-13",
             "duration": "PT45S",

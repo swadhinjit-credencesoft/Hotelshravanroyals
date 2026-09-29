@@ -138,10 +138,10 @@ export const galleryImages: GalleryImage[] = [
   },
   {
     id: 'g17',
-    src: 'https://bookonelocal.in/cdn/2026-05-13-064432393-WhatsApp Image 2026-05-11 at 15.42.15.jpg',
+    src: '/homehero/homehero1.jpg',
     alt: 'Inviting outdoor space at The Divine Oasis Purulia',
     category: 'outdoors',
-    width: 1200,
-    height: 800,
+    width: 1920,
+    height: 1440,
   },
 ]

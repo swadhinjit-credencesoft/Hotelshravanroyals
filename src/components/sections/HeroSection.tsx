@@ -26,7 +26,7 @@ const ParticleCanvas = dynamic(() => import('@/components/ui/ParticleCanvas'), {
 
 const heroSlides = [
   {
-    src: 'https://bookonelocal.in/cdn/2026-05-13-064432393-WhatsApp Image 2026-05-11 at 15.42.15.jpg',
+    src: '/homehero/homehero1.jpg',
     alt: 'The Divine Oasis — Forest resort atop Ajodhya Hill in Purulia with premium mud cottages and luxury suites',
     headline1: 'Where Forest',
     headline2: 'Meets',

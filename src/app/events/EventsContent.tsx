@@ -23,7 +23,7 @@ export default function EventsContent() {
         label="Best Banquet Hall in Purulia - Party Venue Near Ajodhya Hill"
         title="Banquet Hall & Party Venue in Purulia"
         tagline="Host birthday parties, anniversary parties, corporate events & private celebrations at the best banquet hall in Purulia near Ajodhya Hill — The Divine Oasis."
-        image='https://bookonelocal.in/cdn/2026-05-13-064455582-WhatsApp Image 2026-05-11 at 15.42.15 (1).jpg'
+        image='/homehero/eventhero.jpg'
       />
 
       {/* Hero Tabs */}

@@ -56,6 +56,7 @@ export default function GalleryPage() {
             "name": "The Divine Oasis Photo Collection",
             "description": "High-resolution photos of our premium mud cottages, luxury suites, organic farm dining, and hilltop forest views in Purulia, West Bengal.",
             "image": [
+              "https://thedivineoasisresort.com/homehero/homehero1.jpg",
               "https://thedivineoasisresort.com/homehero/homehero2.jpg",
               "https://thedivineoasisresort.com/bbq.jpg",
               "https://thedivineoasisresort.com/organicfood.jpg",

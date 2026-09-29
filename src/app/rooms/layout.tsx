@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     type: 'website',
     images: [
       {
-        url: 'https://bookonelocal.in/cdn/2026-05-13-064432393-WhatsApp Image 2026-05-11 at 15.42.15.jpg',
+        url: 'https://thedivineoasisresort.com/homehero/Suite.jpg',
         width: 1200,
         height: 630,
         alt: 'Hotel Rooms at The Divine Oasis Purulia',
@@ -36,7 +36,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
   title: 'Deluxe Rooms in Purulia | AC Near Ajodhya Hill',
     description: 'Best hotel rooms in Purulia - deluxe AC rooms, family rooms near Ajodhya Hill. Free WiFi & parking. Book direct.',
-    images: ['https://bookonelocal.in/cdn/2026-05-13-064432393-WhatsApp Image 2026-05-11 at 15.42.15.jpg'],
+    images: ['https://thedivineoasisresort.com/homehero/Suite.jpg'],
   },
 }
 

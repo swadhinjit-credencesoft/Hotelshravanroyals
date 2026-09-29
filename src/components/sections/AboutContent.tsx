@@ -15,7 +15,7 @@ export default function AboutContent() {
         label="Our Story"
         title="Genuine Hospitality"
         tagline="A serene forest resort atop Ajodhya Hill in Purulia, offering premium mud cottages, organic farm dining, and unforgettable hilltop moments for families and travelers alike."
-        image='https://bookonelocal.in/cdn/2026-05-13-064432393-WhatsApp Image 2026-05-11 at 15.42.15.jpg'
+        image='/homehero/homehero1.jpg'
       />
 
       <section className="py-24">

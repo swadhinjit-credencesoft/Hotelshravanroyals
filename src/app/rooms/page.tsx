@@ -51,7 +51,7 @@ export default function RoomsPage() {
         label="Premium Cottages at Ajodhya Hill - Mud Cottages, Luxury Suites & Family Rooms"
         title="Best Resort Cottages in Purulia - The Divine Oasis, Ajodhya Hill"
         tagline="Looking for forest resort cottages in Purulia? The Divine Oasis offers premium mud cottages, luxury suite, Vista Four Beds & Vista Pod cottages near Ajodhya Hills & Forest Reserve. Free Wi-Fi, geyser, organic farm dining - book now."
-        image='https://bookonelocal.in/cdn/2026-05-13-063018320-WhatsApp Image 2026-05-11 at 15.53.21.jpg'
+        image='/homehero/Suite.jpg'
       />
       <RoomsGrid />
       <LuxuryAmenities />

@@ -55,7 +55,7 @@ export default function DiningPage() {
         label="Organic Farm Dining & Barbeque Evenings at Ajodhya Hill"
         title="Farm-to-Table Dining at The Divine Oasis, Purulia"
         tagline="Experience organic farm-to-table veg thali, barbeque under the open sky, and drinks with hors d&apos;oeuvres at our hilltop seating area. Pure vegetarian resort dining in Purulia."
-        image='https://bookonelocal.in/cdn/2026-05-13-064448375-WhatsApp Image 2026-05-11 at 15.42.13.jpg'
+        image='/homehero/homehero2.jpg'
       />
       
       {/* SEO Schema */}
@@ -68,7 +68,7 @@ export default function DiningPage() {
             "name": "The Divine Oasis - Farm-to-Table Dining",
             "description": "Organic farm-to-table vegetarian thali, barbeque evenings, and drinks at the hilltop seating area. Pure vegetarian resort dining at The Divine Oasis, Ajodhya Hill, Purulia.",
             "url": "https://thedivineoasisresort.com/dining",
-            "image": "https://bookonelocal.in/cdn/2026-05-13-064448375-WhatsApp Image 2026-05-11 at 15.42.13.jpg",
+            "image": "https://thedivineoasisresort.com/homehero/homehero2.jpg",
             "telephone": "+91990398950",
             "address": {
               "@type": "PostalAddress",
