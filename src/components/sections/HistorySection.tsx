@@ -24,8 +24,8 @@ export default function HistorySection() {
           <div className="relative">
             <div className="relative aspect-[4/5] w-full max-w-md mx-auto z-10 overflow-hidden border border-gold/10">
               <Image
-                src='https://bookonelocal.in/cdn/2026-05-13-063018320-WhatsApp Image 2026-05-11 at 15.53.21.jpg'
-                alt="Luxury Suite Cottage at The Divine Oasis Ajodhya Hill"
+                src='/homehero/homehero2.jpg'
+                alt="The Divine Oasis hilltop resort at Ajodhya Hill, Purulia"
                 fill
                 sizes="(max-width: 1024px) 90vw, 40vw"
                 className="object-cover transition-all duration-1000"

@@ -189,10 +189,10 @@ export default function DiningPage() {
         <div className="max-w-[1600px] mx-auto px-6 md:px-10">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
             {[
-              { name: 'Organic Veg Thali', image: 'https://bookonelocal.in/cdn/2026-05-13-064448375-WhatsApp Image 2026-05-11 at 15.42.13.jpg' },
-              { name: 'Barbeque Evenings', image: 'https://bookonelocal.in/cdn/2026-05-13-064516081-WhatsApp Image 2026-05-11 at 15.42.12.jpg' },
+              { name: 'Organic Veg Thali', image: '/organicfood.jpg' },
+              { name: 'Barbeque Evenings', image: '/bbq.jpg' },
               { name: 'Drinks & Hors d\'oeuvres', image: 'https://bookonelocal.in/cdn/2026-05-13-064459381-WhatsApp Image 2026-05-11 at 15.42.11.jpg' },
-              { name: 'Farm-to-Table', image: 'https://bookonelocal.in/cdn/2026-05-13-064504242-WhatsApp Image 2026-05-11 at 15.42.13 (1).jpg' },
+              { name: 'Farm-to-Table', image: '/farmtofarmdinign.jpg' },
             ].map((item) => (
               <div key={item.name} className="bg-white border border-gold/10 overflow-hidden group">
                 <div className="relative aspect-[4/3] overflow-hidden">
