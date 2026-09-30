@@ -65,7 +65,7 @@ export default function HistorySection() {
           <div className="flex flex-col">
             <SectionLabel className="mb-6">Our Story</SectionLabel>
             <h2 className="font-display text-4xl md:text-[56px] italic text-forest mb-8 leading-tight" style={{ textWrap: 'balance' }}>
-              A Forest Resort Born from a Love for Ajodhya Hills
+              A Forest Resort Born out of love to  Ajodhya Hills & Purulia.
             </h2>
             <GoldDivider className="mb-10" />
             
