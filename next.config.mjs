@@ -1,6 +1,12 @@
 /** @type {import('next').NextConfig} */
+import path from 'path';
+import { fileURLToPath } from 'url';
+
 const nextConfig = {
   output: 'export',
+  // Pin the tracing root to this project (avoids stray D:\package-lock.json
+  // being picked as the inferred workspace root)
+  outputFileTracingRoot: path.dirname(fileURLToPath(import.meta.url)),
   // Disable image optimization for static export
   images: {
     unoptimized: true,
@@ -29,52 +35,8 @@ const nextConfig = {
   poweredByHeader: false,
   // Strict mode for React
   reactStrictMode: true,
-  // Security headers
-  headers: async () => [
-      {
-        source: '/(.*)',
-        headers: [
-          {
-            key: 'X-Content-Type-Options',
-            value: 'nosniff',
-          },
-          {
-            key: 'X-Frame-Options',
-            value: 'DENY',
-          },
-          {
-            key: 'X-XSS-Protection',
-            value: '1; mode=block',
-          },
-          {
-            key: 'Referrer-Policy',
-            value: 'strict-origin-when-cross-origin',
-          },
-          {
-            key: 'Permissions-Policy',
-            value: 'camera=(), microphone=(), geolocation=(self), interest-cohort=()',
-          },
-          // NOTE: Strict-Transport-Security (HSTS) is not effective with
-          // `output: 'export'` since it requires a server to set the header.
-          // Configure HSTS at your hosting provider (e.g. Netlify, Vercel, Cloudflare)
-          // instead: max-age=63072000; includeSubDomains; preload
-          {
-            key: 'Content-Security-Policy',
-            value: [
-              "default-src 'self'",
-              "script-src 'self' 'unsafe-inline' 'unsafe-eval' https://www.googletagmanager.com https://www.google-analytics.com https://www.instagram.com",
-              "style-src 'self' 'unsafe-inline' https://fonts.googleapis.com",
-              "img-src 'self' data: blob: https: http:",
-              "font-src 'self' https://fonts.gstatic.com",
-              "media-src 'self' https://bookonelocal.in https://*.bookonelocal.in",
-              "connect-src 'self' https://api.thehotelmate.co https://www.google-analytics.com https://www.googletagmanager.com",
-              "frame-src https://www.google.com https://www.youtube.com https://www.instagram.com https://bookone.io https://*.bookone.io",
-              "frame-ancestors 'self' https://bookone.io https://*.google.com",
-            ].join('; '),
-          },
-        ],
-      },
-  ],
+  // NOTE: Security headers are NOT applied here because "output: export"
+  // cannot emit HTTP headers. They are configured in public/.htaccess instead.
 };
 
 export default nextConfig;

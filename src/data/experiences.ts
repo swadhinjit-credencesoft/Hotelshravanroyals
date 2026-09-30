@@ -41,10 +41,10 @@ export const experiences: Experience[] = [
     title: 'Deulghata Heritage Temples',
     category: 'Culture & Heritage',
     description:
-      'Journey to Deulghata, 33.7 km away, to see iconic stone temples of eastern India. A rewarding half-day trip for history lovers exploring Purulia\'s rich architectural past.',
+      'Journey to Deulghata, 33.7 km away, to see the terracotta deul-style temple ruins of eastern India. A rewarding half-day trip for history lovers exploring Purulia\'s rich architectural past.',
     duration: '33.7 km',
-    image: 'https://bookonelocal.in/cdn/2026-05-13-064511341-WhatsApp Image 2026-05-11 at 15.42.13 (2).jpg',
-    imageAlt: 'Deulghata temples Purulia heritage',
+    image: 'https://images.unsplash.com/photo-1578148771262-2969a5614d6b?auto=format&fit=crop&w=1200&q=80',
+    imageAlt: 'Ancient brick deul-style temple ruins at Deulghata, Purulia',
     season: 'October – March',
   },
 
@@ -67,7 +67,7 @@ export const experiences: Experience[] = [
     description:
       'When the hills cool down, our barbeque stand fires up. Gather friends and family around glowing coals for a memorable evening of grilled food, starry skies, and forest air.',
     duration: 'Evenings, on request',
-    image: 'https://bookonelocal.in/cdn/2026-05-13-064516081-WhatsApp Image 2026-05-11 at 15.42.14 (1).jpg',
+    image: '/bbq.jpg',
     imageAlt: 'Barbeque and bonfire evening at The Divine Oasis',
     season: 'Weather permitting',
   },
@@ -79,8 +79,8 @@ export const experiences: Experience[] = [
     description:
       'Reach us comfortably from Purulia Junction, 42.6 km away, with taxis readily available. Easy road access via Barabhum (38.5 km) also connects guests coming from Jharkhand side.',
     duration: '42.6 km from Purulia Junction',
-    image: 'https://bookonelocal.in/cdn/2026-05-13-064523804-WhatsApp Image 2026-05-11 at 15.42.14.jpg',
-    imageAlt: 'Road connectivity to The Divine Oasis, Purulia',
+    image: '/homehero/PuruliaJunctionConnectivity.jpg',
+    imageAlt: 'Road and rail connectivity to The Divine Oasis from Purulia Junction',
     season: 'Year-round',
   },
 
