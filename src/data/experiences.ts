@@ -53,7 +53,7 @@ export const experiences: Experience[] = [
     title: 'Organic Farm Walk',
     category: 'On-Property',
     description:
-      'Take a walk through The Divine Oasis\'s own organic farm. See fresh seasonal vegetables growing, watch the kitchen at work, and learn how your farm-to-table meals make it to the plate.',
+      'Take a walk through The Divine Oasis\'s own organic farm. See fresh seasonal vegetables growing, watch the kitchen at work, and learn how your Organic meals make it to the plate.',
     duration: 'Inside the resort',
     image: 'https://bookonelocal.in/cdn/2026-05-13-064504242-WhatsApp Image 2026-05-11 at 15.42.12.jpg',
     imageAlt: 'Organic farm at The Divine Oasis Ajodhya Hill',

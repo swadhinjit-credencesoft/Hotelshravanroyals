@@ -38,7 +38,7 @@ const roomSeo: Record<string, { keyword: string; suffix: string }> = {
   },
   'vista-four-beds': { 
     keyword: 'Vista Four Beds at The Divine Oasis | Family Cottage Near Ajodhya Hill', 
-    suffix: 'Vista Four Beds at The Divine Oasis, Purulia. Spacious family cottage for 4-6 guests with forest views. Free Wi-Fi, geyser, room service & organic farm-to-table meals.' 
+    suffix: 'Vista Four Beds at The Divine Oasis, Purulia. Spacious family cottage for 4-6 guests with forest views. Free Wi-Fi, geyser, room service & organic Organic meals.' 
   },
   'vista-pod-cottage': { 
     keyword: 'Vista Pod Cottage at The Divine Oasis | Cozy Forest Pod Near Ajodhya Hill', 

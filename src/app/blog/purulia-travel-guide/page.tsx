@@ -159,7 +159,7 @@ export default function BlogPost() {
         <h2 className="font-display text-2xl italic text-forest mt-10 mb-4">What to Eat in Purulia</h2>
         <p>
           Purulia&apos;s food is honest and fiery in places — the district shares flavours with both Bengal and the Jharkhand borderlands. At the
-          resort, the <strong>farm-to-table veg thali</strong> is the anchor: rice, dal, seasonal vegetables from the on-site farm, chokha-style
+          resort, the <strong>Organic veg thali</strong> is the anchor: rice, dal, seasonal vegetables from the on-site farm, chokha-style
           sides, and dessert. Regional specialities and simple continental plates round out the menu.
         </p>
         <p>

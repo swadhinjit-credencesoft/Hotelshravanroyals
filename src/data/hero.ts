@@ -51,8 +51,8 @@ export const heroSlides: HeroSlide[] = [
   {
     id: 's4',
     tagline: 'Organic Farm Dining, Barbeque Evenings & Family Rooms',
-    headline: 'Farm-to-Table Dining & Open-Air Moments',
-    subheadline: 'Savour organic farm-to-table meals, veg thali, barbeque under the open sky, and drinks with hors d\'oeuvres at our scenic seating areas. Perfect for families, couples, and groups escaping city life in Purulia.',
+    headline: 'Organic Dining & Open-Air Moments',
+    subheadline: 'Savour organic Organic meals, veg thali, barbeque under the open sky, and drinks with hors d\'oeuvres at our scenic seating areas. Perfect for families, couples, and groups escaping city life in Purulia.',
     image: 'https://bookonelocal.in/cdn/2026-05-13-064448375-WhatsApp Image 2026-05-11 at 15.42.13.jpg',
     imageAlt: 'Organic farm dining and seating at The Divine Oasis Ajodhya Hill',
     primaryCta: 'Book Now',

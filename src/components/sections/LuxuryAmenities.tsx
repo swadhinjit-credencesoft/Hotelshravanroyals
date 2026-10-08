@@ -30,7 +30,7 @@ const defaultAmenities: AmenityItem[] = [
   {
     icon: 'Bell',
     title: 'Room Service',
-    description: '24-hour room service delivering farm-to-table meals and beverages to your cottage.'
+    description: '24-hour room service delivering Organic meals and beverages to your cottage.'
   },
   {
     icon: 'ShowerHead',

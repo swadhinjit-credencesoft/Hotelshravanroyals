@@ -125,7 +125,7 @@ export default function BlogPost() {
           Fine dining doesn&apos;t have to mean white tablecloths in a city high-rise. In Purulia, the finest meal in the district happens at
           the edge of a forest — at <strong><Link href="/" className="text-gold hover:underline">The Divine Oasis</Link></strong>, where
           elegance comes from the setting as much as the plate. This is <strong>fine dining in Purulia</strong> redefined: fresh
-          farm-to-table cooking, unhurried service, and a hillside that goes quiet as the sun drops over the
+          Organic cooking, unhurried service, and a hillside that goes quiet as the sun drops over the
           <strong> Ajodhya Hills &amp; Forest Reserve (0.4 km)</strong>.
         </p>
         <p>

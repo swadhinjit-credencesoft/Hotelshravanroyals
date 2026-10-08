@@ -14,12 +14,12 @@ export const venues: Venue[] = [
   {
     id: 'd1',
     name: 'Organic Farm Dining',
-    tagline: 'Farm-to-table, fresh from our own farm',
+    tagline: 'Organic, fresh from our own farm',
     cuisine: 'Vegetarian Farm Thali & Local Bengali',
     description: 'Dine on organic produce grown right here at The Divine Oasis. Our beloved veg thali brings seasonal farm vegetables, local rice, and traditional Bengali flavours to your table, prepared fresh daily by our kitchen.',
     hours: 'Breakfast 8:00 – 11:00 AM · Lunch 12:30 – 3:30 PM · Dinner 7:30 – 10:30 PM',
     image: '/organicfood.jpg',
-    imageAlt: 'Organic farm-to-table dining at The Divine Oasis Ajodhya Hill',
+    imageAlt: 'Organic Organic dining at The Divine Oasis Ajodhya Hill',
     reservationHref: 'https://bookone.io/The-Divine-Oasis?bookingEngine=true',
   },
   {

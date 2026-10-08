@@ -87,10 +87,10 @@ export default function AboutPage() {
                 "addressRegion": "West Bengal",
                 "addressCountry": "IN"
               },
-              "sameAs": [
-                "https://www.facebook.com/thedivineoasisresort",
-                "https://www.instagram.com/thedivineoasisresort",
-                "https://www.youtube.com/@thedivineoasisresort"
+"sameAs": [
+                "https://www.facebook.com/p/The-Divine-Oasis-Resort-Ajodhya-Hilltop-Purulia-61556950468871/",
+                "https://www.instagram.com/the_divine_oasis_resort",
+                "https://www.youtube.com/@TheDivineOasisResort"
               ]
 }
             })
@@ -138,7 +138,7 @@ export default function AboutPage() {
                 "name": "What are the key amenities and services at The Divine Oasis?",
                 "acceptedAnswer": {
                   "@type": "Answer",
-                  "text": "The Divine Oasis provides free high-speed Wi-Fi, geyser/hot water in every cottage, 24/7 room service, organic farm-to-table vegetarian dining, barbeque evenings, family rooms, luggage storage, and scenic seating areas. All cottages include smart TV, room service, and hand sanitizer."
+                  "text": "The Divine Oasis provides free high-speed Wi-Fi, geyser/hot water in every cottage, 24/7 room service, organic Organic vegetarian dining, barbeque evenings, family rooms, luggage storage, and scenic seating areas. All cottages include smart TV, room service, and hand sanitizer."
                 }
               },
               {

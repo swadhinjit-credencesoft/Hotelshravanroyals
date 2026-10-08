@@ -83,7 +83,7 @@ export const galleryImages: GalleryImage[] = [
   {
     id: 'g10',
     src: '/farmtofarmdinign.jpg',
-    alt: 'Farm-to-table meal arranged for guests at the resort',
+    alt: 'Organic meal arranged for guests at the resort',
     category: 'dining',
     width: 1920,
     height: 2560,

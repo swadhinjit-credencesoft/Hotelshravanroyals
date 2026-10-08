@@ -90,8 +90,8 @@ export const blogPosts: BlogPost[] = [
   // ── Cluster 2: Restaurant ─────────────────────────────────────
   {
     id: 'b2',
-    title: 'Organic Farm Dining in Purulia | Farm-to-Table at Ajodhya',
-    excerpt: 'Discover organic farm-to-table dining near Ajodhya Hill. Fresh produce, veg thali, and open-air meals at The Divine Oasis organic farm, Purulia.',
+    title: 'Organic Farm Dining in Purulia | Organic at Ajodhya',
+    excerpt: 'Discover organic Organic dining near Ajodhya Hill. Fresh produce, veg thali, and open-air meals at The Divine Oasis organic farm, Purulia.',
     date: 'Feb 20, 2026',
     dateISO: '2026-02-20',
     dateModifiedISO: '2026-07-23',

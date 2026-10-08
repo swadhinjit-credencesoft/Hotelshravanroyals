@@ -3,8 +3,8 @@ import Link from 'next/link'
 import BlogArticleLayout from '@/components/layout/BlogArticleLayout'
 
 export const metadata: Metadata = {
-  title: 'Organic Farm Dining in Purulia | Farm-to-Table at Ajodhya',
-  description: 'Discover organic farm-to-table dining in Purulia. Fresh produce, a signature veg thali, and open-air meals at The Divine Oasis organic farm near Ajodhya Hill.',
+  title: 'Organic Farm Dining in Purulia | Organic at Ajodhya',
+  description: 'Discover organic Organic dining in Purulia. Fresh produce, a signature veg thali, and open-air meals at The Divine Oasis organic farm near Ajodhya Hill.',
   keywords: [
     'organic farm dining purulia',
     'farm to table purulia',
@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   alternates: { canonical: 'https://thedivineoasisresort.com/blog/organic-farm-dining-in-purulia' },
   openGraph: {
     title: 'Organic Farm Dining in Purulia | The Divine Oasis',
-    description: 'Experience organic farm-to-table dining in Purulia. Fresh vegetables from the on-site farm, a signature veg thali, and open-air forest meals at The Divine Oasis.',
+    description: 'Experience organic Organic dining in Purulia. Fresh vegetables from the on-site farm, a signature veg thali, and open-air forest meals at The Divine Oasis.',
     url: 'https://thedivineoasisresort.com/blog/organic-farm-dining-in-purulia',
     siteName: 'The Divine Oasis',
     type: 'article',
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'Organic Farm Dining in Purulia',
-    description: 'Farm-to-table dining in Purulia at The Divine Oasis — organic vegetables, veg thali, and open-air meals on Ajodhya Hill.',
+    description: 'Organic dining in Purulia at The Divine Oasis — organic vegetables, veg thali, and open-air meals on Ajodhya Hill.',
     images: ['https://bookonelocal.in/cdn/2026-05-13-064504242-WhatsApp Image 2026-05-11 at 15.42.12.jpg'],
   },
   robots: { index: true, follow: true, googleBot: { index: true, follow: true, 'max-image-preview': 'large', 'max-snippet': -1 } },
@@ -39,8 +39,8 @@ export default function BlogPost() {
   const schema = {
     "@context": "https://schema.org",
     "@type": "BlogPosting",
-    "headline": "Organic Farm Dining in Purulia | Farm-to-Table at Ajodhya",
-    "description": "Discover organic farm-to-table dining in Purulia at The Divine Oasis — fresh produce, a signature veg thali, and open-air forest meals.",
+    "headline": "Organic Farm Dining in Purulia | Organic at Ajodhya",
+    "description": "Discover organic Organic dining in Purulia at The Divine Oasis — fresh produce, a signature veg thali, and open-air forest meals.",
     "image": "https://bookonelocal.in/cdn/2026-05-13-064504242-WhatsApp Image 2026-05-11 at 15.42.12.jpg",
     "datePublished": "2026-02-20",
     "dateModified": "2026-07-23",
@@ -99,7 +99,7 @@ export default function BlogPost() {
         category="Restaurant & Dining"
         date="Feb 20, 2026"
         heroImage="https://bookonelocal.in/cdn/2026-05-13-064504242-WhatsApp Image 2026-05-11 at 15.42.12.jpg"
-        heroAlt="Organic farm dining at The Divine Oasis - farm-to-table dining in Purulia"
+        heroAlt="Organic farm dining at The Divine Oasis - Organic dining in Purulia"
         relatedArticles={[
           { title: 'Best Dining Near Ajodhya Hill', link: '/blog/best-dining-near-ajodhya-hill' },
           { title: 'Local Food Guide in Purulia', link: '/blog/local-food-guide-in-purulia' },
@@ -135,7 +135,7 @@ export default function BlogPost() {
           is flowering, and even request that a particular vegetable appears in that evening&apos;s meal.
         </p>
         <p>
-          This farm-to-table loop keeps the food fresh and the carbon footprint small. It also makes dining here different from a
+          This Organic loop keeps the food fresh and the carbon footprint small. It also makes dining here different from a
           standard restaurant meal: you taste the season rather than a fixed menu that runs all year.
         </p>
 

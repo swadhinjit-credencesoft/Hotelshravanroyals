@@ -124,7 +124,7 @@ export default function BlogPost() {
         <p>
           Families who travel know the golden rule: nobody has a good trip on an empty stomach. In Purulia, family meals are best done
           calmly and freshly, and that is exactly what <strong><Link href="/" className="text-gold hover:underline">The Divine Oasis</Link></strong>
-          offers. Our <strong>family dining</strong> is unhurried, spacious, and built on the farm-to-table veg thali — food that children actually
+          offers. Our <strong>family dining</strong> is unhurried, spacious, and built on the Organic veg thali — food that children actually
           eat and grandparents actually enjoy, served in a forest setting near <strong>Ajodhya Hill</strong>.
         </p>
         <p>

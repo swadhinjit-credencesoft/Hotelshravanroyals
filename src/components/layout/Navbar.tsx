@@ -106,9 +106,9 @@ export default function Navbar() {
             <Image
               src="/devinelogo.png"
               alt="The Divine Oasis"
-              width={180}
-              height={106}
-              className="h-12 md:h-14 w-auto object-contain transition-transform duration-300 hover:scale-105"
+              width={240}
+              height={376}
+              className="h-16 md:h-24 w-auto object-contain transition-transform duration-300 hover:scale-105"
               priority
             />
           </Link>
@@ -152,7 +152,7 @@ export default function Navbar() {
               }`}
             >
               <Phone size={15} className="text-gold" />
-              <span className="whitespace-nowrap">+91 9903989950 / 7811996900</span>
+              <span className="whitespace-nowrap">+91 9903989950 /+91 811996900</span>
             </a>
 
             <a
@@ -220,9 +220,9 @@ export default function Navbar() {
                 <Image
                   src="/devinelogo.png"
                   alt="The Divine Oasis"
-                  width={150}
-                  height={88}
-                  className="h-9 sm:h-10 w-auto object-contain"
+                  width={180}
+                  height={282}
+                  className="h-12 sm:h-14 w-auto object-contain"
                 />
               </Link>
               <button

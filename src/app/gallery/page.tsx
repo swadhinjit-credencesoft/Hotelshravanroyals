@@ -84,7 +84,7 @@ export default function GalleryPage() {
             to our organic farm dining and hilltop barbeque evenings.
           </p>
           <a
-            href="https://www.youtube.com/@thedivineoasisresort"
+            href="https://www.youtube.com/@TheDivineOasisResort"
             target="_blank"
             rel="noopener noreferrer"
             className="group block relative aspect-video rounded-lg overflow-hidden border border-gold/20 hover:border-gold/50 transition-all mb-8"
@@ -104,7 +104,7 @@ export default function GalleryPage() {
             </div>
           </a>
           <a
-            href="https://www.youtube.com/@thedivineoasisresort"
+            href="https://www.youtube.com/@TheDivineOasisResort"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-3 bg-red-600 hover:bg-red-700 text-white font-sans text-xs uppercase tracking-[0.2em] px-8 py-4 rounded-sm transition-all shadow-lg group"
@@ -120,15 +120,15 @@ export default function GalleryPage() {
         <div className="max-w-[1200px] mx-auto px-6">
           <h2 className="font-display text-4xl md:text-5xl italic text-forest mb-6">Through Your Lens</h2>
           <p className="font-serif text-lg text-taupe mb-12">
-            Follow us on Instagram <a href="https://www.instagram.com/thedivineoasisresort" target="_blank" rel="noopener noreferrer" className="text-gold hover:underline">@thedivineoasisresort</a> and tag us to be featured.
+            Follow us on Instagram <a href="https://www.instagram.com/the_divine_oasis_resort" target="_blank" rel="noopener noreferrer" className="text-gold hover:underline">@the_divine_oasis_resort</a> and tag us to be featured.
           </p>
           
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 max-w-[900px] mx-auto">
-            {[
-              { url: 'https://www.instagram.com/thedivineoasisresort' },
-              { url: 'https://www.instagram.com/thedivineoasisresort' },
-              { url: 'https://www.instagram.com/thedivineoasisresort' },
-              { url: 'https://www.instagram.com/thedivineoasisresort' },
+{[
+              { url: 'https://www.instagram.com/the_divine_oasis_resort' },
+              { url: 'https://www.instagram.com/the_divine_oasis_resort' },
+              { url: 'https://www.instagram.com/the_divine_oasis_resort' },
+              { url: 'https://www.instagram.com/the_divine_oasis_resort' },
             ].map((post, i) => (
               <div key={i} className="overflow-hidden rounded-lg border border-gold/10 shadow-sm bg-white">
                 <blockquote

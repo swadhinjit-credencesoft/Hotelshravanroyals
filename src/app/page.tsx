@@ -75,7 +75,7 @@ export default function Home() {
                 "name": "Is pure vegetarian food available at the resort?",
                 "acceptedAnswer": {
                   "@type": "Answer",
-                  "text": "Yes, The Divine Oasis serves fresh organic vegetarian meals (veg thali) from our own farm-to-table kitchen. Non-vegetarian food is not permitted on the property premises."
+                  "text": "Yes, The Divine Oasis serves fresh organic vegetarian meals (veg thali) from our own Organic kitchen. Non-vegetarian food is not permitted on the property premises."
                 }
               },
               {

@@ -49,8 +49,8 @@ const heroSlides = [
     headline1: 'Evenings Under',
     headline2: 'Starlit',
     headline3: 'Skies',
-    subtitle: 'Barbeque & organic farm-to-table dining',
-    badge: 'From ₹4,000/night · Farm-to-table dining',
+    subtitle: 'Barbeque & organic Organic dining',
+    badge: 'From ₹4,000/night · Organic dining',
   },
 ]
 
@@ -279,7 +279,7 @@ export default function HeroSection() {
               Ajodhya Hills & Forest Reserve · 0.4 km
             </span>
             <span className={`text-[10px] sm:text-[11px] font-sans text-ivory font-medium tracking-wide transition-opacity duration-700 ease-in-out ${currentSlide === 1 ? 'opacity-100' : 'opacity-0 absolute left-0 right-0 flex items-center justify-center pointer-events-none'}`}>
-              From ₹4,000/night · Farm-to-table dining
+              From ₹4,000/night · Organic dining
             </span>
             <span className={`text-[10px] sm:text-[11px] font-sans text-ivory font-medium tracking-wide transition-opacity duration-700 ease-in-out ${currentSlide === 2 ? 'opacity-100' : 'opacity-0 absolute left-0 right-0 flex items-center justify-center pointer-events-none'}`}>
               Barbeque · Organic Farm · Family Rooms

@@ -30,7 +30,7 @@ const faqs: FAQItem[] = [
   },
   {
     question: "What dining options are available at the resort?",
-    answer: "We offer farm-to-table dining with fresh veg thalis prepared from our own organic farm, barbeque evenings at our barbeque stand, and drinks &amp; hors d'oeuvres served at our scenic seating areas."
+    answer: "We offer Organic dining with fresh veg thalis prepared from our own organic farm, barbeque evenings at our barbeque stand, and drinks &amp; hors d'oeuvres served at our scenic seating areas."
   },
   {
     question: "What are the room categories available at The Divine Oasis?",

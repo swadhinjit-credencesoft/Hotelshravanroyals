@@ -88,7 +88,7 @@ export default function BlogPost() {
         name: 'Is the food suitable for kids?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'Yes, the farm-to-table veg thali and simple local dishes are mild, fresh, and easy to customise for children.',
+          text: 'Yes, the Organic veg thali and simple local dishes are mild, fresh, and easy to customise for children.',
         },
       },
     ],
@@ -160,7 +160,7 @@ export default function BlogPost() {
 
         <h2 className="font-display text-2xl italic text-forest mt-10 mb-4">Family-Friendly Dining</h2>
         <p>
-          Meals at The Divine Oasis are built around the <strong>farm-to-table veg thali</strong> — rice, dal, seasonal vegetables, and
+          Meals at The Divine Oasis are built around the <strong>Organic veg thali</strong> — rice, dal, seasonal vegetables, and
           chokha-style sides that are mild, fresh, and easy for children. Kitchen staff happily adjust spice and portion sizes for kids and
           for elderly guests. Read more in our
           <Link href="/blog/family-dining-in-purulia" className="text-gold hover:underline"> family dining guide</Link>.
@@ -204,7 +204,7 @@ export default function BlogPost() {
 
         <h3 className="font-display text-lg text-forest mt-6 mb-2">Is the food suitable for kids?</h3>
         <p>
-          Yes, the farm-to-table <strong>veg thali</strong> and simple local dishes are mild, fresh, and easy to customise for children.
+          Yes, the Organic <strong>veg thali</strong> and simple local dishes are mild, fresh, and easy to customise for children.
         </p>
 
         <p>

@@ -35,7 +35,7 @@ export const estateEvents: EstateEvent[] = [
     description: 'Mark anniversaries and intimate milestones in the hilltop seating area with forest views, organic farm dining, and attentive hosts who make the day truly special.',
     capacity: 'Up to 40 guests',
     image: 'https://bookonelocal.in/cdn/2026-05-13-064452634-WhatsApp Image 2026-05-11 at 15.42.14 (2).jpg',
-    features: ['Hilltop seating with forest views', 'Organic farm-to-table dining', 'Friendly, attentive hosts'],
+    features: ['Hilltop seating with forest views', 'Organic Organic dining', 'Friendly, attentive hosts'],
   },
   {
     id: 'e4',

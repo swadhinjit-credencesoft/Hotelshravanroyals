@@ -66,7 +66,7 @@ export default function BlogPost() {
         name: "Where can I try authentic local food in Purulia?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "The Divine Oasis serves authentic farm-to-table local thali at Ajodhya Hill, using vegetables from its own organic farm.",
+          text: "The Divine Oasis serves authentic Organic local thali at Ajodhya Hill, using vegetables from its own organic farm.",
         },
       },
       {
@@ -100,7 +100,7 @@ export default function BlogPost() {
         category="Food & Culture"
         date="Jun 22, 2026"
         heroImage="https://bookonelocal.in/cdn/2026-05-13-064507861-WhatsApp Image 2026-05-11 at 15.42.13 (1).jpg"
-        heroAlt="Local food guide in Purulia - farm-to-table thali at The Divine Oasis"
+        heroAlt="Local food guide in Purulia - Organic thali at The Divine Oasis"
         relatedArticles={[
           { title: 'Organic Farm Dining in Purulia', link: '/blog/organic-farm-dining-in-purulia' },
           { title: 'Best Dining Near Ajodhya Hill', link: '/blog/best-dining-near-ajodhya-hill' },
@@ -119,7 +119,7 @@ export default function BlogPost() {
           Food is the fastest way to understand a district. Purulia sits at the meeting point of Bengal and the Jharkhand borderlands, and its
           kitchens echo both — honest vegetables, slow dal, and heat that respects the person eating it. This <strong>local food guide to
           Purulia</strong> is written from <strong><Link href="/" className="text-gold hover:underline">The Divine Oasis</Link></strong>, where the
-          farm-to-table <strong>veg thali</strong> turns regional cooking into the centrepiece of a stay on <strong>Ajodhya Hill</strong>.
+          Organic <strong>veg thali</strong> turns regional cooking into the centrepiece of a stay on <strong>Ajodhya Hill</strong>.
         </p>
         <p>
           The tasting starts before you sit down: the <strong>organic farm</strong> that supplies the kitchen walks right up to the dining area,
@@ -181,7 +181,7 @@ export default function BlogPost() {
 
         <h3 className="font-display text-lg text-forest mt-6 mb-2">Where can I try authentic local food in Purulia?</h3>
         <p>
-          <strong>The Divine Oasis</strong> serves authentic farm-to-table local thali at Ajodhya Hill, using vegetables from its own organic
+          <strong>The Divine Oasis</strong> serves authentic Organic local thali at Ajodhya Hill, using vegetables from its own organic
           farm.
         </p>
 

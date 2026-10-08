@@ -1,6 +1,6 @@
 export const awards = [
   'Free High-Speed Wi-Fi for All Guests',
-  'Organic Farm-to-Table Dining',
+  'Organic Organic Dining',
   'Barbeque Evenings in the Open Air',
   'Hilltop Forest Location — Ajodhya Hills',
   'Family Rooms & Group Stays',

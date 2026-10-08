@@ -7,10 +7,10 @@ export const siteConfig = {
   email: 'thedivineoasisresort@gmail.com',
   address: 'Ajodhya Hill, Hilltop, Ajodhya, Purulia, West Bengal 723152',
   social: {
-    instagram: 'https://www.instagram.com/thedivineoasisresort',
-    facebook: 'https://www.facebook.com/thedivineoasisresort',
+    instagram: 'https://www.instagram.com/the_divine_oasis_resort',
+    facebook: 'https://www.facebook.com/p/The-Divine-Oasis-Resort-Ajodhya-Hilltop-Purulia-61556950468871/',
     twitter: 'https://x.com/thedivineoasis',
-    youtube: 'https://www.youtube.com/@thedivineoasisresort',
+    youtube: 'https://www.youtube.com/@TheDivineOasisResort',
   } as { instagram?: string; facebook?: string; twitter?: string; youtube?: string },
   checkInTime: '1:00 PM',
   checkOutTime: '11:00 AM',

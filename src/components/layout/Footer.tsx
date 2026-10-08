@@ -100,9 +100,9 @@ export default function Footer() {
               <Image
                 src="/devinelogo.png"
                 alt="The Divine Oasis Logo"
-                width={180}
-                height={80}
-                className="object-contain"
+                width={240}
+                height={376}
+                className="object-contain w-36 md:w-44 h-auto"
                 loading="lazy"
               />
             </Link>

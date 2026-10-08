@@ -8,7 +8,7 @@ import { Coffee } from 'lucide-react';
 
 export const metadata: Metadata = {
   title: 'Organic Farm Dining & Barbeque Evenings | The Divine Oasis, Ajodhya Hill',
-  description: 'Experience farm-to-table organic veg thali, barbeque under the open sky, and drinks with hors d\'oeuvres at The Divine Oasis resort atop Ajodhya Hill, Purulia.',
+  description: 'Experience Organic organic veg thali, barbeque under the open sky, and drinks with hors d\'oeuvres at The Divine Oasis resort atop Ajodhya Hill, Purulia.',
   alternates: {
     canonical: 'https://thedivineoasisresort.com/dining',
   },
@@ -53,8 +53,8 @@ export default function DiningPage() {
 
       <CinematicHero 
         label="Organic Farm Dining & Barbeque Evenings at Ajodhya Hill"
-        title="Farm-to-Table Dining at The Divine Oasis, Purulia"
-        tagline="Experience organic farm-to-table veg thali, barbeque under the open sky, and drinks with hors d&apos;oeuvres at our hilltop seating area. Pure vegetarian resort dining in Purulia."
+        title="Organic Dining at The Divine Oasis, Purulia"
+        tagline="Experience organic Organic veg thali, barbeque under the open sky, and drinks with hors d&apos;oeuvres at our hilltop seating area. Pure vegetarian resort dining in Purulia."
         image='/homehero/homehero2.jpg'
       />
       
@@ -65,8 +65,8 @@ export default function DiningPage() {
           __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "Restaurant",
-            "name": "The Divine Oasis - Farm-to-Table Dining",
-            "description": "Organic farm-to-table vegetarian thali, barbeque evenings, and drinks at the hilltop seating area. Pure vegetarian resort dining at The Divine Oasis, Ajodhya Hill, Purulia.",
+            "name": "The Divine Oasis - Organic Dining",
+            "description": "Organic Organic vegetarian thali, barbeque evenings, and drinks at the hilltop seating area. Pure vegetarian resort dining at The Divine Oasis, Ajodhya Hill, Purulia.",
             "url": "https://thedivineoasisresort.com/dining",
             "image": "https://thedivineoasisresort.com/homehero/homehero2.jpg",
             "telephone": "+91990398950",
@@ -83,7 +83,7 @@ export default function DiningPage() {
               "latitude": 23.2028654,
               "longitude": 86.1268909
             },
-            "servesCuisine": ["Vegetarian Thali", "Organic Farm-to-Table", "Barbeque", "Indian"],
+            "servesCuisine": ["Vegetarian Thali", "Organic Organic", "Barbeque", "Indian"],
             "priceRange": "â‚¹300 - â‚¹800",
             "acceptsReservations": "True",
             "openingHoursSpecification": [
@@ -91,7 +91,7 @@ export default function DiningPage() {
             ],
             "hasMenu": {
               "@type": "Menu",
-              "name": "Farm-to-Table Vegetarian Menu",
+              "name": "Organic Vegetarian Menu",
               "description": "Organic veg thali, seasonal farm vegetables, local rice, Bengali flavours"
             },
             "starRating": {
@@ -115,7 +115,7 @@ export default function DiningPage() {
                 "name": "What dining options are available at The Divine Oasis?",
                 "acceptedAnswer": {
                   "@type": "Answer",
-                  "text": "The Divine Oasis offers organic farm-to-table vegetarian thali, barbeque evenings at our barbeque stand, and drinks with hors d&apos;oeuvres at our scenic hilltop seating area. All meals are pure vegetarian."
+                  "text": "The Divine Oasis offers organic Organic vegetarian thali, barbeque evenings at our barbeque stand, and drinks with hors d&apos;oeuvres at our scenic hilltop seating area. All meals are pure vegetarian."
                 }
               },
               {
@@ -123,7 +123,7 @@ export default function DiningPage() {
                 "name": "Is there a restaurant at The Divine Oasis Ajodhya Hill?",
                 "acceptedAnswer": {
                   "@type": "Answer",
-                  "text": "Yes, The Divine Oasis features farm-to-table dining with fresh organic vegetables from our own farm, served in our hilltop dining area with forest views."
+                  "text": "Yes, The Divine Oasis features Organic dining with fresh organic vegetables from our own farm, served in our hilltop dining area with forest views."
                 }
               },
               {
@@ -163,7 +163,7 @@ export default function DiningPage() {
       <section className="py-16 bg-white border-t border-gold/10">
         <div className="max-w-[1000px] mx-auto px-6 md:px-10">
           <h2 className="font-display text-3xl md:text-4xl italic text-forest mb-8 text-center">
-            Farm-to-Table Dining & Barbeque Evenings at Ajodhya Hill
+            Organic Dining & Barbeque Evenings at Ajodhya Hill
           </h2>
           <div className="font-sans text-base text-taupe/80 space-y-5 leading-loose max-w-3xl mx-auto">
             <p>
@@ -192,7 +192,7 @@ export default function DiningPage() {
               { name: 'Organic Veg Thali', image: '/organicfood.jpg' },
               { name: 'Barbeque Evenings', image: '/bbq.jpg' },
               { name: 'Drinks & Hors d\'oeuvres', image: 'https://bookonelocal.in/cdn/2026-05-13-064459381-WhatsApp Image 2026-05-11 at 15.42.11.jpg' },
-              { name: 'Farm-to-Table', image: '/farmtofarmdinign.jpg' },
+              { name: 'Organic', image: '/farmtofarmdinign.jpg' },
             ].map((item) => (
               <div key={item.name} className="bg-white border border-gold/10 overflow-hidden group">
                 <div className="relative aspect-[4/3] overflow-hidden">
