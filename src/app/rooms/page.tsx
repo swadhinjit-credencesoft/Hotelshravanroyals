@@ -3,9 +3,29 @@ import Footer from '@/components/layout/Footer'
 import CinematicHero from '@/components/ui/CinematicHero'
 import LuxuryAmenities from '@/components/sections/LuxuryAmenities'
 import RoomsGrid from '@/components/sections/RoomsGrid'
+import JsonLd from '@/components/seo/JsonLd'
+import SeoRoute from '@/components/seo/SeoRoute'
+import { rooms } from '@/data/rooms'
+import { siteUrl } from '@/lib/seo'
 
 export default function RoomsPage() {
   return (
+    <>
+    <SeoRoute path="/rooms" title="Rooms">
+      <JsonLd data={{
+        '@context': 'https://schema.org',
+        '@type': 'ItemList',
+        name: 'Rooms at Shravan Royal Inn',
+        itemListElement: rooms.map((room, index) => ({
+          '@type': 'ListItem',
+          position: index + 1,
+          item: {
+            '@type': 'HotelRoom',
+            name: room.name,
+            url: new URL(`/rooms/${room.id}`, siteUrl).toString(),
+          },
+        })),
+      }} />
     <main className="bg-cream min-h-screen">
       <Navbar />
       <CinematicHero 
@@ -18,5 +38,7 @@ export default function RoomsPage() {
       <LuxuryAmenities />
       <Footer />
     </main>
+    </SeoRoute>
+    </>
   )
 }

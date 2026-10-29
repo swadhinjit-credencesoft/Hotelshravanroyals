@@ -25,7 +25,7 @@ const amenities = [
   {
     icon: Wind,
     title: 'Helipad Access',
-    description: 'Seamless arrivals and departures via our private clifftop landing pad.'
+    description: 'Seamless arrivals and departures, coordinated by our hospitality team.'
   },
   {
     icon: Compass,

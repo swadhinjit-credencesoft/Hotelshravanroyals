@@ -4,6 +4,8 @@ import './globals.css'
 import LenisProvider from '@/components/providers/LenisProvider'
 import CustomCursor from '@/components/ui/CustomCursor'
 import PageTransition from '@/components/providers/PageTransition'
+import JsonLd from '@/components/seo/JsonLd'
+import { pageMetadata, siteUrl } from '@/lib/seo'
 
 const playfair = Playfair_Display({
   subsets: ['latin'],
@@ -29,31 +31,28 @@ const jost = Jost({
 })
 
 export const metadata: Metadata = {
+  ...pageMetadata(
+    'Shravan Royal Inn | Hotel in Jaipur, Rajasthan',
+    'Discover Shravan Royal Inn in Jaipur, Rajasthan. Explore rooms, hotel experiences, events and reservation information.',
+    '/',
+  ),
+  metadataBase: siteUrl,
   icons: {
     icon: [{ url: '/Shravan%20Logo.png', type: 'image/png' }],
     shortcut: [{ url: '/Shravan%20Logo.png', type: 'image/png' }],
     apple: [{ url: '/Shravan%20Logo.png', type: 'image/png' }],
   },
-  title: 'Shravan Royal Inn — Excellence in Jaipur Hospitality',
-  description:
-    'A premium luxury hotel in Jaipur offering bespoke service and timeless comfort.',
-  keywords: [
-    'luxury hotel Jaipur',
-    'Shravan Royal Inn',
-    'Jaipur hospitality',
-    'premium stay Jaipur',
-    'luxury boutique hotel',
-    'exclusive Jaipur getaway',
-  ],
-  openGraph: {
-    title: 'Shravan Royal Inn — Excellence in Jaipur Hospitality',
-    description:
-      'A premium luxury hotel in Jaipur offering bespoke service and timeless comfort.',
-    type: 'website',
-    locale: 'en_US',
-  },
+  keywords: ['hotel Jaipur', 'Shravan Royal Inn', 'Jaipur hotel', 'hotel rooms Jaipur'],
 }
 
+const websiteSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'WebSite',
+  '@id': new URL('/#website', siteUrl).toString(),
+  name: 'Shravan Royal Inn',
+  url: siteUrl.toString(),
+  publisher: { '@id': new URL('/#hotel', siteUrl).toString() },
+}
 export default function RootLayout({
   children,
 }: {
@@ -61,7 +60,7 @@ export default function RootLayout({
 }) {
   return (
     <html
-      lang="en"
+      lang="en-IN"
       className={`${playfair.variable} ${cormorant.variable} ${jost.variable}`}
     >
       <head>
@@ -69,6 +68,7 @@ export default function RootLayout({
         <meta name="theme-color" content="#FBF7F0" />
       </head>
       <body>
+        <JsonLd data={websiteSchema} />
         <CustomCursor />
         <a href="#main-content" className="skip-to-main">
           Skip to main content

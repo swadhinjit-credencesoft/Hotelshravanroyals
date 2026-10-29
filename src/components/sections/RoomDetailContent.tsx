@@ -137,7 +137,7 @@ export default function RoomDetailContent({ room }: RoomDetailContentProps) {
             <SectionLabel light className="justify-center mb-8">The Philosophy</SectionLabel>
             <h2 className="font-display text-5xl md:text-8xl italic text-ivory mb-12">Architecture <br /> of Silence</h2>
             <p className="font-serif text-xl md:text-2xl italic text-ivory/70 max-w-3xl mx-auto leading-relaxed">
-               &ldquo;We don&apos;t just provide a room; we provide a frame for the horizon. Our architecture is designed to disappear, leaving you alone with the forest and the sea.&rdquo;
+               &ldquo;We don&apos;t just provide a room; we create space to pause. Our architecture is designed to disappear, leaving you with a sense of calm and privacy.&rdquo;
             </p>
          </div>
          {/* Background Texture */}

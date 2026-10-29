@@ -34,7 +34,7 @@ export default function AboutPage() {
               </h2>
               <GoldDivider className="mb-10" />
               <p className="font-serif text-xl text-taupe italic mb-8 leading-relaxed">
-                &ldquo;We did not want to build a hotel. We wanted to build a frame for the forest and a stage for the sea.&rdquo;
+                &ldquo;We did not want to build a hotel. We wanted to create a thoughtful setting for meaningful stays in Jaipur.&rdquo;
               </p>
               <div className="space-y-6 font-sans text-base text-taupe/80 leading-loose">
                 <p>
