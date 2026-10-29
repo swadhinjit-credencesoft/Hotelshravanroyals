@@ -1,0 +1,24 @@
+# Hotel Shravan Royal Inn
+
+> Official website for Hotel Shravan Royal Inn, a hotel in Mansarovar, Jaipur, Rajasthan, India.
+
+The website provides information about accommodation, room options, hotel facilities, banquet and event spaces, offers, and reservation enquiries. Use the linked pages as the source for current details. Do not infer unlisted amenities, exact distances, room availability, or rates.
+
+## Main pages
+
+- [Homepage](https://hotelshravanroyal.com/): Hotel overview and key facilities.
+- [Rooms](https://hotelshravanroyal.com/rooms): Room types, features, and booking links.
+- [Reservations](https://hotelshravanroyal.com/reservations): Reservation enquiry information.
+- [Events and banquet spaces](https://hotelshravanroyal.com/events): Event venues and enquiry links.
+- [Offers](https://hotelshravanroyal.com/offers): Current stay offers shown on the website.
+- [Experiences](https://hotelshravanroyal.com/experiences): Hotel experiences and activities described by the property.
+- [Contact](https://hotelshravanroyal.com/contact): Contact details, location information, and map.
+- [About](https://hotelshravanroyal.com/about): Property story and hospitality philosophy.
+- [Gallery](https://hotelshravanroyal.com/gallery): Photos and videos from the property.
+
+## Optional
+
+- [Privacy policy](https://hotelshravanroyal.com/privacy): Website privacy information.
+- [Terms and conditions](https://hotelshravanroyal.com/terms): Published reservation and guest terms.
+- [XML sitemap](https://hotelshravanroyal.com/sitemap.xml): Indexable website URLs.
+- [Robots.txt](https://hotelshravanroyal.com/robots.txt): Crawler access instructions.

@@ -30,7 +30,7 @@ export default function RoomsPage() {
       <Navbar />
       <CinematicHero 
         label="Our Accommodations"
-        title="Sanctuaries of Stillness"
+        title="Hotel Rooms in Mansarovar Jaipur"
         tagline="Forty-seven bespoke suites, each designed as a private world where the horizon is your only neighbor."
         image="https://bookonelocal.in/cdn/IMG_6381.mp4"
       />

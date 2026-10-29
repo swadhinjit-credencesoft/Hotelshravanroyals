@@ -46,7 +46,7 @@ export default function EventsPage() {
       <Navbar />
       <CinematicHero
         label="Celebrations & Summits"
-        title="Stage Your Legacy"
+        title="Banquet Hall in Mansarovar Jaipur"
         tagline="From garden vows to boardroom breakthroughs, we provide the backdrop for life's most significant moments."
         image="https://bookonelocal.in/cdn/IMG_6350.mp4"
       />

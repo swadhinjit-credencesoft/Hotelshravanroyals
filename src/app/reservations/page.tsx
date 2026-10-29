@@ -8,7 +8,7 @@ export default function ReservationsPage() {
       <Navbar />
       <div className="pt-32 pb-32 px-6 md:px-10 max-w-[1600px] mx-auto text-center">
         <SectionLabel className="justify-center mb-4">Availability</SectionLabel>
-        <h1 className="font-display text-5xl md:text-7xl italic text-forest mb-8">Secure Your Stay</h1>
+        <h1 className="font-display text-5xl md:text-7xl italic text-forest mb-8">Hotel Room Booking in Mansarovar Jaipur</h1>
         <p className="font-serif text-xl text-taupe max-w-xl mx-auto leading-relaxed mb-12">
           Select your preferred dates and sanctuary. Our concierge will reach out within the hour to finalize your bespoke itinerary.
         </p>

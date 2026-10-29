@@ -32,8 +32,8 @@ const jost = Jost({
 
 export const metadata: Metadata = {
   ...pageMetadata(
-    'Shravan Royal Inn | Hotel in Jaipur, Rajasthan',
-    'Discover Shravan Royal Inn in Jaipur, Rajasthan. Explore rooms, hotel experiences, events and reservation information.',
+    'Hotel Shravan Royal Inn Jaipur | Mansarovar Hotel',
+    'Discover Hotel Shravan Royal Inn in Mansarovar, Jaipur. Explore room options, hotel facilities and banquet services for your next stay.',
     '/',
   ),
   metadataBase: siteUrl,
@@ -42,14 +42,13 @@ export const metadata: Metadata = {
     shortcut: [{ url: '/Shravan%20Logo.png', type: 'image/png' }],
     apple: [{ url: '/Shravan%20Logo.png', type: 'image/png' }],
   },
-  keywords: ['hotel Jaipur', 'Shravan Royal Inn', 'Jaipur hotel', 'hotel rooms Jaipur'],
 }
 
 const websiteSchema = {
   '@context': 'https://schema.org',
   '@type': 'WebSite',
   '@id': new URL('/#website', siteUrl).toString(),
-  name: 'Shravan Royal Inn',
+  name: 'Hotel Shravan Royal Inn',
   url: siteUrl.toString(),
   publisher: { '@id': new URL('/#hotel', siteUrl).toString() },
 }

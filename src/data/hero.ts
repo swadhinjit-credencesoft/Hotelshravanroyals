@@ -15,8 +15,8 @@ export const heroSlides: HeroSlide[] = [
   {
     id: 's1',
     tagline: 'A Sanctuary Awaits',
-    headline: 'Where Time Stands Still',
-    subheadline: 'Nestled in the heart of Jaipur — crafted for those who seek comfort, elegance, and extraordinary hospitality.',
+    headline: 'Hotel Shravan Royal Inn, Jaipur',
+    subheadline: 'Located in Mansarovar, Jaipur — crafted for those who seek comfort, elegance, and extraordinary hospitality.',
     image: 'https://bookonelocal.in/cdn/IMG_6387.mp4',
     imageAlt: 'Luxury hotel corridor at Hotel Shravan Royal Inn',
     primaryCta: 'Reserve Your Suite',
@@ -28,7 +28,7 @@ export const heroSlides: HeroSlide[] = [
     id: 's2',
     tagline: 'Premium Banquet & Events',
     headline: 'Let Moments Shine',
-    subheadline: 'Elegant spaces for weddings, celebrations, and corporate events — crafted to perfection',
+    subheadline: 'Elegant spaces for weddings, celebrations, and corporate events â€” crafted to perfection',
     image: 'https://bookonelocal.in/cdn/IMG_6260.mp4',
     imageAlt: 'Premium banquet hall at Hotel Shravan Royal Inn',
     primaryCta: 'View Event Spaces',
@@ -52,7 +52,7 @@ export const heroSlides: HeroSlide[] = [
     id: 's4',
     tagline: 'Jaipur Experiences',
     headline: 'Explore the Pink City',
-    subheadline: 'Perfectly located for heritage tours and cultural exploration — with expert guidance from our concierge.',
+    subheadline: 'Perfectly located for heritage tours and cultural exploration â€” with expert guidance from our concierge.',
     image: 'https://bookonelocal.in/cdn/IMG_6294.mp4',
     imageAlt: 'Jaipur heritage experience from Hotel Shravan Royal Inn',
     primaryCta: 'Explore Experiences',
@@ -66,6 +66,6 @@ export const heroStats = [
   { value: '47', label: 'Private Suites' },
   { value: '3', label: 'Event Spaces' },
   { value: '12', label: 'Acres of Grounds' },
-  { value: '5★', label: 'Guest Rating' },
+  { value: '5â˜…', label: 'Guest Rating' },
 ]
 

@@ -12,7 +12,7 @@ export function generateMetadata({ params }: RoomParams): Metadata {
   if (!room) return pageMetadata('Room Not Found | Shravan Royal Inn', 'This room page could not be found.', `/rooms/${params.id}`);
 
   return pageMetadata(
-    `${room.name} | Shravan Royal Inn, Jaipur`,
+    `${room.name} | Hotel Shravan Royal Inn Jaipur`,
     `${room.tagline}. View room size, occupancy, amenities and nightly rate at Shravan Royal Inn in Jaipur.`,
     `/rooms/${room.id}`,
   );
@@ -57,7 +57,7 @@ export default function RoomDetailPage({ params }: { params: { id: string } }) {
         '@type': 'WebPage',
         '@id': `${url}#webpage`,
         url,
-        name: `${room.name} | Shravan Royal Inn, Jaipur`,
+        name: `${room.name} | Hotel Shravan Royal Inn Jaipur`,
         isPartOf: { '@id': new URL('/#website', siteUrl).toString() },
         about: { '@id': new URL('/#hotel', siteUrl).toString() },
       }} />

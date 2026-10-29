@@ -1,9 +1,8 @@
 import type { Metadata } from 'next'
 
-// Set NEXT_PUBLIC_SITE_URL to the production origin before deployment if the
-// canonical domain differs from the email domain used by this hotel.
+// Set NEXT_PUBLIC_SITE_URL if the production origin changes.
 export const siteUrl = new URL(
-  process.env.NEXT_PUBLIC_SITE_URL || 'https://shravanroyalinn.com',
+  process.env.NEXT_PUBLIC_SITE_URL || 'https://hotelshravanroyal.com',
 )
 
 export function pageMetadata(title: string, description: string, path: string): Metadata {
@@ -17,7 +16,7 @@ export function pageMetadata(title: string, description: string, path: string): 
       title,
       description,
       url,
-      siteName: 'Shravan Royal Inn',
+      siteName: 'Hotel Shravan Royal Inn',
       locale: 'en_IN',
       type: 'website',
       images: [{
