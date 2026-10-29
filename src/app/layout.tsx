@@ -29,6 +29,11 @@ const jost = Jost({
 })
 
 export const metadata: Metadata = {
+  icons: {
+    icon: [{ url: '/Shravan%20Logo.png', type: 'image/png' }],
+    shortcut: [{ url: '/Shravan%20Logo.png', type: 'image/png' }],
+    apple: [{ url: '/Shravan%20Logo.png', type: 'image/png' }],
+  },
   title: 'Shravan Royal Inn — Excellence in Jaipur Hospitality',
   description:
     'A premium luxury hotel in Jaipur offering bespoke service and timeless comfort.',
