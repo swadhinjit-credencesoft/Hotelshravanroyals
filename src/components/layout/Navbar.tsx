@@ -152,7 +152,7 @@ export default function Navbar() {
               }`}
             >
               <Phone size={15} className="text-gold" />
-              <span className="whitespace-nowrap">+91 9903989950 /+91 811996900</span>
+              <span className="whitespace-nowrap">+91 9903989950 /+91 7811996900</span>
             </a>
 
             <a
